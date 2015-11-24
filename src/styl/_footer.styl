@@ -1,0 +1,60 @@
+.comments
+    center(rem(800px))
+    padding 0 rem(20px)
+    h3
+        margin 0 0 rem(30px)
+        font-size rem(30px)
+
+footer
+    background main
+    padding rem(25px) 0
+    margin-top 100px
+    section
+      center(rem(1000px))
+      +below(rem(1000px))
+          padding-left rem(20px)
+          padding-right rem(20px)
+    .col-groups
+      col(1/2, gutter: .5xz)
+    .column
+      col(1/2)
+    h3
+      color blue
+    .fa, [class^="icon-"], [class*=" icon-"]
+      color white
+    ul
+      list-style none
+      line-height 2em
+      -webkit-padding-start 0
+    p,a
+        text-decoration none
+        mainFont(300)
+        color blue
+        text-align center
+        margin 0
+    a:hover
+        color white
+        &:after
+            font-family "Fontawesome"
+            font-size rem(14px)
+            margin-left 7px
+            content "\f08e"
+            line-height 2em
+            color blue !important
+    .copy
+        border-top 1px solid blue
+        padding-top 20px
+        color blue
+        line-height 1.5
+      span
+        white-space nowrap
+
+@media (max-width: 768px)
+  footer
+    .col-groups
+      stack()
+
+@media (max-width: 480px)
+  footer
+    .column
+      stack()

@@ -1,0 +1,50 @@
+<section class="author" itemprop="author">
+  <div class="details" itemscope itemtype="http://schema.org/Person">
+  {% assign authorCount = page.authors | size %}
+  {% if authorCount == 0 %}
+    <h5 class="name">No one claimed credit for this post?</h5>
+  {% elsif authorCount == 1 %}
+    {{ page.authors | first }}
+  {% else %}
+    {% if authorCount > 1 %}
+    <h3>Meet the authors</h3>
+    {% endif %}
+    {% for author in page.authors %}
+      {% if forloop.first %}
+      <div class="wrapper">
+        <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
+        <p class="def">Author</p>
+        <h5 class="name">
+          <a itemprop="name" href="mailto:{{ author | replace: ' ','.' | downcase}}@{{ site.github_username }}.com">{{ author }}</a>
+        </h5>
+        {% if site.RIMdev[author].desc %}
+        <p class="desc" itemprop="desc"> {{site.RIMdev[author].desc}}</p>
+        {% endif %}
+      </div>
+      {% elsif forloop.last %}
+      <div class="wrapper">
+        <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
+        <p class="def">Author</p>
+        <h5 class="name">
+          <a itemprop="name" href="mailto:{{ author | replace: ' ','.' | downcase}}@{{ site.github_username }}.com">{{ author }}</a>
+        </h5>
+        {% if site.RIMdev[author].desc %}
+        <p class="desc" itemprop="desc"> {{site.RIMdev[author].desc}}</p>
+        {% endif %}
+      </div>
+      {% else %}
+      <div class="wrapper">
+        <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
+        <p class="def">Author</p>
+        <h5 class="name">
+          <a itemprop="name" href="mailto:{{ author | replace: ' ','.' | downcase}}@{{ site.github_username }}.com">{{ author }}</a>
+        </h5>
+        {% if site.RIMdev[author].desc %}
+          <p class="desc" itemprop="desc"> {{site.RIMdev[author].desc}}</p>
+        {% endif %}
+      </div>
+        {% endif %}
+    {% endfor %}
+  {% endif %}
+  </div>
+</section>

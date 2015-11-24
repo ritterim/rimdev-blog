@@ -1,0 +1,54 @@
+<footer>
+  <section>
+    <div class="col-groups">
+      <h3>Where we can be found</h3>
+      <div class="column">
+        <i class="icon-twitter icon-lg"></i>
+        <ul>
+          {% for rimteam in site.RIMdev %}
+          {% for member in rimteam %}
+          {% if member.twitter %}
+          <li><a href="https://twitter.com/{{ member.twitter }}" title="{{ member.twitter }}">@{{ member.twitter }}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="column">
+        <i class="icon-github icon-lg"></i>
+        <ul>
+          {% for rimteam in site.RIMdev %}
+          {% for member in rimteam %}
+          {% if member.github %}
+          <li><a href="https://github.com/{{ member.github }}" title="{{ member.name }}">{{ member.github }}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-groups">
+      <h3>Other things we're involved in</h3>
+      <div class="column">
+        <i class="icon-nuget icon-lg"></i>
+        <ul>
+          {% for package in site.nuget %}
+          <li><a href="https://www.nuget.org/packages/Rimdev.{{ package }}" title="{{ package }}">{{ package }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="column">
+        <i class="icon-ritter-horse icon-lg"></i>
+        <ul>
+          {% for services in site.ritter_links %}
+          <li><a href="{{ services.url }}" title="{{ services.service }}">{{ services.service }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="copy">
+    Copyright © 2015 All Rights Reserved. <span><a href="{{ site:rim }}">{{ site:rim_copy}}</a></span>
+  </section>
+</footer>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>

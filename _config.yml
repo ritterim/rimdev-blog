@@ -1,0 +1,127 @@
+# Site settings
+description: A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
+rim_copy: Ritter Insurance Marketing LLC, Harrisburg PA
+rim_url: "https://ritterim.com"
+
+# User settings
+username: RIMdev
+user_description: Ritter Insurance Marketing | Software development
+user_title: RIMdev
+user_logo: /assets/img/logos/RIMdev-logo-text-white.svg
+user_icon: /assets/img/logos/RIMdev-icon-white.svg
+email: anon@ritterim.com
+twitter_username: ritterim
+github_username:  ritterim
+disqus_username: rimdev
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: /:title/
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: About Us
+    url: /about
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
+
+# RIMdev posting authors
+RIMdev:
+  Khalid Abuhakmeh:
+    avatar: https://avatars0.githubusercontent.com/u/228256?v=3&s=460
+    desc: Director of Software Development. Focused on http://ASP.NET and Microsoft. Still love OSS & Startups.
+    twitter: Aquabirdconsult
+    github: khalidabuhakmeh
+  Bill Boga:
+    avatar: https://avatars2.githubusercontent.com/u/3382469?v=3&s=460
+    twitter: billbrokeit
+    github: billboga
+  Ken Dale:
+    avatar: https://avatars3.githubusercontent.com/u/1012917?v=3&s=460
+    twitter: kendaleiv
+    github: kendaleiv
+  Ken Earl:
+    avatar: https://avatars0.githubusercontent.com/u/1807843?v=3&s=400
+    twitter:
+    github: McKenjo
+  Tim Graham:
+    avatar: https://avatars3.githubusercontent.com/u/7881414?v=3&s=460
+    twitter:
+    github: TimGIMT
+  Tom Harold:
+    avatar: https://avatars3.githubusercontent.com/u/4880437?v=3&s=460
+    twitter:
+    github: tgharold
+  Scott Henscheid:
+    avatar: https://avatars3.githubusercontent.com/u/10855826?v=3&s=460
+    twitter:
+    github: scotthenscheid
+  Kevin Hougasian:
+    avatar: https://avatars2.githubusercontent.com/u/6231956?v=3&s=460
+    twitter: Hougasian
+    github: Hougasian
+  Justin Rusbatch:
+    avatar: https://avatars0.githubusercontent.com/u/423549?v=3&s=460
+    twitter: jrusbatch
+    github: jrusbatch
+  David Sagang:
+    avatar: https://avatars1.githubusercontent.com/u/8104571?v=3&s=460
+    twitter:
+    github: dsagang
+  Chad Peters:
+    avatar: https://avatars3.githubusercontent.com/u/2921868?v=3&s=460
+    twitter:
+    github: lightyeare
+  Scott Schwalm:
+    avatar: https://avatars0.githubusercontent.com/u/3587144?v=3&s=460
+    twitter:
+    github: ScottSchwalm
+  Beth Warner:
+    avatar: https://avatars2.githubusercontent.com/u/1625929?v=3&s=400
+    twitter:
+    github: bwarner22
+  Nathan White:
+    avatar: https://avatars1.githubusercontent.com/u/4616177?v=3&s=460
+    twitter: comfroels
+    github: comfroels
+
+nuget:
+  - Sandbox
+  - Descriptor.Http
+  - AspNetBrowserLocale
+  - Filter
+  - Supurlative
+  - Descriptor
+  - Automation.Sql
+  - Automation.StorageEmulator
+  - Automation.WebHosting
+  - Automation.Transform
+  - Stuntman
+
+ritter_links:
+  - service: Ritter Insurance Marketing
+    url: https://www.ritterim.com
+  - service: Insurance Insider News by Craig Ritter
+    url: https://blog.ritterim.com
+  - service: Ritter Agent News
+    url: https://www.ritterim.com/agentnews
+  - service: Medicareful.com
+    url: https://medicareful.com
+  - service: eBroker Software
+    url: https://ebrokersoftware.com

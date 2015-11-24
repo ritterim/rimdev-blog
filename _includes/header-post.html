@@ -1,0 +1,28 @@
+<header class="header-post" {% if page.image %}style="background: url({{ page.image }}) fixed no-repeat; background-size: cover;"{% endif %} role="banner">
+  <div class="content">
+    {% if page.date %}
+    <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+    {% endif %}
+    <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+
+    {% assign authorCount = page.authors | size %}
+    {% if authorCount == 1 %}
+      {{ page.authors | first }}
+    {% else %}
+      {% for author in page.authors %}
+        {% if forloop.first %}
+          <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
+        {% elsif forloop.last %}
+          <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
+        {% else %}
+          <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
+          {% endif %}
+      {% endfor %}
+    {% endif %}
+
+
+    <p itemprop="description" class="subtitle">{{ page.description }}</p>
+  </div>
+  <a class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
+  {% include menu-search.html %}
+</header>
