@@ -1,5 +1,6 @@
 # This is the local development _config.yml file.
-# Run the following command:
+# Gulp now checks for this file.
+# To run without Gulp:
 #
 # $ jekyll build --config _config.yml,_config.local.yml
 #
