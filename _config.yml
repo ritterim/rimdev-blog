@@ -1,7 +1,7 @@
 # Site settings
 description: A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://rimdev.io"
 rim_copy: Ritter Insurance Marketing LLC, Harrisburg PA
 rim_url: "https://ritterim.com"
 
