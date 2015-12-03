@@ -38,7 +38,8 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 	browserSync({
 		server: {
 			baseDir: '_site'
-		}
+		},
+		port: 4000
 	});
 });
 
