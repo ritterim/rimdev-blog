@@ -32,8 +32,9 @@
       <div class="column">
         <i class="icon-nuget icon-lg"></i>
         <ul>
-          {% for package in site.nuget %}
-          <li><a href="https://www.nuget.org/packages/Rimdev.{{ package }}" title="{{ package }}">{{ package }}</a></li>
+          {% assign packages = site.nuget | sort %}
+          {% for package in packages %}
+          <li><a href="https://www.nuget.org/packages/RimDev.{{ package }}" title="{{ package }}">{{ package }}</a></li>
           {% endfor %}
         </ul>
       </div>
