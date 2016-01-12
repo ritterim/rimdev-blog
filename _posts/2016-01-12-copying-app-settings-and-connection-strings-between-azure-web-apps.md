@@ -36,12 +36,14 @@ Now that the prerequisites are ready, we can move onto installing and using the 
 
 We're all set! Now, to run it:
 
-```
+{% highlight shell %}
+
 > node main.js \
     --sourceApp MySourceApp \
     --destApp MyDestinationApp \
     --subscription "My Subscription"
-```
+
+{% endhighlight %}
 
 It'll begin copying the app settings and connection strings. Be patient, it takes some time.
 
