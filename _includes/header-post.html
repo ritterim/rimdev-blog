@@ -5,10 +5,7 @@
     {% endif %}
     <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 
-    {% assign authorCount = page.authors | size %}
-    {% if authorCount == 1 %}
-      {{ page.authors | first }}
-    {% else %}
+    {% if page.authors %}
       {% for author in page.authors %}
         {% if forloop.first %}
           <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
@@ -16,7 +13,7 @@
           <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
         {% else %}
           <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
-          {% endif %}
+        {% endif %}
       {% endfor %}
     {% endif %}
 
