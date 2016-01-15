@@ -73,4 +73,4 @@ We are currently customizing our version of [Hubot](https://hubot.github.com/) t
 
 ## Conclusion
 
-As a development team, we are constantly reevaluating our process. We want to deliver on our promise of a great user experience and to do it quickly and efficiently. These alterations are probably not the last time we apply a change our process, but we feel it moves us and the business we service in a positive direction.
+As a development team, we are constantly reevaluating our process. We want to deliver on our promise of a great user experience and to do it quickly and efficiently. These alterations are probably not the last time we change our process, but we feel it moves us and the business we service in a positive direction.
