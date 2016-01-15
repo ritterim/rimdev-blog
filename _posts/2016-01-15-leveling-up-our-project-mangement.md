@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Leveling Up Our Project Management'
-date: 2016-01-12 16:00:00
+date: 2016-01-15 11:00:00
 image: # if no image, color defaults dark blue
 description: 'Tweaking our project management approach to work better with GitHub'
 tags:
