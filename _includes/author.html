@@ -13,7 +13,7 @@
       {% if forloop.first %}
       <div class="wrapper">
         <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
-        <p class="def">Author</p>
+        <p class="def"></p>
         <h5 class="name">
           <a itemprop="name" href="mailto:{{ author | replace: ' ','.' | downcase}}@{{ site.github_username }}.com">{{ author }}</a>
         </h5>
@@ -24,7 +24,7 @@
       {% elsif forloop.last %}
       <div class="wrapper">
         <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
-        <p class="def">Author</p>
+        <p class="def"></p>
         <h5 class="name">
           <a itemprop="name" href="mailto:{{ author | replace: ' ','.' | downcase}}@{{ site.github_username }}.com">{{ author }}</a>
         </h5>
@@ -35,7 +35,7 @@
       {% else %}
       <div class="wrapper">
         <img itemprop="image" class="img-rounded" src="{{ site.RIMdev[author].avatar }}" alt="{{ author }}">
-        <p class="def">Author</p>
+        <p class="def"></p>
         <h5 class="name">
           <a itemprop="name" href="mailto:{{ author | replace: ' ','.' | downcase}}@{{ site.github_username }}.com">{{ author }}</a>
         </h5>
