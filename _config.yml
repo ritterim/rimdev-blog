@@ -44,7 +44,7 @@ exclude: ['package.json', 'src', 'node_modules']
 RIMdev:
   Khalid Abuhakmeh:
     avatar: https://avatars0.githubusercontent.com/u/228256?v=3&s=460
-    desc: Director of Software Development. Focused on http://ASP.NET and Microsoft. Still love OSS & Startups.
+    desc: Director of Software Development. Focused on ASP.NET and Microsoft. Still love OSS &amp; Startups.
     twitter: Aquabirdconsult
     github: khalidabuhakmeh
   Bill Boga:
