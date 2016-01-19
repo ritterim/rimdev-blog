@@ -17,7 +17,7 @@ github_username:  ritterim
 disqus_username: rimdev
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: /:title/
 
 # html minify
@@ -49,7 +49,7 @@ RIMdev:
     github: khalidabuhakmeh
   Bill Boga:
     avatar: https://avatars2.githubusercontent.com/u/3382469?v=3&s=460
-    twitter: billbrokeit
+    desc: Senior Software Developer. Polyglot with focus on C#. Also enjoy building and tinkering with hardware.
     github: billboga
   Ken Dale:
     avatar: https://avatars3.githubusercontent.com/u/1012917?v=3&s=460
