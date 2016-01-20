@@ -205,7 +205,7 @@ public class Startup
 
 - Using same `AuthenticationScheme` between `UseCookieAuthentication` and `UseOpenIdConnectAuthentication`. Trying this will work up until the request comes back from the authority. You will receive this excpetion:
 
-```shell
+```
 System.NotSupportedException: Specified method is not supported.
    at Microsoft.AspNet.Authentication.RemoteAuthenticationHandler`1.HandleSignInAsync(SignInContext context)
    at Microsoft.AspNet.Authentication.AuthenticationHandler`1.<SignInAsync>d__61.MoveNext()
