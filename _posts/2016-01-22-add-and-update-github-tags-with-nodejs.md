@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Add And Update GitHub Tags With NodeJs"
+title: "Add And Update GitHub Tags With Node.js"
 date: 2016-01-22 12:36:45
 image:  # if no image, color defaults dark blue
 description:
@@ -14,7 +14,7 @@ twitter_text: "Add and Update @GitHub Tags With #nodejs"
 authors: Khalid Abuhakmeh
 ---
 
-In a previous post, [Leveling up our project management]({% post_url 2016-01-15-leveling-up-our-project-mangement%}), I mentioned that we had settled on base set of tags for across our [GitHub organization](https://github.com/ritterim). We thought we had found a tool to allow us to do this, but it turns out that tool didn't work. We didn't want to resort to manually updating all of our repositories, so I wrote this NodeJs script.
+In a previous post, [Leveling up our project management]({% post_url 2016-01-15-leveling-up-our-project-mangement%}), I mentioned that we had settled on base set of tags for across our [GitHub organization](https://github.com/ritterim). We thought we had found a tool to allow us to do this, but it turns out that tool didn't work. We didn't want to resort to manually updating all of our repositories, so I wrote this Node.js script.
 
 ```javascript
 /*
@@ -108,7 +108,7 @@ repositories.forEach(function (repo) {
 }); // repositories forEach
 ``` 
 
-Save this script, make the necessary modification, and then run it via the command line.
+Save this script, make the necessary modifications, and then run it via the command line.
 
 ```console
 $ node app.js
