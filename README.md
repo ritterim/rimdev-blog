@@ -19,7 +19,9 @@ You can use the `initpost.sh` to create your new posts. Just follow the command:
 
 The new file will be created at `_posts` with this format `date-title.md`.
 
-## Front-matter 
+When you're done, run `npm run check` to check it over.
+
+## Front-matter
 
 ### Authors
 

@@ -4,6 +4,7 @@
   "description": "rimdev",
   "main": "gulpfile.js",
   "scripts": {
+    "check": "mdspell --en-us --ignore-acronyms --ignore-numbers _posts/*.md",
     "test": "mdspell --en-us --ignore-acronyms --ignore-numbers --report _posts/*.md"
   },
   "keywords": [
