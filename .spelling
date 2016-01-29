@@ -1,0 +1,47 @@
+# Used with markdown-spellcheck
+
+#
+# Proper Nouns
+#
+
+# "hougasian" Lowercase to match "@hougasian"
+hougasian
+
+RIMdev
+
+#
+# English
+#
+
+customizable
+i.e.
+prepend
+theming
+
+#
+# Technical
+#
+
+ASP.NET
+APIs
+azure-cli
+CoreCLR
+burndown
+Hubot
+IdentityServer
+IdentityServer3
+middleware
+Node.js
+Node.js.
+npm
+NuGet
+PaaS
+p1
+p2
+p3
+pre-ASP
+OpenID
+url
+urls
+wontfix
+ZenHub
