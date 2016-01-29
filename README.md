@@ -7,7 +7,12 @@ Customized based on [Will Jekyll Template](https://github.com/willianjusten/will
 1. [Install Jekyll](http://jekyllrb.com)
 2. Fork the [RIMdev blog](https://github.com/ritterim/rimdev-blog/fork)
 3. Clone the repo you just forked.
+4. Run `npm install` in the cloned folder.
 7. **Remember to compile your assets files with Gulp.**
+
+## Tests
+
+Tests are ran with `npm test`. Currently, this is a spelling check of posts. This can done interactively as well with `npm run check`.
 
 ## Creating posts
 
