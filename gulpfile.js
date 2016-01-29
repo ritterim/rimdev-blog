@@ -20,7 +20,11 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn('jekyll', ['build', '--config=_config.yml,_config.local.yml'], {stdio: 'inherit'})
+
+	// http://stackoverflow.com/a/8684009
+	var jekyllCommand = /^win/.test(process.platform) ? 'jekyll.bat' : 'jekyll';
+
+	return cp.spawn(jekyllCommand, ['build', '--config=_config.yml,_config.local.yml'], {stdio: 'inherit'})
 		.on('close', done);
 });
 
