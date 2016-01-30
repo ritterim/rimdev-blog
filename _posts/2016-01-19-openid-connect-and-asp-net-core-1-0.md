@@ -203,7 +203,7 @@ public class Startup
 
 ## Some common pitfalls
 
-- Using same `AuthenticationScheme` between `UseCookieAuthentication` and `UseOpenIdConnectAuthentication`. Trying this will work up until the request comes back from the authority. You will receive this excpetion:
+- Using same `AuthenticationScheme` between `UseCookieAuthentication` and `UseOpenIdConnectAuthentication`. Trying this will work up until the request comes back from the authority. You will receive this exception:
 
 ```
 System.NotSupportedException: Specified method is not supported.
