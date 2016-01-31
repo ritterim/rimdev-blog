@@ -16,10 +16,8 @@ authors: Bill Boga
 
 ## Introduction
 
-The overall process of getting OpenID Connect ([OIDC](http://openid.net/connect/)) working on ASP.NET Core 1.0 is similar to previous versions of ASP.NET, but does require knowledge of the various property and package changes. This post 
-will highlight some of the 
-major 
-differences and demonstrate a few pitfalls to avoid.
+The overall process of getting OpenID Connect ([OIDC](http://openid.net/connect/)) working on ASP.NET Core 1.0 is similar to previous versions of ASP.NET, but does require knowledge of the various property and package changes. This post
+will highlight some of the major differences and demonstrate a few pitfalls to avoid.
 
 ## Classic ASP.NET
 

@@ -4,7 +4,8 @@
   "description": "The Ritter Insurance Marketing development team blog, hosted at http://rimdev.io/.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "check": "mdspell --en-us --ignore-acronyms --ignore-numbers _posts/*.md",
+    "test": "mdspell --en-us --ignore-acronyms --ignore-numbers --report _posts/*.md"
   },
   "keywords": [
     "rimdev",
@@ -28,6 +29,7 @@
     "gulp-uglify": "^1.0.2",
     "jeet": "^6.1.2",
     "kouto-swiss": "^0.11.6",
+    "markdown-spellcheck": "^0.9.0",
     "rupture": "^0.6.1"
   }
 }

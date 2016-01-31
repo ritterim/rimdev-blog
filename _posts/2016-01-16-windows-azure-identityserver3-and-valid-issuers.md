@@ -10,7 +10,7 @@ tags:
 categories:
 - Development
 twitter_text: "#windowsazure, #identityserver3, and valid issuers via RIMdev @aspnet @dotnet"
-authors: 
+authors:
 - Khalid Abuhakmeh
 - Bill Boga
 - Ken Dale
@@ -24,7 +24,7 @@ System.IdentityModel.Tokens.SecurityTokenInvalidIssuerException
 IDX10205: Issuer validation failed. Issuer: 'https://auth.ritterim.com/identity'. Did not match: validationParameters.ValidIssuer: 'null' or validationParameters.ValidIssuers: 'https://auth.ritterim.com/, https://rim-auth-east.azurewebsites.net/identity'.
 {% endhighlight %}
 
-We have noticed that the `Issuer` url value being provided by an authentication request changes randomnly in Windows Azure. The unknown bug causes our applications to break. While the change is randomn, the expected issuer urls are not. We have narrowed it down to these known variations.
+We have noticed that the `Issuer` url value being provided by an authentication request changes randomly in Windows Azure. The unknown bug causes our applications to break. While the change is random, the expected issuer urls are not. We have narrowed it down to these known variations.
 
 - `https://{custom domain name}.com`
 - `https://{custom domain name}.com/identity`
