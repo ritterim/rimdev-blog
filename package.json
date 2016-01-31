@@ -1,21 +1,20 @@
 {
   "name": "rimdev",
   "version": "1.0.0",
-  "description": "rimdev",
+  "description": "The Ritter Insurance Marketing development team blog, hosted at http://rimdev.io/.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
   },
   "keywords": [
-    "frontend",
-    "blog",
-    "css",
-    "stylus",
-    "gulp",
-    "jekyll",
-    "js"
+    "rimdev",
+    "blog"
   ],
   "author": "rimdev",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ritterim/ritterim.github.io.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-stylus": "^0.4.0",
