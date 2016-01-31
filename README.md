@@ -70,7 +70,3 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Install [NodeJS](https://nodejs.org/)
 - Run `npm install` 
 - Run `gulp`
-
-## Windows 10 Step
-
-If you use Windows 10, change gulpfile.js line from `spawn('jekyll', ['build']` to `spawn('jekyll.bat', ['build'])`.
