@@ -16,14 +16,14 @@ authors: Nathan White
 
 # Angular Prime Directive
 
-On my journey through the #RIMDev team, I've been maintaining a lot of Angular 1.x and been able to learn through many mistakes, errors, and other "face-palm" moments. My relationship with the framework has been somewhat of a rollercoaster. I enjoyed every bit of it, don't get me wrong, but certain quirks seemed to keep laughing at me...
+On my journey through the #RIMDev team, I've been maintaining a lot of Angular 1.x. I've had to learn through many mistakes, errors, and other "face-palm" moments. My relationship with the framework has been somewhat of a rollercoaster. I enjoyed every bit of it, don't get me wrong, but certain quirks seemed to keep laughing at me...
 
-After some time,  I was able to help with most of our maintenance needs. One concept that I never truly understood, was the directive, though. We had some in our code base, but I had never had to touch them. They sat there, working away. Until *that* day came: I had to fix one.
-I had a new mentor to help me jump in feet first, and truly understand them.
+After some time,  I was able to help with most of our maintenance needs. One concept that I never understood, was the directive, though. We had some in our code base, but I had never had to touch them. They sat there, working away. Until *that* day came: I had to fix one.
+I had a new mentor to help me jump in feet first, and understand them.
 
 #### Why are they so confusing?
 
-I think I was not alone. Many beginners in the Angular world ask similar questions: What are directives? How do they help, I've lived without them so far? Why do you need to bring in a new concept? Directives are simple: They are simply a way to create custom HTML syntax that works specifically for your application. The benefit? It groups small portions of your view with common functionality into a unit. Angular compiles your custom HTML and attaches functionality to the DOM node. So in short, it's some custom HTML, that can break our application into smaller, more maintainable components (definitely not a new concept). So let's get to some code.
+I think I was not alone. Many beginners in the Angular world ask similar questions: What are directives? How do they help, I've lived without them so far? Why do you need to bring in a new concept? Directives are simple: they are a way to create custom HTML syntax that works for your specific application. The benefit? It groups small portions of your view with common functionality into a unit. Angular compiles your custom HTML and attaches functionality to the DOM node. So in short, it's some custom HTML. It breaks our application into smaller, more maintainable components (definitely not a new concept). So let's get to some code.
 
 Imagine we start with the following `index.html`, which produces a list of animals and counts how many times they speak:
 
@@ -82,7 +82,7 @@ And its accompanying `app.js`:
 })
 ```
 
-That's a lot of fuddled HTML in one file, which makes it slightly hard to understand. Also imagine, this small list we are building is just one small portion of our app, a small portion of our HTML partial. What if we need to use this same type of list on a different page? We'd have to rewrite the HTML from scratch. Let's start refactoring our list of animals into a reusable directive.
+That's a lot of fuddled HTML in one file, which makes it hard to understand. Also imagine, this small list we are building is just one small part of our large app. What if we need to use this same type of list on a different page? We'd have to rewrite the HTML from scratch. Let's start refactoring our list of animals into a reusable directive.
 
 First, let's create a new file `animal-list-directive.html`, and pull the following content out of our `index.html`:
 
@@ -142,7 +142,9 @@ And back in the body of `index.html`, we replace the html with the directive:
 ...
 ```
 
-Well this works! And, I must say, our HTML looks small and easy to manage. What's wrong with this code, though? The problem is: we are dependent on the parent `$scope`. We are accessing the animals from the parent controller, inside our directive. Well that stinks, we were supposed to encapsulate our handiwork. If we were to to declare a variable on `$scope` inside our directive *AND* inside our controller with the same name, our directive would overwrite whatever was in the controller (since it will be compiled and instantiated last). This scope leakage is an easy trap to fall into. There are 3 values you can use to specify scope in the configuration object of your directive:
+
+Well this works! And, I must say, our HTML looks small and easy to manage. What's wrong with this code, though? The problem is: we are dependent on the parent `$scope`. We are accessing the animals from the parent controller, inside our directive. Well that stinks, we were supposed to encapsulate our handiwork. What if we were to to declare a variable on `$scope` inside our directive *AND* inside our controller with the same name? Our directive would overwrite whatever was in the controller (since it is compiled and instantiated last). This scope leakage is an easy trap to fall into. There are 3 values you can use to specify scope in the configuration object of your directive:
+
 1. `false` (Equivalent to not specifying a scope): It will use its parent's scope
 2. `true` : It will create a new scope that inherits from the parent scope
 3. `{}` (Object literal) : An isolate scope, a new scope that doesn't inherit from the parent
@@ -169,6 +171,7 @@ We are going to use an isolate scope, which in most cases, gives you the best en
 ```
 
 `scope: { listOfAnimals: '=' }` tells Angular we are now expecting data from outside our directive to come into our directive. As you can see, we use an `'='` sign to signify we want 2-way data-binding to a model. Use this prefix and Angular will always expect a model on the other end. You have 2 more options to use:
+
 1. `'@'` : Text data-binding (1-way data-binding). Angular will always expect an expression
 2. `'&'` : Method-binding. Angular expects a function on the parent scope to bind to
 
