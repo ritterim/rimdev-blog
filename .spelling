@@ -6,7 +6,8 @@
 
 # "hougasian" Lowercase to match "@hougasian"
 hougasian
-
+Raygun
+HipChat
 RIMdev
 
 #
@@ -17,11 +18,13 @@ customizable
 i.e.
 prepend
 theming
+pre-built
 
 #
 # Technical
 #
-
+dev
+devs
 ASP.NET
 APIs
 azure-cli
@@ -45,3 +48,5 @@ url
 urls
 wontfix
 ZenHub
+1.x
+camelCase
