@@ -16,7 +16,7 @@ authors: Nathan White
 
 # Angular Prime Directive
 
-On my journey through the #RIMDev team, I've been maintaining a lot of Angular 1.x. I've had to learn through many mistakes, errors, and other "face-palm" moments. My relationship with the framework has been somewhat of a rollercoaster. I enjoyed every bit of it, don't get me wrong, but certain quirks seemed to keep laughing at me...
+On my journey through the #RIMdev team, I've been maintaining a lot of Angular 1.x . I've had to learn through many mistakes, errors, and other "face-palm" moments. My relationship with the framework has been somewhat of a rollercoaster. I enjoyed every bit of it, don't get me wrong, but certain quirks seemed to keep laughing at me...
 
 After some time,  I was able to help with most of our maintenance needs. One concept that I never understood, was the directive, though. We had some in our code base, but I had never had to touch them. They sat there, working away. Until *that* day came: I had to fix one.
 I had a new mentor to help me jump in feet first, and understand them.
@@ -126,7 +126,7 @@ angular.module('app', [])
 ...
 ```
 
-And back in the body of `index.html`, we replace the html with the directive:
+And back in the body of `index.html`, we replace the HTML with the directive:
 
 *Tip: Notice the name of the directive is camelCase and the element is kebab-case like most HTML elements*
 
