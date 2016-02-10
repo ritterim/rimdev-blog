@@ -3,7 +3,7 @@ layout: post
 title: Deploying Jekyll to Windows Azure App Services
 date: 2016-02-10 09:43:52
 image:  # if no image, color defaults dark blue
-description: a Kudu script that works!
+description: A Kudu script that works!
 tags:
 - Windows Azure
 - Kudu
@@ -43,7 +43,7 @@ command = deploy.cmd
 
 The `deploy.cmd` file does two things:
 
-- Call `getruby.cmd` and insures Ruby is installed
+- Call `getruby.cmd` and ensures Ruby is installed
 - Kudu sync the files from Jekyll under the `_site` directory
 
 ```text
@@ -149,7 +149,7 @@ echo Finished successfully.
 
 ### getruby.cmd
 
-The `getruby.cmd` file will download the latest version of Ruby and install it on your App Service instance. In addition to that, it will install all the dependencies in your `Gemfile` which I will have below. Finally, it will execute the `jekyll build` command via `bundler`.
+The `getruby.cmd` file will download the latest version of Ruby and install it on your App Service instance. In addition to that, it will install all the dependencies in your `Gemfile` which is below. Finally, it will execute the `jekyll build` command via `bundler`.
 
 ```text
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
@@ -235,7 +235,7 @@ gem 'github-pages'
 
 ## Deploying
 
-Once these files are committed to your repository, Kudu should deploy your site. Be patient during the first deployment, as it may tak up to 3 minutes to download and install Ruby. I found on my instance, after the Ruby installation, that generating a simple Jekyll site took less than 10 seconds. Obviously your results will vary depending on your site.
+Once these files are committed to your repository, Kudu should deploy your site. Be patient during the first deployment, as it may take up to 3 minutes to download and install Ruby. I found on my instance, after the Ruby installation, that generating a simple Jekyll site took less than 10 seconds. Obviously your results will vary depending on your site.
 
 ## Conclusion
 
