@@ -21,9 +21,27 @@ This step is pretty simple, and I am not going to rehash it here. If you don't k
 
 ## Step 2 : Setup Scripts
 
-I actually started with [Scott Hanselman's](http://www.hanselman.com/blog/RunningTheRubyMiddlemanStaticSiteGeneratorOnMicrosoftAzure.aspx) example but found a few issues with it. I upgraded the version of Ruby to the latest installer (2.2.4). All issues I had with the original script should now be fixed in the files below.
+I actually started with [Scott Hanselman's](http://www.hanselman.com/blog/RunningTheRubyMiddlemanStaticSiteGeneratorOnMicrosoftAzure.aspx) example but found a few issues with it. The two issues were located in the `getruby.cmd` file.
 
-You will need to create four files in your `git` repository, if they are not already there.
+First, I updated line #1 of the command file. The previous first line of `ECHO ON` was spitting out each line as if it were a command into the Azure Console output, which didn't end well for the deployment. Switching to the following fixed this problem.
+
+```text
+@if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
+```
+
+Secondly, I updated the creation script of the `tools` folder to be more defensive. Previously it couldn't find the tools folder to move into and create the `r` folder where Ruby will be installed.
+
+```text
+REM I am in the repository folder
+pushd D:\home\site\deployments
+if not exist tools md tools
+cd tools 
+if not exist r md r
+cd r 
+if exist ruby-2.2.4-x64-mingw32 goto end
+```
+
+ Finally, I upgraded the version of Ruby to the latest installer (2.2.4). All issues I had with the original script should now be fixed in the files below. Now that the scripts are updated, you will need to create four files in your `git` repository, if they are not already there.
 
 1. `.deployment`
 2. `getruby.cmd`
@@ -240,3 +258,5 @@ Once these files are committed to your repository, Kudu should deploy your site.
 ## Conclusion
 
 It took a little work to get this right. I thought the `Azure CLI` would have a Jekyll deployment template all ready for use, but it didn't. The nice thing about this deployment script is it will work for any Jekyll setup and is easy to modify if you need to add other steps. If you need more Ruby dependencies please use the `Gemfile` and it should just work. I hope you found this post helpful.
+
+**Side note: running the `deploy.cmd` from the Azure Console does not garauntee the environment variables will be the same as when Kudu runs the `deploy.cmd`. This can make it difficult to debug issues.**
