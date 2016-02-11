@@ -4,10 +4,11 @@
 # Proper Nouns
 #
 
+Hanselman
+HipChat
 # "hougasian" Lowercase to match "@hougasian"
 hougasian
 Raygun
-HipChat
 RIMdev
 
 #
@@ -23,6 +24,7 @@ pre-built
 #
 # Technical
 #
+deploy.cmd
 dev
 devs
 ASP.NET
@@ -30,7 +32,12 @@ APIs
 azure-cli
 CoreCLR
 burndown
+gemfile
+getruby.cmd
+https
 Hubot
+hubot-azure-alert-notifier
+hubot-github-issue-label-notifier
 IdentityServer
 IdentityServer3
 middleware

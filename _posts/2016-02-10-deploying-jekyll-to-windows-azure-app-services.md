@@ -13,7 +13,7 @@ twitter_text: 'Deploying #jekyll to #windowsazure app services'
 authors: Khalid Abuhakmeh
 ---
 
-As the development team at [Ritter Insurance Marketing](https://ritterim.com), we are leaning more on static site generation than ever. We have chosen [Jekyll](https://jekyllrb.com/) as our static site generator of choice. We actually host this blog on [GitHub](https://github.com) pages, but there are other marketing sites we manage that need to go through a more rigourous deployment cycle, Dev. to QA then to Prod, which doesn't fit well on GitHub. We also utilize [Windows Azure](https://windowsazure.com) for our production environment. To keep our apps consistent, I wanted to figure out how to deploy a Jekyll site from GitHub to Windows Azure App Services (Web Apps).
+As the development team at [Ritter Insurance Marketing](https://ritterim.com), we are leaning more on static site generation than ever. We have chosen [Jekyll](https://jekyllrb.com/) as our static site generator of choice. We actually host this blog on [GitHub](https://github.com) pages, but there are other marketing sites we manage that need to go through a more rigorous deployment cycle, Dev. to QA then to Prod, which doesn't fit well on GitHub. We also utilize [Windows Azure](https://windowsazure.com) for our production environment. To keep our apps consistent, I wanted to figure out how to deploy a Jekyll site from GitHub to Windows Azure App Services (Web Apps).
 
 ## Step 1 : Setup GitHub Deployment  
 
@@ -259,4 +259,4 @@ Once these files are committed to your repository, Kudu should deploy your site.
 
 It took a little work to get this right. I thought the `Azure CLI` would have a Jekyll deployment template all ready for use, but it didn't. The nice thing about this deployment script is it will work for any Jekyll setup and is easy to modify if you need to add other steps. If you need more Ruby dependencies please use the `Gemfile` and it should just work. I hope you found this post helpful.
 
-**Side note: running the `deploy.cmd` from the Azure Console does not garauntee the environment variables will be the same as when Kudu runs the `deploy.cmd`. This can make it difficult to debug issues.**
+**Side note: running the `deploy.cmd` from the Azure Console does not guarantee the environment variables will be the same as when Kudu runs the `deploy.cmd`. This can make it difficult to debug issues.**
