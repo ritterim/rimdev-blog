@@ -100,6 +100,8 @@ RIMdev:
     desc: Junior front end ninja
     twitter: comfroels
     github: comfroels
+  Team:
+    avatar: /assets/img/logos/RIMdev-icon-white.svg    
 
 nuget:
   - Sandbox
