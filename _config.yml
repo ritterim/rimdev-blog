@@ -87,7 +87,7 @@ RIMdev:
     avatar: https://avatars3.githubusercontent.com/u/2921868?v=3&s=460
     twitter:
     github: lightyeare
-   Beth Warner:
+  Beth Warner:
     avatar: https://avatars2.githubusercontent.com/u/1625929?v=3&s=400
     twitter:
     github: bwarner22
@@ -97,7 +97,7 @@ RIMdev:
     twitter: comfroels
     github: comfroels
   Team:
-    avatar: /assets/img/logos/RIMdev-icon-white.svg    
+    avatar: /assets/img/logos/RIMdev-icon-white.svg
 
 nuget:
   - Sandbox
