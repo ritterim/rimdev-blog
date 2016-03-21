@@ -1,0 +1,11 @@
+{% assign authorCount = page.authors | size %}
+
+{% if authorCount > 1 %}
+  {% for author in page.authors %}
+    {% if forloop.first %}
+      <a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+    {% else %}
+      |<a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+    {% endif %}
+  {% endfor %}
+{% endif %}

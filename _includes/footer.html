@@ -1,55 +1,16 @@
 <footer>
-  <section>
-    <div class="col-groups">
-      <h3>Where we can be found</h3>
-      <div class="column">
-        <i class="icon-twitter icon-lg"></i>
-        <ul>
-          {% for rimteam in site.RIMdev %}
-          {% for member in rimteam %}
-          {% if member.twitter %}
-          <li><a href="https://twitter.com/{{ member.twitter }}" title="@{{ member.twitter }}">@{{ member.twitter }}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="column">
-        <i class="icon-github icon-lg"></i>
-        <ul>
-          {% for rimteam in site.RIMdev %}
-          {% for member in rimteam %}
-          {% if member.github %}
-          <li><a href="https://github.com/{{ member.github }}" title="{{ member.name }}">{{ member.github }}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </ul>
-      </div>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
+        <li class="list-inline-item"><a target="_blank" href="{{ site.rim_blog }}">Ritter <i class="fa fa-commenting-o"></i></a></li>
+        <li class="list-inline-item"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed <i class="fa fa-rss"></i></a></li>
+        <li class="list-inline-item social"><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-lg twitter"></i></a></li>
+        <li class="list-inline-item social"><a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-lg github"></i></a></li>
+      </ul>
     </div>
-    <div class="col-groups">
-      <h3>Other things we're involved in</h3>
-      <div class="column">
-        <i class="icon-nuget icon-lg"></i>
-        <ul>
-          {% assign packages = site.nuget | sort %}
-          {% for package in packages %}
-          <li><a href="https://www.nuget.org/packages/RimDev.{{ package }}" title="{{ package }}">{{ package }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="column">
-        <i class="icon-ritter-horse icon-lg"></i>
-        <ul>
-          {% for services in site.ritter_links %}
-          <li><a href="{{ services.url }}" title="{{ services.service }}">{{ services.service }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="copy">
-    Copyright © {{ site.time | date: '%Y' }} All Rights Reserved. <span><a href="{{ site:rim }}">{{ site:rim_copy}}</a></span>
-  </section>
+    <div class="col-md-6">
+      &copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a target="_blank" href="{{ site.map_url}}"><i class="fa fa-map-marker text-danger"></i></a>
+    </div>    
+  </div><!-- /.row -->
 </footer>
-<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>

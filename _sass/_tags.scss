@@ -1,0 +1,31 @@
+.tags {
+  margin: 0 -3em;
+  .tag {
+    display: inline-block;
+    font-size: 100%;
+    margin: .3em;
+  }
+  .freshness {
+    text-align: left;
+    margin: 0;
+  }
+}
+a.tag {
+  @media print {display: none;}
+  color: $grey-light;
+  font-family: $font-body;
+  font-size: 85%;
+  background: $grey-lightest;
+  padding: .3em .5em;
+  @include border(null,$grey-lighter);
+  @include transition(all,.3s);
+  &:hover {
+    background: none;
+    color: lighten($link,10%);
+    @include border(null,lighten($link,10%));
+  }
+  // removes site-wide underline animation
+  &:before {
+    background: transparent;
+  }
+}

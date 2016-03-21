@@ -1,0 +1,54 @@
+// Author signature block
+author {
+  display: block;
+  @extend %clearfix;
+  section {
+    text-align: center;
+    display: block;
+    width: 50%;
+    @media (max-width: 765px) {
+      width: 100%;
+    }
+    margin: 1em auto;
+    img {
+      @include border-radius(50%);
+    }
+    a  {
+      // removes site-wide underline animation
+      &.fa:before {
+        background: transparent;
+      }
+    }
+    h3 {
+      font-family: "Work sans", sans-serif;
+      font-size: 1.2em;
+      font-weight: 300;
+      line-height: 1.3;
+      margin: 1em;
+      .fa:before {font-size: 90%;}
+      small {
+        font-weight: normal;
+        font-size: 85%;
+        display: block;
+        margin-top: .5em;
+        .fa:before {font-size: 110%;}
+      }
+    }
+  }
+}
+
+.avatar {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 35vh; //same as post-has-image
+  img {
+    border: 3px solid $color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -61px; //half 120px + half border
+    margin-left: -61px; //half total dim
+    // @include box-shadow(1px, 3px, 15px black);
+  }
+}

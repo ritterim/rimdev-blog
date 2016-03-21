@@ -1,0 +1,33 @@
+<div class="articles-sidebar">
+{% assign count = 10 %}
+{% assign totalPosts=site.posts | size %}
+
+{% for post in site.posts reversed limit:count %}
+  {% if post.url != page.url %}
+  <div class="post-articles">
+    <article>
+      <header>
+        <span class="article-number">{{ post.date | date: "%j" }}</span>
+        <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title | truncate:24}}</h3></a>
+      </header>
+      <author>
+        {% for author in post.authors %}
+        <div class="whitespace">
+          <img src="{{ site.RIMdev[author].avatar }}&s=22" alt="{{ author }}" />
+          <a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+        </div>
+        {% endfor %}
+      </author>
+      <p>
+        {{ post.content | markdownify | strip_html | truncate:120 }}
+      </p>
+      <div class="read-now">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          Read now
+        </a> <i class="fa fa-space-shuttle fa-lg"></i>
+      </div>
+    </article>
+  </div>
+  {% endif %}
+{% endfor %}
+</div><!-- /.articles-sidebar -->

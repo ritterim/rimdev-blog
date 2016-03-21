@@ -1,0 +1,25 @@
+.articles-more {
+  @media print {display: none;}
+  background: $color-white;
+  border: 1px solid $link;
+  color: $link;
+  margin-right: -160px;
+  padding: .6em .5em;
+  position: fixed;
+  text-align: left;
+  top: 50%;
+  right: 0;
+  width: 200px;
+  z-index: 1000;
+  @include transition(all,.3s,ease);
+  @include border-radius(5px,0,0,5px);
+  &:hover {
+    background: $link;
+    border-color: $link;
+    color: $color-white;
+    margin-right: -1px;
+    &:after {
+      content: " I have to read more!";
+    }
+  }
+}

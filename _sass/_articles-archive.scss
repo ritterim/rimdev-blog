@@ -1,0 +1,40 @@
+.articles-archive {
+  .logo {
+    img {
+      height: 4em;
+      margin-top: -2em;
+    }
+  }
+  .modal-body {
+    padding: 0 10%;
+  }
+  #search-container {
+    display: block;
+    margin-bottom: 4em;
+    #search-input {
+      border: none;
+      border-bottom: 2px solid $grey-lighter;
+      font-size: 200%;
+      padding: .5em 0;
+      width: 100%;
+    }
+    :placeholder-shown {
+      font-weight: 100;
+    }
+  }
+  .post-articles {
+    margin-top: 2em;
+  }
+  author {
+    border-top: 1px solid $grey-lighter;
+    border-bottom: 1px solid $grey-lighter;
+    padding: .3em 0;
+    margin-bottom: 1em;
+  }
+  h3 {
+    a {
+      font-weight: 100;
+      @include link-underline($color-blue-bright, 1px);
+    }
+  }
+}

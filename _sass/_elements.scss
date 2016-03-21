@@ -1,0 +1,93 @@
+// HTML elements only.
+// DO NOT include this file in a manifest if using with another framework, e.g., Bootstrap.
+
+html, body {height: 100%;}
+
+body {
+  font-family: $font--body, sans-serif;
+  font-weight: $font--body-weight;
+  line-height: $font--line-height;
+  @include font-size($font--base-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $grey-dark;
+  font-family: $font--headline, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 0.5em;
+}
+
+p,
+li,
+a,
+dd,
+dt,
+em {
+  font-family: $font--body, sans-serif;
+  @include font-size($font--base-size);
+  line-height: 1.8em;
+}
+
+a {
+  color: $link-active;
+  text-decoration: none;
+  @include transition(all,0.3s);
+  &:hover {text-decoration: underline;}
+}
+
+p a { text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+dl {
+  margin-left: 0;
+  padding-left: 0;
+  dt {
+    color: $msg--info-text;
+    font-weight: bold;
+    padding: 0.3em 0;
+  }
+  dd {
+    margin: 0;
+  }
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: $font--body, sans-serif;
+  letter-spacing: inherit;
+  -webkit-font-smoothing: inherit;
+}
+
+small {line-height: 0.1em;}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid lighten($grey-light,10%);
+  margin: 2em auto;
+  // Extends hr
+  &.hr {
+    text-align: center;
+    &--third {width: 75%;}
+    &--half {width: 50%;}
+    &--quarter {width: 25%;}
+  }
+}

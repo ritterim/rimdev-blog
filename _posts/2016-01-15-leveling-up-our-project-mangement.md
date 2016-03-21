@@ -20,7 +20,7 @@ twitter_text: 'Leveling Up Our Project Management'
 
 GitHub has always lacked organizational tools. The unit of work with GitHub is clearly the **repository**. Most teams work across multiple repositories. Gaining visibility across multiple repositories and projects was growing more difficult.
 
-We decided to adopt [ZenHub](https://zenhub.io) into our process as it gives us some much-needed features we intend to use: 
+We decided to adopt [ZenHub](https://zenhub.io) into our process as it gives us some much-needed features we intend to use:
 
 - Task Boards
 - Burndown Charts
@@ -53,7 +53,7 @@ We are using tools like [Sprinter](https://libraries.io/npm/sprinter) and [org-l
 
 We used [Windows Azure](http://windowsazure.com) staging slots for deployments for that same period, and we came to the realization they were not a good fit for us.
 
-1. Our staging slots were still pointing to the production databases. A deployment to the staging slot that included a database migration would adversely affect production. 
+1. Our staging slots were still pointing to the production databases. A deployment to the staging slot that included a database migration would adversely affect production.
 2. Multi-app solutions were deploying to multiple targets, each of which required swapping. Multi-app deployments would create a higher chance of missing a swap.
 
 We treat our `master` branch as the truth. The branch is what is in production at the time, and if any pull request gets merged into that branch, then it should be production ready.
@@ -66,7 +66,7 @@ We previously found that waiting for a completed milestone would keep us from de
 
 ## Welcome Our New Robot Overlords
 
-![rimbot - horse bot]({{ site.url }}/assets/img/rimbot.png)
+![rimbot - horse bot]({{ site.url }}/images/rimbot.jpg)
 
 We are currently customizing our version of [Hubot](https://hubot.github.com/) to serve the team, communicate important events, and perform tedious tasks. While [Slack](https://slack.com/) integrations are nice, and we do utilize them, we wanted that extra level of configuration.
 

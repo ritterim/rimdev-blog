@@ -1,0 +1,91 @@
+/// Main style sheet for ASG site
+html,
+body {height: 100%;}
+body {
+  font-family: $font-body;
+  font-weight: 300;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-headline;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { margin: 0.5em 0;}
+  h3,
+  h4,
+  h5,
+  h6 {font-weight: 400;}
+  h1,
+  h2 {font-weight: 100;}
+  h1,
+  h2,
+  h3 {line-height: 1.1;}
+  h1 {font-size: 3em;}
+  p,
+  li {
+    font-size: 1.2em;
+    line-height: 1.5;
+    a {font-size: 1em;}
+  }
+  ol li {margin-bottom: 1em;}
+  strong {font-weight: bolder;}
+  .container-fluid {
+    padding: 0;
+  }
+}
+
+// link color scheme
+a {
+  @include link-underline($link, 1px);
+}
+
+.social {
+  display: inline;
+  a {
+    // removes site-wide underline animation
+    &:before {
+      background: transparent;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid $grey-lighter;
+  &.half-rule {
+    width: 50%;
+  }
+}
+
+// Handles main layout
+.layout {
+  display: table;
+  height: 100%;
+  max-width: 100vw;
+  position: relative;
+  .post-main-column,
+  .articles-sidebar {
+    display: table-cell;
+    height: 100%;
+  }
+  .col {
+    position: relative;
+    margin-left: -1px;
+  }
+  .post-main-column {
+    border-left: 1px solid $grey-light;
+  }
+  .articles-sidebar {border-right: 1px solid $grey-light;}
+}
+
+.grey-lighter {color: $grey-lighter;}
+
+.whitespace {white-space: nowrap;}
+
+.fixed {position: fixed;}

@@ -1,0 +1,41 @@
+// main footer
+footer {
+  background: rgba($color-white,.95);
+  border-top: 1px solid $grey-light;
+  border-left: 1px solid $grey-lighter;
+  border-right: 1px solid $grey-lighter;
+  display: none;
+  width: 60%;
+  margin-left: -30%;
+  margin-bottom: -5px;
+  height: 5em;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 1000;
+  @include border-radius(5px);
+  .row {
+    display: block;
+    font-size: 1em;
+    @extend %vertical-center;
+  }
+  color: $grey;
+  li {
+    font-size: 1em;
+    &:not(.social) {
+      border-right: 1px solid $grey;
+      padding-right: .7em;
+    }
+    .social {
+      a {
+        &:before {
+          background: transparent;
+        }
+      }
+    }
+    a {
+      color: $grey;
+    }
+  }
+}

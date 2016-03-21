@@ -14,20 +14,18 @@ twitter_text: 'Angular Prime Directive: create prime Angular directives'
 authors: Nathan White
 ---
 
-# Angular Prime Directive
-
 On my journey through the #RIMdev team, I've been maintaining a lot of Angular 1.x . I've had to learn through many mistakes, errors, and other "face-palm" moments. My relationship with the framework has been somewhat of a rollercoaster. I enjoyed every bit of it, don't get me wrong, but certain quirks seemed to keep laughing at me...
 
 After some time,  I was able to help with most of our maintenance needs. One concept that I never understood, was the directive, though. We had some in our code base, but I had never had to touch them. They sat there, working away. Until *that* day came: I had to fix one.
 I had a new mentor to help me jump in feet first, and understand them.
 
-#### Why are they so confusing?
+## Why are they so confusing?
 
 I think I was not alone. Many beginners in the Angular world ask similar questions: What are directives? How do they help, I've lived without them so far? Why do you need to bring in a new concept? Directives are simple: they are a way to create custom HTML syntax that works for your specific application. The benefit? It groups small portions of your view with common functionality into a unit. Angular compiles your custom HTML and attaches functionality to the DOM node. So in short, it's some custom HTML. It breaks our application into smaller, more maintainable components (definitely not a new concept). So let's get to some code.
 
 Imagine we start with the following `index.html`, which produces a list of animals and counts how many times they speak:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -86,7 +84,7 @@ That's a lot of fuddled HTML in one file, which makes it hard to understand. Als
 
 First, let's create a new file `animal-list-directive.html`, and pull the following content out of our `index.html`:
 
-```HTML
+```html
 <h1>Animals</h1>
 <ul class="list-group">
   <li
@@ -130,7 +128,7 @@ And back in the body of `index.html`, we replace the HTML with the directive:
 
 *Tip: Notice the name of the directive is camelCase and the element is kebab-case like most HTML elements*
 
-```HTML
+```html
 ...
 <div class="container" ng-app="app">
   <div class="row" ng-controller="appCtrl">
@@ -177,7 +175,7 @@ We are going to use an isolate scope, which in most cases, gives you the best en
 
 So, we isolated our scope, but how do we pass in the data we need? We'll need to modify our `index.html`, and pass our animals from our parent scope :
 
-```HTML
+```html
 ...
 <div class="container" ng-app="app">
   <div class="row" ng-controller="appCtrl">
@@ -192,7 +190,7 @@ So, we isolated our scope, but how do we pass in the data we need? We'll need to
 
 And, quickly fix up our `animal-list-directive.html` to repeat over our new isolated scope variable:
 
-```HTML
+```html
 <h1>Animals</h1>
 <ul class="list-group">
   <li

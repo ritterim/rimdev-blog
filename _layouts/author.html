@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+{% if page.avatar != false %}
+<div class="avatar">
+  <img class="img-circle" src="{{ site.RIMdev[page.author].avatar }}&s=120" alt="{{ page.author }}" />
+</div>
+{% endif %}
+
+{% if page.image %}
+<div class="post-has-image">
+  <img src="{{ page.image }}" alt={{ page.author }}"" >
+</div>
+{% else %}
+<div class="post-has-image">
+  <img src="{{ site.default_image }}" alt="{{ page.author }}" >
+</div>
+{% endif %}
+
+<div class="authors-page">
+
+  <h1>Meet {{ page.author }}</h1>
+
+  {% if site.RIMdev[page.author].desc %}
+    {{ site.RIMdev[page.author].desc }}
+  {% endif %}
+
+  {{ content }}
+
+  {% for post in site.posts %}
+    {% for author in post.authors %}
+      {% if author == page.author %}
+      <div class="post-articles">
+        <article>
+          <header>
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          </header>
+          <author>
+            {% assign authorCount = post.authors | size %}
+
+            {% if authorCount > 1 %}
+              {% for author in post.authors %}
+                {% if forloop.first %}
+                  <a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+                {% else %}
+                  | <a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+
+            <div class="time-to-read text-muted">
+              {% assign content = post.content %}
+              {% include word-count.html %}
+              <i class="fa fa-book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " min read" }}
+
+            </div><!-- /.time-to-read -->
+          </author>
+          <p>
+            {{ post.content | markdownify | strip_html | truncate:200 }}
+          </p>
+          <ul class="list-inline">
+            {% for tags in post.tags %}
+            <li class="list-inline-item"><a class="tag" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a></li>
+            {% endfor %}
+          </ul>
+        </article>
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  <div class="social">
+    Find out more about {{ page.author }}
+    {% if site.RIMdev[page.author].twitter %}
+    <a href="https://twitter.com/{{ site.RIMdev[page.author].twitter }}" title="{{ site.RIMdev[page.author].twitter | prepend: "@"}}"><i class="fa fa-twitter fa-lg twitter"></i></a>
+    {% endif %}
+    {% if site.RIMdev[page.author].github %}
+    <a href="https://github.com/{{ site.RIMdev[page.author].github }}" title="{{ site.RIMdev[page.author].github }}"><i class="fa fa-github fa-lg github"></i></a>
+    {% endif %}
+  </div>
+
+
+</div>

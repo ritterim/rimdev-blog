@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="post-number">
+  {{ page.permalink | replace: "/","" | downcase }}
 </div>
+{% if page.image %}
+<div class="post-has-image">
+  <img src="{{ page.image }}" alt={{ page.title }}"" >
+</div>
+{% else %}
+<div class="post-has-image">
+  <img src="{{ site.default_image }}" alt="{{ page.title }}" >
+</div>
+{% endif %}
+
+<article>
+
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+
+</article>
