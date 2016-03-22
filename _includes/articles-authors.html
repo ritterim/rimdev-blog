@@ -1,5 +1,7 @@
+{% if post.authors %}
+  {% assign page = post %}
+{% endif %}
 {% assign authorCount = page.authors | size %}
-
 {% if authorCount > 1 %}
   {% for author in page.authors %}
     {% if forloop.first %}

@@ -1,6 +1,6 @@
 # rimdev.io
 
-A new RIMdev jekyll experience. Minimal, focused on reading content. 
+A new RIMdev jekyll experience. Minimal, focused on reading content.
 
 Photography by JJ Walck
 
@@ -47,22 +47,26 @@ layout: post
 title: "How to use"
 authors: <Your name here>
 date: 2015-08-03 03:32:44
-image: '/images/my-great-image.jpg'
+image: "/images/my-great-image.jpg"
 tags:
-- jekyll 
-- template 
+- jekyll
+- template
 categories:
 - I love Jekyll
-twitter_text: 'How to install and use this template'
+twitter_text: "How to install and use this template"
 ---
 ```
 If the page has no image, `image:` can be omitted entirely. A default system image will be used.
 
 > TAGS: Check existing Tags [here](http://rimdev.io/tags/) before creating new ones
 
-**For a multiple author post:**
+**The difference between single and multiple authors:**
 
 ```
+# single author
+authors: <author name>
+
+# multiple authors
 authors:
 - <First author>
 - <Second author>

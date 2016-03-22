@@ -2,7 +2,8 @@
   .social {
     display: block;
     text-align: center;
-    padding: 1em 0 3em 0;
+    padding: 1em;
+    @include border-radius(5px);
   }
   article {
     header {

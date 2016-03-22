@@ -2,7 +2,6 @@
 .freshness {
   @media print {display: none;}
   cursor: hand;
-  width: 100%;
   text-align: center;
   margin: 2em 0;
   @extend %clearfix;
