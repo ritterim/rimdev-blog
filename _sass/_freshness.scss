@@ -9,6 +9,8 @@
   @include transition(all, .3s);
 }
 
+.freshness-icon {text-align: left;}
+
 .freshness-hover {
   background: $color-white;
   border: 1px solid $color-blue-bright;
