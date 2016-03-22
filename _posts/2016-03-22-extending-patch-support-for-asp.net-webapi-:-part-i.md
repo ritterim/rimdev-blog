@@ -10,7 +10,7 @@ tags:
 - WebAPI
 - ASP.NET
 - REST
-twitter_text: Extending PATCH Support For ASP.NET WebAPI : Part I
+twitter_text: Extending PATCH Support For ASP.NET WebAPI Part I
 authors: 
 - Khalid Abuhakmeh
 - Bill Boga
