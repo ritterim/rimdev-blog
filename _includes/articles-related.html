@@ -16,7 +16,7 @@ Show related reading based on tags. If no related tags, show previous and next a
       {% if page.tags contains tag %}
 
       {% assign sameTagCount = sameTagCount | plus: 1 %}
-      {% capture tagmarkup %} <a class="tag" href="">{{ tag }}</a> {% endcapture %}
+      {% capture tagmarkup %} <a class="tag" href="{{ post.url }}">{{ tag }}</a> {% endcapture %}
       {% assign commonTags = commonTags | append: tagmarkup %}
 
       {% endif %}
