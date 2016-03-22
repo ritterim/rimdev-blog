@@ -1,3 +1,23 @@
+---
+layout: post
+title: "Extending PATCH Support For ASP.NET WebAPI : Part I"
+date: 2016-03-22 11:00:00
+image:  
+    src: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
+    url : https://www.flickr.com/photos/khawkins04/
+    credit : Ken Hawkins
+description:
+tags:
+- WebAPI
+- ASP.NET
+- REST
+categories:
+twitter_text:
+authors: 
+- Khalid Abuhakmeh
+- Bill Boga
+---
+
 When it comes to HTTP verbs, there is no verb more controversial than `PATCH`. How, when, and why to use this verb is up to each implementor. In addition to being controversial, it is often overlooked as an option for ASP.NET developers due to a lack of consistent approach in the ASP.NET WebAPI framework. What is `PATCH`, and what does a client expect the behavior to be? 
 
 > The HTTP methods PATCH can be used to update partial resources. For instance, when you only need to update one field of the resource, PUTting a complete resource representation might be cumbersome and utilizes more bandwidth
