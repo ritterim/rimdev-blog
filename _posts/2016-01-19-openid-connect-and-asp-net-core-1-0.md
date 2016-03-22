@@ -8,11 +8,11 @@ tags:
   - ASP.NET Core 1.0
   - rc1-update1
 categories: Development
-twitter_text: OpenID Connect with @aspnet #aspnetvnext @openid
+twitter_text: OpenID Connect with @aspnet
 authors: Bill Boga
 ---
 
-***Please note this information is current as of ASP.NET Core 1.0 RC1.***
+**Please note this information is current as of ASP.NET Core 1.0 RC1.**
 
 ## Introduction
 

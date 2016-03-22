@@ -1,0 +1,24 @@
+.articles-footer {
+  [class*="col"] {border: none;}
+  hr {
+    margin: 2em auto;
+  }
+  time {
+    color: $grey-light;
+    display: block;
+    margin: 3em auto;
+    text-align: center;
+  }
+  .post-footer {
+    @media print {display: none;}
+    text-align: center;
+    margin-top: 3em;
+    author {
+      img {
+        display: inline;
+        margin: initial;
+      }
+      @extend author;
+    }
+  }
+}

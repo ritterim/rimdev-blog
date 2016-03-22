@@ -1,0 +1,83 @@
+---
+# Main SASS manifest
+---
+// Greyscale
+$grey:          #999;
+$grey-dark:     #333;
+$grey-light:    #ccc;
+$grey-lighter:  #efefef;
+$grey-lightest: #f9f9f9;
+$grey-header:   #eee;
+
+$color-white:   white;
+
+// Theme colors
+$color-green:    #22bbaf;
+$color-grey:     #454545;
+$color-blue:     cadetblue;
+$color-blue-rgba: rgba($color-blue, 0.9);
+$color-blue-bright: lighten(dodgerblue, 20%);
+
+// Frehness scale
+$new:     limegreen;
+$old:     green;
+$stale:   olive;
+$rubbish: saddlebrown;
+
+$bootstrap-green: #5cb85c;
+
+$border-color: $grey-lighter;
+
+// Links
+$link:        chocolate;
+
+// Social colors
+$twitter:    #00aced;
+$facebook:   #3b5998;
+$googleplus: #dd4b39;
+$pinterest:  #cb2027;
+$linkedin:   #007bb6;
+$youtube:    #bb0000;
+$vimeo:      #aad450;
+$instagram:  #517fa4;
+$github: #333;
+
+// Fonts
+$font-body:     "Work sans", sans-serif;
+$font-headline: "Roboto slab", serif;
+
+/// Load SASS files
+
+@charset "utf-8";
+
+// Import Font Awesome here
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+// Load mixins manifest
+@import "mixins/mixins";
+@import "mixins/extends";
+@import "mixins/bootstrap-mods";
+
+// Load code and syntax
+@import "code";
+// @import "syntax-highlighting";
+@import "solarized-dark";
+
+//Load layout
+@import "layout";
+@import "articles-main";
+@import "articles-sidebar";
+@import "articles-footer";
+@import "articles-related";
+@import "articles-archive";
+@import "articles-more";
+@import "tags";
+@import "author";
+@import "authors-page";
+@import "footer";
+@import "share";
+@import "social";
+@import "freshness";
+@import "time-to-read";
+@import "disqus";
+@import "modals";

@@ -1,0 +1,5 @@
+<ul class="list-inline">
+  {% for tags in page.tags %}
+  <li class="list-inline-item"><a class="tag" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a></li>
+  {% endfor %}
+</ul>

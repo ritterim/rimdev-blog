@@ -1,37 +1,41 @@
 ---
-layout: minimal
-title: "#Tags"
-image: '/assets/img/annex-bill-01.jpg'
-permalink: /tags/index.html
-description: "Search for content by tags. They actually come in handy...(this is Bill btw)"
+layout: page
+title: tag, you're it!
+permalink: /tags/
 ---
-
 <div class="tags">
-{% assign tags_list = site.tags %}
-  {% if tags_list.first[0] == null %}
-    {% for tag in tags_list %}
-        <a data-scroll href="#{{ tag }}">{{ tag }}</a>
-    {% endfor %}
-  {% else %}
-    {% for tag in tags_list %}
-        <a data-scroll href="#{{ tag[0] }}">{{ tag[0] }}</a>
-    {% endfor %}
-  {% endif %}
-{% assign tags_list = nil %}
-</div>
+  <ul class="list-inline">
+  {% assign tags_list = site.tags %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %}
+        <li class="list-inline-item"><a class="tag" href="#{{ tag }}" title="{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %}
+        <li class="list-inline-item"><a class="tag" href="#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a></li>
+      {% endfor %}
+    {% endif %}
+  {% assign tags_list = nil %}
+  </ul>
 
-{% for tag in site.tags  %}
-    <span class="tag-title" id="{{ tag[0] }}">{{ tag[0] }}</span>
-    <ul class="post-list">
-        {% assign pages_list = tag[1] %}
-        {% for post in pages_list reversed %}
-            {% if post.title != null %}
-            {% if group == null or group == post.group %}
-            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        {% assign pages_list = nil %}
-        {% assign group = nil %}
+  {% for tag in site.tags  %}
+    <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+    <ul class="list-unstyled">
+      {% assign pages_list = tag[1] %}
+      {% for post in pages_list reversed %}
+        {% if post.title != null %}
+        {% if group == null or group == post.group %}
+        <li class="freshness-icon">
+            {% assign page = post %}
+            {% include freshness.html %}
+            <i class="fa fa-heartbeat {{ class }}"></i>
+          <a href="{{ post.url | prepend: site-url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% assign pages_list = nil %}
+      {% assign group = nil %}
     </ul>
-{% endfor %}
+  {% endfor %}
+</div>

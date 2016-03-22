@@ -4,7 +4,7 @@ title: "Add And Update GitHub Tags With Node.js"
 date: 2016-01-22 12:36:45
 image:  # if no image, color defaults dark blue
 description:
-tags: 
+tags:
 - NodeJs
 - GitHub
 categories:
@@ -33,10 +33,10 @@ var githubApi = "https://api.github.com";
 
 var apiToken = ""; // your api token
 var defaultOwner = ""; // your account / organization
-// all the repositories 
+// all the repositories
 var repositories = [
     // { name : "", owner : "" }
-    { name : "test-labels" } 
+    { name : "test-labels" }
 ];
 // the labels
 // target is used to "replace"
@@ -54,7 +54,7 @@ function getOwner(repo) {
 }
 
 repositories.forEach(function (repo) {
-      
+
    var labelsUrl =`${githubApi}/repos/${getOwner(repo)}/${repo.name}/labels`;
 
    // get existing labels on repository   
@@ -64,8 +64,8 @@ repositories.forEach(function (repo) {
         .headers("User-Agent", "script")
         .end(function (response) {
             var repoLabels = response.body;
-            console.log(`successfully retrieved ${repoLabels.length} labels from ${repo.name}`); 
-                      
+            console.log(`successfully retrieved ${repoLabels.length} labels from ${repo.name}`);
+
             // loop through labels
             // - If label doesn't exist create it
             // - If label exists and has replaces, replace it
@@ -74,8 +74,8 @@ repositories.forEach(function (repo) {
                 var exists = repoLabels
                     .findIndex(x => x.name.toLowerCase() === label.name.toLowerCase()) > -1;
                 var targetExists = repoLabels
-                    .findIndex(x => x.name.toLowerCase() === label.target.toLowerCase()) > -1; 
-                    
+                    .findIndex(x => x.name.toLowerCase() === label.target.toLowerCase()) > -1;
+
                 var updateLabel = function(name) {
                      unirest.patch(`${labelsUrl}/${name}`)
                         .headers("Authorization", `Token ${apiToken}`)
@@ -86,7 +86,7 @@ repositories.forEach(function (repo) {
                             console.log(`succesfully UPDATED ${name} on ${repo.name}.`)
                         });  
                 }; // updateLabel
-                                                                           
+
                 if (targetExists) {                                             
                    updateLabel(label.target);                                         
                 }                
@@ -103,15 +103,15 @@ repositories.forEach(function (repo) {
                             console.log(`succesfully ADDED ${label.name} on ${repo.name}.`)
                         });    
                 }          
-            }); // labels forEach 
+            }); // labels forEach
    });
 }); // repositories forEach
-``` 
+```
 
 Save this script, make the necessary modifications, and then run it via the command line.
 
-```console
+```
 $ node app.js
 ```
 
-Hope the script helps other teams looking to normalize the tags across their GitHub repositories. 
+Hope the script helps other teams looking to normalize the tags across their GitHub repositories.

@@ -2,13 +2,11 @@
 layout: post
 title: "build.cmd: Our Consistent Build Script for Continuous Integration Using TeamCity"
 date: 2016-03-16 13:00:00
-description: What's that? It's Tim Graham saying "consistency is key".
 tags:
 - Build
 - TeamCity
 - Windows
-authors:
-- Ken Dale
+authors: Ken Dale
 categories:
 twitter_text: 'build.cmd: Our Consistent Build Script for Continuous Integration Using TeamCity'
 ---

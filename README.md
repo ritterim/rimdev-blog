@@ -1,18 +1,27 @@
-## rimdev-blog
+# rimdev.io
 
-Customized based on [Will Jekyll Template](https://github.com/willianjusten/will-jekyll-template/)
+A new RIMdev jekyll experience. Minimal, focused on reading content.
 
-## Basic Setup
+Photography by JJ Walck
+
+## Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
 2. Fork the [RIMdev blog](https://github.com/ritterim/rimdev-blog/fork)
 3. Clone the repo you just forked.
-4. Run `npm install` in the cloned folder.
-7. **Remember to compile your assets files with Gulp.**
+4. `jekyll s`
 
 ## Tests
 
 Tests are ran with `npm test`. Currently, this is a spelling check of posts. This can done interactively as well with `npm run check`.
+
+## New in this release
+
+- Jekyll 3 ([faster](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), [release notes](https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/))
+- [Bootstrap 4 (Alpha 2)](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
+- [Jekyll @mentions](https://github.com/jekyll/jekyll-mentions)
+- [Jekyll gist](https://github.com/jekyll/jekyll-gist) support
+- author pages (see below)
 
 ## Creating posts
 
@@ -28,7 +37,7 @@ When you're done, run `npm run check` to check it over.
 
 ## Front-matter
 
-### Authors
+### Posts
 
 When you create a new post, you need to fill the post information in the front-matter, follow this example:
 
@@ -36,37 +45,50 @@ When you create a new post, you need to fill the post information in the front-m
 ---
 layout: post
 title: "How to use"
-author: <Your name here>
+authors: <Your name here>
 date: 2015-08-03 03:32:44
-image: '/assets/img/post-image.png'
-description: 'First steps to use this template'
+image: "/images/my-great-image.jpg"
 tags:
-- jekyll 
-- template 
+- jekyll
+- template
 categories:
 - I love Jekyll
-twitter_text: 'How to install and use this template'
+twitter_text: "How to install and use this template"
 ---
 ```
+If the page has no image, `image:` can be omitted entirely. A default system image will be used.
 
-> Note: No image for `image: '/assets/img/post-image.png'` will result in a solid color
+> TAGS: Check existing Tags [here](http://rimdev.io/tags/) before creating new ones
 
-For a multiple author post:
+**The difference between single and multiple authors:**
 
 ```
-author:
+# single author
+authors: <author name>
+
+# multiple authors
+authors:
 - <First author>
 - <Second author>
 ```
 
-### Social accounts
+### Author pages
 
-If one of your social accounts is not listed, please add in _config.yaml. 
+```
+---
+layout: author
+author: Bill Boga
+permalink: /bill-boga/
+image: /images/default/annex-billboga.jpg
+avatar: false
+---
+```
+The last 2 items are optional; If the page has no image, `image:` can be omitted entirely. A default system image will be used. You only need to include `avatar: false` if omitting your avatar.
 
-## Running the blog in local
+## Running the blog locally
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+Create a local config file `_config.local.yml` with the single entry `url: http://localhost:4000` (unless you're running a different port via `--port <port number>`)
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install` 
-- Run `gulp`
+```
+jekyll s --config _config.yml,_config.local.yml
+```

@@ -2,7 +2,6 @@
 layout: post
 title: Deploying Jekyll to Windows Azure App Services
 date: 2016-02-10 09:43:52
-image:  # if no image, color defaults dark blue
 description: A Kudu script that works!
 tags:
 - Windows Azure
@@ -35,9 +34,9 @@ Secondly, I updated the creation script of the `tools` folder to be more defensi
 REM I am in the repository folder
 pushd D:\home\site\deployments
 if not exist tools md tools
-cd tools 
+cd tools
 if not exist r md r
-cd r 
+cd r
 if exist ruby-2.2.4-x64-mingw32 goto end
 ```
 
@@ -179,9 +178,9 @@ SET PATH=%PATH%;D:\home\site\deployments\tools\r\ruby-2.2.4-x64-mingw32\bin
 REM I am in the repository folder
 pushd D:\home\site\deployments
 if not exist tools md tools
-cd tools 
+cd tools
 if not exist r md r
-cd r 
+cd r
 if exist ruby-2.2.4-x64-mingw32 goto end
 
 echo No Ruby, need to get it!

@@ -1,0 +1,33 @@
+// code formatting
+.layout {
+  pre {
+    // compensates for long code line wraps
+    max-width: 70vw;
+    @include transition(all,.2s);
+    @media (max-width: 991px) {
+      max-width: 85vw;
+    }
+  }
+}
+
+pre,
+code {
+}
+code {
+  font-size: 75%;
+  padding: 0.3em;
+}
+
+pre {
+  padding: 2em;
+  margin: 3em 0;
+  max-width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    white-space: pre;
+  }
+}

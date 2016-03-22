@@ -1,0 +1,104 @@
+// Articles sidebar (acting as nav)
+.articles-sidebar {
+  .post-articles {
+    @media print {display: none;}
+    overflow: hidden;
+    @include border(bottom, $grey-light);
+    @include transition(all,.3s);
+    &:last-child {
+      border-bottom: none;
+    }
+    author {
+      img {
+        @include border-radius(50%);
+        @include blur-img(3px);
+        @include opacity(.2,2);
+        @include transition(all,.1s);
+      }
+      @extend author;
+      @include transition(all,.1s);
+    }
+    // blur
+    p,
+    author a {
+      color: transparent;
+      font-size: 1em;
+      @include blur($grey);
+    }
+    &:hover {
+      background: $color-white;
+      h3 {color: $color-blue-bright;}
+      .article-number {color: $grey;}
+      p {text-shadow: none;}
+      p {color: inherit;}
+
+      author {
+        @include opacity(1,10);
+        a {
+          text-shadow: none;
+          color: $link;
+        }
+      }
+      img {
+        @include blur-img(0);
+        @include opacity(1,10);
+      }
+    }
+    header {
+      a {
+        h3 {
+          @include link-underline($color-blue-bright, 1px);
+          color: lighten($color-blue-bright, 10%);
+          font-size: 1.5em;
+          font-weight: lighter;
+          @include transition(all, 0.1s);
+        }
+      }
+      .article-number {
+        color: $grey-lighter;
+        float: right;
+        font-size: 1.5em;
+        margin-top: -1.3em;
+        margin-right: -1em;
+        @include transition(all, 0.1s);
+      }
+    }
+    article {
+      header,
+      author,
+      p,
+      .read-now {
+        padding: 0 3em;
+      }
+      header {
+        padding-top: 3em;
+      }
+      author {
+        padding-bottom: 1em;
+      }
+      .read-now {
+        color: transparent;
+        padding-bottom: 1em;
+        position: relative;
+        left: 0;
+        @include transition(all,.1s);
+        a {
+          color: transparent;
+        }
+      }
+      &:hover {
+        .read-now {
+          left: 60%;
+          @media (min-width: 991px) {
+            left: 50%;
+          }
+          color: $grey-light;
+          a {
+            color: $grey-light;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

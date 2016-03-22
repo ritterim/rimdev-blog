@@ -1,18 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body>
-  {% include header-post.html %}
-  <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+---
+layout: default
+---
+<div class="post-number">
+  {{ page.date | date: "%y.%j" }}
+</div>
+{% if page.image %}
+<div class="post-has-image">
+  <img src="{{ page.image }}" alt={{ page.title }}"" >
+</div>
+{% else %}
+<div class="post-has-image">
+  <img src="{{ site.default_image }}" alt="{{ page.title }}" >
+</div>
+{% endif %}
 
-    <article role="article" id="scroll" class="post-content" itemprop="articleBody">
-      {{ content }}
-    </article>
+<article>
 
-    {% include share.html %}
-    {% include author.html %}
-    {% include comments.html %}
-    {% include footer.html %}
-  </section>
-</body>
-</html>
+  <h1>{{ page.title }}</h1>
+
+  <div class="author">
+    Written by
+    {% include articles-authors.html %}
+    <div class="time-to-read text-muted">
+      {% include word-count.html %}
+      <i class="fa fa-book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " minute read" }}
+
+    </div><!-- /.time-to-read -->
+  </div><!-- /.author -->
+
+  <div class="freshness text-muted">
+    {% include freshness.html %}
+    <i class="fa fa-heartbeat {{ class }}"></i> <em>This post is {{ freshness }} days old.</em>
+  </div>
+
+  {{ content }}
+
+  {% include articles-footer.html %}
+
+</article>
+
+{% include articles-related.html %}
+{% include disqus.html %}

@@ -7,8 +7,7 @@ description: 'A few quick steps to get Jekyll working.'
 tags:
 - Jekyll
 - Windows
-authors:
-- Ken Dale
+authors: Ken Dale
 categories:
 - OSS
 twitter_text: 'Jekyll on Windows: A Quickstart Guide'

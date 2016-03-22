@@ -1,0 +1,23 @@
+.authors-page {
+  .social {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    @include border-radius(5px);
+  }
+  article {
+    header {
+      h3 a {
+        font-weight: 100;
+        margin-top: 1.5em;
+        @include link-underline($color-blue-bright, 1px);
+      }
+    }
+    author {
+      border-top: 1px solid $grey-lighter;
+      border-bottom: 1px solid $grey-lighter;
+      padding: .3em 0;
+      margin-bottom: 1em;
+    }
+  }
+}

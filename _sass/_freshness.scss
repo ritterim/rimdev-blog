@@ -1,0 +1,43 @@
+// article freshness rating
+.freshness,
+.freshness-icon {
+  @media print {display: none;}
+  cursor: hand;
+  text-align: center;
+  margin: 2em 0;
+  @extend %clearfix;
+  @include transition(all, .3s);
+}
+
+.freshness-icon {text-align: left;}
+
+.freshness-hover {
+  background: $color-white;
+  border: 1px solid $color-blue-bright;
+  color: $color-blue-bright;
+  margin-right: -350px;
+  margin-top: -30px;
+  padding: 1em;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 350px;
+  z-index: 1000;
+  @include transition(all,.3s,ease);
+  @include border-radius(5px,0,0,5px);
+  p {font-size: 100%;}
+  strong {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 110%;
+  }
+}
+
+.hover-out {
+  margin-right: -5px;
+}
+
+.new {color: $new;}         // 0-30 days old
+.old {color: $old;}         // 31-190
+.stale {color: $stale;}     // 191-365
+.rubbish {color: $rubbish;} // 365+

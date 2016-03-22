@@ -1,0 +1,12 @@
+.share {
+  @media print {display: none;}
+  color: $grey-light;
+  border: none;
+  font-size: 85%;
+  a {
+    // removes site-wide underline animation
+    &:before {
+      background: transparent;
+    }
+  }
+}
