@@ -25,7 +25,7 @@ permalink: /tags/
       {% for post in pages_list reversed %}
         {% if post.title != null %}
         {% if group == null or group == post.group %}
-        <li class="freshness">
+        <li class="freshness-icon">
             {% assign page = post %}
             {% include freshness.html %}
             <i class="fa fa-heartbeat {{ class }}"></i>

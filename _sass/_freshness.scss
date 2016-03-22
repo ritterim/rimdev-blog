@@ -1,5 +1,6 @@
 // article freshness rating
-.freshness {
+.freshness,
+.freshness-icon {
   @media print {display: none;}
   cursor: hand;
   text-align: center;
