@@ -8,7 +8,7 @@
     <article>
       <header>
         <span class="article-number">{{ post.date | date: "%j" }}</span>
-        <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title | truncate:24}}</h3></a>
+        <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title | truncate:52}}</h3></a>
       </header>
       <author>
         {% for author in post.authors %}
