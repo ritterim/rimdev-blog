@@ -2,7 +2,7 @@
 {% assign count = 10 %}
 {% assign totalPosts=site.posts | size %}
 
-{% for post in site.posts reversed limit:count %}
+{% for post in site.posts limit:count %}
   {% if post.url != page.url %}
   <div class="post-articles">
     <article>
