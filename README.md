@@ -35,6 +35,14 @@ The new file will be created at `_posts` with this format `date-title.md`.
 
 When you're done, run `npm run check` to check it over.
 
+### Adding an image
+
+Adding an image is easy enough, remember to add the Bootstrap 4 responsive image class `.img-fluid`. If you want to add a light border, use `{: .img-fluid .border}`
+
+```
+[ Your image description, i.e., alt tag content ]( /path/to/image.jpg ){: .img-fluid }
+```
+
 ## Front-matter
 
 ### Posts

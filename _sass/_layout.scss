@@ -34,7 +34,7 @@ body {
     a {font-size: 1em;}
   }
   ol li {margin-bottom: 1em;}
-  strong {font-weight: bolder;}
+  // strong {font-weight: bolder;}
   .container-fluid {
     padding: 0;
   }
@@ -84,8 +84,29 @@ hr {
   .articles-sidebar {border-right: 1px solid $grey-light;}
 }
 
+.border {border: 1px solid $grey-lighter;}
+
 .grey-lighter {color: $grey-lighter;}
 
 .whitespace {white-space: nowrap;}
 
 .fixed {position: fixed;}
+
+blockquote {
+  p {
+    color: $grey;
+    display: block;
+    font-size: 120%;
+    font-style: italic;
+    padding: 2em 3em;
+    &:before {
+      color: $color-blue-bright;
+      content: "\f10d";
+      font-family: "fontawesome";
+      font-size: 150%;
+      margin-left: -1.5em;
+      padding-right: .5em;
+      @include opacity(.5,5);
+    }
+  }
+}

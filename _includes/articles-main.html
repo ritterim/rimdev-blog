@@ -1,9 +1,13 @@
 <div class="post-number">
-  {{ page.date | date: "%y.%j" }}
+  {% if page.date %}{{ page.date | date: "%y.%j" }}{% else %}{{ post.date | date: "%y.%j" }}{% endif %}
 </div>
 {% if page.image %}
 <div class="post-has-image">
   <img src="{{ page.image }}" alt={{ page.title }}"" >
+</div>
+{% elsif post.image %}
+<div class="post-has-image">
+  <img src="{{ post.image }}" alt={{ page.title }}"" >
 </div>
 {% else %}
 <div class="post-has-image">
