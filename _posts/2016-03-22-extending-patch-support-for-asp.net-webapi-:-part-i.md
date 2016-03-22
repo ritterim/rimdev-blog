@@ -36,7 +36,7 @@ While we will follow this post up with actual implementation details on **how** 
 Let's start with the controller action.
 
 ```csharp
-[HttpPut]
+[HttpPatch]
 public IHttpActionResult Patch(AddressPatchRequest request) 
 {
     var address = db.Addresses.Find(request.Id);
@@ -58,6 +58,8 @@ public class AddressPatchRequest : AbstractPatchStateRequest<AddressPatchRequest
 {
     public AddressPatchRequest()
     {
+        // These map our request to the target
+        // currently in this example it is conventional by name        
         AddPatchStateMapping(x => x.City);
         AddPatchStateMapping(x => x.IsPrimary);
         AddPatchStateMapping(x => x.StateAbbreviation);
@@ -65,6 +67,8 @@ public class AddressPatchRequest : AbstractPatchStateRequest<AddressPatchRequest
         AddPatchStateMapping(x => x.Street2);
         AddPatchStateMapping(x => x.Type);
         AddPatchStateMapping(x => x.ZipCode);
+        // but we can specify a different mapping 
+        // AddPatchStateMapping(x => x.ZipCode, x => x.Zip.PostalCode);
     }
 
     public int Id { get; set; }
