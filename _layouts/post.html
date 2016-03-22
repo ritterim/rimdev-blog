@@ -6,7 +6,14 @@ layout: default
 </div>
 {% if page.image %}
 <div class="post-has-image">
+  {% if page.image.src %}
+  <div class="photo-credit">
+    Image <span>CC</span> <a href="{{ page.image.url }}">{{ page.image.credit }}</a>
+  </div>
+  <img src="{{ page.image.src }}" alt={{ page.title }}"" >
+  {% else %}
   <img src="{{ page.image }}" alt={{ page.title }}"" >
+  {% endif %}
 </div>
 {% else %}
 <div class="post-has-image">

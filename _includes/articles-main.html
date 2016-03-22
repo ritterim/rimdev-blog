@@ -1,17 +1,21 @@
 <div class="post-number">
   {% if page.date %}{{ page.date | date: "%y.%j" }}{% else %}{{ post.date | date: "%y.%j" }}{% endif %}
 </div>
-{% if page.image %}
+
+{% if post.image %}
 <div class="post-has-image">
-  <img src="{{ page.image }}" alt={{ page.title }}"" >
-</div>
-{% elsif post.image %}
-<div class="post-has-image">
-  <img src="{{ post.image }}" alt={{ page.title }}"" >
+  {% if post.image.src %}
+  <div class="photo-credit">
+    Image <span>CC</span> <a href="{{ post.image.url }}">{{ post.image.credit }}</a>
+  </div>
+  <img src="{{ post.image.src }}" alt={{ post.title }}"" >
+  {% else %}
+  <img src="{{ post.image }}" alt={{ post.title }}"" >
+  {% endif %}
 </div>
 {% else %}
 <div class="post-has-image">
-  <img src="{{ site.default_image }}" alt="{{ page.title }}" >
+  <img src="{{ site.default_image }}" alt="{{ post.title }}" >
 </div>
 {% endif %}
 

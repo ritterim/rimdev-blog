@@ -79,6 +79,16 @@ authors:
 - <First author>
 - <Second author>
 ```
+### CC Attribution blog images
+
+Using a Creative Commons image requiring attribution?
+
+```
+image:
+    src: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
+    url : https://www.flickr.com/photos/khawkins04/
+    credit : Ken Hawkins
+```  
 
 ### Author pages
 
