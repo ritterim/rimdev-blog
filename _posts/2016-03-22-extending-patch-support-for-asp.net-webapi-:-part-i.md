@@ -27,7 +27,7 @@ When it comes to HTTP verbs, there is no verb more controversial than `PATCH`. H
 2. We want to hook into the ASP.NET WebAPI pipeline.
 3. We need to know *which* properties were *"bound"*.
 4. We wanted to leverage the *"bound"* knowledge to execute our validation selectively (powered by [FluentValidation](https://github.com/JeremySkinner/FluentValidation)) and `Patch` mapping.
-5. Keep our controller actions thin.
+5. We wanted to keep our controller actions thin.
 
 ## Basic Implementation
 
