@@ -47,9 +47,6 @@ DIST_FOLDER="$POSTPATH"
 
 # Set your blog URL
 BLOG_URL="http://rimdev.io"
-
-# Set your assets URL
-ASSETS_URL=" # if no image, color defaults dark blue"
 # ----------------------------------------------------------------
 
 
@@ -113,8 +110,6 @@ echo "---"
 echo "layout: post"
 echo "title: \"${POST_TITLE}\""
 echo "date: ${CURRENT_DATE} ${TIME}"
-echo "image: ${ASSETS_URL}"
-echo "description:"
 echo "tags:"
 echo "categories:"
 echo "twitter_text:"
