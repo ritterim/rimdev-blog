@@ -6,13 +6,11 @@ image:
     src: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
     url : https://www.flickr.com/photos/khawkins04/
     credit : Ken Hawkins
-description:
 tags:
 - WebAPI
 - ASP.NET
 - REST
-categories:
-twitter_text:
+twitter_text: Extending PATCH Support For ASP.NET WebAPI : Part I
 authors: 
 - Khalid Abuhakmeh
 - Bill Boga
