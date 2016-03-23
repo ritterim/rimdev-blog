@@ -3,7 +3,7 @@
     <div class="col-md-6 col-sm-12">
       <ul class="list-inline">
         <li class="list-inline-item"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
-        <li class="list-inline-item hidden-sm-up social">&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a></li>
+        <li class="list-inline-item hidden-sm-up social">&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy | replace: " LLC","" }}</a></li>
         <li class="list-inline-item hidden-sm-down"><a target="_blank" href="{{ site.rim_blog }}">Ritter <i class="fa fa-commenting-o"></i></a></li>
         <li class="list-inline-item hidden-sm-down"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed <i class="fa fa-rss"></i></a></li>
         <li class="list-inline-item hidden-sm-down social"><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-lg twitter"></i></a></li>
