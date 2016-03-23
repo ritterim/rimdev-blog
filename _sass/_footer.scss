@@ -1,5 +1,14 @@
 // main footer
 footer {
+  @media (max-width: 991px) {
+    height: 3em;
+    left: 0;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    @include border-radius(0);
+  }
   background: rgba($color-white,.95);
   border-top: 1px solid $grey-light;
   border-left: 1px solid $grey-lighter;

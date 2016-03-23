@@ -16,9 +16,11 @@
   }
 }
 
-
-
 button.close {
+  @media (max-width: 991px) {
+    top: .3em;
+    right: .3em;
+  }
   font-size: 250%;
   position: fixed;
   top: 1.5em;
