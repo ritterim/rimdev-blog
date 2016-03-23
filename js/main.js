@@ -1,14 +1,18 @@
-var lastScrollTop = 0;
 
-$(window).scroll(function(){
-  var state = $(this).scrollTop();
-  if (state < lastScrollTop){
-    $("footer").show("fast");
-  } else {
-    $("footer").hide("slow");
-  }
-  lastScrollTop = state;
-});
+if ($(window).width() > 991) {
+  var lastScrollTop = 0;
+  $(window).on("scroll", function() {
+    var state = $(this).scrollTop();
+    if (state < lastScrollTop){
+      $("footer").show("fast");
+    } else {
+      $("footer").hide("slow");
+    }
+    lastScrollTop = state;
+  });
+} else {
+  $("footer").show();
+}
 
 $("a[href*='#']").on("click", function(e) {
   var target = $(this.hash);

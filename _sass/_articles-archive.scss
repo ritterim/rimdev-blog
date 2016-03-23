@@ -7,6 +7,9 @@
   }
   .modal-body {
     padding: 0 10%;
+    @media (max-width: 991px) {
+      padding: 0;
+    }
   }
   #search-container {
     display: block;

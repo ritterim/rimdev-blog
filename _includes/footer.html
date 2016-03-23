@@ -1,16 +1,17 @@
 <footer>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
       <ul class="list-inline">
         <li class="list-inline-item"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
-        <li class="list-inline-item"><a target="_blank" href="{{ site.rim_blog }}">Ritter <i class="fa fa-commenting-o"></i></a></li>
-        <li class="list-inline-item"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed <i class="fa fa-rss"></i></a></li>
-        <li class="list-inline-item social"><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-lg twitter"></i></a></li>
-        <li class="list-inline-item social"><a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-lg github"></i></a></li>
+        <li class="list-inline-item hidden-sm-up social">&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a></li>
+        <li class="list-inline-item hidden-sm-down"><a target="_blank" href="{{ site.rim_blog }}">Ritter <i class="fa fa-commenting-o"></i></a></li>
+        <li class="list-inline-item hidden-sm-down"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed <i class="fa fa-rss"></i></a></li>
+        <li class="list-inline-item hidden-sm-down social"><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-lg twitter"></i></a></li>
+        <li class="list-inline-item hidden-sm-down social"><a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-lg github"></i></a></li>
       </ul>
     </div>
-    <div class="col-md-6">
-      &copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a target="_blank" href="{{ site.map_url}}"><i class="fa fa-map-marker text-danger"></i></a>
-    </div>    
+    <div class="col-md-6  hidden-sm-down">
+      &copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a class="hidden-sm-down" target="_blank" href="{{ site.map_url}}"><i class="fa fa-map-marker text-danger"></i></a>
+    </div>
   </div><!-- /.row -->
 </footer>
