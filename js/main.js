@@ -26,5 +26,7 @@ $("a[href*='#']").on("click", function(e) {
 });
 
 $(".freshness").hover(function () {
-  $(".freshness-hover").toggleClass("hover-out");
+  $(".freshness-hover").addClass("hover-out").delay(3000).queue(function() {
+    $(this).removeClass("hover-out").dequeue();
+  });
 });
