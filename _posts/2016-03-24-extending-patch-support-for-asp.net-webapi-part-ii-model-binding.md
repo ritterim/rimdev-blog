@@ -186,7 +186,7 @@ public class BoundUriKeyToModelEventArgs : EventArgs
 }
 ```
 
-We use derived `EventArgs` instances for events so the implementer has relevant property-names . And, in our derived binder:
+We use derived `EventArgs` instances for events so the implementer has relevant property-names. And, in our derived binder:
 
 ```csharp
 public class PatchBinding : BodyAndUriParameterBinding
