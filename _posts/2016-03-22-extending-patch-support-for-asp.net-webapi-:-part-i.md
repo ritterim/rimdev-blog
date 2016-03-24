@@ -16,6 +16,10 @@ authors:
 - Bill Boga
 ---
 
+Part I–Introduction
+[Part I–Model Binding]({% post_url 2016-03-24-extending-patch-support-for-asp.net-webapi-part-ii-model-binding %})
+Part III–Validation
+
 When it comes to HTTP verbs, there is no verb more controversial than `PATCH`. How, when, and why to use this verb is up to each implementor. In addition to being controversial, it is often overlooked as an option for ASP.NET developers due to a lack of consistent approach in the ASP.NET WebAPI framework. What is `PATCH`, and what does a client expect the behavior to be? 
 
 > The HTTP methods PATCH can be used to update partial resources. For instance, when you only need to update one field of the resource, PUTting a complete resource representation might be cumbersome and utilizes more bandwidth
