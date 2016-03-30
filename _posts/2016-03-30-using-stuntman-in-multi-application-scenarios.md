@@ -25,7 +25,7 @@ Stuntman was initially designed to work with a single web application in isolati
 
 ![stuntman graph](/images/stuntman_graph.png){: .img-fluid .border }
 
-In the figure above, you will notice two web applications. Imagine that web application #1 needs to call web application #2's API. We setup users in application #2, specifically API users with *bearer tokens*. Application #1 requests the set of stuntman users and now recognizes the API users registered in Application #2. Now in our development environment we have shared users and shared bearer tokens to make manual testing easier, in addition to our unit tests of course.
+In the figure above, you will notice two web applications. Imagine that web application #1 needs to call web application #2's API. We setup users in application #2, specifically API users with *bearer tokens*. Application #1 requests the set of Stuntman users and now recognizes the API users registered in application #2. Now in our development environment we have shared users and shared bearer tokens to make manual testing easier, in addition to our unit tests of course.
 
 Using this feature will definitely make your QA engineers and manual testers happy.
 
