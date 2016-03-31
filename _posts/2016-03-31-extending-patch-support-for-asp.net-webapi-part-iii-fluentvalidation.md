@@ -60,4 +60,4 @@ Simple yet powerful. The generic parameter is constrained to `IPatchState<T>`, w
 
 ## Conclusion
 
-Combining all three posts, we can create a simple yet productive approach to handling `PATCH` requests in our WebAPI applications. We also get a consistent approach that doesn't add bloat to our controllers. Finally, we get to use our validation framework of choice. We hope you enjoyed this series, and if you have any questions, please feel free to leave a comment.
+Combining all three posts, we can create a simple yet productive approach to handling `PATCH` requests in our ASP.NET WebAPI applications. We also get a consistent approach that doesn't add bloat to our controllers. Finally, we get to use our validation framework of choice. We hope you enjoyed this series, and if you have any questions, please feel free to leave a comment.
