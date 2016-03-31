@@ -22,7 +22,7 @@ authors:
 
 In the first two parts of our series we described the general `PATCH` approach and delved into the details of our `ModelBinder`. In the final entry, we are going to show how we leveraged our `AbstractPatchStateRequest` state to understand *what* got sent to us in a request. In this post, we will leverage that information to trigger validation based on the binding information.
 
-At Ritter Insurance Marketing, we utilize [FluentValidation](https://github.com/JeremySkinner/FluentValidation) to ensure the validity of our requests. In our opinion, it is the best way to do validation around and highly recommend it. FluentValidation is based on setting rules and then executing each rule over the current model. Let's recall our example validator.
+At Ritter Insurance Marketing, we utilize [FluentValidation](https://github.com/JeremySkinner/FluentValidation) to ensure the validity of our requests. In our opinion, it is the best way to do ASP.NET validation and we highly recommend it. FluentValidation is based on setting rules and then executing each rule over the current model. Let's recall our example validator.
 
 ```csharp
 public class AddressPatchValidator : AbstractPatchValidator<AddressPatchRequest>
