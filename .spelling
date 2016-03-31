@@ -36,6 +36,7 @@ cmdlet
 cmdlets
 CoreCLR
 burndown
+FluentValidation
 gemfile
 getruby.cmd
 https
@@ -63,7 +64,9 @@ teamcity
 url
 urls
 v2
+validator
 versioned
+webapi
 wontfix
 ZenHub
 1.x
