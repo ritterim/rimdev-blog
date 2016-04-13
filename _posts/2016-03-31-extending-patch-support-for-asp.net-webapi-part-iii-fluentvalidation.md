@@ -64,7 +64,7 @@ Combining all three posts, we can create a simple yet productive approach to han
 
 ## Update
 
-As reader **Brett M** pointed out, we forgot to include the `AbstractPatchStateRequest` model in our series. So here it is. Sorry about that oversite, and thank you for reading.
+As reader **Brett M** pointed out, we forgot to include the `AbstractPatchStateRequest` model in our series. So here it is. Sorry about that oversight, and thank you for reading.
 
 ```csharp
 public abstract class AbstractPatchStateRequest<TRequest, TModel> : IPatchState<TRequest, TModel>, IPatchState<TRequest>, IPatchState
