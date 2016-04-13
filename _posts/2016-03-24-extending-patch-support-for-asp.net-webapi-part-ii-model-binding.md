@@ -18,7 +18,7 @@ authors:
 
 1. [Part I–Introduction](/extending-patch-support-for-asp.net-webapi-part-i/)
 2. Part II–Model Binding
-3. Part III–Validation
+3. [Part III–Validation](/extending-patch-support-for-asp.net-webapi-part-iii-fluentvalidation/)
 
 In [Part I](/extending-patch-support-for-asp.net-webapi-part-i/) of the series, Khalid introduced how we are using our patch library. This included mapping the request-model to the domain-model, applying validation to the request, and running the patch inside a controller-action. In Part II, I will cover how we use model binding to prep the request for validation.
 
