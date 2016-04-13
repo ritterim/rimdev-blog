@@ -19,7 +19,7 @@
         {% endfor %}
       </author>
       <p>
-        {{ post.content | markdownify | strip_html | truncate:120 }}
+        {{ post.content | truncate:500 | markdownify | strip_html | truncate:120 }}
       </p>
       <div class="read-now">
         <a href="{{ post.url | prepend: site.baseurl }}">

@@ -33,7 +33,7 @@
             </div><!-- /.time-to-read -->
             </author>
             <p>
-              {{ post.content | markdownify | strip_html | truncate:200 }}
+              {{ post.content | truncate:500 | markdownify | strip_html | truncate:200 }}
             </p>
             <ul class="list-inline">
               {% for tags in post.tags %}
