@@ -17,6 +17,7 @@ RIMdev
 
 customizable
 i.e.
+pre
 prepend
 theming
 pre-built
@@ -35,6 +36,7 @@ cmd
 cmdlet
 cmdlets
 CoreCLR
+devDependency
 burndown
 FluentValidation
 gemfile
@@ -46,7 +48,9 @@ hubot-azure-alert-notifier
 hubot-github-issue-label-notifier
 IdentityServer
 IdentityServer3
+js
 middleware
+newman
 Node.js
 Node.js.
 npm
@@ -55,6 +59,7 @@ PaaS
 p1
 p2
 p3
+package.json
 powershell
 pre-ASP
 pre-configured
