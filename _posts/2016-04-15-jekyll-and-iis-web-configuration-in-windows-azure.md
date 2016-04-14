@@ -18,7 +18,7 @@ authors: Khalid Abuhakmeh
 
 In a previous post, ["Deploying Jekyll on Windows Azure"](/2016-02-10-deploying-jekyll-to-windows-azure-app-services), I detailed how to get a [Jekyll](https://jekyllrb.com/) based site on to Windows Azure with relative ease. During that time, the team has done several deployments to our cloud provider. With those deployments, we realized we needed to commit more work into the site's `web.config` to get the solution we really wanted. We are happy with our current outcome, but understand there may be edge cases we still haven't hit, and hope to come back and update this post when necessary. 
 
-## Http Errors
+## HTTP Errors
 
 It is rare to have server-side errors on a staticly generated site, and the most common one will be `404`. Right now, we are just leaning on the `httpErrors` element under `system.webServer` to redirect to a default error page.
 
@@ -28,7 +28,7 @@ It is rare to have server-side errors on a staticly generated site, and the most
 
 ## HTML5 Static Content
 
-HTML5 is a part of our site building strategy, but the initial IIS configuration is not supportive of our strategy. With some help from [Mad Kristensen](http://madskristensen.net/post/prepare-webconfig-for-html5-and-css3), we modified our `web.config` with the `staticContent` element.
+HTML5 is a part of our site building strategy, but the initial IIS configuration is not supportive of our strategy. With some help from [Mads Kristensen](http://madskristensen.net/post/prepare-webconfig-for-html5-and-css3), we modified our `web.config` with the `staticContent` element.
 
 ```xml
 <staticContent>
@@ -83,7 +83,7 @@ By default, Jekyll expects a trailing slash on urls. This isn't a behavior we li
 </rule>
 ```
 
-All Jekyll pages are statically generated and suffixed with `html`. Using the rewrite module, we are able to write the contents of an html file directly into the response.
+All Jekyll pages are statically generated and suffixed with `html`. Using the rewrite module, we are able to write the contents of an HTML file directly into the response.
 
 ### Remove WWW
 
