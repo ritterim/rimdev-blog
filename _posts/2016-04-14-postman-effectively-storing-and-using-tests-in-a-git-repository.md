@@ -16,7 +16,7 @@ Postman tests can be exported to JSON. And, since JSON is *text* it can be versi
 
 Newman is a command line runner built for Postman, available on npm as [newman](https://www.npmjs.com/package/newman). A simple `npm install newman --save-dep` will install it and add it as a *devDependency* in your Node.js application.
 
-If the application isn't a Node.js application and you don't have a *package.json* yet, simply run `npm init` to create a *package.json* file. This is useful in non-Node.js applications to enable developers to install the dependency with `npm install`. Plus, *package.json* `scripts` are a great place to match environments and test files!
+If the application isn't a Node.js application and you don't have a *package.json* yet, simply run `npm init` to create a *package.json* file. Adding *package.json* to existing applications enables developers to install any dependencies with `npm install`. Plus, *package.json* `scripts` are a great place to match environments and test files!
 
 ## Encapsulate environment concerns
 
@@ -24,7 +24,7 @@ Postman includes functionality for storing information for various environments.
 
 ## Put it all together
 
-With any environments captured and the tests saved, we wire it all up with *package.json* `scripts`. This is a great place to match the tests to run, the environment to use, and any other concerns as various `npm run ...` commands.
+With any environments captured and the tests saved, we wire it all up with *package.json* `scripts`. The *package.json* `scripts` is a great place to match the tests to run, the environment to use, and any other concerns as various `npm run ...` commands.
 
 Here's an example `package.json`:
 
@@ -62,7 +62,7 @@ The important point is, as a contributor, **you don't need to know or understand
 
 ## The import/export roundtrip
 
-When using the Postman GUI, requests are stored *internally*. This is useful for those who primarily *(or, only)* use the GUI tool. But, this creates another *state* that may or may not match the current state of the repository. **This is perhaps the biggest pain point of this approach.**
+When using the Postman GUI, requests are stored *internally*. This *internal* storage is useful for those who primarily *(or, only)* use the GUI tool. But, this creates another *state* that may or may not match the current state of the repository. **This is perhaps the biggest pain point of this approach.**
 
 To address this, you'll need to import the *latest* into the GUI runner as necessary, since it won't automatically be updated as the repository evolves. Then, you'll need to export any changes back out to commit them. **For this reason, I recommend leaning on the command line runner as much as possible -- and using the GUI tool only as necessary for test authoring.** Import what you need into the Postman GUI, make any changes, export the changes, and commit them.
 
