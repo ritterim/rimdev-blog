@@ -54,7 +54,7 @@ Rewrite rules are the most critical part of our Jekyll/IIS configuration and acc
 
 ### Redirecting to HTTPS
 
-All of our sites will run on **HTTPS** by default. To enforce the secure behavior we used an **inboud** rule.
+All of our sites will run on **HTTPS** by default. To enforce the secure behavior we used an **inbound** rule.
 
 ```xml
 <rule name="Redirect to HTTPS" stopProcessing="true">
