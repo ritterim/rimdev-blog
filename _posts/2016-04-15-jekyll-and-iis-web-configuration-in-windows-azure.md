@@ -69,7 +69,7 @@ All of our sites will run on **HTTPS** by default. To enforce the secure behavio
 
 ### Support Non-Trailing Slash Urls
 
-Trailing slashes are no longer a default in [Jekyll 3]( https://jekyllrb.com/docs/upgrading/2-to-3/#permalinks-no-longer-automatically-add-a-trailing-slash). If you find yourself on a previous version those slashes can be annoying. Additionally, you may have someone accidently add a trailing slash, because old habits die hard. Generally, this isn't a behavior we liked, so we needed to create a rule that supported access to pages without the trailing slash. 
+Trailing slashes are no longer a default in [Jekyll 3]( https://jekyllrb.com/docs/upgrading/2-to-3/#permalinks-no-longer-automatically-add-a-trailing-slash). If you find yourself on a previous version those slashes can be annoying. Additionally, you may have someone accidentally add a trailing slash, because old habits die hard. Generally, this isn't a behavior we liked, so we needed to create a rule that supported access to pages without the trailing slash. 
 
 ```xml
 <rule name="RewriteHtml">
