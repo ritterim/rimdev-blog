@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll and IIS Web Configuration in Windows Azure"
-date: 2016-04-15 13:02:37
+date: 2016-04-15 10:00:00
 tags:
 - Jekyll
 - Azure
