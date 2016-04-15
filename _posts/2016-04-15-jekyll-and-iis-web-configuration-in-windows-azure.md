@@ -4,7 +4,7 @@ title: "Jekyll and IIS Web Configuration in Windows Azure"
 date: 2016-04-15 13:02:37
 tags:
 - Jekyll
-- Windows Azure
+- Azure
 - IIS
 image:
     src : https://farm5.staticflickr.com/4113/5441989960_8d97061ac8_b_d.jpg
@@ -69,7 +69,7 @@ All of our sites will run on **HTTPS** by default. To enforce the secure behavio
 
 ### Support Non-Trailing Slash Urls
 
-By default, Jekyll expects a trailing slash on urls. This isn't a behavior we liked, so we needed to create a rule that supported access to pages without the trailing slash. 
+Trailing slashes are no longer a default in [Jekyll 3]( https://jekyllrb.com/docs/upgrading/2-to-3/#permalinks-no-longer-automatically-add-a-trailing-slash). If you find yourself on a previous version those slashes can be annoying. Additionally, you may have someone accidently add a trailing slash, because old habits die hard. Generally, this isn't a behavior we liked, so we needed to create a rule that supported access to pages without the trailing slash. 
 
 ```xml
 <rule name="RewriteHtml">
@@ -87,7 +87,7 @@ All Jekyll pages are statically generated and suffixed with `html`. Using the re
 
 ### Remove WWW
 
-We wanted a canonical url for our site. This meant targeting versions of our url that started with `www` with extreme prejudice.
+We wanted a canonical url for our site. This meant specifically removing the `www` from our urls and reducing the possible permutations.
 
 ```xml
 <rule name="Remove WWW" patternSyntax="Wildcard" stopProcessing="true">
