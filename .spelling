@@ -10,6 +10,8 @@ HipChat
 hougasian
 Raygun
 RIMdev
+Mads
+Kristensen
 
 #
 # English
@@ -76,6 +78,8 @@ wontfix
 ZenHub
 1.x
 camelCase
+server-side
+staticly
 
 #
 # Code
