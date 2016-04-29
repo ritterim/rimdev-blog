@@ -38,9 +38,12 @@ cmd
 cmdlet
 cmdlets
 CoreCLR
+dataset
 devDependency
 burndown
 FluentValidation
+filename
+filenames
 gemfile
 getruby.cmd
 https
@@ -52,6 +55,8 @@ IdentityServer
 IdentityServer3
 js
 middleware
+namespace
+namespaces
 newman
 Node.js
 Node.js.
@@ -67,6 +72,9 @@ pre-ASP
 pre-configured
 OpenID
 runtime
+schema
+schemas
+SqlException
 teamcity
 url
 urls
