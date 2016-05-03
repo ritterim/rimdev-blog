@@ -11,7 +11,7 @@ twitter_text: Fixing Facebook Open Graph 404 Post Previews
 authors: Khalid Abuhakmeh
 ---
 
-TL;DR use the [Facebook Open Graph Debugger](https://developers.facebook.com/tools/debug/) to refresh the scraping cache.
+**TL;DR use the [Facebook Open Graph Debugger](https://developers.facebook.com/tools/debug/) to refresh the scraping cache.**
 
 In 2016, a successful site must have a strong social media strategy. The best sites to promote our professional content include Facebook, Twitter, LinkedIn, and Google+. The best kind of promotion comes from our readers, traditionally known as "word of mouth". That requires us to include the tools to allow that to happen, in the form of share buttons.
 
