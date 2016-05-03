@@ -19,7 +19,7 @@ authors: Khalid Abuhakmeh
 
 In 2016, a successful site must have a strong social media strategy. The best sites to promote our professional content include Facebook, Twitter, LinkedIn, and Google+. The best kind of promotion comes from our readers, traditionally known as "word of mouth". Providing share buttons enables visitors to easily share with their social networks.
 
-Here is an example of share buttons on a recent site. 
+Here is an example of share buttons on a recent site.
 
 ![share buttons](/images/fixing-facebook-404-share/share-buttons-agent-survival-guide.png){: .img-fluid .border }
 
@@ -44,7 +44,6 @@ Fixed!
 In our case, there are two reasons this behavior happened.
 
 1. Somehow the shared url was being previewed before it went *live*. This makes sense with Jekyll and our staging environments.
-
 2. Some of our posts were using the **future** feature in Jekyll. Someone may have shared the post via Facebook before the post went live.
 
 The outcome is rooted in Facebook's aggressive caching strategy. Remember, they are Facebook, servicing **billions** of individuals.
