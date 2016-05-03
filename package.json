@@ -2,10 +2,14 @@
   "name": "rimdev",
   "version": "1.0.0",
   "description": "The Ritter Insurance Marketing development team blog, hosted at http://rimdev.io/.",
-  "main": "gulpfile.js",
   "scripts": {
-    "check": "mdspell --en-us --ignore-acronyms --ignore-numbers _posts/*.md",
-    "test": "mdspell --en-us --ignore-acronyms --ignore-numbers --report _posts/*.md"
+    "test": "markdown-proofing _posts/*.md",
+    "proof": "markdown-proofing --color --no-throw --",
+    "proof:all": "npm run test -- --no-throw",
+    "proof:latest": "node proofScripts.js latest _posts/*.md",
+    "proof:changed": "node proofScripts.js git-index-and-uncommitted _posts/*.md",
+    "proof:index": "node proofScripts.js git-index _posts/*.md",
+    "proof:uncommitted": "node proofScripts.js git-uncommitted _posts/*.md"
   },
   "keywords": [
     "rimdev",
@@ -13,11 +17,12 @@
   ],
   "author": "rimdev",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ritterim/ritterim.github.io.git"
+    "type": "git",
+    "url": "https://github.com/ritterim/ritterim.github.io.git"
   },
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
-    "markdown-spellcheck": "^0.9.0"
+    "markdown-proofing": "latest",
+    "shelljs": "^0.7.0"
   }
 }

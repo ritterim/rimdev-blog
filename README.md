@@ -13,7 +13,7 @@ Photography by JJ Walck
 
 ## Tests
 
-Tests are ran with `npm test`. Currently, this is a spelling check of posts. This can done interactively as well with `npm run check`.
+Tests are ran with `npm test`. This runs [markdown-proofing](https://www.npmjs.com/package/markdown-proofing) on all posts. See the `scripts` in `package.json` for more runnable commands.
 
 ## New in this release
 
