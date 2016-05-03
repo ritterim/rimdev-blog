@@ -37,7 +37,7 @@ Fixed!
 
 ## Why Does This Happen?
 
-In our case, there are two reasons this behavior happened. The outcome is rooted in Facebook's aggresive caching strategy. Remember, they are Facebook, servicing **billions** of individuals.
+In our case, there are two reasons this behavior happened. The outcome is rooted in Facebook's aggressive caching strategy. Remember, they are Facebook, servicing **billions** of individuals.
 
 1. Somehow the shared url, was being previewed before it went *live*. This makes sense with Jekyll and our staging environments.
 
