@@ -25,7 +25,7 @@ Here is an example of share buttons on a recent site.
 
 You will also find them on this post, so please use them. We always appreciate sharing.
 
-When we went to test the share buttons, we saw our 404 page as the preview. Note the title of  "Something went wrong?" in the preview. No matter what we tried to do, we could not get Facebook to refresh the preview.
+When we tested the share buttons, we saw our 404 page as the preview. Note the title of  "Something went wrong?" in the preview. No matter what we tried to do, we could not get Facebook to refresh the preview.
 
 ![share buttons](/images/fixing-facebook-404-share/share-404-error.png){: .img-fluid .border }
 
@@ -33,7 +33,7 @@ It felt like Facebook was caching our Open Graph metadata and was not refreshing
 
 ![Facebook Open Graph Debugger](/images/fixing-facebook-404-share/facebook-debugger-screenshot.png){: .img-fluid .border }
 
-Note that **Time Scraped**, in the screenshot, was 18 hours ago. By pressing the button **Scrape Again**, you tell Facebook to get the latest version of your page. Now let's see what the preview looks like.
+Note that **Time Scraped**, in the screenshot, was 18 hours ago. By pressing the button **Scrape Again**, you ask Facebook to get the latest version of your page. Now let's see what the preview looks like.
 
 ![Facebook Preview Fixed](/images/fixing-facebook-404-share/facebook-preview-fixed.png){: .img-fluid .border }
 
@@ -41,11 +41,13 @@ Fixed!
 
 ## Why Does This Happen?
 
-In our case, there are two reasons this behavior happened. The outcome is rooted in Facebook's aggressive caching strategy. Remember, they are Facebook, servicing **billions** of individuals.
+In our case, there are two reasons this behavior happened.
 
-1. Somehow the shared url, was being previewed before it went *live*. This makes sense with Jekyll and our staging environments.
+1. Somehow the shared url was being previewed before it went *live*. This makes sense with Jekyll and our staging environments.
 
 2. Some of our posts were using the **future** feature in Jekyll. Someone may have shared the post via Facebook before the post went live.
+
+The outcome is rooted in Facebook's aggressive caching strategy. Remember, they are Facebook, servicing **billions** of individuals.
 
 ## Conclusion
 
