@@ -21,7 +21,7 @@ kramdown:
 
 # Plugins
 # sitemap: false in front matter of page to exclude
-gems: [jekyll-gist, jekyll-sitemap, jekyll-mentions]
+gems: [jekyll-gist, jekyll-sitemap, jekyll-mentions, jekyll-redirect-from]
 
 # will convert @twitter-handle to the full twitter link in a post
 jekyll-mentions: https://twitter.com
