@@ -10,6 +10,8 @@ categories:
 - Development
 twitter_text: 'Deploying #jekyll to #windowsazure app services'
 authors: Khalid Abuhakmeh
+redirect_from: 
+- "/2016-02-10-deploying-jekyll-to-windows-azure-app-services"
 ---
 
 As the development team at [Ritter Insurance Marketing](https://ritterim.com), we are leaning more on static site generation than ever. We have chosen [Jekyll](https://jekyllrb.com/) as our static site generator of choice. We actually host this blog on [GitHub](https://github.com) pages, but there are other marketing sites we manage that need to go through a more rigorous deployment cycle, Dev. to QA then to Prod, which doesn't fit well on GitHub. We also utilize [Windows Azure](https://windowsazure.com) for our production environment. To keep our apps consistent, I wanted to figure out how to deploy a Jekyll site from GitHub to Windows Azure App Services (Web Apps).

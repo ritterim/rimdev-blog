@@ -16,7 +16,7 @@ twitter_text: "Configure #Jekyll in @windowsazure and #IIS"
 authors: Khalid Abuhakmeh
 ---
 
-In a previous post, ["Deploying Jekyll on Windows Azure"](/2016-02-10-deploying-jekyll-to-windows-azure-app-services), I detailed how to get a [Jekyll](https://jekyllrb.com/) based site on to Windows Azure with relative ease. During that time, the team has done several deployments to our cloud provider. With those deployments, we realized we needed to commit more work into the site's `web.config` to get the solution we really wanted. We are happy with our current outcome, but understand there may be edge cases we still haven't hit, and hope to come back and update this post when necessary. 
+In a previous post, ["Deploying Jekyll on Windows Azure"](/deploying-jekyll-to-windows-azure-app-services), I detailed how to get a [Jekyll](https://jekyllrb.com/) based site on to Windows Azure with relative ease. During that time, the team has done several deployments to our cloud provider. With those deployments, we realized we needed to commit more work into the site's `web.config` to get the solution we really wanted. We are happy with our current outcome, but understand there may be edge cases we still haven't hit, and hope to come back and update this post when necessary. 
 
 ## HTTP Errors
 
