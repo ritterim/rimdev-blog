@@ -98,19 +98,6 @@ RIMdev:
     twitter: comfroels
     github: comfroels
 
-nuget:
-  - Sandbox
-  - Descriptor.Http
-  - AspNetBrowserLocale
-  - Filter
-  - Supurlative
-  - Descriptor
-  - Automation.Sql
-  - Automation.StorageEmulator
-  - Automation.WebHosting
-  - Automation.Transform
-  - Stuntman
-
 ritter_links:
   - service: Ritter Insurance Marketing
     url: https://www.ritterim.com
