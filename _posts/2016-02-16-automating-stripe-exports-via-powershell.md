@@ -2,7 +2,6 @@
 layout: post
 title: "Automating Stripe Exports via PowerShell"
 date: 2016-02-16 13:36:15
-image:  # if no image, color defaults dark blue
 description:
 tags:
 - PowerShell

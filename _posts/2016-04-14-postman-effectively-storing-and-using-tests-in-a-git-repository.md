@@ -2,10 +2,9 @@
 layout: post
 title: "Postman: Effectively Storing and Using Tests in a Git Repository"
 date: 2016-04-14 08:00:00
-image:
-    src: https://farm5.staticflickr.com/4003/4651347626_f103e734c0_b_d.jpg
-    url: https://www.flickr.com/photos/pschadler/
-    credit: Paul Schadler
+image: https://farm5.staticflickr.com/4003/4651347626_f103e734c0_b_d.jpg
+image_url: https://www.flickr.com/photos/pschadler/
+image_credit: Paul Schadler
 tags:
 - Postman
 twitter_text: "Postman: Effectively Storing and Using Tests in a Git Repository"

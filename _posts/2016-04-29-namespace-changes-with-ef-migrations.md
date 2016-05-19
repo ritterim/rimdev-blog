@@ -5,10 +5,9 @@ date: 2016-04-29 8:00:00
 tags:
 - EF
 - .NET
-image:
-    src : /images/namespace-changes-with-ef-migrations/ducks-flying.jpg
-    url : https://www.flickr.com/photos/gidzy/10569823385/
-    credit : Gidzy
+image: /images/namespace-changes-with-ef-migrations/ducks-flying.jpg
+image_url: https://www.flickr.com/photos/gidzy/10569823385/
+image_credit: Gidzy
 categories:
 - Development
 twitter_text: "Namespace changes with #entityframework 6 migrations"

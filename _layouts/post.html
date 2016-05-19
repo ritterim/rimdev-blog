@@ -4,16 +4,15 @@ layout: default
 <div class="post-number">
   {{ page.date | date: "%y.%j" }}
 </div>
+
 {% if page.image %}
 <div class="post-has-image">
-  {% if page.image.src %}
+  {% if page.image_credit %}
   <div class="photo-credit">
-    Image <span>CC</span> <a href="{{ page.image.url }}">{{ page.image.credit }}</a>
+    Image <span>CC</span> <a href="{{ page.image_url }}">{{ page.image_credit }}</a>
   </div>
-  <img src="{{ page.image.src }}" alt={{ page.title }}"" >
-  {% else %}
-  <img src="{{ page.image }}" alt={{ page.title }}"" >
   {% endif %}
+  <img src="{{ page.image }}" alt="{{ page.title }}" >
 </div>
 {% else %}
 <div class="post-has-image">
@@ -28,6 +27,7 @@ layout: default
   <div class="author">
     Written by
     {% include articles-authors.html %}
+
     <div class="time-to-read text-muted">
       {% include word-count.html %}
       <i class="fa fa-book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " minute read" }}
