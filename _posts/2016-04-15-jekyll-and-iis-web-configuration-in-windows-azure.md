@@ -6,10 +6,9 @@ tags:
 - Jekyll
 - Azure
 - IIS
-image:
-    src : https://farm5.staticflickr.com/4113/5441989960_8d97061ac8_b_d.jpg
-    url : https://www.flickr.com/photos/alldread/
-    credit : Ryan Allred
+image: https://farm5.staticflickr.com/4113/5441989960_8d97061ac8_b_d.jpg
+image_url: https://www.flickr.com/photos/alldread/
+image_credit: Ryan Allred
 categories:
 - Development
 twitter_text: "Configure #Jekyll in @windowsazure and #IIS"

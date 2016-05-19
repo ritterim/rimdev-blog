@@ -2,7 +2,6 @@
 layout: post
 title: "Jekyll on Windows: A Quickstart Guide"
 date: 2016-02-25 17:00:00
-image: # if no image, color defaults dark blue
 description: 'A few quick steps to get Jekyll working.'
 tags:
 - Jekyll

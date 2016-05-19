@@ -2,7 +2,6 @@
 layout: post
 title: "Slack, Hubot, and Webhooks: Custom Notifications Using All Three"
 date: 2016-01-28 16:00:00
-image: # if no image, color defaults dark blue
 description: "We're using custom Hubot scripts to get webhooks into Slack!"
 tags:
 - Hubot

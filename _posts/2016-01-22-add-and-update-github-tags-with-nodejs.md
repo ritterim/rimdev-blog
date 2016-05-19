@@ -2,7 +2,6 @@
 layout: post
 title: "Add And Update GitHub Tags With Node.js"
 date: 2016-01-22 12:36:45
-image:  # if no image, color defaults dark blue
 description:
 tags:
 - NodeJs

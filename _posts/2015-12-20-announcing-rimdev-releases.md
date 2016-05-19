@@ -2,7 +2,6 @@
 layout: post
 title: "Announcing RIMdev Releases"
 date: 2015-12-20 19:32:44
-image: # if no image, color defaults dark blue
 description: 'How two developers and one designer conquered release notes'
 tags:
 - OSS

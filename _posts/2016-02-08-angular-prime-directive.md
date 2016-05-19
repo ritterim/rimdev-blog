@@ -2,7 +2,6 @@
 layout: post
 title: "Angular Prime Directive"
 date: 2016-02-08 21:12:18
-image:  # if no image, color defaults dark blue
 description: "The Angular 1.x directive starter guide I wish I had a year ago."
 tags:
 - Angular

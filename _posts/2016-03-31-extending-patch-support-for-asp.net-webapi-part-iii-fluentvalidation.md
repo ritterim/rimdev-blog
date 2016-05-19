@@ -2,10 +2,9 @@
 layout: post
 title: "Extending PATCH Support For ASP.NET WebAPI : Part III Validation"
 date: 2016-03-31 11:00:00
-image:  
-    src: https://farm7.staticflickr.com/6141/5959689611_3b0eacf6b4_b_d.jpg
-    url : https://www.flickr.com/photos/donabelandewen/
-    credit : Ewen Roberts
+image: https://farm7.staticflickr.com/6141/5959689611_3b0eacf6b4_b_d.jpg
+image_url: https://www.flickr.com/photos/donabelandewen/
+image_credit: Ewen Roberts
 tags:
 - WebAPI
 - ASP.NET

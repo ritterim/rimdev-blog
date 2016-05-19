@@ -2,7 +2,6 @@
 layout: post
 title: 'Copying App Settings and Connection Strings Between Azure Web Apps'
 date: 2016-01-12 16:00:00
-image: # if no image, color defaults dark blue
 description: 'Work smarter, not harder using our command line tool!'
 tags:
 - Azure

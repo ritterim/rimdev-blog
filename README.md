@@ -56,6 +56,8 @@ title: "How to use"
 authors: <Your name here>
 date: 2015-08-03 03:32:44
 image: "/images/my-great-image.jpg"
+image_url: <url/page associated with image>
+image_credit: <name for image credit>
 tags:
 - jekyll
 - template
@@ -64,7 +66,7 @@ categories:
 twitter_text: "How to install and use this template"
 ---
 ```
-If the page has no image, `image:` can be omitted entirely. A default system image will be used.
+If the page has no image, `image:` can be omitted entirely. A default system image will be used. If `image_credit:` is specified, then `image_url:` should also be specified.
 
 > TAGS: Check existing Tags [here](http://rimdev.io/tags/) before creating new ones
 
@@ -84,10 +86,9 @@ authors:
 Using a Creative Commons image requiring attribution?
 
 ```
-image:
-    src: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
-    url : https://www.flickr.com/photos/khawkins04/
-    credit : Ken Hawkins
+image: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
+image_url: https://www.flickr.com/photos/khawkins04/
+image_credit: Ken Hawkins
 ```  
 
 ### Author pages

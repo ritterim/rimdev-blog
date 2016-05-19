@@ -2,10 +2,9 @@
 layout: post
 title: Using Stuntman in Multi-Application Scenarios
 date: 2016-03-30 13:30:00
-image:
-    src: https://farm4.staticflickr.com/3518/3756271750_627b5b1a80_b_d.jpg
-    url : https://www.flickr.com/photos/webzooloo/
-    credit : Olivier Porez
+image: https://farm4.staticflickr.com/3518/3756271750_627b5b1a80_b_d.jpg
+image_url: https://www.flickr.com/photos/webzooloo/
+image_credit: Olivier Porez
 tags:
 - ASP.NET
 - Stuntman

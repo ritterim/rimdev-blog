@@ -2,10 +2,9 @@
 layout: post
 title: "Extending PATCH Support For ASP.NET WebAPI : Part II–Model Binding"
 date: 2016-03-24 08:00:00
-image:  
-    src: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
-    url : https://www.flickr.com/photos/khawkins04/
-    credit : Ken Hawkins
+image: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
+image_url: https://www.flickr.com/photos/khawkins04/
+image_credit: Ken Hawkins
 tags:
 - WebAPI
 - ASP.NET

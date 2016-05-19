@@ -2,7 +2,6 @@
 layout: post
 title: "Windows Azure, IdentityServer3, and Valid Issuers"
 date: 2016-01-16 16:35:33
-image:  # if no image, color defaults dark blue
 description: "a frustrating bug while hosting in the cloud"
 image: /images/default/rimdev-terminator.jpg
 tags:

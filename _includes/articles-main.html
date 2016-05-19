@@ -4,14 +4,12 @@
 
 {% if post.image %}
 <div class="post-has-image">
-  {% if post.image.src %}
+  {% if post.image_credit %}
   <div class="photo-credit">
-    Image <span>CC</span> <a href="{{ post.image.url }}">{{ post.image.credit }}</a>
+    Image <span>CC</span> <a href="{{ post.image_url }}">{{ post.image_credit }}</a>
   </div>
-  <img src="{{ post.image.src }}" alt={{ post.title }}"" >
-  {% else %}
-  <img src="{{ post.image }}" alt={{ post.title }}"" >
   {% endif %}
+  <img src="{{ post.image }}" alt="{{ post.title }}" >
 </div>
 {% else %}
 <div class="post-has-image">
@@ -42,6 +40,7 @@
   </div>
 
   {{ content }}
+
   {% include articles-footer.html %}
 
 </article>
