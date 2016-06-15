@@ -13,6 +13,7 @@ RIMdev
 Mads
 Kristensen
 LinkedIn
+Nampa
 
 #
 # English
@@ -28,6 +29,7 @@ pre-built
 #
 # Technical
 #
+AngularJs
 deploy.cmd
 dev
 devs
@@ -64,6 +66,7 @@ Node.js
 Node.js.
 npm
 NuGet
+nuget.org
 PaaS
 p1
 p2
@@ -91,6 +94,8 @@ camelCase
 server-side
 staticly
 metadata
+GitHub
+Healthcare.gov
 
 #
 # Code
