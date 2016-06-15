@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RIMdev Looking For Team Member"
-date: 2016-06-03 09:23:09
+date: 2016-06-15 09:23:09
 tags:
 - Team
 - Development
@@ -17,13 +17,13 @@ Our team is currently looking to add another senior developer to help with our c
 
 ## Challenges
 
-The challenges we face as a team revolve around the insurance industry and providing services to agents across the United States. We solve problems related to the Medicare market, normally referred to as "over 65" in lingo. We also support the "under 65" market, by integrating directly with [Healthcare.gov](https://healcare.gov) as a web broker. Our business is also very cyclical; the busiest time is leading up to the open enrollment period for both markets.
+The challenges we face as a team revolve around the insurance industry and providing services to agents across the United States. We solve problems related to the Medicare market, normally referred to as "over 65" in lingo. We also support the "under 65" market, by integrating directly with [Healthcare.gov](https://healthcare.gov) as a web broker. Our business is also very cyclical; the busiest time is leading up to the open enrollment period for both markets.
 
 Our goals in the next years are to redesign and build a new system, so there will be a lot of opportunities to impact the direction of the business and develop applications that utilize current (and future) technologies.
 
 ## Culture
 
-Our team culture can be summed up with one word: "Family". A fun atmosphere with open communication between team members, the business, and other stakeholders. We believe in a work/life balance with perks like 37.5 hour work weeks and remote privileges. We also believe in continued learning, and our developers regularly go to conferences, participate in developer communities, and write blog posts here. 
+Our team culture can be summed up with one word: "Family". A fun atmosphere with open communication between team members, the business, and other stakeholders. We believe in a work/life balance with perks like 37 hour work weeks and remote privileges. We also believe in continued learning, and our developers regularly go to conferences, participate in developer communities, and write blog posts here. 
 
 Our team believes we can affect positive change in the business, the agents we service, and ultimately their clients. The change we bring comes from being supportive of each other and pushing each other to be better.
 
