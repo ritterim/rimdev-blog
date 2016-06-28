@@ -12,7 +12,7 @@ if %ERRORLEVEL% neq 0 goto BuildFail
 call gem install bundler
 if %ERRORLEVEL% neq 0 goto BuildFail
 
-call bundle exec gem install
+call bundle install
 if %ERRORLEVEL% neq 0 goto BuildFail
 
 call jekyll build
