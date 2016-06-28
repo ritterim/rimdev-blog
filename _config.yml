@@ -22,7 +22,6 @@ kramdown:
 # Plugins
 # sitemap: false in front matter of page to exclude
 gems:
-  - jekyll-gist
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-seo-tag
