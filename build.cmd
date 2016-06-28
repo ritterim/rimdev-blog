@@ -9,6 +9,9 @@ if %ERRORLEVEL% neq 0 goto BuildFail
 call npm test
 if %ERRORLEVEL% neq 0 goto BuildFail
 
+call bundle exec gem install
+if %ERRORLEVEL% neq 0 goto BuildFail
+
 call jekyll build
 if %ERRORLEVEL% neq 0 goto BuildFail
 
