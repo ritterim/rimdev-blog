@@ -15,7 +15,7 @@ if %ERRORLEVEL% neq 0 goto BuildFail
 call bundle install
 if %ERRORLEVEL% neq 0 goto BuildFail
 
-call jekyll build
+call bundle exec jekyll build
 if %ERRORLEVEL% neq 0 goto BuildFail
 
 goto BuildSuccess
