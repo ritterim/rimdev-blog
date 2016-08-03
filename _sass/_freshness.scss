@@ -2,11 +2,11 @@
 .freshness,
 .freshness-icon {
   @media print {display: none;}
-  cursor: hand;
   text-align: center;
   margin: 2em 0;
   @extend %clearfix;
   @include transition(all, .3s);
+  i {cursor: hand;}
 }
 
 .freshness-icon {text-align: left;}
