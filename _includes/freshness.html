@@ -2,7 +2,14 @@
 {% capture posted %}{{ page.date | date: "%s" }}{% endcapture %}
 {% capture freshness %}{{ today | minus: posted | date: "%s" | date: "%j" | floor }}{% endcapture %}
 
-{% assign freshness = freshness | times: 1 %}
+{% capture compareToday %}{{ today | date: "%j" | floor }}{% endcapture %}
+{% capture comparePosted %}{{ posted | date: "%j" | floor }}{% endcapture %}
+
+{% if compareToday == comparePosted %}
+  {% assign freshness = 0 %}
+{% else %}
+  {% assign freshness = freshness | times: 1 %}
+{% endif %}
 
 {% if freshness <= 30 %}
   {% assign class = "new" %}
