@@ -1,7 +1,6 @@
 {% capture today %}{{ "now" | date: "%s" }}{% endcapture %}
 {% capture posted %}{{ page.date | date: "%s" }}{% endcapture %}
 {% capture freshness %}{{ today | minus: posted | date: "%s" | date: "%j" | floor }}{% endcapture %}
-{{ freshness }}
 
 {% capture compareToday %}{{ today | date: "%j" | floor }}{% endcapture %}
 {% capture comparePosted %}{{ posted | date: "%j" | floor }}{% endcapture %}
