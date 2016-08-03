@@ -13,10 +13,10 @@ authors:
 - Kevin Hougasian
 categories:
 - OSS
-twitter_text: 'Announcing RIMdev Releases'
+twitter_text: 'Announcing #RIMdev Releases'
 ---
 
-We wanted to create a tool that allowed non-GitHub user's access to our GitHub releases with the hope that they would be more informed about the progress our team is making in squashing bugs, adding features, and kicking butt. With [Releases](https://github.com/ritterim/releases) we can do just that.
+We wanted to &#35; create a tool that allowed non-GitHub user's access to our GitHub releases with the hope that they would be more informed about the progress our team is making in squashing bugs, adding features, and kicking butt. With [Releases](https://github.com/ritterim/releases) we can do just that.
 
 ![aspnet 5 releases](https://silvrback.s3.amazonaws.com/uploads/7ee735c2-d192-43fa-bb14-b72975aadc67/Latest_releases_large.png)
 

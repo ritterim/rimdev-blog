@@ -25,7 +25,7 @@
     }
   });
 
-  $(".freshness").hover(function () {
+  $(".freshness i").hover(function () {
     $(".freshness-hover").addClass("hover-out").delay(3000).queue(function() {
       $(this).removeClass("hover-out").dequeue();
     });

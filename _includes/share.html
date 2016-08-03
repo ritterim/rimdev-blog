@@ -1,7 +1,7 @@
 <ul class="list-inline share">
   <li class="list-inline-item">Share</li>
   <li class="list-inline-item">
-    <a href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}"
+    <a href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text | url_encode }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
     <i class="fa fa-twitter"></i>
     </a>
