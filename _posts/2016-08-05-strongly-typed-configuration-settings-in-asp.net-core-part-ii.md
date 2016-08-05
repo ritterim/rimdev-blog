@@ -34,7 +34,7 @@ public class Bank
     public Guid AccountNumber { get; protected set; }
     public string Name { get; protected set; }
 }
-// our serialization targer
+// our serialization target
 public class BankSettings
 {
     public Guid AccountNumber { get; set; }
