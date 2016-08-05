@@ -7,7 +7,7 @@ tags:
 - asp.net core
 - .net
 categories: asp.net
-twitter_text: Strongly Typed Configuration Settings in ASP.NET Core Part II 
+twitter_text: Strongly Typed Configuration Settings in #aspnetcore Part II @dotnet
 authors: Khalid Abuhakmeh
 image : https://farm5.staticflickr.com/4106/5088588770_0f13d0a3f2_b_d.jpg
 image_url : https://www.flickr.com/photos/jungle-jane-pics/
