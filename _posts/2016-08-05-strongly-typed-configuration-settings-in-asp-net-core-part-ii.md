@@ -90,4 +90,4 @@ public static class BankExtensions
 
 If you followed the post correctly, you should be able to inject the object into your application models without that pesky `IOptions<T>` interface.
 
-![asp.net core strongly typed app settings](/images/aspnet-core-strongly-typed-app-settings.png)
+![asp.net core strongly typed app settings](/images/aspnet-core-strongly-typed-app-settings.png){: .img-fluid }
