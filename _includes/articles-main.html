@@ -34,9 +34,9 @@
     </div><!-- /.time-to-read -->
   </div><!-- /.author -->
 
-  <div class="freshness text-muted">
-    {% include freshness.html %}
-    <i class="fa fa-heartbeat {{ class }}"></i> <em>This post is {{ freshness }} days old.</em>
+  <div class="freshness text-muted" data-freshness-datetime="{{ post.date | date_to_xmlschema }}">
+    <i class="fa fa-heartbeat freshness-icon-js"></i>
+    <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
   </div>
 
   {{ content }}
