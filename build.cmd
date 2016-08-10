@@ -15,9 +15,6 @@ if %ERRORLEVEL% neq 0 goto BuildFail
 call npm install
 if %ERRORLEVEL% neq 0 goto BuildFail
 
-call npm test
-if %ERRORLEVEL% neq 0 goto BuildFail
-
 goto BuildSuccess
 
 :BuildFail
