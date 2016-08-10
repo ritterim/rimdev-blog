@@ -223,13 +223,14 @@ JitModules=clrjit-v4.6.1080.0
 
 Type=CertSigningBenchmarks  Mode=Throughput  GarbageCollection=Concurrent Workstation  
 ```
-            Method |     Median |    StdDev |
------------------- |----------- |---------- |
- SHA256 - 2048-bit |  2.6641 ms | 0.2161 ms |
- SHA256 - 4096-bit | 12.0186 ms | 0.5512 ms |
- SHA256 - 8192-bit | 85.4100 ms | 5.1830 ms |
- SHA512 - 2048-bit |  2.5437 ms | 0.1521 ms |
- SHA512 - 4096-bit | 12.0219 ms | 1.2272 ms |
- SHA512 - 8192-bit | 80.3093 ms | 4.3564 ms |
+
+|            Method |     Median |    StdDev |
+| ----------------- | ---------- | --------- |
+| SHA256 - 2048-bit |  2.6641 ms | 0.2161 ms |
+| SHA256 - 4096-bit | 12.0186 ms | 0.5512 ms |
+| SHA256 - 8192-bit | 85.4100 ms | 5.1830 ms |
+| SHA512 - 2048-bit |  2.5437 ms | 0.1521 ms |
+| SHA512 - 4096-bit | 12.0219 ms | 1.2272 ms |
+| SHA512 - 8192-bit | 80.3093 ms | 4.3564 ms |
 
 We were a bit surprised about the insignificant difference between SHA256 and SHA512. Granted, these results are coming from my dev. machine and not how the app. runs in production, they still give us a good baseline. More importantly, we now understand ***why*** the login originally took so long.
