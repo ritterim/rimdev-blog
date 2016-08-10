@@ -1,3 +1,6 @@
 {
-  "presets": ["technical-blog"]
+  "presets": ["technical-blog"],
+  "rules": {
+    "spelling-error": "info"
+  }
 }
