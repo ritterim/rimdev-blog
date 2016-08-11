@@ -225,13 +225,13 @@ Type=CertSigningBenchmarks  Mode=Throughput  GarbageCollection=Concurrent Workst
 ```
 
 {: .table .table-striped .table-fluid}
-|            Method |     Median |    StdDev |
-| ----------------- | ---------- | --------- |
-| SHA256 - 2048-bit |  2.6641 ms | 0.2161 ms |
-| SHA256 - 4096-bit | 12.0186 ms | 0.5512 ms |
-| SHA256 - 8192-bit | 85.4100 ms | 5.1830 ms |
-| SHA512 - 2048-bit |  2.5437 ms | 0.1521 ms |
-| SHA512 - 4096-bit | 12.0219 ms | 1.2272 ms |
-| SHA512 - 8192-bit | 80.3093 ms | 4.3564 ms |
+|            Method |     Median |      Mean |  StdError |    StdDev |   Op/s |        Min |        Max |
+|------------------ |----------- |---------- |---------- |---------- |------- |----------- |----------- |
+| SHA256 - 2048-bit |  2.4120 ms | 2.4276 ms | 0.0164 ms | 0.0837 ms | 411.92 |  2.3309 ms |  2.6418 ms |
+| SHA256 - 4096-bit | 11.4094 ms |11.4642 ms | 0.0423 ms | 0.1892 ms |  87.23 | 11.2163 ms | 11.8987 ms |
+| SHA256 - 8192-bit | 79.2107 ms |81.1363 ms | 1.2031 ms | 6.1348 ms |  12.32 | 76.7397 ms |106.1459 ms |
+| SHA512 - 2048-bit |  2.4356 ms | 2.4679 ms | 0.0210 ms | 0.1258 ms |  405.2 |  2.3434 ms |  2.8646 ms |
+| SHA512 - 4096-bit | 11.4812 ms |11.6003 ms | 0.0923 ms | 0.4128 ms |   86.2 | 11.2208 ms | 12.9738 ms |
+| SHA512 - 8192-bit | 77.9870 ms |78.2887 ms | 0.2996 ms | 1.3398 ms |  12.77 | 76.5296 ms | 81.6495 ms |
 
 We were a bit surprised about the insignificant difference between SHA256 and SHA512. Granted, these results are coming from my dev. machine and not how the app. runs in production, they still give us a good baseline. More importantly, we now understand ***why*** the login originally took so long.
