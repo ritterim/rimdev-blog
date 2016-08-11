@@ -224,6 +224,7 @@ JitModules=clrjit-v4.6.1080.0
 Type=CertSigningBenchmarks  Mode=Throughput  GarbageCollection=Concurrent Workstation  
 ```
 
+{: .table .table-striped .table-fluid}
 |            Method |     Median |    StdDev |
 | ----------------- | ---------- | --------- |
 | SHA256 - 2048-bit |  2.6641 ms | 0.2161 ms |
