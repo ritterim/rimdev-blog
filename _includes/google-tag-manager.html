@@ -1,3 +1,4 @@
+{% assign post = site.posts.first %}
 <script>
   dataLayer = [{
     'pageTitle': '{% if post.title %}{{ post.title }}{% else %}{{ page.title }}{% endif %}'
