@@ -29,8 +29,7 @@ Understanding what is happening inside of the `RouterMiddleware`, we should be a
 ```csharp
 var routes = RouteData
                 .Routers
-                .Where(x => x is RouteCollection)
-                .Cast<RouteCollection>()
+                .OfType<RouteCollection>()
                 .FirstOrDefault();
 ```
 
