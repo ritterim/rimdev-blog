@@ -66,7 +66,7 @@ Simply setup TeamCity to run your **build.cmd**, or however you want to setup yo
 
 **The important point is ensuring the build artifacts include the `.tgz` file.**
 
-![Build script: Artifact paths](images/publishing-npm-packages-from-teamcity/build-script-artifact-paths.png){: .img-fluid}
+![Build script: Artifact paths](/images/publishing-npm-packages-from-teamcity/build-script-artifact-paths.png){: .img-fluid}
 
 ## Publishing the `npm pack` artifact
 
@@ -100,9 +100,9 @@ call npm config delete "//registry.npmjs.org/:_authToken"
 - Inspect "Failure Conditions", you may want to set "an error message is logged by build runner" if it is not already.
 - Dependencies: Setup both a snapshot and artifact dependency:
 
-![Snapshot dependency](images/publishing-npm-packages-from-teamcity/publish-snapshot-dependency.png){: .img-fluid}
+![Snapshot dependency](/images/publishing-npm-packages-from-teamcity/publish-snapshot-dependency.png){: .img-fluid}
 
-![Artifact dependency](images/publishing-npm-packages-from-teamcity/publish-artifact-dependency.png){: .img-fluid}
+![Artifact dependency](/images/publishing-npm-packages-from-teamcity/publish-artifact-dependency.png){: .img-fluid}
 
 ## Now, deploy from `master`!
 
