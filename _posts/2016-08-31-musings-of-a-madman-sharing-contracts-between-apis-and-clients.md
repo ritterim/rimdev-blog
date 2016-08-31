@@ -62,7 +62,7 @@ These interfaces would be passed down via a Nuget package to our consuming appli
 
 > Well, that doesn't reduce code duplication, does it?
 
-You would be right, not yet. We would have to make some modifications and write a client. Lets look at our modifications to jam pack the contract with helpful information.
+You would be right, not yet. We would have to make some modifications and write a client. Let us look at our modifications to jam pack the contract with helpful information.
 
 ```csharp
 [Url("/phone-numbers")]
