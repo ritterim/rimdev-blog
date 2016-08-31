@@ -96,7 +96,7 @@ ApiResult<IPhoneNumberCreateResponse> result =
     await Api.ExecuteAsync(new MyLocalPhoneNumberCreateRequest());
 ```
 
-The `ApiResult` class is nothing eventful. Just a wrapper in the case the actuall HTTP request fails.
+The `ApiResult` class is nothing eventful. Just a wrapper in the case the actual HTTP request fails.
 
 ```csharp
 public class ApiResult<T> {
@@ -122,7 +122,7 @@ Don't believe me? Here is a screenshot of **Impromptu.Interfaces** doing its mag
 
 ## Conclusion
 
-There is a lot of gray areas here since I haven't taken the time to implement this approach. I just wanted to document my initial idea so that I didn't forget about it and to also see what others may think. If anyone does end up applying this method, I'd love to hear from you. I feel like this mental exercise solved my initial problems of keeping clients informed, up to date, being a bit more strict, and keeping code DRY. The concern I may have is the performance of using dynamic objects in an application. Anyways, I hope you enjoyed diving into the mouth of madness with me.
+There are a lot of gray areas here since I haven't taken the time to implement this approach. I just wanted to document my initial idea so that I didn't forget about it and to also see what others may think. If anyone does end up applying this method, I'd love to hear from you. I feel like this mental exercise solved my initial problems of keeping clients informed, up to date, being a bit more strict, and keeping code DRY. The concern I may have is the performance of using dynamic objects in an application. Anyways, I hope you enjoyed diving into the mouth of madness with me.
 
 
 
