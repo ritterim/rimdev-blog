@@ -118,7 +118,7 @@ This is where `dynamic` comes into play. There is a Nuget package named **[Impro
 
 Don't believe me? Here is a screenshot of **Impromptu.Interfaces** doing its magic.
 
-![Impromptu Interfaces working](./images/impromptu-interfaces-working.png)
+![Impromptu Interfaces working](/images/impromptu-interfaces-working.png)
 
 ## Conclusion
 
