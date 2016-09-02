@@ -18,10 +18,10 @@ On July 18th, 2016 [the ASP.NET Monsters](https://twitter.com/aspnetmonsters) an
 **So we did just that!** We had three entries:
 
 1. [GPS Configuration provider](https://www.billboga.com/posts/creating-a-gps-configuration-provider-for-aspnet-core-10)
-2. [Voice Recognition provider](https://www.billboga.com/posts/creating-a-twitter-configuration-provider-for-aspnet-core-10)
-3. [Twitter provider](http://rimdev.io/speech-recognition-configuration-provider-for-asp.net-core/)
+2. [Voice Recognition provider](http://rimdev.io/speech-recognition-configuration-provider-for-asp.net-core/)
+3. [Twitter provider](https://www.billboga.com/posts/creating-a-twitter-configuration-provider-for-aspnet-core-10)
 
-On September 1, 2016 [Bill Boga](http://billboga.com) and [Khalid Abuhakmeh (me)](http://khalidabuhakmeh.com) won 1st and 2nd place respectively. Definitely a fun competition and congratulations to Bill Boga for blowing some minds and taking the victory (even if it was from me :P).
+On September 1st, 2016 [Bill Boga](http://billboga.com) and [Khalid Abuhakmeh (me)](http://khalidabuhakmeh.com) won 1st and 2nd place respectively. Definitely a fun competition and congratulations to Bill Boga for blowing some minds and taking the victory (even if it was from me :P).
 
 Watch the [announcement here](https://channel9.msdn.com/Series/aspnetmonsters/ASPNET-Monsters-Summer-of-Config-Winners).
 
