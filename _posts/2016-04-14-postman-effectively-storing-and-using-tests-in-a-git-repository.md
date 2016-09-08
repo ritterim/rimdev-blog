@@ -17,7 +17,7 @@ Postman tests can be exported to JSON. And, since JSON is *text* it can be versi
 
 ## Newman
 
-Newman is a command line runner built for Postman, available on npm as [newman](https://www.npmjs.com/package/newman). A simple `npm install newman --save-dep` will install it and add it as a *devDependency* in your Node.js application.
+Newman is a command line runner built for Postman, available on npm as [newman](https://www.npmjs.com/package/newman). A simple `npm install newman --save-dev` will install it and add it as a *devDependency* in your Node.js application.
 
 If the application isn't a Node.js application and you don't have a *package.json* yet, simply run `npm init` to create a *package.json* file. Adding *package.json* to existing applications enables developers to install any dependencies with `npm install`. Plus, *package.json* `scripts` are a great place to match environments and test files!
 
