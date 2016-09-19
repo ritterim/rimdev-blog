@@ -13,7 +13,7 @@ image_url : https://www.flickr.com/photos/gustavodibobeira/
 image_credit: Gustavo Duarte
 ---
 
-As of writing this post, [Stuntman](https://github.com/ritterim/stuntman) sits at 112 stars on GitHub, which is exceptional for an ASP.NET project. As a point of reference, [StructureMap](https://github.com/structuremap/structuremap), a renowned project sits at 621 stars. This post will tell you about the aspects that make Stuntman unique, the avenues used to get noticed in the .NET Community, and how you may apply it to your OSS projects.
+As of writing this post, [Stuntman](https://github.com/ritterim/stuntman) sits at 112 stars on GitHub, which is exceptional for an ASP.NET project. As a point of reference, [StructureMap](https://github.com/structuremap/structuremap), a renowned project, sits at 621 stars. This post will tell you about the aspects that make Stuntman unique, the avenues used to get noticed in the .NET Community, and how you may apply it to your OSS projects.
 
 ## 1. A Good Idea
 
