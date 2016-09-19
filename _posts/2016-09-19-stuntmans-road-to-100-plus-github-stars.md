@@ -13,7 +13,7 @@ image_url : https://www.flickr.com/photos/gustavodibobeira/
 image_credit: Gustavo Duarte
 ---
 
-As of writing this post, [Stuntman](https://github.com/ritterim/stuntman) sits at 112 stars on GitHub, which exceptional for an ASP.NET project. As a point of reference, [Structuremap](https://github.com/structuremap/structuremap), a renowned project sits at 621 stars. This post will tell you about the aspects that make Stuntman unique, the avenues used to get noticed in the .NET Community, and how you may apply it to your OSS projects.
+As of writing this post, [Stuntman](https://github.com/ritterim/stuntman) sits at 112 stars on GitHub, which is exceptional for an ASP.NET project. As a point of reference, [StructureMap](https://github.com/structuremap/structuremap), a renowned project sits at 621 stars. This post will tell you about the aspects that make Stuntman unique, the avenues used to get noticed in the .NET Community, and how you may apply it to your OSS projects.
 
 ## 1. A Good Idea
 
@@ -23,7 +23,7 @@ So how do you come up with a *"good" idea*? I recommend determining pain points 
 
 ## 2. Implementation
 
-I like packages that have lowered the barriers to entry. It was important for us to work on an implementation that was easy to get started with but had the depth to solve some of the harder problems associated with authentication. When writing a package, think about your users; users are developers in this case. It is also important to be transparent while implementing. I mean you should be doing any OSS in a public forum, like GitHub, even if you think no one is watching.
+It was important for us to work on an implementation that was easy to get started with but had the depth to solve some of the harder problems associated with authentication. When writing a package, think about your users; users are developers in this case. It is also important to be transparent while implementing. I mean you should be doing any OSS in a public forum, like GitHub, even if you think no one is watching.
 
 ## 3. Publishing
 
@@ -45,7 +45,7 @@ This section is probably hardest for most developers; I know it was for us. Once
 
 ### Twitter
 
-First and for most, get on Twitter. You have no excuse not to be on this social media platform. Social media is where most of your colleagues are converging to share and promote ideas.
+First and foremost, get on Twitter. You have no excuse not to be on this social media platform. Social media is where most of your colleagues are converging to share and promote ideas.
 
 I recommend finding distinguished and respected developers who coincide with your idea. For example, if your idea attempts to solve an authentication pain point, then follow and talk to authentication experts. 
 
