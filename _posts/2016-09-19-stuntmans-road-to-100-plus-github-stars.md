@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stuntman's Road To 100+ GitHub Stars : Marketing Your OSS .NET Project"
+title: "Stuntman's Road To 100+ GitHub Stars: Marketing Your OSS .NET Project"
 date: 2016-09-19 13:02:59
 tags: 
 - OSS
