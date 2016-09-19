@@ -11,7 +11,7 @@ function load_disqus()
 {
   disqus_loaded = true;
   var disqus_shortname = '{{site.disqus_username}}';
-  var disqus_title = '{{page.title}}';
+  var disqus_title = '{{page.title | url_encode }}';
   var disqus_url = '{{page.url}}';
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
