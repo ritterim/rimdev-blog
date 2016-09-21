@@ -22,7 +22,7 @@ Maintenance mode doesn't just affect your users, but also may impact potential u
 
 > you have to send a 503 status code in combination with a Retry-After header. Basically you’re saying: hang on, we’re doing some maintenance, please come back in X minutes. That sounds a lot better than what a 404 error says: “Not Found”. A 404 means that the server can’t find anything to return for the URL that was given.
 
-Give that information and the necessary maintenance of a site; we decided to write middleware for support instances.
+Given that information and the necessary maintenance of a site, we decided to write middleware for support instances.
 
 ```
 public class MaintenanceMiddleware
