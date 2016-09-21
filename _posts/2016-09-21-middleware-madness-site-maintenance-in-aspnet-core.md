@@ -24,7 +24,7 @@ Maintenance mode doesn't just affect your users, but also may impact potential u
 
 Given that information and the necessary maintenance of a site, we decided to write middleware for support instances.
 
-```
+```csharp
 public class MaintenanceMiddleware
 {
     private readonly RequestDelegate next;
@@ -101,14 +101,14 @@ public static class MaintenanceWindowExtensions
 
 Using the middleware is straight forward. First register the `MaintenanceWindow` class.
 
-```
+```csharp
 services.AddMaintenance(() => true,
              Encoding.UTF8.GetBytes("<div>Doing Maintenance Yo!</div>"));
 ```
 
 Then register the `MaintenanceMiddleware`.
 
-```
+```csharp
 app.UseMaintenance();
 ```
 
