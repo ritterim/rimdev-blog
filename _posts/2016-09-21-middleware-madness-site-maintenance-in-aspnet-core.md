@@ -7,7 +7,7 @@ tags:
 - ASP.NET Core
 - Middleware
 categories: Middleware Madness
-twitter_text: "Middleware Madness : Site Maintenance in #aspnetcore"
+twitter_text: "Middleware Madness: Site Maintenance in #aspnetcore"
 authors:
 - Khalid Abuhakmeh
 - Bill Boga
@@ -44,7 +44,7 @@ public class MaintenanceMiddleware
         {
             // set the code to 503 for SEO reasons
             context.Response.StatusCode = (int)HttpStatusCode.ServiceUnavailable;
-            context.Response.Headers.Add("Retry-AFter", window.RetryAfterInSeconds.ToString());
+            context.Response.Headers.Add("Retry-After", window.RetryAfterInSeconds.ToString());
             context.Response.ContentType = window.ContentType;
             await context
                 .Response
