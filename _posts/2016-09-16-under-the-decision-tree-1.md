@@ -2,12 +2,13 @@
 layout: post
 title: "Under the Decision Tree (#1)"
 date: 2016-09-16 11:00:00
-tags: 
+tags:
 - Machine Learning
 categories: Under the Decision Tree
 twitter_text: Under the Decision Tree (#1)
 authors: Scott Schwalm
 image: /images/tree-338211_1280.jpg
+external_links_target_blank: true
 ---
 
 Welcome to the first post in what will be a weekly series we are calling **Under the Decision Tree**.  This will be a listing of blog posts, podcasts, news articles, and anything else we found interesting in the world of machine learning during the past week.
