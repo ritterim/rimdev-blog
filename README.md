@@ -9,7 +9,7 @@ Photography by JJ Walck
 1. [Install Jekyll](http://jekyllrb.com)
 2. Fork the [RIMdev blog](https://github.com/ritterim/rimdev-blog/fork)
 3. Clone the repo you just forked.
-4. `jekyll s`
+4. Run `run.cmd` or `run.sh`.
 
 ## Tests
 
@@ -89,7 +89,7 @@ Using a Creative Commons image requiring attribution?
 image: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
 image_url: https://www.flickr.com/photos/khawkins04/
 image_credit: Ken Hawkins
-```  
+```
 
 ### Author pages
 
