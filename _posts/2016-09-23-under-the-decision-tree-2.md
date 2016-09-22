@@ -8,16 +8,23 @@ categories: Under the Decision Tree
 twitter_text: Under the Decision Tree (#2)
 authors: Scott Schwalm
 image: /images/tree-338211_1280.jpg
+external_links_target_blank: true
 ---
 
-Welcome back for another edition of #Under the Decision Tree#.  As usual there were quite a number of interesting stories focused on machine learning and AI.  Please enjoy.
+Welcome back for another edition of **Under the Decision Tree**.  As usual there were quite a number of interesting stories focused on machine learning and AI.  One particularly interesting topic this week was Micorsoft and its efforts in cancer research.  Please enjoy, and as always comments or suggestions are welcome at [Decision Tree](mailto:decisiontree@ritterim.com)
 
 ## News/Articles
 
+- [Microsoft says it will 'solve' cancer in the next 10 years](http://www.sciencealert.com/microsoft-says-they-will-fix-cancer-in-under-10-years)
+- [Microsoft wants to 'solve' cancer in the next 10 years using AI](http://www.wired.co.uk/article/microsoft-solve-cancer-computer-science)
+- [Microsoft (MSFT) Stock Higher, Developing AI Cancer Treatment Technology](https://www.thestreet.com/story/13745887/1/microsoft-msft-stock-higher-developing-ai-cancer-treatment-technology.html)  
+- [Automated screening for childhood communication disorders](http://news.mit.edu/2016/automated-screening-childhood-communication-disorders-0922)
+- [Stealing an AI algorithm and its underlying data is a “high-school level exercise”](http://qz.com/786219/stealing-an-ai-algorithm-and-its-underlying-data-is-a-high-school-level-exercise/)
+- [Pentagon wants an imaging sensor that can think](https://defensesystems.com/articles/2016/09/21/darpa-reimagine-machine-learing-imagery.aspx)
+- [Cheat Sheet: 5 Things Everyone Should Know About Machine Learning](http://www.forbes.com/sites/bernardmarr/2016/09/22/cheat-sheet-5-things-everyone-should-know-about-machine-learning/#33cec23d582e)
+- [Scientists teach machines to hunt and kill humans — in Doom deathmatch mode](https://techcrunch.com/2016/09/21/scientists-teach-machines-to-hunt-and-kill-humans-in-doom-deathmatch-mode/amp/) *We all knew that was inevitable.
 - [Using Machine Learning To Make Drug Discovery Better](http://www.huffingtonpost.com/adi-gaskell/using-machine-learning-to_b_12049046.html)
 - [Three Barriers to Machine Learning Adoption](http://insidebigdata.com/2016/09/20/three-barriers-to-machine-learning-adoption/)
-- [Microsoft wants to 'solve' cancer in the next 10 years using AI](http://www.wired.co.uk/article/microsoft-solve-cancer-computer-science)
-- [Microsoft (MSFT) Stock Higher, Developing AI Cancer Treatment Technology](https://www.thestreet.com/story/13745887/1/microsoft-msft-stock-higher-developing-ai-cancer-treatment-technology.html)
 - [Google has a new plan to fight internet trolls, and it starts and ends with AI](https://www.yahoo.com/tech/google-plan-fight-internet-trolls-152634272.html)
 - [Cydersoft Uses Machine Learning to Battle Fraud-Bots](http://tech.co/cydersoft-uses-machine-learning-battle-fraud-bots-2016-09)
 - [Plugging Holes In Machine Learning](http://semiengineering.com/whats-missing-from-machine-learning-2/)
