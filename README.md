@@ -18,7 +18,7 @@ Tests are ran with `npm test`. This runs [markdown-proofing](https://www.npmjs.c
 ## New in this release
 
 - Jekyll 3 ([faster](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), [release notes](https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/))
-- [Bootstrap 4 (Alpha 2)](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
+- [Bootstrap 4 (Alpha 4)](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
 - [Jekyll @mentions](https://github.com/jekyll/jekyll-mentions)
 - [Jekyll gist](https://github.com/jekyll/jekyll-gist) support
 - author pages (see below)
@@ -89,7 +89,7 @@ Using a Creative Commons image requiring attribution?
 image: https://farm5.staticflickr.com/4103/5029857600_d8ed3aaa06_b_d.jpg
 image_url: https://www.flickr.com/photos/khawkins04/
 image_credit: Ken Hawkins
-```  
+```
 
 ### Author pages
 
