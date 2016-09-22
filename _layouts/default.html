@@ -12,7 +12,7 @@
     </div>
     <!-- main post column -->
     <div class="col col-md-12 col-lg-8 col-xl-9">
-      <div class="post-main-column">
+      <div class="post-main-column" id="post-main-column-js" {% if page.external_links_target_blank %} data-external-links-target-blank="true" {% endif %}>
       {{ content }}
       </div>
     </div>

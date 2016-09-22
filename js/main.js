@@ -53,4 +53,11 @@
       $(this).removeClass("hover-out").dequeue();
     });
   });
+
+  var $postMainColumnJs = $('#post-main-column-js');
+  if ($postMainColumnJs.data('external-links-target-blank')) {
+
+    // Selector from http://stackoverflow.com/a/1871394 from http://stackoverflow.com/questions/1871371/using-jquery-to-open-all-external-links-in-a-new-window
+    $postMainColumnJs.find("a[href^='http://']").prop('target', '_blank');
+  }
 })(jQuery);
