@@ -18,7 +18,7 @@ Tests are ran with `npm test`. This runs [markdown-proofing](https://www.npmjs.c
 ## New in this release
 
 - Jekyll 3 ([faster](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), [release notes](https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/))
-- [Bootstrap 4 (Alpha 2)](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
+- [Bootstrap 4 (Alpha 4)](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
 - [Jekyll @mentions](https://github.com/jekyll/jekyll-mentions)
 - [Jekyll gist](https://github.com/jekyll/jekyll-gist) support
 - author pages (see below)
