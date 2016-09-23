@@ -33,6 +33,7 @@ Welcome back for another edition of **Under the Decision Tree**.  As usual there
 - [Using Machine Learning To Make Drug Discovery Better](http://www.huffingtonpost.com/adi-gaskell/using-machine-learning-to_b_12049046.html)
 - [Salesforce Einstein delivers artificial intelligence across the Salesforce platform](https://techcrunch.com/2016/09/18/salesforce-turns-its-attention-to-artificial-intelligence-with-salesforce-einstein/amp/)
 - [DeepMind wants its healthcare AI to charge by results — but first it needs your data](https://techcrunch.com/2016/09/20/deepmind-wants-its-healthcare-ai-to-charge-by-results-but-first-it-needs-your-data/amp/)
+- [Google's AI is getting really good at captioning photos](https://www.engadget.com/2016/09/23/googles-ai-is-getting-really-good-at-captioning-photos)
 
 ## Podcasts
 - [2016-09-22 Data Stories - Olympic Feathers with Nadieh Bremer](http://datastori.es/83-olympic-feathers-with-nadieh-bremer/)
