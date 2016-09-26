@@ -11,7 +11,7 @@ image: /images/tree-338211_1280.jpg
 external_links_target_blank: true
 ---
 
-Welcome back for another edition of **Under the Decision Tree**.  As usual there were quite a number of interesting stories focused on machine learning and AI.  One particularly interesting topic this week was Micorsoft and its efforts in cancer research.  There are two conferences starting on Monday next week.  Please enjoy, and as always comments or suggestions are welcome at [Decision Tree](mailto:decisiontree@ritterim.com)
+Welcome back for another edition of **Under the Decision Tree**.  As usual there were quite a number of interesting stories focused on machine learning and AI.  One particularly interesting topic this week was Microsoft and its efforts in cancer research.  There are two conferences starting on Monday next week.  Please enjoy, and as always comments or suggestions are welcome at [Decision Tree](mailto:decisiontree@ritterim.com)
 
 ## News/Articles
 
