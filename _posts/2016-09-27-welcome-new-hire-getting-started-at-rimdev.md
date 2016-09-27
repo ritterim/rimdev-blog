@@ -43,12 +43,12 @@ Applications are the supporting cast to your rising star.
 - [Visual Studio Professional](https://www.microsoft.com/net): IDE (available through MSDN).
 - [Screenhero](https://screenhero.com): Remote pairing tool.
 - [Office 365](http://microsoft.office.com): Because... business.
-- [Google Chrome](https://www.google.com/chrome/) or any modern brower.
+- [Google Chrome](https://www.google.com/chrome/) or any modern browser.
 - [RavenDB 2.5](http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2996): our current database.
 - [LocalDb](https://www.microsoft.com/en-us/download/details.aspx?id=52679): our future database as we migrate to SQL Azure.
 - [ElasticSearch](https://www.elastic.co/downloads): our Full-text search provider.
 - [Azure SDK](https://azure.microsoft.com/en-us/downloads/): our hosting environment.
-- [HighFive](https://highfive.com): video confrencing.
+- [HighFive](https://highfive.com): video conferencing.
 - [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx)
 
 ### Optional Applications
@@ -66,7 +66,7 @@ You may need some or all following accounts to interact with the team and the bu
 ### Required Services
 
 - **Active Directory**: If deemed worthy, our IT overlords shall grant you keys to the kingdom. **"HAIL IT!"**
-- [GitHub](https://github.com): our project managent / source control platform.
+- [GitHub](https://github.com): our project management / source control platform.
 - [Raygun](https://raygun.com): Error handling.
 - [Lastpass](https://lastpass.com): password management.
 - [Slack](https://slack.com): a user account to team chat.
