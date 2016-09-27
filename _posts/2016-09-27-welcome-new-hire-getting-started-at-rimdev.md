@@ -49,6 +49,7 @@ Applications are the supporting cast to your rising star.
 - [ElasticSearch](https://www.elastic.co/downloads): our Full-text search provider.
 - [Azure SDK](https://azure.microsoft.com/en-us/downloads/): our hosting environment.
 - [HighFive](https://highfive.com): video confrencing.
+- [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx)
 
 ### Optional Applications
 
