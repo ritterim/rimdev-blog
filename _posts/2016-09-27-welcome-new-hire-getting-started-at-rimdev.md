@@ -19,7 +19,7 @@ Congratulations and welcome *(insert your name here)*. This post is designed to 
 
 Before getting started, we work with many technology stacks but primarily focus on the .NET Framework stack. We believe that it is up to the developer to choose **how** they would like to be productive, without imposing their personal tool choices on others. We also have a mixture of operating systems within our team (Windows and macOS), and you are more than welcome to choose the one suitable for you. I will delineate which items are **required** to be productive, and which ones are suggestions. 
 
-Note: I recommend starting with [Chocolatey](https://chocolatey.org) (if on Windows) as it may make finding and installing the following list of items easier. If on macOS, you may want to install [Homebrew](http://brew.sh/index.html) and [Parallels](https://azure.microsoft.com/en-us/blog/azure-dns-general-availability/).
+Note: I recommend starting with [Chocolatey](https://chocolatey.org) (if on Windows) as it may make finding and installing the following list of items easier. If on macOS, you may want to install [Homebrew](http://brew.sh/index.html) and [Parallels](http://www.parallels.com).
 
 ## Frameworks
 
@@ -27,7 +27,7 @@ The major frameworks we use include:
 
 - [.NET Framework (4.6+ and Core)](https://www.microsoft.com/net)
 - [NodeJs](https://nodejs.org/en/download/)
-- [Ruby (2.3.1)](https://www.ruby-lang.org/en/downloads/)
+- [Ruby (2.3.1) and DevKit](https://www.ruby-lang.org/en/downloads/)
 - [PHP 5](https://secure.php.net/downloads.php#v5.6.26)
 
 There are subset frameworks of the frameworks mentioned above, like AngularJs, Jekyll, ASP.NET MVC, but those are handled at the project level.
@@ -40,7 +40,7 @@ Applications are the supporting cast to your rising star.
 
 - [git](https://www.git-scm.com): Source control management.
 - [Slack](https://slack.com): Team chat and collaboration.
-- [Visual Studio](https://www.microsoft.com/net): IDE (available through MSDN).
+- [Visual Studio Professional](https://www.microsoft.com/net): IDE (available through MSDN).
 - [Screenhero](https://screenhero.com): Remote pairing tool.
 - [Office 365](http://microsoft.office.com): Because... business.
 - [Google Chrome](https://www.google.com/chrome/) or any modern brower.
