@@ -75,7 +75,7 @@ You may need some or all following accounts to interact with the team and the bu
 ### Optional Services
 
 - [Twitter](https://twitter.com): It's nice to know what the rest of the developer community is doing.
-- [Spotify](https://www.spotify.com/us/): Go premium or go broke :).
+- [Spotify Premium](https://www.spotify.com/us/): Go premium or go broke :).
 
 ## Conclusion
 
