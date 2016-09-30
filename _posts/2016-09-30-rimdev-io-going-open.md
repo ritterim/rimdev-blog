@@ -14,7 +14,7 @@ image_url: https://www.flickr.com/photos/velkr0/
 image_credit: velkr0
 ---
 
-Our team believes in being open and transparent, and while we write consistently with some amazing content, we are equally as proud of what we've done with the Jekyll platform. Based on our philosophy of a team being open, transparent, and known as contributors we have decided to make our site a public repository on [GitHub](https://github.com/ritterim/ritterim.github.io). 
+Our team believes in being open and transparent. While we write consistently with some amazing content, we are equally as proud of what we've done with the Jekyll platform. Based on our philosophy of a team being open, transparent, and known as contributors we have decided to make our site a public repository on [GitHub](https://github.com/ritterim/ritterim.github.io). 
 
 > What does this mean for our average reader?
 
