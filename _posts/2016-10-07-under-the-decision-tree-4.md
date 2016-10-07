@@ -11,7 +11,7 @@ image: /images/tree-338211_1280.jpg
 external_links_target_blank: true
 ---
 
-Welcome back for another edition of **Under the Decision Tree**.  This week we had The Data Science Conference in Seattle and interesting articles from teaching AI to be sarcastic to predictions of what AI will look like in 2030.  
+Welcome back for another edition of **Under the Decision Tree**.  This week we had The Data Science Conference in Seattle and interesting articles that include teaching AI to be sarcastic, predictions of what AI will look like in 2030, and much more.   
 
 Comments are always welcome at: [Decision Tree](mailto:decisiontree@ritterim.com)
 
