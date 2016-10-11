@@ -192,3 +192,28 @@ public abstract class AbstractPatchStateRequest<TRequest, TModel> : IPatchState<
     }
 }
 ```
+
+## Update 2016-10-11
+
+To finish out the available code to make everything work, here are the patch-related interfaces:
+
+```csharp
+public interface IPatchState<TRequest, TModel>
+    where TRequest : class, IPatchState<TRequest, TModel>, new()
+{
+    TRequest AddPatchStateMapping<TProperty>(
+        Expression<Func<TRequest, TProperty>> propertyExpression,
+        Action<TModel> propertyToModelMapping = null);
+    void Patch(TModel model);
+}
+
+public interface IPatchState<TRequest>
+{
+    bool IsBound<TProperty>(Expression<Func<TRequest, TProperty>> propertyExpression);
+}
+
+public interface IPatchState
+{
+    void AddBoundProperty(string propertyName);
+}
+```
