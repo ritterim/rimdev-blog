@@ -1,5 +1,5 @@
 # Site settings
-name : rimdev-blog
+name : rimdev
 description: A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://rimdev.io
@@ -43,7 +43,7 @@ github_username:  ritterim
 disqus_username: rimdev
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+exclude: ['package.json', 'src', 'node_modules', 'es-bulk.js']
 
 # RIMdev posting authors
 RIMdev:

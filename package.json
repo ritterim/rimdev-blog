@@ -23,6 +23,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "markdown-proofing": "latest",
-    "shelljs": "^0.7.0"
+    "shelljs": "^0.7.0",
+    "elasticsearch": "^11.0.1"
   }
 }
