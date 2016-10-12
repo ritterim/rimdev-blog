@@ -1,5 +1,6 @@
 [{% for post in site.posts %}
   {
+    "id" : "{{ post.date | date: "%s" }}-{{ post.id | slugify }}",
     "site" : {{ site.name | jsonify }},
     "title": {{ post.title | jsonify }},      
     "url": {{ post.url | jsonify }},                    
