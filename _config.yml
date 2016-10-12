@@ -1,4 +1,5 @@
 # Site settings
+name : rimdev-blog
 description: A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://rimdev.io
