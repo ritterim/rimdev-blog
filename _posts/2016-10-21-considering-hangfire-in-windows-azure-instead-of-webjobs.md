@@ -55,7 +55,7 @@ Azure Scheduler is a task scheduler for the cloud. It can perform actions suited
 - Call an endpoint at a particular time.
 - Push a message in Azure Service Bus.
 - Create a record into Azure Storage.
-- Trigger an Azure WebJob
+- Trigger an Azure WebJob.
 
 #### Development And Deployment
 
@@ -72,7 +72,7 @@ You technically can't test Azure Scheduler locally, but you can mimic its behavi
 
 Once setup, we found that the Azure Scheduler worked dependably and as advertised. It solved the load balancer issue we had with Azure WebJobs as we were triggering execution through the TLD in front of the load balancer and it just worked.
 
-Note: Security is not available on the free tier of Azure Scheduler. The standard tier will cost your $15 USD a month.
+Note: Security is not available on the free tier of Azure Scheduler. The standard tier will cost you $15 USD a month.
 
 ## Hangfire
 
