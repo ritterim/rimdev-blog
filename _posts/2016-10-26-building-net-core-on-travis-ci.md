@@ -19,7 +19,7 @@ image_credit: kweetniet2012
 
 ## Build.sh
 
-You need a build script for Travis CI to execute. It is quite simple.
+You need a build script to the root of our repository for Travis CI to execute. It is quite simple.
 
 ```
 #!/usr/bin/env bash
@@ -30,7 +30,7 @@ You can add additional steps to the `build.sh` to run tests, but this is the sim
 
 ## .Travis.yml 
 
-The `.travis.yml` is used by the service to construct your build environment.
+The `.travis.yml` is used by the service to construct your build environment. Add this to the root of your repository.
 
 ```
 language: csharp
