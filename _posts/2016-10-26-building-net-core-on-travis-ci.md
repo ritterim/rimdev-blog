@@ -45,13 +45,13 @@ script:
 We do a few things in the configuration file:
 
 - set the language to `csharp`
-- set the linux distribution to `trusty`, a newer version of Ubuntu
+- set the linux distribution to `trusty`
 - allow for `sudo` access
 - turn off `mono`; we are running .NET Core now
 - select the dotnet container
 - execute our build script
 
-Note, we could forgo calling our `build.sh` file and put the calls to `dotnet` in the script section of our configuration. We chose not to in this case.
+Note, we could forgo calling our `build.sh` file and put the calls to `dotnet` in the script section of our configuration. We chose not to in this case. The Trusty version of Ubuntu is 14.04. Ubuntu 16.04 was released back in April of 2016, but Travis CI does not support it yet. Travis CI default distribution is 12.04, which is not supported by the .NET Core installer.
 
 ## Conclusion
 
