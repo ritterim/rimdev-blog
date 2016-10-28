@@ -7,6 +7,7 @@ rim_url: https://ritterim.com
 rim_blog: https://blog.ritterim.com
 map_url: https://www.google.com/maps/place/2600+Commerce+Dr,+Harrisburg,+PA+17110/@40.311295,-76.843902,14z/data=!4m2!3m1!1s0x89c8c76c07f542d5:0xa2d30cdf7911f0fa?hl=en
 default_image: /images/default/rimdev-surface.jpg
+safe: false
 
 # Font Awesome version
 fa_version: 4.5.0
@@ -43,6 +44,12 @@ disqus_username: rimdev
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
+
+# Url Shortener
+shortener:
+  basepath: /s/        # Path for stored redirects.
+  preserve: false      # Keep previously generated files.
+  salt:     "RimDev"   # The optional salt, used when hasing the Unix time.
 
 # RIMdev posting authors
 RIMdev:
