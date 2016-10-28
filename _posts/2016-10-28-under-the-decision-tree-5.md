@@ -5,7 +5,7 @@ date: 2016-10-28 07:00:00
 tags: 
 - Machine Learning
 categories: Under the Decision Tree
-twitter_text: Under the Decision Tree (#5) #machinelearning #AI #artificialintelligence #software #bigdata #science
+twitter_text: "Under the Decision Tree (#5) #machinelearning #AI #artificialintelligence #software #bigdata #science"
 authors: Scott Schwalm
 image: /images/tree-338211_1280.jpg
 external_links_target_blank: true
