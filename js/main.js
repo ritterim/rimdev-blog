@@ -1,18 +1,40 @@
 (function($) {
-  if ($(window).width() > 991) {
-    var lastScrollTop = 0;
-    $(window).on("scroll", function() {
-      var state = $(this).scrollTop();
-      if (state < lastScrollTop){
-        $("footer").show("fast");
-      } else {
-        $("footer").hide("slow");
+  // create sidebar and attach to menu open
+  $('.ui.sidebar')
+    .sidebar('attach events', '.icon.newspaper');
+
+  $('.ui.sidebar')
+    .visibility({
+      once: false,
+      onPassing: function() {
+
+        $('.pusher article')
+          .css('filter', 'blur(2px)');
+      },
+      onPassing: function() {
+        $('.pusher article')
+          .css('filter', 'blur(0)');
       }
-      lastScrollTop = state;
+  });
+
+  // (cc) image credit links will always vary in width.
+  var $photoCredit = $('.photo-credit'),
+      creditWidth  = $photoCredit.width();
+
+  $photoCredit
+    .css('right', 'calc(-'+creditWidth+'px + 0.3em)')
+    .animate({
+      opacity: 1
     });
-  } else {
-    $("footer").show();
-  }
+  $photoCredit
+    .hover(
+      function() {
+        $(this)
+          .animate({ right: '-1em' });
+      }, function() {
+        $(this)
+          .css( 'right', 'calc(-'+creditWidth+'px + 0.3em)');
+  });
 
   $('*[data-freshness-datetime]').each(function(i, el) {
     var $el = $(el);
@@ -37,21 +59,21 @@
     });
   });
 
-  $("a[href*='#']").on("click", function(e) {
-    var target = $(this.hash);
-    if (target.length) {
-      e.preventDefault();
-      $("html,body").animate({
-        scrollTop: (target.offset().top) - 100
-      }, "fast");
-      return false;
-    }
-  });
-
-  $(".freshness i").hover(function () {
-    $(".freshness-hover").addClass("hover-out").delay(3000).queue(function() {
-      $(this).removeClass("hover-out").dequeue();
+  // fix menu when passed
+  $('.masthead')
+    .visibility({
+      once: false,
+      onBottomPassed: function() {
+        $('.icon.menu').transition('fade in');
+      },
+      onBottomPassedReverse: function() {
+        $('.icon.menu').transition('fade out');
+      }
     });
+
+  $('.icon.heartbeat')
+    .popup({
+      popup: '.freshness.popup'
   });
 
   var $postMainColumnJs = $('#post-main-column-js');

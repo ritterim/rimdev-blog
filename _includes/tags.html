@@ -1,5 +1,7 @@
-<ul class="list-inline">
+<div class="ui horizontal list">
   {% for tags in page.tags %}
-  <li class="list-inline-item"><a class="tag" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a></li>
+  <div class="item">
+    <a class="ui basic label orange large" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a>
+  </div>
   {% endfor %}
-</ul>
+</div>

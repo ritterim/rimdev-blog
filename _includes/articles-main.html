@@ -1,49 +1,46 @@
-<div class="post-number">
-  {% if page.date %}{{ page.date | date: "%y.%j" }}{% else %}{{ post.date | date: "%y.%j" }}{% endif %}
-</div>
-
-{% if post.image %}
-<div class="post-has-image">
-  {% if post.image_credit %}
-  <div class="photo-credit">
-    Image <span>CC</span> <a href="{{ post.image_url }}">{{ post.image_credit }}</a>
-  </div>
-  {% endif %}
-  <img src="{{ post.image }}" alt="{{ post.title }}" >
-</div>
+{% if page.image %}
+{% assign postImage = page.image %}
 {% else %}
-<div class="post-has-image">
-  <img src="{{ site.default_image }}" alt="{{ post.title }}" >
-</div>
+{% assign postImage = site.default_image %}
 {% endif %}
 
-<article>
+<div class="ui vertical masthead segment">
+  {% include menu-icons.html %}
+  <img src="{{ postImage }}" alt="{{ post.title }}" />
+</div>
 
-  <h1>{{ post.title }}</h1>
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable text container">
+    <!-- <div class="ui text container"> -->
+      <article>
 
-  <div class="author">
-    Written by
-    {% include articles-authors.html %}
+        <h1>{{ page.title }}</h1>
 
-    {% assign page = post %}
+        <div class="author">
+          Written by
+          {% include articles-authors.html %}
 
-    <div class="time-to-read text-muted">
-      {% include word-count.html %}
-      <i class="fa fa-book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " minute read" }}
+          <div class="time-to-read text-muted">
+            {% include word-count.html %}
+            <i class="icon book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " minute read" }}
 
-    </div><!-- /.time-to-read -->
-  </div><!-- /.author -->
+          </div><!-- /.time-to-read -->
+        </div><!-- /.author -->
 
-  <div class="freshness text-muted" data-freshness-datetime="{{ post.date | date_to_xmlschema }}">
-    <i class="fa fa-heartbeat freshness-icon-js"></i>
-    <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
+        <div class="freshness text-muted" data-freshness-datetime="{{ page.date | date_to_xmlschema }}">
+          <i class="icon heartbeat freshness-icon-js"></i>
+          <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
+        </div>
+
+        {{ content }}
+
+        {% include articles-footer.html %}
+
+      </article>
+
+      {% include articles-related.html %}
+      {% include disqus.html %}
+
+    <!-- </div> -->
   </div>
-
-  {{ content }}
-
-  {% include articles-footer.html %}
-
-</article>
-
-{% include articles-related.html %}
-{% include disqus.html %}
+</div>

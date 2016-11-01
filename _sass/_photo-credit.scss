@@ -1,17 +1,11 @@
-.photo-credit {
-  background: rgba($color-white,.6);
-  color: $color-grey;
-  font-size: 80%;
-  padding: 5px;
-  position: absolute;
-  z-index: 1000;
-  right: 0;
-  bottom: 0;
-  span {
-    border: 1px solid $color-grey;
-    display: inline-block;
-    text-align: center;
-    @include border-radius(50%);
-    @include square(22px);
+.ui.label {
+  &.photo-credit {
+    background: darken($grey-dark, 10%);
+    color: $color-white;
+    padding-right: 2em !important;
+    position: absolute;
+    z-index: 100;
+    bottom: 1em;
+    @include opacity(0,0);
   }
 }

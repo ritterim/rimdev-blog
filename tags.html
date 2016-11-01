@@ -3,38 +3,40 @@ layout: page
 title: tag, you're it!
 permalink: /tags/
 ---
-<div class="tags">
-  <ul class="list-inline">
+<div class="ui text conatiner tags">
+
   {% assign tags_list = site.tags %}
     {% if tags_list.first[0] == null %}
       {% for tag in tags_list %}
-        <li class="list-inline-item"><a class="tag" href="#{{ tag }}" title="{{ tag }}">{{ tag }}</a></li>
+        <a class="ui basic label orange" href="#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
       {% endfor %}
     {% else %}
       {% for tag in tags_list %}
-        <li class="list-inline-item"><a class="tag" href="#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a></li>
+        <a class="ui basic label orange" href="#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a>
       {% endfor %}
     {% endif %}
   {% assign tags_list = nil %}
-  </ul>
+
 
   {% for tag in site.tags  %}
     <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
-    <ul class="list-unstyled">
+    <div class="ui list">
       {% assign pages_list = tag[1] %}
       {% for post in pages_list reversed %}
         {% if post.title != null %}
         {% if group == null or group == post.group %}
-          <li class="freshness-icon" data-freshness-datetime="{{ post.date | date_to_xmlschema }}">
+          <div class="item freshness-icon" data-freshness-datetime="{{ post.date | date_to_xmlschema }}">
             {% assign page = post %}
-            <i class="fa fa-heartbeat freshness-icon-js"></i>
-            <a href="{{ post.url | prepend: site-url }}">{{ post.title }}</a>
-          </li>
+            <i class="icon heartbeat freshness-icon-js"></i>
+            <div class="content">
+              <a href="{{ post.url | prepend: site-url }}">{{ post.title }}</a>
+            </div>
+          </div>
         {% endif %}
         {% endif %}
       {% endfor %}
       {% assign pages_list = nil %}
       {% assign group = nil %}
-    </ul>
+    </div>
   {% endfor %}
 </div>

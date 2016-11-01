@@ -1,17 +1,23 @@
-<footer>
-  <div class="row">
-    <div class="col-md-6 col-sm-12">
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
-        <li class="list-inline-item hidden-sm-up social">&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy | replace: " LLC","" }}</a></li>
-        <li class="list-inline-item hidden-sm-down"><a target="_blank" href="{{ site.rim_blog }}">Ritter <i class="fa fa-commenting-o"></i></a></li>
-        <li class="list-inline-item hidden-sm-down"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed <i class="fa fa-rss"></i></a></li>
-        <li class="list-inline-item hidden-sm-down social"><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-lg twitter"></i></a></li>
-        <li class="list-inline-item hidden-sm-down social"><a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-lg github"></i></a></li>
-      </ul>
+<footer class="ui vertical segment">
+  <div class="ui middle aligned stackable text container">
+    <div class="ui horizontal divider">
+      <a href="{{ site.url }}">
+      <img class="footer" src="/images/logos/RIMdev-logo.png" alt="{{ site.user_description }}" />
+      </a>
     </div>
-    <div class="col-md-6  hidden-sm-down">
-      &copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a class="hidden-sm-down" target="_blank" href="{{ site.map_url}}"><i class="fa fa-map-marker text-danger"></i></a>
+
+    <p>&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a target="_blank" href="{{ site.map_url}}"><i class="icon map marker"></i></a></p>
+    <div class="ui horizontal list social">
+      <div class="item">
+        <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon large twitter"></i></a>
+      </div>
+      <div class="item">
+        <a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon large github alternate"></i></a>
+      </div>
+      <div class="item">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon large feed"></i></a>
+      </div>
     </div>
-  </div><!-- /.row -->
+
+  </div>
 </footer>

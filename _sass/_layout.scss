@@ -16,7 +16,9 @@ body {
   h3,
   h4,
   h5,
-  h6 { margin: 0.5em 0;}
+  h6 {
+    margin: 0.5em 0;
+  }
   h3,
   h4,
   h5,
@@ -29,15 +31,11 @@ body {
   h1 {font-size: 3em;}
   p,
   li {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
-    a {font-size: 1em;}
   }
   ol li {margin-bottom: 1em;}
   strong {font-weight: bold;}
-  .container-fluid {
-    padding: 0;
-  }
 }
 
 // link color scheme
@@ -47,41 +45,13 @@ a {
 
 .social {
   display: inline;
+  color: $grey-light;
   a {
     // removes site-wide underline animation
     &:before {
       background: transparent;
     }
   }
-}
-
-hr {
-  border: 0;
-  border-top: 2px solid $grey-lighter;
-  &.half-rule {
-    width: 50%;
-  }
-}
-
-// Handles main layout
-.layout {
-  display: table;
-  height: 100%;
-  max-width: 100vw;
-  position: relative;
-  .post-main-column,
-  .articles-sidebar {
-    display: table-cell;
-    height: 100%;
-  }
-  .col {
-    position: relative;
-    margin-left: -1px;
-  }
-  .post-main-column {
-    border-left: 1px solid $grey-light;
-  }
-  .articles-sidebar {border-right: 1px solid $grey-light;}
 }
 
 .border {border: 1px solid $grey-lighter;}
@@ -91,6 +61,12 @@ hr {
 .whitespace {white-space: nowrap;}
 
 .fixed {position: fixed;}
+
+.ui.horizontal.divider {
+  color: $grey-light;
+  margin: 2em 0;
+  text-transform: capitalize;
+}
 
 blockquote {
   p {
@@ -109,4 +85,8 @@ blockquote {
       @include opacity(.5,5);
     }
   }
+}
+
+.ui.vertical.stripe.segment {
+  border-color: transparent;
 }

@@ -1,10 +1,5 @@
 .time-to-read {
   @media print {display: none;}
-  .post-main-column &,
-  author & {
-    float: right;
-    @media (max-width: 765px) {
-      float: none;
-    }
-  }
+  color: $grey-light;
+  float: right;
 }

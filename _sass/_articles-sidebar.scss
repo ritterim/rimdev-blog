@@ -1,87 +1,44 @@
 // Articles sidebar (acting as nav)
-.articles-sidebar {
+.sidebar {
+  background-color: $color-white;
+  .ui.menu {
+    font-family: $font-body;
+    @include border-radius(0);
+    @include box-shadow(none);
+  }
+  .logo {
+    padding: 3em 3em .5em;
+    text-align: center;
+    img {
+      margin: 0 auto;
+      width: 15em;
+    }
+  }
   .post-articles {
-    @media print {display: none;}
-    overflow: hidden;
-    @include border(bottom, $grey-light);
-    @include transition(all,.3s);
-    &:last-child {
-      border-bottom: none;
-    }
-    author {
-      img {
-        @include border-radius(50%);
-        @include blur-img(3px);
-        @include opacity(.2,2);
-        @include transition(all,.1s);
-      }
-      @extend author;
-      @include transition(all,.1s);
-    }
-    // blur
-    p,
-    author a {
-      color: transparent;
-      font-size: 1em;
-      @include blur($grey);
-    }
-    &:hover {
-      background: $color-white;
-      h3 {color: $color-blue-bright;}
-      .article-number {color: $grey;}
-      p {text-shadow: none;}
-      p {color: inherit;}
-
-      author {
-        @include opacity(1,10);
-        a {
-          text-shadow: none;
-          color: $link;
-        }
-      }
-      img {
-        @include blur-img(0);
-        @include opacity(1,10);
-      }
-    }
     header {
       a {
         h3 {
-          @include link-underline($color-blue-bright, 1px);
-          color: lighten($color-blue-bright, 10%);
-          font-size: 1.5em;
+          color: $color-blue-bright;
           font-weight: lighter;
+          line-height: 1.3em;
+          margin-bottom: 0.3em;
+          padding: 1em 0;
+          @include link-underline($color-blue-bright, 1px);
           @include transition(all, 0.1s);
         }
       }
-      .article-number {
-        color: $grey-lighter;
-        float: right;
-        font-size: 1.5em;
-        margin-top: -1.3em;
-        margin-right: -1em;
-        @include transition(all, 0.1s);
-      }
     }
     article {
-      p {word-break: break-word;}
-      header,
-      author,
-      p,
-      .read-now {
-        padding: 0 3em;
-      }
-      header {
-        padding-top: 3em;
-      }
-      author {
-        padding-bottom: 1em;
+      padding: 0 3em;
+      p {
+        margin-top: 0.5em;
+        word-break: break-word;
       }
       .read-now {
         color: transparent;
         padding-bottom: 1em;
         position: relative;
-        left: 0;
+        right: 100%;
         @include transition(all,.1s);
         a {
           color: transparent;
@@ -89,17 +46,18 @@
       }
       &:hover {
         .read-now {
-          left: 60%;
-          @media (min-width: 991px) {
-            left: 50%;
-          }
-          color: $grey-light;
+          right: -70%;
+          color: $link;
           a {
-            color: $grey-light;
+            color: $link;
             font-style: italic;
+          }
+          .space.shuttle {
+            color: $link;
           }
         }
       }
     }
+
   }
 }

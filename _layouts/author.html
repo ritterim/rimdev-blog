@@ -1,26 +1,28 @@
 ---
 layout: default
 ---
-
+{% if page.image %}
+{% assign postImage = page.image %}
+{% else %}
+{% assign postImage = site.default_image %}
+{% endif %}
 {% if page.avatar != false %}
-<div class="avatar">
+<div class="ui avatar">
   <img class="img-circle" src="{{ site.RIMdev[page.author].avatar }}&s=120" alt="{{ page.author }}" />
 </div>
 {% endif %}
 
-{% if page.image %}
-<div class="post-has-image">
-  <img src="{{ page.image }}" alt={{ page.author }}"" >
-</div>
-{% else %}
-<div class="post-has-image">
-  <img src="{{ site.default_image }}" alt="{{ page.author }}" >
-</div>
-{% endif %}
+<div class="ui vertical masthead segment authors-page">
 
-<div class="authors-page">
+  {% include menu-icons.html %}
+  <img src="{{ postImage }}" alt="{{ post.title }}" />
+</div>
 
-  <h1>Meet {{ page.author }}</h1>
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable text container">
+
+
+  <h1>{{ page.author }}</h1>
 
   {% if site.RIMdev[page.author].desc %}
     {{ site.RIMdev[page.author].desc }}
@@ -82,4 +84,5 @@ layout: default
   </div>
 
 
+</div>
 </div>
