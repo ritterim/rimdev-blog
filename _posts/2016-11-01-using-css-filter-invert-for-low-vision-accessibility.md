@@ -28,7 +28,7 @@ body {
 
 Seriously, css filters are amazing. You can see how much of a difference below!
 
-![eBroker Software create client afterUI](/images/inverted/create-client-before.png)
+![eBroker Software create client afterUI](/images/inverted/create-client-afterUI.png)
 
 ![eBroker Software create client inverted](/images/inverted/create-client-inverted.png)
 
@@ -56,12 +56,9 @@ The invert filter inverted everything, but we wanted our flash messages to stand
 
 Remember, initial styles have already been called, we're just overwriting here to invert back to our original flash coloring.
 
-We also added icons here as well, our normal mode relies on alert coloring alone. The icons become useful when your not entirely sure your user can see the actual message.
+Wealso added icons here. Our normal mode relies on alert coloring alone. The icons become useful when your not entirely sure your user can see the actual message.
 
 ```scss
-// initial style has already been called, we're just overwriting here
-// and inverting a second time to get our original flash coloring back
-
 .bg-error {
   filter: invert(100%);
   font-size: $low-vision-font;
