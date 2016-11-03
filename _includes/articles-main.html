@@ -1,5 +1,5 @@
 <div class="post-number">
-  {% if page.date %}{{ page.date | date: "%y.%j" }}{% else %}{{ post.date | date: "%y.%j" }}{% endif %}
+  {% if page.date %}{{ page.date | date: "%F" }}{% else %}{{ post.date | date: "%F" }}{% endif %}  
 </div>
 
 {% if post.image %}
