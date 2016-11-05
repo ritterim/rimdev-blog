@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{% include post-image.html %}
+
+<div class="ui vertical masthead segment">
+  {% include photo-credit.html %}
+  <img src="{{ postImage }}" alt="{{ post.title }}" />
+</div>
+
+{% include menu.html %}
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable text container">
+
+  <h3>Welcome to our weekly spotlight on all the things AI and machine learning.</h3>
+
+    {% for post in site.categories.ai limit:1 %}
+
+    <article>
+
+      <h1>{{ post.title }}</h1>
+
+      <div class="author">
+        Written by {% include articles-authors.html %}
+
+        <div class="time-to-read text-muted">
+          {% include word-count.html %}
+          <i class="icon book"></i> {{ words | plus: 250 | divided_by: 200 | append: " minute read" }}
+
+        </div><!-- /.time-to-read -->
+      </div><!-- /.author -->
+
+      <div class="freshness" data-freshness-datetime="{{ page.date | date_to_xmlschema }}">
+        <i class="icon heartbeat freshness-icon-js"></i>
+        <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
+      </div>
+
+      {{ post.content }}
+
+      {% include articles-footer.html %}
+
+    </article>
+    {% endfor %}
+
+    {% include articles-related.html %}
+    <div class="ui hidden divider"></div>
+    {% include disqus.html %}
+
+</div>
+</div>
