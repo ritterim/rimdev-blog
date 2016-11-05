@@ -1,10 +1,15 @@
 // main footer
 footer {
   color: $grey-light;
-  text-align: center;
-  margin-bottom: 3em;
   img.footer {
     width: 6em;
   }
-  a {font-size: 85%;}
+  a {
+    color: $grey-light;
+    font-family: $font-body;
+    font-size: 85%;
+  }
+  &.ui.vertical.segment {
+    margin-bottom: 3em;
+  }
 }

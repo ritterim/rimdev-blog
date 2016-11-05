@@ -1,13 +1,12 @@
 <footer class="ui vertical segment">
-  <div class="ui middle aligned stackable text container">
+  <div class="ui stackable text container">
     <div class="ui horizontal divider">
       <a href="{{ site.url }}">
-      <img class="footer" src="/images/logos/RIMdev-logo.png" alt="{{ site.user_description }}" />
+        <img class="footer" src="/images/logos/RIMdev-logo.png" alt="{{ site.user_description }}" />
       </a>
     </div>
 
-    <p>&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a target="_blank" href="{{ site.map_url}}"><i class="icon map marker"></i></a></p>
-    <div class="ui horizontal list social">
+    <div class="ui horizontal list social right floated">
       <div class="item">
         <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon large twitter"></i></a>
       </div>
@@ -18,6 +17,8 @@
         <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon large feed"></i></a>
       </div>
     </div>
+
+    <p>&copy; <a href="{{ site.rim_url }}">{{ site.rim_copy }}</a> <a target="_blank" href="{{ site.map_url}}"><i class="icon marker"></i></a></p>
 
   </div>
 </footer>

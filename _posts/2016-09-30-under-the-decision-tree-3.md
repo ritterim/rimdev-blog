@@ -2,9 +2,9 @@
 layout: post
 title: "Under the Decision Tree (#3)"
 date: 2016-09-30 07:00:00
-tags: 
+tags:
 - Machine Learning
-categories: Under the Decision Tree
+categories: ai
 twitter_text: Under the Decision Tree (#3)
 authors: Scott Schwalm
 image: /images/tree-338211_1280.jpg
@@ -33,18 +33,18 @@ Comments are always welcome at: [Decision Tree](mailto:decisiontree@ritterim.com
 - [‘Rogue Algorithms’ and the Dark Side of Big Data](http://knowledge.wharton.upenn.edu/article/rogue-algorithms-dark-side-big-data/)
 - [Machine-learning Software Beats Pathologists in Lung Cancer Assessment Study](https://lungcancernewstoday.com/2016/09/27/machine-learning-software-beats-pathologists-in-lung-cancer-assessments/)
 - [How artificial intelligence could save humanity's food supply](http://www.techradar.com/news/world-of-tech/how-artificial-intelligence-could-save-humanity-s-food-supply-1328857)
-- [3 Industries That Will Be Transformed By AI, Machine Learning And Big Data In The Next Decade](http://www.forbes.com/sites/bernardmarr/2016/09/27/3-industries-that-will-be-transformed-by-ai-machine-learning-and-big-data-in-the-next-decade/#3a03d2202a11) 
+- [3 Industries That Will Be Transformed By AI, Machine Learning And Big Data In The Next Decade](http://www.forbes.com/sites/bernardmarr/2016/09/27/3-industries-that-will-be-transformed-by-ai-machine-learning-and-big-data-in-the-next-decade/#3a03d2202a11)
 - [Google Project Loon Now Also Using Artificial Intelligence](http://www.techtimes.com/articles/179344/20160927/google-project-loon-now-also-using-artificial-intelligence-machine-learning-allowed-balloon-to-stay-up-in-air-for-98-days.htm)
 - [Project Loon gets new AI autopilot system](http://www.slashgear.com/project-loon-gets-new-ai-autopilot-system-26457550/)
-- [This AI-written pop song is almost certainly a dire warning for humanity](http://www.theverge.com/2016/9/26/13055938/ai-pop-song-daddys-car-sony) 
-- [How Will AI Transform Life By 2030?](http://www.i-programmer.info/programming/artificial-intelligence/10114-how-will-ai-transform-life-by-2030-a-review.html) 
-- [How Dark Sky Is Changing Weather Forecasting With Machine Learning](https://www.fastcodesign.com/3063991/how-dark-sky-is-changing-weather-forecasting-with-machine-learning) 
-- [Apple buys machine-learning tech start-up TupleJump](http://www.thehindu.com/todays-paper/tp-miscellaneous/tp-others/apple-buys-machinelearning-tech-startup-tuplejump/article9143693.ece) 
+- [This AI-written pop song is almost certainly a dire warning for humanity](http://www.theverge.com/2016/9/26/13055938/ai-pop-song-daddys-car-sony)
+- [How Will AI Transform Life By 2030?](http://www.i-programmer.info/programming/artificial-intelligence/10114-how-will-ai-transform-life-by-2030-a-review.html)
+- [How Dark Sky Is Changing Weather Forecasting With Machine Learning](https://www.fastcodesign.com/3063991/how-dark-sky-is-changing-weather-forecasting-with-machine-learning)
+- [Apple buys machine-learning tech start-up TupleJump](http://www.thehindu.com/todays-paper/tp-miscellaneous/tp-others/apple-buys-machinelearning-tech-startup-tuplejump/article9143693.ece)
 
 ## Podcasts
 
 - [2016-09-29 TWiML - Angie Hugeback - Generating Labeled Training Data for Your ML/AI Models](https://twimlai.com/twiml-talk-6-angie-hugeback-generating-labeled-training-data-mlai-models/)
-- [2016-09-27 Partially Derivative - The Model is Racist](http://partiallyderivative.com/podcast/2016/09/27/s2e14-the-model-is-racist) 
+- [2016-09-27 Partially Derivative - The Model is Racist](http://partiallyderivative.com/podcast/2016/09/27/s2e14-the-model-is-racist)
 - [2016-09-25 Linear Digressions - The Cold Start Problem](http://lineardigressions.com/episodes/2016/9/25/the-cold-start-problem)
 - [2016-09-23 Data Skeptic - [MINI] F1 Score](http://dataskeptic.com/epnotes/f1-score.php)
 

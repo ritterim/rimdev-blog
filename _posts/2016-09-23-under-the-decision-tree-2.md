@@ -2,9 +2,9 @@
 layout: post
 title: "Under the Decision Tree (#2)"
 date: 2016-09-23 07:00:00
-tags: 
+tags:
 - Machine Learning
-categories: Under the Decision Tree
+categories: ai
 twitter_text: Under the Decision Tree (#2)
 authors: Scott Schwalm
 image: /images/tree-338211_1280.jpg

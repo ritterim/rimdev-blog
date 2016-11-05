@@ -1,24 +1,19 @@
-{% if page.image %}
-{% assign postImage = page.image %}
-{% else %}
-{% assign postImage = site.default_image %}
-{% endif %}
+{% include post-image.html %}
 
 <div class="ui vertical masthead segment">
-  {% include menu-icons.html %}
   <img src="{{ postImage }}" alt="{{ post.title }}" />
+  {% include photo-credit.html %}
 </div>
 
+{% include menu.html %}
 <div class="ui vertical stripe segment">
   <div class="ui middle aligned stackable text container">
-    <!-- <div class="ui text container"> -->
       <article>
 
-        <h1>{{ page.title }}</h1>
+        <h1>{{ post.title }}</h1>
 
         <div class="author">
-          Written by
-          {% include articles-authors.html %}
+          Written by {% include articles-authors.html %}
 
           <div class="time-to-read text-muted">
             {% include word-count.html %}
@@ -27,20 +22,25 @@
           </div><!-- /.time-to-read -->
         </div><!-- /.author -->
 
-        <div class="freshness text-muted" data-freshness-datetime="{{ page.date | date_to_xmlschema }}">
+        <div class="freshness grey-lighter" data-freshness-datetime="{{ page.date | date_to_xmlschema }}">
           <i class="icon heartbeat freshness-icon-js"></i>
           <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
         </div>
 
-        {{ content }}
+        {% comment %}
+        `| markdownify | hilightify` appended here because of the way we're looping through.
+        Not need on actual layout pages.
+        {% endcomment %}
+
+        {{ content | markdownify | hilightify }}
 
         {% include articles-footer.html %}
 
       </article>
 
       {% include articles-related.html %}
+      <div class="ui hidden divider"></div>
       {% include disqus.html %}
 
-    <!-- </div> -->
   </div>
 </div>

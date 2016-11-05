@@ -1,13 +1,14 @@
 // Articles sidebar (acting as nav)
 .sidebar {
   background-color: $color-white;
-  .ui.menu {
-    font-family: $font-body;
-    @include border-radius(0);
-    @include box-shadow(none);
+  padding: 3em;
+  .article-age {
+    color: $grey;
+    display: block;
+    padding: 1em 0;
+    text-align: right;
   }
   .logo {
-    padding: 3em 3em .5em;
     text-align: center;
     img {
       margin: 0 auto;
@@ -22,23 +23,23 @@
           font-weight: lighter;
           line-height: 1.3em;
           margin-bottom: 0.3em;
-          padding: 1em 0;
           @include link-underline($color-blue-bright, 1px);
           @include transition(all, 0.1s);
         }
       }
     }
     article {
-      padding: 0 3em;
+      border-bottom: 1px solid $grey-lighter;
+      overflow-x: hidden;
       p {
-        margin-top: 0.5em;
+        margin: 0.5em 0;
         word-break: break-word;
       }
       .read-now {
         color: transparent;
         padding-bottom: 1em;
         position: relative;
-        right: 100%;
+        right: 90%;
         @include transition(all,.1s);
         a {
           color: transparent;
@@ -60,4 +61,8 @@
     }
 
   }
+}
+.ui.image img {
+  // overrides width issue.
+  max-width: initial !important;
 }

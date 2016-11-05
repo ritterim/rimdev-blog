@@ -1,32 +1,34 @@
 ---
 layout: default
 ---
-{% if page.image %}
-{% assign postImage = page.image %}
-{% else %}
-{% assign postImage = site.default_image %}
-{% endif %}
-{% if page.avatar != false %}
-<div class="ui avatar">
-  <img class="img-circle" src="{{ site.RIMdev[page.author].avatar }}&s=120" alt="{{ page.author }}" />
+{% include post-image.html %}
+<div class="main-avatar">
+  <img src="{{ site.RIMdev[page.author].avatar }}&s=120" alt="{{ page.author }}" />
 </div>
-{% endif %}
 
 <div class="ui vertical masthead segment authors-page">
-
-  {% include menu-icons.html %}
+  {% include photo-credit.html %}
   <img src="{{ postImage }}" alt="{{ post.title }}" />
 </div>
 
-<div class="ui vertical stripe segment">
+{% include menu.html %}
+<div class="ui vertical stripe segment authors-page">
   <div class="ui middle aligned stackable text container">
-
 
   <h1>{{ page.author }}</h1>
 
   {% if site.RIMdev[page.author].desc %}
-    {{ site.RIMdev[page.author].desc }}
+    <p>{{ site.RIMdev[page.author].desc }}</p>
   {% endif %}
+
+  <div class="social">
+    {% if site.RIMdev[page.author].twitter %}
+    <a href="https://twitter.com/{{ site.RIMdev[page.author].twitter }}" data-tooltip="{{ site.RIMdev[page.author].twitter | prepend: "@"}} on twitter" data-position="bottom right"><i class="icon twitter big"></i></a>
+    {% endif %}
+    {% if site.RIMdev[page.author].github %}
+    <a href="https://github.com/{{ site.RIMdev[page.author].github }}" data-tooltip="{{ site.RIMdev[page.author].github }} on github" data-position="bottom left"><i class="icon github alternate big"></i></a>
+    {% endif %}
+  </div>
 
   {{ content }}
 
@@ -36,7 +38,7 @@ layout: default
       <div class="post-articles">
         <article>
           <header>
-            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
           </header>
           <author>
             {% assign authorCount = post.authors | size %}
@@ -61,28 +63,15 @@ layout: default
           <p>
             {{ post.content | markdownify | strip_html | truncate:200 }}
           </p>
-          <ul class="list-inline">
+
             {% for tags in post.tags %}
-            <li class="list-inline-item"><a class="tag" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a></li>
+            <a class="ui basic label orange" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a>
             {% endfor %}
-          </ul>
         </article>
       </div>
       {% endif %}
     {% endfor %}
   {% endfor %}
-
-  <hr class="half-rule">
-  <div class="social">
-    Find out more about {{ page.author }}
-    {% if site.RIMdev[page.author].twitter %}
-    <a href="https://twitter.com/{{ site.RIMdev[page.author].twitter }}" title="{{ site.RIMdev[page.author].twitter | prepend: "@"}}"><i class="fa fa-twitter fa-lg twitter"></i></a>
-    {% endif %}
-    {% if site.RIMdev[page.author].github %}
-    <a href="https://github.com/{{ site.RIMdev[page.author].github }}" title="{{ site.RIMdev[page.author].github }}"><i class="fa fa-github fa-lg github"></i></a>
-    {% endif %}
-  </div>
-
 
 </div>
 </div>

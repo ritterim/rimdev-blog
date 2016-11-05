@@ -27,19 +27,22 @@ Show related reading based on tags. If no related tags, show previous and next a
 
     {% if sameTagCount >= 1 and post.title != page.title limit:6 %}
     {% assign hasRelated = true %}
-      <div class="ui link card related-cards">
+      <div class="ui card related-cards">
         <div class="content">
-          <div class="card-header">{{ post.title }}</div>
+          <div class="card-header">
+            <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+          </div>
           <div class="meta">
             <span class="category">{{ commonTags }}</span>
           </div>
           <div class="description">
-            {{ post.content | markdownify | strip_html | truncate:75 }}
+            {{ post.content | markdownify | strip_html | truncate:80 }}
+            <div class="read-now">
+              <a href="{{ post.url | prepend: site.baseurl }}">Read now </a>
+              <i class="icon space shuttle"></i>
+            </div>
+
           </div>
-        </div>
-        <div class="extra content right floated read-now">
-          <a href="{{ post.url | prepend: site.baseurl }}">Read more </a>
-          <i class="icon space shuttle"></i>
         </div>
       </div>
 
@@ -47,12 +50,12 @@ Show related reading based on tags. If no related tags, show previous and next a
   {% if hasRelated != true %}
     <div class="item">
       <div class="content">
-        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
       </div>
     </div>
     <div class="item">
       <div class="content">
-        <a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
       </div>
     </div>
   {% endif %}

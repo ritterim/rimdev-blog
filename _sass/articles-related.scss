@@ -1,15 +1,27 @@
 .articles-related {
   @media print {display: none;}
-  a {
-      @include link-underline($color-blue-bright, 1px);
-      color: lighten($color-blue-bright, 5%);
-      font-family: "Roboto slab", serif;
-      font-size: 1.2em;
-      font-weight: lighter;
-      line-height: 2em;
-      @include transition(all, 0.1s);
-      &:hover {
-        color: darken($color-blue-bright, 10%);
+  .card-header {
+    a {
+      color: $color-blue-bright;
+      &:before {
+        background: $color-blue-bright;
       }
+      &:hover {
+        color: $color-blue-bright;
+      }
+    }
+  }
+  .description {
+    line-height: 1.2em;
+    font-size: 95%;
+  }
+  .content {
+    .read-now {
+      text-align: right;
+      margin-top: 0.5em;
+      .shuttle {
+        color: $link;
+      }
+    }
   }
 }

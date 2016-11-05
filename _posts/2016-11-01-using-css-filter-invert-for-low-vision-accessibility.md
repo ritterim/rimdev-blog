@@ -8,9 +8,11 @@ tags:
 - UX
 - accessibility
 authors: Kevin Hougasian
-image: default/rimdev.jpg
+image: https://c1.staticflickr.com/9/8621/15643132423_3f27a976b7_b.jpg
+image_url : https://www.flickr.com/photos/dominicspics/15643132423
+image_credit: "Dominic Alves"
 ---
-[eBroker Software's](https://ebrokersoftware.com), [Ritter's](https://ritterim.com) [Affordable Care Act (ACA) Marketplace](https://healthcare.gov) Quote Engine, login portion was slated for a UI refresh. One of the challenges we faced was an agent that is legally blind. The agent handles nearly all of his business from his desk. Iterations of eBroker's backend, formerly Agency Central, had a few interesting font and styling choices which were attributed to the agent's eye sight.
+[eBroker Software's](https://ebrokersoftware.com), [Ritter's](https://ritterim.com) [Affordable Care Act (ACA) Marketplace](https://healthcare.gov) Quote Engine, login portion was slated for a UI refresh. One of the challenges we faced was an agent that is legally blind. The agent handles nearly all of his business from his desk. Iterations of eBroker's backend, formerly Agency Central, had a few interesting font and styling choices which were attributed to the agent's eyesight.
 
 ## Enter Low vision mode
 
@@ -28,9 +30,9 @@ body {
 
 Seriously, css filters are amazing. You can see how much of a difference below!
 
-![eBroker Software create client afterUI](/images/inverted/create-client-afterUI.png)
+![eBroker Software create client afterUI](/images/filter-inverted/create-client-afterUI.png){: .ui.fluid.image}
 
-![eBroker Software create client inverted](/images/inverted/create-client-inverted.png)
+![eBroker Software create client inverted](/images/filter-inverted/create-client-inverted.png){: .ui.fluid.image}
 
 ### I still can't read those tiny fonts?
 
@@ -56,7 +58,7 @@ The invert filter inverted everything, but we wanted our flash messages to stand
 
 Remember, initial styles have already been called, we're just overwriting here to invert back to our original flash coloring.
 
-Wealso added icons here. Our normal mode relies on alert coloring alone. The icons become useful when your not entirely sure your user can see the actual message.
+We also added icons here. Our normal mode relies on alert coloring alone. The icons become useful when your not entirely sure your user can see the actual message.
 
 ```scss
 .bg-error {
@@ -75,4 +77,4 @@ Wealso added icons here. Our normal mode relies on alert coloring alone. The ico
 
 ### Result
 
-There were a few other minor styling changes to add contrast, but you get the idea. One of our apps is now enabled for low-vision, and we'll be looking to expand other accessability features as we move forward.
+There were a few other minor styling changes to add contrast, but you get the idea. One of our apps is now enabled for low-vision, and we'll be looking to expand other accessibility features as we move forward.

@@ -7,13 +7,12 @@
     .visibility({
       once: false,
       onPassing: function() {
-
         $('.pusher article')
-          .css('filter', 'blur(2px)');
+          // .dimmer('blur');
       },
       onPassing: function() {
         $('.pusher article')
-          .css('filter', 'blur(0)');
+          // .dimmer('blur');
       }
   });
 
@@ -61,19 +60,30 @@
 
   // fix menu when passed
   $('.masthead')
-    .visibility({
-      once: false,
-      onBottomPassed: function() {
-        $('.icon.menu').transition('fade in');
-      },
-      onBottomPassedReverse: function() {
-        $('.icon.menu').transition('fade out');
-      }
-    });
+     .visibility({
+       once: false,
+       onBottomPassed: function() {
+         $('.fixed.menu')
+           .transition('fade in');
+       },
+       onBottomPassedReverse: function() {
+         $('.fixed.menu')
+           .transition('fade out');
+       }
+   });
 
+  // freshness popup
   $('.icon.heartbeat')
     .popup({
       popup: '.freshness.popup'
+  });
+
+  // lazy load images
+  $('.image')
+    .visibility({
+      type: 'image',
+      transition: 'vertical flip in',
+      duration: 500
   });
 
   var $postMainColumnJs = $('#post-main-column-js');

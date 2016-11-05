@@ -1,38 +1,46 @@
 <div class="ui sidebar very wide vertical">
 
   <div class="logo">
-    <img src="/images/logos/RIMdev-logo.png" alt="{{ site.user_description }}" />
+    <a href="{{ site.url }}">
+      <img src="/images/logos/RIMdev-logo.png" alt="{{ site.user_description }}" />
+    </a>
   </div>
 
-  <div class="ui three item menu">
-    <a class="item" href="/under-the-decision-tree/">The Decision Tree</a>
-    <a class="item" href="/about/">Who Are We?</a>
-    <a class="item">Say Yes to OSS</a>
-  </div>
+  <div class="ui divider"></div>
 
   {% assign count = 10 %}
 
   {% for post in site.posts limit:count %}
     {% if post.url != page.url %}
-    <div class="ui vertical segment post-articles">
+    <div class="ui vertical post-articles">
       <article>
         <header>
-          <span class="article-number"></span>
+          <span class="article-age">
+            <div data-freshness-datetime="{{ post.date | date_to_xmlschema }}">
+              <em><span class="freshness-days-old-js"></span> days ago.</em>
+            </div>
+          </span>
           <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title | truncate:52}}</h3></a>
         </header>
-        <author class="ui feed">
+        <author>
+          <div class="ui horizontal list">
           {% for author in post.authors %}
-            <div class="event">
-              <div class="label">
-                <img src="{{ site.RIMdev[author].avatar }}&s=22" alt="{{ author }}" />
+            <div class="item">
+              <div class="ui avatar image">
+                <img src="{{ site.RIMdev[author].avatar }}&s=32" alt="{{ author }}" />
               </div>
               <div class="content">
                 <a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
               </div>
             </div>
           {% endfor %}
+          </div>
         </author>
-        <p>{{ post.content | truncate:500 | markdownify | strip_html | truncate:120 }}</p>
+        <p>{{ post.content | truncate:500 | markdownify | strip_html | truncate:140 }}</p>
+        {% for tags in post.tags %}
+        <a class="ui basic label orange tiny" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a>
+        {% endfor %}
+
         <div class="read-now">
           <a href="{{ post.url | prepend: site.baseurl }}">Read now </a><i class="icon space shuttle large"></i>
         </div>

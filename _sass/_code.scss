@@ -13,6 +13,8 @@ li {
 
 // pad code blocks
 pre {
-  padding: 2em;
+  border: 1px solid lighten($link,40%);
+  padding: 1em 2em;
   margin: 3em 0;
+  @include border-radius(3px);
 }
