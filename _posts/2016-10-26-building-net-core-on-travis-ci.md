@@ -2,14 +2,13 @@
 layout: post
 title: "Building .Net Core On Travis CI"
 date: 2016-10-26 13:20:49
-tags: 
+tags:
 - .NET Core
 - CI
 - Travis CI
 categories: Development
 twitter_text: "Building #aspnetcore on @travisci"
-authors:
-- Khalid Abuhakmeh
+authors: Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3831/14120933297_089ce68cf7_o_d.jpg
 image_url: https://www.flickr.com/photos/mvegmond/
 image_credit: kweetniet2012
@@ -28,7 +27,7 @@ dotnet restore && dotnet build **/project.json
 
 You can add additional steps to the `build.sh` to run tests, but this is the simplest command you need.
 
-## .Travis.yml 
+## .Travis.yml
 
 The `.travis.yml` is used by the service to construct your build environment. Add this to the root of your repository.
 
@@ -40,7 +39,7 @@ mono: none
 dotnet: 1.0.0-preview2-003121
 script:
   - ./build.sh --quiet verify
-``` 
+```
 
 We do a few things in the configuration file:
 
