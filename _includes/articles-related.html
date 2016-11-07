@@ -9,7 +9,7 @@ Show related reading based on tags. If no related tags, show previous and next a
 <div class="articles-related">
   {% assign hasRelated = "" %}
 
-  <div class="ui three cards">
+  <div class="ui three stackable cards">
   {% for post in site.posts %}
 
     {% assign sameTagCount = 0 %}

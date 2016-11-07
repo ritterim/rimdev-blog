@@ -9,7 +9,7 @@
       <img class="ui avatar image" itemprop="image" src="{{ site.RIMdev[author].avatar }}&s=100" alt="{{ author }}">
       <div class="content">
         <div class="header">
-          <a itemprop="name" href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+          <a itemprop="name" href="/authors/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
           {% if site.RIMdev[author].twitter or site.RIMdev[author].github %}
           <div class="social">
             <i class="icon ellipsis vertical grey-lighter"></i>

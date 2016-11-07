@@ -30,9 +30,27 @@ body {
   h1,
   h2,
   h3 {line-height: 1.1;}
-  h1 {font-size: 3em;}
-  h2 {font-size: 2em;}
-  h3 {font-size: 1.5em;}
+  h1 {
+    @media (max-width: 765px) {
+      font-size: 2em;
+    }
+    font-size: 3em;
+    @include transition(all,0.3s)
+  }
+  h2 {
+    @media (max-width: 765px) {
+      font-size: 1.5em;
+    }
+    font-size: 2em;
+    @include transition(all,0.3s)
+  }
+  h3 {
+    @media (max-width: 765px) {
+      font-size: 1.1em;
+    }
+    font-size: 1.5em;
+    @include transition(all,0.3s)
+  }
   p,
   li {
     font-size: 1.1em;

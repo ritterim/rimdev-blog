@@ -30,7 +30,7 @@
                 <img src="{{ site.RIMdev[author].avatar }}&s=32" alt="{{ author }}" />
               </div>
               <div class="content">
-                <a href="/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+                <a href="/authors/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
               </div>
             </div>
           {% endfor %}

@@ -1,6 +1,14 @@
 {% if page.image_credit %}
+  {% assign imageCredit = page.image_credit %}
+  {% assign imageUrl = page.image_url %}
+{% elsif post.image_credit %}
+  {% assign imageCredit = post.image_credit %}
+  {% assign imageUrl = post.image_url %}
+{% endif %}
+
+{% if imageCredit %}
 <div class="ui label circular photo-credit">
   <i class="creative commons large icon"></i>
-  <a target="_blank" href="{{ page.image_url }}">{{ page.image_credit }}</a>
+  <a target="_blank" href="{{ imageUrl }}">{{ imageCredit }}</a>
 </div>
 {% endif %}
