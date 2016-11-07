@@ -2,6 +2,12 @@
 .sidebar {
   background-color: $color-white;
   padding: 3em;
+  .close {
+    color: $link;
+    cursor: pointer;
+    font-size: 180%;
+    float: right;
+  }
   .article-age {
     color: $grey;
     display: block;
@@ -65,4 +71,15 @@
 .ui.image img {
   // overrides width issue.
   max-width: initial !important;
+}
+// .very .wide sidebar too wide on mobile below 475
+// using 765px to better scale smaller experience
+@media (max-width: 765px) {
+  .ui.visible[class*="very wide"].left.sidebar~.pusher {
+    -webkit-transform: translate3d(350px,0,0);
+    transform: translate3d(350px,0,0);
+  }
+  .ui[class*="very wide"].left.sidebar {
+    width: 350px;
+  }
 }

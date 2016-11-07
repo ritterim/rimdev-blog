@@ -1,3 +1,15 @@
+// Sidebars use a special fix for iOS that are added using userAgent detection.
+// This should have no meaningful affect on your code, but will prevent the canvas
+// from incorrectly autoresizing when a sidebar opens.
+html.ios {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+html.ios,
+html.ios body {
+  height: initial !important;
+}
+
 /// Main style sheet for ASG site
 html,
 body {height: 100%;}

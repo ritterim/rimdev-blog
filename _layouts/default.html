@@ -5,13 +5,13 @@
 
 <body>
   {% include google-tag-manager.html %}
+  {% include articles-sidebar.html %}
 
-  <div class="pusher blurring">
+  <div class="pusher dimmable blurring">
     {{ content }}
     {% include footer.html %}
   </div>
 
-  {% include articles-sidebar.html %}
   {% include script.html %}
   {% include freshness-hover.html %}
 

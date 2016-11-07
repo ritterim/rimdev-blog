@@ -1,14 +1,14 @@
 .ui.menu {
   &.secondary {
-    background: rgba($color-white,.35);
+    background: rgba($color-white,.65);
     margin-top: -2.9em;
     position: relative;
     a.item {
-        color: $color-white;
+        color: $grey-dark;
         @include border-radius(0);
         @include transition(all,0.3s);
       &:hover {
-        background: rgba($color-white,.3);
+        background: rgba($color-white,.7);
       }
     }
   }
@@ -19,7 +19,7 @@
   &.secondary,
   &.fixed {
     a.item {
-      font-family: $font-body;  
+      font-family: $font-body;
     }
   }
 }
