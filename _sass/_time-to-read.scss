@@ -2,4 +2,13 @@
   @media print {display: none;}
   color: $grey;
   float: right;
+  &:after {
+    content: "minute read";
+    @include transition(all, 0.3s);
+  }
+  @media (max-width: 450px) {
+    &:after {
+      content: "min."
+    }
+  }
 }

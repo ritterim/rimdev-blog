@@ -3,7 +3,7 @@
   <div class="close ui right floated">
     &times;
   </div>
-  
+
   <div class="logo">
     <a href="{{ site.url }}">
       <img src="/images/logos/RIMdev-logo.png" alt="{{ site.user_description }}" />
@@ -12,7 +12,7 @@
 
   <div class="ui divider"></div>
 
-  {% assign count = 10 %}
+  {% assign count = 20 %}
 
   {% for post in site.posts limit:count %}
     {% if post.url != page.url %}
