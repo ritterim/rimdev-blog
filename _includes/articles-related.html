@@ -3,10 +3,13 @@ http://stackoverflow.com/questions/25348389/jekyll-and-liquid-show-related-posts
 Show related reading based on tags. If no related tags, show previous and next articles.
 - added prev and next post if none related by tag
 {% endcomment %}
+
+<div class="ui horizontal divider center aligned">Suggested reading</div>
+
 <div class="articles-related">
   {% assign hasRelated = "" %}
-  <h2>Suggested reading</h2>
-  <ul class="list-unstyled">
+
+  <div class="ui three stackable cards">
   {% for post in site.posts %}
 
     {% assign sameTagCount = 0 %}
@@ -16,22 +19,49 @@ Show related reading based on tags. If no related tags, show previous and next a
       {% if page.tags contains tag %}
 
       {% assign sameTagCount = sameTagCount | plus: 1 %}
-      {% capture tagmarkup %} <a class="tag" href="/tags/#{{ tag }}">{{ tag }}</a> {% endcapture %}
+        {% capture tagmarkup %} <a class="ui basic tiny label orange" href="/tags/#{{ tag }}">{{ tag }}</a> {% endcapture %}
       {% assign commonTags = commonTags | append: tagmarkup %}
 
       {% endif %}
     {% endfor %}
 
-    {% if sameTagCount >= 1 and post.title != page.title limit:3 %}
+    {% if sameTagCount >= 1 and post.title != page.title limit:6 %}
     {% assign hasRelated = true %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> {{ commonTags }}</li>
-    {% endif %}
-  {% endfor %}
+      <div class="ui card related-cards">
+        <div class="content">
+          <div class="card-header">
+            <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+          </div>
+          <div class="meta">
+            <span class="category">{{ commonTags }}</span>
+          </div>
+          <div class="description">
+            {{ post.content | markdownify | strip_html | truncate:80 }}
+            <div class="read-now">
+              <a href="{{ post.url | prepend: site.baseurl }}">Read now </a>
+              <i class="icon space shuttle"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 
   {% if hasRelated != true %}
-    <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
-    <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+    <div class="item">
+      <div class="content">
+        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      </div>
+    </div>
   {% endif %}
-  </ul>
 
+  {% endif %}
+  {% endfor %}
+
+  </div><!--  ui 3 cards -->
 </div>

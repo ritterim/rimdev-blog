@@ -1,49 +1,42 @@
-<div class="post-number">
-  {% if page.date %}{{ page.date | date: "%y.%j" }}{% else %}{{ post.date | date: "%y.%j" }}{% endif %}
-</div>
+{% include post-image.html %}
+{% include masthead.html %}
+{% include menu.html %}
 
-{% if post.image %}
-<div class="post-has-image">
-  {% if post.image_credit %}
-  <div class="photo-credit">
-    Image <span>CC</span> <a href="{{ post.image_url }}">{{ post.image_credit }}</a>
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable text container">
+      <article>
+
+        <h1>{{ post.title }}</h1>
+
+        <div class="author">
+          Written by {% include articles-authors.html %}
+
+          <div class="time-to-read text-muted">
+            {% include word-count.html %}
+            <i class="icon book text-muted"></i> {{ words | plus: 250 | divided_by: 200 }}
+
+          </div><!-- /.time-to-read -->
+        </div><!-- /.author -->
+
+        <div class="freshness grey-lighter" data-freshness-datetime="{{ page.date | date_to_xmlschema }}">
+          <i class="icon heartbeat freshness-icon-js"></i>
+          <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
+        </div>
+
+        {% comment %}
+        `| markdownify | hilightify` appended here because of the way we're looping through.
+        Not need on actual layout pages.
+        {% endcomment %}
+
+        {{ content | markdownify | hilightify }}
+
+        {% include articles-footer.html %}
+
+      </article>
+
+      {% include articles-related.html %}
+      <div class="ui hidden divider"></div>
+      {% include disqus.html %}
+
   </div>
-  {% endif %}
-  <img src="{{ post.image }}" alt="{{ post.title }}" >
 </div>
-{% else %}
-<div class="post-has-image">
-  <img src="{{ site.default_image }}" alt="{{ post.title }}" >
-</div>
-{% endif %}
-
-<article>
-
-  <h1>{{ post.title }}</h1>
-
-  <div class="author">
-    Written by
-    {% include articles-authors.html %}
-
-    {% assign page = post %}
-
-    <div class="time-to-read text-muted">
-      {% include word-count.html %}
-      <i class="fa fa-book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " minute read" }}
-
-    </div><!-- /.time-to-read -->
-  </div><!-- /.author -->
-
-  <div class="freshness text-muted" data-freshness-datetime="{{ post.date | date_to_xmlschema }}">
-    <i class="fa fa-heartbeat freshness-icon-js"></i>
-    <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
-  </div>
-
-  {{ content }}
-
-  {% include articles-footer.html %}
-
-</article>
-
-{% include articles-related.html %}
-{% include disqus.html %}

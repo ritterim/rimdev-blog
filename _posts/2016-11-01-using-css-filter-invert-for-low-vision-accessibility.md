@@ -8,6 +8,9 @@ tags:
 - UX
 - accessibility
 authors: Kevin Hougasian
+image: https://c1.staticflickr.com/9/8621/15643132423_3f27a976b7_b.jpg
+image_url : https://www.flickr.com/photos/dominicspics/15643132423
+image_credit: "Dominic Alves"
 ---
 [eBroker Software's](https://ebrokersoftware.com), [Ritter's](https://ritterim.com) [Affordable Care Act (ACA) Marketplace](https://healthcare.gov) Quote Engine, login portion was slated for a UI refresh. One of the challenges we faced was an agent that is legally blind. The agent handles nearly all of his business from his desk. Iterations of eBroker's backend, formerly Agency Central, had a few interesting font and styling choices which were attributed to the agent's eyesight.
 
@@ -27,9 +30,9 @@ body {
 
 Seriously, css filters are amazing. You can see how much of a difference below!
 
-![eBroker Software create client afterUI](/images/filter-inverted/create-client-afterUI.png){: .img-responsive}
+![eBroker Software create client afterUI](/images/filter-inverted/create-client-afterUI.png){: .ui.fluid.image}
 
-![eBroker Software create client inverted](/images/filter-inverted/create-client-inverted.png){: .img-responsive}
+![eBroker Software create client inverted](/images/filter-inverted/create-client-inverted.png){: .ui.fluid.image}
 
 ### I still can't read those tiny fonts?
 
@@ -55,7 +58,7 @@ The invert filter inverted everything, but we wanted our flash messages to stand
 
 Remember, initial styles have already been called, we're just overwriting here to invert back to our original flash coloring.
 
-We also added icons here as well, our normal mode relies on alert coloring alone. The icons become useful when your not entirely sure your user can see the actual message.
+We also added icons here. Our normal mode relies on alert coloring alone. The icons become useful when your not entirely sure your user can see the actual message.
 
 ```scss
 .bg-error {

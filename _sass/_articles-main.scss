@@ -1,29 +1,19 @@
 // post main column (right)
-.post-main-column {
-  .post-number {
-    @media print {display: none;}
-    color: $color-white;
-    float: right;
-    font-size: 3em;
-    padding-right: .5em;
-    position: absolute;
-    text-align: right;
-    width: 100%;
-    z-index: 100;
-    @include text-shadow(0px,2px, 2px, $grey-dark);
-    @include opacity(.5,5);
-  }
-  .post-has-image {
-    @media print {height: 20vh;}
-    display: block;
-    height: 35vh;
+.pusher {
+  .masthead {
+    height: 30vh;
     overflow: hidden;
     position: relative;
-    margin-bottom: 2em;
-    @include transition(all, 0.1s);
+    .container.above {
+      position: absolute;
+      z-index: 10;
+      left: 1em;
+    }
     img {
-      @extend %vertical-center;
       width: 100%;
+      position: absolute;
+      top: -50vh;
+      left: 0;
     }
   }
   article,
@@ -31,8 +21,9 @@
   .tags,
   .articles-related,
   .authors-page {
-    padding: 0 3em;
     // nested articles on authors page
+    font-family: $font-body;
+    font-weight: 300;
     article {
       padding: 0;
     }
@@ -46,29 +37,22 @@
         max-height: 100%;
       }
     }
-    @media (min-width: 991px) {
-      padding-right: 10%;
+    h1 {
+      color: $color-blue-bright;
+      margin-top: 1em;
     }
-    @media (min-width: 1600px) {
-      padding-right: 20%;
-    }
-    @media (min-width: 2000px) {
-      padding-right: 30%;
-    }
-    h1 {color: $color-blue-bright;}
-    h2, h3, h4 {
-      color: $grey;
+    h2, h3, h4, h5, h6 {
+      color: $color-blue-bright;
       font-weight: 300;
-      margin-top: 1.5em;
-      margin-bottom: .7em;
     }
     h1 {
-      border-bottom: 2px solid $grey-lighter;
+      border-bottom: 1px solid $grey-lighter;
       padding-bottom: .5em;
+      margin-bottom: .18em;
       @media print {font-size: 2em;}
     }
     .author {
-      border-bottom: 2px solid $grey-lighter;
+      border-bottom: 1px solid $grey-lighter;
       margin-bottom: 1em;
       padding-bottom: .5em;
       a {

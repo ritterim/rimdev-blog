@@ -1,23 +1,18 @@
 ---
 layout: default
 ---
-<div class="post-number">
-  {{ page.permalink | replace: "/","" | downcase }}
+{% include post-image.html %}
+{% include masthead.html %}
+{% include menu.html %}
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned text container">
+    <article>
+
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+
+    </article>
+  </div>
 </div>
-{% if page.image %}
-<div class="post-has-image">
-  <img src="{{ page.image }}" alt={{ page.title }}"" >
-</div>
-{% else %}
-<div class="post-has-image">
-  <img src="{{ site.default_image }}" alt="{{ page.title }}" >
-</div>
-{% endif %}
-
-<article>
-
-  <h1>{{ page.title }}</h1>
-
-  {{ content }}
-
-</article>

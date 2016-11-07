@@ -1,10 +1,14 @@
 .time-to-read {
   @media print {display: none;}
-  .post-main-column &,
-  author & {
-    float: right;
-    @media (max-width: 765px) {
-      float: none;
+  color: $grey;
+  float: right;
+  &:after {
+    content: "minute read";
+    @include transition(all, 0.3s);
+  }
+  @media (max-width: 450px) {
+    &:after {
+      content: "min."
     }
   }
 }

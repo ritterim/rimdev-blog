@@ -1,4 +1,15 @@
+.main-avatar {
+  position: absolute;
+  z-index: 200;
+  left: calc(50% - 60px);
+  top: calc(35vh / 2.5 - 60px);
+  img {
+    border: 1px solid $color-white;
+    @include border-radius(50%);
+  }
+}
 .authors-page {
+  p {font-family: $font-body;}
   .social {
     display: block;
     text-align: center;
@@ -7,17 +18,19 @@
   }
   article {
     header {
-      h3 a {
+      margin-top: 3em;
+      h2 a {
         font-weight: 100;
-        margin-top: 1.5em;
+        margin: 1.5em 0;
         @include link-underline($color-blue-bright, 1px);
       }
     }
     author {
       border-top: 1px solid $grey-lighter;
       border-bottom: 1px solid $grey-lighter;
+      display: block;
       padding: .3em 0;
-      margin-bottom: 1em;
+      margin: 1em 0;
     }
   }
 }

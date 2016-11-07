@@ -17,6 +17,7 @@ $color-grey:     #454545;
 $color-blue:     cadetblue;
 $color-blue-rgba: rgba($color-blue, 0.9);
 $color-blue-bright: lighten(dodgerblue, 20%);
+$color-orange:   orange;
 
 // Frehness scale
 $new:     limegreen;
@@ -40,7 +41,8 @@ $linkedin:   #007bb6;
 $youtube:    #bb0000;
 $vimeo:      #aad450;
 $instagram:  #517fa4;
-$github: #333;
+$github:     #444;
+
 
 // Fonts
 $font-body:     "Work sans", sans-serif;
@@ -61,7 +63,7 @@ $font-headline: "Roboto slab", serif;
 // Load code and syntax
 @import "code";
 // @import "syntax-highlighting";
-@import "solarized-dark";
+@import "solarized-light";
 
 //Load layout
 @import "layout";
@@ -72,6 +74,7 @@ $font-headline: "Roboto slab", serif;
 @import "articles-archive";
 @import "articles-more";
 @import "photo-credit";
+@import "menu";
 @import "tags";
 @import "author";
 @import "authors-page";

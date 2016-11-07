@@ -11,7 +11,7 @@ default_image: /images/default/rimdev-surface.jpg
 safe: false
 
 # Font Awesome version
-fa_version: 4.5.0
+fa_version: 4.6.0
 
 # Build settings
 timezone: America/New_York
@@ -28,6 +28,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 # will convert @twitter-handle to the full twitter link in a post
 jekyll-mentions: https://twitter.com
@@ -86,7 +87,7 @@ RIMdev:
   Kevin Hougasian:
     avatar: https://avatars2.githubusercontent.com/u/6231956?v=3
     title: Senior Frontend Developer
-    desc: 
+    desc:
     twitter: hougasian
     github: hougasian
   Justin Rusbatch:

@@ -9,7 +9,7 @@ image: /images/default/rimdev-configyml.jpg
 
 [Ritter Insurance Marketing](https://ritterim.com) (RIM) is a Field Marketing Organization (FMO) in the Senior Life and Health Insurance markets. That means we promote and distribute insurance carriers’ products to licensed agents.
 
-![Ritter Insurance Marketing's software DEVelopment department ](/images/logos/RIMdev-logo.png)
+![Ritter Insurance Marketing's software DEVelopment department ](/images/logos/RIMdev-logo.png){: .ui.fluid.image}
 
 RIMdev (catchy, huh?!) develops the tools to facilitate the success of these agents, helping them succeed and better support their clients.
 

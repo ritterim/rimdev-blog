@@ -16,7 +16,7 @@ image_url: https://www.flickr.com/photos/istolethetv/
 image_credit : istolethetv
 ---
 
-Ideally, we would never have to take our site offline to do maintenance. All of our deployments would happen smoothly, and we could transition seamlessly into our new set of features. Once in a while it just isn't possible, and we have to stop our users from interacting with our application. With IIS, you can drop an `app_offline.htm` file in the root of your site, but this requires the deployment of a file to your production environment. It works, but it isn't great. 
+Ideally, we would never have to take our site offline to do maintenance. All of our deployments would happen smoothly, and we could transition seamlessly into our new set of features. Once in a while it just isn't possible, and we have to stop our users from interacting with our application. With IIS, you can drop an `app_offline.htm` file in the root of your site, but this requires the deployment of a file to your production environment. It works, but it isn't great.
 
 Maintenance mode doesn't just affect your users, but also may impact potential users via SEO crawlers. According to [this post from Yoast.com](https://yoast.com/http-503-site-maintenance-seo/), crawlers expect to see an HTTP status code of `503`.
 

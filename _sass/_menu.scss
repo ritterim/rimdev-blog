@@ -1,0 +1,32 @@
+.ui.menu {
+  a.item .icon { margin: 0;} // we're not accompanying with inline text, so remove margin
+  &.secondary {
+    background: rgba($color-white,.65);
+    margin-top: -3.3em;
+    position: relative;
+    a.item {
+        color: $grey-dark;
+        @include border-radius(0);
+        @include transition(all,0.3s);
+      &:hover {
+        color: $color-white;
+        background: rgba($grey-dark,.7);
+      }
+    }
+  }
+  &.fixed {
+    background: rgba($color-white,.85);
+    display: none;
+  }
+  &.secondary,
+  &.fixed {
+    a.item {
+      font-family: $font-body;
+      &:hover {
+        color: $color-white;
+        background: rgba($grey-dark,.7);
+      }
+
+    }
+  }
+}

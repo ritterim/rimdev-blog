@@ -1,18 +1,61 @@
 (function($) {
-  if ($(window).width() > 991) {
-    var lastScrollTop = 0;
-    $(window).on("scroll", function() {
-      var state = $(this).scrollTop();
-      if (state < lastScrollTop){
-        $("footer").show("fast");
-      } else {
-        $("footer").hide("slow");
-      }
-      lastScrollTop = state;
+  // create sidebar and attach to menu open
+  $('.ui.sidebar')
+    .sidebar('attach events', '.icon.newspaper, .close');
+
+  // don't see a way to handle this within semantic ui;
+  // could be wrong?
+  $('a .newspaper')
+    .on('click', function(e) {
+      e.preventDefault();
+  })
+
+  // (cc) image credit links will always vary in width.
+  var $photoCredit = $('.photo-credit'),
+      creditWidth  = $photoCredit.width();
+
+  $photoCredit
+    .css('right', 'calc(-'+creditWidth+'px + 0.3em)')
+    .animate({
+      opacity: 1
     });
-  } else {
-    $("footer").show();
-  }
+  $photoCredit
+    .hover(
+      function() {
+        $(this)
+          .animate({ right: '-1em' });
+      }, function() {
+        $(this)
+          .css( 'right', 'calc(-'+creditWidth+'px + 0.3em)');
+  });
+
+  // fix menu when passed
+  $('.masthead')
+     .visibility({
+       once: false,
+       onBottomPassed: function() {
+         $('.fixed.menu')
+           .transition('fade in');
+       },
+       onBottomPassedReverse: function() {
+         $('.fixed.menu')
+           .transition('fade out');
+       }
+   });
+
+  // freshness popup
+  $('.icon.heartbeat')
+    .popup({
+      popup: '.freshness.popup'
+  });
+
+  // lazy load images
+  $('.image')
+    .visibility({
+      type: 'image',
+      transition: 'vertical flip in',
+      duration: 500
+  });
 
   $('*[data-freshness-datetime]').each(function(i, el) {
     var $el = $(el);
@@ -34,23 +77,6 @@
 
     $el.find('.freshness-days-old-js').each(function(i, daysOldEl) {
       $(daysOldEl).text(daysOld);
-    });
-  });
-
-  $("a[href*='#']").on("click", function(e) {
-    var target = $(this.hash);
-    if (target.length) {
-      e.preventDefault();
-      $("html,body").animate({
-        scrollTop: (target.offset().top) - 100
-      }, "fast");
-      return false;
-    }
-  });
-
-  $(".freshness i").hover(function () {
-    $(".freshness-hover").addClass("hover-out").delay(3000).queue(function() {
-      $(this).removeClass("hover-out").dequeue();
     });
   });
 
