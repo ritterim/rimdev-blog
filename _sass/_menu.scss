@@ -1,4 +1,15 @@
 .ui.menu {
+  .item.home {
+    display: none;
+    width: 0;
+    @include opacity(0,0);
+    @include transition(all, 0.3s);
+    &.visible {
+      display: inline;
+      width: auto;
+      @include opacity(1,1);
+    }
+  }
   &.secondary {
     background: rgba($color-white,.65);
     margin-top: -2.9em;
