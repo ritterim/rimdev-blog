@@ -10,15 +10,6 @@
       e.preventDefault();
   })
 
-  // add home menu item
-  $('.menu')
-    .hover(function() {
-      $(this)
-        .find('.home')
-        .toggleClass('visible');
-    });
-
-
   // (cc) image credit links will always vary in width.
   var $photoCredit = $('.photo-credit'),
       creditWidth  = $photoCredit.width();

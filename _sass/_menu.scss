@@ -1,25 +1,16 @@
 .ui.menu {
-  .item.home {
-    display: none;
-    width: 0;
-    @include opacity(0,0);
-    @include transition(all, 0.3s);
-    &.visible {
-      display: inline;
-      width: auto;
-      @include opacity(1,1);
-    }
-  }
+  a.item .icon { margin: 0;} // we're not accompanying with inline text, so remove margin
   &.secondary {
     background: rgba($color-white,.65);
-    margin-top: -2.9em;
+    margin-top: -3.3em;
     position: relative;
     a.item {
         color: $grey-dark;
         @include border-radius(0);
         @include transition(all,0.3s);
       &:hover {
-        background: rgba($color-white,.7);
+        color: $color-white;
+        background: rgba($grey-dark,.7);
       }
     }
   }
@@ -31,6 +22,11 @@
   &.fixed {
     a.item {
       font-family: $font-body;
+      &:hover {
+        color: $color-white;
+        background: rgba($grey-dark,.7);
+      }
+
     }
   }
 }
