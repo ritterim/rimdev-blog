@@ -11,9 +11,9 @@
         <div class="author">
           Written by {% include articles-authors.html %}
 
-          <div class="time-to-read text-muted">
+          <div class="time-to-read">
             {% include word-count.html %}
-            <i class="icon book text-muted"></i> {{ words | plus: 250 | divided_by: 200 }}
+            <i class="icon book"></i> {{ words | plus: 250 | divided_by: 200 }}
 
           </div><!-- /.time-to-read -->
         </div><!-- /.author -->

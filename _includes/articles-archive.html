@@ -26,10 +26,10 @@
               {% endif %}
             {% endfor %}
 
-            <div class="time-to-read text-muted">
+            <div class="time-to-read">
               {% assign content = post.content %}
               {% include word-count.html %}
-              <i class="fa fa-book text-muted"></i> {{ words | plus: 250 | divided_by: 200 | append: " min read" }}
+              <i class="icon book"></i> {{ words | plus: 250 | divided_by: 200 | append: " min read" }}
             </div><!-- /.time-to-read -->
             </author>
             <p>

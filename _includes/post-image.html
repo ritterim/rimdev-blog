@@ -1,7 +1,7 @@
 {% if page.image %}
-{% assign postImage = page.image %}
+  {% assign postImage = page.image %}
 {% elsif post.image %}
-{% assign postImage = post.image %}
+  {% assign postImage = post.image %}
 {% else %}
-{% assign postImage = site.default_image %}
+  {% assign postImage = site.default_image %}
 {% endif %}
