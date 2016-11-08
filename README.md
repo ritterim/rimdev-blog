@@ -1,27 +1,25 @@
 # rimdev.io
 
-A new RIMdev jekyll experience. Minimal, focused on reading content.
-
 Photography by JJ Walck
 
 ## Setup
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [RIMdev blog](https://github.com/ritterim/rimdev-blog/fork)
-3. Clone the repo you just forked.
-4. Run `run.cmd` or `run.sh`.
+1. Install [Jekyll](http://jekyllrb.com), [requirements](https://jekyllrb.com/docs/installation/))
+2. Fork [RIMdev](https://github.com/ritterim/ritterim.github.io)
+3. Clone locally
+4. Run; Windows: `run.cmd` or `run.sh`. Mac: `jekyll s`
+
+> As of Jekyll 3.3, `_config.local.yml` is [no longer needed](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3).
 
 ## Tests
 
 Tests are ran with `npm test`. This runs [markdown-proofing](https://www.npmjs.com/package/markdown-proofing) on all posts. See the `scripts` in `package.json` for more runnable commands.
 
-## New in this release
+## New in this release (2.0)
 
-- Jekyll 3 ([faster](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), [release notes](https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/))
-- [Bootstrap 4 (Alpha 4)](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
-- [Jekyll @mentions](https://github.com/jekyll/jekyll-mentions)
-- [Jekyll gist](https://github.com/jekyll/jekyll-gist) support
-- author pages (see below)
+- [Jekyll 3.3](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3), [release notes](https://jekyllrb.com/news/2016/10/06/jekyll-3-3-is-here/)
+- [Semantic-ui 2.2](http://semantic-ui.com/)
+- [Jekyll feed (now Atom flavoured)](https://github.com/jekyll/jekyll-feed)
 
 ## Creating posts
 
@@ -37,10 +35,10 @@ When you're done, run `npm run check` to check it over.
 
 ### Adding an image
 
-Adding an image is easy enough, remember to add the Bootstrap 4 responsive image class `.img-fluid`. If you want to add a light border, use `{: .img-fluid .border}`
+Adding an image is easy enough, remember to add the semantic-ui responsive image classes `.ui.fluid.image`. If you want to add a light border, use `{: .ui.fluid.image.border}`
 
 ```
-[ Your image description, i.e., alt tag content ]( /path/to/image.jpg ){: .img-fluid }
+[ Your image description, i.e., alt tag content ]( /path/to/image.jpg ){: .ui.fluid.image}
 ```
 
 ## Front-matter
@@ -103,11 +101,3 @@ avatar: false
 ---
 ```
 The last 2 items are optional; If the page has no image, `image:` can be omitted entirely. A default system image will be used. You only need to include `avatar: false` if omitting your avatar.
-
-## Running the blog locally
-
-Create a local config file `_config.local.yml` with the single entry `url: http://localhost:4000` (unless you're running a different port via `--port <port number>`)
-
-```
-jekyll s --config _config.yml,_config.local.yml
-```
