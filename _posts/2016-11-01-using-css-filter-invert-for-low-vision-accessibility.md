@@ -20,6 +20,8 @@ image_credit: "Dominic Alves"
 
 [CSS filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) have handled most of the heavy lifting for our agent. We set a low-vision switch in eBroker's user profile, and attached a low-vision style sheet when the preference is enabled.
 
+<button class="ui teal button filter-invert">Try it!</button>
+
 Straight [Sass HSL functions](http://sass-lang.com/documentation/Sass/Script/Functions.html#hsl_functions) were another option here, but it was less work overall to call `filter: invert(100%)`, then touching each element with `background: invert($color)`, or similar. We may revisit with straight Sass in the near future as filters have to be enabled manually in IE Edge? The agent we worked with uses [Firefox](http://caniuse.com/#search=filter) as his dedicated, all things RitterIM, browser, so `filter` was the fastest way to achieve much of the work.
 
 ```scss

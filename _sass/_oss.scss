@@ -1,0 +1,74 @@
+.ui.grid+.grid {
+  margin-top: 0;
+}
+
+.oss.column {
+  &.filter {
+    h3 {
+      color: hotpink;
+      font-family: 'Raleway', sans-serif;
+      font-size: 5em;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    span {
+      display: block;
+      font-family: 'Satisfy', cursive;
+      font-size: 2em;
+      padding: 1em 0;
+    }
+  }
+  &.releases {
+    background-color: aliceblue;
+    h3 {
+      color: LightSlateGrey;
+      font-family: 'Audiowide', cursive;
+      font-size: 3em;
+      text-transform: lowercase;
+    }
+  }
+  &.supurlative {
+    h3 {
+      color: $color-white;
+      font-size: 3em;
+      font-weight: bold;
+      span {
+        color: yellow;
+        @include rotate(7deg);
+      }
+    }
+  }
+  &.stopwatch {
+    background: url("/images/oss/google-stopwatch.png") left center / cover no-repeat;
+    .button {
+      position: relative;
+      top: calc(50% - 1em);
+    }
+  }
+  &.stuntman {
+    h3 {
+      color: $color-white;
+      font-family: $font-body;
+      font-size: 3em;
+      font-weight: bold;
+    }
+  }
+  &.starorgs {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg/1200px-%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg") center center / cover no-repeat;
+    img {
+      margin-bottom: 1em;
+    }
+  }
+  .button {
+    .hidden.content {
+      .icon {
+        color: $color-white;
+      }
+    }
+  }
+  padding: 6em 4em !important;
+  p {
+    font-size: 1.4em;
+  }
+}

@@ -7,6 +7,10 @@
     cursor: pointer;
     font-size: 180%;
     float: right;
+    @include transition(all,.2s);
+    &:hover {
+      @include rotate(360deg);
+    }
   }
   .article-age {
     color: $grey;
