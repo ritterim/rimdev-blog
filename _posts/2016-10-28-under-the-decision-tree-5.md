@@ -2,7 +2,7 @@
 layout: post
 title: "Under the Decision Tree (#5)"
 date: 2016-10-28 07:00:00
-tags: 
+tags:
 - Machine Learning
 categories: ai
 twitter_text: "Under the Decision Tree (#5) #machinelearning #AI #artificialintelligence #software #bigdata #science"
@@ -12,7 +12,7 @@ external_links_target_blank: true
 shorten: true
 ---
 
-Welcome back for another edition of **Under the Decision Tree**.  We had a small break since the last episode.  So there are quite a few interesting artices and podcasts to catch up on.
+Welcome back for another edition of **Under the Decision Tree**.  We had a small break since the last episode.  So there are quite a few interesting articles and podcasts to catch up on.
 
 Comments are always welcome at: [Decision Tree](mailto:decisiontree@ritterim.com)
 

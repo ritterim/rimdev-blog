@@ -132,3 +132,7 @@ blockquote {
 .ui.vertical.stripe.segment {
   border-color: transparent;
 }
+
+.inverted {
+  filter: invert(100%);
+}

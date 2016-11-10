@@ -1,6 +1,10 @@
 .ui.menu {
-  a.item:hover #rimdev {
-    fill: $color-white;
+  a.item:hover {
+    // svg hovers
+    #rimdev,
+    #open-source {
+      fill: $color-white;
+    }
   }
   a.item .icon { margin: 0;} // we're not accompanying with inline text, so remove margin
   &.secondary {
