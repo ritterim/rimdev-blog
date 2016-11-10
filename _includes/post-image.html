@@ -3,5 +3,11 @@
 {% elsif post.image %}
   {% assign postImage = post.image %}
 {% else %}
-  {% assign postImage = site.default_image %}
+  {% if page.video %}
+    {% assign postVideo = page.video %}
+  {% elsif post.video %}
+    {% assign postVideo = post.video %}
+  {% else %}
+    {% assign postImage = site.default_image %}
+  {% endif %}
 {% endif %}
