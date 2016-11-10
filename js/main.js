@@ -32,11 +32,11 @@
   $('.secondary-credit')
     .hover(
       function() {
-        $this
+        $(this)
           .find('a')
           .show();
       }, function() {
-        $this
+        $(this)
           .find('a')
           .hide();
     });
