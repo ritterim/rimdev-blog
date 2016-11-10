@@ -1,5 +1,6 @@
 .ui.label {
-  &.photo-credit {
+  &.photo-credit,
+  &.secondary-credit {
     background: darken($grey-dark, 10%);
     color: $color-white;
     padding-right: 2em !important;
@@ -7,5 +8,17 @@
     z-index: 100;
     bottom: calc(35vh / 2.5);
     @include opacity(0,0);
+    &.secondary-credit {
+      bottom: 3em;
+      left: 2em;
+      padding-right: 0 !important;
+      @include opacity(8,.8);
+      icon {
+        margin: 0 !important;
+      }
+      a {
+        display: none;
+      }
+    }
   }
 }

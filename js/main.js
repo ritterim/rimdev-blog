@@ -29,6 +29,18 @@
           .css( 'right', 'calc(-'+creditWidth+'px + 0.3em)');
   });
 
+  $('.secondary-credit')
+    .hover(
+      function() {
+        $this
+          .find('a')
+          .show();
+      }, function() {
+        $this
+          .find('a')
+          .hide();
+    });
+
   // fix menu when passed
   $('.masthead')
      .visibility({
@@ -55,6 +67,12 @@
       type: 'image',
       transition: 'vertical flip in',
       duration: 500
+  });
+
+  // invert
+  $('button.filter-invert')
+    .on('click', function() {
+      $('body').toggleClass('inverted');
   });
 
   $('*[data-freshness-datetime]').each(function(i, el) {
