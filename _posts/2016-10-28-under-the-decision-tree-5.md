@@ -9,7 +9,6 @@ twitter_text: "Under the Decision Tree (#5) #machinelearning #AI #artificialinte
 authors: Scott Schwalm
 image: /images/tree-338211_1280.jpg
 external_links_target_blank: true
-shorten: true
 ---
 
 Welcome back for another edition of **Under the Decision Tree**.  We had a small break since the last episode.  So there are quite a few interesting articles and podcasts to catch up on.
