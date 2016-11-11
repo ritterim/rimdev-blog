@@ -16,6 +16,8 @@ function convert_mp4_to_webm
     fi
 }
 
+if ! type ffmpeg > /dev/null; then echo "You need to install ffmpeg" ; fi
+
 VIDEOS=./video
 cd "$VIDEOS"
 for item in *.mp4; do
