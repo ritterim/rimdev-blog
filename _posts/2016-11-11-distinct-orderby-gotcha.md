@@ -10,10 +10,10 @@ twitter_text: "OrderBy Distinct Gotcha"
 authors: Chad Peters
 image: https://c2.staticflickr.com/9/8146/7127935057_2d9bf9c1b8_k.jpg
 image_url: https://www.flickr.com/photos/khawkins04/
-image_credit: Ken HawkIns
+image_credit: Ken Hawkins
 ---
 The boss called me over the other day to consult on an issue we were having with a result set not sorting as expected. We quickly found the code producing the results and it was relatively straight forward:
-```
+```csharp
 var query = (from plan in _context.PlanTable
              from benefit in plan.BenefitTable
              where plan.PlanId == request.PlanId
@@ -36,7 +36,7 @@ In short, the expected behavior of the IQueryable Distinct operator is that it r
 
 ### The Solution
 The solution then is simple:
-```
+```csharp
 var query = (from plan in _context.PlanTable
              from benefit in plan.BenefitTable
              where plan.PlanId == request.PlanId
@@ -52,4 +52,4 @@ var query = (from plan in _context.PlanTable
 ```
 
 ## Conclusion
-Be careful when using Distinct() and OrderBy() on IQueryables. If you don't specify them in the correct order you may not get the results you expect.
+Be careful when using `Distinct()` and `OrderBy()` on IQueryables. If you don't specify them in the correct order you may not get the results you expect.
