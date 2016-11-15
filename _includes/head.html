@@ -7,7 +7,7 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300|Roboto+Slab:400,300,100">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" integrity="sha256-iK7AZM7Xa42iuURdMdo1sp38ld/JJ3fDtS0523GKqdk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/main.css">
 
   <link rel="canonical" href="{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}">
