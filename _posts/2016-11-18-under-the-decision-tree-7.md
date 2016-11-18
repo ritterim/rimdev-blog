@@ -40,9 +40,10 @@ Comments are always welcome at: [Decision Tree](mailto:decisiontree@ritterim.com
 
 ## Podcasts
 
+- [2016-11-18 - Data Skeptic - MINI - Gini Coefficients](http://dataskeptic.com/epnotes/gini-coefficient.php)
 - [2016-11-17 - O'Reilly Data Show - Building the next-generation big data analytics stack](https://www.oreilly.com/ideas/building-the-next-generation-big-data-analytics-stack)
-- [2016-11-13 - Linear Digressions -  Neural Net Cryptograpy](http://lineardigressions.com/episodes/2016/11/13/neural-net-cryptograpy)
-- [2016-11-11 - Data Skeptic -  Unstructured Data for Finance](http://dataskeptic.com/epnotes/unstructured-data-for-finance.php)
+- [2016-11-13 - Linear Digressions - Neural Net Cryptograpy](http://lineardigressions.com/episodes/2016/11/13/neural-net-cryptograpy)
+- [2016-11-11 - Data Skeptic - Unstructured Data for Finance](http://dataskeptic.com/epnotes/unstructured-data-for-finance.php)
 
 ## Upcoming Conferences
 
