@@ -11,7 +11,7 @@ image: /images/tree-338211_1280.jpg
 external_links_target_blank: true
 ---
 
-Welcome back for another edition of **Under the Decision Tree**.  With the Thanksgiving holiday we are relasing this a little early so you can read up on recent ML news after you eat your turkey dinner.
+Welcome back for another edition of **Under the Decision Tree**.  With the Thanksgiving holiday we are releasing this a little early so you can read up on recent ML news after you eat your turkey dinner.
 
 Comments are always welcome at: [Decision Tree](mailto:decisiontree@ritterim.com)
 
