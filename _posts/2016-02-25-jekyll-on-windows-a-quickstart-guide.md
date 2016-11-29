@@ -18,7 +18,7 @@ We use [Jekyll](http://jekyllrb.com/) for this blog. If you're running Windows, 
 
 Use [Chocolatey](https://chocolatey.org/) to install Ruby v2 and the associated Ruby Development Kit version. You'll need to install [Chocolatey](https://chocolatey.org/) if it's not already installed.
 
-Now, From an **Administrator** cmd or PowerShell prompt:
+Now, from an **Administrator** cmd or PowerShell prompt:
 
 ```
 > choco install ruby ruby2.devkit
