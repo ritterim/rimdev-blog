@@ -4,10 +4,12 @@ Photography by JJ Walck
 
 ## Setup
 
-1. Install [Jekyll](http://jekyllrb.com), [requirements](https://jekyllrb.com/docs/installation/))
-2. Fork [RIMdev](https://github.com/ritterim/ritterim.github.io)
-3. Clone locally
-4. Run; Windows: `run.cmd` or `run.sh`. Mac: `jekyll s`
+1. Install Ruby v2 *(if not already installed)*
+2. Clone repository
+3. `cd` into repository
+4. `gem install bundler`
+5. `bundle install`
+6. To run: `bundle exec jekyll serve` with optional `--incremental` flag
 
 > As of Jekyll 3.3, `_config.local.yml` is [no longer needed](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3).
 
