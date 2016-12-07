@@ -29,7 +29,7 @@ No. We've been building resilient re-directs for years! With very few exceptions
 
 We actively plan for this scenario, redirecting to the www prefixed domain. Why? Is it because no one will realize they're on the world wide web, ...er, internet?
 
-Why should I?
+### Why should I?
 
 The short answer is progress. The long answer; you're actually going to a sub-domain of the main website. Any other instance of this practice is generally frowned upon. A sub-domain is treated, in any other case, as an entirely different website (and you're fracturing your SEO). The early mobile practice of `m.yourwebsite.com` has since been corrected thanks to [responsive web design](https://abookapart.com/products/responsive-web-design). `m` was the sub-domain  you were re-directed to when a *mobile* browser was detected. Why? Bandwidth and processors. Mobile devices weren't as powerful as your desktop or laptop, nor where cellular networks. Once again, this practice has mostly been abandoned as cellular networks improved and devices rival desktop and laptop experiences. Why is the www is still with us?
 
