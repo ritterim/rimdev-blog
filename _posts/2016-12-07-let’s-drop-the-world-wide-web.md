@@ -9,7 +9,7 @@ twitter_text: "Let’s drop the world wide web - a plea to the internet"
 authors: Kevin Hougasian
 video: /video/dont-type-www
 ---
-World Wide Web, that's what the "www" stands for in [www.rimdev.com](https://rimdev.com) - a show of hands for those who knew that?
+World Wide Web, that's what the "www" stands for in [www.rimdev.com](https://rimdev.io) - a show of hands for those who knew that?
 
 ## Why do we perpetuate a marker that has outstayed it's welcome?
 
