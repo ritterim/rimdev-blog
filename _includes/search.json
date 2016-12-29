@@ -1,7 +1,7 @@
 [{% for post in site.posts %}
   {    
     "id" : "{{ post.date | date: "%s" }}-{{ post.id | slugify }}",
-    "site" : {{ post.site | jsonify }},
+    "site" : "rimdev.io",
     "title": {{ post.title | jsonify }},      
     "url": {{ post.url | absolute_url | jsonify }},                    
     "categories" : [{% for category in post.categories %}{{ category | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
