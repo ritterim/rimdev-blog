@@ -1,6 +1,6 @@
 [{% for post in site.posts %}
   {    
-    "id" : "{{ post.date | date: "%s" }}-{{ post.id | slugify }}",
+    "id" : "{{ post.url | absolute_url | slugify }}-{{ post.date | date: "%s" }}",
     "site" : "rimdev.io",
     "title": {{ post.title | jsonify }},      
     "url": {{ post.url | absolute_url | jsonify }},                    
