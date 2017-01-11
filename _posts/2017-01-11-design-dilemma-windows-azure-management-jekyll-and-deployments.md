@@ -8,7 +8,7 @@ tags:
 - jekyll
 categories:
 - Design Dilemma
-twitter_text: "Design Dilemma: @windowsazure, #jkeyll, and #deployments #dotnet"
+twitter_text: "Design Dilemma: @windowsazure, #jekyll, and #deployments #dotnet"
 authors: Khalid Abuhakmeh 
 image: https://farm7.staticflickr.com/6045/6322051654_84b730e08a_b_d.jpg
 image_url: https://www.flickr.com/photos/zeevveez/
