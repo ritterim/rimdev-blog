@@ -40,6 +40,9 @@ Clicking on <i class="icon newspaper o"></i>, here or in the menu, pulls our new
 
 In our 1.0, it held a static position on the left, blurred when you were reading a post. We've pushed it away entirely, and now blur the post when you're browsing the sidebar. [Blurring](http://semantic-ui.com/modules/dimmer.html#blurring) was simple to add the the main pusher `class="pusher dimmable blurring"` and triggered on the `.sidebar()` event.
 
+{: .ui.teal.message}
+Update 2017.01.18: While blurring was a nice effect, performance suffered greatly when combined with the other semantic-ui effects. Blurring has been removed.
+
 ### Simpler, when you need it grid
 
 Semantic-ui sets itself apart from other, more verbose, frameworks with it's [grid](http://semantic-ui.com/collections/grid.html), [container](http://semantic-ui.com/elements/container.html), and [segment](http://semantic-ui.com/elements/segment.html) system. Our post layout is simple and we were able to establish a responsive layout with this simple structure using `vertical segment`, `text-container`, and `stackable`. Some of the more popular frameworks would have tripled this easily.
