@@ -1,13 +1,17 @@
-﻿---
+---
 layout: post
-title: "The mouse is not my friend"
-date: 2017-01-17 14:54:53
-tags:
+title: "The Mouse Is Not My Friend"
+date: 2017-01-17 07:00:00
+tags: 
+- Development
+categories: Development
+twitter_text: "The Mouse Is Not My Friend #Productivity #dotnet #VisualStudio"
 authors: Chad Peters
 image: https://c1.staticflickr.com/2/1618/24978380044_5d4a779fcd_b.jpg
 image_url: https://www.flickr.com/photos/stavos52093/24978380044/
 image_credit: Stavos
 ---
+
 Rather than enjoying some R&R during our recent holiday vacation, I worked on a small side project and was rewarded with an aching right arm from the extra 
 mouse time. This caused me to spend a little time thinking about how I work during the week and what I can do to minimize the pain for my future self. 
 
@@ -19,6 +23,7 @@ Someone else might find one or two of these useful so I will share them here. I 
 will vary. 
 
 ## Windows Shortcuts
+
 - `Windows Key+E`: Open File Explorer
 - `Windows Key+<anything>`: You can press the Windows Key and just start typing whatever it is you are looking for. Want to open Word? Press the Windows 
  Key and type “Word”. Want to open the Device Manager? Press the Windows Key and type “Device”. Experiment and see what you can find. 
@@ -29,9 +34,10 @@ will vary.
 - `Shift+F10`: Right-click
 
 ## Browser Shortcuts
+
 - `Ctrl(+Shift)+Tab`: Switch to next browser tab
 - `Ctrl+1 through 8`: Switch to the respective first 8 tabs. This is an especially useful shortcut if you always keep specific pages open 
-    in your browser.
+	in your browser.
 - `Ctrl+9`: Switch to last tab on the right 
 - `Ctrl+F4`: Close tab
 - `Ctrl+T`: New tab
@@ -39,6 +45,7 @@ will vary.
 - `Ctrl+E`: Go to Search bar
  
 ## Visual Studio Default Keyboard Shortcuts
+
 - `Ctrl(+Shift)+F6`: Switch document windows. This goes in the order you touched the files not from left to right (or right to left). This is great if you 
  want to go quickly back to the last file you touched before the one you are presently in. 
 - `Ctrl(+Shift)+Tab`: Will pop the Windows Navigator and cycle you through the Active Files. After the window pops you can use the arrow keys to move around 
@@ -60,6 +67,7 @@ will vary.
 - `Ctrl+Shift+F9`: Delete all breakpoints
 
 ## Slack
+
 - `Page Up/Down`: Scroll the conversation
 - `Ctrl+T or Ctrl+K`: Type in a user’s name or channel name and you can jump right to it
 - `Alt+Up/Down Arrow`: Move through the Channels and Direct Messages lists
@@ -82,6 +90,7 @@ In Mail View
 - `Ctrl+N`: New message
 
 ## Happy keyboarding!
+
 That is the end of my list which is by no means exhaustive, but I will provide links below for lists that are more exhaustive. Hopefully I can discipline 
 myself to use these shortcuts and my future self will thank me. 
 
@@ -92,6 +101,3 @@ myself to use these shortcuts and my future self will thank me.
 - [Outlook Shortcuts](http://www.hongkiat.com/blog/80-keyboard-shortcuts-for-microsoft-outlook/)
 
 Feel free to leave your favorite shortcuts in the comments.
-
-
-
