@@ -1,0 +1,13 @@
+<div class="ui basic modal search-modal">
+  <div class="content">
+    <rim-search data-api-url="https://content-search-qa.ritterim.com"></rim-search>
+    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/inline.js"></script>
+    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/vendor.js"></script>
+    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/main.js"></script>
+  </div>
+</div>
+
+{% comment %}
+      script calls need to be here as opposed to the script.html include, otherwise,
+      inline.js can't find the <rim-search> element.
+      {% endcomment %}
