@@ -1,0 +1,47 @@
+// Use this file for any post specific Sass
+// Label each segment with it's corresponding post
+
+// post; 2016-11-01-using-css-filter-invert-for-low-vision-accessibility
+.inverted {
+  filter: invert(100%);
+}
+
+// post; 2017-01-16-the-rimdev-logo-story-or-a-tale-of-2-knights
+.svg-container {
+  height: 310px;
+  [class*=svg-] {
+    display: inline-block;
+    position: absolute;
+    // transitioning all, as we're catching
+    // 2 transitions here
+    transition: all ease-out 0.3s;
+    height: 286px;
+    width: 173px;
+    &:nth-child(odd) {
+      // positioning is placement - half
+      // the width of your target
+      left: calc(60% - 86px);
+      @media (max-width: 500px) {
+        left: 10px;
+      }
+    }
+    &:nth-child(even) {
+      left: calc(40% - 86px);
+      @media (max-width: 500px) {
+        left: calc(95% - 173px);
+      }
+    }
+    &.svg-onion {
+      left: calc(50% - 86px);
+       svg {
+        // nested here to only affect opacity
+        // when .svg-onion is added
+        fill-opacity: .6;
+      }
+    }
+  }
+}
+
+.ui.button.onion {
+  margin: 1em 0 2em;
+}

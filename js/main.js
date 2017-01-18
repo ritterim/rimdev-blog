@@ -69,12 +69,6 @@
       duration: 500
   });
 
-  // invert
-  $('button.filter-invert')
-    .on('click', function() {
-      $('body').toggleClass('inverted');
-  });
-
   $('*[data-freshness-datetime]').each(function(i, el) {
     var $el = $(el);
     var daysOld = parseInt((Date.now() - Date.parse($el.data('freshness-datetime'))) / 1000 / 60 / 60 / 24);
@@ -104,4 +98,22 @@
     // Selector from http://stackoverflow.com/a/1871394 from http://stackoverflow.com/questions/1871371/using-jquery-to-open-all-external-links-in-a-new-window
     $postMainColumnJs.find("a[href^='http://']").prop('target', '_blank');
   }
+
+  // ------ Begin post specific js; label
+
+  // invert; 2016-11-01-using-css-filter-invert-for-low-vision-accessibility
+  $('button.filter-invert')
+    .on('click', function() {
+      $('body').toggleClass('inverted');
+  });
+
+  // onion-skin; 2017-01-16-the-rimdev-logo-story-or-a-tale-of-2-knights
+  $('.onion')
+  .on(
+    'click',
+    function() {
+      $('[class*=svg-]').toggleClass('svg-onion');
+    }
+  );
+
 })(jQuery);
