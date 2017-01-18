@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "The RIMdev logo story or a tale of 2 knights"
-date: 2017-01-16 10:34:35
-image: https://c1.staticflickr.com/4/3685/11904553205_c73af225ef_b.jpg
-image_url: https://www.flickr.com/photos/taema_dreiden/
-image_credit: Taema
+date: 2017-01-18 10:34:35
+image: https://c1.staticflickr.com/8/7308/11036243553_29a34d0ce9_b.jpg
+image_url: https://flic.kr/p/hPeCHg
+image_credit: _Cwati_
 tags:
 - RIMdev
 - Team
@@ -12,8 +12,6 @@ tags:
 twitter_text: "Designing a team logo"
 authors: Kevin Hougasian
 ---
-## Begin shameless promotion
-
 One of my early challenges at RIMdev was to create a RIMdev logo. Something that worked with the existing RitterIM knight, but also let us stand out as the development department. Something that our entire team could get behind and have fun with. Challenge accepted.
 
 Starting with the existing Ritter icon, the one that had been with [Ritter Insurance Marketing](https://ritterim.com) since it's inception, what could be done to evolve/adapt it to our team of polyglots?
@@ -101,18 +99,16 @@ First, there was the horse itself, representing a knight on a chessboard. A stro
   <div class="ui teal button onion">Toggle onion skin</div>
 </div>
 
-Enter the trite. Sorry, while curly braces embody the definition, they do incorporate code. On their own, they didn't offer balance with this new knight. A pedestal was added to both elevate and balance the knight within its circle.
+Enter the trite. Sorry, while curly braces embody the definition, they do incorporate code. On their own, they didn't offer balance with this new knight. A pedestal was added to both elevate and balance the knight within its circle (swag was a driving consideration throughout the design. A symbol and logo that would look great on stickers, t-shirts, whatever).
 
-Swag was a driving consideration throughout the design. A symbol and logo that would look great on stickers, t-shirts, whatever.
-
-![a tale of 2 knights](/images/rimdev-logo-evolution/shaping-the-knight.png){: .ui.fluid.image}
+![a tale of 2 knights](/images/rimdev-logo-evolution/shaping-the-knight.svg){: .ui.fluid.image}
 
 We've had some fun with it since then. 2016 saw the introduction of the initial logo, a [Slack](https://slack.com) [bot](https://slack.com/apps/category/At0MQP5BEF-bots) (a.k.a. **RIMbot**), a **major refactor** for one of our applications, and a cup of coffee ([OSS](/open-source/) brew).
 
-![2016 rimdev stickers](/images/rimdev-logo-evolution/2016-rimdev-stickers.png){: .ui.fluid.image}
+![2016 rimdev stickers](/images/rimdev-logo-evolution/2016-rimdev-stickers.svg){: .ui.fluid.image}
 
 Entering 2017, We've incorporated [NASA](https://nasa.gov) styling (that's a good way to put it, right?), gone tiki, expanded our colors, our diversity, and gone camouflage.
 
-![2017 rimdev stickers](/images/rimdev-logo-evolution/2017-rimdev-stickers.png){: .ui.fluid.image}
+![2017 rimdev stickers](/images/rimdev-logo-evolution/2017-rimdev-stickers.svg){: .ui.fluid.image}
 
 Have an idea for a RIMdev sticker, t-shirt, or general swag? Let us know!
