@@ -43,8 +43,8 @@ will vary.
 - `Ctrl+T`: New tab
 - `F6`: Go to Address bar
 - `Ctrl+E`: Go to Search bar
- 
-## Visual Studio Default Keyboard Shortcuts
+
+## Visual Studio Default Shortcuts
 
 - `Ctrl(+Shift)+F6`: Switch document windows. This goes in the order you touched the files not from left to right (or right to left). This is great if you 
  want to go quickly back to the last file you touched before the one you are presently in. 
@@ -52,7 +52,7 @@ will vary.
  this navigator while holding down the Ctrl key. Windows Navigator also includes the Active Tool Windows.
 - `Alt(+Shift)+F7`: Will pop the Windows Navigator and cycle you through the Active Tool Windows. After the window pops you can use the arrow keys to move 
  around this navigator while holding down the Ctrl key. Windows Navigator also includes the Active Files.			
-- `Ctrl+Alt+`L: View Solution Explorer
+- `Ctrl+Alt+L`: View Solution Explorer
 - `Ctrl+\ , E`: View Error List
 - `F12` : Go to definition of the symbol your cursor is sitting on
 - `Shift+F12`: Find all references of the symbol your cursor is sitting on
@@ -66,7 +66,7 @@ will vary.
  For instance, if you have a property named ‘AddOnCode’ you can search for ‘AON’ and it will show up in the search results.
 - `Ctrl+Shift+F9`: Delete all breakpoints
 
-## Slack
+## Slack Shortcuts
 
 - `Page Up/Down`: Scroll the conversation
 - `Ctrl+T or Ctrl+K`: Type in a user’s name or channel name and you can jump right to it
@@ -75,7 +75,7 @@ will vary.
 - `Shift+Enter`: When typing a messages this will move you to a new line
 - `Up Arrow`: Edit last message
 
-## Outlook 
+## Outlook Shortcuts
 
 - `F9`: Send/Receive
 - `Ctrl+1 through 5`: Switch to Mail, Calendar, Contacts, Tasks Views, Notes respectively
