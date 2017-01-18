@@ -29,9 +29,10 @@ will vary.
 - `Shift+F10`: Right-click
 
 ## Browser Shortcuts
-- `Ctrl(+Shift)+Tab`: Switch browser tabs
-- `Ctrl+1 through 9`: This shortcut will open the respective first 9 tabs. This is an especially useful shortcut if you always keep specific pages open in 
- your browser. 
+- `Ctrl(+Shift)+Tab`: Switch to next browser tab
+- `Ctrl+1 through 8`: Switch to the respective first 8 tabs. This is an especially useful shortcut if you always keep specific pages open 
+    in your browser.
+- `Ctrl+9`: Switch to last tab on the right 
 - `Ctrl+F4`: Close tab
 - `Ctrl+T`: New tab
 - `F6`: Go to Address bar
@@ -51,16 +52,16 @@ will vary.
 - `Ctrl+F12`: Go to declaration of symbol your cursor is sitting on
 - `Ctrl+Shift+B`: Build Solution
 - `F5`: Start debugging
-- `Ctrl+5`: Start without debugging
-- `Ctrl+W`: select whole word where your cursor is sitting resharper? May be ctrl+shift+w without resharper This shortcut is actually “extend selection” so 
+- `Ctrl+F5`: Start without debugging
+- `Ctrl+W`: Select whole word where your cursor is sitting. This shortcut is actually “extend selection” so 
  if you keep pressing it will expand what it selects in increments to the whole line, the code block, the method and the whole way up to the entire page.
-- `Ctrl+T`: This is one of the best features of VS. It will search your whole project for all the things that match, or even sort of match, what you type. 
+- `Ctrl+,`: Search your whole project for all the things that match, or even sort of match, what you type. 
  For instance, if you have a property named ‘AddOnCode’ you can search for ‘AON’ and it will show up in the search results.
 - `Ctrl+Shift+F9`: Delete all breakpoints
 
 ## Slack
 - `Page Up/Down`: Scroll the conversation
-- `Ctrl+T`: Type in a user’s name or channel name and you can jump right to it
+- `Ctrl+T or Ctrl+K`: Type in a user’s name or channel name and you can jump right to it
 - `Alt+Up/Down Arrow`: Move through the Channels and Direct Messages lists
 - `Alt+Shift+Up/Down Arrow`: Jump to unread Channels and Direct Messages
 - `Shift+Enter`: When typing a messages this will move you to a new line
@@ -80,6 +81,7 @@ In Mail View
 - `Ctrl+R`: Reply
 - `Ctrl+N`: New message
 
+## Happy keyboarding!
 That is the end of my list which is by no means exhaustive, but I will provide links below for lists that are more exhaustive. Hopefully I can discipline 
 myself to use these shortcuts and my future self will thank me. 
 
