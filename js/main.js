@@ -5,7 +5,7 @@
 
   // don't see a way to handle this within semantic ui;
   // could be wrong?
-  $('a .newspaper')
+  $('a .newspaper, a .search')
     .on('click', function(e) {
       e.preventDefault();
   })
@@ -69,11 +69,16 @@
       duration: 500
   });
 
-  // invert
-  $('button.filter-invert')
+  // search modal
+  $('.search.icon')
     .on('click', function() {
-      $('body').toggleClass('inverted');
-  });
+      $('.search-modal')
+        .modal('show');
+      $('.dimmer')
+        .addClass('inverted')
+        .css('overflow-y', 'visible');
+    });
+
 
   $('*[data-freshness-datetime]').each(function(i, el) {
     var $el = $(el);
@@ -104,4 +109,22 @@
     // Selector from http://stackoverflow.com/a/1871394 from http://stackoverflow.com/questions/1871371/using-jquery-to-open-all-external-links-in-a-new-window
     $postMainColumnJs.find("a[href^='http://']").prop('target', '_blank');
   }
+
+  // ------ Begin post specific js; label
+
+  // invert; 2016-11-01-using-css-filter-invert-for-low-vision-accessibility
+  $('button.filter-invert')
+    .on('click', function() {
+      $('body').toggleClass('invert');
+  });
+
+  // onion-skin; 2017-01-16-the-rimdev-logo-story-or-a-tale-of-2-knights
+  $('.onion')
+  .on(
+    'click',
+    function() {
+      $('[class*=svg-]').toggleClass('svg-onion');
+    }
+  );
+
 })(jQuery);

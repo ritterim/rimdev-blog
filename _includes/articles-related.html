@@ -7,6 +7,9 @@ Show related reading based on tags. If no related tags, show previous and next a
 <div class="ui horizontal divider center aligned">Suggested reading</div>
 
 <div class="articles-related">
+  {% assign maxRelated = 6 %}
+  {% assign maxRelatedCounter = 0 %}
+
   {% assign hasRelated = "" %}
 
   <div class="ui three stackable cards">
@@ -25,7 +28,7 @@ Show related reading based on tags. If no related tags, show previous and next a
       {% endif %}
     {% endfor %}
 
-    {% if sameTagCount >= 1 and post.title != page.title limit:6 %}
+    {% if sameTagCount >= 1 and post.title != page.title %}
     {% assign hasRelated = true %}
       <div class="ui card related-cards">
         <div class="content">
@@ -58,6 +61,11 @@ Show related reading based on tags. If no related tags, show previous and next a
         <a href="{{ page.next.url }}">{{ page.next.title }}</a>
       </div>
     </div>
+  {% endif %}
+
+  {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+  {% if maxRelatedCounter >= maxRelated %}
+    {% break %}
   {% endif %}
 
   {% endif %}
