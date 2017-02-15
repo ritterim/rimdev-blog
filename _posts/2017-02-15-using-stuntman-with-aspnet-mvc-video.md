@@ -25,7 +25,7 @@ image: ./images/stuntman-video.png
 
 ## Transcript
 
-Hello my name is Khalid Abuhakmeh and in this video i'll be presenting an ASP.NET OWIN middleware library designed to ease local authentication development scenarios. This package is better known as Stuntman and is available via Nuget or directly on GitHub.
+Hello my name is Khalid Abuhakmeh and in this video I'll be presenting an ASP.NET OWIN middleware library designed to ease local authentication development scenarios. This package is better known as Stuntman and is available via NuGet or directly on GitHub.
 
 Before we delve into Stuntman, I'd like to answer three questions about authentication. 
 
@@ -73,7 +73,7 @@ All three scenarios are leveraging IPrincipal and IIdentity.
 
 Now that we've answered our first question of "how does ASP.NET authentication work?" we begin to explore how Stuntman works to accelerate your local development process. 
 
-So how does Stuntman work? Let's start with your basic ASP.NET MVC example. I'll first start by going into the new project dialog and creating a web application named "BasicExample". Then i'll select MVC as my starter template. Once my application is initialized, I will need to add references via Nuget.
+So how does Stuntman work? Let's start with your basic ASP.NET MVC example. I'll first start by going into the new project dialog and creating a web application named "BasicExample". Then i'll select MVC as my starter template. Once my application is initialized, I will need to add references via NuGet.
 
 The first reference is OWIN, since we're hosting in ASP.NET MVC application will
 need `Microsoft.Owin.Host.SystemWeb`.
@@ -82,17 +82,17 @@ need `Microsoft.Owin.Host.SystemWeb`.
 > Install-Package Microsoft.Owin.Host.SystemWeb
 ```
  
-The second reference will need is Stuntman. So we'll search for Stuntman on Nuget.
+The second reference will need is Stuntman. So we'll search for Stuntman on NuGet.
 
 ```console
 > Install-Package RimDev.Stuntman
 ```
 
 Once we find Stuntman, we'll just go ahead and install it just like we did with OWIN. Now that we have both Stuntman and OWIN
-installed we'll need a `Startup.cs`. The Startup.cs class tells OWIN how to configure our asp.net OWIN enabled
+installed we'll need a `Startup.cs`. The `Startup.cs` class tells OWIN how to configure our asp.net OWIN enabled
 MVC application
 
-I've already prepared a `Startup.cs` class which have copied from the GitHub readme of Stuntman. A few things to note about our startup.cs. First, `StuntmanOptions` are created statically at the top of our startup class. Secondly, inside of our configuration method we set up a user in our `StuntmanOptions` users "user 1" with a set of
+I've already prepared a `Startup.cs` class which have copied from the GitHub readme of Stuntman. A few things to note about our `Startup.cs`. First, `StuntmanOptions` are created statically at the top of our startup class. Secondly, inside of our configuration method we set up a user in our `StuntmanOptions` users "user 1" with a set of
 given claims. Finally, we say `app.UseStuntman()` passing in the Stuntman options to make Stuntman visible to our
 UI. 
 
@@ -115,7 +115,7 @@ public class Startup
 
 ```
 
-We need to alter our `_Layout` file. I first want to start by modifying our home link and exposing our
+We need to alter our `_Layout.cshtml` file. I first want to start by modifying our home link and exposing our
 `Users.Identity.Name` property this will make it easy for us to identify when we are switching users
 next. I will navigate to the bottom of the layout file and use the `StuntmanOptions` from our startup class to expose the stuntman UI picker. 
 
@@ -136,7 +136,7 @@ This brings us to our third and final question "Why you should care about Stuntm
 
 Let's recap. I started this video by describing how authentication works in ASP.NET. It works primarily on the concept of `IPrincipal` and `IIdentity`. Stuntman works within these abstractions by allowing you to set the applications current principal and identity using OWIN middleware and cookie authentication. As you saw, it is easy to setup Stuntman in an existing application. It also helps you and your team accelerate progress around auth use cases with the added benefit of being code-based you can check in common user scenarios and communicate that effectively across projects lifetime.
 
-If you're interested in using Stuntman, it can be installed via Nuget. Additionally you can help contribute by visiting our [GitHub Repository](https://github.com/ritterim/stuntman).
+If you're interested in using Stuntman, it can be installed via [NuGet](https://nuget.org). Additionally you can help contribute by visiting our [GitHub Repository](https://github.com/ritterim/stuntman).
 
 
 If you enjoyed watching this video please follow me on [Twitter](https://twitter.com/buhakmeh) and be sure
