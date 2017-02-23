@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Component Life"
+title: "The Component Life: Creating Reusable Web Components"
 date: 2017-02-23
 tags: 
 - Web components
@@ -15,11 +15,11 @@ image_credit: Nathan White
 external_links_target_blank: true
 ---
 
-At RimDev we're trying to rethink the way we build our frontend. We have so many properties with common functionality, and it was starting to be cumbersome (not to mention a waste of time) to implement similar features across all of our products. We knew there was a better approach. This is what brought us to a redistributable component architecure. 
+At RimDev we're trying to rethink the way we build our frontend. We have so many properties with common functionality, and it was starting to be cumbersome (not to mention a waste of time) to implement similar features across all of our products. We knew there was a better approach. This is what brought us to a redistributable component architecture. 
 
-One of the recent components we've built is for our "Related Content." Now on the backend, it's just one simple endpoint. However, on the frontend, we have many different contexts for where/why this component is used. For example, sometimes we might utilize this component on a static blog site. Other times we might use it to show related articles inside of one of our products. We needed to build out these pieces in a very extensible manner for the frontend. There should be a minimal barrier to implementation and it should allow the frontend developer(designer) an easy workflow to embed inside another site.
+One of the recent components we've built is for our "Related Content." Now on the backend, it's just one simple endpoint. However, on the frontend, we have many different contexts for where/why this component is used. For example, sometimes we might utilize this component on a static blog site. Other times we might use it to show related articles inside of one of our products. We needed to build out these pieces in a very extensible manner for the frontend. There should be a minimal barrier to implementation and it should allow the frontend developer or designer an easy workflow to embed inside another site.
 
-We decided to develop a pure vanilla, ES2015 component. We started with a simple class, whose constructor recieves an optional configuration object. This allows us to pass in any configuration parameters we might need setup, which also forces the frontend implementor to intentionally instantiate the component when needed. 
+We decided to develop a pure vanilla, ES2015 component. We started with a simple class, whose constructor recieves an optional configuration object. This allows us to pass in any configuration parameters we might need setup, which also forces the frontend implementer to intentionally instantiate the component when needed. 
 
 ```javascript
 export default class RelatedContent{
@@ -41,9 +41,9 @@ export default class RelatedContent{
 }
 ```
 
-I would like to note the `defaultDomScope` in the configuration object. This allows you to scope the components to a given DOM element, giving even more control to the frontend implementor. 
+I would like to note the `defaultDomScope` in the configuration object. This allows you to scope the components to a given DOM element, giving even more control to the frontend implementer. 
 
-After configuring the settings for the component we then have an initialization method to actually create our component, allowing the implementor to pass in a new DOM scope here to be set in the configuration. 
+After configuring the settings for the component we then have an initialization method to actually create our component, allowing the implementer to pass in a new DOM scope here to be set in the configuration. 
 
 ```javascript
 init(domScope = this.configuration.defaultDomScope) {
@@ -55,7 +55,7 @@ init(domScope = this.configuration.defaultDomScope) {
 }
 ```
 
-Note that we return `this` at the end of the method. Again, we want to assist the implementor with any sort of extensibility or ease-of-use that we can. Returning `this` allows the implementor to chain methods, for a quick one-liner to get their component functioning.
+Note that we return `this` at the end of the method. Again, we want to assist the implementer with any sort of extensibility or ease-of-use that we can. Returning `this` allows the implementer to chain methods, for a quick one-liner to get their component functioning.
 
 We use the dom scope to select any elements with our `data-` attribute, iterate through them, and pass them to a create method. Any additional setup prior to creating the elements should go here. 
 
@@ -81,7 +81,7 @@ create (cmpTmp) {
 
 After creating a clone of the template, we then modify any pieces that we'd like. We then take this cloned element and insert it in the same container as the template. We leave the template there, because we might end up needing to clone another piece later.
 
-As a point of, again, allowing our implementor to have the control, we use HTML `<template>` elements to give our components a DOM structure to use. This makes it so that the "template" we are using doesn't render on the screen before we have a chance to modify it to our needs. Here's a portion of our template:
+As a point of, again, allowing our implementer to have the control, we use HTML `<template>` elements to give our components a DOM structure to use. This makes it so that the "template" we are using doesn't render on the screen before we have a chance to modify it to our needs. Here's a portion of our template:
 
 ```html
 <template data-related-content>
@@ -94,7 +94,7 @@ As a point of, again, allowing our implementor to have the control, we use HTML 
 </template>
 ```
 
-This allows the implementor to decide the structure of each piece of data displayed. It also gives up control of all styling, allowing you to pick and choose how to style each portion. We've found this is very helpful as we don't always use the same CSS/SCSS framework for each of our projects. Our data is always consistent and the base functionality of the component is always consistent, but everything else is up to the implementor. 
+This allows the implementer to decide the structure of each piece of data displayed. It also gives up control of all styling, allowing you to pick and choose how to style each portion. We've found this is very helpful as we don't always use the same CSS/SCSS framework for each of our projects. Our data is always consistent and the base functionality of the component is always consistent, but everything else is up to the implementer. 
 
 NOTE: For IE compatibility you'll want to make sure that any template element has a CSS rule to set the `display: hidden`. You also will need this small function to grab the contents of the template:
 
