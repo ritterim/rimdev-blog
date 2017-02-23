@@ -8,7 +8,7 @@ tags:
 categories: 
 - javascript
 - frontend
-twitter_text: "The Component Life #webcomponents #javascript"
+twitter_text: "The Component Life: Creating Reusable Web Components #webcomponents #javascript"
 authors: Nathan White
 image: /images/modules.jpg
 image_credit: Nathan White
