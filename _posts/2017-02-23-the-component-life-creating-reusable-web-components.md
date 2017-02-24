@@ -4,7 +4,7 @@ title: "The Component Life: Creating Reusable Web Components"
 date: 2017-02-23
 tags: 
 - Web components
-- Javascript
+- JavaScript
 categories: 
 - javascript
 - frontend
