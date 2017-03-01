@@ -69,13 +69,13 @@ Just to name a few ideas floating around the Twitterverse. I'm sure gems are hid
 
 ### Patronage
 
-Patronage is an important aspect of any Renaissance. Someone or Something has to help nurture artists, or in our case, developers. Many projects in the .NET realm right now is passion projects, and the developers on those projects have limited resources. Having a champion patron may ease the burden for more developers and allow them to follow their imagination to new and exciting ideas.
+Patronage is an important aspect of any Renaissance. Someone or Something has to help nurture artists, or in our case, developers. Many projects in the .NET realm right now are passion projects, and the developers on those projects have limited resources. Having a champion patron may ease the burden for more developers and allow them to follow their imagination to new and exciting ideas.
 
 We currently have the ever growing [.NET Foundation](https://dotnetfoundation.org/) to help projects, but we probably could use more patrons.
 
 ### Consumption
 
-If something great is created but never consumed, was it ever great? I would argue no it wasn't. The biggest problem facing creators in a Renaissance is getting their work noticed. The same holds true for .NET developers. It isn't enough to put something on GitHub or Nuget and hope others find it. Artists of the Renaissance had cathedrals and squares to put their artwork in, to inspire the masses. The .NET community needs to understand better what its outlets are and how to gain mindshare. 
+If something great is created but never consumed, was it ever great? I would argue no it wasn't. The biggest problem facing creators in a Renaissance is getting their work noticed. The same holds true for .NET developers. It isn't enough to put something on GitHub or NuGet and hope others find it. Artists of the Renaissance had cathedrals and squares to put their artwork in, to inspire the masses. The .NET community needs to understand better what its outlets are and how to gain mindshare. 
 
 Gaining users takes more than programming skills; it takes marketing and networking skills. Something that many developers struggle to do for themselves. Also a monoculture of *just* programmers means a lack of other necessary requirements to make a project attractive. Whether we like to admit it or not, other developers are swayed by the presentation of a project, not just the merits of its value to them. A cool logo, a name, a sticker, an excellent documentation site, a champion. All these factors go into gaining mindshare and few .NET projects have them.
 
