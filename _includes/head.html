@@ -28,8 +28,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300|Roboto+Slab:400,300,100">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" integrity="sha256-iK7AZM7Xa42iuURdMdo1sp38ld/JJ3fDtS0523GKqdk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
-
-
+  {% if page.mermaid %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.css" integrity="sha256-446p5J21C94lwDJ4yc/oaAO0/0M1NVX5tuHb/ntU2NQ=" crossorigin="anonymous" />
+  {% endif %}
   <link rel="canonical" href="{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
