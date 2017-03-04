@@ -52,11 +52,3 @@ sequenceDiagram
     John->Bob: How about you?
     Bob-->John: Jolly good!
 </div>
-
-I also wanted to be respectful of the payload for the users, since every post won't contain a `mermaid` diagram. The JavaScript and Css assets for mermaid have to be opted into via frontmatter.
-
-```yml
-mermaid: true
-```
-
-I hope more of the team uses this feature, I know I will.
