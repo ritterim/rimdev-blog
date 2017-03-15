@@ -69,6 +69,20 @@
       duration: 500
   });
 
+  // search modal
+  $('.search.icon')
+    .on('click', function(e) {
+      e.preventDefault();
+      $('.search-modal')
+        .modal({
+          inverted: true
+        })
+        .modal('show');
+      $('.dimmer')
+        .css('overflow-y', 'scroll');
+    });
+
+
   $('*[data-freshness-datetime]').each(function(i, el) {
     var $el = $(el);
     var daysOld = parseInt((Date.now() - Date.parse($el.data('freshness-datetime'))) / 1000 / 60 / 60 / 24);
@@ -104,7 +118,7 @@
   // invert; 2016-11-01-using-css-filter-invert-for-low-vision-accessibility
   $('button.filter-invert')
     .on('click', function() {
-      $('body').toggleClass('inverted');
+      $('body').toggleClass('invert');
   });
 
   // onion-skin; 2017-01-16-the-rimdev-logo-story-or-a-tale-of-2-knights
