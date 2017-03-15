@@ -5,7 +5,7 @@
 
   // don't see a way to handle this within semantic ui;
   // could be wrong?
-  $('a .newspaper, a .search')
+  $('a .newspaper')
     .on('click', function(e) {
       e.preventDefault();
   })
@@ -71,7 +71,8 @@
 
   // search modal
   $('.search.icon')
-    .on('click', function() {
+    .on('click', function(e) {
+      e.preventDefault();
       $('.search-modal')
         .modal({
           inverted: true
