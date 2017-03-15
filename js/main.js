@@ -73,10 +73,12 @@
   $('.search.icon')
     .on('click', function() {
       $('.search-modal')
+        .modal({
+          inverted: true
+        })
         .modal('show');
       $('.dimmer')
-        .addClass('inverted')
-        .css('overflow-y', 'visible');
+        .css('overflow-y', 'scroll');
     });
 
 

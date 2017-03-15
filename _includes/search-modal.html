@@ -1,13 +1,14 @@
-<div class="ui basic modal search-modal">
+<div class="ui basic scrolling modal search-modal">
+  <i class="huge grey close icon"></i>
   <div class="content">
-    <rim-search data-api-url="https://content-search-qa.ritterim.com"></rim-search>
-    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/inline.js"></script>
-    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/vendor.js"></script>
-    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/main.js"></script>
+    <rim-search data-api-url="https://content-search.ritterim.com"></rim-search>
+    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/semanticui2/inline.js"></script>
+    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/semanticui2/vendor.js"></script>
+    <script src="https://rim-cdn-assets.azurewebsites.net/rim-search/latest/semanticui2/main.js"></script>
   </div>
 </div>
 
 {% comment %}
-      script calls need to be here as opposed to the script.html include, otherwise,
-      inline.js can't find the <rim-search> element.
-      {% endcomment %}
+  script calls need to be here as opposed to the script.html include,
+  otherwise, inline.js can't find the <rim-search> element.
+{% endcomment %}

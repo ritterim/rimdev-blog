@@ -18,6 +18,7 @@ $color-blue:     cadetblue;
 $color-blue-rgba: rgba($color-blue, 0.9);
 $color-blue-bright: lighten(dodgerblue, 20%);
 $color-orange:   orange;
+$color-darkblue: #022c4c;
 
 // Frehness scale
 $new:     limegreen;
@@ -52,9 +53,6 @@ $font-headline: "Roboto slab", serif;
 
 @charset "utf-8";
 
-// Import Font Awesome here
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
 // Load mixins manifest
 @import "mixins/mixins";
 @import "mixins/extends";
@@ -86,3 +84,4 @@ $font-headline: "Roboto slab", serif;
 @import "oss";
 @import "video";
 @import "custom";
+@import "search-modal";
