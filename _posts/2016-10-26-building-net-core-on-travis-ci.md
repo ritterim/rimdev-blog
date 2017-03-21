@@ -27,7 +27,7 @@ dotnet restore && dotnet build
 
 You can add additional steps to the `build.sh` to run tests, but this is the simplest command you need.
 
-## .Travis.yml
+## .travis.yml
 
 The `.travis.yml` is used by the service to construct your build environment. Add this to the root of your repository.
 
