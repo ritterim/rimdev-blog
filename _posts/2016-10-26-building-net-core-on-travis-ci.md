@@ -22,12 +22,12 @@ You need a build script to the root of our repository for Travis CI to execute. 
 
 ```
 #!/usr/bin/env bash
-dotnet restore && dotnet build **/project.json
+dotnet restore && dotnet build
 ```
 
 You can add additional steps to the `build.sh` to run tests, but this is the simplest command you need.
 
-## .Travis.yml
+## .travis.yml
 
 The `.travis.yml` is used by the service to construct your build environment. Add this to the root of your repository.
 
@@ -36,7 +36,7 @@ language: csharp
 dist: trusty
 sudo: required
 mono: none
-dotnet: 1.0.0-preview2-003121
+dotnet: 1.0.1
 script:
   - ./build.sh --quiet verify
 ```
