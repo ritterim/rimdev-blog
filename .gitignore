@@ -4,3 +4,4 @@ node_modules
 _drafts
 GemFile.lock
 .jekyll-metadata
+.DS_Store
