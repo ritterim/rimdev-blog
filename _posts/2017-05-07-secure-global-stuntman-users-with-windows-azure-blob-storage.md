@@ -91,11 +91,11 @@ Select a time period that your SAS will be valid. Talk to your security team to 
 
 ![stuntman container microsoft azure SAS](/images/stuntman-global-users/stuntman-azure-step-4.png){: .img-fluid .border }
 
-You should now see a diaglog with values for `URL` and `querystring`. You will need the `URL` value for your Stuntman setup.
+You should now see a dialog with values for `URL` and `querystring`. You will need the `URL` value for your Stuntman setup.
 
 ## Step 3: Setup Stuntman
 
-Now, use stuntman like you regularly would. 
+Now, use Stuntman like you regularly would. 
 
 ```csharp
 var stuntmanOptions = new StuntmanOptions
