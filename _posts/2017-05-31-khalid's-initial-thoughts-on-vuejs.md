@@ -4,11 +4,11 @@ title: "Khalid's Initial Thoughts On Vue.js"
 date: 2017-05-31 11:43:15
 tags: [ "Vue.js", "JavaScript", "frontend", "clientside" ]
 categories:
-twitter_text: ".@buhakmeh initial thoughts on @Vue.js"
+twitter_text: ".@buhakmeh initial thoughts on @vuejs"
 authors: Khalid Abuhakmeh
-image: https://Vue.js.org/images/logo.png
+image: https://vuejs.org/images/logo.png
 image_credit: Vue.js
-image_url: https://Vue.js.org
+image_url: https://vuejs.org
 ---
 
 The RIMdev team composition is a unique blend of disciplines forged in the crucible of time. We have backend developers, frontend developers, designers, quality assurance engineers, and data engineers. With that cauldron of experience, it isn't a suprise that their are a multitude of opinions about the best way to build software in 2017. From my perspective, here is a short list of consensus:
@@ -26,7 +26,7 @@ Open questions:
 1. When should we move to ASP.NET Core? (I think we can soon)
 1. Docker?
 
-This post focuses on the client-side questions and specifically my thoughts on [Vue.js](https://Vue.js.org). 
+This post focuses on the client-side questions and specifically my thoughts on [Vue.js](https://vuejs.org). 
 
 ## Do We Want To Exclusively Build SPAs?
 
