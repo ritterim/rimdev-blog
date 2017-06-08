@@ -24,5 +24,8 @@
   "devDependencies": {
     "markdown-proofing": "latest",
     "shelljs": "^0.7.0"
+  },
+  "dependencies": {
+    "content-search-component": "^1.0.0"
   }
 }
