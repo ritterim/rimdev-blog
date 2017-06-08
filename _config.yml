@@ -46,7 +46,7 @@ github_username:  ritterim
 disqus_username: rimdev
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+exclude: ['package.json', 'src', 'node_modules/@angular', 'node_modules/core-js', 'node_modules/lodash.uniq', 'node_modules/ng2-cookies', 'node_modules/rxjs', 'node_modules/symbol-observable', 'node_modules/ts-helpers', 'node_modules/uuid', 'node_modules/zone.js']
 
 # Url Shortener
 shortener:
