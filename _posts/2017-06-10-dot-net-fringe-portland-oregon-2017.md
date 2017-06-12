@@ -4,7 +4,7 @@ title: ".NET Fringe Portland Oregon 2017 With RIMdev"
 date: 2017-06-10 16:29:38
 tags: ["confrence", "oss", "team"]
 categories:
-twitter_text: "@dotnetfringe Portland 2017 with #rimdev"
+twitter_text: ".@dotnetfringe Portland 2017 with #rimdev"
 authors: Khalid Abuhakmeh
 image: /images/dot-net-fringe-2017-repeating.png
 ---
