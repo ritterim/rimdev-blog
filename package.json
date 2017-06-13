@@ -1,6 +1,7 @@
 {
   "name": "rimdev",
   "version": "2.0.0",
+  "private": true,
   "description": "The Ritter Insurance Marketing development team blog, hosted at https://rimdev.io/.",
   "scripts": {
     "test": "markdown-proofing _posts/*.md",
