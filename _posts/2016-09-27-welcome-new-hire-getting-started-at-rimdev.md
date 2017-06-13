@@ -26,11 +26,11 @@ Note: I recommend starting with [Chocolatey](https://chocolatey.org) (if on Wind
 The major frameworks we use include:
 
 - [.NET Framework (4.6+ and Core)](https://www.microsoft.com/net)
-- [NodeJs](https://nodejs.org/en/download/)
+- [Node.js](https://nodejs.org/en/download/)
 - [Ruby (2.3.1) and DevKit](https://www.ruby-lang.org/en/downloads/)
 - [PHP 5](https://secure.php.net/downloads.php#v5.6.26)
 
-There are subset frameworks of the frameworks mentioned above, like AngularJs, Jekyll, ASP.NET MVC, but those are handled at the project level.
+There are subset frameworks of the frameworks mentioned above, like AngularJS, Angular, Jekyll, Vue.js, ASP.NET MVC, but those are handled at the project level.
 
 ## Applications
 
@@ -45,8 +45,8 @@ Applications are the supporting cast to your rising star.
 - [Office 365](http://microsoft.office.com): Because... business.
 - [Google Chrome](https://www.google.com/chrome/) or any modern browser.
 - [RavenDB 2.5](http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2996): our current database.
-- [LocalDb](https://www.microsoft.com/en-us/download/details.aspx?id=52679): our future database as we migrate to SQL Azure.
-- [ElasticSearch](https://www.elastic.co/downloads): our Full-text search provider.
+- [LocalDB](https://www.microsoft.com/en-us/download/details.aspx?id=52679): our future database as we migrate to SQL Azure.
+- [Elasticsearch](https://www.elastic.co/downloads): our Full-text search provider.
 - [Azure SDK](https://azure.microsoft.com/en-us/downloads/): our hosting environment.
 - [HighFive](https://highfive.com): video conferencing.
 - [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx)
@@ -68,7 +68,7 @@ You may need some or all following accounts to interact with the team and the bu
 - **Active Directory**: If deemed worthy, our IT overlords shall grant you keys to the kingdom. **"HAIL IT!"**
 - [GitHub](https://github.com): our project management / source control platform.
 - [Raygun](https://raygun.com): Error handling.
-- [Lastpass](https://lastpass.com): password management.
+- [LastPass](https://lastpass.com): password management.
 - [Slack](https://slack.com): a user account to team chat.
 - [Screenhero](https://screenhero.com): a team member will need to invite you.
 - [HighFive](https://highfive.com): a user account with our team.
