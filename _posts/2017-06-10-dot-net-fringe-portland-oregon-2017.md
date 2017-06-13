@@ -2,7 +2,7 @@
 layout: post
 title: ".NET Fringe Portland Oregon 2017 With RIMdev"
 date: 2017-06-10 16:29:38
-tags: ["confrence", "oss", "team"]
+tags: ["conference", "oss", "team"]
 categories:
 twitter_text: ".@dotnetfringe Portland 2017 with #rimdev"
 authors: Khalid Abuhakmeh
@@ -21,7 +21,7 @@ The team I work with is amazing. While we work long eight hour days with each ot
 
 ### Jon Galloway
 
-Jon Galloway does a lot for the .NET Community, and it was an honor to meet him in person. I thanked him for the work he is doing with the [.NET Foundation]() and we also got a chance to take some pictures. Maybe I'll even get a 2018 calendar out of it. [His talk about what the .NET Foundation](https://www.youtube.com/watch?list=PLwZVRWVJepJtK6UZD-m2VLU2k2V-O5OrG&v=W-fqEOqiK78) does is illuminating and I recommend it.
+Jon Galloway does a lot for the .NET Community, and it was an honor to meet him in person. I thanked him for the work he is doing with the [.NET Foundation](https://dotnetfoundation.org/) and we also got a chance to take some pictures. Maybe I'll even get a 2018 calendar out of it. [His talk about what the .NET Foundation](https://www.youtube.com/watch?list=PLwZVRWVJepJtK6UZD-m2VLU2k2V-O5OrG&v=W-fqEOqiK78) does is illuminating and I recommend it.
 
 ### Tasha, Greg, and Dave
 
@@ -33,7 +33,7 @@ The organizers of the conference are passionate individuals and they exude it. I
 
 ### Elastic People
 
-The elastic team of [Martijn](https://twitter.com/Mpdreamz) and [Michelle](https://twitter.com/miiiiiche) were friendly and knowledgable. They also told me about more training oppurtunities to level up my Elasticsearch skills.
+The elastic team of [Martijn](https://twitter.com/Mpdreamz) and [Michelle](https://twitter.com/miiiiiche) were friendly and knowledgeable. They also told me about more training opportunities to level up my Elasticsearch skills.
 
 ## Favorite Talks
 
@@ -41,7 +41,7 @@ The point of conferences is to absorb as much knowledge from smart individuals. 
 
 ### Distributed Sagas
 
-My favorite talk was given by [Caitie McCaffrey](https://www.youtube.com/watch?v=0UTOLRTwOX0) about distributed sagas and their role in microservices architectures. A sign of any good talk is leaving me with more questions to answer myself through exploration, and this one had our team talking through out the night.
+My favorite talk was given by [Caitie McCaffrey](https://twitter.com/caitie) about distributed sagas and their role in microservices architectures ([Video](https://www.youtube.com/watch?v=0UTOLRTwOX0)). A sign of any good talk is leaving me with more questions to answer myself through exploration, and this one had our team talking through out the night.
 
 ### Iconoclasts 
 
@@ -53,7 +53,7 @@ My favorite talk was given by [Caitie McCaffrey](https://www.youtube.com/watch?v
 
 ### Seeing Sumaya Block Give a JewelBots Talk
 
-Her lightining talk on [JewelBots](https://jewelbots.com/) was inspiring and professional, on top of the fact that she is twelve years old. I hope she keeps pursuing programming as she has a bright future. [#CodeLikeAGirl](http://twitter.com/).
+Her lightning talk on [JewelBots](https://jewelbots.com/) was inspiring and professional, on top of the fact that she is twelve years old. I hope she keeps pursuing programming as she has a bright future. [#CodeLikeAGirl](http://twitter.com/).
 
 ## Portland Weird Moments
 
@@ -64,7 +64,7 @@ Her lightining talk on [JewelBots](https://jewelbots.com/) was inspiring and pro
 - The bouncy floors of the Crystal Ballroom that gave some of our team members motion sickness.
 - Eating a bowl of Poke for the first time.
 - Watching my wife get accupuncture while someone played VR next to her.
-- Witnessing 1 minute speed dating interviews quickly go of the rails :). 
+- Witnessing 1 minute speed dating interviews quickly go off the rails :).
 - [Sara Ford](http://twitter.com/saraford) telling dad jokes.
 - Volunteering and actually giving good advice about Portland. Should I move there now?
 - [Winning a Star Wars BB8 droid.](https://twitter.com/NicoleAbuhakmeh/status/872241784646017024).
