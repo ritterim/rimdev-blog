@@ -43,6 +43,16 @@ Adding an image is easy enough, remember to add the semantic-ui responsive image
 [ Your image description, i.e., alt tag content ]( /path/to/image.jpg ){: .ui.fluid.image}
 ```
 
+## Image captions
+
+For an image with a caption use:
+
+```
+[![Example](https://example.org/image.png)](https://example.org)
+[https://example.org](https://example.org){: .caption}
+{: .ui.center.aligned.container }
+```
+
 ## Front-matter
 
 ### Posts
