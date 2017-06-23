@@ -27,4 +27,4 @@ after_deploy:
       }
 ```
 
-**Note:** In this case you'll still pay the startup penalty. For performance sensitive applications you may need to bring the application online as a second instance and *swap* to the new instance, which isn't covered here.
+If your users are lucky, AppVeyor will pay the start-up cost penalty a real human would normally experience. If luck is unacceptable, you may consider using a staging slot and only switch to production once your application is fully warmed up.
