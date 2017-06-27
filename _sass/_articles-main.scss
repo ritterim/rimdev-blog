@@ -68,5 +68,35 @@
       color: $grey;
       font-size: 90%;
     }
+
+    // Add Semantic UI styles for <div class="ui divider"></div>
+    // to hr tags that are generated from Markdown
+    // https://github.com/Semantic-Org/Semantic-UI/blob/d9ac759e7eb480dc896988ac5d6fe4e0553a4cbb/dist/components/divider.css
+
+    // .ui.divider {
+    hr {
+      margin: 1rem 0rem;
+      line-height: 1;
+      height: 0em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 0.85);
+      -webkit-user-select: none;
+        -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    // .ui.divider:not(.vertical):not(.horizontal) {
+    hr {
+      border-top: 1px solid rgba(34, 36, 38, 0.15);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    hr {
+      border-left: 0;
+    }
   }
 }
