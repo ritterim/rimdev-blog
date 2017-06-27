@@ -1,7 +1,7 @@
 environment:
   matrix:
     - RUBY_VERSION: 23
-      nodejs_version: 6
+      nodejs_version: STABLE
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
