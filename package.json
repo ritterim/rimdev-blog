@@ -25,5 +25,6 @@
   "devDependencies": {
     "markdown-proofing": "latest",
     "shelljs": "^0.7.0"
-  }
+  },
+  "dependencies": {}
 }
