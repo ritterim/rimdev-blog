@@ -26,9 +26,9 @@ Add or update the AppVeyor configuration using the following example:
 ```yaml
 environment:
   matrix:
-    - nodejs_version: "6"
+    - nodejs_version: STABLE
       configuration: publish
-    - nodejs_version: "7"
+    - nodejs_version: LTS
 
 install:
   - ps: Install-Product node $env:nodejs_version
