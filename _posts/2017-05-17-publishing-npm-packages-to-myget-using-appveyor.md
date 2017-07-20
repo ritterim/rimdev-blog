@@ -12,15 +12,11 @@ twitter_text: "Publishing npm Packages to MyGet Using AppVeyor"
 authors: Ken Dale
 ---
 
-**Note: This should only be done for private repositories. An unencrypted API key could be retrieved by any GitHub user submitting a pull request.**
-
----
-
 Previously, I wrote about [Publishing to npm Using AppVeyor]({% post_url 2017-02-28-publishing-to-npm-using-appveyor %}). This is a similar post, but specifically geared toward publishing an npm package to [MyGet](https://myget.org/).
 
 ## Setup environment variable
 
-In the AppVeyor web application, add an `MYGET_TOKEN` environment variable with a value from MyGet. This token should not be encrypted. **Do not store the MyGet token in the repository.**
+In the AppVeyor web application, add a `MYGET_TOKEN` environment variable using a token from MyGet. **Be sure to encrypt this token in AppVeyor!**
 
 ## AppVeyor configuration in repository
 

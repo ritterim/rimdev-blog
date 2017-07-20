@@ -11,15 +11,11 @@ twitter_text: "Publishing to npm Using AppVeyor"
 authors: Ken Dale
 ---
 
-**Note: This should only be done for private repositories. An unencrypted API key could be retrieved by any GitHub user submitting a pull request.**
-
----
-
 AppVeyor does not currently provide built-in support for publishing to npm (at least, currently). Instead, we can provide the npm token as an AppVeyor UI configured environment variable and run `npm pack` and `npm publish`.
 
 ## Setup environment variable
 
-In the AppVeyor web application, add an `NPM_TOKEN` environment variable to a token retrieved from [https://www.npmjs.com/](https://www.npmjs.com/). This token should not be encrypted. **Do not store the npm token in the repository.**
+In the AppVeyor web application, add an `NPM_TOKEN` environment variable using a token retrieved from [https://www.npmjs.com/](https://www.npmjs.com/). **Be sure to encrypt this token in AppVeyor!**
 
 ## AppVeyor configuration in repository
 
