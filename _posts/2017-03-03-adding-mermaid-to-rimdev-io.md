@@ -11,7 +11,6 @@ image: https://farm3.staticflickr.com/2127/2067252947_fcaa9ca286_z_d.jpg?zz=1
 image_url: https://www.flickr.com/photos/21333256@N08/
 image_credit: Ryan McCullah
 ---
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.css" integrity="sha256-446p5J21C94lwDJ4yc/oaAO0/0M1NVX5tuHb/ntU2NQ=" crossorigin="anonymous" />
 
 A picture is worth a thousand words, so I assume a diagram is worth a **billion** words. Expressing our ideas is important and our blog is an outlet to not only share with our teammates, but the broader community of readers. [Mermaid](https://knsv.github.io/mermaid/) is a simple markdown based diagramming language with a compelling result.
 
