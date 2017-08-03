@@ -19,6 +19,7 @@ $color-blue-rgba: rgba($color-blue, 0.9);
 $color-blue-bright: lighten(dodgerblue, 20%);
 $color-orange:   orange;
 $color-darkblue: #022c4c;
+$color-red:     lighten(tomato, 7%);
 
 // Frehness scale
 $new:     limegreen;
@@ -85,3 +86,5 @@ $font-headline: "Roboto slab", serif;
 @import "video";
 @import "custom";
 @import "search-modal";
+@import "forms";
+@import "demo";

@@ -1,0 +1,125 @@
+.ui.form {
+  .field {
+    position: relative;
+
+    &:not(.checkbox) {
+      margin-top: 1rem;
+      margin-bottom: 1.7rem;
+    }
+
+    label {
+      color: lightgrey;
+      position: absolute;
+      left: .7rem;
+      top: .7rem;
+      transition: .2s ease-in;
+    }
+
+    &.select {
+      display: flex;
+
+      &:after {
+        align-self: center;
+        color: lightgrey;
+        content: "\f107";
+        font-family: "Icons";
+        margin-left: -1rem;
+      }
+
+      select {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid lightgrey;
+        padding: .7rem 2rem .7rem .7rem;
+        position: relative;
+        border-radius: 0;
+        // Chrome and Safari both ignore border-radius on <select>
+        // elements unless -webkit-appearance is overridden to an appropriate value.
+        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+        -webkit-appearance: none;
+        transition: .2s ease-in;
+
+        &:focus {
+          outline: none !important;
+          border-bottom: 2px solid dodgerblue !important;
+        }
+
+        &:focus ~ label,
+        &:valid ~ label {
+          color: gray;
+          font-size: 80%;
+          top: -1rem;
+          left: 0;
+        }
+      }
+    }
+
+    input:not([type=checkbox]),
+    textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid lightgrey;
+      border-radius: 0;
+      padding: .7rem;
+      transition: .2s ease-in;
+
+
+      &[value=" "] {
+          background: grey !important;
+        }
+
+      &:focus ~ label,
+      &:valid ~ label {
+        color: grey;
+        font-size: 80%;
+        top: -1rem;
+        left: 0;
+      }
+
+      &:focus {
+        border-bottom: 2px solid dodgerblue;
+        outline: none;
+      }
+    }
+
+    &.checkbox {
+      align-items:flex-start;
+      align-content:flex-start;
+      display: flex;
+      margin: .7rem 0;
+      position: relative;
+
+      input[type=checkbox] {
+        padding: .7rem;
+        border: 2px solid lightgrey;
+        transition: .2s ease-in;
+        -webkit-appearance: none;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:before {
+          color: grey;
+          content: "";
+          transition: .2s ease-in;
+        }
+
+        &:checked {
+          padding: .7rem .4rem;
+          margin: -.3rem .1rem 0 .7rem;
+          border-left: none;
+          border-top: none;
+          transform: rotate(45deg);
+        }
+      }
+
+      label {
+        font-size: initial;
+        position: static;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+}

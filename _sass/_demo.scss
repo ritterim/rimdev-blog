@@ -1,0 +1,21 @@
+.demo {
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+  border: 5px $grey-light solid;
+  display: flex;
+  margin: 3em;
+  padding: 3em;
+  .field {
+    width: 100%;
+  }
+  + .caption {
+    display: flex !important;
+    width: 100%;
+    margin-top: -1.7em !important;
+    margin-left: -3rem;
+    flex-direction: row-reverse;
+    order: reversed;
+    font-size: 150% !important;
+  }
+}
