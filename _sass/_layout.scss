@@ -137,3 +137,8 @@ blockquote {
   height: auto;
   width: 100%;
 }
+
+.red,
+i.red.icon {
+  color: $color-red !important;
+}

@@ -12,7 +12,7 @@ image_url: https://www.flickr.com/photos/21333256@N08/
 image_credit: Ryan McCullah
 ---
 
-A picture is worth a thousand words, so I assume a diagram is worth a **billion** words. Expressing our ideas is important and our blog is an outlet to not only share with our teammates, but the broader community of readers. [Mermaid](https://knsv.github.io/mermaid/) is a simple markdown based diagramming language with a compelling result. 
+A picture is worth a thousand words, so I assume a diagram is worth a **billion** words. Expressing our ideas is important and our blog is an outlet to not only share with our teammates, but the broader community of readers. [Mermaid](https://knsv.github.io/mermaid/) is a simple markdown based diagramming language with a compelling result.
 
 Placing the following html in our posts...
 
