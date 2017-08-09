@@ -74,7 +74,7 @@ public class HelloWorldRequest {
 
 ## Advanced State Management
 
-Nullables work for us the majority of the time, but if you want to get advanced, you can hook directly into Web API 2 model binding. We did this for our `PATCH` implementation, which you can read in our series entitled ["Extending Patch Support For ASP.NET Web API"](https://rimdev.io/extending-patch-support-for-asp.net-webapi-part-i/)
+Nullables work for us the majority of the time, but if you want to get advanced, you can hook directly into Web API 2 model binding. We did this for our `PATCH` implementation, which you can read in our series entitled ["Extending Patch Support For ASP.NET Web API."]({% post_url 2016-03-22-extending-patch-support-for-asp.net-webapi-part-i %})]
 
 ## Conclusion
 
