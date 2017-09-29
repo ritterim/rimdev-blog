@@ -14,7 +14,7 @@ image: /images/rimdev_hacktoberfest_2017.png
 - We work in GitHub
 - We use open source heavily in our projects
 - Our blog is open source.
-- We have our OSS projects.
+- We have our own OSS projects.
 
 ## The Rules
 
