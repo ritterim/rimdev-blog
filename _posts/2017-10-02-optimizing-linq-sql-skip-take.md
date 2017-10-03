@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Optmizing LINQ to SQL Skip/Take"
+title: "Optimizing LINQ to SQL Skip/Take"
 date: 2017-10-02 14:00:00
 tags:
 - .NET
 - SQL Server
 - LINQ
-twitter_text: "Optmizing #LINQ to SQL Skip/Take"
+twitter_text: "Optimizing #LINQ to SQL Skip/Take"
 authors: Bill Boga
 image: https://farm5.staticflickr.com/4043/4569418430_6421dc032b_b.jpg
 image_url: https://www.flickr.com/photos/lychee1968/4569418430/
@@ -35,7 +35,7 @@ select * from [Cars] order by [Cars].[Id] asc offset 50000 rows fetch next 1000 
 
 Because `offset` and `fetch` are [extensions](https://technet.microsoft.com/en-us/library/gg699618(v=sql.110).aspx) of `order by`, they are **not** executed until **after** the `select`-portion runs ([google](https://www.google.com/search?q=mssql+execution+order)). This means an expensive `select` with lots of `join`-statements are executed on the whole dataset (`[Cars]`) prior to getting the fetched-results.
 
-## How to optmize the statement
+## How to optimize the statement
 
 All that is needed is taking the `OrderBy`, `Skip`, and `Take` statements and putting them into a `Where`-clause:
 
@@ -61,4 +61,4 @@ order by [Cars].[Id] asc',N'@p__linq__0 int,@p__linq__1 int',@p__linq__0=50000,@
 
 So now, the outer `select`-statement only executes on the filtered dataset based on the `where exists`-clause!
 
-Again, your mileage may vary on how much query time is saved by making the change. General rule of thumb is the more complex your `select`-statement and the deeper into the dataset you want to go, the more this optmization will help.
+Again, your mileage may vary on how much query time is saved by making the change. General rule of thumb is the more complex your `select`-statement and the deeper into the dataset you want to go, the more this optimization will help.
