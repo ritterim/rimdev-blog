@@ -10,6 +10,12 @@ twitter_text: "Making a Web Request After an AppVeyor Deployment to Start an App
 authors: Ken Dale
 ---
 
+## Update October 17, 2017
+
+**This doesn't work with environment deployments, as this needs to run *after* the deployment has completed. See [http://help.appveyor.com/discussions/questions/8741-more-info-on-after_deploy](http://help.appveyor.com/discussions/questions/8741-more-info-on-after_deploy) for more information.**
+
+---
+
 For ASP.NET applications it can be useful to make a request to an application immediately after deployment to bring the application online. When using AppVeyor for push deployments, we can run this directly from AppVeyor!
 
 Add the following to your **appveyor.yml** file:
