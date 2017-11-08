@@ -52,7 +52,7 @@ deploy_script:
   - ps: |
       if ($ENV:CONFIGURATION -eq "publish")
       {
-        "registry=https://www.myget.org/F/feed-name-here/npm/`r`n//www.myget.org/F/feed-name-here/npm/:_authToken=`$`{MYGET_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
+        "registry=https://www.myget.org/F/«feed-name-here»/npm/`r`n//www.myget.org/F/«feed-name-here»/npm/:_authToken=`$`{MYGET_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
         iex "npm pack"
         iex "npm publish"
       }
