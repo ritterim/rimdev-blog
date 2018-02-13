@@ -57,7 +57,7 @@ Alright, so the above workflow is really cool and we use it a lot. At least in V
 
 You are able to keep local components only modifying its own local properties, and if it has to call for a change to the state, it can do so by simply calling for an action or a mutation.
 
-This being said, sometimes we try to overutilize state management. If something isn't used application wide (or at least across multiple components) that should really be kept in the local state. Likewise, if iterating over a list of items, and you have a component for each item in the items, there may be details about each _item_ that should be held in local state, rather than attempting to hold individual details within the state.
+This being said, sometimes we try to overutilize state management. If something isn't used application wide (or at least across multiple components) that should really be kept in the local state. Likewise, if iterating over a list of items, and you have a component for each item in the items, there may be details about each _item_ that should be held in local state, rather than attempting to hold individual details within the state. State management is something that becomes more useful as a project scales, and you should always ask yourself before you add something to your state, "Does this really need to be shared across the application?"
 
 It's a pattern that takes practice, and if you have a small project that doesn't need to grab information from a centralized point because the root of your application itself can easily serve as that centralized point, you may be better off just sticking to that.
 
