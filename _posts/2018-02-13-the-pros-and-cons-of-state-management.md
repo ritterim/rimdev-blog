@@ -10,6 +10,9 @@ tags:
 - StateManagement
 twitter_text: "The Pros and Cons of #StateManagement"
 authors: Jaime Jones
+image: https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?ixlib=rb-0.3.5&s=fb28f9d00f928b34c168c4ca7c47a9fd&auto=format&fit=crop&w=1348&q=80
+image_url: https://unsplash.com/photos/KigTvXqetXA
+image_credit: Tim Gouw
 ---
 
 Let's talk about state management for a minute. There's recently been a bunch of hubub about Redux on Twitter, and arguments about the usefulness of state management. Here at Ritter we haven't utilized Redux specifically, but we frequently leverage Vue's own state management library, Vuex.

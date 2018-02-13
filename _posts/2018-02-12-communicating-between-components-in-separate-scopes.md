@@ -8,6 +8,9 @@ tags:
 - JavaScript
 twitter_text: "Communicating between #Vue components in separate scopes"
 authors: Jaime Jones
+image: https://images.unsplash.com/photo-1464851707681-f9d5fdaccea8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=195a5b97e8f03fed4b1beadfb78204da&auto=format&fit=crop&w=1405&q=80
+image_url: https://unsplash.com/photos/VuPIUePS_vU
+image_credit: Nick Baker
 ---
 
 Here at RIMdev, we are big fans of Vue.js, as we've written about before. It scales well and is very versatile whether you're starting up a new project from scratch or incorporating into a larger, existing infrastructure.
