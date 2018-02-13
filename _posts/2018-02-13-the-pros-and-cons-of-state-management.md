@@ -21,7 +21,7 @@ I'm going to do a quick summary of Vuex and how it works, but I recommend that y
 
 Vuex is a state management library, aimed at creating a centralized source that can drive the rest of your application. It is composed of three main parts: State, Mutations, and Actions. For the sake of this explanation, we will use an example of a blog which must fetch the posts to display.
 
-State houses the data that lives in your application, and can be referred to as your 'single source of truth.' No matter where in your application you access data that is housed in the state, it will remain the same across each application because it is coming from this single source.
+State houses the data that lives in your application, and can be referred to as your 'single source of truth.' No matter where in your application you access data that is housed in the state, it will remain the same across each component and each usage because it is coming from this single source. Note that these are all usually held in a `store.js` (or similar) and exported as a single piece via `export default { state, mutations, actions };` (or similar).
 ```
 state: {
   posts: []
