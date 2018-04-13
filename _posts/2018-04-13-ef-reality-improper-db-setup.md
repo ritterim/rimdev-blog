@@ -71,7 +71,9 @@ public class BusinessContext
 ### Without `.Include`
 
 ```csharp
-var business = context.Businesses.Where(x => x.Name == "Bill's Business");
+var business = context.Businesses
+    .Where(x => x.Name == "Bill's Business")
+    .SingleOrDefault();
 
 if (business != null)
 {
@@ -83,7 +85,9 @@ if (business != null)
 ### With `.Include`
 
 ```csharp
-var business = context.Businesses.Where(x => x.Name == "Bill's Business");
+var business = context.Businesses
+    .Where(x => x.Name == "Bill's Business")
+    .SingleOrDefault();
 
 if (business != null)
 {
@@ -105,7 +109,7 @@ With the first snippet, using `Members.Name` in the LINQ-statement results in an
 ```sql
 select
     *
-    from (select b.*, join1.* 
+    from (select top 1 b.*, join1.*
         from Businesses b  
         left outer join BusinessMembers on Businesses.BusinessId = BusinessMembers.BusinessId as join1
         where Businesses.Name = @p__linq__0
@@ -120,7 +124,7 @@ The second snippet results in an [`inner join`](https://en.wikipedia.org/wiki/Jo
 ```sql
 select
     *
-    from (select b.*, join1.*, join2.* 
+    from (select top 1 b.*, join1.*, join2.*
         from Businesses b
         left outer join BusinessMembers on Businesses.BusinessId = BusinessMembers.BusinessId as join1
         inner join Members on BusinessMembers.MemberId = Members.MemberId as join2
