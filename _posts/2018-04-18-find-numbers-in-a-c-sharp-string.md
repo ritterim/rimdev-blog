@@ -13,7 +13,7 @@ image_url: https://www.flickr.com/photos/fdecomite/
 image_credit: fdecomite
 ---
 
-Data can often be messy and cleaning it up falls on the shoulders of you, the developer. Its also easy to search StackOverflow for complex regular expression solutions. In this post I'll show you an easy one liner to get all numbers from a string.
+Data can often be messy and cleaning it up falls on the shoulders of you, the developer. It's also easy to search StackOverflow for complex regular expression solutions. In this post I'll show you an easy one liner to get all numbers from a string.
 
 Let's start with the value.
 
