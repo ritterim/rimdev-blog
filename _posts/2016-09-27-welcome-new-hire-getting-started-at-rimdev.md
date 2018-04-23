@@ -27,7 +27,7 @@ The major frameworks we use include:
 
 - [.NET Framework (4.6+ and Core)](https://www.microsoft.com/net)
 - [Node.js](https://nodejs.org/en/download/)
-- [Ruby (2.3.1) and DevKit](https://www.ruby-lang.org/en/downloads/)
+- [Ruby (v2) and DevKit](https://www.ruby-lang.org/en/downloads/)
 - [PHP 5](https://secure.php.net/downloads.php#v5.6.26)
 
 There are subset frameworks of the frameworks mentioned above, like AngularJS, Angular, Jekyll, Vue.js, ASP.NET MVC, but those are handled at the project level.
@@ -41,15 +41,12 @@ Applications are the supporting cast to your rising star.
 - [git](https://www.git-scm.com): Source control management.
 - [Slack](https://slack.com): Team chat and collaboration.
 - [Visual Studio Professional](https://www.microsoft.com/net): IDE (available through MSDN).
-- [Screenhero](https://screenhero.com): Remote pairing tool.
 - [Office 365](http://microsoft.office.com): Because... business.
 - [Google Chrome](https://www.google.com/chrome/) or any modern browser.
-- [RavenDB 2.5](http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2996): our current database.
-- [LocalDB](https://www.microsoft.com/en-us/download/details.aspx?id=52679): our future database as we migrate to SQL Azure.
 - [Elasticsearch](https://www.elastic.co/downloads): our Full-text search provider.
 - [Azure SDK](https://azure.microsoft.com/en-us/downloads/): our hosting environment.
 - [HighFive](https://highfive.com): video conferencing.
-- [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx)
+- [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) and/or [SQL Operations Studio](https://docs.microsoft.com/en-us/sql/sql-operations-studio) and/or your unlisted favorite SQL tool.
 
 ### Optional Applications
 
@@ -70,7 +67,6 @@ You may need some or all following accounts to interact with the team and the bu
 - [Raygun](https://raygun.com): Error handling.
 - [LastPass](https://lastpass.com): password management.
 - [Slack](https://slack.com): a user account to team chat.
-- [Screenhero](https://screenhero.com): a team member will need to invite you.
 - [HighFive](https://highfive.com): a user account with our team.
 
 ### Optional Services
