@@ -53,6 +53,10 @@ shortener:
   preserve: false      # Keep previously generated files.
   salt:     "RimDev"   # The optional salt, used when hasing the Unix time.
 
+# Feed
+feed:
+  path: feed.xml
+
 # RIMdev posting authors
 RIMdev:
   Khalid Abuhakmeh:
