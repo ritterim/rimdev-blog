@@ -20,7 +20,7 @@ permalink: feed.xml
 <id>{{ post.url | remove: '.html' | prepend: site.baseurl | prepend: site.url }}</id>
 <content type="html" xml:base="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.content | xml_escape }}</content>
 <author>
-<name>{{post.author}}</name>
+<name>{{ post.authors | join: ', ' }}</name>
 </author>
 <summary>{{ post.excerpt | strip_html | xml_escape }}</summary>
 {% for tag in post.tags %}
