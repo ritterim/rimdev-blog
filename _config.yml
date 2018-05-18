@@ -29,7 +29,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
 
 # will convert @twitter-handle to the full twitter link in a post
 jekyll-mentions: https://twitter.com
