@@ -5,7 +5,7 @@ permalink: feed.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <generator uri="http://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
-<link href="{{ site.feed.path | prepend: '/' | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/atom+xml"/>
+<link href="{{ site.feed.path | prepend: '/' | prepend: site.baseurl | prepend: site.url }}feed.xml" rel="self" type="application/atom+xml"/>
 <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
 <updated>{{ site.time | date_to_xmlschema }}</updated>
 <id>{{ site.url }}/</id>
