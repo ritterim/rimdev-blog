@@ -10,9 +10,9 @@ categories: development
 twitter_text: "Random Vue Tips"
 authors:
 - Chidozie Oragwu
-image: https://farm9.staticflickr.com/8329/8148011490_b9fb5fcf46_k_d.jpg
-image_url: https://www.flickr.com/photos/dasprid/
-image_credit: Ben Scholzen
+image: https://images.unsplash.com/photo-1523540939399-141cbff6a8d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e53fb0167c9adfc4e3add2ef50580f&auto=format&fit=crop&w=2700&q=80
+image_url: https://unsplash.com/photos/-rF4kuvgHhU
+image_credit: Photo by Sam Truong Dan on Unsplash
 ---
 
 [Vue](https://vuejs.org/) has been a delightful framework to work with. The first thing I noticed about it was how easy to follow the documentation was and how quickly it was to get started - just add a script reference to your page and you are ready to write code. 
