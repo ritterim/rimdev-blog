@@ -20,15 +20,15 @@ image_credit: Ben Scholzen
 Being that I have only used it for less than a year, I wanted to share some things I found to be useful that will hopefully be useful to others. Here they are in no particular order:
 
 ### Scenario: Arbitrarily execute component methods
-If you have had to develop a fairly complex app using Vue you have probably used the Vue Dev Tools. If not, [check it out](https://github.com/vuejs/vue-devtools)!. It's a convenient way to debug Vue apps.
+If you have had to develop a fairly complex app using Vue you have probably used the Vue Dev Tools. If not, [check it out](https://github.com/vuejs/vue-devtools)! It's a convenient way to debug Vue apps.
 
 Vue dev tools allows you to inspect the data of components but at the time of writing, there is no way to execute component methods. A nice thing it does for you though, is alias the components to make them accessible from your JS console in the browser. Selecting a component in the dev tools component tree displays an alias next to the name:
 ![Component Alias](/images/random-vue-tips/select_alias.PNG "Component Alias")
 
-In the example above, the alias is `$vm0`. So in out browser console we can get at the component methods (and other properties) by using `$vm0.someMethod('param1', 'param2')`.
+In the example above, the alias is `$vm0`. So in our browser console we can get at the component methods (and other properties) by using `$vm0.someMethod('param1', 'param2')`.
 ![Component Method](/images/random-vue-tips/component_method.png "Component Method")
 
-### Scenario: I want to stop execution at a certian point and inspect various data points
+### Scenario: I want to stop execution at a certain point and inspect various data points
 This one is probably more of a JavaScript tip than a Vue tip and probably the one I use the most. Just adding a `debugger;` statement. 
 ```javascript
     var vm = new Vue({
