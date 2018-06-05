@@ -1,7 +1,7 @@
 {% assign post = site.posts.first %}
 <script>
   dataLayer = [{
-    'pageTitle': '{% if post.title %}{{ post.title }}{% else %}{{ page.title }}{% endif %}'
+    "pageTitle": {% if post.title %}{{ post.title | jsonify }}{% else %}{{ page.title | jsonify }}{% endif %}
   }];
 </script>
 <!-- Google Tag Manager -->
