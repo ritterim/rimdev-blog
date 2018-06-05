@@ -13,10 +13,6 @@ Photography by JJ Walck
 
 > As of Jekyll 3.3, `_config.local.yml` is [no longer needed](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3).
 
-## Tests
-
-Tests are ran with `npm test`. This runs [markdown-proofing](https://www.npmjs.com/package/markdown-proofing) on all posts. See the `scripts` in `package.json` for more runnable commands.
-
 ## New in this release (2.0)
 
 - [Jekyll 3.3](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3), [release notes](https://jekyllrb.com/news/2016/10/06/jekyll-3-3-is-here/)
