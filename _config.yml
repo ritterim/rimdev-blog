@@ -120,15 +120,20 @@ RIMdev:
     github: jaime-lynn
     twitter: gameof_freckles
   Andrew Rady:
-    avatar: https://avatars1.githubusercontent.com/u/29714810?s=460&v=4
+    avatar: https://avatars1.githubusercontent.com/u/29714810?v=4
     title: Front End Developer
     github: andrewrady
     twitter: nodevemberJS
   Chidozie Oragwu:
-    avatar: https://avatars3.githubusercontent.com/u/7084030?s=460&v=4
+    avatar: https://avatars3.githubusercontent.com/u/7084030?v=4
     title: Front End Developer
     github: alexoragz
     twitter: Chidonx
+  John Vicari:
+    avatar: https://avatars1.githubusercontent.com/u/10562755?v=4
+    title: Front End Developer
+    github: jpvicari
+    twitter: johnvicari
 
 ritter_links:
   - service: Ritter Insurance Marketing
