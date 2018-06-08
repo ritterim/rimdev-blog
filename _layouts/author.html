@@ -12,7 +12,12 @@ layout: default
 <div class="ui vertical stripe segment authors-page">
   <div class="ui middle aligned stackable text container">
 
-  <h1>{{ page.author }}</h1>
+  <h1 class="author-header">
+    {{ page.author }}
+    {% if site.RIMdev[page.author].previous %}
+    <span>(Previous Team Member)</span>
+    {% endif %}
+  </h1>    
 
   {% if site.RIMdev[page.author].desc %}
     <p>{{ site.RIMdev[page.author].desc }}</p>
