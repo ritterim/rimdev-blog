@@ -76,9 +76,6 @@ RIMdev:
     title: Senior Application Developer
     twitter: kendaleiv
     github: kendaleiv
-  Ken Earl:
-    avatar: https://avatars0.githubusercontent.com/u/1807843?v=3
-    github: McKenjo
   Tim Graham:
     avatar: https://avatars3.githubusercontent.com/u/7881414?v=3
     twitter:
@@ -86,19 +83,12 @@ RIMdev:
   Tom Harold:
     avatar: https://avatars3.githubusercontent.com/u/4880437?v=3
     github: tgharold
-  Scott Henscheid:
-    avatar: https://avatars3.githubusercontent.com/u/10855826?v=3
-    github: scotthenscheid
   Kevin Hougasian:
     avatar: https://avatars2.githubusercontent.com/u/6231956?v=3
     title: Senior Frontend Developer
     desc:
     twitter: hougasian
     github: hougasian
-  Justin Rusbatch:
-    avatar: https://avatars0.githubusercontent.com/u/423549?v=3
-    twitter: jrusbatch
-    github: jrusbatch
   Chad Peters:
     avatar: https://avatars3.githubusercontent.com/u/2921868?v=3
     github: lightyeare
@@ -108,12 +98,6 @@ RIMdev:
   Beth Warner:
     avatar: https://avatars2.githubusercontent.com/u/1625929?v=3
     github: bwarner22
-  Nathan White:
-    avatar: https://avatars1.githubusercontent.com/u/4616177?v=3
-    title: Frontend Developer
-    desc:
-    twitter: comfroels
-    github: comfroels
   Jaime Jones:
     avatar: https://avatars0.githubusercontent.com/u/24712731?v=4
     title: Front End Developer
@@ -134,6 +118,25 @@ RIMdev:
     title: Front End Developer
     github: jpvicari
     twitter: johnvicari
+  # Previous Team Members
+  #   Only Keep Individuals That
+  #   Are Associated With Posts
+  Nathan White:
+    avatar: https://avatars1.githubusercontent.com/u/4616177?v=3
+    title: Frontend Developer
+    desc:
+    twitter: comfroels
+    github: comfroels
+    previous: true
+  Ken Earl:
+    avatar: https://avatars0.githubusercontent.com/u/1807843?v=3
+    github: McKenjo
+    previous: true
+  Justin Rusbatch:
+    avatar: https://avatars0.githubusercontent.com/u/423549?v=3
+    twitter: jrusbatch
+    github: jrusbatch
+    previous: true
 
 ritter_links:
   - service: Ritter Insurance Marketing
