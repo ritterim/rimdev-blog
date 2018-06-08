@@ -14,7 +14,7 @@ image_url: https://unsplash.com/photos/-u7FVi3aBvU
 image_credit: Photo by Gianni Zanato on Unsplash
 ---
 
-I could probably rant and rave about IE for a couple of hours, reminiscing about busted [box models](http://www.456bereastreet.com/archive/200612/internet_explorer_and_the_css_box_model/), janky IE specific hacks, and other joys that came with supporting a browser that never died. It might get some good laughs, but only because we know we’re (almost) free and clear.
+I could probably rant and rave about Internet Explorer (IE) for a couple of hours, reminiscing about busted [box models](http://www.456bereastreet.com/archive/200612/internet_explorer_and_the_css_box_model/), janky IE specific hacks, and other joys that came with supporting a browser that never died. It might get some good laughs, but only because we know we’re (almost) free and clear.
 
 However, just when IE is finally an afterthought, not so much as a blip in my thought process, it peers over my shoulder with that stupid smirk.
 
@@ -47,7 +47,7 @@ The first thing I realized was that I wasn’t translating my ES6 code to someth
 ```
 There are tons of helpful settings and configurations available to you, check out some of the [examples](https://babeljs.io/docs/plugins/preset-env/#examples).
 
-Secondly, I needed IE to be able to work with Promises. The package [`es6-promise`](https://github.com/stefanpenner/es6-promise) provides a polyfill for Promises. There are a few ways to incorporate this package into your project. After installing it, you can either use it at a specific instance, or polyfill the global environment. I chose to auto polyfill global, to do that, import the package in your main js file with:
+Secondly, I needed IE to be able to work with Promises. The package [`es6-promise`](https://github.com/stefanpenner/es6-promise) provides a polyfill for Promises. There are a few ways to incorporate this package into your project. After installing it, you can either use it at a specific instance or polyfill the global environment. I chose to auto polyfill global, to do that, import the package in your main js file with:
 ```javascript
 import 'es6-promise/auto';
 ```
