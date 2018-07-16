@@ -27,10 +27,9 @@ The major frameworks we use include:
 
 - [.NET Framework (4.6+ and Core)](https://www.microsoft.com/net)
 - [Node.js](https://nodejs.org/en/download/)
-- [Ruby (v2) and DevKit](https://www.ruby-lang.org/en/downloads/)
-- [PHP 5](https://secure.php.net/downloads.php#v5.6.26)
+- [Ruby (v2) with Devkit](https://www.ruby-lang.org/en/downloads/)
 
-There are subset frameworks of the frameworks mentioned above, like AngularJS, Angular, Jekyll, Vue.js, ASP.NET MVC, but those are handled at the project level.
+There are subset frameworks of the frameworks mentioned above, like Angular, Jekyll, Vue.js, ASP.NET MVC, but those are handled at the project level.
 
 ## Applications
 
