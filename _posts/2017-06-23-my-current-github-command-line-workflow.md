@@ -57,7 +57,7 @@ Branching is as simple as `git checkout -b feature-branch`. However, when it's a
 
 This way you can `git pull` to get the latest from the `upstream` repository.
 
-Wondering if the current local branch is tracking upstream? Use ``git branch -vv`!
+Wondering if the current local branch is tracking upstream? Use `git branch -vv`!
 
 # When in doubt, use explicit `git push`
 
