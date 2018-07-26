@@ -25,7 +25,7 @@ The [Azure Web App Configuration Copier](https://github.com/ritterim/azure-web-a
 
 First, you'll need [Node.js](https://nodejs.org) installed.
 
-Next, the tool uses the Microsoft Azure Cross Platform Command Line tool, available on npm as [azure-cli](https://www.npmjs.com/package/azure-cli). With [Node.js](https://nodejs.org) / npm installed, it's as simple as `npm install -g azure-cli` to install it globally -- then use `azure login` to authenticate.
+Next, the tool uses the Microsoft Azure Cross Platform Command Line tool, available on npm as [azure-cli](https://www.npmjs.com/package/azure-cli). With [Node.js](https://nodejs.org) / npm installed, it's as simple as `npm install -g azure-cli` to install it globally -- then use `azure login` to authenticate and run `azure config mode asm` to use the older mode this tool uses (it can be set back with `azure config mode arm`).
 
 Now that the prerequisites are ready, we can move onto installing and using the [Azure Web App Configuration Copier](https://github.com/ritterim/azure-web-app-configuration-copier) tool. Do the following:
 
