@@ -13,7 +13,7 @@ image_url: https://www.flickr.com/photos/160462157@N08/
 image_credit: John Jones
 ---
 
-Hugo recently released an amazing [asset pipeline](https://gohugo.io/news/0.43-relnotes), which means you need less external depdendencies to build a *sweet* static site. To take advantage of this new feature you need the "extended" version of Hugo. This post will show you how to download this extended version on appveyor and run your build.
+Hugo recently released an amazing [asset pipeline](https://gohugo.io/news/0.43-relnotes), which means you need less external dependencies to build a *sweet* static site. To take advantage of this new feature you need the "extended" version of Hugo. This post will show you how to download this extended version on AppVeyor and run your build.
 
 ## AppVeyor.yml
 
@@ -21,7 +21,7 @@ Normally, we would use Chocolatey to install Hugo. This should be at the top of 
 
 ```yml
 install:
-  - ps: choco install Hugo
+  - ps: choco install hugo
 ```
 
 But the current version is *not* the extended version we need. We needed to switch the one line above, to the two below.
