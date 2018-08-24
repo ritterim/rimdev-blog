@@ -114,6 +114,9 @@ echo "tags:"
 echo "categories:"
 echo "twitter_text:"
 echo "authors:"
+echo "image:"
+echo "image_url:"
+echo "image_credit:"
 echo "---"
 
 }
