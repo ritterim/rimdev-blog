@@ -1,12 +1,12 @@
 ---
 layout: post
-title: “Querying Json Recursively in Azure SQL Database”
+title: "Querying Json Recursively in Azure SQL Database"
 date: 2018-08-30 14:53:00
 tags:
 - SQL Azure Database
 - development
 categories: SQL
-twitter_text: “Querying #Json @azure #SQL #Database”
+twitter_text: "Querying #Json @azure #SQL #Database"
 authors: Kevin Ricords
 ---
 
