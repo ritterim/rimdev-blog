@@ -6,7 +6,7 @@ tags:
 - JavaScript
 categories:
 - JavaScript
-twitter_text: "JavaScipt Array Cloning: Objects vs Primitives"
+twitter_text: "JavaScript Array Cloning: Objects vs Primitives"
 authors: Andrew Rady 
 image: https://farm1.staticflickr.com/662/33187648151_1d955c27f8_b.jpg
 image_url: https://www.flickr.com/photos/144219502@N04/33187648151/in/photolist-SyFnyc-kwoER4-5JfofT-74J7Tr-93v3Uu-qnMB76-2k6wVZ-hkgDQn-s6ny87-bo5sQU-po3Gcn-avBpY7-agqKqj-onWNK4-asuj8-dV54t7-cDCYSN-qbpekY-qvG8sd-vdB6e-e391ip-4rZG52-vsmwxr-dK52hk-aispHU-7k8waH-fEwnAz-e6msZV-pUg4DB-7fc36Q-mQZiPR-311nS6-qQ13Vj-mkGPf2-AC3kz5-9AJ3Vu-6rdBqX-C6eZ1b-vazcSe-vrtoa7-6rcrvc-jfK8K8-efLNE1-6rcrct-jqq5Q9-6rdBMR-ifJPt6-6rhH1U-fhuyRe-brMosb
@@ -57,7 +57,8 @@ let clientList = [
 ]
 ```
 
-Now if we create a new array called `filteredList` by just assigned it from `clientList` and alter an object you will see it reflect in both variables.
+Now if we create a new array called `filteredList` by just assigning it from `clientList` and alter an object, you will see it reflect in both variables.
+
 
 ```javascript
 let filteredList = clientList;
