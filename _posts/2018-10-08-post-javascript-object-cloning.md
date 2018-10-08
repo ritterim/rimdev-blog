@@ -87,4 +87,4 @@ console.log(clientList)
 firstName: “Chuck”
 ```
 
-This method can help up easily deep clone our objects in arrays and keep the integrity of our original array. I have also included a link to a codepen with some simple examples. https://codepen.io/anon/pen/JmRjre?editors=1112
+This method can help up easily deep clone our objects in arrays and keep the integrity of our original array. I have also included a link to a [codepen](https://codepen.io/anon/pen/JmRjre?editors=1112) with some simple examples.
