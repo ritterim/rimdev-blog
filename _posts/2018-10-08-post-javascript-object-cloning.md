@@ -17,12 +17,12 @@ In Javascript we are always working with different data types to send to the api
 ```javascript
 let originalArray = [1,2,3,4];
 let newArray = originalArray;
-newArray.push(5)
+newArray.push(5)l
 
-console.log(originalArray)
+console.log(originalArray);
 [1,2,3,4]
 
-console.log(newArray)
+console.log(newArray);
 [1,2,3,4,5]
 ```
 
@@ -60,13 +60,13 @@ let clientList = [
 Now if we create a new array called `filteredList` by just assigned it from `clientList` and alter an object you will see it reflect in both variables.
 
 ```javascript
-let filteredList = clientList
+let filteredList = clientList;
 
 filteredList.[0].firstName= “Billy”;
 
-console.log(filteredList)
+console.log(filteredList);
 firstName: “Billy”
-console.log(clientList)
+console.log(clientList);
 firstName: “Billy”
 ```
 
@@ -81,9 +81,9 @@ let filteredList = JSON.parse(JSON.stringify(clientList));
 
 filteredList.[0].firstName= “Billy”;
 
-console.log(filteredList)
+console.log(filteredList);
 firstName: “Billy”
-console.log(clientList)
+console.log(clientList);
 firstName: “Chuck”
 ```
 
