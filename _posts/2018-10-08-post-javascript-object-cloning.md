@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascipt Array Cloning: Objects vs Primitives"
+title: "JavaScript Array Cloning: Objects vs Primitives"
 date: 2018-10-08 08:00:39
 tags:
 - JavaScript
