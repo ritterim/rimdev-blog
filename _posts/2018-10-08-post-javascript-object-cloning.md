@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Javascript Object Cloning"
+title: "Javascipt Array Cloning: Objects vs Primitives"
 date: 2018-10-08 08:00:39
 tags:
 - Javascript
 categories:
 - Javascript
-twitter_text: "Easily clone objects in Javascript"
+twitter_text: "Javascipt Array Cloning: Objects vs Primitives"
 authors: Andrew Rady 
 image: https://farm1.staticflickr.com/662/33187648151_1d955c27f8_b.jpg
 image_url: https://www.flickr.com/photos/144219502@N04/33187648151/in/photolist-SyFnyc-kwoER4-5JfofT-74J7Tr-93v3Uu-qnMB76-2k6wVZ-hkgDQn-s6ny87-bo5sQU-po3Gcn-avBpY7-agqKqj-onWNK4-asuj8-dV54t7-cDCYSN-qbpekY-qvG8sd-vdB6e-e391ip-4rZG52-vsmwxr-dK52hk-aispHU-7k8waH-fEwnAz-e6msZV-pUg4DB-7fc36Q-mQZiPR-311nS6-qQ13Vj-mkGPf2-AC3kz5-9AJ3Vu-6rdBqX-C6eZ1b-vazcSe-vrtoa7-6rcrvc-jfK8K8-efLNE1-6rcrct-jqq5Q9-6rdBMR-ifJPt6-6rhH1U-fhuyRe-brMosb
@@ -26,7 +26,7 @@ console.log(newArray);
 [1,2,3,4,5]
 ```
 
-As you can see we can alter the newArray and push the integer of 5 in without altering the originalArray. This is nothing new and is covered for a basic of Javascript. There can be a basic gotcha when we need to clone objects. For this example, we are going to imagine we have an array of objects from the api. We want to display that data and all filtering is going to be only UI filtering. The idea is to take input from the user, clone the original array we got from the api and apply the filters without altering the original array. This is where deep cloning and shallowing cloning comes in.  Below is way to “clone” this array.
+As you can see, we can alter the `newArray` and push the integer of 5 in without altering the `originalArray`. This is nothing new and is covered in basic Javascript, but there can be a gotcha when we need to clone objects. For this example, we are going to imagine we have an array of objects from the API. We want to display that data and filter it from the UI. The idea is to take input from the user, clone the original array we got from the API, and apply the filters without altering the original array. This is where deep cloning and shallow cloning comes in. Below is the way to "clone" this array.
 
 ```javascript
 let clientList = [
@@ -47,7 +47,7 @@ let clientList = [
     "zip": ""
   },
   {
-    "firstName": "Micky",
+    "firstName": "Mickey",
     "lastName": "Mouse",
     "address": "1313 Disneyland Dr",
     "city": "Anaheim",
@@ -62,29 +62,31 @@ Now if we create a new array called `filteredList` by just assigned it from `cli
 ```javascript
 let filteredList = clientList;
 
-filteredList.[0].firstName= “Billy”;
+filteredList[0].firstName= "Billy";
 
 console.log(filteredList);
-firstName: “Billy”
+"Billy"
 console.log(clientList);
-firstName: “Billy”
+"Billy"
 ```
 
-This is happening because when we created the new array `filteredList` we are only shallow cloning `clientList`. Instead of copying the objects into the new array we are only copying a reference back to the original object. If you alter a reference object it really changes the original object. This can be an issue if we want to keep the integrity of the original api response object. 
+This is happening because when we created the new array `filteredList`, we only shallow cloned `clientList`. Instead of copying the objects into a new array, we only copied a reference back to the original object. If you alter a reference object, it really changes the original object. This can be an issue if we want to keep the integrity of the original API response object.
 
 ## Easy and simple
 
-An easy way to handle this situation is to use `JSON.parse` and `JSON.stringify`. This will do a deep clone of `clientList` and you can alter `filteredList` without effecting `clientList`. 
+An easy way to handle this situation is to use `JSON.parse` and `JSON.stringify`. 
+
+`JSON.stringify` works because it turns your entire data structure to a string. Since strings are a primitive value, this removes any references that existed in the object, so when you turn the string back to an array of objects with `JSON.parse` all references are now gone, leaving you with a deep clone.
 
 ```javascript
 let filteredList = JSON.parse(JSON.stringify(clientList));
 
-filteredList.[0].firstName= “Billy”;
+filteredList[0].firstName= "Billy";
 
 console.log(filteredList);
-firstName: “Billy”
+"Billy"
 console.log(clientList);
-firstName: “Chuck”
+"Chuck"
 ```
 
 This method can help up easily deep clone our objects in arrays and keep the integrity of our original array. I have also included a link to a [codepen](https://codepen.io/anon/pen/JmRjre?editors=1112) with some simple examples.
