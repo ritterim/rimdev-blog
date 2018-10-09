@@ -13,4 +13,4 @@ image: /images/default/rimdev-configyml.jpg
 
 RIMdev (catchy, huh?!) develops the tools to facilitate the success of these agents, helping them succeed and better support their clients.
 
-We continue to develop a suite of RIM software products, [Medicare Quote Engine](https://medicarequoteengine.com/), [eBroker Software](https://ebrokersoftware.com)'s embeddable quote engine featuring direct enrollment through [Healthcare.gov](https://healthcare.gov), and [medicareful.com](https://medicareful.com), for over 65 Medicare Health Insurance quotes, while contributing to support Open-Source Software initiatives and speaking.
+We continue to develop a suite of RIM software products, including [Medicare Quote Engine](https://medicarequoteengine.com/) and [Medicareful.com](https://medicareful.com), for over 65 Medicare Health Insurance quotes, while contributing to support Open-Source Software initiatives and speaking.
