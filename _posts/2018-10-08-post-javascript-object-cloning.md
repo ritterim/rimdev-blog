@@ -16,7 +16,7 @@ In JavaScript, we are always working with different data types to send to the AP
 
 ```javascript
 let originalArray = [1,2,3,4];
-let newArray = originalArray;
+let newArray = originalArray.slice();
 newArray.push(5);
 
 console.log(originalArray);
@@ -61,7 +61,7 @@ Now if we create a new array called `filteredList` by just assigning it from `cl
 
 
 ```javascript
-let filteredList = clientList;
+let filteredList = clientList.slice();
 
 filteredList[0].firstName= "Billy";
 
