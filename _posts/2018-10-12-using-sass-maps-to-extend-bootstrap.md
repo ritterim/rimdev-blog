@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Sass maps to extend bootstrap"
+title: "Using Sass Maps to Extend Bootstrap"
 date: 2018-10-12 11:28:03
 tags:
 - sass
