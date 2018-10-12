@@ -47,7 +47,7 @@ $slideAnimationDuration: .2s;
 $logo: '{{ site.logo }}';
 ```
 
-Using Bootstrap's `.btn` and  `.btn-primary` naming convention, we wanted to extend that structure to include buttons for all of the brand colors. Being that we had access to all of our brand colors in one place, why not add a few other nicelties at the same time?
+Using Bootstrap's `.btn` and  `.btn-primary` naming convention, we wanted to extend that structure to include buttons for all of the brand colors. Being that we had access to all of our brand colors in one place, why not add a few other niceties at the same time?
 
 ```
 @each $name, $color in $brand-colors {
