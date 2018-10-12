@@ -6,7 +6,7 @@ tags:
 - sass
 categories:
 - css
-twitter_text: "Using Sass maps to extend bootstrap"
+twitter_text: "Using Sass maps to extend @getbootstrap #sass"
 authors: Kevin Hougasian
 image: https://farm3.staticflickr.com/2238/2348956889_ae2a24afdc_b.jpg
 image_url: https://www.flickr.com/photos/neilspicys/
