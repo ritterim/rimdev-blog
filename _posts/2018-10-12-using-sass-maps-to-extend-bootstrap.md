@@ -44,7 +44,7 @@ $fonts: (
 );
 
 $slideAnimationDuration: .2s;
-$logo: '{{ site.logo }}';
+$logo: '{% raw %}{{ site.logo }}{% endraw %}';
 ```
 
 Using Bootstrap's `.btn` and  `.btn-primary` naming convention, we wanted to extend that structure to include buttons for all of the brand colors. Being that we had access to all of our brand colors in one place, why not add a few other niceties at the same time?
