@@ -19,7 +19,7 @@ image_credit: Photo by Rebekah Howell on Unsplash
 
 We operate in a typical `QA -> Production` workflow on both our front-end and back-end teams. So, what happnes when your front-end is in QA but is pointing to a Production API? Nothing good happens, son... nothing good.
 
-As I've [mentioned before](/ie-still-breaking-promises-literally/), we run a few websites built with [Jekyll](https://jekyllrb.com/) and [Vue.js](https://vuejs.org/), and recently launched a new site with a similar setup. Since this site had never been released, we hardcoded a handful of QA endpoints into a Vue component. This didn't present any issues during initial development, but when it was released (and the endpoints were updated to Production) and minor bugs were being worked on, front-end `QA` was pointing to back-end `Production`. Not good, especially if data is being manipulated.
+As I've [mentioned before]({% post_url 2018-06-08-ie-still-breaking-promises-literally %}), we run a few websites built with [Jekyll](https://jekyllrb.com/) and [Vue.js](https://vuejs.org/), and recently launched a new site with a similar setup. Since this site had never been released, we hardcoded a handful of QA endpoints into a Vue component. This didn't present any issues during initial development, but when it was released (and the endpoints were updated to Production) and minor bugs were being worked on, front-end `QA` was pointing to back-end `Production`. Not good, especially if data is being manipulated.
 
 ## The Solution
 
@@ -34,7 +34,7 @@ We're using [Netlify](https://www.netlify.com/) to deploy and host this site and
 JEKYLL_ENV=production
 ```
 Which would look like this in the Netlify Build & Deploy settings (your development build would obviously be set to `development`, although I think `development` might be the default):
-![Netlify Environment Variable Setting](/images/netlify-environment-variable.png){:class="inline"}
+![Netlify Environment Variable Setting](/images/netlify-environment-variable.png){: .img-fluid }
 
 ### Create JSON file
 
