@@ -4,7 +4,7 @@ title: "No Compression Leads To Bad Impression"
 date: 2018-10-18 08:20:12
 tags:
 - Development
-- ElasticSearch
+- Elasticsearch
 - Debugging
 categories: development
 twitter_text: "No Compression Leads To Bad Impression"
@@ -16,7 +16,7 @@ image_credit: midorisyu
 
 Do you want to save 80% of your bandwidth to your search provider? Do you want to deliver content to your users faster?  With this one **trick** you can!
 
-![This shows a graph showing approximately 80% reductions in data in and out of an azure service](/images/before-after-compression.png){: .img-fluid}
+![This shows a graph showing approximately 80% reductions in data in and out of an Azure service](/images/before-after-compression.png){: .img-fluid}
 
 As shown in the graphic above, using this **trick** we reduced the amount of bandwidth we consumed by 80%! 
 
@@ -28,7 +28,7 @@ At a previous employer, I was informed of a compression issue because the shared
 
 The most recent example is when I found a compression issue here at RIMdev. We love using [Elasticsearch](https://www.elastic.co/products/elasticsearch) because it enables high-value scenarios that our users appreciate. One day I was attempting to optimize some queries while I had Fiddler open. I noticed that the results from Elasticsearch were not compressed. In some instances, we were getting results that were 400kb and could take more than a second to transfer! By enabling compression, we shaved more than a second off of response times while reducing the data transferred between the app and data center by ~80%.      
 
-## The Trick for Compressing ElasticSearch Responses
+## The Trick for Compressing Elasticsearch Responses
 
 To solve this issue at RIMdev, we used this code to enable compression for the Elasticsearch C# client, [NEST](https://www.elastic.co/guide/en/elasticsearch/client/net-api/6.x/index.html).
 
