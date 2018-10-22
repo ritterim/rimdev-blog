@@ -16,14 +16,14 @@ image_credit: Debby Hudson
 
 If you're familiar with Vue at all, you're probably familiar with the `v-for`. And if you've used any other front end frameworks, they each provide ways to loop over data and markup within your HTML template. The purpose of this post is to talk about the `key` attribute that is required on every `v-for`, and what makes it so important.
 
-I'll be the first to admit, when I started writing Vue, the `key` attribute wasn't required. When it become required, I shrugged, simply added an index, and moved on.
+I'll be the first to admit, when I started writing Vue, the `key` attribute wasn't required. When it became required (or at least highly frowned upon to not include), I shrugged, simply added an index, and moved on.
 ```html
 <h1 v-for="(thing, index) in things" :key="index">{{ thing }}</h1>
 ```
 
 This article really is about the `key` attribute which is now strongly suggested (or can be required by a linter) on all usages of `v-for` and some of the issues that you may run into if you go the common route of using the `index`. I'd recommend reading the actual [Vue documentation](https://vuejs.org/v2/guide/list.html#key) for it as either a follow-up or some background knowledge.
 
-The background of _why_ we are now required to include a `key` in our loops is to provide Vue with an easy way of being able to watch what items in your array (or object, since looping over objects is allowed) is changing. The default behavior of the `v-for` is to track things by the index, so the method that I showed above is actually rather redundant. By tracking the index, Vue watches for changes in the order of items, and will actually patch each item in place when the order changes. The Vue documentation even notes that "this default mode is efficient," but there are caveats to it and it is not ideal in every use case.
+The background of _why_ we are now required to include a `key` in our loops is to provide Vue with an easy way of being able to watch what items in your array (or object, since looping over objects is allowed) is changing. The default behavior of the `v-for` is to track things by the index, so the method that I showed above is actually rather redundant (although it does resolve lint errors). By tracking the index, Vue watches for changes in the order of items, and will actually patch each item in place when the order changes. The Vue documentation even notes that "this default mode is efficient," but there are caveats to it and it is not ideal in every use case.
 
 Whenever possible, as suggested by the Vue documentation, you should use the unique id of the item. The reason for this is so that  Vue can more accurately track changes in the items in your array and update the component state to reflect this, and also to be able to reuse and reorder existing components rather than having to essentially re-render the entire loop.
 
