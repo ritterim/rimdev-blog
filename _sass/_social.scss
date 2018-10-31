@@ -1,9 +1,6 @@
-.twitter     {color: $twitter;}
-.facebook    {color: $facebook;}
-.pinterest   {color: $pinterest;}
-.linkedin    {color: $linkedin;}
-.youtube     {color: $youtube;}
-.vimeo       {color: $vimeo;}
-.instagram   {color: $instagram;}
-.github      {color: $github;}
-.feed        {color: $color-orange;}
+// generate social color using sass map
+@each $name, $color in $social-colors {
+  .#{$name} {
+    color: $color;
+  }
+}
