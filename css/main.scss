@@ -35,15 +35,17 @@ $border-color: $grey-lighter;
 $link:        chocolate;
 
 // Social colors
-$twitter:    #00aced;
-$facebook:   #3b5998;
-$pinterest:  #cb2027;
-$linkedin:   #007bb6;
-$youtube:    #bb0000;
-$vimeo:      #aad450;
-$instagram:  #517fa4;
-$github:     #444;
-
+$social-colors: (
+  'twitter': #00aced,
+  'facebook': #3b5998,
+  'pinterest': #cb2027,
+  'linkedin': #007bb6,
+  'youtube': #bb0000,
+  'vimeo': #aad450,
+  'instagram': #517fa4,
+  'github': #444,
+  'feed': $color-orange
+);
 
 // Fonts
 $font-body:     "Work sans", sans-serif;
