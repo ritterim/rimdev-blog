@@ -17,7 +17,7 @@ image_credit: Kimberly Farmer
 
 At [Ritter Insurance Marketing](https://www.ritterim.com/) we utilize [Azure Web Apps](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/) for hosting many of our web applications. [Azure Web Apps](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/) is a platform as a service (PaaS) offering from Microsoft, enabling their customers to host web applications without managing and maintaining the server infrastructure.
 
-Given the number of Azure Web Apps we have, reporting on and managing configuration across the entire environment can be difficult. With each app seperate, it is different to get an overall view of configuration (AlwaysOn, HTTP2, etc.), as well as app settings and connection strings.
+Given the number of Azure Web Apps we have, reporting on and managing configuration across the entire environment can be difficult. With each app seperate, it is difficult to get an overall view of configuration (AlwaysOn, HTTP2, etc.), as well as app settings and connection strings.
 
 **Answering even simple questions about configuration across the board can be challenging** when each application is a seperate unrelated entity. **In our case, it helped find connection strings needing an update due to a deprecation.**
 
