@@ -17,6 +17,7 @@ Egg Fried Rice is a very homely dish in China. Every Chinese family make their f
 
 ## Ingredients
 - 400g cooked rice (For two) - I use `Nishiki Medium Grain Rice` (https://www.amazon.com/Nishiki-Medium-Grain-Rice-Pound/dp/B00852ZN2U/ref=sr_1_8_s_it?s=grocery&ie=UTF8&qid=1543877113&sr=1-8&keywords=rice)
+- soybean oil, vegetable oil, or peanut oil
 - 3 eggs
 - half onion (Chopped)
 - 80 gram luncheon meat / any other meats
@@ -24,18 +25,18 @@ Egg Fried Rice is a very homely dish in China. Every Chinese family make their f
 - 1/2 tbp salt
 - 1/2 tbp sugar
 - 3/4 tbp white pepper powder
-- 4 Thai Pepper (Optional)
+- 4 Thai Pepper (Only if you like spicy)
 - scallion for garnish
 
 
 ## Tips
-- In order to make the best egg fried rice, I suggest to use leftover rice or you can put the cooked rice into refrigerated for at least 2 hours.
+- In order to make the best egg fried rice, I suggest you use leftover rice but you could make rice fresh but make sure to refrigerate it for at least 2 hours.
 ## DIRECTIONS:
 - Chop all the ingredients into small pieces.
-- In a working pan, Heat oil on high heat. Saute the onion and Thai Pepper (Only if you like spicy) until they start to soften, add the luncheon meat, corns and green peas, saute them for 3 mins. Once done, Put them in a separate dish. We will use them later.
+- In a working pan, heat oil on high heat. Saute the onion and the optional Thai Pepper until they start to soften, add the luncheon meat, corns and green peas, saute them for 3 mins. Once done, Put them in a separate dish. We will use them later.
 - Put cooked rice into a Mixing Bowl, add eggs one by one. Mix the rice with the egg yolks, make sure all the rice grain are separate.
-- In a working pan, Heat oil on high heat. Add the rice, saute it until the egg is cooked, add all the ingredients, season with salt, sugar, and white pepper. Mix well with all the ingredients, and you can add more salt and pepper to adjust seasoning.
-- Finally, You can put some green scallion on the top of the rice. Then The Golden Fried Rice is ready.
+- In a working pan, heat oil on high heat. Add the rice, saute it until the egg is cooked, add all the ingredients, season with salt, sugar, and white pepper. Mix well with all the ingredients, and you can add more salt and pepper to adjust seasoning.
+- Finally, garnish with sliced green scallion. Then The Golden Fried Rice is ready.
 
 ## Bottom Line
 
