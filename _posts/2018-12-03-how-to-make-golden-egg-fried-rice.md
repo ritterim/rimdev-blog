@@ -13,7 +13,7 @@ image_url: https://www.flickr.com/photos/35856236@N06/3708994257/
 image_credit: hawaiianfoodrecipe
 ---
 
-Egg Fried Rice is a very homely dish in China. Every Chinese family make their fried rice differently, so you don't actually need a receipt to make fried rice, you can add whatever you like into the rice. Today, I am going to show you my method to make this simple, quick and delicious dish.
+Egg Fried Rice is a very homely dish in China. Every Chinese family make their fried rice differently, so you don't actually need a recipe to make fried rice, you can add whatever you want to the dish. Today, I am going to show you my method to make this simple, quick, and delicious dish.
 
 ## Ingredients
 - 400g cooked rice (For two) - I use `Nishiki Medium Grain Rice` (https://www.amazon.com/Nishiki-Medium-Grain-Rice-Pound/dp/B00852ZN2U/ref=sr_1_8_s_it?s=grocery&ie=UTF8&qid=1543877113&sr=1-8&keywords=rice)
@@ -25,7 +25,7 @@ Egg Fried Rice is a very homely dish in China. Every Chinese family make their f
 - 1/2 tbp sugar
 - 3/4 tbp white pepper powder
 - 4 Thai Pepper (Optional)
-- appropriate amount of scallion
+- scallion for garnish
 
 
 ## Tips
