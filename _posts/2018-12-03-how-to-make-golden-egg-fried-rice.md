@@ -30,7 +30,8 @@ Egg Fried Rice is a very homely dish in China. Every Chinese family make their f
 
 
 ## Tips & Tricks:
-- In order to make the best egg fried rice, I suggest you use leftover rice but you could make rice fresh but make sure to refrigerate it for at least 2 hours. It will help to dry the grains, lower the starchy, and give your fried rice with a more firm texture.
+- To make the best egg fried rice, I suggest you use leftover rice, but you could make a batch of fresh rice, but make sure to refrigerate it for at least 2 hours. Refrigerating will help dry the grains, lower the starchiness, and give your fried rice a firmer texture.
+
 ## DIRECTIONS:
 - Chop all the ingredients into small pieces.
 - In a frying pan, heat oil on medium heat. Saute the onion and the optional Thai Pepper until they start to soften, approximately 2-3 minutes. Next, add the luncheon meat, corns and green peas, saute them for another 3 minutes. Once done, Put them in a separate dish. We will use them later.
