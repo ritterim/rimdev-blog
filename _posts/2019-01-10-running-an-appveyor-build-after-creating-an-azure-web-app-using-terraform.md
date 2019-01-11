@@ -34,7 +34,7 @@ $headers = @{
 }
 
 $body = @{
-  "accountName" = "RimDev"
+  "accountName" = "YOUR_ACCOUNT_NAME_HERE" # Or use ${var.repository_user} or similar
   "projectSlug" = "${var.repository_name}"
   "branch" = "master"
 } | ConvertTo-Json
