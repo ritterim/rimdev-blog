@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Computed Side Effects"
-date: 2019-01-21 11:27:17
+title: "Computed Side Effects in Vue.js"
+date: 2019-01-21 15:40:51
 tags:
-- vue
+- Vue.js
 - JavaScript
 categories:
-- vue
+- Vue.js
 - JavaScript
 twitter_text: "#vuejs side effect in computed properties"
 authors: Andrew Rady
