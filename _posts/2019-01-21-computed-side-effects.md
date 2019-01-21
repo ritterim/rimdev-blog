@@ -19,14 +19,19 @@ In Vue computed properties are a life saver when it comes to being able to add l
 
 html:
 ```
-<p>nameList.sort((a, b) => { return a.name.localCompare(b.name) })</p>
+{% raw %}
+  <p>{{ nameList.sort((a, b) => { return a.name.localCompare(b.name) }) }}</p>
+{% endraw %}
 ```
 
 Over time this will clutter the template and make it hard to read. Moving this logic into a computed value is good practice and will save a lot of headache down the road.
 
 html:
+
 ```html
- <p>{{ sortedList }}</p>
+{% raw %}
+ <p>{{ computedValue }}</p>
+{% endraw %}
 ```
 JavaScript:
 ```javascript
