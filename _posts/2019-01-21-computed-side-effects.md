@@ -53,7 +53,7 @@ JavaScript:
 export default {
 computed: {
   name: 'Names',
-  props: 'nameList',
+  props: ['nameList'],
   computed: {
     sortedList() {
       let clone = this.nameList.slice()
