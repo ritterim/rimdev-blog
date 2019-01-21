@@ -41,7 +41,7 @@ export default  {
 }
 ```
 
-The code above is much cleaner, but we need to be careful unintended side-effects that can come with manipulating data in computed properties. Following this example, the array `nameList` is a prop that is passed into this component and could also be used somewhere els. We could end up changing that data even if that was not intended. While this will not cause any syntax errors it will cause the UI to change state where we don’t want it too which takes manual testing before you will discover this bug. We can avoid this by simply cloning the data in the computed value and the running the sort on that
+The code above is much cleaner, but we need to be careful unintended side-effects that can come with manipulating data in computed properties. Following this example, the array `nameList` is a prop that is passed into this component and could also be used somewhere else. We could end up changing that data even if that was not intended. While this will not cause any syntax errors it will cause the UI to change state where we don’t want it too which takes manual testing before you will discover this bug. We can avoid this by simply cloning the data in the computed value and the running the sort on that
 
 JavaScript:
 ```javascript
@@ -51,7 +51,7 @@ computed: {
   props: 'nameList',
   computed: {
     sortedList() {
-      let clone = this.nameList
+      let clone = this.nameList.slice()
       return clone.sort((a, b) => { return a.name.localCompare(b.name) })
     }
   }
@@ -59,5 +59,5 @@ computed: {
 ```
 
 ## Common Gotcha
-If you are working with more complex data structures a shallow clone won’t work here, you will need to do a `deep clone`. Check out my blog post about this <a href="https://rimdev.io/post-javascript-object-cloning">here.</a>
+If you are working with more complex data structures a shallow clone won’t work here, you will need to do a `deep clone`. Check out my blog post about this [here]({% post_url 2018-10-08-post-javascript-object-cloning %})
 Anytime you are manipulating data in a computed property that is a prop or from `Vuex store` you should always consider if you need to clone that data as to avoid these situations. If that data is being used elsewhere and you want to keep it in the original state, then this is a good option. 
