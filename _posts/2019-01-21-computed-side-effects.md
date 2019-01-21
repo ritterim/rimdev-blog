@@ -17,18 +17,21 @@ image_credit: Jana Sabeth Schultz
 
 In Vue computed properties are a life saver when it comes to being able to add logic to data that we need to use in the UI. We want to keep the logic in the template to a minimal if possible and we can do that with computed properties. This is so much of a recommendation that they talk about this directly in the Vue documentation. For example, while we can do sort through an array in alphabetic order in the template,
 
-html:
-```
-<p>nameList.sort((a, b) => { return a.name.localCompare(b.name) })</p>
+
+```html
+{% raw %}
+  <p>{{ nameList.sort((a, b) => { return a.name.localCompare(b.name) }) }}</p>
+{% endraw %}
 ```
 
 Over time this will clutter the template and make it hard to read. Moving this logic into a computed value is good practice and will save a lot of headache down the road.
 
-html:
 ```html
- <p>{{ sortedList }}</p>
+{% raw %}
+ <p>{{ computedValue }}</p>
+{% endraw %}
 ```
-JavaScript:
+
 ```javascript
 export default  {
   name: 'Names',
@@ -43,12 +46,11 @@ export default  {
 
 The code above is much cleaner, but we need to be careful unintended side-effects that can come with manipulating data in computed properties. Following this example, the array `nameList` is a prop that is passed into this component and could also be used somewhere else. We could end up changing that data even if that was not intended. While this will not cause any syntax errors it will cause the UI to change state where we don’t want it too which takes manual testing before you will discover this bug. We can avoid this by simply cloning the data in the computed value and the running the sort on that
 
-JavaScript:
 ```javascript
 export default {
 computed: {
   name: 'Names',
-  props: 'nameList',
+  props: ['nameList'],
   computed: {
     sortedList() {
       let clone = this.nameList.slice()
