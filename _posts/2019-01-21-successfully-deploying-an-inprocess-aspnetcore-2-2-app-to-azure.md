@@ -13,6 +13,19 @@ image_url: https://www.flickr.com/photos/fran001/
 image_credit: Francisco Anzola
 ---
 
+## Updated Solution!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks for the post!<br><br>If you don&#39;t want to create a web.config, you can also drive this through the &lt;AspNetCoreHostingModel&gt; MSBuild property by setting it to InProcess in the .csproj.<br><br>Using the SDK v2.2.102, &lt;AspNetCoreModuleName&gt; default value is already AspNetCoreModuleV2.</p>&mdash; Mickaël Derriey (@mderriey) <a href="https://twitter.com/mderriey/status/1087473851359883264?ref_src=twsrc%5Etfw">January 21, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+So after publishing this post, a nice individual by the name of Mickaël suggested that the `dotnet-cli` automatically creates this web.config based on the the `csproj` settings. It does indeed work! I do suggest you make sure you are on the latest `SDK` of `2.2.100` or else you won't see the results you are looking for.
+
+Note: The build process may suggest that you _do not_ include the version number in your PackageReference. I was not able to get Azure to successfully load the ASP.NET Core application without specifiying the package version of `2.2.1`. Try it both ways and see what happens.
+
+Thanks again to the folks who read and suggest better solutions.
+
+---
+
 The year is 2019, and you've decided to live on the bleeding edge at the intersection of ASP.NET Core and Windows Azure. ASP.NET Core delivered `InProcess` hosting With the release of ASP.NET Core 2.2, which means our applications can take full advantage of IIS resources and be hosted in the IIS Process itself. This post will show you the steps you need to take to make your ASP.NET Core Application work in Azure.
 
 ## Step 1: Update Microsoft.AspNetCore.App
