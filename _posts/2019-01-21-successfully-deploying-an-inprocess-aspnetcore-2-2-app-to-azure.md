@@ -20,11 +20,7 @@ image_credit: Francisco Anzola
 
 So after publishing this post, a nice individual by the name of Mickaël suggested that the `dotnet-cli` automatically creates this web.config based on the the `csproj` settings. It does indeed work! I do suggest you make sure you are on the latest `SDK` of `2.2.100` or else you won't see the results you are looking for.
 
-It is also suggested by the build process that you **do not** include the `Version` in the `PackageReference`.
-
-```xml
-<PackageReference Include="Microsoft.AspNetCore.App" />
-```
+Note: The build process may suggest that you _do not_ include the version number in your PackageReference. I was not able to get Azure to successfully load the ASP.NET Core application without specifiying the package version of `2.2.1`. Try it both ways and see what happens.
 
 Thanks again to the folks who read and suggest better solutions.
 
