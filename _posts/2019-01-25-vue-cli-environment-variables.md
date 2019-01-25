@@ -20,10 +20,12 @@ When spin up a new vue project with cli 2 the root project will have the bulk of
 
 In `prod.env.js` we have a `module.export` object we can are going to added to,
 
+```javascript
 Module.export = {
   NODE_ENV: “production”,
   API_URL: JSON.stringify(process.env.apiUrl)
 }
+```
 
 Now `process.env.apiUrl` is the standard way we access environment variables in node application, but the vue cli need some additional configuration to be able to get access to these like the example above. This would set your production environment so on your host like Heroku or Azure you would want to set the api string to your live api. Let’s say you have a test environment somewhere else, or you have a local so instance running for development. You can set the same thing in `dev.env.js` and it would use that in the development mode. 
 
@@ -37,25 +39,21 @@ I know the naming things is person conviction so that might not bother you, but 
 
 After doing some digging around, I found a nice alternative way to still be able to access environment variable like how we did in the second version of the cli. In the root of the project we are going to make a new file called `vue.config.js` and here we can make some webpack configurations.
 
-```
+```javascript
 var webpack = require('webpack')
 	
-
-	module.exports = {
-	  devServer: {
-	    port: 8081
-	  },
-	  configureWebpack: {
-	    plugins: [
-	      new webpack.DefinePlugin({
-	        'process.env': {
-	          'API_URL: JSON.stringify(process.env.apiUrl)
-	        }
-	      })
-	    ]
-	  }
-	}
+module.exports = {
+  configureWebpack: {
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          'API_URL: JSON.stringify(process.env.apiUrl)
+        }
+      })
+    ]
+  }
+}
 
 ```
 
-With this simple additional file we can access environment variable within our Vue application and keep private information out of git repos.
+With this simple additional file we can access environment variable within our Vue application and keep private information out of git repos. This is also where we can make other common configuration changes like changing the local port number.
