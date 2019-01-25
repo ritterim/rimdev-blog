@@ -9,9 +9,9 @@ tags:
 categories:
 twitter_text: Vue.js CLI setting env var
 authors: Andrew Rady
-image:
-image_url:
-image_credit:
+image: https://images.unsplash.com/photo-1547575542-c56648365a4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+image_url: https://unsplash.com/photos/f8WsJd6zpBY
+image_credit: Karl Block
 ---
 
 In development it is common we don’t want to share everything in our code. Things like usernames, password, links to an api, and more don’t want to be stored directly in the code for everyone to see. Storing them in environment variables is one of the easiest ways keep them private and have our code still access these important strings. With Vue CLI 3 out now there is some changes on how it accesses environments variables that is different then the second version. Let’s go into how we would access our environment variables in the second version of the cli.
