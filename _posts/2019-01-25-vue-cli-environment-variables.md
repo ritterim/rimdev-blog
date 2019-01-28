@@ -18,7 +18,7 @@ In development it is common we don’t want to share everything in our code. Thi
 
 When we spin up a new vue project in the root there is a `src` directory that has the bulk of the app. What we want to work with though is in the `Config` directory. In there we will have three files `dev.env.js`, `index.js`, and `prod.env.js`. Here we can setup how to access our environment variable through out our app.
 
-In the `prod.env.js` file located in the `Config` directory there is a `module.export` object. We can are going to added some properties to this object to access the environment variables,
+The prod.env.js file located in the Config directory exports a configuration object that will be used by the CLI. We can have some properties of this object get their values from the environment variables
 
 ```javascript
 module.export = {
