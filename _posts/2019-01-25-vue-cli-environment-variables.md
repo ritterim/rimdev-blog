@@ -14,7 +14,7 @@ image_url: https://unsplash.com/photos/f8WsJd6zpBY
 image_credit: Karl Block
 ---
 
-In development it is common we don’t want to share everything in our code. Things like usernames, password, links to an api, and more should not be stored directly. Storing them in environment variables is one of the easiest ways keep them private and have our code still access these important strings. With Vue CLI 3 out now how it accesses environments variables that is different then the second version. Let’s go into how we would access our environment variables in the second version of the cli.
+In development it is common we don’t want to share everything in our code. Things like usernames, password, links to an api, and more should not be stored directly. Storing them in environment variables is one of the easiest ways keep them private and have our code still access these important strings. The way Vue CLI 3 accesses environment variables is different from version 2. Let's see how we would access our environment variables in version 2.
 
 When we spin up a new vue project in the root there is a `src` directory that has the bulk of the app. What we want to work with though is in the `Config` directory. In there we will have three files `dev.env.js`, `index.js`, and `prod.env.js`. Here we can setup how to access our environment variable through out our app.
 
