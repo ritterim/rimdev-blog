@@ -116,7 +116,7 @@ public class PostModel : BaseModel
 ```csharp
 public class PostMiddleware
 {
-    public PostMiddlware(
+    public PostMiddleware(
         RequestDelegate next,
         IDatabase database)
     )
