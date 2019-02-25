@@ -40,6 +40,7 @@ Applications are the supporting cast to your rising star.
 
 - [git](https://www.git-scm.com): Source control management.
 - [Slack](https://slack.com): Team chat and collaboration.
+- [Microsoft Teams](https://products.office.com/en-us/microsoft-teams/group-chat-software): For collaborating with the business.
 - [Visual Studio Professional](https://www.microsoft.com/net): IDE (available through MSDN).
 - [Office 365](http://microsoft.office.com): Because... business.
 - [Google Chrome](https://www.google.com/chrome/) or any modern browser.
@@ -48,7 +49,7 @@ Applications are the supporting cast to your rising star.
 - [HighFive](https://highfive.com): video conferencing.
 - [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) and/or [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio) and/or your unlisted favorite SQL tool.
 
-### Optional Applications
+### Helpful Applications
 
 - [Chocolatey](https://chocolatey.org): great for installing applications.
 - [ConEmu](https://conemu.github.io): great window console emulator. Quake mode for the win!
