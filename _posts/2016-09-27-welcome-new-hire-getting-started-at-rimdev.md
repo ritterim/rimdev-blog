@@ -28,6 +28,7 @@ The major frameworks we use include:
 - [.NET Framework (4.6+ and Core)](https://www.microsoft.com/net)
 - [Node.js](https://nodejs.org/en/download/)
 - [Ruby (v2) with Devkit](https://www.ruby-lang.org/en/downloads/)
+- [Hugo](https://gohugo.io/)
 
 There are subset frameworks of the frameworks mentioned above, like Angular, Jekyll, Vue.js, ASP.NET MVC, but those are handled at the project level.
 
@@ -45,7 +46,7 @@ Applications are the supporting cast to your rising star.
 - [Elasticsearch](https://www.elastic.co/downloads): our Full-text search provider.
 - [Azure SDK](https://azure.microsoft.com/en-us/downloads/): our hosting environment.
 - [HighFive](https://highfive.com): video conferencing.
-- [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) and/or [SQL Operations Studio](https://docs.microsoft.com/en-us/sql/sql-operations-studio) and/or your unlisted favorite SQL tool.
+- [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) and/or [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio) and/or your unlisted favorite SQL tool.
 
 ### Optional Applications
 
