@@ -40,6 +40,7 @@ Applications are the supporting cast to your rising star.
 
 - [git](https://www.git-scm.com): Source control management.
 - [Slack](https://slack.com): Team chat and collaboration.
+- [Microsoft Teams](https://products.office.com/en-us/microsoft-teams/group-chat-software): For collaborating with the business.
 - [Visual Studio Professional](https://www.microsoft.com/net): IDE (available through MSDN).
 - [Office 365](http://microsoft.office.com): Because... business.
 - [Google Chrome](https://www.google.com/chrome/) or any modern browser.
