@@ -117,7 +117,7 @@ In order to get the styles working, we need to setup loaders for the css. We wil
 + First run `npm install --save-dev css-loader style-loader` to add the npm packages
 + then create a `webpack.config.js` file at the root of your project with the following:
 
-```
+```javascript
 //webpack.config.js
 module.exports = {
   module: {
