@@ -62,7 +62,7 @@ With these useful terms in mind, when I want to do something non JavaScript/json
 
 With the somewhat lengthy intro out of the way, lets see if we can setup a webpack file that will let us create an accordion and a counter. Yes, its contrived but the prize here is not what we are building, its how we use webpack to do it. 
 
-The intital project state can be found [here](https://github.com/alexoragz/post-webpack-basics/tree/working-with-only-javascript) on github. We will progress through relevant branches as we continue.
+The initial project state can be found [here](https://github.com/alexoragz/post-webpack-basics/tree/working-with-only-javascript) on GitHub. We will progress through relevant branches as we continue.
 
 ___
 Project summary:
