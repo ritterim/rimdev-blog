@@ -16,7 +16,7 @@ image_credit: "@ilumire"
 
 New to the frontend at RIMdev, or looking for more about our Frontend team? Here's a quick overview of our team, tools, and culture!
 
-As a whole, RIMdev has always strived to use the technology that bets suites the task. So while this will give the current overview, software changes and so do we.
+As a whole, RIMdev has always strived to use the technology that best suites the task. So while this will give the current overview, software changes and so do we.
 
 The majority of our frontend team are Mac users, so this post will seem mac-biased, but rest assured, that's where it stops. Use whatever platform that makes you happy.
 
@@ -35,7 +35,7 @@ Communication is at our core; we can accomplish more as our sum that we can as o
 
 Our basic environment to successfully traverse [Ritter](https://ritterim.com)'s current frontend needs. Leveraging [VueJS](https://vuejs.org/), [webpack](https://webpack.js.org/), and, [SASS](https://sass-lang.com/) along the way to build the Ritter Platform and our family of static marketing sites.
 
-- [Node](https://nodejs.org/en/download/hom) & [npm](https://www.npmjs.com/)
+- [Node](https://nodejs.org/en/download) & [npm](https://www.npmjs.com/)
 - [Homebrew](https://docs.brew.sh/Installation)🍺: Mac's missing package manager.
 - [Git](https://www.git-scm.com/) & [Github](https://github.com)
 - [RBenv](https://github.com/rbenv/rbenv): Ruby version management (for [Jekyll](https://jekyllrb.com/))
