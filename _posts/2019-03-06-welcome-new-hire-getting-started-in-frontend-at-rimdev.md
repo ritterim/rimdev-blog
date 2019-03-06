@@ -73,4 +73,4 @@ Our professional landscape changes constantly, so we adapt and learn all the thi
 
 ## Conclusion
 
-If being a part of a diverse, transparent, growing team while growing your career is what you're seeking, [Ritter Insurance Marketing's](https://ritterim.com) development team is a great environment. Team members to help you grow and face new challenges! If you're new the team, then Welcome! If you'd like to find out more, reach out on [twitter](https://twitter.com) 😃.
+If being a part of a diverse, transparent, and growing team while growing your own career is what you're seeking, [Ritter Insurance Marketing's](https://ritterim.com) development team is a great environment. Team members are here to help you grow and face new challenges! If you're new the team, then Welcome! If you'd like to find out more, reach out to any of us on [Twitter](https://twitter.com) 😃and if you're new, don't be afraid to start a conversation with your new team members.
