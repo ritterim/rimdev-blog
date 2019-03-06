@@ -57,7 +57,7 @@ https://code.visualstudio.com/), [Atom](https://atom.io/), other?
 
 ### Conferences
 
-Conferences are great opportunities to learn, be inspired, or inspire others by speaking! [VueConf](http://www.vueconf.us/) and [An Event Apart](https://aneventapart.com/) have become 2 of our top choices to date.
+Conferences are great opportunities to learn, be inspired, or inspire others by speaking! [VueConf](http://www.vueconf.us/) and [An Event Apart](https://aneventapart.com/) have become 2 of our top choices to date. We also encourage each member of our team to seek out new conferences.
 
 ### Writing
 
