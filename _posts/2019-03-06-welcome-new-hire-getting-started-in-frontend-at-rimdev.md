@@ -33,7 +33,7 @@ Communication is at our core; we can accomplish more as our sum that we can as o
 
 ## Environment
 
-Our basic environment to successfully traverse [Ritter](https://ritterim.com)'s current frontend needs. Leveraging [VueJS](https://vuejs.org/), [webpack](https://webpack.js.org/), and, [SASS](https://sass-lang.com/) along the way to build the Ritter Platform and our family of static marketing sites.
+We continue hard to deliver a great frontend experience to our users. In this section, you'll see the tools used to successfully build our experiences. On the frontend, most projects leverage [VueJS](https://vuejs.org/), [webpack](https://webpack.js.org/), and, [SASS](https://sass-lang.com/) heavily to build our Ritter Platform and family of static marketing sites.
 
 - [Node](https://nodejs.org/en/download) & [npm](https://www.npmjs.com/)
 - [Homebrew](https://docs.brew.sh/Installation)🍺: Mac's missing package manager.
