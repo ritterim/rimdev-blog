@@ -65,7 +65,7 @@ As a developer or designer, you're faced with unique challenges every day -- so 
 
 ### Open Source
 
-We love Open Source, from [things we've made](https://rimdev.io/open-source/), to contributing to community projects and [Hacktoberfest](https://hacktoberfest.digitalocean.com/). Everyone on the team uses their personal GitHub account to build your community footprint. Some of our projects are private, although we keep many public where we can so your contributions are yours.
+We love Open Source, from [things we've made](https://rimdev.io/open-source/), to contributing to community projects and [Hacktoberfest](https://hacktoberfest.digitalocean.com/). Everyone on the team uses their personal GitHub account to build your community footprint. Some of our projects are private, although we keep much public in an effort to show your contributions.
 
 ### Ongoing
 
