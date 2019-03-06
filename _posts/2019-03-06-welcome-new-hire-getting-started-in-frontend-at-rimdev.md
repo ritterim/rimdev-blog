@@ -69,7 +69,7 @@ We love Open Source, from [things we've made](https://rimdev.io/open-source/), t
 
 ### Ongoing
 
-Frameworks everywhere and all the things changing. Our landscape changes constantly, so we adapt and learn all the things. Instructor led training, subscriptions, whatever you need to succeed; [Pluralsight](https://www.pluralsight.com/), [egghead.io](https://egghead.io/), [Vue Mastery](https://www.vuemastery.com/), all there for the asking.
+Our professional landscape changes constantly, so we adapt and learn all the things. We all learn differently so we make many options available: Instructor-led training, book reimbursements, subscriptions, whatever you need to succeed. Some examples of learning tools include [Pluralsight](https://www.pluralsight.com/), [egghead.io](https://egghead.io/), [Vue Mastery](https://www.vuemastery.com/).
 
 ## Conclusion
 
