@@ -16,7 +16,7 @@ image_credit: "@ilumire"
 
 New to the frontend at RIMdev, or looking for more about our Frontend team? Here's a quick overview of our team, tools, and culture!
 
-As a whole, RIMdev has always strived to use the technology that best suites the task. So while this will give the current overview, software changes and so do we.
+As a whole, RIMdev has always strived to use the technology that best suits the task. This post will give you a current overview, but software changes and so do we.
 
 The majority of our frontend team are Mac users, so this post will seem Mac-biased, but rest assured, that's where it stops. We promote developers to use whichever platform makes them happiest.
 
