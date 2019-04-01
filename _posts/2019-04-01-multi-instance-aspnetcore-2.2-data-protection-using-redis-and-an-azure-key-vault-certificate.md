@@ -17,7 +17,7 @@ image_url: https://unsplash.com/photos/IM8ZyYaSW6g
 image_credit: Vladimir Anikeev
 ---
 
-We're in the process of upgrading our infrastructure to run our Azure Web Apps in multiple datacenter locations behind Azure Traffic Manager instances to achieve high availiablity. Running multiple instances without using the scale up slider means you're responsible for any server side state that needs to be shared between instances *(or, ensure that traffic always returns to the same instance repeatedly, but we don't want to do that...)*.
+We're in the process of upgrading our infrastructure to run our Azure Web Apps in multiple datacenter locations behind Azure Traffic Manager instances to achieve high availability. Running multiple instances without using the scale up slider means you're responsible for any server side state that needs to be shared between instances *(or, ensure that traffic always returns to the same instance repeatedly, but we don't want to do that...)*.
 
 **With ASP.NET Core projects we need to share the data protection keys between our web application instances. That way, items that are encrypted by any instance can be decrypted by any other instance.**
 
