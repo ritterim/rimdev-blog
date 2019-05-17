@@ -12,7 +12,6 @@ image: https://images.unsplash.com/photo-1523901839036-a3030662f220?ixlib=rb-1.2
 image_url: https://unsplash.com/photos/cixohzDpNIo
 image_credit: Siora Photography
 ---
-Making media query mixins. I like alliteration.
 
 If you’re like me, you aspire to write clean and consistent scss. We use the power of scss for everything from nesting our selectors, creating variables, and making mixins for reusable code. Let’s take a look at how you can create a mixin to simplify writing our media queries.
 
