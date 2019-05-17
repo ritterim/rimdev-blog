@@ -15,6 +15,8 @@ image_credit: Siora Photography
 
 If you’re like me, you aspire to write clean and consistent scss. We use the power of scss for everything from nesting our selectors, creating variables, and making mixins for reusable code. Let’s take a look at how you can create a mixin to simplify writing our media queries.
 
+I've used other media query mixins in the past, whether they were a part of a css framework, or something that I found that someone else had created. With all those in mind, I found that none of them were perfect for what I wanted to write. 
+
 I wanted something that made it easier for me to add media queries to our code but I got sick of always writing out `@media (min-width: 768px) {}`. That might not seem like a ton of code to write but in our case when we set up a map of the breakpoints we want to use, it gets a little cumbersome writing out the specific screen size you want. 
 
 ```css
@@ -137,8 +139,7 @@ Wow. That seems to work pretty well for the sizes we defined in our map. But wha
       @media (max-width: ($breakpoint-value - 1)) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint-value) {
         @content;
       }
@@ -150,8 +151,7 @@ Wow. That seems to work pretty well for the sizes we defined in our map. But wha
       @media (max-width: $breakpoint) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint) {
         @content;
       }
@@ -279,8 +279,7 @@ $breakpoints: (
       @media (max-width: ($breakpoint-value - 1)) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint-value) {
         @content;
       }
@@ -296,8 +295,7 @@ $breakpoints: (
       @media (max-width: $breakpoint) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint) {
         @content;
       }
