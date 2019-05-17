@@ -137,8 +137,7 @@ Wow. That seems to work pretty well for the sizes we defined in our map. But wha
       @media (max-width: ($breakpoint-value - 1)) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint-value) {
         @content;
       }
@@ -150,8 +149,7 @@ Wow. That seems to work pretty well for the sizes we defined in our map. But wha
       @media (max-width: $breakpoint) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint) {
         @content;
       }
@@ -279,8 +277,7 @@ $breakpoints: (
       @media (max-width: ($breakpoint-value - 1)) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint-value) {
         @content;
       }
@@ -296,8 +293,7 @@ $breakpoints: (
       @media (max-width: $breakpoint) {
         @content;
       }
-    } @else if $direction == min {
-      // Write the media query.
+    } @else if $direction == min {      
       @media (min-width: $breakpoint) {
         @content;
       }
