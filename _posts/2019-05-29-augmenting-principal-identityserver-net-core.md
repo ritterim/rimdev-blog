@@ -90,7 +90,15 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
             if (authenticateResult.Succeeded)
             {
-                var principal = authenticateResult.Principal;
+                // This creates a new `IPrincipal` disconnected from the policy-authentication pipeline.
+                var principal = new ClaimsPrincipal(new ClaimsIdentity(authenticateResult.Principal.Identity));
+
+                /**
+                 * var principal = authenticateResult.Principal;
+                 * would maintain reference to original pipeline `IPrincipal` so changes would persist.
+                 * However, this will lead to duplicate claims.
+                 * Read the section about `IClaimsTransformation`...
+                 */
 
                 // Pretend we made a call to a service to get a list of claims for the user...
                 (principal.Identity as ClaimsIdentity).AddClaim(new Claim("action", "test:read"));
@@ -170,9 +178,43 @@ Looking at the value of `property`, however, you'll notice it will be `null`. Bu
 ## What can we do?
 
 ![nothing](https://media.giphy.com/media/nYogYgSmIJaIo/giphy.gif)
-*nothing*
+*nothing?*
 
 The infrastructure doesn't currently support specifying `AuthenticationScheme` if augmenting the `User` is needed. **Any modifications will exist up until the MVC-pipeline, however**.
+
+## Why not use `IClaimsTransformation`?
+
+This is a valid alternative. However, this also presents a potential for duplicate claims unless a new `ClaimsPrincipal` and `ClaimsIdentity` is used within the transformation. *Personal preference: I'd like to see the option of each authentication-handler having its own transformer instead of one "global" transformer*. The transformation is used when [a call to authenticate is successful](https://github.com/aspnet/AspNetCore/blob/0ef9993f46bff1ea7a9c4cc7c9fa6f603d065d20/src/Http/Authentication.Core/src/AuthenticationService.cs#L70-L74):
+
+### Startup.cs
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddTransient<IClaimsTransformation, DefaultClaimsTransformation>();
+}
+```
+
+### ClaimsTransformation
+
+```csharp
+public class DefaultClaimsTransformation : IClaimsTransformation
+{
+    public Task<ClaimsPrincipal> TransformAsync(ClaimsPrincipal principal)
+    {
+        // ☢️ Using the same `principal` will cause duplicate claims...
+        // (principal.Identity as ClaimsIdentity)?.AddClaim(new Claim("action", "test:read"));
+
+        var newPrincipal = new ClaimsPrincipal(new ClaimsIdentity(principal.Identity));
+
+        (newPrincipal.Identity as ClaimsIdentity).AddClaim(new Claim("action", "test:read"));
+
+        return Task.FromResult(newPrincipal);
+    }
+}
+```
+
+You lose a bit of control when augmenation occurs, but if that's not a problem in your app., then this is a viable alternative.
 
 ## Bonus!
 
