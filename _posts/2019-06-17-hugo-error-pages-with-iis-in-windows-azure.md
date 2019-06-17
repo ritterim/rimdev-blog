@@ -15,7 +15,7 @@ image_url: https://unsplash.com/photos/GfDyRbLofHg
 image_credit: Patrick Tomasso
 ---
 
-Static site hosting is straight forward, and from our experience, less likely to have errors compared to a more dynamic site. While dynamic site problems, like missing pages or internal server errors, are not expected, they can still happen. For us, it is essential to be good internet citizens and set up proper responses to error response. If we are transmitting a 404 Page Not Found page response, we want the HTTP semantics to match what our users are seeing. In this post, I'll show you what you need to set up your Hugo static site to support proper error pages in Internet Information Services (IIS).
+Static site hosting is straightforward, and from our experience, less likely to have errors compared to a more dynamic site. While dynamic site problems, like missing pages or internal server errors, are not expected, they can still happen. For us, it is essential to be good internet citizens and set up proper responses to error response. If we are transmitting a 404 Page Not Found page response, we want the HTTP semantics to match what our users are seeing. In this post, I'll show you what you need to set up your Hugo static site to support proper error pages in Internet Information Services (IIS).
 
 ## Setting Up Your Error Pages
 
