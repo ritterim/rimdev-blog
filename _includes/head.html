@@ -22,7 +22,7 @@
   <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta itemprop="image" content="{% if page.image %}{{ page.image }}{% else %} {{ site.default_image }}{% endif %}"/>
-  
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300|Roboto+Slab:400,300,100">
@@ -40,5 +40,4 @@
 
   {% include favicons.html %}
 
-  {% seo title=false %}
 </head>
