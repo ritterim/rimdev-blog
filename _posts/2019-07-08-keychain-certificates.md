@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Updating donet https certificate after password change"
+title: "Replacing https certificate for dotnet core on a mac"
 date: 2019-07-08 11:03:43
 tags:
     - Keychain
@@ -9,7 +9,7 @@ tags:
 categories:
     - MacOS
     - Keychain
-twitter_text: "Updating donet https certificate after password change"
+twitter_text: "Replacing https certificate for dotnet core on a mac"
 authors: 
   - Chidozie Oragwu
   - Khalid Abuhakmeh
@@ -31,9 +31,12 @@ I thought nothing of it and clicked `Update Keychain Password` which seemed like
 
 The next time I tried to run my app, I got the error saying the certificate was no longer valid.  
 ```bash
-System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found.
+System.InvalidOperationException: Unable to configure HTTPS endpoint. 
+No server certificate was specified, and the default developer 
+certificate could not be found.
 
-To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+To generate a developer certificate run 'dotnet dev-certs https'. 
+To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
 ```
 
 I tried to follow the recommendation in the error to run `dotnet dev-certs https` but it failed saying a certificate already exists:
