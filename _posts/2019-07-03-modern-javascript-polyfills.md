@@ -16,7 +16,9 @@ image_credit: Matthew Guay
 
 ## Standard Polyfills for Front End
 
-One of the challenges developers face is getting their application working across different browsers. If you are writing your JavaScript of es6 or es5 then you are probably using some polyfills to be able to target old browsers (or probably Edge) to get your application working. At the time of this articles Edge is being updated to a chromium-based version which helps with cross browser discrepancies with JavaScript a lot, but some people haven’t received that update yet. For example the `spread operator` is not supported in the JavaScript engine in the non-chromium-based Edge. [Babel](https://babeljs.io/) takes care of most of the heavy lifting with working in this area. If you need to support older browsers with current JavaScript frameworks you should be using Babel. This will take care of polyfills like `promises`, `spread operators`, and more. Below is a list of polyfills that we use that’s not included in babel to get our applications to reach current browsers with a version below the current and IE 11.
+Getting your JavaScript applications working across all browsers is challenging. If you are writing your JavaScript using ES6 or ES5, then you are probably using some polyfills to be able to target old browsers (or Microsoft Edge). At the time of this post, Microsoft is rewriting Edge to be a chromium-based browser, which helps with cross-browser JavaScript discrepancies, but folks may not have upgraded Edge just yet.
+
+One example of unsupported functionality in Edge includes the `spread operator`. The [Babel](https://babeljs.io/) library handles many cross-browser issues for you. If you need to support older browsers with current JavaScript frameworks, you should be using Babel. Babel will take care of polyfills like `promises`, `spread operators`, and more. Below is a list of polyfills that we use that Babel *does not handle*, which will get your applications working in browsers like Edge and IE11.
 
 [Fetch](https://www.npmjs.com/package/whatwg-fetch), most major browsers support `fetch` other then IE 11 [Browser Support](https://caniuse.com/#feat=fetch)
 
