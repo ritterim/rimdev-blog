@@ -10,7 +10,7 @@ categories:
   - IIS
   - Azure
   - SEO
-twitter_text:
+twitter_text: "#IIS Rewrite Maps and Redirecting On #Url Paths #SEO @Azure"
 authors:
   - Khalid Abuhakmeh
   - Kevin Hougasian
