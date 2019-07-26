@@ -39,7 +39,7 @@ What you will in your web.config is a `rewriteMaps` section with all of your old
 </rewrite>
 ```
 
-This rewrite map then needs a subsequent rule to match the url path.
+This rewrite map then needs a subsequent rule to match the URL path.
 
 ```xml
 <rule name="Redirect rule for StaticRewrites" stopProcessing="true">
