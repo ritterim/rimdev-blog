@@ -26,7 +26,7 @@ URLs are the bridges that connect our little island of a website to the bigger c
 
 We started by exploring the [Microsoft documentation site](https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/using-rewrite-maps-in-url-rewrite-module) around rewrite maps. For rewrite maps, you will need to make sure you are running your site on Internet Information Services with the rewrite module.
 
-What you will in your web.config is a `rewriteMaps` section with all of your old URL paths and their new destinations.
+What you will need in your web.config is a `rewriteMaps` section under `system.webserver/rewrite` with the rewrite maps section containing the old URL paths and their new destinations.
 
 ```xml
 <rewrite>
