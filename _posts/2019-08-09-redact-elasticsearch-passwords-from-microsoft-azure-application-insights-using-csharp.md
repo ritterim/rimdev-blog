@@ -6,7 +6,7 @@ tags:
 - .NET
 categories:
 - development
-twitter_text: "Redact Elasticsearch Passwords from Microsoft Azure Application Insights Using C#"
+twitter_text: "Redact @elastic #Passwords from Microsoft @Azure Application Insights Using C#"
 authors: Ken Dale
 image: https://images.unsplash.com/photo-1499346146792-b008e446261f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/eMnddgd3pjQ
