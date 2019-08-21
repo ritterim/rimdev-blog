@@ -21,7 +21,7 @@ ASP.NET Core continues to improve on the legacy of the .NET Framework. Our team 
 
 ## Example
 
-Look at the two following configurations for `appSettings.json` and it's production environment copy of `appSettings.Production.json`.
+Look at the two following configurations for `appSettings.json` and its production environment copy of `appSettings.Production.json`.
 
 ```javascript
 // appSettings.json
