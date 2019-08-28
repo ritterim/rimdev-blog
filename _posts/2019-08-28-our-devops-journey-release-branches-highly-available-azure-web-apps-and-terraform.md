@@ -19,9 +19,7 @@ image_credit: John Thomas
 
 ## Our starting point
 
-This past year we've been on a DevOps journey. While we haven't been in a state of stagnation or chaos as a team, we've identified areas where we could improve. We wanted to improve in areas that helped us work better as a team and deploy the best applications we can.
-
-We didn't start our transformation with no practices or principles as a team. We've been doing continuous integration, continuous delivery, and pull requests using GitHub for quite some time. We weren't starting from zero by any measure. But, **over time we've identified areas in our processes where we can improve based on how we work as a team**.
+This past year we've been on a DevOps journey. While we haven't been in a state of stagnation or chaos as a team, we've identified areas where we could improve. We wanted to improve in areas that helped us work better as a team and deploy the best applications we can. We didn't start our transformation with no practices or principles as a team. We've been doing continuous integration, continuous delivery, and pull requests using GitHub for quite some time. We weren't starting from zero by any measure. But, **over time we've identified areas in our processes where we can improve based on how we work as a team**.
 
 ## Release branches
 
