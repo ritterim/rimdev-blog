@@ -40,7 +40,7 @@ We also found it more cost effective to group applications onto fewer app servic
 ## Infrastructure as code (Terraform)
 
 - **Before:** Manually use the Azure UI in the browser to construct everything.
-- **After:** Construct our web applications using Terraform.
+- **After:** Construct our web applications using [Terraform](https://www.terraform.io).
 - **Why:** With the addition of multiple Azure Web Apps behind Azure Traffic Manager the amount of assets and configuration needed for each individual web application became quite high. This allowed us to construct a large number of cloud assets in a reproducible fashion.
 
 ## Continued challenges
