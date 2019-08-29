@@ -36,7 +36,7 @@ A reason you may not immediately consider but has been a great benefit for us: *
 
 Adding additional Azure Web Apps into the mix doesn't come without additional complexity. These applications need to be able to move traffic between instances seamlessly and handle multiple instances starting up simultanously.
 
-## Shared backend state
+## Shared secrets
 
 If you need to access encrypted cookies and similar data between instances you'll need to share the encryption/decryption capability with the other instances. This *just works* if you have a single instance. But, once you have a completely separate Azure Web App *(not using the scale out feature)* you'll need to handle ASP.NET full framework machine keys ASP.NET Core Data Protection keys yourself.
 
