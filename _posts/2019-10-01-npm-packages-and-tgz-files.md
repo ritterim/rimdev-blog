@@ -14,7 +14,7 @@ image_url: https://unsplash.com/photos/JuFcQxgCXwA
 image_credit: Samuel Zeller | @samuelzeller
 ---
 
-Working with NPM packages locally can feel a little bit overwhelming at first. Over the last year, we have transitioned some of our infrastructure at RIMdev into several NPM packages that we can use across various projects. This has been a boon for us, but it also came with its own challenges. How do you test changes one of these NPM packages locally without having to publish and then install in the project you'd like to test in? Do you have to publish any change you want to test? Luckily, it's very easy to work with NPM packages locally thanks to a couple of handy features!
+Working with NPM packages locally can feel a little bit overwhelming at first. Over the last year, we have transitioned some of our infrastructure at RIMdev into several NPM packages that we can use across various projects. This has been a boon for us, but it also came with its own challenges. How do you test changes to one of these NPM packages locally without having to publish and then install in the project you'd like to test in? Do you have to publish any change you want to test? Luckily, it's very easy to work with NPM packages locally thanks to a couple of handy features!
 
 The workflow steps fairly simple:
 
