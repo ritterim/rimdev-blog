@@ -68,13 +68,13 @@ He showed us that the average person is using a cheap android phone that is two 
 
 [Elle Waters](https://simplyaccessible.com/) talked about how it is important to test your app with people with disabilities. When testing with blind people they found that some do not use video monitors when browsing a website. Without a monitor responsive websites will go into a default size and show the mobile version of the site. They never would of thought to test screen readers in mobile view.
 
-- keyboard accessibility is most important thing
+- keyboard accessibility is the most important thing
 - make it easy for people to recover from errors
 - provide multiple ways for people to interact with your forms
 - build accessibility testing into your workflow
 - use assistive technology sparingly
 
-[Mina Markham](http://mina.codes/) showed us the importance of giving description alt tags. When working on the Hillary Clinton Campaign website instead of using the alt tag “Hillary Clinton Logo” for the logo she used a description from the designer of the website to paint a picture of what the logo looks like.
+[Mina Markham](http://mina.codes/) showed us the importance of giving descriptive alt tags. When working on the Hillary Clinton Campaign website instead of using the alt tag “Hillary Clinton Logo” for the logo she used a description from the designer of the website to paint a picture of what the logo looks like.
 
 - use fallbacks if javascript does not work
 - use high contrast assets
@@ -90,11 +90,11 @@ Design systems were talked about as a solution to common problem we are having w
 [Dave Rupert](https://daverupert.com/) showed us how he utilized a design system to improve the performance of a large clients website.
 
 - patternize to reduce complexity
-- your website is a manafestation of your organizations problems
+- your website is a manifestation of your organization's problems
 
 [Brad Frost](https://bradfrost.com/) talked about how design systems and style guides can keep our sanity and align different departments of our team.
 
-- don't fall into special snowflake snydrome
+- don't fall into special snowflake syndrome
 - create minimum viable artifacts
 - with a good design system you may not need a comp
 
