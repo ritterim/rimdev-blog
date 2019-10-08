@@ -50,7 +50,7 @@ He showed us that the average person is using a cheap android phone that is two 
 
 - use css for animations
 - think small and modular
-- use pollyfills
+- use polyfills
 - build in layers plan for if things go wrong
 
 ## Role of Frontend Developer has changed
