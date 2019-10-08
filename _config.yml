@@ -1,6 +1,6 @@
 # Site settings
 description: A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: '' # the subpath of your site, e.g. /blog/
 url: https://rimdev.io
 enforce_ssl: rimdev.io
 rim_copy: Ritter Insurance Marketing LLC
@@ -41,7 +41,7 @@ user_logo: /assets/img/logos/RIMdev-logo-text-white.svg
 user_icon: /assets/img/logos/RIMdev-icon-white.svg
 email: anon@ritterim.com
 twitter_username: ritterim
-github_username:  ritterim
+github_username: ritterim
 disqus_username: rimdev
 
 # exclude my node related stuff
@@ -49,9 +49,9 @@ exclude: ['package.json', 'src', 'node_modules']
 
 # Url Shortener
 shortener:
-  basepath: /s/        # Path for stored redirects.
-  preserve: false      # Keep previously generated files.
-  salt:     "RimDev"   # The optional salt, used when hasing the Unix time.
+  basepath: /s/ # Path for stored redirects.
+  preserve: false # Keep previously generated files.
+  salt: 'RimDev' # The optional salt, used when hasing the Unix time.
 
 # Feed
 feed:
@@ -142,6 +142,10 @@ RIMdev:
     avatar: https://avatars0.githubusercontent.com/u/25621042?s=460&v=4
     title: UI/UX Developer
     github: natakurus
+  Seth Kline:
+    avatar: https://avatars3.githubusercontent.com/u/21014591?s=460&v=4
+    title: Jr. Frontend Developer
+    github: sethkline
   # Previous Team Members
   #   Only Keep Individuals That
   #   Are Associated With Posts
