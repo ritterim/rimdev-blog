@@ -38,7 +38,7 @@ He showed us that the average person is using a cheap android phone that is two 
 - test with android phones that are two years old
 - use lighter javascript frameworks like [Preact](https://preactjs.com/) instead of React, [Nuxt](https://nuxtjs.org/) instead of Vue or [Svelte](https://svelte.dev/) that compiles to Vanilla JS
 
-## Simplifiy Javascript Frameworks
+## Simplify Javascript Frameworks
 
 [Chris Ferdinandi](https://gomakethings.com/) made us question why our current javascript frameworks are so complicated.
 
