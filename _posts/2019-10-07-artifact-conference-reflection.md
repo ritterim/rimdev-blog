@@ -85,7 +85,7 @@ He showed us that the average person is using a cheap android phone that is two 
 Design systems were talked about as a solution to common problem we are having with complexity. [Dan Mall](https://superfriendlydesign.systems) talked about how design systems don’t need to scare designers that they will be replaced by the design system.
 
 - gives designers freedom from designing the same thing over and over again
-- more time to work on custom elements that would of not of been finished in past
+- more time to work on custom elements that would not of been finished in past
 
 [Dave Rupert](https://daverupert.com/) showed us how he utilized a design system to improve the performance of a large clients website.
 
