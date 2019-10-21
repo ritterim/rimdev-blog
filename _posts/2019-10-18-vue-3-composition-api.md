@@ -102,7 +102,7 @@ Knowing when to use refs and reactive can be confusing and best practices are st
 ```javascript
 <template>
   <button @click="increment">
-    Count is: {{ count.value }}, double is: {{ count.value * 2 }}
+    {% raw %}Count is: {{ count.value }}, double is: {{ count.value * 2 }}{% endraw %}
   </button>
 </template>
 
