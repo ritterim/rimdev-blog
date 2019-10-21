@@ -142,7 +142,7 @@ Reactive takes an object and returns a reactive object
 ```javascript
 setup() {
 Const todos = reactive({
-item:’’
+item: ''
 }) }
 ```
 
