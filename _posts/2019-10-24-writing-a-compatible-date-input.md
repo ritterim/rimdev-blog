@@ -8,7 +8,7 @@ tags:
 - HTML
 categories:
 - JavaScript
-twitter_text: "Writing a Browswer Compatible Date Input"
+twitter_text: "Writing a Browser Compatible Date Input"
 authors: Jaime Jones
 image: https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80
 image_url: https://unsplash.com/photos/FoKO4DpXamQ
