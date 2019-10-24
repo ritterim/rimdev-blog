@@ -38,4 +38,4 @@ There are additional values that you can put on your input that will only take e
 - In our use case in Vue, we have the value of the input linked to our `myDate` property, which will work regardless of the rendered type of the input.
 - We have our `trimDate` method that checks whether or not the input is rendered as date or text, and then if it is a text input, enforces formatting to follow the expected yyyy-mm-dd pattern.
 
-This provides a relatively easy solution to working with date inputs and having suitable fallbacks for older browsers without having to pull in extra libraries. If you'd like to play around with this a bit more, a full version can be found on my [Codepen](https://codepen.io/jaime-lynn/pen/MWWmrbN).
+This provides a relatively easy solution to working with date inputs and having suitable fallbacks for older browsers without having to pull in extra libraries. If you'd like to play around with this a bit more, a demo can be found [here](https://codepen.io/jaime-lynn/pen/MWWmrbN).
