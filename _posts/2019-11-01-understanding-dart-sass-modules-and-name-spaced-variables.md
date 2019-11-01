@@ -17,7 +17,7 @@ For a long time, we were dependent on the CSS frameworks of others -- and we wer
 
 As our needs grew, we needed a framework that suited all of them. So we created [Platform UI](https://style.rimdev.io), our custom framework written using Sass, BEM, and vanilla JS for our static sites and application platform.
 
-Sass recently launched the new [Dart Sass module system](https://github.com/sass/dart-sass/releases/tag/1.23.0), which [Miriam Suzanne](@mirisuzanne) did a great job of introducing in a recent [CSS-Tricks post](https://css-tricks.com/introducing-sass-modules/).
+Sass recently launched the new [Dart Sass module system](https://github.com/sass/dart-sass/releases/tag/1.23.0), which [Miriam Suzanne](https://twitter.com/@mirisuzanne) did a great job of introducing in a recent [CSS-Tricks post](https://css-tricks.com/introducing-sass-modules/).
 
 One of the largest considerations was the move away form `@import` in favour of the `@use` rule. `@import` places all variables, mixins, and functions into the global scope creating confusion at times as to the origin of that-thing-your-trying-to-call.
 
@@ -53,7 +53,7 @@ If you don't want to type `variables` everywhere, you can also `@use 'variables'
 
 Since we'll be checking the `_config.scss` file first, we don't have access to all of our variables. What we do have are maps that someone may, or may not, choose to use.
 
-Here is an example of using our colors:
+Here is an example using our colors:
 
 ```css
 // _config.scss
