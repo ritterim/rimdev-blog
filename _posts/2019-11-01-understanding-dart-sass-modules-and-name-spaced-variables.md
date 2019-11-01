@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding Dart Sass modules and name spaced variables"
+title: "Understanding Dart Sass modules and namespaced variables"
 date: 2019-11-01 11:48:26
 tags:
 - Sass
