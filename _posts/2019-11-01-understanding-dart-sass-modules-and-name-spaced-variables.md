@@ -177,7 +177,7 @@ The new Dart Sass module system has offered us better methods to accomplish the 
 
 The conversion was relatively straight-forward and offered us the opportunity to review our current code base and shift core concepts while not altering the resulting compiled CSS.
 
-I encourage all to embrace Sass modules! Here are a few links to get you can get started:
+I encourage all to embrace Sass modules! Here are a few links to get you started:
 
 - [Sass docs](https://sass-lang.com/documentation)
 - [Sass blog: The Module System is Launched](http://sass.logdown.com/posts/7858341-the-module-system-is-launched)
