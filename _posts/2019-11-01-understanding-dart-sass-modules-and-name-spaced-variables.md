@@ -15,7 +15,7 @@ image_credit: "@billy_huy"
 
 For a long time, we were dependent on the CSS frameworks of others -- and we were quite happy. 😀
 
-As our needs grew, we needed a framework that suited all of them. So we created [Platform UI](https://style.rimdev.io), our custom framework written Sass, BEM, and vanilla JS for our static sites and application platform.
+As our needs grew, we needed a framework that suited all of them. So we created [Platform UI](https://style.rimdev.io), our custom framework written using Sass, BEM, and vanilla JS for our static sites and application platform.
 
 Sass recently launched the new [Dart Sass module system](https://github.com/sass/dart-sass/releases/tag/1.23.0), which [Miriam Suzanne](@mirisuzanne) did a great job of introducing in a recent [CSS-Tricks post](https://css-tricks.com/introducing-sass-modules/).
 
