@@ -143,7 +143,7 @@ If `config.$config.colors` was never populated, `meta.type-of(config.$config-col
 One of the last changes that affected our codebase was the shift of `lighten($color, $percentage)` and `darken($color, $percentage)`. Darken still exists, but there's a more accurate way to darken a color now.
 Now we call colors and math as built-ins, so once again, `@use`-ing them at the top of the file and lighten is now `color.adjust($color, $precentage)`.
 
-With a more complex variable setup, we needed to go a bit further with also changed our `$hue-threshold: 10%;` to `$hue-threshold: .1;` which now requires the built-in math module.
+With a more complex variable setup, we needed to go a bit further which also changed our `$hue-threshold: 10%;` to `$hue-threshold: .1;` which now requires the built-in math module.
 
 So we ended on the following:
 
