@@ -7,16 +7,16 @@ tags:
  - IE 11
 categories:
  - JavaScript
-twitter_text: "Using forEach to loop through dom elements in IE 11"
+twitter_text: "Using forEach to loop through DOM elements in IE 11"
 authors: Andrew Rady
 image: https://images.unsplash.com/photo-1524993242431-9de0d2d86e85?w=1000
 image_url: https://unsplash.com/photos/xZMghzq01UQ
 image_credit: "@majidrangraz"
 ---
 
-Supporting IE comes with challenges if you are using es6, and while babel helps greatly there is a few gotcheas. One of the main one is using `forEach` on dom elements. In modern browsers it’s pretty easy to select dom elements and loop through them to add something like an `eventListener`. Open up IE 11 and you will find “Object doesn't support property or method 'forEach'” in the console.
+Supporting IE comes with challenges if you are using es6, and while babel helps greatly there is a few gotcheas. One of the main one is using `forEach` on DOM elements. In modern browsers it’s pretty easy to select DOM elements and loop through them to add something like an `eventListener`. Open up IE 11 and you will find “Object doesn't support property or method 'forEach'” in the console.
 
-There is a few simple ways we can solves this, the first is to wrap the dom selection in a `Array.prototype.slice.call` to allow IE to be able to iterate through it,
+There are a few simple ways we can solve this, the first is to wrap the DOM selection in a `Array.prototype.slice.call` to allow IE to iterate through it,
 
 ```js
 let navLinks = Array.prototype.slice.call(document.querySelectorAll('.navigation-link'))
