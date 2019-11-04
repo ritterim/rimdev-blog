@@ -16,7 +16,7 @@ image_credit: "@majidrangraz"
 
 Supporting IE comes with challenges if you are using es6, and while babel helps greatly there is a few gotcheas. One of the main one is using `forEach` on dom elements. In modern browsers it’s pretty easy to select dom elements and loop through them to add something like an `eventListener`. Open up IE 11 and you will find “Object doesn't support property or method 'forEach'” in the console.
 
-There is a few simple ways we can solves this, the first is to wrap dom select in a `Array.prototype.slice.call` to allow IE to be able to iterate through it,
+There is a few simple ways we can solves this, the first is to wrap the dom selection in a `Array.prototype.slice.call` to allow IE to be able to iterate through it,
 
 ```js
 let navLinks = Array.prototype.slice.call(document.querySelectorAll('.navigation-link'))
