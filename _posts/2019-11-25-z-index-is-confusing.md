@@ -7,9 +7,9 @@ tags:
 categories: CSS
 twitter_text: "z-index Is Confusing, but It Doesn't Have to Be"
 authors: Ted Krueger
-image:
-image_url:
-image_credit:
+image: https://images.unsplash.com/photo-1573257318420-b9e47a6f816e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80
+image_url: https://unsplash.com/photos/4n4Yz0wGLDc
+image_credit: Eric Prouzet
 ---
 
 <style>
@@ -73,7 +73,7 @@ image_credit:
 
 For the longest time, I was guilty of thinking I knew how `z-index` really worked. I was mistaken. I never really took the time to research how it actually worked. I believe a lot of front end devs are guilty of the same thing when they're starting out. If we want an element to stack above another we use `z-index`. Simple, right? Give it a little `z-index`. Wait, why didn’t that work? It needs to be higher. Really high, in fact. Let’s give it `z-index: 999` yeah that ought to do it. Not necessarily. 
 
-Maybe, most importantly, we should first understand the default stacking order of elements even without a specified `z-index`. Simply put, elements are ordered from bottom to top. So the next sibling element in the dom will stack on top of the previous. Think about it like solitaire. When you deal out the cards, the first is laying on the table. As you find relevant cards, you place them next, and on top of the previous card.
+Maybe, most importantly, we should first understand the default stacking order of elements, even without a specified `z-index`. Simply put, elements are ordered from bottom to top. So the next sibling element in the dom will stack on top of the previous. Think about it like solitaire. When you deal out the cards, the first is laying on the table. As you find relevant cards, you place them next, and on top of the previous card.
 
 <figure>
     <img src="https://cardgames.io/solitaire/images/solitaire-logo.png" style="max-width: 100%">
@@ -84,11 +84,11 @@ Maybe, most importantly, we should first understand the default stacking order o
 
 Ok, that’s great that we got that out of the way, but let’s get to examples of those times when we have an element that needs to be stacked over another and `z-index: 9999` is not cutting it.
 
-I think the problem occurs most of the time when you have specifically positioned elements throughout the page. Maybe you have a fixed header or aside text block. Layouts like this can make for a complicated stacking order along the z-axis because defined position values, other than `position: static`, affect the stacking order.
+I think the problem occurs most of the time when you have specifically positioned elements throughout the page. Maybe you have a fixed header or an aside text block. Layouts like this can make for a complicated stacking order along the z-axis because defined position values, other than `position: static`, affect the stacking order.
 
 Without any specified `z-index`, the default stack occurs as previously mentioned. If any element in the stack receives a position value of absolute, relative, or fixed, that element will appear on top of the stack, or closest to the screen, so to speak.
 
-For example, say we have a site with a flyout in the header. To keep it simple nothing on this page has a specified `z-index` value. 
+For example, say we have a site with a flyout in the header. To keep it simple, nothing on this page has a specified `z-index` value. 
 
 <p class="codepen" data-height="562" data-theme-id="light" data-default-tab="result" data-user="PhiloBeddoe" data-slug-hash="GRRbveG" style="height: 562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="z-index layout -1 ">
   <span>See the Pen <a href="https://codepen.io/PhiloBeddoe/pen/GRRbveG">
