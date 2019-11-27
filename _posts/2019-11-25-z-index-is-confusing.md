@@ -84,7 +84,7 @@ Maybe, most importantly, we should first understand the default stacking order o
 
 Ok, that’s great that we got that out of the way, but let’s get to examples of those times when we have an element that needs to be stacked over another and `z-index: 9999` is not cutting it.
 
-I think the problem occurs most of the time when you have specifically positioned elements throughout the page. Maybe you have a fixed header or an aside text block. Layouts like this can make for a complicated stacking order along the z-axis because defined position values, other than `position: static`, affect the stacking order.
+I think the problem occurs most of the time when you have specifically positioned elements throughout the page. Maybe you have a fixed header or an aside text block with absolute positioning. Layouts like this can make for a complicated stacking order along the z-axis because defined position values, other than `position: static`, affect the stacking order. Position values like `fixed` and `absolute`, remove elements from the order of the dom, which can add to the complication of z-axis stacking.
 
 Without any specified `z-index`, the default stack occurs as previously mentioned. If any element in the stack receives a position value of absolute, relative, or fixed, that element will appear on top of the stack, or closest to the screen, so to speak.
 
