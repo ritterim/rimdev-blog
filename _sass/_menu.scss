@@ -11,6 +11,7 @@
     background: rgba($color-white,.65);
     margin-top: -3.3em;
     position: relative;
+    z-index: 15;
     a.item {
         color: $grey-dark;
         @include border-radius(0);
