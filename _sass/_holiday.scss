@@ -16,11 +16,12 @@ body.holiday {
     background-size: 150vw;
   }
   main {
-    height: 100vh;
+    height: calc(100vh - 120px);
   }
   footer {
     background-color: white;
     color: #dc5a5b;
+    padding: 2rem 0;
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -29,12 +30,13 @@ body.holiday {
       color: dodgerblue;
     }
     p {
-      margin-top: -2rem;
-      padding-bottom: 1rem;
+      margin: 0;
     }
     .tree {
-      position: relative;
+      position: absolute;
       display: flex;
+      left: 50%;
+      top: -1.5rem;
       &:before {
         border-bottom: 30px solid white;
         border-left: 25px solid transparent;
@@ -53,13 +55,10 @@ body.holiday {
         transform: translate(-12px, 13px)
       }
       &:nth-child(1) {
-        left: 45%;
-        top: -1.5rem;
+        margin-left: -80px;
         z-index: 1;
       }
       &:nth-child(2) {
-        left: 50%;
-        top: -3.5rem;
         z-index: 2;
       }
     }
@@ -74,7 +73,7 @@ body.holiday {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   margin: 0;
   img, svg {
     width: 25vw;
