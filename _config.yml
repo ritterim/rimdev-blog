@@ -59,12 +59,6 @@ feed:
 
 # RIMdev posting authors
 RIMdev:
-  Khalid Abuhakmeh:
-    avatar: https://avatars0.githubusercontent.com/u/228256?v=3
-    title: Director of Software Development
-    desc: Focused on ASP.NET and Microsoft. Still love OSS &amp; Startups.
-    twitter: buhakmeh
-    github: khalidabuhakmeh
   Bill Boga:
     avatar: https://avatars2.githubusercontent.com/u/3382469?v=3
     title: Senior Software Developer
@@ -143,15 +137,21 @@ RIMdev:
     title: UI/UX Developer
     github: natakurus
   Seth Kline:
-    avatar: https://avatars3.githubusercontent.com/u/21014591?s=460&v=4
+    avatar: https://avatars2.githubusercontent.com/u/21014591?s=460&v=4
     title: Jr. Frontend Developer
     github: sethkline
   # Previous Team Members
   #   Only Keep Individuals That
   #   Are Associated With Posts
+  Khalid Abuhakmeh:
+    avatar: https://avatars0.githubusercontent.com/u/228256?v=3
+    title: Director of Software Development (Former)
+    desc: Focused on ASP.NET and Microsoft. Still love OSS &amp; Startups.
+    twitter: buhakmeh
+    github: khalidabuhakmeh
   Nathan White:
     avatar: https://avatars1.githubusercontent.com/u/4616177?v=3
-    title: Frontend Developer
+    title: Frontend Developer (Former)
     desc:
     twitter: comfroels
     github: comfroels
@@ -159,8 +159,10 @@ RIMdev:
   Ken Earl:
     avatar: https://avatars0.githubusercontent.com/u/1807843?v=3
     github: McKenjo
+    title: Backend Developer (Former)
     previous: true
   Justin Rusbatch:
+    title: Software Developer (Former)
     avatar: https://avatars0.githubusercontent.com/u/423549?v=3
     twitter: jrusbatch
     github: jrusbatch
