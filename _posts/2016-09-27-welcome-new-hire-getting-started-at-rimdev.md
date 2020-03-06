@@ -44,8 +44,7 @@ Applications are the supporting cast to your rising star.
 - [Visual Studio Professional](https://www.microsoft.com/net): IDE (available through MSDN).
 - [Office 365](http://microsoft.office.com): Because... business.
 - [Google Chrome](https://www.google.com/chrome/) or any modern browser.
-- [Elasticsearch](https://www.elastic.co/downloads): our Full-text search provider.
-- [Azure SDK](https://azure.microsoft.com/en-us/downloads/): our hosting environment.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop): To run our shared dependencies locally (MSSQL, Elasticsearch, Azurite).
 - [HighFive](https://highfive.com): video conferencing.
 - [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) and/or [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio) and/or your unlisted favorite SQL tool.
 
@@ -65,7 +64,6 @@ You may need some or all following accounts to interact with the team and the bu
 
 - **Active Directory**: If deemed worthy, our IT overlords shall grant you keys to the kingdom. **"HAIL IT!"**
 - [GitHub](https://github.com): our project management / source control platform.
-- [Raygun](https://raygun.com): Error handling.
 - [LastPass](https://lastpass.com): password management.
 - [Slack](https://slack.com): a user account to team chat.
 - [HighFive](https://highfive.com): a user account with our team.
