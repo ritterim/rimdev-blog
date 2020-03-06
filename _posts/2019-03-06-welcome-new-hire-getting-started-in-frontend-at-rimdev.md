@@ -37,7 +37,7 @@ We continue hard to deliver a great frontend experience to our users. In this se
 
 - [Node](https://nodejs.org/en/download) & [npm](https://www.npmjs.com/)
 - [Homebrew](https://docs.brew.sh/Installation)🍺: Mac's missing package manager.
-- [Git](https://www.git-scm.com/) & [Github](https://github.com)
+- [Git](https://www.git-scm.com/) & [GitHub](https://github.com)
 - [RBenv](https://github.com/rbenv/rbenv): Ruby version management (for [Jekyll](https://jekyllrb.com/))
 - [Jekyll](https://jekyllrb.com/): Ruby based static site generator.
 - [Hugo](https://gohugo.io/getting-started/quick-start/): Go lang based static site generator.
@@ -45,10 +45,11 @@ We continue hard to deliver a great frontend experience to our users. In this se
 https://code.visualstudio.com/), [Atom](https://atom.io/), other?
 - [iTerm2](https://www.iterm2.com/) or "[Oh My ZSH!](https://ohmyz.sh/)"
 - [.NET Core SDK](https://dotnet.microsoft.com/download)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop): To run our shared dependencies locally (MSSQL, Elasticsearch, Azurite).
 
 ## Supporting cast
 
-- [Lastpass](https://www.lastpass.com/)
+- [LastPass](https://www.lastpass.com/)
 - [Highfive](https://highfive.com): Video conferencing.
 - [Spotify](https://spotify.com) Premium 😏
 - [Headphones](https://www.cnet.com/topics/headphones/products/)
