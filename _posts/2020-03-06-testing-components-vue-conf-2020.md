@@ -31,13 +31,11 @@ export default {
       <button @click="decrease">Decrease</button>
     </div>
   `,
-
   data() {
     return {
       amount: 0
     }
   },
-
   methods: {
     increment() {
       this.amount++
@@ -51,8 +49,8 @@ export default {
 When creating test with jest we want them to be unit tests. So we want to test them in isolation from each other, and test the functionality of the components. The majority of our tests should be unit tests following this concept. In our first example of testing this component we are going to use the `mount` function in the `vue/test-utils` package. In the same directory as the component lets create the test `ScoreBoard.test.js`
 
 ```js
-import { mount } from 'vue/test-utils`
-import ScoreBoard from './ScoreBoard.vue`
+import { mount } from 'vue/test-utils'
+import ScoreBoard from './ScoreBoard.vue'
 
 it('increases score', () => {
   const wrapper = mount(ScoreBoard)
@@ -67,8 +65,8 @@ it('increases score', () => {
 Lets breaking down this little test. First thing is `const wrapper = mount(ScoreBoard)`. This will allows us to interact with the components, and here we are mainly interaction with the `vm` property which is the vue instance. We are testing that the vue data property `amount` starts at 0, call the `increment` methods and then checking the data property again. This is a simple test that just makes sure that the method does what we intended it to do. We could also do the same thing by mocking user interactions more with the example below.
 
 ```js
-import { mount } from 'vue/test-utils`
-import ScoreBoard from './ScoreBoard.vue`
+import { mount } from 'vue/test-utils'
+import ScoreBoard from './ScoreBoard.vue'
 
 it('increases score', () => {
   const wrapper = mount(ScoreBoard)
@@ -81,4 +79,56 @@ it('increases score', () => {
 })
 ```
 
-This example interactions more with the UI in the wrapper, but if your components grow there could be much more required setup in your tests. There is a trade of on how much you want or can invest in writing tests. I took the Application Testing in Vue.js from Vueconf US in Austin this year from [Alex](https://twitter.com/hootlex) and [Rolf](https://twitter.com/rahaug) and learned a lot. They are the founders of [vueschool.io](https://vueschool.io/) and I would recommend checking out their site. 
+This example interactions more with the UI in the wrapper, but if your components grow there could be much more required setup in your tests. There is a trade of on how much you want or can invest in writing tests. I took the Application Testing in Vue.js from Vueconf US in Austin this year from [Alex](https://twitter.com/hootlex) and [Rolf](https://twitter.com/rahaug) and learned a lot. They are the founders of [vueschool.io](https://vueschool.io/) and I would recommend checking out their site. One of the main sections that stuck out to me in this situation is using the `setData` function in favor of testing all of the user interactions. We have some larger and complex components here at Ritter is testing this way creates some long tests. Let create another component that is a little more complex and show how to use the `setData` to improve our tests and make them easier to read and maintain.
+
+```js
+<template>
+  <div>
+    <span>{{ amount }}</span>
+    <span click="toggleDetails">Click me!</span>
+    <div v-if="showDetails">
+      <button @click="increment" class="increment">Increment</button>
+      <button @click="decrease" >Decrease</button>
+    </div>
+  </div>
+</template>
+export default {
+  data() {
+    return {
+      showDetails: false,
+      amount: 0
+    }
+  },
+  methods: {
+    toggleDetails() {
+      this.showDetails = !this.showDetails
+    },
+    increment() {
+      this.amount++
+    },
+    decrease() {
+      this.amount--
+    }
+  }
+}
+```
+
+Above is a slightly more complex component that require a little more UX to increase or decrease the amount. We could easily find the element and trigger another click event, but this is where the test complexity could build in larger components. Lets make refactor our test to handle this.
+
+```js
+import { mount } from 'vue/test-utils'
+import ScoreBoard from './ScoreBoard.vue'
+
+it('increases score', () => {
+  const wrapper = mount(ScoreBoard)
+  expect(wrapper.vm.amount).toBe(0)
+
+  wrapper.setData({
+    showDetails: true
+  })
+
+  wrapper.vm.increase()
+  
+  expect(wrapper.vm.amount).toBe(1)
+})
+```
