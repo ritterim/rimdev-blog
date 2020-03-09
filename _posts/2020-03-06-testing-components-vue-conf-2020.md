@@ -7,14 +7,14 @@ tags:
 - Jest
 - Testing
 categories:
-twitter_text: Getting started with testings your Vue components with Jest
+twitter_text: Getting started with testing your Vue components with Jest
 authors: Andrew Rady
 image: https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/kN_kViDchA0
 image_credit: Arlington Research
 ---
 
-Testing is an important step we can take as developer to reduce bugs in our code, but testing seems to be one of the best practices that is skipped the most. When it comes to development I have noticed that testing is its own framework all in itself that you need to learn, and understand how it works. If you have worked on a large scale application you know how hard manual testing becomes. As front end developers who write with Vue.js Jest is one of the recommended testing framework. Let's dive into using Jest the [vue test utils](https://www.npmjs.com/package/@vue/test-utils) package in our applications.
+Testing is an important step we can take as developers to reduce bugs in our code, but testing seems to be one of the best practices that is skipped the most. When it comes to development I have noticed that testing is its own framework all in itself that you need to learn, and understand how it works. If you have worked on a large scale application you know how hard manual testing becomes. As front end developers who write with Vue.js Jest is one of the recommended testing framework. Let's dive into using Jest the [vue test utils](https://www.npmjs.com/package/@vue/test-utils) package in our applications.
 
 ## Install and Setup
 If you are using the vue cli all you need to run is `vue add @vue/unit-jest`, but if you have a custom setup there is a little more. To install it with npm we will want to run `npm install --save-dev @vue/test-utils`. Make sure you include the `--save-dev` section since we only need this as a dev dependencies (always try and keep you production package size down). That's all you will need to get started
@@ -131,3 +131,6 @@ it('increases score', () => {
   expect(wrapper.vm.amount).toBe(1)
 })
 ```
+
+## Conclusion
+Vue and Jest is a great combination for adding unit tests for our applications. There is much more to testing then this simple post, but I hope this is a good start for those just looking into testing. Try and keep them simple and don't get wrapped into making tests more complex then they need to be. Jest had many other built in features to handle other situations that we will cover in future posts. 
