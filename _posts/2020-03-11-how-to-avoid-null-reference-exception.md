@@ -14,7 +14,7 @@ image_url: https://unsplash.com/photos/9SoCnyQmkzI
 image_credit: Jefferson Santos
 ---
 
-I have been working as a software developer for almost three years, the most common exception or bug I made is [NullReferenceException](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) -`System.NullReferenceException: Object reference not set to an instance of an object.` This exception is thrown when you try to access any properties / methods/ indexes on a type of object which points to null. 
+I have been working as a software developer for almost three years, the most common exception or bug I made is [NullReferenceException](https://docs.microsoft.com/en-us/dotnet/api/system.nullreferenceexception?view=netframework-4.8) -`System.NullReferenceException: Object reference not set to an instance of an object.` This exception is thrown when you try to access any properties / methods/ indexes on a type of object which points to null. 
 
 ## Common Scenario 1:
 
@@ -110,6 +110,17 @@ var DefaultAge = 5;
 var IsDogAgeNull = dog1?.dog?.age == null;
 
 int dogAge = IsDogAgeNull ?  DefaultAge : dog1?.dog?.age;
+```
+ C# 8 brings a pretty neat featre - [Nullable reference types] (https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) to solve the `NullReferenceException` issue.
+
+You will need to add the follow code into `<PropertyGroup>` in your `.csproj`
+```csharp
+<LangVersion>8.0</LangVersion>
+<NullableContextOptions>enable</NullableContextOptions>
+```
+and then you can do something like 
+```csharp
+Dog? dog = null; // nullable enable
 ```
 
 
