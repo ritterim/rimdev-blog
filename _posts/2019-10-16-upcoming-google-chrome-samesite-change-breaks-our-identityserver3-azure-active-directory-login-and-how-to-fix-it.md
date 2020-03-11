@@ -53,7 +53,7 @@ namespace YourNamespaceHere
                 if (!scv.Equals(default(KeyValuePair<string, string[]>)))
                 {
                     var cookieValues = context.Response.Headers.GetValues("Set-Cookie");
-                    var updatedValues = cookieValues.Select(v => v + $"; SameSite=none").ToArray();
+                    var updatedValues = cookieValues.Select(v => v + $"; SameSite=none; Secure").ToArray();
                     context.Response.Headers.SetValues("Set-Cookie", updatedValues);
                 }
             }, null);
