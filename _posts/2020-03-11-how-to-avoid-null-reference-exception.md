@@ -14,7 +14,7 @@ image_url: https://unsplash.com/photos/9SoCnyQmkzI
 image_credit: Jefferson Santos
 ---
 
-I have been working as a software developer for almost three years, the most common exception or bug I made is `System.NullReferenceException: Object reference not set to an instance of an object.` This exception is thrown when you try to access any properties / methods/ indexes on a type of object which points to null. 
+I have been working as a software developer for almost three years, the most common exception or bug I made is [NullReferenceException](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) -`System.NullReferenceException: Object reference not set to an instance of an object.` This exception is thrown when you try to access any properties / methods/ indexes on a type of object which points to null. 
 
 ## Common Scenario 1:
 
@@ -30,7 +30,7 @@ public class Program
     }
 }
 ```
-In the example above, we try to call the `ToString()` method, it will throw a NullReferenceException because `dog` is pointing to null.
+In the example above, we try to call the `ToString()` method, it will throw a `NullReferenceException` because `dog` is pointing to null.
 
 ## Common Scenario 2:
 ```csharp
