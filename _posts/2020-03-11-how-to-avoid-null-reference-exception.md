@@ -60,6 +60,7 @@ public class Example
 ```
 In the example above, you will get `NullReferenceException` because `Dogs` property is null ,there is no way to get the data.
 
+## Solutions:
 `NullReferenceException` can be very frustating during development, so how can we avoid `NullReferenceException`?
 
 The solution is very simple, you have to check for every possible null exception property before accessing instance members.
