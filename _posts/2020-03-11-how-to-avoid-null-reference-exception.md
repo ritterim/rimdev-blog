@@ -20,15 +20,17 @@ I have been working as a software developer for almost three years, the most com
 
 ```csharp
 using System; 
+
 public class Program
 {
     public static void Main()
     {
-       string dog = null;
+          string dog = null;
 	   var value = dog.ToString(); //Object reference not set to an instance of an object
    	   Console.WriteLine(value);
     }
 }
+
 ```
 In the example above, we try to call the `ToString()` method, it will throw a `NullReferenceException` because `dog` is pointing to null.
 
