@@ -39,26 +39,27 @@ using System;
 public class Dog
 {
     public string Breed { get; set; }
-	public int age { get; set; }
+	  public int Age { get; set; }
 }
+
 public class Dogs
 {
-    public Dog dog { get; set; }
+    public Dog Dog { get; set; }
 }
 
 public class Example
 {
-   public static void Main()
-   {
-      Dogs dog1 = new Dogs();
-      int dogAge = dog1.dog.age; // Object reference not set to an instance of an object
+    public static void Main()
+    {
+        Dogs dog1 = new Dogs();
+        int dogAge = dog1.Dog.Age; // Object reference not set to an instance of an object
 	   
-      Console.WriteLine(dogAge.ToString());  
-   }
+        Console.WriteLine(dogAge.ToString());  
+    }
 }
 
 ```
-In the example above, you will get `NullReferenceException` because `Dogs` property is null ,there is no way to get the data.
+In the example above, you will get `NullReferenceException` because `Dogs` property is null, there is no way to get the data.
 
 ## Solutions:
 `NullReferenceException` can be very frustating during development, so how can we avoid `NullReferenceException`?
@@ -83,7 +84,7 @@ If (dogs == null)
 It will check the property before accessing instance members.
 
 ```csharp
-int? dogAge = dog1?.dog?.age;
+int? dogAge = dog1?.Dog?.Age;
 ```
 
 **Method 3** - use [GetValueOrDefault()](https://docs.microsoft.com/en-us/dotnet/api/system.nullable-1.getvalueordefault?view=netframework-4.8) 
@@ -91,7 +92,7 @@ int? dogAge = dog1?.dog?.age;
 It will set a default value if the value is null.
 
 ```csharp
-int dogAge = age.GetValueOrDefault();
+int dogAge = Age.GetValueOrDefault();
 ```
 
 **Method 4** - use [Null Coalescing Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator) 
@@ -100,21 +101,21 @@ You can set a custom value by using `??` if the value is null
 
 ```csharp
 var DefaultAge = 5;
-int dogAge = dog1?.dog?.age ?? DefaultAge
+int dogAge = dog1?.Dog?.Age ?? DefaultAge
 ```
 
 **Method 5** - use [?: operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator)
 
 ```csharp
 var DefaultAge = 5;
-var IsDogAgeNull = dog1?.dog?.age == null;
+var IsDogAgeNull = dog1?.Dog?.Age == null;
 
-int dogAge = IsDogAgeNull ?  DefaultAge : dog1?.dog?.age;
+int dogAge = IsDogAgeNull ?  DefaultAge : dog1?.Dog?.Age;
 ```
  C# 8 brings a pretty neat featre - [Nullable reference types] (https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) to solve the `NullReferenceException` issue.
 
 You will need to add the follow code into `<PropertyGroup>` in your `.csproj`
-```csharp
+```xml
 <LangVersion>8.0</LangVersion>
 <NullableContextOptions>enable</NullableContextOptions>
 ```
