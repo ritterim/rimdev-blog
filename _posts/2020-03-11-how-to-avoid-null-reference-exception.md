@@ -114,7 +114,7 @@ var IsDogAgeNull = dog1?.Dog?.Age == null;
 
 int dogAge = IsDogAgeNull ?  DefaultAge : dog1?.Dog?.Age;
 ```
- C# 8 brings a pretty neat featre - [Nullable reference types] (https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) to solve the `NullReferenceException` issue.
+ C# 8 brings a pretty neat feature - [Nullable reference types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) to solve the `NullReferenceException` issue.
 
 You will need to add the follow code into `<PropertyGroup>` in your `.csproj`
 ```xml
