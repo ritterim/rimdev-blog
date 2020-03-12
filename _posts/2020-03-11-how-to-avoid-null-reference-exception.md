@@ -24,9 +24,9 @@ public class Program
 {
     public static void Main()
     {
-     	 string dog = null;
-		 var value = dog.ToString(); //Object reference not set to an instance of an object
-   	     Console.WriteLine(value);
+       string dog = null;
+	   var value = dog.ToString(); //Object reference not set to an instance of an object
+   	   Console.WriteLine(value);
     }
 }
 ```
