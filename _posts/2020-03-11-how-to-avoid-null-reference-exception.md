@@ -25,8 +25,8 @@ public class Program
     public static void Main()
     {
      	 string dog = null;
-		   var value = dog.ToString(); //Object reference not set to an instance of an object
-   	   Console.WriteLine(value);
+		 var value = dog.ToString(); //Object reference not set to an instance of an object
+   	     Console.WriteLine(value);
     }
 }
 ```
@@ -39,7 +39,7 @@ using System;
 public class Dog
 {
     public string Breed { get; set; }
-	  public int Age { get; set; }
+    public int Age { get; set; }
 }
 
 public class Dogs
