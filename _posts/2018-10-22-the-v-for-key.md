@@ -17,8 +17,10 @@ image_credit: Debby Hudson
 If you're familiar with Vue at all, you're probably familiar with the `v-for`. And if you've used any other front end frameworks, they each provide ways to loop over data and markup within your HTML template. The purpose of this post is to talk about the `key` attribute that is required on every `v-for`, and what makes it so important.
 
 I'll be the first to admit, when I started writing Vue, the `key` attribute wasn't required. When it became required (or at least highly frowned upon to not include), I shrugged, simply added an index, and moved on.
-```
+```html
+{% raw %}
 <h1 v-for="(thing, index) in things" :key="index">{{ thing }}</h1>
+{% endraw %}
 ```
 
 This article really is about the `key` attribute which is now strongly suggested (or can be required by a linter) on all usages of `v-for` and some of the issues that you may run into if you go the common route of using the `index`. I'd recommend reading the actual [Vue documentation](https://vuejs.org/v2/guide/list.html#key) for it as either a follow-up or some background knowledge.
@@ -30,11 +32,13 @@ Whenever possible, as suggested by the Vue documentation, you should use the uni
 For the sake of our examples below, let's use books. We have a list of books, that we loop over and render in a `book-cmp`.
 
 Let's say our template looks like this:
-```
+```html
+{% raw %}
 <div class="book">
   <h1>{{ book.title }}</h1>
   <div v-if="isCheckedOut" class="label">Checked Out</div>
 </div>
+{% endraw %}
 ```
 We display the book's title, and a label that lets us know if the book is already checked out.
 
@@ -64,7 +68,7 @@ export default {
 For the sake of our simple example, let's say that we have the book passed in as a prop, but we have to call a separate system to actually check if the book is checked out. Perhaps this system takes into account information such as the user's local library or something.
 
 Let's say we loop through the books like so:
-```
+```html
 <book-cmp v-for="(book, index) in books" :key="index" :book="book"></book-cmp>
 ```
 
