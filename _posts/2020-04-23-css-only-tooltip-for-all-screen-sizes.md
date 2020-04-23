@@ -28,8 +28,8 @@ We wanted to keep the markup light. So we created a tooltip that could be used w
 
 ```
 <div 
-  class=”tooltip-right” 
-  data-pui-tooltip=”This is what our tooltips look like.”>
+  class="tooltip-right"
+  data-pui-tooltip="This is what our tooltips look like.">
   Tooltip
 </div>
 ```
