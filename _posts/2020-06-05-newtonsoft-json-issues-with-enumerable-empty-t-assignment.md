@@ -20,6 +20,10 @@ One thing we've noticed is `Newtonsoft.Json` having issues with `Enumerable.Empt
 
 When ran directly it throws a `JsonSerializationException`. When ran through `TestServer` it returns a **400 Bad Request**.
 
+## A fix
+
+A fix, as mentioned by [Bill Boga](/authors/bill-boga/) and demonstrated via tests (see [https://github.com/kendaleiv/AspNetCoreJsonTests/commit/8a538f8a6d8d32b68c4eb331dddee9792ada8372](https://github.com/kendaleiv/AspNetCoreJsonTests/commit/8a538f8a6d8d32b68c4eb331dddee9792ada8372)), is to install the `Newtonsoft.Json` package manually, even if it's not absolutely necessary for the project to compile.
+
 ## Workaround
 
 We can change all usages of `Enumerable.Empty<T>()` to something else, like `new List<T>()`, `Array.Empty<T>()`, etc. This makes everything *just work* the way you'd expect.
