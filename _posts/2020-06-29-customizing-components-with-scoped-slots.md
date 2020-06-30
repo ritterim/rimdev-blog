@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Customizing components with scoped slots"
+title: "Customizing VueJS components with scoped slots"
 date: 2020-06-29 16:09:19
 tags: 
 - VueJS 
