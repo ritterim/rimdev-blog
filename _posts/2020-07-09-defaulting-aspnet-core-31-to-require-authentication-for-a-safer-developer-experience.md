@@ -18,7 +18,7 @@ Typically with ASP.NET Core 3.1 when no specific authorization requirements are 
 
 ## Solution
 
-**For a safe-by-default experience we can require authentication when no specific instructions are set.**
+**For a safe-by-default experience, we can require authentication when no specific instructions are set.**
 
 ```csharp
 namespace MyWebApplication
