@@ -65,11 +65,6 @@ RIMdev:
     desc: Polyglot with focus on C#. Also enjoy building and tinkering with hardware.
     twitter: billbogaiv
     github: billbogaiv
-  Ken Dale:
-    avatar: https://avatars3.githubusercontent.com/u/1012917?v=3
-    title: Senior Application Developer
-    twitter: kendaleiv
-    github: kendaleiv
   Tim Graham:
     avatar: https://avatars3.githubusercontent.com/u/7881414?v=3
     twitter:
@@ -149,6 +144,11 @@ RIMdev:
     desc: Focused on ASP.NET and Microsoft. Still love OSS &amp; Startups.
     twitter: buhakmeh
     github: khalidabuhakmeh
+  Ken Dale:
+    avatar: https://avatars3.githubusercontent.com/u/1012917?v=3
+    title: Senior Application Developer (Former)
+    twitter: kendaleiv
+    github: kendaleiv
   Nathan White:
     avatar: https://avatars1.githubusercontent.com/u/4616177?v=3
     title: Frontend Developer (Former)
