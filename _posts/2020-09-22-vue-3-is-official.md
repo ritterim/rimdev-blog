@@ -45,11 +45,14 @@ Working with modals is a breeze with the new feature teleport. You can send data
 ## Suspense makes it easier to work with Async Data
 
 Vue 3's `suspense` gives developers a better way of adding loading state to elements. One pattern that I have run into is loading data from an API; I would use `v-if` the data isn't loaded, to show a loading spinner. Using `suspense`, you can simplify this process by wrapping your async data element in `<suspense>`. You then use two templates with `<template #default>` or `<template #fallback>`. The default template is what you want the component to look like when the data is loaded, and the fallback is where you would put your loading spinner.
+
+## Vue 3 is worth the wait
+
 I am excited about the release of Vue 3! The changes that were made will make learning Vue a little harder, with some of the functional programming aspects of the composition API. The benefits of having more reusable code are worth the complexity, in my opinion. Having the ability to use multiple root elements and v-models, will make it easier to work with. The teleport feature and suspense will make it easier to keep up with the demands of a web app.
 
 ## further resources
 
-[vue 3 source code](https://github.com/vuejs/vue-next/releases/tag/v3.0.0)
-[Evan You Vue 3 announcement at Vuejs Global](https://www.youtube.com/watch?v=Vp5ANvd88x0&t)
-[Natalia Tepluhina // Migrating a big old codebase to Vue 3: what I'm excited about at Vuejs Global](https://www.youtube.com/watch?v=K1JoWmXh4qA&t)
-[What you'll love in Vue 3 by Alex Kyriakidis | VueConf US 2020](https://www.youtube.com/watch?v=feSVHEQ8ik4)
+- [vue 3 source code](https://github.com/vuejs/vue-next/releases/tag/v3.0.0)
+- [Evan You Vue 3 announcement at Vuejs Global](https://www.youtube.com/watch?v=Vp5ANvd88x0&t)
+- [Natalia Tepluhina // Migrating a big old codebase to Vue 3: what I'm excited about at Vuejs Global](https://www.youtube.com/watch?v=K1JoWmXh4qA&t)
+- [What you'll love in Vue 3 by Alex Kyriakidis | VueConf US 2020](https://www.youtube.com/watch?v=feSVHEQ8ik4)
