@@ -55,4 +55,4 @@ I am excited about the release of Vue 3! The changes that were made will make le
 - [vue 3 source code](https://github.com/vuejs/vue-next/releases/tag/v3.0.0)
 - [Evan You Vue 3 announcement at Vuejs Global](https://www.youtube.com/watch?v=Vp5ANvd88x0&t)
 - [Natalia Tepluhina // Migrating a big old codebase to Vue 3: what I'm excited about at Vuejs Global](https://www.youtube.com/watch?v=K1JoWmXh4qA&t)
-- [What you'll love in Vue 3 by Alex Kyriakidis | VueConf US 2020](https://www.youtube.com/watch?v=feSVHEQ8ik4)
+- [What you'll love in Vue 3 by Alex Kyriakidis // VueConf US 2020](https://www.youtube.com/watch?v=feSVHEQ8ik4)
