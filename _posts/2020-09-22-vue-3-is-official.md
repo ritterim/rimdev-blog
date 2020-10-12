@@ -21,9 +21,11 @@ Here are some of the exciting features that are now available.
 ## Vue 3 is Faster and smaller than before
 
 The biggest reason to upgrade to Vue 3 is that you will have an immediate performance gain. Vue 3 has a brand new, faster, virtual DOM.
-Faster component mounting
-Faster downloads
-Faster server-side rendering (2-3x)
+
+- Faster component mounting
+- Faster downloads
+- Faster server-side rendering (2-3x)
+
 You can also take advantage of tree shaking, where the app will only download the javascript you need for each part of your app.
 
 ## Vue 3 makes it easier to reuse code on large enterprise web applications
