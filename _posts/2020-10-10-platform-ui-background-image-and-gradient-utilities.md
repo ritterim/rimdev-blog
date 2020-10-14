@@ -19,7 +19,7 @@ image_credit: Ryan Stone
 
 If you're not familiar with [Platform UI](https://style.rimdev.io/), it's a utility rich CSS framework we created.
 
-As we look to migrate all of our apps and static sites to reply on Platform UI, we realized that one of the core CSS issues we regularly hacked into place was background images. 
+As we look to migrate all of our apps and static sites to Platform UI, we realized that one of the core CSS issues we regularly hacked into place was background images. 
 
 ## Background image
 
