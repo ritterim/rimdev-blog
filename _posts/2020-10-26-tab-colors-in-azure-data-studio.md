@@ -33,24 +33,32 @@ My first step was to read the [Azure Data Studio documentation](https://docs.mic
 A critical point to remember is that connections have to be organized into server groups.
 
 1. Click the **New Server Group** folder to create.
-  ![Azure Data Studio New Server Group](/images/documentation/azure-data-studio-new-server-group.png)
+  
+    ![Azure Data Studio New Server Group](/images/documentation/azure-data-studio-new-server-group.png)
 
 2. Add the **Server group name, Group description,** and **Group color**. Click **OK**.
-  ![Azure Data Studio Add Server Group](/images/documentation/azure-data-studio-add-server-group.png)
+    
+    ![Azure Data Studio Add Server Group](/images/documentation/azure-data-studio-add-server-group.png)
 
 3. Go to **File > Preferences > Settings**.
+
 4. Search for **tab color**.
+
 5. Enable **Tab Color Mode**. I used the **Fill** setting.
-  ![Azure Data Studio Enable Tab Color Mode](/images/documentation/azure-data-studio-enable-tab-color.png)
+    
+    ![Azure Data Studio Enable Tab Color Mode](/images/documentation/azure-data-studio-enable-tab-color.png)
 
 6. Drag your server connections to the appropriate server group.
+
 7. And voila! The next time you create a query, the query tab will take on the color of the server group.
 
-  ![Azure Data Studio Enable Tabs Result](/images/documentation/azure-data-studio-final-result.png)
+    ![Azure Data Studio Enable Tabs Result](/images/documentation/azure-data-studio-final-result.png)  
 
 
 By the way, if you ever want to get fancy and modify the color palette, you can:
 
 1. Go back to **File > Preferences > Settings**. 
-1. Search for **color**. 
-1. In the **Data > Connection** section, modify the `settings.json` to reflect your color choices.
+
+2. Search for **color**. 
+
+3. In the **Data > Connection** section, modify the `settings.json` to reflect your color choices.
