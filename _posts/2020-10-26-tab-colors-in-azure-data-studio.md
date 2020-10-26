@@ -18,7 +18,7 @@ They allow you to visually separate different connections to development, stagin
 
 ![Azure Data Studio Color Tabs Example](/images/documentation/azure-data-studio-color-tabs-example.png)
 
-## Why The Post?
+## Why the post?
 
 As a documentarian, I don't work with Azure Data Studio daily. But I still write about it. In addition, one of our backend developers recently introduced me to the [Feynman Technique](https://fs.blog/2012/04/feynman-technique/). Solid advice for anyone to follow.
 
@@ -28,7 +28,7 @@ So as I normally do, I set out to create these tabs.
 
 My first step was to read the [Azure Data Studio documentation](https://docs.microsoft.com/en-us/sql/azure-data-studio/settings?view=sql-server-ver15#tab-color). Microsoft's Docs are usually a dream resource. However, I soon found myself struggling a bit. I operate under the basic assumption that I'm usually at fault, but maybe a more thorough explanation could benefit others as well.
 
-## Let's Set Up The Tabs!
+## Let's set up the tabs!
 
 A critical point to remember is that connections have to be organized into server groups.
 
