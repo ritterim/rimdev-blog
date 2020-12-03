@@ -14,6 +14,10 @@ image_url: https://unsplash.com/photos/AqrD5QQ0ajM
 image_credit: "@ilumire"
 ---
 
+<div class="ui warning message">
+  This post is getting old! See an updated version <a href="">here</a>
+</div>
+
 New to the frontend at RIMdev, or looking for more about our Frontend team? Here's a quick overview of our team, tools, and culture!
 
 As a whole, RIMdev has always strived to use the technology that best suits the task. This post will give you a current overview, but software changes and so do we.
