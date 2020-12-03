@@ -67,6 +67,8 @@ All things [Adobe](https://www.adobe.com/), but especially [XD](https://www.adob
 - [Codepen](https://codepen.io): A great place to work out problems and share! Create an account now! (shameless plug!)
 - [Sassmeister](https://www.sassmeister.com/): This is a great tool to see how that Sass rabbit hole you're headed down will render 😂
 - [Flexbox zombies](https://geddski.teachable.com/p/flexbox-zombies): You should know it. If you don't, this is a fun and free way to learn
+- [Nielsen Norman Group](https://www.nngroup.com/): blog of world leaders in research-based user experience
+- [Dribbble](https://dribbble.com/): Everyone needs inspiration
 
 ## That's really great, but what about professional development (me)?
 
