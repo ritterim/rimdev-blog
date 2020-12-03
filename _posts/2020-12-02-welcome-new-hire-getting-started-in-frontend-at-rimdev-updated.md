@@ -37,14 +37,14 @@ Looking to get up to speed on either? Here are some quick keyboard references fo
 
 ## Environment
 
-RIMdev is alway on a journey to deliver a great, and constantly improving, frontend experience for our users. We leverage [VueJS](https://vuejs.org/), [webpack](https://webpack.js.org/) (although [ParcelJS](https://parceljs.org/) is gaining ground🤞), and [Sass](https://sass-lang.com/) heavily to build our Ritter Platform and family of static marketing sites. We've also built our own CSS framework [Platform UI](https://style.rimdev.io/) which continues to grow and be applied across our ecosystem. If you want to take a closer look, head over to [npm](https://www.npmjs.com/package/@ritterim/platform-ui) and grab a copy.
+RIMdev is always on a journey to deliver a great, and constantly improving, frontend experience for our users. We leverage [VueJS](https://vuejs.org/), [webpack](https://webpack.js.org/) (although [ParcelJS](https://parceljs.org/) is gaining ground🤞), and [Sass](https://sass-lang.com/) heavily to build our Ritter Platform and family of static marketing sites. We've also built our own CSS framework [Platform UI](https://style.rimdev.io/) which continues to grow and be applied across our ecosystem. If you want to take a closer look, head over to [npm](https://www.npmjs.com/package/@ritterim/platform-ui) and grab a copy.
 
 - [Node](https://nodejs.org/en/download) & [npm](https://www.npmjs.com/)
 - [Homebrew](https://docs.brew.sh/Installation)🍺: Mac's missing package manager.
 - [Git](https://www.git-scm.com/) & [GitHub](https://github.com)
 - [RBenv](https://github.com/rbenv/rbenv): Ruby version management (for [Jekyll](https://jekyllrb.com/))
 - [Jekyll](https://jekyllrb.com/): Ruby-based static site generator.
-- [Hugo](https://gohugo.io/getting-started/quick-start/): Go lang based static site generator.
+- [Hugo](https://gohugo.io/getting-started/quick-start/): [Go](https://golang.org/) based static site generator.
 - [VS Code](Visual Studio Code - Code Editing. Redefined
 https://code.visualstudio.com/), [Atom](https://atom.io/), other?
 - [iTerm2](https://www.iterm2.com/) or "[Oh My ZSH!](https://ohmyz.sh/)"
