@@ -51,6 +51,10 @@ https://code.visualstudio.com/), [Atom](https://atom.io/), other?
 - [.NET SDK](https://dotnet.microsoft.com/download)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop): To run our shared dependencies locally (MSSQL, Elasticsearch, Azurite).
 
+## UI/UX Design and prototyping
+
+All things [Adobe](https://www.adobe.com/), but especially [XD](https://www.adobe.com/products/xd.html)!
+
 ## Supporting cast
 
 - [LastPass](https://www.lastpass.com/)
@@ -60,14 +64,9 @@ https://code.visualstudio.com/), [Atom](https://atom.io/), other?
 
 ## More online 
 
-### [Codepen](https://codepen.io) 
-A great place to work out problems and share! Create an account now! (shameless plug!)
-
-### [Sassmeister](https://www.sassmeister.com/) 
-This is a great tool to see how that Sass rabbit hole you're headed down will render 😂
-
-### [Flexbox zombies](https://geddski.teachable.com/p/flexbox-zombies) 
-You should know it. If you don't, this is a fun and free way to learn
+- [Codepen](https://codepen.io): A great place to work out problems and share! Create an account now! (shameless plug!)
+- [Sassmeister](https://www.sassmeister.com/): This is a great tool to see how that Sass rabbit hole you're headed down will render 😂
+- [Flexbox zombies](https://geddski.teachable.com/p/flexbox-zombies): You should know it. If you don't, this is a fun and free way to learn
 
 ## That's really great, but what about professional development (me)?
 
