@@ -15,7 +15,7 @@ image_credit: "@ilumire"
 ---
 
 <div class="ui warning message">
-  This post is getting old! See an updated version <a href="">here</a>
+  This post is getting old! See an updated version <a href="/welcome-new-hire-getting-started-in-frontend-at-rimdev/">here</a>
 </div>
 
 New to the frontend at RIMdev, or looking for more about our Frontend team? Here's a quick overview of our team, tools, and culture!
