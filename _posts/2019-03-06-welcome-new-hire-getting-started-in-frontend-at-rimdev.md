@@ -44,7 +44,7 @@ We continue hard to deliver a great frontend experience to our users. In this se
 - [Git](https://www.git-scm.com/) & [GitHub](https://github.com)
 - [RBenv](https://github.com/rbenv/rbenv): Ruby version management (for [Jekyll](https://jekyllrb.com/))
 - [Jekyll](https://jekyllrb.com/): Ruby based static site generator.
-- [Hugo](https://gohugo.io/getting-started/quick-start/): Go lang based static site generator.
+- [Hugo](https://gohugo.io/getting-started/quick-start/): [Go](https://golang.org/) based static site generator.
 - [VS Code](Visual Studio Code - Code Editing. Redefined
 https://code.visualstudio.com/), [Atom](https://atom.io/), other?
 - [iTerm2](https://www.iterm2.com/) or "[Oh My ZSH!](https://ohmyz.sh/)"
