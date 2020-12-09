@@ -78,8 +78,6 @@
           inverted: true
         })
         .modal('show');
-      $('.dimmer')
-        .css('overflow-y', 'scroll');
     });
 
 
