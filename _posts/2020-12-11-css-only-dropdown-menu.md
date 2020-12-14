@@ -32,7 +32,7 @@ Now we use plain old vanilla JS to get us what we need. Let me show you how to m
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 <br>
 
-Notice in the example above, when you click Dropdown Action, the dropdown menu displays. We add a class of `active` to the dropdown and change the `max-height` property. I set it to be `100vh` when active. Remember, this is just a `max-height` so by doing this I’m saying the dropdown is going to be at most the height of the window. From here you could add some overflow styles to ensure that users could scroll so they see all the content within the dropdown, or you could change the number. The important part is that the number does need to be specific. Hopefully, this is something we see in the future for CSS, but for now `max-height` it is.
+Notice in the example above, when you click Dropdown Action, the dropdown menu displays. The dropdown has a `max-height: 0;` by default. After the cliick, we add a class of `active` to the dropdown and change the `max-height` property. I set it to be `100vh` when active. Remember, this is just a `max-height` so by doing this I’m saying the dropdown is going to be at most the height of the window. From here you could add some overflow styles to ensure that users could scroll so they see all the content within the dropdown, or you could change the number. The important part is that the number does need to be specific. Hopefully, this is something we see in the future for CSS, but for now `max-height` it is.
 
 To ensure the transition is nice and smooth as the menu opens and closes, we’ll add `ease-in-out` for our `transition-timing-function`. The code will look like this:
 
