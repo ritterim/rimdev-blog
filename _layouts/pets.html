@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="pets-page">
+{% include post-image.html %} 
+{% include masthead.html %} 
+{% include menu.html %}
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned text">
+    <article>
+      <div class="ui middle aligned text container">
+        <h1>{{ page.title }}</h1>
+      </div>
+      {{ content }}
+    </article>
+  </div>
+</div>
+</div>
