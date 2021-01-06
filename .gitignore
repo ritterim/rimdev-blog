@@ -6,3 +6,4 @@ GemFile.lock
 .jekyll-metadata
 .jekyll-cache/
 .DS_Store
+.vscode/
