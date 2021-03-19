@@ -20,7 +20,7 @@ We often use GitHub to create a compare view, and list pull requests (PRs) for r
 
 ![GitHub Most Recent 250 Commits](/images/documentation/github-compare-most-recent-250-commits.png)
 
-Since I write release notes, I need to view the entire list of pull requests. So this scenario makes me frown a bit. But recently, a helpful **git log** option brightened up my day.
+When you write release notes, you may need to view the entire list of commits and pull requests. Recently, a helpful **git log** option provided a more efficient solution.
 
 ## The git log basics
 
