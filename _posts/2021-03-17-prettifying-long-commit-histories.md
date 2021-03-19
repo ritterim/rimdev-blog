@@ -43,7 +43,7 @@ With the steps below, you can generate a complete list of PRs in your CLI. The a
     ![GitKraken Sample Commit Graph](/images/documentation/gitkraken-commit-graph-git-log-oneline-example.png)
 
 4. Find the older hash. In the real world, this could be the latest commit deployed in production. In our example, the value **2f380ba** is the last commit for the 2021-03-08 production branch.
-5. Similarly, get the more recent hash, which theoretically represents the latest commit in your release branch. In our example, the value **14fbcce** is the last commit for the 2021-03-10 release branch.
+5. Similarly, get the more recent hash, which theoretically represents the tip of your release branch. In our example, the value **14fbcce** is the last commit for the 2021-03-10 release branch.
 
 6. After gathering all details, run the command below in the **master** branch of your local repository:
 
