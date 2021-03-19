@@ -34,7 +34,7 @@ Here we focus on the **oneline** option, which serves as a shorthand for:
 
 ## Time for some Git magic
 
-With the steps below, you can generate a complete list of PRs in your CLI. The assumption is that the upstream **master** branch is the source of truth for your project and the development branch.
+With the steps below, you can generate a complete list of PRs in your command-line interface (CLI). The assumption is that the upstream **master** branch is the source of truth for your project and the development branch.
 
 1. Navigate to the local repository for your project.
 2. To sync your local **master** branch, pull the latest from the upstream **master** branch.
@@ -49,7 +49,7 @@ With the steps below, you can generate a complete list of PRs in your CLI. The a
 
     `git log --oneline 2f380ba..14fbcce | grep 'Merge pull'`
 
-7. Pull requests between the two hashes display per line. The **grep** option lets you search keywords in commit messages. Therefore, you're able to isolate just the PRs, without worrying about the 250 commit limit.
+7. Pull requests between the two hashes display one per line. The **grep** option lets you search keywords in commit messages. Therefore, you're able to isolate just the PRs, without worrying about the 250 commit limit.
 
     ![git log --online](/images/documentation/git-log-oneline-output.png)
 
