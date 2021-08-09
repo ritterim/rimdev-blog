@@ -6,7 +6,7 @@ enforce_ssl: rimdev.io
 rim_copy: Ritter Insurance Marketing LLC
 rim_url: https://ritterim.com
 rim_blog: https://blog.ritterim.com
-map_url: https://www.google.com/maps/place/2600+Commerce+Dr,+Harrisburg,+PA+17110/@40.311295,-76.843902,14z/data=!4m2!3m1!1s0x89c8c76c07f542d5:0xa2d30cdf7911f0fa?hl=en
+map_url: https://www.google.com/maps/place/2605+Interstate+Dr,+Harrisburg,+PA+17110/@40.311543,-76.8473254,17z/data=!3m1!4b1!4m5!3m4!1s0x89c8c76bd2816303:0x213d7b96bee1d959!8m2!3d40.311543!4d-76.8451367?hl=en
 default_image: /images/default/rimdev-surface.jpg
 safe: false
 title: RIMdev Technical Blog
