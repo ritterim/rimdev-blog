@@ -89,14 +89,9 @@ RIMdev:
     twitter: gameof_freckles
   Andrew Rady:
     avatar: https://avatars1.githubusercontent.com/u/29714810?v=4
-    title: Front End Developer
+    title: Back End Developer
     github: andrewrady
     twitter: nodevemberJS
-  Chidozie Oragwu:
-    avatar: https://avatars3.githubusercontent.com/u/7084030?v=4
-    title: Front End Developer
-    github: alexoragz
-    twitter: Chidonx
   John Vicari:
     avatar: https://avatars1.githubusercontent.com/u/10562755?v=4
     title: Front End Developer
@@ -106,10 +101,6 @@ RIMdev:
     avatar: https://avatars2.githubusercontent.com/u/7989792?s=460&v=4
     title: Sr. Database Developer
     github: kricords
-  Thomas Sobieck:
-    avatar: https://avatars3.githubusercontent.com/u/6256765?s=88&v=4
-    title: Sr. Software Developer
-    github: sobieck
   Cheng Yang:
     avatar: https://avatars3.githubusercontent.com/u/27984559?s=460&v=4
     title: Software Developer
@@ -134,6 +125,15 @@ RIMdev:
   # Previous Team Members
   #   Only Keep Individuals That
   #   Are Associated With Posts
+  Chidozie Oragwu:
+    avatar: https://avatars3.githubusercontent.com/u/7084030?v=4
+    title: Front End Developer (Former)
+    github: alexoragz
+    twitter: Chidonx
+  Thomas Sobieck:
+    avatar: https://avatars3.githubusercontent.com/u/6256765?s=88&v=4
+    title: Sr. Software Developer (Former)
+    github: sobieck
   Khalid Abuhakmeh:
     avatar: https://avatars0.githubusercontent.com/u/228256?v=3
     title: Director of Software Development (Former)
