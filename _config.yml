@@ -114,10 +114,6 @@ RIMdev:
     avatar: https://avatars0.githubusercontent.com/u/25621042?s=460&v=4
     title: UX/UI Developer
     github: natakurus
-  Seth Kline:
-    avatar: https://avatars2.githubusercontent.com/u/21014591?s=460&v=4
-    title: Frontend Developer
-    github: sethkline
   Steliana Vassileva:
     avatar: https://avatars3.githubusercontent.com/u/41246417?v=4
     title: Documentation Specialist
@@ -125,6 +121,10 @@ RIMdev:
   # Previous Team Members
   #   Only Keep Individuals That
   #   Are Associated With Posts
+  Seth Kline:
+    avatar: https://avatars2.githubusercontent.com/u/21014591?s=460&v=4
+    title: Frontend Developer (Former)
+    github: sethkline
   Chidozie Oragwu:
     avatar: https://avatars3.githubusercontent.com/u/7084030?v=4
     title: Front End Developer (Former)
