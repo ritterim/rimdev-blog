@@ -5,8 +5,8 @@ url: https://rimdev.io
 enforce_ssl: rimdev.io
 rim_copy: Ritter Insurance Marketing LLC
 rim_url: https://ritterim.com
-rim_blog: https://blog.ritterim.com
-map_url: https://www.google.com/maps/place/2600+Commerce+Dr,+Harrisburg,+PA+17110/@40.311295,-76.843902,14z/data=!4m2!3m1!1s0x89c8c76c07f542d5:0xa2d30cdf7911f0fa?hl=en
+rim_blog: https://ritterim.com/blog/
+map_url: https://www.google.com/maps/place/2605+Interstate+Dr,+Harrisburg,+PA+17110/@40.311543,-76.8473254,17z/data=!3m1!4b1!4m5!3m4!1s0x89c8c76bd2816303:0x213d7b96bee1d959!8m2!3d40.311543!4d-76.8451367?hl=en
 default_image: /images/default/rimdev-surface.jpg
 safe: false
 title: RIMdev Technical Blog
@@ -89,27 +89,18 @@ RIMdev:
     twitter: gameof_freckles
   Andrew Rady:
     avatar: https://avatars1.githubusercontent.com/u/29714810?v=4
-    title: Front End Developer
+    title: Back End Developer
     github: andrewrady
     twitter: nodevemberJS
-  Chidozie Oragwu:
-    avatar: https://avatars3.githubusercontent.com/u/7084030?v=4
-    title: Front End Developer
-    github: alexoragz
-    twitter: Chidonx
   John Vicari:
     avatar: https://avatars1.githubusercontent.com/u/10562755?v=4
-    title: Front End Developer
+    title: Sr. Front End Developer
     github: jpvicari
     twitter: johnvicari
   Kevin Ricords:
     avatar: https://avatars2.githubusercontent.com/u/7989792?s=460&v=4
     title: Sr. Database Developer
     github: kricords
-  Thomas Sobieck:
-    avatar: https://avatars3.githubusercontent.com/u/6256765?s=88&v=4
-    title: Sr. Software Developer
-    github: sobieck
   Cheng Yang:
     avatar: https://avatars3.githubusercontent.com/u/27984559?s=460&v=4
     title: Software Developer
@@ -123,10 +114,6 @@ RIMdev:
     avatar: https://avatars0.githubusercontent.com/u/25621042?s=460&v=4
     title: UX/UI Developer
     github: natakurus
-  Seth Kline:
-    avatar: https://avatars2.githubusercontent.com/u/21014591?s=460&v=4
-    title: Frontend Developer
-    github: sethkline
   Steliana Vassileva:
     avatar: https://avatars3.githubusercontent.com/u/41246417?v=4
     title: Documentation Specialist
@@ -134,6 +121,19 @@ RIMdev:
   # Previous Team Members
   #   Only Keep Individuals That
   #   Are Associated With Posts
+  Seth Kline:
+    avatar: https://avatars2.githubusercontent.com/u/21014591?s=460&v=4
+    title: Frontend Developer (Former)
+    github: sethkline
+  Chidozie Oragwu:
+    avatar: https://avatars3.githubusercontent.com/u/7084030?v=4
+    title: Front End Developer (Former)
+    github: alexoragz
+    twitter: Chidonx
+  Thomas Sobieck:
+    avatar: https://avatars3.githubusercontent.com/u/6256765?s=88&v=4
+    title: Sr. Software Developer (Former)
+    github: sobieck
   Khalid Abuhakmeh:
     avatar: https://avatars0.githubusercontent.com/u/228256?v=3
     title: Director of Software Development (Former)
