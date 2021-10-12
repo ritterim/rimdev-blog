@@ -21,7 +21,7 @@ I’m that dev who never deletes local branches. Maybe that’s my problem right
 
 This branch naming convention has a couple benefits when it comes to using GitHub. First, it ties the branch directly to the specific issue I’m working on. When bugs come up during the QA process and I’ve moved on to another issue, I know exactly the branch I need to reference when making the fix. I don’t need to look for something ambiguous like `responsive-nav-updates`. I’ve used names like that for my branches in the past, but when you don’t delete them regularly you forget which `responsive-whatever-changes` you did the work in. Sure you could look back through the history in the GitHub issue, but I’ve found that it’s a heck of a lot quicker to just look at the issue number and boom, I’m there.
 
-The second benefit I’ve found is connecting the issue with the corresponding pull request (PR). I like to add the issue to the PR description. You can do this pretty quickly in GitHub. You just type `#{issue-number}`. So an example would be something like: `Issue: #7768`.
+The second benefit I’ve found is connecting the issue with the corresponding pull request (PR). I like to add the issue to the PR description. You can do this pretty quickly in GitHub. You just type `#{issue-number}`. So an example would be something like: `Issue: #7768`. If you forgot the issue number, you'll see it in your branch name above the comment section.
 
 If you’re using an app like ZenHub, like RIMdev uses, then you can also connect the issue using their tool. Again, you connect the issue by the issue number. You can search for the number or the issue name but you already know the number… remember?
 
