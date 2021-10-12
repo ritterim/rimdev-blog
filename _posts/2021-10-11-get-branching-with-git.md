@@ -7,7 +7,7 @@ tags:
 categories:
 - Tools
 - Development
-twitter_text: Want a fast and simple naming convention for branches in Git?
+twitter_text: A fast and simple naming convention for branches in Git.
 authors: "Ted Krueger"
 image:
 image_url:
