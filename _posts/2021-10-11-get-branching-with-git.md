@@ -32,7 +32,7 @@ Here’s an example of a connected issue to a PR(Pull Request).
 </figcaption>
 </figure>
 
-This naming convention is probably best for smaller issues. But the key, I think, is to include the issue number. Say you’re working on an Epic with your team. Well that Epic has an issue so you could still create a branch to push to your upstream for others to use. In that case I might do something like `header-redesign-{epic#}`. From here, your team could still create feature branches locally with the subsequent issue numbers, then PR to the epic upstream.
+This naming convention is probably best for smaller issues. But the key I think is to include the issue number. Say you’re working on an Epic with your team. Well, that Epic has an issue, so you could still create a branch to push to your upstream for others to use. In that case I might do something like `header-redesign-{epic#}`. From here, your team could still create feature branches locally with the subsequent issue numbers, then PR to the Epic upstream.
 
 Naming things can be difficult. Finding things with terrible names can be more difficult. In trying to keep it simple, I came up with this method and it helps me keep track of my PRs and issues. I don’t need to put too much thought into it. I know my initials and I know the issue number. 
 
