@@ -7,7 +7,7 @@ tags:
 - Sass
 categories:
 - css
-twitter_text:
+twitter_text: Custom Properties allow you to change the value of a variable in your css or Sass. Find out how.
 authors: "Ted Krueger"
 image:
 image_url:
