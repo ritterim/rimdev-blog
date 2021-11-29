@@ -46,7 +46,7 @@ Notice the difference between how the two variables are used. When using a Sass 
 Sass variable: `$background: red`
 CSS Custom Property: `--background: red`
 
-You use them in your styles differently as well. Sass variables are more straightforward. You simply add the same variable into the style value, but with a custom property, you need to wrap it in a `var()`. 
+You use them in your styles differently as well. Sass variables are more straightforward. You simply add the same variable into the style value. When using a custom property, you must return the variable name using the CSS `var()` function. 
 
 Once you get the hang of it, you’ll never go back. I find that when inspecting websites lately, I notice things like colors and sizes being defined by custom properties a lot more. I think this has to do with how flexible custom properties are. I know I’ve been trying to use them more, but I try to learn why something is better before I dive right in. So far, I can’t say that I have seen a situation where a Sass variable would be more beneficial than a custom property, so why not just use custom properties? 
 
