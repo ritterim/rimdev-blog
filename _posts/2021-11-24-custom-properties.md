@@ -28,7 +28,7 @@ There have been times where I have defined a variable in Sass and then wanted to
 }
 ```
 
- It was always frustrating that I couldn’t do this. Then I found out about custom properties. They work in standard css as well as Sass (scss files). It’s pretty awesome because now you can totally change the value of a variable. By using custom properties, the above code becomes:
+ It was always frustrating that I couldn’t do this. Then I found out about custom properties. They work in standard CSS as well as Sass (scss files). It’s pretty awesome because now you can totally change the value of a variable. By using custom properties, the above code becomes:
 
 ```
 .element {
