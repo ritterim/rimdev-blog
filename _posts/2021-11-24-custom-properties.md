@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Custom Properties"
+title: "CSS Custom Properties"
 date: 2021-11-24 12:33:53
 tags:
 - css
@@ -13,7 +13,7 @@ image:
 image_url:
 image_credit:
 ---
-Have you ever wanted to change the value of a Sass variable based on screen size, a state, or for any other reason that might require changing a Sass variable? Well you can’t. Not with a Sass variable anyway, but you can by instead using a custom property. These are sometimes called css variables.
+Have you ever wanted to change the value of a Sass variable based on screen size, a state, or for any other reason that might require changing a Sass variable? Well you can’t. Not with a Sass variable anyway, but you can by using a css custom property. These are sometimes called css variables.
 
 There have been times where I have defined a variable in Sass and then wanted to change it when that element is `.active` for example. Something like:
 
@@ -28,7 +28,7 @@ There have been times where I have defined a variable in Sass and then wanted to
 }
 ```
 
- It was always frustrating that I couldn’t do this. Then I found out about custom properties. They work in standard css as well as Sass(scss files). It’s pretty awesome because now you can totally change the value of a variable. By using custom properties, the above code becomes:
+ It was always frustrating that I couldn’t do this. Then I found out about custom properties. They work in standard css as well as Sass (scss files). It’s pretty awesome because now you can totally change the value of a variable. By using custom properties, the above code becomes:
 
 ```
 .element {
