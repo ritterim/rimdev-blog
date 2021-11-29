@@ -50,4 +50,4 @@ You use them in your styles differently as well. Sass variables are more straigh
 
 Once you get the hang of it, you’ll never go back. I find that when inspecting websites lately, I notice things like colors and sizes being defined by custom properties a lot more. I think this has to do with how flexible custom properties are. I know I’ve been trying to use them more, but I try to learn why something is better before I dive right in. So far, I can’t say that I have seen a situation where a Sass variable would be more beneficial than a custom property, so why not just use custom properties? 
 
-Want to learn more about Custom Properties? <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a> literally wrote <a href="https://css-tricks.com/a-complete-guide-to-custom-properties/" target="_blank">A Complete Guide to Custom Properties</a>.
+Want to learn more about custom properties? <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a> literally wrote <a href="https://css-tricks.com/a-complete-guide-to-custom-properties/" target="_blank">A Complete Guide to Custom Properties</a>.
