@@ -13,7 +13,7 @@ image:
 image_url:
 image_credit:
 ---
-Have you ever wanted to change the value of a Sass variable based on screen size, a state, or for any other reason that might require changing a Sass variable? Well you can’t. Not with a Sass variable anyway, but you can by using a css custom property. These are sometimes called css variables.
+Have you ever wanted to change the value of a Sass variable based on screen size, a state, or for any other reason that might require changing a Sass variable? Well you can’t. Not with a Sass variable anyway. But you can by using a custom CSS property. These are sometimes called CSS variables.
 
 There have been times where I have defined a variable in Sass and then wanted to change it when that element is `.active` for example. Something like:
 
