@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating XML Feeds Using Hugo"
+title: "Creating RSS Feeds Using Hugo"
 date: 2021-12-17 09:26:27
 tags:
 - Documentation
@@ -84,3 +84,5 @@ With this information in mind, we're going to customize our section-level RSS te
 6. To confirm the output is correct, check the XML for the section.
 
     ![Hugo Section XML Output](/images/documentation/hugo-section-xml-output.png)
+
+Hugo makes the task of creating JSON and RSS feeds almost effortless. Now we're ready to pull in any videos, descriptions, or relevant links to provide help directly in our product or websites. Context-sensitive resources at specific points in the software will provide users with quick answers to their most commonly asked questions.
