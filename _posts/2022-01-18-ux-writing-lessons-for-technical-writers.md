@@ -6,6 +6,7 @@ tags:
 - Documentation
 - Technical writing
 - UX writing
+- Content design
 categories:
 - Documentation
 twitter_text: UX Writing Lessons for Technical Writers
