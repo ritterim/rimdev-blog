@@ -15,7 +15,7 @@ image: /images/documentation/rss-feed.png
 image_url: https://cdn.socialchamp.io/wp-content/uploads/2021/03/RSS-Feed-1.png
 ---
 
-## Docs and Contextual Help
+## Docs and contextual help
 
 We recently started a push towards integrating Docs content into our software platform.
 
@@ -23,7 +23,7 @@ The goal is to pull information from our Documentation site and offer contextual
 
 Contextual help can improve usability and product adoption, while also decreasing user frustration. Another benefit of this approach is that we don't have to duplicate help content that already exists in our Docs repository.
 
-## The JSON Precedent
+## The JSON precedent
 
 We've been working primarily with JSON in our Hugo-based Docs project.
 
@@ -31,7 +31,7 @@ For example, we created a glossary of terms endpoint that can be used across mul
 
 ![Glossary of Terms JSON](/images/documentation/hugo-glossary-json-endpoint.png)
 
-## The XML Way
+## The XML way
 
 For the next phase, we aim to pull video tutorial resources to display in our platform. Instead of JSON, we're creating an RSS feed using Hugo.
 
