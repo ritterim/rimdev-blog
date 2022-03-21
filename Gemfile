@@ -8,3 +8,5 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
 gem 'tzinfo-data'
+
+gem "webrick", "~> 1.7"

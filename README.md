@@ -13,6 +13,18 @@ Photography by JJ Walck
 
 > As of Jekyll 3.3, `_config.local.yml` is [no longer needed](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3).
 
+## Apple Silicon update
+
+If you already have Ruby 3.0.0 installed and connot run:
+
+```
+bundle update --bundler
+bundle add webrick
+bundle install --redownload
+```
+
+Still having issues? https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/
+
 ## New in this release (2.0)
 
 - [Jekyll 3.3](https://github.com/blog/2277-what-s-new-in-github-pages-with-jekyll-3-3), [release notes](https://jekyllrb.com/news/2016/10/06/jekyll-3-3-is-here/)
