@@ -92,11 +92,6 @@ RIMdev:
     title: Back End Developer
     github: andrewrady
     twitter: nodevemberJS
-  John Vicari:
-    avatar: https://avatars1.githubusercontent.com/u/10562755?v=4
-    title: Sr. Front End Developer
-    github: jpvicari
-    twitter: johnvicari
   Kevin Ricords:
     avatar: https://avatars2.githubusercontent.com/u/7989792?s=460&v=4
     title: Sr. Database Developer
@@ -117,6 +112,11 @@ RIMdev:
   # Previous Team Members
   #   Only Keep Individuals That
   #   Are Associated With Posts
+  John Vicari:
+    avatar: https://avatars1.githubusercontent.com/u/10562755?v=4
+    title: Sr. Front End Developer (Former)
+    github: jpvicari
+    twitter: johnvicari
   Natasha Kurus:
     avatar: https://avatars0.githubusercontent.com/u/25621042?s=460&v=4
     title: UX/UI Developer (Former)
