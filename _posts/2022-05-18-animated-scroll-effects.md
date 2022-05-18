@@ -59,7 +59,7 @@ tl.to('.scale-text', {
 });
 ```
 
-The animation should trigger, however that is not quite what we want yet - we want this to happen on scroll.  This is where the GSAP ScrollTrigger plugin comes in!
+The animation should trigger, however that is not quite what we want yet - we want this to happen on scroll. This is where the GSAP ScrollTrigger plugin comes in!
 
 Inside where we initialized our timeline, we can configure ScrollTrigger:
 
