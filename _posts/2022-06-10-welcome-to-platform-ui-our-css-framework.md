@@ -15,7 +15,7 @@ image_credit: "@vincentiu"
 ---
 It's been a few years, several great people, an awesome company, and a cool thing we made 😀
 
-Once upon a time, we had a mixed bag of frameworks powering our web properties. [Bootstrap](https://getbootstrap.com/), [Semantic UI](https://semantic-ui.com/), and thousands of lines written in straight CSS (and a bit of [Less](https://lesscss.org/). Fast forward to where we have our stable CSS framework written in [Sass](https://sass-lang.com/) and a post-1.0 version that we're offering to the dev community! 
+Once upon a time, we had a mixed bag of frameworks powering our web properties. [Bootstrap](https://getbootstrap.com/), [Semantic UI](https://semantic-ui.com/), and thousands of lines written in straight CSS (and a bit of [Less](https://lesscss.org/)). Fast forward to where we have our stable CSS framework written in [Sass](https://sass-lang.com/) and a post-1.0 version that we're offering to the dev community! 
 
 ## Platform UI
 
