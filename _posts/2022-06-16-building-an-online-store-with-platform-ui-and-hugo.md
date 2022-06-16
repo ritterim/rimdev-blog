@@ -16,13 +16,13 @@ image_credit: "@mikepetrucci"
 
 With the release of our CSS Framework, [Platform UI](https://www.platformui.com/), it might be fun to actually build something with it! 
 
-At RitterIM, we have an internal store to buy RitterIM merch, such as shirts, office supplies, and more. Employees can buy products with cash or earning "Ritter Bucks". **Ritter Bucks** are not some fancy new crypto-currency, but instead a way to incentivise great work!
+At RitterIM, we have an internal store to buy RitterIM merch, such as shirts, office supplies, and more. Employees can buy products with cash or use "Ritter Bucks". **Ritter Bucks** are not some fancy new crypto-currency, but instead a way to incentivise great work!
 
 The Ritter Store is only at our Harrisburg office, so as the basis of this project: let's build an online store!
 
 ## What We'll Use
 
-- [Platform UI](https://www.platformui.com/) - Our latest public release and the CSS Framework we use for our applications.
+- [Platform UI](https://www.platformui.com/) - Our latest public release and the CSS framework we use for our applications.
 - [Hugo](https://gohugo.io/) - Static Site Generator based on the Go programming language.
 - [Snipcart](https://snipcart.com/) - A simple way to add a store to any website.
 
@@ -36,7 +36,7 @@ For MacOS, make sure you have [Homebrew](https://brew.sh/) setup and run:
 brew install hugo
 ```
 
-For Windows, you can install in via [Chocolatey](https://chocolatey.org/): 
+For Windows, you can install via [Chocolatey](https://chocolatey.org/): 
 
 ```
 choco install hugo -confirm
@@ -77,7 +77,7 @@ Let's add in some content, then we can dive into building out our theme!
 
 ## Adding Content
 
-Content in Hugo can be added many different ways, however one of the simplest approaches is by adding markdown files to the `~/hugo-site/content` directory. Content can also be organized by creating subfolders of the content directory. For our store example, we want to organize products into different categories, such as "Home Goods" or "Office Supplies". Let's begin adding content by setting up our categories.
+Content in Hugo can be added in many different ways, however one of the simplest approaches is by adding markdown files to the `~/hugo-site/content` directory. Content can also be organized by creating subfolders of the content directory. For our store example, we want to organize products into different categories, such as "Home Goods" or "Office Supplies." Let's begin adding content by setting up our categories.
 
 ### Categories
 
@@ -115,11 +115,11 @@ layout: list
 ---
 ```
 
-As noted in the markdown file's front matter, each of these pages will use the `list` layout that we will create in just a bit. This is all we will need to add categories, feel free to add as many categories as you'd like!
+As noted in the markdown file's front matter, each of these pages will use the `list` layout that we will create in just a bit. This is all we will need to add categories. Feel free to add as many categories as you'd like!
 
 ### Products
 
-Inside category folders, we can now add products. For example, let's create a T-Shirt markdown file inside the `clothes` folder:
+We can now add products inside category folders. For example, let's create a T-Shirt markdown file inside the `clothes` folder:
 
 `~/hugo-store/content/clothes/t-shirt.md`
 
