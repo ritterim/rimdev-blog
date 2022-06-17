@@ -470,7 +470,7 @@ Open up `~/hugo-store/themes/store-theme/partials/footer.html` and add JavaScrip
 <script src="https://unpkg.com/@ritterim/platform-ui/dist/js/platform-ui.min.js" crossorigin defer></script>
 <script>
   window.SnipcartSettings = {
-    publicApiKey: "[YOU API KEY]",
+    publicApiKey: "[YOUR API KEY]",
     loadStrategy: "on-user-interaction",
   };
 
