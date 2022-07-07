@@ -21,7 +21,7 @@ You might be saying to yourself, "I have never seen this, what is this guy talki
 
 My first instinct was that the CSS to center the icon within the circle must not be setup correctly. I checked and sure enough the appropriate Flexbox properties were being applied that would center an `<i>` within a `<div>`. The next step was to do some research and see if anyone else was having this problem, and I was able to find an open <a href="https://github.com/FortAwesome/Font-Awesome/issues/16495">Github issue</a> with FontAwesome. This is where I discovered the reason we don't see this in every browser. It is because line-height is calculated differently between the different browsers for their layout algorithms. 
 
-Now that we understand that this is an issue with how browsers calculate the default line-height, we just need to set a default line-height on the effected icons. This will stop the browser from setting a line-height on their own. I chose to set the ```line-height: 1.5```. This gave me the desired look of the icon being centered. 
+Now that we understand that this is an issue with how browsers calculate the default line-height, we just need to set a default line-height on the affected icons. This will stop the browser from setting a line-height on its own. I chose to set the `line-height: 1.5`. This gave me the desired look of the icon being centered. 
 
 ![centered icon](/images/vertical-alignment-bug-with-icons/centered-icon.png){: .border .w-5 }
 
