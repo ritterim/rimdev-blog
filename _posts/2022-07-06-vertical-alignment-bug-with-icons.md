@@ -25,4 +25,4 @@ Now that we understand that this is an issue with how browsers calculate the def
 
 ![centered icon](/images/vertical-alignment-bug-with-icons/centered-icon.png){: .border .w-5 }
 
-As you can see the icon is now perfectly centered within the circle. Even though this was a small and almost unoticable bug, it can make the world of difference when someone is viewing a website. A clean and functioning UI is about all the little things coming together seemlessly to create a great user experience.
+As you can see the icon is now perfectly centered within the circle. Even though this was a small and almost unnoticeable bug, it can make the world of difference when someone is viewing a website. A clean and functioning UI is about all the little things coming together seamlessly to create a great user experience.
