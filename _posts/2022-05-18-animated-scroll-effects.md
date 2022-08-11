@@ -7,7 +7,8 @@ tags:
 - SCSS
 - JavaScript
 - UI/UX
-- frontend
+- Frontend
+- Animations
 categories:
 - development
 twitter_text:
