@@ -100,7 +100,7 @@ input[type=checkbox]:checked + label #center-heart #outer {
 }
 ```
 
-This is great as it it will reverse the transition when unchecking as well!
+This is great as it will reverse the transition when unchecking as well!
 
 ### Exploding hearts
 
