@@ -24,11 +24,11 @@ My current favorite thing in web dev is a new site generator called [Astro](http
 
 Astro is like [Hugo](https://gohugo.io/) and [11ty](https://11ty.dev), yet contains a few neat tricks right out of the box. The main goal of Astro is to deliver as little JavaScript to the browser as possible. It handles this by running JavaScript in the build process or when rendered server-side. That is not to say you can't run JavaScript in the browser though. In fact, you can include components from any of the major JS frameworks, such as Vue, React, and Svelte. This is possible through a concept Astro is pioneering: [component islands](https://docs.astro.build/en/concepts/islands/).
 
-I recently [delivered a talk](https://astro-friday-talk-slides.netlify.app/1) on Astro to our dev team as part of the "Friday Talks" we do here in RIMdev. I demonstrated how to build with Astro and it's server-side rendering capability. The [first demo](https://astro-friday-talk.netlify.app/) shows off it's framework agnostic abilities, and how to run JavaScript. The [second demo](http://astro-pokemon.netlify.app/) shows how you can run JavaScript server-side and deliver only HTML. These projects were fun to build, but I wanted to try and build something with a bit more substance.
+I recently [delivered a talk](https://astro-friday-talk-slides.netlify.app/1) on Astro to our dev team as part of the "Friday Talks" we do here in RIMdev. I demonstrated how to build with Astro and it's server-side rendering capability. The [first demo](https://astro-friday-talk.netlify.app/) shows off its framework agnostic abilities, and how to run JavaScript. The [second demo](http://astro-pokemon.netlify.app/) shows how you can run JavaScript server-side and deliver only HTML. These projects were fun to build, but I wanted to try and build something with a bit more substance.
 
 ## RIMdev Radio
 
-Annual enrollment period is RitterIM's busiest part of the year and we have been doing a lot of prep-work for it. Music is near essential as there is a lot of manual testing performed. I traded song recommendations with a few folks on the Front End team and thought it might be fun to make a site out of it. [RIMdev Radio](https://rimdev-radio.netlify.app/) a place to display and listen to what music team members like the most. 
+Annual enrollment period is RitterIM's busiest part of the year and we have been doing a lot of prep-work for it. Music is near essential as there is a lot of manual testing performed. I traded song recommendations with a few folks on the Front End team and thought it might be fun to make a site out of it. [RIMdev Radio](https://rimdev-radio.netlify.app/) is a place to display and listen to what music team members like the most. 
 
 <img src="../images/rimdev-radio.jpg" style="width:100%" alt="Screenshot of RIMdev Radio" />
 
@@ -43,7 +43,7 @@ I built the site using a few different technologies:
 
 The idea was that team members would be able to search Spotify for songs and update the playlist. Recommendations get stored in a database table, which would then display on the home page. The idea didn't quite pan out due to limitations of the Spotify API, but still able to deliver with a slight pivot.
 
-In Spotify, you can set up collaborative playlists that allows you and friends to add songs to a playlist. This function is not available to the API though, as spammers could overrun playlists. I learned this at the finish line, so while I can update the playlist through the API - no one else can. Unfortunate as this was the main feature of the app. 
+In Spotify, you can set up collaborative playlists that allow you and friends to add songs to a playlist. This function is not available to the API though, as spammers could overrun playlists. I learned this at the finish line, so while I can update the playlist through the API - no one else can. Unfortunate as this was the main feature of the app. 
 
 That's OK though! Team members that choose to take part can send me songs they would like included and I can update the playlist. This was a super fun weekend project and I was able to learn a lot, so no harm done!
 
@@ -55,14 +55,14 @@ Everything happens inside Astro and luckily getting started is quite easy!
 
 The `npm create astro@latest` command walks you through the process of setting up a new instance. I choose the default options for everything, except opting out of using TypeScript. 
 
-From there, the new site will scaffold and there are few organizational things to take note of:
-- The **Pages** directory is where each site page will live. These will use the `.astro` file extension, and are capable of running JavaScript at build.  So you can generate HTML code by running certain JavaScript functionality.
+From there, the new site will scaffold and there are a few organizational things to take note of:
+- The **Pages** directory is where each site page will live. These will use the `.astro` file extension, and are capable of running JavaScript at build. This allows you to generate HTML code by running certain JavaScript functionality.
 - The **Components** directory will house UI components. These can be Astro components or components for whichever framework you prefer.
 - The **Layouts** directory is where you can include components used for layout purposes.
 
 As I intended to use Sass for styling, I also added a `styles` folder to the `src` directory.
 
-Speaking of which, to setup Sass - you do need to install Sass as a dependency to use it:
+Speaking of which, to set up Sass - you do need to install Sass as a dependency to use it:
 
 ```
 npm install -d sass
@@ -218,7 +218,7 @@ Now all that is needed is to deploy the site to Netlify. I typically do this by 
 
 ## Final Thoughts
 
-Overall working with Astro is a super enjoyable experience. I'm looking forward to building more projects with it!
+Overall, working with Astro is a super enjoyable experience. I'm looking forward to building more projects with it!
 
 I'd like to give a special shout out to my friend [Mac](https://twitter.com/MaciejPedzich) for help navigating the Spotify API.
 
