@@ -1,15 +1,17 @@
 @echo Off
 pushd %~dp0
 setlocal
+set pull_request_number=%APPVEYOR_PULL_REQUEST_NUMBER%
+
+if "%pull_request_number%"=="" (
+  set pull_request_number=0
+)
 
 :Build
-call gem install bundler
+call npm install
 if %ERRORLEVEL% neq 0 goto BuildFail
 
-call bundle install
-if %ERRORLEVEL% neq 0 goto BuildFail
-
-call bundle exec jekyll build
+call npm run build
 if %ERRORLEVEL% neq 0 goto BuildFail
 
 goto BuildSuccess

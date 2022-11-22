@@ -1,15 +1,15 @@
 environment:
   matrix:
-    - RUBY_VERSION: 24
+    - nodejs_version: STABLE
+      configuration: publish
 
 install:
-  - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+  - ps: Install-Product node $env:nodejs_version
 
 before_build:
   # Output useful info for debugging.
-  - ruby --version
-  - gem --version
-  - gem install bundler --no-document --force
+  - node --version
+  - npm --version
 
 build_script:
   - ./build.cmd
@@ -17,5 +17,5 @@ build_script:
 test: off
 
 artifacts:
-  - path: _site/
-    name: site
+  - path: dist/
+    name: dist
