@@ -1,0 +1,89 @@
+---
+import MainLayout from './MainLayout.astro';
+import WordCount from '../components/WordCount.astro';
+import { site } from '../data/config.json';
+import sluggify from '../mixins/sluggify';
+import snippet from '../mixins/snippet';
+
+const { frontmatter } = Astro.props;
+
+const posts = await Astro.glob('../pages/*.md').then((posts) =>
+  posts
+    .filter((post) => frontmatter.author == post.frontmatter.authors)
+    .reverse()
+);
+
+---
+
+<MainLayout
+  title={frontmatter.author}
+  image={frontmatter.image ? frontmatter.image : site.default_image}
+  author={frontmatter.author}
+  authorImage={frontmatter.avatar}
+>
+  <div class="ui vertical stripe segment authors-page">
+    <div class="ui middle aligned stackable text container">
+      <h1 class="author-header">
+        {frontmatter.author}
+        {frontmatter.former ? <span>(Previous Team Member)</span> : null}
+      </h1>
+      {frontmatter.desc ? <p>{frontmatter.desc}</p> : null}
+      <div class="social">
+        {
+          frontmatter.twitter ? (
+            <a
+              href={`https://twitter.com/${frontmatter.twitter}`}
+              data-position="bottom right"
+              data-tooltip={`@${frontmatter.twitter} on twitter`}
+            >
+              <i class="icon twitter big" />
+            </a>
+          ) : null
+        }
+        {
+          frontmatter.github ? (
+            <a
+              href={`https://github.com/${frontmatter.githubg}`}
+              data-position="bottom right"
+              data-tooltip={`${frontmatter.github} on github`}
+            >
+              <i class="icon github alternate big" />
+            </a>
+          ) : null
+        }
+      </div>
+      {
+        posts.map((post) => (
+          <div class="post-articles">
+            <article>
+              <header>
+                <h2>
+                  <a href={post.url}>{post.frontmatter.title}</a>
+                </h2>
+              </header>
+              <author>
+                <a href={`/authors/${sluggify(post.frontmatter.authors)}`}>
+                  {post.frontmatter.authors}
+                </a>
+                <WordCount content={post.rawContent()} />
+              </author>
+              <div set:html={snippet(post)} />
+              <div>
+                {post.frontmatter.tags.map((tag) => (
+                  <a
+                    class="ui basic label orange"
+                    href={`/tags/#${tag}`}
+                    title={tag}
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            </article>
+          </div>
+        ))
+      }
+      <slot />
+    </div>
+  </div>
+</MainLayout>

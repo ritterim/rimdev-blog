@@ -1,0 +1,17 @@
+{
+  "site": {
+    "baseurl": "rimdev.io",
+    "site_name": "RIMdev Blog",
+    "default_image": "/images/default/rimdev-surface.jpg",
+    "description": "A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev",
+    "github_username": "ritterim",
+    "map_url": "https://www.google.com/maps/place/2605+Interstate+Dr,+Harrisburg,+PA+17110/@40.311543,-76.8473254,17z/data=!3m1!4b1!4m5!3m4!1s0x89c8c76bd2816303:0x213d7b96bee1d959!8m2!3d40.311543!4d-76.8451367?hl=en",
+    "rim_blog": "https://ritterim.com/blog/",
+    "rim_copy": "Ritter Insurance Marketing LLC",
+    "rim_url": "https://ritterim.com",
+    "title": "",
+    "twitter_username": "ritterim",
+    "url": "https://rimdev.io",
+    "user_description": "Ritter Insurance Marketing | Software DEVelopment"
+  }
+}

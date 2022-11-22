@@ -1,0 +1,136 @@
+{
+  "pets": [
+    {
+      "name": "Bella",
+      "image": "/images/pets/bella--500x500.jpg",
+      "owner": ""
+    },
+    {
+      "name": "Dobby",
+      "image": "/images/pets/dobby.jpg",
+      "owner": ""
+    },
+    {
+      "name": "Echo",
+      "image": "/images/pets/echo--500x500.jpg"
+    },
+    {
+      "name": "Catnip",
+      "image": "/images/pets/fluffy.jpg"
+    },
+    {
+      "name": "Fries",
+      "image": "/images/pets/fries.jpg"
+    },
+    {
+      "name": "Gidget",
+      "image": "/images/pets/gidget--500x500.jpg"
+    },
+    {
+      "name": "Harper",
+      "image": "/images/pets/harper--500x500.jpg"
+    },
+    {
+      "name": "Jazzmin",
+      "image": "/images/pets/jazzmin--500x500.jpg"
+    },
+    {
+      "name": "Lars",
+      "image": "/images/pets/lars--500x500.jpg"
+    },
+    {
+      "name": "Leia",
+      "image": "/images/pets/leia.jpg"
+    },
+    {
+      "name": "Little Fat",
+      "image": "/images/pets/littleFat.jpg"
+    },
+    {
+      "name": "Little Hu",
+      "image": "/images/pets/littleHu.jpg"
+    },
+    {
+      "name": "Little One",
+      "image": "/images/pets/littleOne.jpg"
+    },
+    {
+      "name": "Lucy",
+      "image": "/images/pets/lucy--500x500.jpg"
+    },
+    {
+      "name": "Manny",
+      "image": "/images/pets/manny--500x500.jpg"
+    },
+    {
+      "name": "Martin",
+      "image": "/images/pets/martin--500x500.jpg",
+      "instagram_url": "https://www.instagram.com/martin_cat_us/"
+    },
+    {
+      "name": "Milly",
+      "image": "/images/pets/milly.jpg"
+    },
+    {
+      "name": "Momo",
+      "image": "/images/pets/momo--500x500.jpg"
+    },
+    {
+      "name": "Noemie",
+      "image": "/images/pets/noemie.jpg"
+    },
+    {
+      "name": "Nugget",
+      "image": "/images/pets/nugget.jpg"
+    },
+    {
+      "name": "Odin",
+      "image": "/images/pets/odin--500x500.jpg"
+    },
+    {
+      "name": "Oscar",
+      "image": "/images/pets/oscar--500x500.jpg",
+      "instagram_url": "https://www.instagram.com/oscarthecat75/"
+    },
+    {
+      "name": "Pudding",
+      "image": "/images/pets/pudding--500x500.jpg"
+    },
+    {
+      "name": "Rylie",
+      "image": "/images/pets/rylie--500x500.jpg"
+    },
+    {
+      "name": "Siwa",
+      "image": "/images/pets/siwa.jpg"
+    },
+    {
+      "name": "Sunshine",
+      "image": "/images/pets/sunshine--500x500.jpg"
+    },
+    {
+      "name": "T3",
+      "image": "/images/pets/t3--500x500.jpg"
+    },
+    {
+      "name": "Tofu",
+      "image": "/images/pets/tofu.jpg"
+    },
+    {
+      "name": "Tuda",
+      "image": "/images/pets/tuda.jpg"
+    },
+    {
+      "name": "Wiley",
+      "image": "/images/pets/wiley.jpg"
+    },
+    {
+      "name": "Yoda",
+      "image": "/images/pets/yoda.jpg"
+    },
+    {
+      "name": "Yuumi",
+      "image": "/images/pets/yuumi--500x500.jpg"
+    }
+  ]
+}

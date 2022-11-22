@@ -1,0 +1,89 @@
+---
+import { site } from '../data/config.json';
+import '../sass/main.scss';
+
+const { title, description, image } = Astro.props;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content={Astro.generator} />
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content={site.twitter_username} />
+  <!-- <meta name="twitter:image" property="og:image" content={% if page.image %}{{ page.image }}{% else %} {{ site.default_image }}{% endif %}"> -->
+  <meta
+    name="twitter:image"
+    property="og:image"
+    content={image ? image : site.default_image}
+  />
+  <meta
+    name="twitter:title"
+    content={title?.length ? `${title} | RIMdev Blog` : site.title}
+  />
+  <meta
+    name="twitter:description"
+    content={description ? description : site.description}
+  />
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content={site.url} />
+  <meta
+    name="og:title"
+    content={title ? `${title} | RIMdev Blog` : site.title}
+  />
+  <meta property="og:image" content={image ? image : site.default_image} />
+  <meta
+    name="og:description"
+    content={description ? description : site.description}
+  />
+  <meta
+    property="og:site_name"
+    content={description ? description : site.description}
+  />
+
+  <!-- Schema.org  -->
+  <meta
+    itemprop="name"
+    content={title ? `${title} | RIMdev Blog` : site.title}
+  />
+  <meta
+    itemprop="description"
+    content={description ? description : site.description}
+  />
+  <meta itemprop="image" content={image ? image : site.default_image} />
+
+  <title>{title ? `${title} | RIMdev Blog` : site.title}</title>
+  <meta name="description" content={site.description} />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Work+Sans:300|Roboto+Slab:400,300,100"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css"
+    integrity="sha256-iK7AZM7Xa42iuURdMdo1sp38ld/JJ3fDtS0523GKqdk="
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.css"
+    integrity="sha256-446p5J21C94lwDJ4yc/oaAO0/0M1NVX5tuHb/ntU2NQ="
+    crossorigin="anonymous"
+  />
+  <!-- <link rel="canonical" href="{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
+
+  <!-- <script type="text/javascript">
+      var host = "{{ site.enforce_ssl }}";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+          window.location.protocol = "https";
+  </script> -->
+
+  <!-- {% include favicons.html %}
+
+  {% seo title=false %} -->
+</head>

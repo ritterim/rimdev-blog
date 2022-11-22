@@ -1,0 +1,26 @@
+---
+const { postImage, author, authorImage, imageCredit, imageUrl } = Astro.props;
+---
+
+{
+  authorImage ? (
+    <div class="main-avatar">
+      <img src={authorImage} alt={author} />
+    </div>
+  ) : null
+}
+{
+  postImage ? (
+    <div
+      class="ui vertical masthead segment"
+      style={`background: url(${postImage}) center center / cover no-repeat`}
+    >
+      {imageCredit && imageUrl ? (
+        <div class="photo-credit">
+          <div class="cc-icon" />
+          <a href={imageUrl}>{imageCredit}</a>
+        </div>
+      ) : null}
+    </div>
+  ) : null
+}

@@ -1,0 +1,59 @@
+---
+import { site } from '../data/config.json';
+---
+
+<footer class="ui vertical segment">
+  <div class="ui stackable text container">
+    <div class="ui horizontal divider">
+      <a href={site.url}>
+        <img
+          class="footer"
+          src="/images/logos/RIMdev.svg"
+          alt={site.user_description}
+        />
+      </a>
+    </div>
+
+    <div class="ui horizontal list social right floated">
+      <div class="item">
+        <a
+          target="_blank"
+          href="https://twitter.com/{{ site.twitter_username }}"
+          ><i class="icon large twitter"></i>
+        </a>
+      </div>
+      <div class="item">
+        <a target="_blank" href="https://github.com/{{ site.github_username }}"
+          ><i class="icon large github alternate"></i>
+        </a>
+      </div>
+      <div class="item">
+        <a href="/feed.xml"><i class="icon large feed"></i></a>
+      </div>
+    </div>
+
+    <p>
+      &copy; <a href={site.rim_url}>{site.rim_copy}</a>
+      <a target="_blank" href={site.map_url}><i class="icon marker"></i></a>
+    </p>
+  </div>
+</footer>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"
+  is:inline
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"
+  integrity="sha256-HcON65l89nxNl7vaRECVPe/zNDBzhCcJYBE7O+EcruU="
+  crossorigin="anonymous"
+  is:inline
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.js"
+  integrity="sha256-1uR+pqxH5fN/rOZcZTb9c5+bR3OIYEKzu2sI11Dnj9A="
+  crossorigin="anonymous"
+  is:inline
+></script>
+<script src="/js/main.js" is:inline></script>

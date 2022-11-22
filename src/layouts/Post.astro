@@ -1,0 +1,45 @@
+---
+import MainLayout from './MainLayout.astro';
+import sluggify from '../mixins/sluggify';
+import WordCount from '../components/WordCount.astro';
+const { frontmatter, rawContent } = Astro.props;
+let authors;
+
+if (typeof frontmatter.authors == 'object') {
+  authors = Array.from(frontmatter.authors);
+}
+
+const content = rawContent();
+---
+
+<MainLayout
+  title={frontmatter.title}
+  image={frontmatter.image}
+  imageCredit={frontmatter.image_credit}
+  imageUrl={frontmatter.image_url}
+>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable text container">
+      <article>
+        <h1>{frontmatter.title}</h1>
+
+        <div class="author">
+          Written by
+          {
+            authors ? (
+              authors.map((author) => (
+                <a href={`/authors/${sluggify(author)}`}>{author}</a>
+              ))
+            ) : (
+              <a href={`/authors/${sluggify(frontmatter.authors)}`}>
+                {frontmatter.authors}
+              </a>
+            )
+          }
+          <WordCount content={content} />
+        </div>
+        <slot />
+      </article>
+    </div>
+  </div>
+</MainLayout>

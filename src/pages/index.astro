@@ -1,0 +1,47 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import WordCount from '../components/WordCount.astro';
+import DaysOld from '../components/DaysOld.astro';
+import sluggify from '../mixins/sluggify';
+
+const posts = await Astro.glob('../pages/*.md');
+const featured = posts
+  .sort((a, b) => a.frontmatter.date.localeCompare(b.frontmatter.date))
+  .reverse()
+  .slice(0, 1)[0];
+
+const { title, authors, image, image_credit, image_url } =
+  featured.frontmatter;
+
+const rawContent = featured.rawContent();
+
+const content = featured.compiledContent();
+---
+
+<MainLayout
+  title={title}
+  image={image}
+  imageCredit={image_credit}
+  imageUrl={image_url}
+>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable text container">
+      <article>
+        <h1>{title}</h1>
+
+        <div class="author">
+          Written by <a href={`/authors/${sluggify(authors)}`}>{authors}</a>
+
+          <WordCount content={rawContent} />
+        </div>
+
+        <div set:html={content}></div>
+        <!-- {% include articles-footer.html %} -->
+      </article>
+
+      <!-- {% include articles-related.html %}
+      <div class="ui hidden divider"></div>
+      {% include disqus.html %} -->
+    </div>
+  </div>
+</MainLayout>

@@ -1,0 +1,166 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '{Open source} things we made for you';
+const image = 'https://c2.staticflickr.com/4/3029/2911413043_be72010c6e_b.jpg';
+const imageCredit = 'Robert Stringer';
+const imageUrl = 'https://www.flickr.com/photos/rmstringer';
+---
+
+<MainLayout
+  title={title}
+  image={image}
+  imageCredit={imageCredit}
+  imageUrl={imageUrl}
+>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned text container">
+      <h1>{title}</h1>
+      <h2>
+        We're pretty transparent about what we do and how we do it (when we can
+        be anyway).
+      </h2>
+      <div class="divider hidden"></div>
+    </div>
+  </div>
+
+  <div class="ui one column stackable grid">
+    <div class="center aligned row">
+      <div class="column oss stuntman">
+        <img
+          src="/images/stuntman_helmet.png"
+          alt="Stuntman"
+          width="200px"
+        />
+        <h3>
+          Sometimes you need a Stuntman before you send in real, unsuspecting
+          users!
+        </h3>
+
+        <div class="ui large buttons">
+          <a class="ui large red button" href="https://rimdev.io/stuntman"
+            >Learn more</a
+          >
+          <div class="or"></div>
+          <a
+            class="ui animated large red button"
+            target="_blank"
+            href="https://github.com/ritterim/stuntman"
+          >
+            <div class="hidden content">
+              GitHub <i class="github icon"></i>
+            </div>
+            <div class="visible content">View on</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui two column stackable grid">
+    <div class="center aligned row">
+      <div class="black column oss starorgs">
+        <div class="ui label circular secondary-credit">
+          <i class="creative commons large icon"></i>
+          <a
+            target="_blank"
+            href="https://commons.wikimedia.org/wiki/File:%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg#/media/File:%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg"
+            >星耀晨曦</a
+          >
+        </div>
+
+        <img
+          src="https://raw.githubusercontent.com/ritterim/star-orgs/master/public/logo.png"
+          alt="Star-orgs"
+          width="200px"
+        />
+        <p>
+          It is a dark time for the Galaxy. Active Directory holds crucial troop
+          information but is seemingly impenetrable even to those with access to
+          the force.
+        </p>
+
+        <a
+          class="ui animated big black button"
+          target="_blank"
+          href="https://github.com/ritterim/star-orgs"
+        >
+          <div class="hidden content">
+            GitHub <i class="icon github"></i>
+          </div>
+          <div class="visible content">View on</div>
+        </a>
+      </div>
+      <div class="teal column oss supurlative">
+        <h3>Sup<span>Url</span>ative</h3>
+        <p>
+          Links and templates are at the heart of a Hypermedia API. It is
+          important to generate correct resource links in addition to properly
+          defining the capabilities each resources exposes via url templates.
+        </p>
+
+        <a
+          class="ui animated big yellow button"
+          target="_blank"
+          href="https://github.com/ritterim/supurlative"
+        >
+          <div class="hidden content">
+            GitHub <i class="icon github"></i>
+          </div>
+          <div class="visible content">View on</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui one column stackable grid">
+    <div class="brown column oss filter center aligned">
+      <h3>Filter</h3>
+      <span>The classy way to filter collections.</span>
+      <p>
+        A library that allows an IEnumerable to be filtered using either a typed
+        or anonymous class.
+      </p>
+
+      <a
+        class="ui animated big pink button"
+        target="_blank"
+        href="https://github.com/ritterim/filter"
+      >
+        <div class="hidden content">
+          GitHub <i class="icon github"></i>
+        </div>
+        <div class="visible content">View on</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ui one column stackable grid">
+    <div class="center aligned row">
+      <div class="column oss releases">
+        <h3>Releases</h3>
+        <p>
+          We wanted to create a tool that allowed non-GitHub user’s access to
+          our GitHub <a href="/announcing-rimdev-releases/">releases</a> with the
+          hope that they would be more informed about the progress our team is making
+          in squashing bugs, adding features, and kicking butt.
+        </p>
+
+        <a
+          class="ui animated teal huge button"
+          target="_blank"
+          href="https://github.com/ritterim/releases"
+        >
+          <div class="hidden content">
+            GitHub <i class="icon github"></i>
+          </div>
+          <div class="visible content">View on</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Trocchi|Audiowide|Satisfy|Raleway:100');
+</style>

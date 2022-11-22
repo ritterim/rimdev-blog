@@ -1,0 +1,42 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import TagList from '../../components/TagList.astro';
+
+const title = "tag, you're it!";
+const image = '/images/default/rimdev-surface.jpg';
+
+let tags = await Astro.glob('../*.md').then((posts) => {
+  let tags = [];
+  posts.forEach(
+    (post) => (tags = [...tags, ...Array.from(post.frontmatter.tags)])
+  );
+  return tags;
+});
+
+tags = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
+---
+
+<MainLayout title={title} image={image}>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned text container">
+      <article>
+        <h1>{title}</h1>
+        <div class="ui text container tags">
+          {
+            tags.map((tag) => (
+              <a href={`/tags/#${tag}`} class="ui basic label orange">
+                {tag}
+              </a>
+            ))
+          }
+          {
+            tags.map(tag => (
+              <h2 id={tag}>{tag}</h2>
+              <TagList tag={tag} />
+            ))
+          }
+        </div>
+      </article>
+    </div>
+  </div>
+</MainLayout>

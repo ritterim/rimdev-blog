@@ -1,0 +1,14 @@
+---
+import MainLayout from './MainLayout.astro';
+const { frontmatter } = Astro.props;
+---
+
+<MainLayout title={frontmatter.title} image={frontmatter.image}>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable text container">
+      <article>
+        <slot />
+      </article>
+    </div>
+  </div>
+</MainLayout>
