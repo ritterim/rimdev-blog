@@ -1,7 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import WordCount from '../components/WordCount.astro';
-import DaysOld from '../components/DaysOld.astro';
 import sluggify from '../mixins/sluggify';
 
 const posts = await Astro.glob('../pages/*.md');
@@ -35,13 +34,8 @@ const content = featured.compiledContent();
           <WordCount content={rawContent} />
         </div>
 
-        <div set:html={content}></div>
-        <!-- {% include articles-footer.html %} -->
+        <Fragment set:html={content} />
       </article>
-
-      <!-- {% include articles-related.html %}
-      <div class="ui hidden divider"></div>
-      {% include disqus.html %} -->
     </div>
   </div>
 </MainLayout>

@@ -67,7 +67,9 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
                 </a>
                 <WordCount content={post.rawContent()} />
               </author>
-              <div set:html={snippet(post)} />
+              <div>
+                <Fragment set:html={snippet(post)} />
+              </div>
               <div>
                 {post.frontmatter.tags.map((tag) => (
                   <a
