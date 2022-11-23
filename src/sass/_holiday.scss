@@ -1,0 +1,321 @@
+
+canvas{
+    position: absolute;
+    top:0;
+    left:0
+}
+
+body.holiday {
+  background: #89c7ad url('/images/holiday/trees.svg') center no-repeat;
+  background-size: 50vw;
+  height: 100vh !important;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  @media (max-width: 800px){
+    background-size: 150vw;
+  }
+  main {
+    height: calc(100vh - 120px);
+  }
+  footer {
+    background-color: white;
+    color: #dc5a5b;
+    padding: 2rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    .help {
+      color: dodgerblue;
+    }
+    p {
+      margin: 0;
+    }
+    .tree {
+      position: absolute;
+      display: flex;
+      left: 50%;
+      top: -1.5rem;
+      &:before {
+        border-bottom: 30px solid white;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        width: 0;
+        height: 0;
+        content: '';
+      }
+      &:after {
+        border-bottom: 17px solid white;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        width: 0;
+        height: 0;
+        content: '';
+        transform: translate(-12px, 13px)
+      }
+      &:nth-child(1) {
+        margin-left: -80px;
+        z-index: 1;
+      }
+      &:nth-child(2) {
+        z-index: 2;
+      }
+    }
+  }
+}
+
+
+
+.holideer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  img, svg {
+    width: 25vw;
+    @media (max-width: 800px){
+      width: 70vw;
+    }
+  }
+  svg {
+    max-height: 50vh;
+    @media (min-width: 801px) and (max-width: 1499px){
+      max-height: 40vh;
+    }
+  }
+}
+
+a {
+  &.holiday-button {
+    background-color: #dc5a5b;
+    border: 1px solid white;
+    border-radius: 5rem;
+    color: white;
+    font-size: 125%;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: .2s;
+    transform: scale(1);
+    margin: 1rem 0;
+    &:before {
+      background: transparent;
+    }
+    &:hover {
+      background-color: darken(#dc5a5b, 10%);
+      transform: scale(1.2);
+    }
+  }
+  color: dodgerblue;
+  &:before {
+    background-color: dodgerblue;
+  }
+}
+.modal {
+  &.closed {
+    height: 0;
+  }
+  background: transparent url('/images/holiday/parchment.svg') center no-repeat;
+  background-size: contain;
+  color: #dc5a5b;
+  display: flex;
+  height: 700px;
+  width: 700px;
+  z-index: 5;
+  overflow: hidden;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease 0.5s,
+              height 0.5s ease;
+  p {
+    &:first-of-type {
+      padding-top: 4rem;
+    }
+    &:last-of-type {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  }
+  .close {
+    color: indianred;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+  }
+  @media (min-width: 1500px) {
+    height: 800px;
+  }
+  @media (max-width: 800px) {
+    background-image: linear-gradient(#F5DEB3, #FFDAB9);
+    height: 100%;
+    width:100%;
+    h2 {
+      display: none;
+    }
+    p:first-of-type {
+        padding-top: 0;
+      }
+  }
+  .modal--inner {
+    position: relative;
+    padding: 2rem 8rem;
+    margin-top: 2rem;
+    @media (min-width: 1500px) {
+      padding: 5rem;
+      margin-top: 7%;
+    }
+    @media (max-width: 800px) {
+      padding: 2rem;
+    }
+    .first-letter {
+      color: darken(indianred, 10%);
+      font-family: 'Rye', cursive;
+      font-size: 200%;
+      margin-right: .1rem;
+    }
+    .label {
+      background-color: #89c7ad;
+      color: white;
+      border: 1px solid indianred;
+      border-radius: .3rem;
+      padding: .1rem .3rem;
+      white-space: nowrap;
+    }
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.banner {
+  position: absolute;
+  left: 50%;
+  display: block;
+  margin: -3rem -200px;
+  width: 400px;
+  height: 60px;
+  border: 1px solid indianred;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: white;
+  background: indianred;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15) inset, 0 6px 10px rgba(0, 0, 0, 0.15);
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    top: 24px;
+    display: block;
+    width: 40px;
+    height: 0px;
+    border: 30px solid indianred;
+    border-right: 20px solid darken(indianred, 10%);
+    border-bottom-color: indianred;
+    border-left-color: transparent;
+    transform: rotate(-5deg);
+  }
+
+  &:after {
+    left: auto;
+    right: -70px;
+    border-left: 20px solid darken(indianred, 10%);
+    border-right: 30px solid transparent;
+    transform: rotate(5deg);
+  }
+}
+
+
+
+
+
+.flash {
+  animation: flash 1s ease infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.6;
+  }
+}
+
+
+.clr1 {
+  animation: col 3s linear infinite;
+}
+
+@keyframes col {
+
+  0%,
+  33% {
+    fill: #EC4E56
+  }
+
+  34%,
+  66% {
+    fill: #3631ff
+  }
+
+  67%,
+  100% {
+    fill: #30e81c
+  }
+}
+
+.clr2 {
+  animation: col2 3s linear infinite;
+}
+
+@keyframes col2 {
+
+  0%,
+  33% {
+    fill: #30e81c
+  }
+
+  34%,
+  66% {
+    fill: #EC4E56
+  }
+
+  67%,
+  100% {
+    fill: #3631ff
+  }
+}
+
+.clr3 {
+  animation: col3 3s linear infinite;
+}
+
+@keyframes col3 {
+
+  0%,
+  33% {
+    fill: #3631ff
+  }
+
+  34%,
+  66% {
+    fill: #30e81c
+  }
+
+  67%,
+  100% {
+    fill: #EC4E56
+  }
+}
