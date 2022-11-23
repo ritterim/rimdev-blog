@@ -9,8 +9,7 @@ const featured = posts
   .reverse()
   .slice(0, 1)[0];
 
-const { title, authors, image, image_credit, image_url } =
-  featured.frontmatter;
+const { title, authors, image, image_credit, image_url } = featured.frontmatter;
 
 const rawContent = featured.rawContent();
 
@@ -23,19 +22,20 @@ const content = featured.compiledContent();
   imageCredit={image_credit}
   imageUrl={image_url}
 >
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable text container">
-      <article>
-        <h1>{title}</h1>
+  <div class="container">
+    <article>
+      <h1 class="py-4 p-0 text--size-2xl">{title}</h1>
 
-        <div class="author">
+      <div
+        class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-lighter mb-4"
+      >
+        <p class="p-0 m-0">
           Written by <a href={`/authors/${sluggify(authors)}`}>{authors}</a>
+        </p>
+        <WordCount content={rawContent} />
+      </div>
 
-          <WordCount content={rawContent} />
-        </div>
-
-        <Fragment set:html={content} />
-      </article>
-    </div>
+      <Fragment set:html={content} />
+    </article>
   </div>
 </MainLayout>

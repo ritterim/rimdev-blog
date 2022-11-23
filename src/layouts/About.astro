@@ -4,9 +4,12 @@ const { frontmatter } = Astro.props;
 ---
 
 <MainLayout title={frontmatter.title} image={frontmatter.image}>
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable text container">
+  <div class="container">
+    <div class="block-container">
       <article>
+        <h1 class="py-4 p-0 text--size-2xl border-b border--color-lighter">
+          {frontmatter.title}
+        </h1>
         <slot />
       </article>
     </div>

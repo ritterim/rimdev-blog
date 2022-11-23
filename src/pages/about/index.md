@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/About.astro"
-title: "About"
+title: "So who is RIMdev anyway?"
 image: "/images/default/rimdev-configyml.jpg"
 ---
 

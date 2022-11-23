@@ -23,13 +23,65 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
 );
 ---
 
-<div class="ui sidebar very wide vertical">
+<div id="sidebar" class="drawer drawer-left">
+  <div class="drawer__inner">
+    <div class="drawer__header pb-0">
+      <div class="block-container">
+        <div class="block block-7">
+          <a href={site.url}>
+            <img src="/images/logos/RIMdev.svg" alt={site.user_description} />
+          </a>
+        </div>
+      </div>
+      <button class="button drawer__close" data-drawer="sidebar">
+        Close
+        <i class="pi-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="drawer__content">
+      <ul class="list">
+        {
+          posts.map((post) => (
+            <li class="border-b border--color-lighter pb-3">
+              <h3>
+                <a title={post.frontmatter.title} href={post.url}>
+                  {post.frontmatter.title}
+                </a>
+              </h3>
+              <div class="author mb-2">
+                <div class="block-container flex--align-center">
+                  <div class="block block-2">
+                    <div class="image--round-small">
+                      <img src={post.avatar} alt={post.frontmatter.authors} />
+                    </div>
+                  </div>
+                  <div class="block block-10 pl-2">
+                    <a href={post.slug}>{post.frontmatter.authors}</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2">
+                {Array.from(post.frontmatter.tags).map((tag) => (
+                  <a
+                    class="pill border--color-orange text--orange mr-1 mb-1"
+                    href={`/tags/#${tag}`}
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- <div class="ui sidebar very wide vertical">
   <div class="close ui right floated">&times;</div>
 
   <div class="logo">
-    <a href={site.url}>
-      <img src="/images/logos/RIMdev.svg" alt={site.user_description} />
-    </a>
+
   </div>
   <div class="ui vertical post-articles">
     {
@@ -68,4 +120,4 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
       ))
     }
   </div>
-</div>
+</div> -->

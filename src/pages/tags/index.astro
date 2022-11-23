@@ -17,18 +17,19 @@ tags = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
 ---
 
 <MainLayout title={title} image={image}>
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned text container">
+  <div class="container">
       <article>
-        <h1>{title}</h1>
-        <div class="ui text container tags">
+        <h1 class="py-4 p-0 text--size-2xl">{title}</h1>
+        <div class="flex flex--wrap mb-4">
           {
             tags.map((tag) => (
-              <a href={`/tags/#${tag}`} class="ui basic label orange">
+              <a href={`/tags/#${tag}`} class="pill border--color-orange text--orange mr-2 mb-2">
                 {tag}
               </a>
             ))
           }
+        </div>
+        <div>
           {
             tags.map(tag => (
               <h2 id={tag}>{tag}</h2>
@@ -37,6 +38,5 @@ tags = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
           }
         </div>
       </article>
-    </div>
   </div>
 </MainLayout>

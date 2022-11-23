@@ -2,43 +2,49 @@
 import { site } from '../data/config.json';
 ---
 
-<footer class="ui vertical segment">
-  <div class="ui stackable text container">
-    <div class="ui horizontal divider">
-      <a href={site.url}>
-        <img
-          class="footer"
-          src="/images/logos/RIMdev.svg"
-          alt={site.user_description}
-        />
+<footer class="container">
+  <div class="footer-divider">
+    <a href={site.url}>
+      <img src="/images/logos/RIMdev.svg" alt={site.user_description} />
+    </a>
+  </div>
+  <div class="block-container flex--justify-between">
+    <p class="flex flex--align-center">
+      <span class="mt-1">&copy;</span>
+      <a class="mx-2 mt-1" href={site.rim_url}>{site.rim_copy}</a>
+      <a target="_blank" href={site.map_url}>
+        <span class="sr-only">Our Location</span>
+        <i class="pi-map-marker"></i>
       </a>
-    </div>
+    </p>
 
-    <div class="ui horizontal list social right floated">
-      <div class="item">
+    <div class="flex">
+      <div class="item mr-2">
         <a
           target="_blank"
-          href="https://twitter.com/{{ site.twitter_username }}"
-          ><i class="icon large twitter"></i>
+          href={`https://twitter.com/${site.twitter_username}`}
+        >
+          Twitter
+        </a>
+      </div>
+      <div class="item mr-2">
+        <a target="_blank" href={`https://github.com/${site.github_username}`}>
+          GitHub
         </a>
       </div>
       <div class="item">
-        <a target="_blank" href="https://github.com/{{ site.github_username }}"
-          ><i class="icon large github alternate"></i>
-        </a>
-      </div>
-      <div class="item">
-        <a href="/feed.xml"><i class="icon large feed"></i></a>
+        <a href="/feed.xml">RSS Feed</a>
       </div>
     </div>
-
-    <p>
-      &copy; <a href={site.rim_url}>{site.rim_copy}</a>
-      <a target="_blank" href={site.map_url}><i class="icon marker"></i></a>
-    </p>
   </div>
 </footer>
+
 <script
+  is:inline
+  src="https://unpkg.com/@ritterim/platform-ui/dist/js/platform-ui.min.js"
+  defer
+></script>
+<!-- <script
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"
@@ -49,7 +55,7 @@ import { site } from '../data/config.json';
   integrity="sha256-HcON65l89nxNl7vaRECVPe/zNDBzhCcJYBE7O+EcruU="
   crossorigin="anonymous"
   is:inline
-></script>
+></script> -->
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.js"
   integrity="sha256-1uR+pqxH5fN/rOZcZTb9c5+bR3OIYEKzu2sI11Dnj9A="

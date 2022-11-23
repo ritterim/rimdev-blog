@@ -2,7 +2,9 @@
 const { tag } = Astro.props;
 
 const posts = await Astro.glob('../pages/*.md').then((posts) =>
-  posts.filter((post) => post.frontmatter.tags.includes(tag))
+  posts
+    .filter((post) => post.frontmatter.tags.includes(tag))
+    .sort((a, b) => a.frontmatter.date.localeCompare(b.frontmatter.date))
 );
 ---
 

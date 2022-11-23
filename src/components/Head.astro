@@ -1,7 +1,7 @@
 ---
 import Favicons from './Favicons.astro';
 import { site } from '../data/config.json';
-import '../sass/main.scss';
+import '../sass/styles.scss';
 
 const { title, description, image } = Astro.props;
 ---
@@ -62,12 +62,9 @@ const { title, description, image } = Astro.props;
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Work+Sans:300|Roboto+Slab:400,300,100"
   />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css"
-    integrity="sha256-iK7AZM7Xa42iuURdMdo1sp38ld/JJ3fDtS0523GKqdk="
-    crossorigin="anonymous"
-  />
+
+  <link rel="stylesheet" href="https://unpkg.com/@ritterim/platform-ui/dist/platform-ui.min.css" crossorigin="anonymous">
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.css"

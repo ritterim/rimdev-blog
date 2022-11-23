@@ -15,19 +15,18 @@ const { title, image, authorImage, author, imageCredit, imageUrl } =
 <html lang="en">
   <Head title={title} />
   <body>
+    <Masthead
+      authorImage={authorImage}
+      author={author}
+      postImage={image ? image : site.default_image}
+      imageCredit={imageCredit}
+      imageUrl={imageUrl}
+    />
+    <main>
     <Sidebar />
-    <div class="pusher dimmable">
-      <Masthead
-        authorImage={authorImage}
-        author={author}
-        postImage={image ? image : site.default_image}
-        imageCredit={imageCredit}
-        imageUrl={imageUrl}
-      />
-      <Menu />
-      <slot />
-      <SearchModal />
-      <Footer />
-    </div>
+    <slot />
+    <SearchModal />
+    <Footer />
+    </main>
   </body>
 </html>

@@ -18,12 +18,14 @@ const content = rawContent();
   imageCredit={frontmatter.image_credit}
   imageUrl={frontmatter.image_url}
 >
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable text container">
-      <article>
-        <h1>{frontmatter.title}</h1>
+  <div class="container">
+    <article>
+      <h1 class="py-4 p-0 text--size-2xl">{frontmatter.title}</h1>
 
-        <div class="author">
+      <div
+        class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-lighter mb-4"
+      >
+        <p class="p-0 m-0">
           Written by
           {
             authors ? (
@@ -36,10 +38,11 @@ const content = rawContent();
               </a>
             )
           }
-          <WordCount content={content} />
-        </div>
-        <slot />
-      </article>
-    </div>
+        </p>
+        <WordCount content={content} />
+      </div>
+
+      <slot />
+    </article>
   </div>
 </MainLayout>

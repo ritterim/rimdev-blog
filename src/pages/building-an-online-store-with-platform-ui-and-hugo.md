@@ -208,7 +208,7 @@ We can use Platform UI's [site menu](https://platformui.com/docs/menus/site-menu
 ```html
 <!-- header.html -->
 <header id="header" class="header site-header background--lightblue">
- <div class="max-container h-100">
+ <div class="container h-100">
    <a class="site-logo p-2 h-100 flex flex--align-center text--bold text--size-lg" href="/">
       Hugo Store
    </a>
@@ -219,7 +219,7 @@ We can use Platform UI's [site menu](https://platformui.com/docs/menus/site-menu
 A quick explanation of what is happening:
 - We create a site header by adding the `site-header` class to the `<header>` element.
 - We can also set the background color using the `background--lightblue` class. This is part of Platform UI's [color](https://platformui.com/docs/colors/colors/) classes.
-- `max-container` on the inner `div` applies a centered, [max-width container](https://platformui.com/docs/layout/max-width/) to the header.
+- `container` on the inner `div` applies a centered, [max-width container](https://platformui.com/docs/layout/max-width/) to the header.
 - On the `site-logo` we are applying flex utility classes to center the link text. We are also adding some [typographical](https://platformui.com/docs/typography/typography/) utilities to enlarge (`text--size-lg`) and bold the text (`text--bold`).
 
 For the purposes of this demo, this is all we need, though this could be expanded further by adding in a navigation!
@@ -235,7 +235,7 @@ Inside `~/hugo-store/themes/store-theme/layouts/_default/list.html`:
 ```html
 <!-- list.html -->
 {{ '{{' }} define "main" }}
-<article class="max-container pt-4">
+<article class="container pt-4">
   <div class="flex flex--center-content">
     <h2>{{ '{{' }} .Title }}</h2>
   </div>
@@ -322,7 +322,7 @@ Inside `~/hugo-store/themes/store-theme/layouts/_default/single.html` let's add 
 ```html
 <!-- single.html -->
 {{ '{{' }} define "main" }}
- <article class="max-container">
+ <article class="container">
   <section class="block-container">
     <div class="block lg-tablet-up-6 p-4">
       <figure class="figure-hover">
@@ -377,7 +377,7 @@ Hugo sets the `~/hugo-store/themes/store-theme/layouts/index.html` as the homepa
 
 ```html
 {{ '{{' }} define "main" }}
-<article class="block-container max-container pt-4">
+<article class="block-container container pt-4">
   {{ '{{' }} range .Pages }}
     <section class="category w-100 flex flex--column flex--justify-center mb-4">
       <div class="category__header">
