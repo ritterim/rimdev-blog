@@ -8,7 +8,7 @@
     "start": "astro dev",
     "build:astro": "astro build",
     "build:search": "npx -y pagefind --source dist",
-    "build": "npm-run-all --sequential build:astro ",
+    "build": "npm-run-all --sequential build:*",
     "preview": "astro preview",
     "astro": "astro"
   },
