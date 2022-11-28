@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <MainLayout title={frontmatter.title} image={frontmatter.image}>
-  <div class="container">
+  <div class="container" data-pagefind-body>
     <div class="block-container">
       <article>
         <h1 class="py-4 p-0 text--size-2xl border-b border--color-lighter">

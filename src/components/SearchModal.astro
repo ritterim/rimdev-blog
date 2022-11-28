@@ -1,13 +1,14 @@
-<div class="ui basic scrolling modal search-modal">
-  <i class="huge grey close icon"></i>
-  <div class="content">
-    <rim-search
-      data-api-url="https://content-search.ritterim.com"
-      data-filter-sites="rimdev.io"
-      
-    />
-    <script src="/js/content-search-component/inline.js" is:inline></script>
-    <script src="/js/content-search-component/vendor.js" is:inline></script>
-    <script src="/js/content-search-component/main.js" is:inline></script>
+<div id="search-modal" class="modal">
+  <div class="modal__inner">
+    <div class="modal__header background--white">
+      <button class="button modal__close" data-modal="search-modal">
+        Close
+        <i class="pi-times"></i>
+      </button>
+      <h2>Search</h2>
+    </div>
+    <div class="modal__content">
+      <div id="search"></div>
+    </div>
   </div>
 </div>

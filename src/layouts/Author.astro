@@ -20,7 +20,7 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
   author={frontmatter.author}
   authorImage={frontmatter.avatar}
 >
-  <div class="container">
+  <div class="container" data-pagefind-body>
     <h1 class="py-4 p-0 text--size-2xl border-b border--color-lighter">
       {frontmatter.author}
       {frontmatter.former ? <span>(Previous Team Member)</span> : null}
