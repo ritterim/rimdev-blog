@@ -1,0 +1,66 @@
+---
+import { DateTime } from 'luxon';
+const { date, authors } = Astro.props;
+
+const postDate = DateTime.fromMillis(Date.parse(date)).toFormat(
+  'LLLL dd, yyyy'
+);
+
+const authorDetails = await Astro.glob('../pages/authors/*.md').then(
+  (allAuthors) => {
+    if (typeof authors === 'object') {
+      return Array.from(authors).map((author) =>
+        allAuthors.filter((a) => a.frontmatter.author === author)
+      );
+    } else {
+      return allAuthors.filter((a) => a.frontmatter.author === authors);
+    }
+  }
+);
+---
+
+<div class="block-container">
+  <div class="divider">
+    <h2 class="text--size-md text--base text--nowrap">
+      <span class="mx-3">Published {postDate} by</span>
+    </h2>
+  </div>
+</div>
+<div class="flex flex--wrap flex--justify-center" style="gap: 1rem;">
+  {
+    authorDetails.flat().map((author) => (
+      <div class="card no-border flex" style="gap: 0.5rem;">
+        {author.frontmatter.avatar ? (
+          <div class="image--round-small" style="width: 50px;">
+            <img
+              src={author.frontmatter.avatar}
+              alt={`${author.frontmatter.author} avatar`}
+            />
+          </div>
+        ) : null}
+        <div>
+          <span class="flex flex--align-center">
+            <a class="text--nowrap" href={author.url}>
+              {author.frontmatter.author}
+            </a>
+            <span class="ml-2 pl-2 border-l border--color-light text--nowrap">
+              {author.frontmatter.github ? (
+                <a href={`https://www.github.com/${author.frontmatter.github}`}>
+                  Github
+                </a>
+              ) : null}
+              {author.frontmatter.twitter ? (
+                <a
+                  href={`https://www.twitter.com/${author.frontmatter.twitter}`}
+                >
+                  Twitter
+                </a>
+              ) : null}
+            </span>
+          </span>
+          <span>{author.frontmatter.title}</span>
+        </div>
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,64 @@
+---
+import { site } from '../data/config.json';
+const { currentTitle, tags } = Astro.props;
+let posts = await Astro.glob('../pages/*.md').then((posts) =>
+  tags
+    .map((tag) =>
+      posts.filter(
+        (post) =>
+          post.frontmatter.tags.includes(tag) &&
+          post.frontmatter.title !== currentTitle
+      )
+    )
+    .flat()
+    .slice(0, 6)
+);
+
+posts = [...new Set(posts)];
+---
+
+<div class="block-container">
+  <div class="divider">
+    <h2 class="text--size-md text--base text--nowrap">
+      <span class="mx-3">Suggested Reading</span>
+    </h2>
+  </div>
+</div>
+<div class="block-container blocks lg-tablet-up-2 laptop-up-3 p-1">
+  {
+    posts.map((post) => (
+      <div class="block">
+        <div class="card border--color-light h-100 p-0 overflow-hidden">
+          <div class="h-50 overflow-hidden">
+            {post.frontmatter.image ? (
+              <img
+                class="h-100 w-100"
+                src={post.frontmatter.image}
+                alt={post.frontmatter.title}
+              />
+            ) : (
+              <img
+                class="h-100 w-100"
+                src={site.default_image}
+                alt={post.frontmatter.title}
+              />
+            )}
+          </div>
+          <h3 class="text--size-base m-0 px-2">
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </h3>
+          <div class="flex flex--wrap p-2">
+            {post.frontmatter.tags.slice(0, 3).map((tag) => (
+              <a
+                href={`/tags/#${tag}`}
+                class="pill border border--color-orange text--orange mr-1 mb-1"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>

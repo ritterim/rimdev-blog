@@ -15,7 +15,7 @@ const imageUrl = 'https://www.flickr.com/photos/rmstringer';
 >
   <div class="container" data-pagefind-body>
     <div class="block-container">
-      <h1>{title}</h1>
+      <h1 class="py-4 p-0 text--size-2xl border-b border--color-light">{title}</h1>
       <h2>
         We're pretty transparent about what we do and how we do it (when we can
         be anyway).
@@ -35,7 +35,7 @@ const imageUrl = 'https://www.flickr.com/photos/rmstringer';
 
         <div class="flex flex--justify-center">
           <a
-            class="button button--orange text--white mr-3"
+            class="button button--orange mr-3"
             href="https://rimdev.io/stuntman"
           >
             Learn more
@@ -164,7 +164,9 @@ const imageUrl = 'https://www.flickr.com/photos/rmstringer';
   }
 
   .supurlative {
-    background: #00b5ad;
+    background: #036f69;
+
+    color: #333;
     h3 {
       font-weight: bold;
       span {
@@ -176,7 +178,7 @@ const imageUrl = 'https://www.flickr.com/photos/rmstringer';
   .filter {
     background: #a5673f;
     h3 {
-      color: hotpink;
+      color: #ffbfeb;
       font-family: 'Raleway', sans-serif;
     }
     span {
@@ -190,6 +192,10 @@ const imageUrl = 'https://www.flickr.com/photos/rmstringer';
       color: LightSlateGrey;
       font-family: 'Audiowide', cursive;
       text-transform: lowercase;
+    }
+
+    p > a{
+      color: #3476aa;
     }
   }
 </style>

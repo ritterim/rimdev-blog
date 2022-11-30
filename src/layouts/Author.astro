@@ -21,7 +21,7 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
   authorImage={frontmatter.avatar}
 >
   <div class="container" data-pagefind-body>
-    <h1 class="py-4 p-0 text--size-2xl border-b border--color-lighter">
+    <h1 class="py-4 p-0 text--size-2xl border-b border--color-light">
       {frontmatter.author}
       {frontmatter.former ? <span>(Previous Team Member)</span> : null}
     </h1>
@@ -58,7 +58,7 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
               <a href={post.url}>{post.frontmatter.title}</a>
             </h2>
           </header>
-          <div class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-lighter mb-4">
+          <div class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-light mb-4">
             <a href={`/authors/${sluggify(post.frontmatter.authors)}`}>
               {post.frontmatter.authors}
             </a>

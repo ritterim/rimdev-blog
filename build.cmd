@@ -14,7 +14,7 @@ if %ERRORLEVEL% neq 0 goto BuildFail
 call npm run build
 if %ERRORLEVEL% neq 0 goto BuildFail
 
-call npx -y pagefind --source dist/
+call npm exec -- -y pagefind --source dist/
 if %ERRORLEVEL% neq 0 goto BuildFail
 
 goto BuildSuccess

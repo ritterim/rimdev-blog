@@ -2,6 +2,8 @@
 import MainLayout from './MainLayout.astro';
 import sluggify from '../mixins/sluggify';
 import WordCount from '../components/WordCount.astro';
+import PostBy from '../components/PostBy.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
 const { frontmatter, rawContent } = Astro.props;
 let authors;
 
@@ -23,14 +25,14 @@ const content = rawContent();
       <h1 class="py-4 p-0 text--size-2xl">{frontmatter.title}</h1>
 
       <div
-        class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-lighter mb-4"
+        class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-base mb-4"
       >
         <p class="p-0 m-0">
           Written by
           {
             authors ? (
               authors.map((author) => (
-                <a href={`/authors/${sluggify(author)}`}>{author}</a>
+                <a class="mr-1" href={`/authors/${sluggify(author)}`}>{author}</a>
               ))
             ) : (
               <a href={`/authors/${sluggify(frontmatter.authors)}`}>
@@ -44,5 +46,7 @@ const content = rawContent();
 
       <slot />
     </article>
+    <PostBy date={frontmatter.date} authors={frontmatter.authors} />
+    <RelatedArticles currentTitle={frontmatter.title} tags={frontmatter.tags} />
   </div>
 </MainLayout>

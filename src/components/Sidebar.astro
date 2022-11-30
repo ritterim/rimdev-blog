@@ -42,7 +42,7 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
       <ul class="list">
         {
           posts.map((post) => (
-            <li class="border-b border--color-lighter pb-3">
+            <li class="border-b border--color-light pb-3">
               <h3>
                 <a title={post.frontmatter.title} href={post.url}>
                   {post.frontmatter.title}
@@ -77,47 +77,3 @@ const posts = await Astro.glob('../pages/*.md').then((posts) =>
     </div>
   </div>
 </div>
-<!-- <div class="ui sidebar very wide vertical">
-  <div class="close ui right floated">&times;</div>
-
-  <div class="logo">
-
-  </div>
-  <div class="ui vertical post-articles">
-    {
-      posts.map((post) => (
-        <article>
-          <header>
-            <a title={post.frontmatter.title} href={post.url}>
-              <h3>{post.frontmatter.title}</h3>
-            </a>
-          </header>
-          <author>
-            <div class="ui horizontal list">
-              <div class="item">
-                <div class="ui avatar image">
-                  <img src={post.avatar} alt={post.frontmatter.author} />
-                </div>
-                <div class="content">
-                  <a href={post.slug}>{post.frontmatter.authors}</a>
-                </div>
-              </div>
-            </div>
-          </author>
-          <p />
-
-          {Array.from(post.frontmatter.tags).map((tag) => (
-            <a class="ui basic label orange tiny" href={`/tags/#${tag}`}>
-              {tag}
-            </a>
-          ))}
-
-          <div class="read-now">
-            <a href={post.url}>Read now </a>
-            <i class="icon space shuttle large" />
-          </div>
-        </article>
-      ))
-    }
-  </div>
-</div> -->
