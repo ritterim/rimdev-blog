@@ -3,7 +3,7 @@ import Favicons from './Favicons.astro';
 import { site } from '../data/config.json';
 import '../sass/styles.scss';
 
-const { title, description, image } = Astro.props;
+const { title, description, image, permalink } = Astro.props;
 ---
 
 <head>
@@ -11,6 +11,11 @@ const { title, description, image } = Astro.props;
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content={Astro.generator} />
+
+  <link
+    rel="canonical"
+    href={`${site.baseurl}${permalink ? permalink : ''}`}
+  />
 
   <!-- Social: Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -40,10 +45,7 @@ const { title, description, image } = Astro.props;
     name="og:description"
     content={description ? description : site.description}
   />
-  <meta
-    property="og:site_name"
-    content={site.site_name}
-  />
+  <meta property="og:site_name" content={site.site_name} />
 
   <!-- Schema.org  -->
   <meta

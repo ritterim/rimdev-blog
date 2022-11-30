@@ -1,12 +1,14 @@
 import { defineConfig } from 'astro/config';
+import { site } from './src/data/config.json';
 
 // https://astro.build/config
-import sitemap from "@astrojs/sitemap";
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
-import compress from "astro-compress";
+import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), compress()]
+  site: site.baseurl,
+  integrations: [sitemap(), compress()],
 });

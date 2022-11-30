@@ -1,6 +1,6 @@
 {
   "site": {
-    "baseurl": "rimdev.io",
+    "baseurl": "https://rimdev.io",
     "site_name": "RIMdev Blog",
     "default_image": "/images/default/rimdev-surface.jpg",
     "description": "A blog from the Ritter Insurance Marketing Software development department, a.k.a. RIMdev",

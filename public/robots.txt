@@ -1,3 +1,6 @@
 # robotstxt.org/
 
 User-agent: *
+Allow: /
+
+Sitemap: https://rimdev.io/sitemap-index.xml

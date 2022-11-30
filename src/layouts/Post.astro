@@ -5,6 +5,7 @@ import WordCount from '../components/WordCount.astro';
 import PostBy from '../components/PostBy.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 const { frontmatter, rawContent } = Astro.props;
+
 let authors;
 
 if (typeof frontmatter.authors == 'object') {
@@ -19,6 +20,7 @@ const content = rawContent();
   image={frontmatter.image}
   imageCredit={frontmatter.image_credit}
   imageUrl={frontmatter.image_url}
+  url={frontmatter.url}
 >
   <div class="container" data-pagefind-body>
     <article>
@@ -32,7 +34,9 @@ const content = rawContent();
           {
             authors ? (
               authors.map((author) => (
-                <a class="mr-1" href={`/authors/${sluggify(author)}`}>{author}</a>
+                <a class="mr-1" href={`/authors/${sluggify(author)}`}>
+                  {author}
+                </a>
               ))
             ) : (
               <a href={`/authors/${sluggify(frontmatter.authors)}`}>
@@ -46,7 +50,7 @@ const content = rawContent();
 
       <slot />
     </article>
-    <PostBy date={frontmatter.date} authors={frontmatter.authors} />
+    <PostBy date={frontmatter.date} authors={frontmatter.authors} tags={frontmatter.tags} />
     <RelatedArticles currentTitle={frontmatter.title} tags={frontmatter.tags} />
   </div>
 </MainLayout>

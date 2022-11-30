@@ -3,7 +3,11 @@ import MainLayout from './MainLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 
-<MainLayout title={frontmatter.title} image={frontmatter.image}>
+<MainLayout
+  title={frontmatter.title}
+  image={frontmatter.image}
+  url={frontmatter.url}
+>
   <div class="container" data-pagefind-body>
     <div class="block-container">
       <article>

@@ -1,6 +1,6 @@
 ---
 import { DateTime } from 'luxon';
-const { date, authors } = Astro.props;
+const { date, authors, tags } = Astro.props;
 
 const postDate = DateTime.fromMillis(Date.parse(date)).toFormat(
   'LLLL dd, yyyy'
@@ -61,6 +61,18 @@ const authorDetails = await Astro.glob('../pages/authors/*.md').then(
           <span>{author.frontmatter.title}</span>
         </div>
       </div>
+    ))
+  }
+</div>
+<div class="flex flex--justify-center" style="gap:0.5rem">
+  {
+    tags.map((tag) => (
+      <a
+        class="pill border--color-orange text--orange mr-1 mb-1"
+        href={`/tags/#${tag}`}
+      >
+        {tag}
+      </a>
     ))
   }
 </div>

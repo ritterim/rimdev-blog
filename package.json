@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build:astro": "astro build",
+    "build:search": "npm exec -- pagefind --source dist",
+    "build": "npm-run-all --sequential build:*",
     "preview": "astro preview",
     "astro": "astro"
   },

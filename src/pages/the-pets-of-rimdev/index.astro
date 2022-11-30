@@ -3,8 +3,12 @@ import MainLayout from '../../layouts/MainLayout.astro';
 import { pets } from '../../data/pets.json';
 ---
 
-<MainLayout title="The Pets of RIMdev" image="/images/pets/pets-banner.jpg">
-  <div class="pets-page">
+<MainLayout
+  title="The Pets of RIMdev"
+  image="/images/pets/pets-banner.jpg"
+  url="/the-pets-of-rimdev"
+>
+  <div class="pets-page" data-pagefind-body>
     <div class="container" style="--container-width: 120ch;">
       <div class="block-container flex--justify-center">
         <h1 class="py-4 p-0 text--size-2xl text--center">The Pets of RIMdev</h1>
