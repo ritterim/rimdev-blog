@@ -2,13 +2,11 @@
   "pets": [
     {
       "name": "Bella",
-      "image": "/images/pets/bella--500x500.jpg",
-      "owner": ""
+      "image": "/images/pets/bella--500x500.jpg"
     },
     {
       "name": "Dobby",
-      "image": "/images/pets/dobby.jpg",
-      "owner": ""
+      "image": "/images/pets/dobby.jpg"
     },
     {
       "name": "Echo",
