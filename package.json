@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build:astro": "astro build",
-    "build:search": "npm exec -- pagefind --source dist",
+    "build:search": "npm exec -- pagefind --verbose --source dist",
     "build": "npm-run-all --sequential build:*",
     "preview": "astro preview",
     "astro": "astro"
