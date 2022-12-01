@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build:astro": "astro build",
-    "build:search": "npm exec --yes -- pagefind@0.10.1 --verbose --source dist",
-    "build": "run-s build:*",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
