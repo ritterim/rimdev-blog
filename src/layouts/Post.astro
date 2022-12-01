@@ -50,7 +50,11 @@ const content = rawContent();
 
       <slot />
     </article>
-    <PostBy date={frontmatter.date} authors={frontmatter.authors} tags={frontmatter.tags} />
+    <PostBy
+      date={frontmatter.date}
+      authors={frontmatter.authors}
+      tags={frontmatter.tags}
+    />
     <RelatedArticles currentTitle={frontmatter.title} tags={frontmatter.tags} />
   </div>
 </MainLayout>
