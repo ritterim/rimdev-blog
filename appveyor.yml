@@ -1,6 +1,7 @@
 environment:
   matrix:
     - nodejs_version: LTS
+      nodejs_version: STABLE
       configuration: publish
 
 install:
@@ -13,6 +14,9 @@ before_build:
 
 build_script:
   - ./build.cmd
+
+after_build:
+  - npx --yes -- pagefind@0.10.1 --source dist
 
 test: off
 
