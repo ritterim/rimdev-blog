@@ -16,7 +16,7 @@ build_script:
   - ./build.cmd
 
 after_build:
-  - npx --yes -- pagefind@0.10.1 --source dist
+  - npm exec --yes -- pagefind@0.10.1 --verbose --source dist
 
 test: off
 
