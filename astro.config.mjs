@@ -10,5 +10,10 @@ import compress from 'astro-compress';
 // https://astro.build/config
 export default defineConfig({
   site: site.baseurl,
-  integrations: [sitemap(), compress()],
+  integrations: [
+    sitemap(),
+    compress({
+      logger: 0,
+    }),
+  ],
 });
