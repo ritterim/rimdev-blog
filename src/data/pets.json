@@ -1,8 +1,16 @@
 {
   "pets": [
     {
+      "name": "Aldi",
+      "image": "/images/pets/aldi--500x500.jpg"
+    },
+    {
       "name": "Bella",
       "image": "/images/pets/bella--500x500.jpg"
+    },
+    {
+      "name": "DD",
+      "image": "/images/pets/dd--500x500.jpg"
     },
     {
       "name": "Dobby",
