@@ -14,9 +14,6 @@ before_build:
 build_script:
   - ./build.cmd
 
-after_build:
-  - npm exec --yes -- pagefind@0.10.1 --verbose --source dist
-
 test: off
 
 artifacts:
