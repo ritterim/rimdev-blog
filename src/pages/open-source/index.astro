@@ -1,0 +1,204 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '{Open source} things we made for you';
+const image = 'https://c2.staticflickr.com/4/3029/2911413043_be72010c6e_b.jpg';
+const imageCredit = 'Robert Stringer';
+const imageUrl = 'https://www.flickr.com/photos/rmstringer';
+---
+
+<MainLayout
+  title={title}
+  image={image}
+  imageCredit={imageCredit}
+  imageUrl={imageUrl}
+  url="/open-source"
+>
+  <div class="container" data-pagefind-body>
+    <div class="block-container">
+      <h1 class="py-4 p-0 text--size-2xl border-b border--color-light">
+        {title}
+      </h1>
+      <h2>
+        We're pretty transparent about what we do and how we do it (when we can
+        be anyway).
+      </h2>
+      <div class="divider hidden"></div>
+    </div>
+  </div>
+
+  <div class="block-container stuntman background--navy py-5">
+    <div class="block">
+      <div class="container text--center">
+        <img src="/images/stuntman_helmet.png" alt="Stuntman" width="200px" />
+        <h3 class="text--size-xl text--white">
+          Sometimes you need a Stuntman before you send in real, unsuspecting
+          users!
+        </h3>
+
+        <div class="flex flex--justify-center">
+          <a
+            class="button button--orange mr-3"
+            href="https://rimdev.io/stuntman"
+          >
+            Learn more
+          </a>
+          <a
+            class="button"
+            target="_blank"
+            href="https://github.com/ritterim/stuntman"
+          >
+            View on Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-container blocks tablet-up-2 py-5">
+    <div
+      class="block starorgs pos-rel text--center px-4 background-image text--white"
+      data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg/1200px-%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg"
+      data-background-position="center center"
+      data-background-size="cover"
+      data-background-repeat="no-repeat"
+    >
+      <div class="pos-abs pin-bottom mb-4">
+        <div class="pill background--black">
+          <span class="cc-icon"></span>
+          <a
+            target="_blank"
+            class="text--white"
+            href="https://commons.wikimedia.org/wiki/File:%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg#/media/File:%E6%B7%B1%E5%9C%B38%E6%9C%88%E5%BA%95%E5%A4%9C%E6%99%AF.jpg"
+          >
+            星耀晨曦
+          </a>
+        </div>
+      </div>
+
+      <img
+        src="https://raw.githubusercontent.com/ritterim/star-orgs/master/public/logo.png"
+        alt="Star-orgs"
+        width="200px"
+      />
+      <p class="container" style="--container-width: 60ch;">
+        It is a dark time for the Galaxy. Active Directory holds crucial troop
+        information but is seemingly impenetrable even to those with access to
+        the force.
+      </p>
+
+      <a
+        class="ui animated big black button"
+        target="_blank"
+        href="https://github.com/ritterim/star-orgs"
+      >
+        View on Github
+      </a>
+    </div>
+    <div class="block supurlative text--center px-4 text--white">
+      <h3 class="text--size-2xl text--white m-0">Sup<span>Url</span>ative</h3>
+      <p class="container" style="--container-width: 60ch;">
+        Links and templates are at the heart of a Hypermedia API. It is
+        important to generate correct resource links in addition to properly
+        defining the capabilities each resources exposes via url templates.
+      </p>
+
+      <a
+        class="button"
+        target="_blank"
+        href="https://github.com/ritterim/supurlative"
+      >
+        View on Github
+      </a>
+    </div>
+  </div>
+
+  <div class="block-container">
+    <div class="block filter p-5 text--white">
+      <div class="container text--center">
+        <h3 class="text--uppercase text--size-2xl mb-0">Filter</h3>
+        <span class="text--size-lg">The classy way to filter collections.</span>
+        <p class="container" style="--container-width: 60ch;">
+          A library that allows an IEnumerable to be filtered using either a
+          typed or anonymous class.
+        </p>
+
+        <a
+          class="button"
+          target="_blank"
+          href="https://github.com/ritterim/filter"
+        >
+          View on Github
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-container">
+    <div class="block oss">
+      <div class="container text--center p-5">
+        <h3 class="text--size-2xl">Releases</h3>
+        <p class="container" style="--container-width: 60ch;">
+          We wanted to create a tool that allowed non-GitHub user’s access to
+          our GitHub <a href="/announcing-rimdev-releases/">releases</a> with the
+          hope that they would be more informed about the progress our team is making
+          in squashing bugs, adding features, and kicking butt.
+        </p>
+
+        <a
+          class="button"
+          target="_blank"
+          href="https://github.com/ritterim/releases"
+        >
+          View on Github
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style lang="scss">
+  @import url('https://fonts.googleapis.com/css?family=Trocchi|Audiowide|Satisfy|Raleway:100');
+
+  .starorgs {
+    .cc-icon {
+      border-radius: 100%;
+    }
+  }
+
+  .supurlative {
+    background: #036f69;
+
+    color: #333;
+    h3 {
+      font-weight: bold;
+      span {
+        color: yellow;
+      }
+    }
+  }
+
+  .filter {
+    background: #a5673f;
+    h3 {
+      color: #ffbfeb;
+      font-family: 'Raleway', sans-serif;
+    }
+    span {
+      font-family: 'Satisfy', cursive;
+    }
+  }
+
+  .oss {
+    background: aliceblue;
+    h3 {
+      color: LightSlateGrey;
+      font-family: 'Audiowide', cursive;
+      text-transform: lowercase;
+    }
+
+    p > a {
+      color: #3476aa;
+    }
+  }
+</style>

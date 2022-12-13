@@ -1,0 +1,10 @@
+---
+const { content } = Astro.props;
+
+const wordCount = Math.floor((content.split(' ').length + 250) / 200);
+---
+
+<div class="flex flex--align-center">
+  <i class="pi-book mr-2"></i>
+  {wordCount} minutes
+</div>

@@ -1,0 +1,84 @@
+---
+import Favicons from './Favicons.astro';
+import { site } from '../data/config.json';
+import '../sass/styles.scss';
+
+const { title, description, image, permalink } = Astro.props;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content={Astro.generator} />
+
+  <link
+    rel="canonical"
+    href={`${site.baseurl}${permalink ? permalink : ''}`}
+  />
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content={site.twitter_username} />
+  <meta
+    name="twitter:image"
+    property="og:image"
+    content={image ? image : site.default_image}
+  />
+  <meta
+    name="twitter:title"
+    content={title?.length ? `${title} | RIMdev Blog` : site.title}
+  />
+  <meta
+    name="twitter:description"
+    content={description ? description : site.description}
+  />
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content={site.url} />
+  <meta
+    name="og:title"
+    content={title ? `${title} | RIMdev Blog` : site.title}
+  />
+  <meta property="og:image" content={image ? image : site.default_image} />
+  <meta
+    name="og:description"
+    content={description ? description : site.description}
+  />
+  <meta property="og:site_name" content={site.site_name} />
+
+  <!-- Schema.org  -->
+  <meta
+    itemprop="name"
+    content={title ? `${title} | RIMdev Blog` : site.title}
+  />
+  <meta
+    itemprop="description"
+    content={description ? description : site.description}
+  />
+  <meta itemprop="image" content={image ? image : site.default_image} />
+
+  <title>{title ? `${title} | RIMdev Blog` : site.title}</title>
+  <meta name="description" content={site.description} />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Work+Sans:300|Roboto+Slab:400,300,100"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@ritterim/platform-ui/dist/platform-ui.min.css"
+    crossorigin="anonymous"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.css"
+    integrity="sha256-446p5J21C94lwDJ4yc/oaAO0/0M1NVX5tuHb/ntU2NQ="
+    crossorigin="anonymous"
+  />
+  <!-- <link rel="canonical" href="{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet" />
+  <Favicons />
+</head>

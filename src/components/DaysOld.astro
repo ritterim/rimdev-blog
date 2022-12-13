@@ -1,0 +1,8 @@
+---
+const { postDate } = Astro.props;
+---
+
+<div class="freshness" data-freshness-datetime={postDate}>
+  <i class="icon heartbeat freshness-icon-js"></i>
+  <em>This post is <span class="freshness-days-old-js"></span> days old.</em>
+</div>

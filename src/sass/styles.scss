@@ -1,0 +1,156 @@
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab";
+}
+
+h1 {
+  font-weight: 100;
+  color: #289be6;
+}
+h2 {
+  color: #289be6;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+a:not([class]):hover {
+  text-decoration: underline;
+}
+.astro-code {
+  padding: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.container {
+  --container-width: 80ch;
+  max-width: unset;
+  width: min(var(--container-width), 100% - 3rem) !important;
+  margin-inline: auto;
+}
+
+.photo-credit {
+  --border-radius: 5rem;
+  --font-size: 1rem;
+  background: black;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  color: white !important;
+  font-size: var(--font-size);
+  display: flex;
+  align-items: center;
+  padding: 0.5ch;
+  padding-inline-end: 1rem;
+  right: 0;
+  transform: translatex(calc(100% - 2.5rem));
+  width: fit-content;
+  position: absolute;
+  transition: 0.2s;
+  z-index: 100;
+  bottom: calc(50% - 2em);
+  &:hover {
+    transform: translatex(0);
+  }
+  a {
+    color: white;
+  }
+}
+
+.cc-icon {
+  border-radius: var(--border-radius);
+  border: solid 1px white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1.25;
+  width: 3ch;
+  height: 3ch;
+  margin-right: 1ch;
+
+  &:before {
+    content: "cc";
+    color: white;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+  }
+}
+
+article {
+  p > img {
+    width: 100%;
+  }
+}
+
+.divider {
+  display: flex;
+  width: 100%;
+  margin-block: 3rem;
+  img {
+    width: 6em;
+    height: auto;
+    margin-inline: 1rem;
+  }
+  > * {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    &::before,
+    &::after {
+      content: "";
+      display: flex;
+      position: relative;
+      height: 1px;
+      width: 100%;
+      background: var(--light);
+    }
+  }
+}
+.pets-page {
+  .card {
+    box-shadow: 0px 2px 80px rgba(0, 0, 0, 0.07) !important;
+    .image {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+    }
+    .pets-social {
+      img {
+        height: 1.333rem;
+      }
+    }
+  }
+}
+
+.text--orange.pill{
+  border-color: #b66000 !important;
+}
+
+.border--color-orange {
+  border-color: #b66000 !important;
+}
+
+.text--orange {
+  color: #b66000 !important;
+}

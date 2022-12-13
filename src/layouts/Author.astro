@@ -1,0 +1,86 @@
+---
+import MainLayout from './MainLayout.astro';
+import WordCount from '../components/WordCount.astro';
+import { site } from '../data/config.json';
+import sluggify from '../mixins/sluggify';
+import snippet from '../mixins/snippet';
+
+const { frontmatter } = Astro.props;
+
+const posts = await Astro.glob('../pages/*.md').then((posts) =>
+  posts
+    .filter((post) => frontmatter.author == post.frontmatter.authors)
+    .reverse()
+);
+---
+
+<MainLayout
+  title={frontmatter.author}
+  image={frontmatter.image ? frontmatter.image : site.default_image}
+  author={frontmatter.author}
+  authorImage={frontmatter.avatar}
+>
+  <div class="container">
+    <h1 class="py-4 p-0 text--size-2xl border-b border--color-light">
+      {frontmatter.author}
+      {frontmatter.former ? <span>(Previous Team Member)</span> : null}
+    </h1>
+    {frontmatter.desc ? <p>{frontmatter.desc}</p> : null}
+    <div class="flex flex--justify-center my-4">
+      {
+        frontmatter.twitter ? (
+          <a
+            href={`https://twitter.com/${frontmatter.twitter}`}
+            data-tooltip={`@${frontmatter.twitter} on twitter`}
+            class="tooltip-bottom mr-2"
+          >
+            Twitter
+          </a>
+        ) : null
+      }
+      {
+        frontmatter.github ? (
+          <a
+            href={`https://github.com/${frontmatter.githubg}`}
+            data-tooltip={`${frontmatter.github} on github`}
+            class="tooltip-bottom"
+          >
+            Github
+          </a>
+        ) : null
+      }
+    </div>
+    {
+      posts.map((post) => (
+        <article class="mb-6">
+          <header>
+            <h2>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </h2>
+          </header>
+          <div class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-light mb-4">
+            <a href={`/authors/${sluggify(post.frontmatter.authors)}`}>
+              {post.frontmatter.authors}
+            </a>
+            <WordCount content={post.rawContent()} />
+          </div>
+          <div>
+            <Fragment set:html={snippet(post)} />
+          </div>
+          <div class="flex">
+            {post.frontmatter.tags.map((tag) => (
+              <a
+                class="pill border--color-orange text--orange mr-2"
+                href={`/tags/#${tag}`}
+                title={tag}
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </article>
+      ))
+    }
+    <slot />
+  </div>
+</MainLayout>

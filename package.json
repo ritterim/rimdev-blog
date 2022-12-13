@@ -1,0 +1,27 @@
+{
+  "name": "@ritterim/rimdev.io",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build:astro": "astro build",
+    "build:search": "npx -y pagefind@0.10.1 --verbose --source dist",
+    "build": "run-s build:*",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^1.0.3",
+    "@astrojs/sitemap": "^1.0.0",
+    "astro": "^1.6.13",
+    "astro-compress": "^1.1.1",
+    "astro-toc": "^0.1.2",
+    "luxon": "^3.1.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.55.0"
+  }
+}

@@ -1,6 +1,0 @@
-// generate social color using sass map
-@each $name, $color in $social-colors {
-  .#{$name} {
-    color: $color;
-  }
-}

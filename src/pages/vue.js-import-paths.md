@@ -1,0 +1,46 @@
+---
+layout: ../layouts/Post.astro
+title: "Vue Import Paths"
+date: 2018-02-01 13:05:34
+tags:
+- Web
+- Vue
+- JavaScript
+- Webpack
+categories:
+twitter_text: "Vue root path with webpack"
+authors: Andrew Rady
+---
+
+In today’s front-end ecosystem we are breaking down code into separate files and importing them. This helps us separate out code and reuse it more effectively. Vue does this in components similar to the way React does it. We have been using Vue in our projects lately and we love it so far because it’s progressive in nature. We can do a variety of things from plugging it into existing applications to add new features and give the user a smoother experience to creating full blown SPAs with it. We have run into a few snags, not completely the fault of Vue. Importing components from obscure locations is something that has been around for some time. Dealing with relative paths is not a problem for smaller projects but can become an issue as the project grows. With a little tweaking to our webpack file we can implement a "root path" into our Vue applications.
+
+## The Situation
+When you need to import a component that is three or four directories away. For example,
+```
+-src
+  - Calendar
+    - Components
+      -Day.vue (current)
+    - CalendarComponent.vue
+  - Filters
+    - DateConversion.js
+```
+To import `DateConversion.js` in the Day.vue component would include the import like the line below,
+`import TimeConversion from '../../Filters/DateConversion'`
+
+## The Solution
+We are going to use Vue vue-cli tools to generate a web app. This way we have a folder structure that is standard for everyone. After you are done with your setup the folder structure should look similar too,
+![Vue Cli Folder Structure](/images/vue-cli-folder-structure.png)
+
+In the `build/webpack.conf.js` folder we are going to find the `resolve` object and add 
+```
+modules: [
+      path.resolve('./src'),
+      path.resolve('./node_modules')
+    ]
+```
+The first item in the array is where we are going to set the "root path" for our application. I chose the src folder because by default this is where our application lives. If you change the folder structure in your own development, don't forget to update it here. Using the folder structure above and with our modules set, we can now import
+`Filters/DateConversion`
+
+This can clean up our code as the application continues to grow and reduces mistakes when trying to import long relative paths. This doesn't remove the option for relative path imports either, so now we have the best of both worlds.
+
