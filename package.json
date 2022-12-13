@@ -15,13 +15,13 @@
   "dependencies": {
     "@astrojs/rss": "^1.0.3",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.6.0",
+    "astro": "^1.6.13",
     "astro-compress": "^1.1.1",
+    "astro-toc": "^0.1.2",
     "luxon": "^3.1.1"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
-    "sass": "^1.55.0",
-    "shx": "^0.3.4"
+    "sass": "^1.55.0"
   }
 }

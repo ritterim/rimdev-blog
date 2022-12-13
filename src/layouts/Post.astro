@@ -4,7 +4,9 @@ import sluggify from '../mixins/sluggify';
 import WordCount from '../components/WordCount.astro';
 import PostBy from '../components/PostBy.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
-const { frontmatter, rawContent } = Astro.props;
+const { frontmatter, rawContent, headings } = Astro.props;
+
+console.log(headings)
 
 let authors;
 
@@ -22,6 +24,17 @@ const content = rawContent();
   imageUrl={frontmatter.image_url}
   url={frontmatter.url}
 >
+  <ul>
+    {
+      headings
+      .filter(heading => heading.depth === 2)
+      .map((heading) => (
+        <li>
+          <a href={`#${heading.slug}`}>{heading.text}</a>
+        </li>
+      ))
+    }
+  </ul>
   <div class="container" data-pagefind-body>
     <article>
       <h1 class="py-4 p-0 text--size-2xl">{frontmatter.title}</h1>

@@ -49,7 +49,7 @@ That's OK though! Team members that choose to take part can send me songs they w
 
 ## Piecing it all together
 
-### Astro
+### [Astro](#astro)
 
 Everything happens inside Astro and luckily getting started is quite easy!
 
