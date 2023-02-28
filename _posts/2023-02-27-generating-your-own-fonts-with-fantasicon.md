@@ -11,13 +11,13 @@ image_url: https://unsplash.com/photos/92-mTYj5oGs
 image_credit: Brett Jordan
 ---
 
-Anyone who's heard me mention [Platform UI](https://platformui.com/) probably knows we make our own font icons, and bake them right into Platform UI, to keep it a one-stop resource. There are some wonderful font packages out there, but you don't always want to load thousands of icons to get the particular mix you're going for. 
+Anyone who's heard me mention [Platform UI](https://platformui.com/)  knows we make our font icons and bake them right into Platform UI to keep it a one-stop resource. There are some great font packages out there! Do you want to load thousands of icons to get what you're looking for? 
 
-For anyone interested, here what I found along the way...
+For anyone interested, here is what I found along the way...
 
 ## The SVGs
 
-I'm not going to go in-depth on generating the SVGs. Here's our basic setup:
+I'm not going to go in-depth on generating the SVGs -- this is our basic setup:
 
 | source | default |
 |---|---|
@@ -25,10 +25,10 @@ I'm not going to go in-depth on generating the SVGs. Here's our basic setup:
 | main stroke | 24pt |
 | auxiliary stroke | 18pt |
 | corner | .15" |
-| join |	round |
+| join |  round |
 
 
-There are a few tools out there you can evaluate for your workflow. We currently use SVGO, but will incorporate outlie-stroke in a future build.
+There are a few tools out there you can evaluate for your workflow. We currently use SVGO but will incorporate outline-stroke in a future build -- it remains an evolving process as we learn.
 
  - https://github.com/svg/svgo 
  - https://github.com/elrumordelaluz/outline-stroke 
@@ -37,7 +37,7 @@ There are a few tools out there you can evaluate for your workflow. We currently
 
 ## Ok, let's make some icons
 
-Our first attempt was ok. It did the job but was pretty basic and it gererated the font everytime.
+Our first attempt was ok. It generated the font every time but remained a rudimentary approach.
 
  ```js
 module.exports = {
@@ -51,9 +51,9 @@ module.exports = {
 ``` 
 Fontasticon has a great [Readme](https://github.com/tancredi/fantasticon#readme) and [Discord channel](https://discord.gg/BXAY3Kc3mp). I couldn't have done this without BOTH of them! 
 
-A big issue we faced was adding new icons - we would overwrite previous values making the use of `:before` and `:after` impossible. Enter `codepoints`; But how did they really work? 
+A big issue we faced was adding new icons - we would overwrite previous values making the use of `:before` and `:after` impossible. Enter `codepoints`; But how did they work? 
 
-Let walk through our current config file `.fantasticonrc.js` to see how it all comes together. We use [Vite](https://vitejs.dev/) to generate Platform UI (with icons) and a stand-alone Platform-icons repo.
+Let's walk through our current config file `.fantasticonrc.js` to see how it all comes together. We use [Vite](https://vitejs.dev/) to generate Platform UI (with icons) and a stand-alone Platform-icons repo.
 
 ```js
 module.exports = {
@@ -62,13 +62,13 @@ module.exports = {
   inputDir: './src/optimized-icons',
   // Where Vite puts things
   outputDir: './public',
-  // What font types to generate; If you're soley generating 
-  // for the we, you only need woff and woff2
+  // What font types to generate; If you're solely generating 
+  // for the web, you only need woff and woff2
   fontTypes: ['ttf', 'woff', 'woff2'],
   // This is telling Fastasicon what to output:
   // HTML leverages the baked-in handlebars template
   // so does CSS
-  // JSON is what you need to stop overiting your icons!
+  // JSON is what you need to stop overwriting your icons!
   assetTypes: ['html', 'json', 'css'],
   // naming convention; user.svg becomes pi-user
   prefix: 'pi',
@@ -145,4 +145,3 @@ You now have a font that won't overwrite codepoint values. When you add a new SV
 I hope this helps someone! It was a journey for me.
 
 Happy fonting!
-
