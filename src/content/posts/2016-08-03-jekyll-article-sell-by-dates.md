@@ -5,7 +5,8 @@ date: 2016-08-03 14:24:16
 tags:
 - Jekyll
 - UX
-categories: Jekyll
+categories: 
+- Jekyll
 twitter_text: "Tell your users how old a #Jekyll post is #UX"
 authors: 
 - Kevin Hougasian

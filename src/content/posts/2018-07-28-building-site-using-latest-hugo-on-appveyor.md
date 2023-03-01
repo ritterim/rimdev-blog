@@ -6,6 +6,7 @@ tags:
 - dev
 - build
 categories:
+- Development
 twitter_text: "Build A Site Using The Latest @GoHugoIO on @appveyor #JAMStack"
 authors: 
 - Khalid Abuhakmeh

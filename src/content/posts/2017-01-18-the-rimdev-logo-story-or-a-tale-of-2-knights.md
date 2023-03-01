@@ -9,6 +9,8 @@ tags:
 - RIMdev
 - Team
 - Design
+categories:
+- Design
 twitter_text: "Designing a team logo"
 authors: 
 - Kevin Hougasian

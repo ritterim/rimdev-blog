@@ -9,6 +9,7 @@ tags:
 authors: 
 - Ken Dale
 categories:
+- Development
 twitter_text: 'build.cmd: Our Consistent Build Script for Continuous Integration Using TeamCity'
 ---
 

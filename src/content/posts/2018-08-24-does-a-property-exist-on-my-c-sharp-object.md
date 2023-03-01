@@ -6,6 +6,7 @@ tags:
 - C#
 - development
 categories:
+- Development
 twitter_text: "Does a Property Exist On My C# Object?"
 authors: 
 - Khalid Abuhakmeh

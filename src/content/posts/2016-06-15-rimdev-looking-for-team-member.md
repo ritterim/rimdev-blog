@@ -6,6 +6,7 @@ tags:
 - Team
 - Development
 categories:
+- Team
 twitter_text: RIMdev Looking For Team Member
 authors: 
 - Khalid Abuhakmeh

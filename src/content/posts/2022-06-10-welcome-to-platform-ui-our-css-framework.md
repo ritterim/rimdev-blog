@@ -6,7 +6,8 @@ tags:
 - CSS
 - Frameworks
 - RIMdev
-categories: "Platform-UI"
+categories:
+- Platform-UI
 twitter_text: "Platform UI a new CSS framework"
 authors: 
 - Kevin Hougasian

@@ -10,9 +10,6 @@ categories:
 twitter_text: Custom Properties allow you to change the value of a variable in your css or Sass. Find out how.
 authors: 
 - Ted Krueger
-image:
-image_url:
-image_credit:
 ---
 Have you ever wanted to change the value of a Sass variable based on screen size, a state, or for any other reason that might require changing a Sass variable? Well you can’t. Not with a Sass variable anyway. But you can by using a custom CSS property. These are sometimes called CSS variables.
 

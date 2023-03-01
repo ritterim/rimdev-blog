@@ -13,9 +13,6 @@ categories:
 twitter_text: "You can make cool a dropdown menu without any JS"
 authors: 
 - Ted Krueger
-image:
-image_url:
-image_credit:
 ---
 
 As someone who basically gets by when it comes to writing Javascript, I tend to look at things from a “I bet I could do this with CSS” standpoint. In this post, I’ll show you how you can do more with CSS and less or no javascript.

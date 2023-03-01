@@ -6,6 +6,7 @@ tags:
 - Web API
 - ASP.NET
 categories:
+- Development
 twitter_text: "Get current route name from @aspnet #webapi request"
 authors: 
 - Khalid Abuhakmeh

@@ -6,6 +6,7 @@ tags:
 - asp.net
 - asp.net core
 categories:
+- Development
 twitter_text: "Successfully Deploying An InProcess #aspnetcore 2.2 App To @Azure @aspnet @dotnet"
 authors: 
 - Khalid Abuhakmeh

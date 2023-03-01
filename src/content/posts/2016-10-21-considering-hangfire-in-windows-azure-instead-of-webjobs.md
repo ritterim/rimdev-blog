@@ -8,7 +8,7 @@ tags:
 - Hangfire
 categories:
 - Windows Azure
-twitter_text:
+twitter_text: Considering Hangfire In Windows Azure Instead Of WebJobs
 authors: 
 - Khalid Abuhakmeh
 image: https://farm6.staticflickr.com/5285/5362037986_dfc80c3d20_b_d.jpg

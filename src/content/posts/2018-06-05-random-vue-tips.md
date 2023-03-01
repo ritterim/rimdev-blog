@@ -6,7 +6,8 @@ tags:
 - Vue
 - Development
 - JavaScript
-categories: development
+categories:
+- Development
 twitter_text: "Random Vue Tips"
 authors: 
 - Chidozie Oragwu

@@ -7,6 +7,7 @@ tags:
 - JavaScript
 - Webpack
 categories:
+- Development
 twitter_text: Vue.js CLI setting env var
 authors: 
 - Andrew Rady

@@ -5,7 +5,8 @@ date: 2018-08-30 14:53:00
 tags:
 - SQL Azure Database
 - development
-categories: SQL
+categories: 
+- SQL
 twitter_text: "Querying #Json @azure #SQL #Database"
 authors: 
 - Kevin Ricords

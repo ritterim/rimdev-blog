@@ -6,6 +6,8 @@ tags:
 - Web
 - Vue
 - JavaScript
+categories:
+- Development
 twitter_text: "How child #Vue components can respond to store actions"
 authors: 
 - Jaime Jones

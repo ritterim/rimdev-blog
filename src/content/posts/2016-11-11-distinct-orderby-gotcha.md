@@ -5,7 +5,8 @@ date: 2016-11-11 09:53:43
 tags: 
 - Linq
 - .NET
-categories: Development
+categories: 
+- Development
 twitter_text: "OrderBy Distinct Gotcha"
 authors: 
 - Chad Peters

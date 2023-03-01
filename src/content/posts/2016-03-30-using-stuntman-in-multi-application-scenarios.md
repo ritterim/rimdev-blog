@@ -8,6 +8,8 @@ image_credit: Olivier Porez
 tags:
 - ASP.NET
 - Stuntman
+categories:
+- Development
 twitter_text: Using Stuntman in Multi-Application Scenarios
 authors:
 - Ken Dale

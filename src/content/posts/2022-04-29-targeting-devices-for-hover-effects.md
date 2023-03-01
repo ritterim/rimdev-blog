@@ -10,12 +10,9 @@ tags:
 - frontend
 categories:
 - development
-twitter_text:
+twitter_text: "Targeting Devices For Hover Effects: A web developer's journey"
 authors: 
 - Ted Krueger
-image:
-image_url:
-image_credit:
 ---
 
 I dedicate this blog post to all the QA testers that expose all the flaws in my code.

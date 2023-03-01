@@ -5,7 +5,8 @@ date: 2019-11-01 11:48:26
 tags:
 - Sass
 - Dart Sass
-categories: CSS
+categories:
+- CSS
 twitter_text: "Understanding Dart Sass modules and name spaced variables"
 authors: 
 - Kevin Hougasian

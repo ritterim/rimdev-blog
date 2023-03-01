@@ -8,6 +8,7 @@ tags:
 - Stripe
 - Automation
 categories:
+- Development
 twitter_text: "Automating Stripe Exports via PowerShell"
 authors: 
 - Ken Earl

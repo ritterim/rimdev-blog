@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Pros and Cons of State Management"
 slug: the-pros-and-cons-of-state-management
 date: 2018-02-13 09:11:01
@@ -9,6 +8,8 @@ tags:
 - Vuex
 - JavaScript
 - StateManagement
+categories:
+- Development
 twitter_text: "The Pros and Cons of #StateManagement"
 authors: 
 - Jaime Jones

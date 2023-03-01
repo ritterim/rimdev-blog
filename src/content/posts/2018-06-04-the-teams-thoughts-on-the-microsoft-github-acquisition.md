@@ -3,7 +3,9 @@ title: "The Team's Thoughts On The Microsoft GitHub Acquisition"
 slug: the-teams-thoughts-on-the-microsoft-github-acquisition
 date: 2018-06-04 09:44:19
 tags:
-categories: development
+- development
+categories: 
+- Development
 twitter_text: "The Team's Thoughts On The @Microsoft @GitHub Acquisition"
 authors: 
 - Khalid Abuhakmeh

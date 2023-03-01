@@ -6,7 +6,8 @@ tags:
 - .NET Core
 - CI
 - Travis CI
-categories: Development
+categories:
+- Development
 twitter_text: "Building #aspnetcore on @travisci"
 authors: 
 - Khalid Abuhakmeh

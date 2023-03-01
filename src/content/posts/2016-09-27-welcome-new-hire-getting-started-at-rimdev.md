@@ -5,7 +5,8 @@ date: 2016-09-27 10:08:06
 tags: 
 - Team
 - RIMdev
-categories: Team
+categories: 
+- Team
 twitter_text: "Welcome New Hire: Getting Started At RIMdev"
 authors: 
 - Khalid Abuhakmeh

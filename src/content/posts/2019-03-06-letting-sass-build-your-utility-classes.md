@@ -4,7 +4,8 @@ slug: letting-sass-build-your-utility-classes
 date: 2019-03-06 14:24:18
 tags:
 - SASS
-categories: css
+categories: 
+- CSS
 twitter_text: "Letting SASS build your utility classes"
 authors: 
 - Kevin Hougasian

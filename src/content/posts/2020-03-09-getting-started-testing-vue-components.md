@@ -7,6 +7,7 @@ tags:
 - Jest
 - Testing
 categories:
+- Development
 twitter_text: Getting started with testing your Vue components with Jest
 authors: 
 - Andrew Rady

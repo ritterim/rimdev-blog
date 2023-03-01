@@ -4,6 +4,7 @@ slug: khalid's-initial-thoughts-on-vuejs
 date: 2017-05-31 11:43:15
 tags: [ "Vue.js", "JavaScript", "frontend", "clientside" ]
 categories:
+- Development
 twitter_text: ".@buhakmeh initial thoughts on @vuejs"
 authors: 
 - Khalid Abuhakmeh

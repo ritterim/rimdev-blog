@@ -6,7 +6,8 @@ tags:
 - API
 - Development
 - WebAPI
-categories: Development
+categories: 
+- Development
 twitter_text: Musings Of A Madman - Sharing Contracts Between APIs and Clients
 authors: 
 - Khalid Abuhakmeh

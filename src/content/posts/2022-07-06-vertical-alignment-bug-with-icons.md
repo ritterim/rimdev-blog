@@ -5,7 +5,8 @@ date: 2022-07-07 12:00:00
 tags:
 - CSS
 - UI/UX
-categories: "Platform-UI"
+categories:
+- Platform-UI
 twitter_text: "Vertical Alignment Bug with Icons"
 authors: 
 - Austin Asbury

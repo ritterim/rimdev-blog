@@ -7,6 +7,7 @@ tags:
 - c#
 - sql
 categories:
+- Development
 twitter_text: "Handling User Defined #SQL Exception in #csharp 7 @dotnet"
 authors: 
 - Khalid Abuhakmeh

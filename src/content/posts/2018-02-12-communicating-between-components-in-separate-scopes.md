@@ -6,6 +6,8 @@ tags:
 - Web
 - Vue
 - JavaScript
+categories:
+- Development
 twitter_text: "Communicating between #Vue components in separate scopes"
 authors: 
 - Jaime Jones

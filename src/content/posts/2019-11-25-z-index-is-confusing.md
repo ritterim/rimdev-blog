@@ -4,7 +4,8 @@ slug: z-index-is-confusing
 date: 2019-11-25 16:16:51
 tags:
 - CSS
-categories: CSS
+categories:
+- CSS
 twitter_text: "z-index Is Confusing, but It Doesn't Have to Be"
 authors: 
 - Ted Krueger

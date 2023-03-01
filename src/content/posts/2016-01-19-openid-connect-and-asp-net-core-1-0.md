@@ -7,7 +7,8 @@ tags:
   - OpenID
   - ASP.NET Core 1.0
   - rc1-update1
-categories: Development
+categories: 
+- Development
 twitter_text: OpenID Connect with @aspnet
 authors: 
 - Bill Boga

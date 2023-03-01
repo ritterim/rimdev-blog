@@ -6,7 +6,8 @@ tags:
 - RIMdev
 - Team
 - Jekyll
-categories: Blog
+categories:
+- Blog
 twitter_text: "RIMdev.io going open"
 authors: 
 - Khalid Abuhakmeh

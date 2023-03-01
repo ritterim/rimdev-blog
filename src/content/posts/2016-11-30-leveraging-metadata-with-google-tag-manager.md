@@ -8,6 +8,8 @@ image_credit: Nicolas Goulet
 tags:
 - metadata
 - SEO
+categories:
+- Development
 twitter_text: "Leveraging Metadata with Google Tag Manager"
 authors: 
 - Kevin Hougasian

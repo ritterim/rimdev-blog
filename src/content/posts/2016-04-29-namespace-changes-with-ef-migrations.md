@@ -11,7 +11,8 @@ image_credit: Gidzy
 categories:
 - Development
 twitter_text: "Namespace changes with #entityframework 6 migrations"
-authors: Bill Boga
+authors: 
+- Bill Boga
 ---
 
 *This post originally appears on [https://www.billboga.com/posts/namespace-changes-with-entity-framework-migrations](https://www.billboga.com/posts/namespace-changes-with-entity-framework-migrations).*

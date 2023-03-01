@@ -10,9 +10,6 @@ categories:
 twitter_text: A fast and simple naming convention for branches in Git.
 authors: 
 - Ted Krueger
-image:
-image_url:
-image_credit:
 ---
 
 Ever been confused about naming a branch with <a href="https://git-scm.com/" target="_blank">Git</a>? Looking for a good naming convention? Well, I might have an answer for you. I’m not saying it’s the answer but it hasn’t let me down yet.

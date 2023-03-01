@@ -5,6 +5,7 @@ date: 2017-09-29 12:59:52
 tags:
 - gulp
 categories:
+- Development
 twitter_text: "Spinning up a local server with gulp"
 authors: 
 - Kevin Hougasian

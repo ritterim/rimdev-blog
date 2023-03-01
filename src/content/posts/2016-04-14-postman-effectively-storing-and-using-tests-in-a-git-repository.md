@@ -7,6 +7,8 @@ image_url: https://www.flickr.com/photos/pschadler/
 image_credit: Paul Schadler
 tags:
 - Postman
+categories: 
+- Development
 twitter_text: "Postman: Effectively Storing and Using Tests in a Git Repository"
 authors: 
 - Ken Dale

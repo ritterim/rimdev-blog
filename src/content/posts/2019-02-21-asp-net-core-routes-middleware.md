@@ -6,9 +6,10 @@ tags:
 - Routing
 - Middleware
 categories:
-- development
+- Development
 twitter_text: "Getting route data in your ASP.NET Core middleware"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://farm7.staticflickr.com/6072/6150010367_a773d906a4_b.jpg
 image_url: https://flic.kr/p/anspPv
 image_credit: Chiararts

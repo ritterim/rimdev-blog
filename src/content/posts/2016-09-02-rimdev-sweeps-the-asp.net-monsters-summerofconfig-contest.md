@@ -5,7 +5,8 @@ date: 2016-09-02 08:43:21
 tags:
 - ASP.NET Core
 - Contest
-categories: ASP.NET Core
+categories: 
+- ASP.NET Core
 twitter_text: "RIMdev Sweeps @aspnetmonsters #SummerOfConfig Contest #aspnetcore"
 authors: 
 - Khalid Abuhakmeh

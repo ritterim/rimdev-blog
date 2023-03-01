@@ -5,9 +5,10 @@ date: 2019-08-26 14:00:00
 tags:
 - .NET
 categories:
-- development
+- Development
 twitter_text: "Retry Transient Failures Using SqlClient / ADO.NET With Polly"
-authors: Ken Dale
+authors:
+- Ken Dale
 image: https://images.unsplash.com/photo-1536936343740-68cb2a95f935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/2cDIzRnVq0Q
 image_credit: Michael Rogers

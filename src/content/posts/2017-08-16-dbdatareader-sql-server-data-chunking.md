@@ -8,6 +8,8 @@ tags:
 - JSON
 - XML
 - SQL Server
+categories:
+- Development
 twitter_text: "DbDataReader and #SQLServer data chunking"
 authors: 
 - Bill Boga

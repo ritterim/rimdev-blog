@@ -6,7 +6,8 @@ tags:
 - Team
 - RIMdev
 - Frontend
-categories: Team
+categories: 
+- Team
 twitter_text: "Welcome New Hire: Getting started in #Frontend at RIMdev"
 authors: 
 - Kevin Hougasian

@@ -6,7 +6,8 @@ tags:
 - ASP.NET Core
 - Routes
 - MVC
-categories: ASP.NET Core
+categories: 
+- ASP.NET Core
 twitter_text: Get Registered Routes From an #aspnetcore application @buhakmeh
 authors: 
 - Khalid Abuhakmeh

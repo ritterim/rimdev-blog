@@ -5,7 +5,8 @@ date: 2018-12-03 21:20:12
 tags:
 - Food
 - chinese cuisine
-categories: food recipes
+categories: 
+- food recipes
 twitter_text: "How To Make Golden Fried Rice"
 authors: 
 - Cheng Yang

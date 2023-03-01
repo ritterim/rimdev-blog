@@ -8,6 +8,7 @@ tags:
 - Stuntman
 - OSS
 categories:
+- OSS
 twitter_text: "Secure Global #Stuntman Users With @azure Blob Storage"
 authors: 
 - Khalid Abuhakmeh

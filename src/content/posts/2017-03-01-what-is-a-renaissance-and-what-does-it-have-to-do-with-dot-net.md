@@ -6,7 +6,8 @@ tags:
 - .NET
 - Community
 - OSS
-categories: development
+categories:
+- Development
 twitter_text: "What Is a #Renaissance and What Does It Have To Do With @dotnet?"
 authors: 
 - Khalid Abuhakmeh

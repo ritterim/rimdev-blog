@@ -7,6 +7,7 @@ tags:
 - JAMStack
 - Static
 categories:
+- Development
 twitter_text: "Debugging @gohugoio Site Data and Page Variables"
 authors: 
 - Khalid Abuhakmeh

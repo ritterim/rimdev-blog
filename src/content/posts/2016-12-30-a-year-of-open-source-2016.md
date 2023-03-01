@@ -8,6 +8,8 @@ tags:
 - OSS
 - .NET
 - npm
+categories:
+- OSS
 twitter_text: A Year of Open Source
 authors:
 - Ken Dale

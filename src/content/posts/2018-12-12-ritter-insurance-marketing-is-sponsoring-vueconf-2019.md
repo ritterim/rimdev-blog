@@ -4,6 +4,8 @@ slug: ritter-insurance-marketing-is-sponsoring-vueconf-2019
 date: 2018-12-12 10:51:10
 tags:
 - VueJS
+categories:
+- Development
 twitter_text: "Ritter Insurance Marketing is sponsoring #happyhour at #VueConf2019 #giveback"
 authors: 
 - Kevin Hougasian

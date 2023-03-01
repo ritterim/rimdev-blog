@@ -9,6 +9,8 @@ tags:
 - jekyll
 - video
 - bash
+categories:
+- Development
 video: /video/rain
 ---
  

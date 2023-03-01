@@ -7,6 +7,7 @@ tags:
 - stuntman
 - OSS
 categories:
+- OSS
 twitter_text: "Using #stuntman with @aspnet MVC Video"
 authors:
 - Khalid Abuhakmeh

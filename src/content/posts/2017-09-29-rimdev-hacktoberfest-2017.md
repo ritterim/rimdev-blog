@@ -2,8 +2,10 @@
 title: "RIMdev Hacktoberfest 2017"
 slug: rimdev-hacktoberfest-2017
 date: 2017-09-29 11:16:02
-tags: OSS
-categories: OSS
+tags:
+- OSS
+categories: 
+- OSS
 twitter_text: "RIMdev #Hacktoberfest 2017"
 authors: 
 - Khalid Abuhakmeh

@@ -5,27 +5,32 @@ import sluggify from '../mixins/sluggify';
 import PostBy from '../components/PostBy.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 
-const posts = await Astro.glob('../pages/*.md');
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+
 const featured = posts
-  .sort((a, b) => a.frontmatter.date.localeCompare(b.frontmatter.date))
+  .sort((a, b) => a.data.date.localeCompare(b.data.date))
   .reverse()
   .slice(0, 1)[0];
 
+console.log(featured);
+
 const { title, authors, image, image_credit, image_url, tags, date } =
-  featured.frontmatter;
+  featured.data;
 
-const rawContent = featured.rawContent();
+// const rawContent = featured.rawContent();
 
-const content = featured.compiledContent();
+const content = await featured.render();
 ---
 
-<MainLayout
+ <!-- <MainLayout
   title={title}
   image={image}
   imageCredit={image_credit}
   imageUrl={image_url}
 >
-  <div class="container" data-pagefind-body>
+ <div class="container" data-pagefind-body>
     <article>
       <h1 class="py-4 p-0 text--size-2xl">{title}</h1>
 
@@ -43,4 +48,4 @@ const content = featured.compiledContent();
     <PostBy date={date} authors={authors} tags={tags} />
     <RelatedArticles currentTitle={title} tags={tags} />
   </div>
-</MainLayout>
+</MainLayout> -->

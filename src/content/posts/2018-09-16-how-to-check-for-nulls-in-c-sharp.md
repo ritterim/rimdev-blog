@@ -8,6 +8,7 @@ tags:
 - C#
 - .NET
 categories:
+- Development
 twitter_text: "How To Check For #nulls In #csharp a.k.a. How To Thwart A Super Villian @dotnet #dotnetconf #dotnet #null"
 authors: 
 - Khalid Abuhakmeh

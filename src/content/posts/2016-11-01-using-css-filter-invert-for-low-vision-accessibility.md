@@ -7,11 +7,14 @@ tags:
 - Sass
 - UX
 - accessibility
+categories:
+- Accessibility
 authors: 
 - Kevin Hougasian
 image: https://c1.staticflickr.com/9/8621/15643132423_3f27a976b7_b.jpg
 image_url : https://www.flickr.com/photos/dominicspics/15643132423
 image_credit: "Dominic Alves"
+twitter_text: "Using CSS filter: invert() for low-vision accessibility"
 ---
 [eBroker Software's](https://ebrokersoftware.com), [Ritter's](https://ritterim.com) [Affordable Care Act (ACA) Marketplace](https://healthcare.gov) Quote Engine, login portion was slated for a UI refresh. One of the challenges we faced was an agent that is legally blind. The agent handles nearly all of his business from his desk. Iterations of eBroker's backend, formerly Agency Central, had a few interesting font and styling choices which were attributed to the agent's eyesight.
 

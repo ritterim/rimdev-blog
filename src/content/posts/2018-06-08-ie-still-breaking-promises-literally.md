@@ -6,7 +6,8 @@ tags:
 - IE
 - Development
 - JavaScript
-categories: development
+categories:
+- Development
 twitter_text: "IE Still Breaking Promises... Literally"
 authors: 
 - John Vicari

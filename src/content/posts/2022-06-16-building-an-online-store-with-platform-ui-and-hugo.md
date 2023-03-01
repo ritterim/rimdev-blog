@@ -6,7 +6,8 @@ tags:
 - CSS
 - Frameworks
 - Static Sites
-categories: "Platform-UI"
+categories: 
+- Platform-UI
 twitter_text: "Building an Online Store with Platform UI and Hugo"
 authors: 
 - Ryan Trimble

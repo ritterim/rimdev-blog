@@ -12,9 +12,6 @@ categories:
 twitter_text: "CSS Only Tooltip for All Screen Sizes"
 authors: 
 - Ted Krueger
-image:
-image_url:
-image_credit:
 ---
 
 <style>

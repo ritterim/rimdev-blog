@@ -6,6 +6,8 @@ tags:
 - .NET
 - SQL Server
 - LINQ
+categories:
+- Development
 twitter_text: "Optimizing #LINQ to SQL Skip/Take"
 authors: 
 - Bill Boga

@@ -5,6 +5,8 @@ date: 2016-12-07 11:54:30
 tags:
 - Web
 - Development
+categories:
+- Development
 twitter_text: "Let’s drop the world wide web - a plea to the internet"
 authors: 
 - Kevin Hougasian

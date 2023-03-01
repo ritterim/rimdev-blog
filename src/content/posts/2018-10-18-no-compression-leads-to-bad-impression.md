@@ -6,7 +6,8 @@ tags:
 - Development
 - Elasticsearch
 - Debugging
-categories: development
+categories:
+- Development
 twitter_text: "No Compression Leads To Bad Impression"
 authors: 
 - Thomas Sobieck

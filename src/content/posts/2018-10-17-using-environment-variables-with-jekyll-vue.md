@@ -9,7 +9,8 @@ tags:
 - Vue
 - Vue.js
 - Jekyll
-categories: development
+categories:
+- Development
 twitter_text: "Using Environment Variables with Jekyll, Vue.js, and Netlify"
 authors: 
 - John Vicari

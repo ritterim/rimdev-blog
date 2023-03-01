@@ -7,6 +7,8 @@ tags:
 - UI
 - UX
 categories:
+- UX
+- Development
 twitter_text: 'Building a better blog; an experiment in UI and UX'
 authors: 
 - Kevin Hougasian

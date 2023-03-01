@@ -7,6 +7,7 @@ tags:
 - Sass
 - Semantic UI
 categories:
+- Development
 twitter_text: Material design-like form animations for SemanticUI by @hougasian
 authors: 
 - Kevin Hougasian

@@ -4,7 +4,8 @@ slug: under-the-decision-tree-3
 date: 2016-09-30 07:00:00
 tags:
 - Machine Learning
-categories: ai
+categories: 
+- AI
 twitter_text: Under the Decision Tree (#3)
 authors: 
 - Scott Schwalm

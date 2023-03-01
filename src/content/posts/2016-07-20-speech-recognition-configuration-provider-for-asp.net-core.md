@@ -5,7 +5,8 @@ date: 2016-07-20 14:24:16
 tags: 
 - ASP.NET Core
 - Configuration
-categories: ASP.NET Core
+categories: 
+- ASP.NET Core
 twitter_text: Speech Recognition Configuration Provider For ASP.NET Core
 authors: 
 - Khalid Abuhakmeh

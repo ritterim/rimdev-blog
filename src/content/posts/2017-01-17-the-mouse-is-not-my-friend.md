@@ -4,7 +4,8 @@ slug: the-mouse-is-not-my-friend
 date: 2017-01-17 07:00:00
 tags: 
 - Development
-categories: Development
+categories: 
+- Development
 twitter_text: "The Mouse Is Not My Friend #Productivity #dotnet #VisualStudio"
 authors: 
 - Chad Peters

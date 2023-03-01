@@ -6,7 +6,8 @@ tags:
 - Middleware Madness
 - ASP.NET Core
 - Middleware
-categories: Middleware Madness
+categories: 
+- Middleware Madness
 twitter_text: "Middleware Madness: Site Maintenance in #aspnetcore"
 authors:
 - Khalid Abuhakmeh

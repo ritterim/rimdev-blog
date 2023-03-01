@@ -6,6 +6,8 @@ tags:
 - .NET
 - Cake
 - AppVeyor
+categories:
+- Development
 twitter_text: ".NET Full Framework: Build, Test, and Deploy Using Cake and AppVeyor (@cakebuildnet @appveyor)"
 authors: 
 - Ken Dale

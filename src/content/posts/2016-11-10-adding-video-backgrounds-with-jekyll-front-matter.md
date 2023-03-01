@@ -6,9 +6,12 @@ tags:
 - jekyll
 - video
 - liquid
+categories:
+- Development
 authors: 
 - Kevin Hougasian
 video: /video/liquid
+twitter_text: Adding video backgrounds with jekyll front-matter
 ---
 Most of our web properties run on [jekyll](https://jekyllrb.com), [ebrokersoftware.com](https://ebrokersoftware.com), [theagentsurvivalguide.com](https://theagentsurvivalguide.com), and more slated for the coming year.
 

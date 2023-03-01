@@ -5,6 +5,7 @@ date: 2017-03-03 15:25:51
 tags:
 - Jekyll
 categories:
+- Development
 twitter_text: "Adding #mermaid to https://rimdev.io"
 authors: 
 - Khalid Abuhakmeh

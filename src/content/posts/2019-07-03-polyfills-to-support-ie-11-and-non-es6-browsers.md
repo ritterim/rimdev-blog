@@ -6,7 +6,8 @@ tags:
 - JavaScript
 - Webpack
 - Polyfills
-categories: JavaScript
+categories: 
+- JavaScript
 twitter_text: A list of polyfills the help modern JavaScript applications
 authors: 
 - Andrew Rady

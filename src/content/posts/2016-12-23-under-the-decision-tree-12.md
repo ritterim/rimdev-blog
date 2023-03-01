@@ -4,7 +4,8 @@ slug: under-the-decision-tree-12
 date: 2016-12-23 07:00:00
 tags: 
 - Machine Learning
-categories: ai
+categories: 
+- AI
 twitter_text: "Under the Decision Tree (#12) #machinelearning #AI #artificialintelligence #software #bigdata #science"
 authors: 
 - Scott Schwalm

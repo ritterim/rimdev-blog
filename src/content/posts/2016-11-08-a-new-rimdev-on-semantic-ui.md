@@ -5,6 +5,8 @@ date: 2016-11-08 13:40:42
 tags:
 - Semantic-ui
 - UX
+categories:
+- Development
 twitter_text: "Switching to #Semantic-ui and loving it!"
 authors: 
 - Kevin Hougasian

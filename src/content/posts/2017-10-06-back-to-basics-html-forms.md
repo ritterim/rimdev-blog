@@ -5,6 +5,8 @@ date: 2017-10-06 11:21:43
 tags:
 - HTML
 - Web
+categories:
+- Development
 twitter_text: "Back To Basics: #HTML Forms"
 authors: 
 - Khalid Abuhakmeh

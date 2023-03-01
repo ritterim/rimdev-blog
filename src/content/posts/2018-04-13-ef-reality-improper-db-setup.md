@@ -5,6 +5,8 @@ date: 2018-04-13 10:00:00
 tags:
 - EF
 - SQL
+categories:
+- Development
 twitter_text: "EF's lazy-loading might break your reality when mixed with an improper DB setup"
 authors: 
 - Bill Boga

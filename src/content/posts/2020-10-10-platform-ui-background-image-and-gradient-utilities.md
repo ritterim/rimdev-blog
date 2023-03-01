@@ -8,6 +8,7 @@ tags:
 - CSS
 - Sass
 categories:
+- Development
 twitter_text: "We've added background image and gradient css utilities to Platform UI!"
 authors: 
 - Kevin Hougasian

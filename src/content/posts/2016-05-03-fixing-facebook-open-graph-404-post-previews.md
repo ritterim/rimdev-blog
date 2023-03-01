@@ -9,7 +9,8 @@ tags:
 image: https://farm9.staticflickr.com/8650/16210559169_d7ebf083ec_k_d.jpg
 image_url: https://www.flickr.com/photos/manoftaste-de/
 image_credit: Christian S.
-categories: SEO
+categories: 
+- SEO
 twitter_text: Fixing Facebook Open Graph 404 Post Previews
 authors: 
 - Khalid Abuhakmeh

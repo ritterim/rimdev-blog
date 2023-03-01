@@ -9,6 +9,8 @@ tags:
 - WebAPI
 - ASP.NET
 - REST
+categories:
+- Development
 twitter_text: Extending PATCH Support For ASP.NET WebAPI Part III–Validation
 authors: 
 - Khalid Abuhakmeh

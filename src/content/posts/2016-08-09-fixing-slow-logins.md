@@ -7,7 +7,8 @@ tags:
 - openssl
 - certs
 - .NET
-categories: Security
+categories: 
+- Security
 twitter_text: Fixing slow logins
 authors:
 - Bill Boga

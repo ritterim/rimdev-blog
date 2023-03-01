@@ -5,7 +5,8 @@ date: 2016-07-08 11:18:09
 tags:
 - gulp
 - TeamCity
-categories: development
+categories: 
+- Development
 twitter_text: Running Gulp On TeamCity
 authors: 
 - Khalid Abuhakmeh
