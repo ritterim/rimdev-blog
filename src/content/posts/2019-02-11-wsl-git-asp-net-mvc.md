@@ -1,6 +1,7 @@
 ---
 title: WSL and git and my problem with a single ASP.NET MVC app.
 slug: wsl-git-asp-net-mvc
+date: 2019-02-11 12:00:00
 tags:
 - WSL
 - git

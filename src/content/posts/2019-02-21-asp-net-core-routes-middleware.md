@@ -1,6 +1,7 @@
 ---
 title: Getting route data in your ASP.NET Core middleware
 slug: asp-net-core-routes-middleware
+date: 2019-02-21 12:00:00
 tags:
 - ASP.NET Core
 - Routing

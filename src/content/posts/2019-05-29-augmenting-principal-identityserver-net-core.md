@@ -1,6 +1,7 @@
 ---
 title: Augmenting IPrincipal when using IdentityServer authentication middleware in ASP.NET Core
 slug: augmenting-principal-identityserver-net-core
+date: 2019-05-29 12:00:00
 tags:
 - ASP.NET Core
 - IdentitySever

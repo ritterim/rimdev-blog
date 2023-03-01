@@ -9,19 +9,20 @@ import { getCollection } from 'astro:content';
 
 const posts = await getCollection('posts');
 
-const featured = posts
-  .sort((a, b) => a.data.date.localeCompare(b.data.date))
-  .reverse()
-  .slice(0, 1)[0];
+console.log(posts);
+// const featured = posts
+//   .sort((a, b) => a.data.date.localeCompare(b.data.date))
+//   .reverse()
+//   .slice(0, 1)[0];
 
-console.log(featured);
+// console.log(featured);
 
-const { title, authors, image, image_credit, image_url, tags, date } =
-  featured.data;
+// const { title, authors, image, image_credit, image_url, tags, date } =
+//   featured.data;
 
 // const rawContent = featured.rawContent();
 
-const content = await featured.render();
+// const content = await featured.render();
 ---
 
  <!-- <MainLayout
