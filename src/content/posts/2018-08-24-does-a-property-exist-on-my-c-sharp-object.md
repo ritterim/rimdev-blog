@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Does A Property Exist On My C# Object"
+slug: does-a-property-exist-on-my-c#-object
 date: 2018-08-24 08:22:45
 tags:
 - C#
 - development
 categories:
 twitter_text: "Does a Property Exist On My C# Object?"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3139/3060151161_f3d8930e6b_o_d.jpg
 image_url: https://www.flickr.com/photos/evilerin/
 image_credit: Evil Erin

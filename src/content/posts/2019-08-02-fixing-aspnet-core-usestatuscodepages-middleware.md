@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Fixing ASP.NET Core's UseStatusCodePages Middleware"
+slug: fixing-aspnet-core-usestatuscodepages-middleware
 date: 2019-08-02 15:30:59
 tags:
   - asp.net core
@@ -9,7 +9,8 @@ categories:
   - asp.net core
   - static
 twitter_text: "Fixing #aspnetcore UseStatusCodePages #Middleware #error #http @aspnet #dotnet @dotnet"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://images.unsplash.com/photo-1557600088-30395a91f1ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 image_url: https://unsplash.com/photos/eipJJ8VX7QE
 image_credit: Jeremy Weber

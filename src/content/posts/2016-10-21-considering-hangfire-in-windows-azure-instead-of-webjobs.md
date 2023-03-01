@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Considering Hangfire In Windows Azure Instead Of WebJobs"
+slug: considering-hangfire-in-windows-azure-instead-of-webjobs
 date: 2016-10-21 09:25:46
 tags:
 - Windows Azure
@@ -9,7 +9,8 @@ tags:
 categories:
 - Windows Azure
 twitter_text:
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm6.staticflickr.com/5285/5362037986_dfc80c3d20_b_d.jpg
 image_credit: Jameel Winter
 image_url: https://www.flickr.com/photos/jameelwinter/

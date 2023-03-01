@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Prettifying Long Commit Histories with Git"
+slug: prettifying-long-commit-histories
 date: 2021-03-17 11:34:00
 tags:
 - Documentation
@@ -11,7 +11,8 @@ categories:
 - GitHub
 - Git
 twitter_text: Prettifying Commit Histories 
-authors: Steliana Vassileva
+authors: 
+- Steliana Vassileva
 image: /images/documentation/git-commit-history.png
 image_url: https://tugberkugurlu.blob.core.windows.net/bloggyimages/d773c1fe-4db8-4d2f-a994-c60f3f8cb6f0.png
 ---

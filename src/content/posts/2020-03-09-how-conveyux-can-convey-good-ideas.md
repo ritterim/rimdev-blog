@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "How ConveyUX Can Convey Good Ideas"
+slug: how-conveyux-can-convey-good-ideas
 date: 2020-03-09 08:57:07
 tags:
 - UI/UX
@@ -11,7 +11,8 @@ tags:
 categories:
 - design
 twitter_text: How ConveyUX Can Convey Good Ideas.
-authors: Natasha Kurus
+authors: 
+- Natasha Kurus
 image: /images/seattle.jpg
 ---
 

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Performance Tests / Benchmarking for ASP.NET Core 2.2 Endpoints
+slug: performance-tests-benchmarks-for-aspnetcore-2.2-endpoints
 date: 2018-12-26 14:00:00
 tags:
 - Benchmarking
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Performance Tests / Benchmarking for ASP.NET Core 2.2 Endpoints"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1431499012454-31a9601150c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3900&q=80
 image_url: https://unsplash.com/photos/p3Pj7jOYvnM
 image_credit: Veri Ivanova

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Avoiding a LINQ FirstOrDefault mishap"
+slug: avoiding-linq-firstordefault-mishap
 date: 2019-10-09
 tags:
 - .NET
@@ -9,7 +9,8 @@ categories:
 - .NET
 - LINQ
 twitter_text: "Avoiding a #linq FirstOrDefault mishap"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://images.unsplash.com/photo-1504930268766-d71549a36ec2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2014&q=80
 image_url: https://unsplash.com/photos/dQLgop4tnsc
 image_credit: Jaime Street

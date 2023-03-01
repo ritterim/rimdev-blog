@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "How to Work with NPM Packages Locally Using .tgz Files"
+slug: npm-packages-and-tgz-files
 date: 2019-10-01 12:00:00
 tags:
 - npm
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "How to Work with NPM Packages Locally Using .tgz Files"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1470173274384-c4e8e2f9ea4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 image_url: https://unsplash.com/photos/JuFcQxgCXwA
 image_credit: Samuel Zeller | @samuelzeller

@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Speech Recognition Configuration Provider For ASP.NET Core"
+slug: speech-recognition-configuration-provider-for-asp.net-core
 date: 2016-07-20 14:24:16
 tags: 
 - ASP.NET Core
 - Configuration
 categories: ASP.NET Core
 twitter_text: Speech Recognition Configuration Provider For ASP.NET Core
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3129/2743534799_86bcea8475_o_d.jpg
 image_url: https://www.flickr.com/photos/29205886@N08/
 image_credit: Patrick Breitenbach

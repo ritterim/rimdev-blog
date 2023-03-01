@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Debugging Hugo Site Data and Page Variables"
+slug: debugging-hugo-site-data
 date: 2018-09-13 00:00:00
 tags:
 - Hugo
@@ -8,7 +8,8 @@ tags:
 - Static
 categories:
 twitter_text: "Debugging @gohugoio Site Data and Page Variables"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2276/2335756492_6c45911ddc_o_d.jpg
 image_url: https://www.flickr.com/photos/jitze1942/
 image_credit: Jitze Couperus

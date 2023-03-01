@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bulk Import Documents Into Elasticsearch Using NEST"
+slug: bulk-import-documents-into-elasticsearch-using-nest
 date: 2017-01-11 08:53:45
 tags: 
 - search
@@ -8,7 +9,8 @@ tags:
 categories: 
 - development
 twitter_text: "bulk import document into @elastic using #NEST #dotnet #search"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3669/19727429369_558c5578c8_k_d.jpg
 image_url : https://www.flickr.com/photos/salvadru/
 image_credit: Salvador Drusin

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "UX Writing Lessons for Technical Writers"
+slug: ux-writing-lessons-for-technical-writers
 date: 2022-01-18 17:12:32
 tags:
 - Documentation
@@ -10,7 +10,8 @@ tags:
 categories:
 - Documentation
 twitter_text: UX Writing Lessons for Technical Writers
-authors: Steliana Vassileva
+authors: 
+- Steliana Vassileva
 image: /images/documentation/technical-writing-ux-user-experience.jpg
 image_credit: https://web3canvas.com/wp-content/uploads/2018/11/technical-writing-ux-user-experience.jpg
 ---

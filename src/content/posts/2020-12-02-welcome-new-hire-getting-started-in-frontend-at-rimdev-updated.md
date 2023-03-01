@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Welcome New Hire: Getting started in Frontend at RIMdev (updated)"
+slug: welcome-new-hire-getting-started-in-frontend-at-rimdev-updated
 date: 2020-12-02 08:09:18
 tags:
 - Team
@@ -8,7 +8,8 @@ tags:
 - Frontend
 categories: Team
 twitter_text: "Welcome New Hire: Getting started in #Frontend at RIMdev (update)"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://images.unsplash.com/photo-1524530514346-eab43224489b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80
 image_url: https://unsplash.com/photos/AqrD5QQ0ajM
 image_credit: "@ilumire"

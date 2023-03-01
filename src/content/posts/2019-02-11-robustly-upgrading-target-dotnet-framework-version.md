@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Robustly Upgrading Target .NET Framework Version
+slug: robustly-upgrading-target-dotnet-framework-version
 date: 2019-02-11 10:30:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Robustly Upgrading Target .NET Framework Version"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1540721718864-c7222c845abc?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
 image_url: https://unsplash.com/photos/r76523xsOZY
 image_credit: Manideep Karne

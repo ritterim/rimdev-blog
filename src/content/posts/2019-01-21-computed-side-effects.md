@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Computed Side Effects in Vue.js"
+slug: computed-side-effects
 date: 2019-01-21 15:40:51
 tags:
 - Vue.js
@@ -9,7 +9,8 @@ categories:
 - Vue.js
 - JavaScript
 twitter_text: "#vuejs side effect in computed properties"
-authors: Andrew Rady
+authors: 
+- Andrew Rady
 image: https://images.unsplash.com/photo-1548049717-249a5f7e9189?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 image_url: https://unsplash.com/photos/0TPmrjTXjSs
 image_credit: Jana Sabeth Schultz

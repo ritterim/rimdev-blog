@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Secure Global Stuntman Users With Windows Azure Blob Storage"
+slug: secure-global-stuntman-users-with-windows-azure-blob-storage
 date: 2017-05-07 12:41:40
 tags:
 - Windows Azure
@@ -9,7 +9,8 @@ tags:
 - OSS
 categories:
 twitter_text: "Secure Global #Stuntman Users With @azure Blob Storage"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm7.staticflickr.com/6120/7037746887_cb990d077c_k_d.jpg
 image_url: https://www.flickr.com/photos/zeroden/
 image_credit: Zero Den

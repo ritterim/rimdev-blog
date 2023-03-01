@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "Khalid's Initial Thoughts On Vue.js"
+slug: khalid's-initial-thoughts-on-vuejs
 date: 2017-05-31 11:43:15
 tags: [ "Vue.js", "JavaScript", "frontend", "clientside" ]
 categories:
 twitter_text: ".@buhakmeh initial thoughts on @vuejs"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://vuejs.org/images/logo.png
 image_credit: Vue.js
 image_url: https://vuejs.org
@@ -14,10 +15,10 @@ image_url: https://vuejs.org
 The RIMdev team composition is a unique blend of disciplines forged in the crucible of time. We have backend developers, frontend developers, designers, quality assurance engineers, and data engineers. With that cauldron of experience, it isn't a suprise that their are a multitude of opinions about the best way to build software in 2017. From my perspective, here is a short list of consensus:
 
 1. User experience über alles (UX is king).
-1. Centralizing and *"Normalizing"* data access via APIs.
-1. Thin clients with limited business logic is ideal.
-1. Speed is a feature.
-1. Static site generation whenever possible.
+2. Centralizing and *"Normalizing"* data access via APIs.
+3. Thin clients with limited business logic is ideal.
+4. Speed is a feature.
+5. Static site generation whenever possible.
 
 Open questions:
 

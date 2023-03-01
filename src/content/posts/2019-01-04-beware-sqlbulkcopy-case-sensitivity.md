@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Beware NPoco's InsertBulk and the underlying SqlBulkCopy's case-sensitivity
+slug: beware-sqlbulkcopy-case-sensitivity
 tags:
 - NPoco
 - SqlBulkCopy
 categories:
 - development
 twitter_text: "Beware NPoco's InsertBulk and the underlying SqlBulkCopy's case-sensitivity"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://farm3.staticflickr.com/2169/3539963093_7b9f4a0d1a_b.jpg
 image_url: https://flic.kr/p/6oPeGr
 image_credit: Angus Fok

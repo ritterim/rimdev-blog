@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "RIMdev.io Going Open"
+slug: rimdev-io-going-open
 date: 2016-09-30 12:04:59
 tags: 
 - RIMdev
@@ -8,7 +8,8 @@ tags:
 - Jekyll
 categories: Blog
 twitter_text: "RIMdev.io going open"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm1.staticflickr.com/3/4014689_a1bbcaf037_b_d.jpg
 image_url: https://www.flickr.com/photos/velkr0/
 image_credit: velkr0

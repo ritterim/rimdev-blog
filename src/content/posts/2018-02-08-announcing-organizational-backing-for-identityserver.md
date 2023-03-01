@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Announcing Organizational Backing For IdentityServer
+slug: announcing-organizational-backing-for-identityserver
 date: 2018-2-8 14:00:00
 tags:
 - OSS
 categories:
 - development
 twitter_text: "Announcing Organizational Backing For @IdentityServer"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1514924962298-4bdf5aef1133?ixlib=rb-0.3.5&s=d521d60420d3b2a3ee81db77e710e00a&auto=format&fit=crop&w=1057&q=80
 image_url: https://unsplash.com/photos/t9XRidW010s
 image_credit: Stephen Leonardi

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Getting Started Testing Vue Components"
+slug: getting-started-testing-vue-components
 date: 2020-03-09 13:43:25
 tags: 
 - Vue.js
@@ -8,7 +8,8 @@ tags:
 - Testing
 categories:
 twitter_text: Getting started with testing your Vue components with Jest
-authors: Andrew Rady
+authors: 
+- Andrew Rady
 image: https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/kN_kViDchA0
 image_credit: Arlington Research

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "ChatOps at RIMDev Using Probot"
+slug: chatops-at-rimdev
 date: 2019-08-30 11:03:06
 tags: 
 - devops

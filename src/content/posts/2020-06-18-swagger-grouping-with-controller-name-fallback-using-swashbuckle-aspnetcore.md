@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Swagger Grouping With Controller Name Fallback Using Swashbuckle.AspNetCore"
+slug: swagger-grouping-with-controller-name-fallback-using-swashbuckle-aspnetcore
 date: 2020-06-18 12:00:00
 tags:
   - asp.net core
@@ -8,7 +8,8 @@ categories:
   - asp.net core
   - development
 twitter_text: "Swagger Grouping With Controller Name Fallback Using Swashbuckle.AspNetCore #aspnetcore"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1559633971-067394f325da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/N6rZ1wHTRgM
 image_credit: Melinda Martin-Khan

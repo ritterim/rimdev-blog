@@ -1,6 +1,6 @@
 ---
-layout: post
 title: A Year of Open Source (2016)
+slug: a-year-of-open-source-2016
 date: 2016-12-30 11:00:00
 image: /images/happy-new-year.jpg
 image_credit: Nicole Abuhakmeh

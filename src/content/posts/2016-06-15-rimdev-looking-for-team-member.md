@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "RIMdev Looking For Team Member"
+slug: rimdev-looking-for-team-member
 date: 2016-06-15 09:23:09
 tags:
 - Team
 - Development
 categories:
 twitter_text: RIMdev Looking For Team Member
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm9.staticflickr.com/8594/16833853225_9995fc125f_h_d.jpg
 image_url: https://www.flickr.com/photos/lightsamples/
 image_credit: Malcolm Carlaw

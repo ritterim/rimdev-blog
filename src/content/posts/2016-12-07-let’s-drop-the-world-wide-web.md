@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Let’s drop the world wide web"
+slug: let’s-drop-the-world-wide-web
 date: 2016-12-07 11:54:30
 tags:
 - Web
 - Development
 twitter_text: "Let’s drop the world wide web - a plea to the internet"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 video: /video/dont-type-www
 ---
 World Wide Web, that's what the "www" stands for in [www.rimdev.io](https://rimdev.io) - a show of hands for those who knew that?

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Leveraging Metadata with Google Tag Manager"
+slug: leveraging-metadata-with-google-tag-manager
 date: 2016-11-30 14:17:02
 image: https://c5.staticflickr.com/6/5541/11033543924_0cbce68909_b.jpg
 image_url: https://www.flickr.com/photos/nicolasgoulet/
@@ -9,7 +9,8 @@ tags:
 - metadata
 - SEO
 twitter_text: "Leveraging Metadata with Google Tag Manager"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 ---
 
 Our APIs expose data to [Ritter's](https://ritterim.com) quote engines based on product, marketplace, and url. As a leading FMO (Field Marketing Organization), our agents use these products and urls to service their clients.

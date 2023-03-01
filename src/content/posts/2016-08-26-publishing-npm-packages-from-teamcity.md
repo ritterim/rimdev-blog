@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Publishing npm Packages From TeamCity
+slug: publishing-npm-packages-from-teamcity
 date: 2016-08-26 12:00:00
 tags:
   - npm
@@ -13,7 +13,8 @@ categories:
   - nodejs
   - OSS
 twitter_text: "Publishing npm Packages From TeamCity"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Releasing new versions from continuous integration, rather than *someone's machine* in a team environment is a great way to release new versions of npm packages in a predicable and controlled manner.

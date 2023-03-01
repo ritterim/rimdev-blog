@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Setting Azure Web App Slot Auto Swap Using ARM Templates and Terraform
+slug: setting-azure-web-app-slot-auto-swap-using-arm-templates-and-terraform
 date: 2019-02-25 8:30:00
 tags:
 - Azure
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Setting Azure Web App Slot Auto Swap Using ARM Templates and Terraform"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 image_url: https://unsplash.com/photos/QdAAasrZhdk
 image_credit: Lance Anderson

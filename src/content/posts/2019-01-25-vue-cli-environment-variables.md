@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Vue CLI Environment Variables"
+slug: vue-cli-environment-variables
 date: 2019-01-25 11:05:21
 tags:
 - Vue.js
@@ -8,7 +8,8 @@ tags:
 - Webpack
 categories:
 twitter_text: Vue.js CLI setting env var
-authors: Andrew Rady
+authors: 
+- Andrew Rady
 image: https://images.unsplash.com/photo-1547575542-c56648365a4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 image_url: https://unsplash.com/photos/f8WsJd6zpBY
 image_credit: Karl Block

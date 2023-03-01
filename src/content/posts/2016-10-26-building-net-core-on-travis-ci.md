@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Building .Net Core On Travis CI"
+slug: building-net-core-on-travis-ci
 date: 2016-10-26 13:20:49
 tags:
 - .NET Core
@@ -8,7 +8,8 @@ tags:
 - Travis CI
 categories: Development
 twitter_text: "Building #aspnetcore on @travisci"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3831/14120933297_089ce68cf7_o_d.jpg
 image_url: https://www.flickr.com/photos/mvegmond/
 image_credit: kweetniet2012

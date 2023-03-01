@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Why We Use Nullables On Our ASP.NET Web API 2 Requests"
+slug: why-we-use-nullables-on-our-aspnet-web-api-2-requests
 date: 2017-08-09 08:20:14
 tags:
 - asp.net
@@ -8,7 +8,8 @@ tags:
 - REST
 categories:
 twitter_text: "Why we use #nullables on our @aspnet #Webapi requests #REST"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2840/33888154296_5266f71f9b_o_d.jpg
 image_url: https://www.flickr.com/photos/144152028@N08/33888154296/
 image_credit: airpix

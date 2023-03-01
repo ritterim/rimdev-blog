@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "UX/UI Solutions: Make Content Less Overwhelming."
+slug: ux-ui-solutions-make-content-less-overwhelming
 date: 2019-09-06 10:17:07
 tags:
 - UI/UX
@@ -9,7 +9,8 @@ tags:
 categories:
 - design
 twitter_text: UX/UI Solutions. Make Content Less Overwhelming.
-authors: Natasha Kurus
+authors: 
+- Natasha Kurus
 image: /images/ux-ui-solutions/ux-ui-solutions-banner.jpg
 ---
 

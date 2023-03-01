@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Get Registered Routes From An ASP.NET MVC Core Application"
+slug: get-registered-routes-from-an-asp.net-mvc-core-application
 date: 2016-08-25 15:29:00
 tags:
 - ASP.NET Core
@@ -8,7 +8,8 @@ tags:
 - MVC
 categories: ASP.NET Core
 twitter_text: Get Registered Routes From an #aspnetcore application @buhakmeh
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image : https://farm5.staticflickr.com/4011/4300529754_d5c3eea96b_b_d.jpg
 image_url: https://www.flickr.com/photos/johanohrling/
 image_credit : johrling

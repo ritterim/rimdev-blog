@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Adding video backgrounds with jekyll front-matter"
+slug: adding-video-backgrounds-with-jekyll-front-matter
 date: 2016-11-10 13:27:57
 tags:
 - jekyll
 - video
 - liquid
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 video: /video/liquid
 ---
 Most of our web properties run on [jekyll](https://jekyllrb.com), [ebrokersoftware.com](https://ebrokersoftware.com), [theagentsurvivalguide.com](https://theagentsurvivalguide.com), and more slated for the coming year.

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Multi Instance ASP.NET Core 2.2 Data Protection Using Redis and an Azure Key Vault Certificate
+slug: multi-instance-aspnetcore-2.2-data-protection-using-redis-and-an-azure-key-vault-certificate
 date: 2019-04-01 10:00:00
 tags:
 - .NET
@@ -11,7 +11,8 @@ categories:
 - asp.net core
 - development
 twitter_text: "Multi Instance #aspnetcore 2.2 Data Protection Using #redis and an @Azure Key Vault Certificate"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 image_url: https://unsplash.com/photos/IM8ZyYaSW6g
 image_credit: Vladimir Anikeev

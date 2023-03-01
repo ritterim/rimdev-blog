@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Using custom elements and pinia with Vue 3"
+slug: vue-3-custom-elements
 date: 2022-11-29 12:00:00
 tags:
 - JavaScript
@@ -9,7 +9,8 @@ tags:
 categories:
 - JavaScript
 twitter_text: "Using custom elements and pinia with Vue 3"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1558195955-c4751542e89b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
 image_url: https://unsplash.com/photos/HrdNNoG_y-A
 image_credit: Juno Jo

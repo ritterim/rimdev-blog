@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "The RIMdev logo story or a tale of 2 knights"
+slug: the-rimdev-logo-story-or-a-tale-of-2-knights
 date: 2017-01-18 10:34:35
 image: https://c1.staticflickr.com/8/7308/11036243553_29a34d0ce9_b.jpg
 image_url: https://flic.kr/p/hPeCHg
@@ -10,7 +10,8 @@ tags:
 - Team
 - Design
 twitter_text: "Designing a team logo"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 ---
 One of my early challenges at RIMdev was to create a RIMdev logo. Something that worked with the existing RitterIM knight, but also let us stand out as the development department. Something that our entire team could get behind and have fun with. Challenge accepted.
 

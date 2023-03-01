@@ -1,6 +1,6 @@
 ---
-layout: post
 title: 'Vue 3 Composition API'
+slug: vue-3-composition-api
 date: 2019-10-21 12:00:00
 tags:
   - vue3
@@ -10,7 +10,8 @@ tags:
 categories:
   - development
 twitter_text: Vue 3 Composition API
-authors: Seth Kline
+authors: 
+- Seth Kline
 image: https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2049&q=80
 image_url: https://unsplash.com/photos/ImcUkZ72oUs
 image_credit: Israel Palacio

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Platform UI background image and gradient utilities"
+slug: platform-ui-background-image-and-gradient-utilities
 date: 2020-10-09 13:10:02
 tags:
 - UI

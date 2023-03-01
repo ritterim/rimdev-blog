@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "CSS Only Dropdown Menu"
+slug: css-only-dropdown-menu
 date: 2020-12-11 11:29:29
 tags:
 - CSS
@@ -11,7 +11,8 @@ tags:
 categories:
 - development
 twitter_text: "You can make cool a dropdown menu without any JS"
-authors: Ted Krueger
+authors: 
+- Ted Krueger
 image:
 image_url:
 image_credit:

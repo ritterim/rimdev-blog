@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Hugo Error Pages With IIS In Windows Azure"
+slug: hugo-error-pages-with-iis-in-windows-azure
 date: 2019-06-17 11:10:41
 tags:
     - Azure
@@ -9,7 +9,8 @@ categories:
     - Azure
     - Static
 twitter_text: ".@GoHugoIO error pages with #IIS in #Windows @Azure"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://images.unsplash.com/photo-1491832541507-17ee9fc8d164?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2466&q=80
 image_url: https://unsplash.com/photos/GfDyRbLofHg
 image_credit: Patrick Tomasso

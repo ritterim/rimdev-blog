@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Material design-like form animations for Semantic UI"
+slug: material-design-like-form-animations-for-semantic-ui
 date: 2017-08-01 16:10:36
 tags:
 - UI
@@ -8,7 +8,8 @@ tags:
 - Semantic UI
 categories:
 twitter_text: Material design-like form animations for SemanticUI by @hougasian
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://farm5.staticflickr.com/4251/34994103880_a30e49caa5_b.jpg
 image_url: https://flic.kr/p/VjiVUC
 image_credit: eugenuity

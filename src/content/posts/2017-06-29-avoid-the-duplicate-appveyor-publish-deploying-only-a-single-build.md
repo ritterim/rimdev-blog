@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Avoid the Duplicate AppVeyor Publish: Deploying Only a Single Build"
+slug: avoid-the-duplicate-appveyor-publish-deploying-only-a-single-build
 date: 2017-06-29 11:30:00
 tags:
 - AppVeyor
 categories:
 - development
 twitter_text: "Avoid the Duplicate AppVeyor Publish: Deploying Only a Single Build"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Sometimes it's useful to ensure a project works with multiple versions of runtimes. In the following example, multiple versions of Node.js will be used to ensure a project builds successfully with both. In these cases, you may only want a single deployment -- rather than deploying twice unnecessarily.

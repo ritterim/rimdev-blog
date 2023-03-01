@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Communicating between components in separate scopes"
+slug: communicating-between-components-in-separate-scopes
 date: 2018-02-12 16:20:15
 tags:
 - Web
 - Vue
 - JavaScript
 twitter_text: "Communicating between #Vue components in separate scopes"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1464851707681-f9d5fdaccea8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=195a5b97e8f03fed4b1beadfb78204da&auto=format&fit=crop&w=1405&q=80
 image_url: https://unsplash.com/photos/VuPIUePS_vU
 image_credit: Nick Baker

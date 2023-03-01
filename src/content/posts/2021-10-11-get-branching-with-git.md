@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Get branching with Git"
+slug: get-branching-with-git
 date: 2021-10-11 15:38:53
 tags:
 - GitHub
@@ -8,7 +8,8 @@ categories:
 - Tools
 - Development
 twitter_text: A fast and simple naming convention for branches in Git.
-authors: "Ted Krueger"
+authors: 
+- Ted Krueger
 image:
 image_url:
 image_credit:

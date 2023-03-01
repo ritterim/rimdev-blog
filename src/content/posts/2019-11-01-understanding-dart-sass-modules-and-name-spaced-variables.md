@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Understanding Dart Sass modules and namespaced variables"
+slug: understanding-dart-sass-modules-and-name-spaced-variables
 date: 2019-11-01 11:48:26
 tags:
 - Sass
 - Dart Sass
 categories: CSS
 twitter_text: "Understanding Dart Sass modules and name spaced variables"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?w=1000
 image_url: https://unsplash.com/photos/W8KTS-mhFUE
 image_credit: "@billy_huy"
@@ -24,7 +25,7 @@ One of the largest considerations was the move away form `@import` in favour of 
 Based on this, and Miriam's post, we were prompted to do two things:
 
 1. Convert our framework to Dart-Sass 1.23.0.
-1. Introduce a config file for anyone wanting to leverage our framework in their project.
+2. Introduce a config file for anyone wanting to leverage our framework in their project.
 
 Here are some of the things we learned along the way...
 

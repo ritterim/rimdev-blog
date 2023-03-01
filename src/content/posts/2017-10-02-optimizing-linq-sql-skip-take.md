@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Optimizing LINQ to SQL Skip/Take"
+slug: optimizing-linq-sql-skip-take
 date: 2017-10-02 14:00:00
 tags:
 - .NET
 - SQL Server
 - LINQ
 twitter_text: "Optimizing #LINQ to SQL Skip/Take"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://farm5.staticflickr.com/4043/4569418430_6421dc032b_b.jpg
 image_url: https://www.flickr.com/photos/lychee1968/4569418430/
 image_credit: lychee1968

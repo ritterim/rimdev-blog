@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Find Numbers In A C# String"
+slug: find-numbers-in-a-c-sharp-string
 date: 2018-04-18 09:55:53
 tags:
 - development
 categories:
 - development
 twitter_text: "Find #numbers in a #csharp #string @dotnet"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2502/4562380001_7284ca6d6d_b_d.jpg
 image_url: https://www.flickr.com/photos/fdecomite/
 image_credit: fdecomite

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Getting to work on your new Apple Silicon Macbook Pro"
+slug: getting-to-work-on-your-new-apple-silicon-macbook-pro
 date: 2022-03-21 08:24:06
 tags:
 - macOS
@@ -9,7 +9,8 @@ categories:
 - Development
 - Tools
 twitter_text: Setting up your new M1 Macbook Pro for work
-authors: "Kevin Hougasian"
+authors: 
+- Kevin Hougasian
 image: https://images.unsplash.com/photo-1644308414850-893551d6d4c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80
 image_url: https://unsplash.com/@oww
 image_credit: "Geio Tischler"

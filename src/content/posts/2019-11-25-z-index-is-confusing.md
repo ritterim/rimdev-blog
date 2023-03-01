@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "z-index Is Confusing, but It Doesn't Have to Be"
+slug: z-index-is-confusing
 date: 2019-11-25 16:16:51
 tags:
 - CSS
 categories: CSS
 twitter_text: "z-index Is Confusing, but It Doesn't Have to Be"
-authors: Ted Krueger
+authors: 
+- Ted Krueger
 image: https://images.unsplash.com/photo-1573257318420-b9e47a6f816e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80
 image_url: https://unsplash.com/photos/4n4Yz0wGLDc
 image_credit: Eric Prouzet

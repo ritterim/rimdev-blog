@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Solving .NET Core Https Development Certificate Issues on macOS"
+slug: solving-dotnet-core-https-development-certificate-issues-on-macos
 date: 2019-07-08 11:03:43
 tags:
     - Keychain

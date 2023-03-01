@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Getting route data in your ASP.NET Core middleware
+slug: asp-net-core-routes-middleware
 tags:
 - ASP.NET Core
 - Routing

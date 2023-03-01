@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "The story of our OpenID Connect implementation, live at NDC Oslo 2016!"
+slug: the-story-of-our-openid-connect-implementation-live-at-ndc-oslo-2016
 date: 2016-06-02 12:00:00
 tags:
   - Authentication
@@ -12,7 +12,8 @@ image_credit: Jørn Eriksson
 categories:
   - Events
 twitter_text: "The story of our OpenID Connect implementation, live at NDC Oslo 2016!"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Last year we embarked on a mission to update the overall authentication and authorization strategy for [Ritter Insurance Marketing](https://www.ritterim.com/). After evaluating the different options, we replaced our existing home-grown multi-application solution with a cloud hosted OpenID Connect implementation, using [IdentityServer3](https://github.com/IdentityServer/IdentityServer3) and [BrockAllen.MembershipReboot](https://github.com/brockallen/BrockAllen.MembershipReboot).

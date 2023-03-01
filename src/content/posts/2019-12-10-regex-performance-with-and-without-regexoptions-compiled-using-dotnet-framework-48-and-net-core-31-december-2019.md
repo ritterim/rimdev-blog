@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Regex Performance With and Without RegexOptions.Compiled Using .NET Framework 4.8 and .NET Core 3.1 (December 2019)"
+slug: regex-performance-with-and-without-regexoptions-compiled-using-dotnet-framework-48-and-net-core-31-december-2019
 date: 2019-12-10 10:30:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Regex Performance With and Without RegexOptions.Compiled Using .NET Framework 4.8 and .NET Core 3.1 (December 2019)"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1501290301209-7a0323622985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/dPgPoiUIiXk
 image_credit: Robin Pierre

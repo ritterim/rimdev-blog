@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Middleware Madness: Site Maintenance In ASP.NET Core"
+slug: middleware-madness-site-maintenance-in-aspnet-core
 date: 2016-09-21 14:01:37
 tags:
 - Middleware Madness

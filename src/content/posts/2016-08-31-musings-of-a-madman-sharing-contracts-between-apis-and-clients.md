@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Musings Of A Madman: Sharing Contracts Between APIs and Clients"
+slug: musings-of-a-madman-sharing-contracts-between-apis-and-clients
 date: 2016-08-31 10:41:51
 tags: 
 - API
@@ -8,7 +8,8 @@ tags:
 - WebAPI
 categories: Development
 twitter_text: Musings Of A Madman - Sharing Contracts Between APIs and Clients
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm6.staticflickr.com/5011/5571615492_70b0095424_o_d.jpg
 image_url : https://www.flickr.com/photos/48244148@N07/
 image_credit: Workshysteve

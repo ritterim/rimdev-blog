@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Autofac: Eager vs Lazy Construction During Registration"
+slug: autofac-eager-vs-lazy-construction-during-registration
 date: 2019-10-31 10:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Autofac: Eager vs Lazy Construction During Registration (@AutofacIoC #dotnet)"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/8Gg2Ne_uTcM
 image_credit: 贝莉儿 DANIST

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "RIMdev Radio: Building with Astro"
+slug: rimdev-radio-building-with-astro
 date: 2022-10-12 12:00:00
 tags:
 - Astro
@@ -14,7 +14,8 @@ categories:
 - JavaScript
 - Static Site Generators
 twitter_text: "Builing a dynamic site with Astro."
-authors: Ryan Trimble
+authors: 
+- Ryan Trimble
 image: https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 image_url: https://unsplash.com/photos/1oKxSKSOowE
 image_credit: Mohammad Metri

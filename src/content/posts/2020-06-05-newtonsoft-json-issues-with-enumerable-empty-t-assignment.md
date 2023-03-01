@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "ASP.NET Core 3.1: Newtonsoft.Json Issues With Enumerable.Empty<T> Assignment"
+slug: newtonsoft-json-issues-with-enumerable-empty-t-assignment
 date: 2020-06-05 8:00:00
 tags:
   - asp.net core
@@ -8,7 +8,8 @@ categories:
   - asp.net core
   - development
 twitter_text: "ASP.NET Core 3.1: Newtonsoft.Json Issues With Enumerable.Empty<T> Assignment #dotnet #dotnetcore #aspnetcore"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1526041092449-209d556f7a32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/pcGLNRCICnA
 image_credit: Tyler Callahan

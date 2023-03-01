@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Export CSV Table of All Azure Web Apps Configuration in Subscription
+slug: export-csv-table-of-all-azure-web-apps-configuration-in-subscription
 date: 2018-11-20 12:30:00
 tags:
 - Azure
@@ -9,7 +9,8 @@ tags:
 categories:
 - development
 twitter_text: "Export CSV Table of All Azure Web Apps Configuration in Subscription"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-0.3.5&s=4a647d42fac71c6e8e5ae5f45fe2d4c8&auto=format&fit=crop&w=2252&q=80
 image_url: https://unsplash.com/photos/lUaaKCUANVI
 image_credit: Kimberly Farmer

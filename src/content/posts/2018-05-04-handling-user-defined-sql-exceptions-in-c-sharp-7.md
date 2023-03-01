@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Handling User Defined SQL Exceptions in C# 7"
+slug: handling-user-defined-sql-exceptions-in-c-sharp-7
 date: 2018-05-04 11:38:48
 tags:
 - development
@@ -8,7 +8,8 @@ tags:
 - sql
 categories:
 twitter_text: "Handling User Defined #SQL Exception in #csharp 7 @dotnet"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm9.staticflickr.com/8015/7107789557_e07f30d8fa_o_d.jpg
 image_url: https://www.flickr.com/photos/patloika/
 image_credit: Tony Moore | Pat Loika

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Random Vue Tips"
+slug: random-vue-tips
 date: 2018-06-05 10:17:26
 tags:
 - Vue
@@ -8,7 +8,8 @@ tags:
 - JavaScript
 categories: development
 twitter_text: "Random Vue Tips"
-authors: Chidozie Oragwu
+authors: 
+- Chidozie Oragwu
 image: https://images.unsplash.com/photo-1523540939399-141cbff6a8d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e53fb0167c9adfc4e3add2ef50580f&auto=format&fit=crop&w=2700&q=80
 image_url: https://unsplash.com/photos/-rF4kuvgHhU
 image_credit: Photo by Sam Truong Dan on Unsplash

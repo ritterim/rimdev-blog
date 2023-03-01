@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Retry Transient Failures Using SqlClient / ADO.NET With Polly
+slug: retry-transient-failures-using-sqlclient-adonet-with-polly
 date: 2019-08-26 14:00:00
 tags:
 - .NET

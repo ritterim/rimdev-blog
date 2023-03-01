@@ -1,6 +1,6 @@
 ---
-layout: post
 title: WSL and git and my problem with a single ASP.NET MVC app.
+slug: wsl-git-asp-net-mvc
 tags:
 - WSL
 - git
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "WSL and git and my problem with a single ASP.NET MVC app."
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: /images/wsl-git-asp-net-mvc-exception.png
 image_credit: Bill Boga
 ---

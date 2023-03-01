@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Under the Decision Tree (#15)"
+slug: under-the-decision-tree-15
 date: 2017-01-16 07:00:00
 tags: 
 - Machine Learning
 categories: ai
 twitter_text: "Under the Decision Tree (#15) #machinelearning #AI #artificialintelligence #software #bigdata #science"
-authors: Scott Schwalm
+authors: 
+- Scott Schwalm
 image: /images/tree-338211_1280.jpg
 external_links_target_blank: true
 ---

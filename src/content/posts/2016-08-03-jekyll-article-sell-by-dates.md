@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Jekyll article sell-by dates"
+slug: jekyll-article-sell-by-dates
 date: 2016-08-03 14:24:16
 tags:
 - Jekyll
 - UX
 categories: Jekyll
 twitter_text: "Tell your users how old a #Jekyll post is #UX"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://c6.staticflickr.com/1/145/339331301_25e470c90a_b.jpg
 image_url: https://www.flickr.com/photos/29205886@N08/
 image_credit: Bill Couch

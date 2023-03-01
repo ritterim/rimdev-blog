@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Getting started with webpack"
+slug: getting-started-with-webpack
 date: 2019-02-28 16:17:57
 tags:
 - Webpack
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Getting started with webpack"
-authors: Chidozie Oragwu
+authors: 
+- Chidozie Oragwu
 image: https://images.unsplash.com/photo-1466071110707-a017f96ef5c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 image_url: https://unsplash.com/photos/ZzApzgh5lxo
 image_credit: Rubén Bagüés

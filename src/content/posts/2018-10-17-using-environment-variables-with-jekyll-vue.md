@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Using Environment Variables with Jekyll, Vue.js, and Netlify"
+slug: using-environment-variables-with-jekyll-vue
 date: 2018-10-17 07:17:33
 tags:
 - Development
@@ -11,7 +11,8 @@ tags:
 - Jekyll
 categories: development
 twitter_text: "Using Environment Variables with Jekyll, Vue.js, and Netlify"
-authors: John Vicari
+authors: 
+- John Vicari
 image: https://images.unsplash.com/photo-1489417139533-915815598d31?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2642373de2eddf3629e9ff52550c8294&auto=format&fit=crop&w=2820&q=80
 image_url: https://unsplash.com/photos/9FDKj-FrfA4
 image_credit: Photo by Rebekah Howell on Unsplash

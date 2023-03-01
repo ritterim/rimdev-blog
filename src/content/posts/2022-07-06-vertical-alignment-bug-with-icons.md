@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Vertical Alignment Bug with Icons"
+slug: vertical-alignment-bug-with-icons
 date: 2022-07-07 12:00:00
 tags:
 - CSS
 - UI/UX
 categories: "Platform-UI"
 twitter_text: "Vertical Alignment Bug with Icons"
-authors: Austin Asbury
+authors: 
+- Austin Asbury
 image: https://images.unsplash.com/photo-1527276826904-9c2275f441e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80
 image_url: https://unsplash.com/photos/8OECtq8rrNg
 image_credit: "@visualsbydil"

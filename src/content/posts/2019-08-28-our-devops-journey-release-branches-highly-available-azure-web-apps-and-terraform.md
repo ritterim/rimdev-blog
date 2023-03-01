@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Our DevOps Journey: Release Branches, Highly Available Azure Web Apps, and Terraform"
+slug: our-devops-journey-release-branches-highly-available-azure-web-apps-and-terraform
 date: 2019-08-28 8:45:00
 tags:
 - Azure

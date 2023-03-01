@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Find Auto Generated ASP.NET Machine Key in Azure Web Apps
+slug: find-auto-generated-aspnet-machine-key-in-azure-web-apps
 date: 2019-04-02 13:55:00
 tags:
 - .NET
@@ -9,7 +9,8 @@ categories:
 - asp.net
 - development
 twitter_text: "Find Auto Generated #aspnet Machine Key in @Azure Web Apps"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1550527882-b71dea5f8089?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
 image_url: https://unsplash.com/photos/C1P4wHhQbjM
 image_credit: Silas Köhler

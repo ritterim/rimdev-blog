@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Understanding User Access Within Your Ecosystem"
+slug: understanding-user-access-within-your-ecosystem
 date: 2018-05-18 09:13:10
 tags:
 - development
 categories:
 - development
 twitter_text: "Understanding User Access Within Your Ecosystem"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2120/2142510328_a8fea153c8_b_d.jpg
 image_url: https://www.flickr.com/photos/edesign/
 image_credit: Stuart R Brown

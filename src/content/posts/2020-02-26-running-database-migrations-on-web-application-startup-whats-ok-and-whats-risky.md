@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Running Database Migrations On Web Application Startup: What's OK and What's Risky"
+slug: running-database-migrations-on-web-application-startup-whats-ok-and-whats-risky
 date: 2020-02-26 14:00:00
 tags:
 - SQL
 categories:
 - development
 twitter_text: "Running Database Migrations On Web Application Startup: What's OK and What's Risky"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1470645792662-dd18394f8c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/Esq0ovRY-Zs
 image_credit: Maximilian Weisbecker

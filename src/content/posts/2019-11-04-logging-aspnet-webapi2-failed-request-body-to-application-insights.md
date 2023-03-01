@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Logging ASP.NET Web API 2 Failed Request Body to Application Insights"
+slug: logging-aspnet-webapi2-failed-request-body-to-application-insights
 date: 2019-11-04 11:30:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Logging ASP.NET Web API 2 Failed Request Body to Application Insights #aspnet #dotnet"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1534848812-17d9c573d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/1IxbvNXx5QA
 image_credit: Thomas Chan

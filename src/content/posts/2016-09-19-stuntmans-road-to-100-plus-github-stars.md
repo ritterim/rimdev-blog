@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Stuntman's Road To 100+ GitHub Stars: Marketing Your OSS .NET Project"
+slug: stuntmans-road-to-100-plus-github-stars
 date: 2016-09-19 13:02:59
 tags: 
 - OSS
 - Stuntman
 categories: OSS
 twitter_text: "Stuntman's Road To 100+ GitHub Stars"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2274/2127702830_39fac8133d_b_d.jpg
 image_url : https://www.flickr.com/photos/gustavodibobeira/
 image_credit: Gustavo Duarte

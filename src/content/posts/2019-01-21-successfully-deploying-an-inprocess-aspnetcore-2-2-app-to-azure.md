@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Successfully Deploying An InProcess ASP.NET Core 2.2 App To Azure"
+slug: successfully-deploying-an-inprocess-aspnetcore-2-2-app-to-azure
 date: 2019-01-21 15:39:51
 tags:
 - asp.net
 - asp.net core
 categories:
 twitter_text: "Successfully Deploying An InProcess #aspnetcore 2.2 App To @Azure @aspnet @dotnet"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm5.staticflickr.com/4906/44097588650_b4e1ba5865_z_d.jpg
 image_url: https://www.flickr.com/photos/fran001/
 image_credit: Francisco Anzola

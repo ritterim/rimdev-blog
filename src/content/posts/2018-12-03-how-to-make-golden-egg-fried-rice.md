@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "How To Make Golden Fried Rice"
+slug: how-to-make-golden-egg-fried-rice
 date: 2018-12-03 21:20:12
 tags:
 - Food
 - chinese cuisine
 categories: food recipes
 twitter_text: "How To Make Golden Fried Rice"
-authors: Cheng Yang
+authors: 
+- Cheng Yang
 image: https://c1.staticflickr.com/3/2466/3708994257_4e359233c9_b.jpg
 image_url: https://www.flickr.com/photos/35856236@N06/3708994257/
 image_credit: hawaiianfoodrecipe

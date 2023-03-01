@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Vue Group Transitions"
+slug: vue-simple-group-transitions
 date: 2019-03-05 14:17:48
 tags:
 - Vue.js
@@ -9,7 +9,8 @@ tags:
 categories:
 - Vue.js
 twitter_text: "Fade Animations With Vue.js"
-authors:  Andrew Rady
+authors: 
+- Andrew Rady
 image:  https://images.unsplash.com/photo-1551719576-0b1f00da4c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
 image_url: https://unsplash.com/photos/ed7nhUCdRjQ
 image_credit: Claudio Büttler

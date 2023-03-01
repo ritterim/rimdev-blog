@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Hugo Archetypes to the Rescue!"
+slug: hugo-archetypes-to-the-rescue
 date: 2021-02-19 08:01:49
 tags:
 - Documentation
@@ -9,7 +9,8 @@ tags:
 categories:
 - Documentation
 twitter_text: Hugo Archetypes to the Rescue!
-authors: Steliana Vassileva
+authors: 
+- Steliana Vassileva
 image: /images/documentation/hugo.png
 image_url: https://images.app.goo.gl/A9asceAGJ8aQL8yF6
 ---

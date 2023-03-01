@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Using Stuntman with ASP.NET MVC Video"
+slug: using-stuntman-with-aspnet-mvc-video
 date: 2017-02-15 09:03:46
 tags: 
 - video
@@ -8,7 +8,8 @@ tags:
 - OSS
 categories:
 twitter_text: "Using #stuntman with @aspnet MVC Video"
-authors: Khalid Abuhakmeh
+authors:
+- Khalid Abuhakmeh
 image: ./images/stuntman-video.png
 ---
 

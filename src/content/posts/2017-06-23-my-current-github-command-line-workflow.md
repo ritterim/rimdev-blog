@@ -1,13 +1,14 @@
 ---
-layout: post
 title: My Current GitHub Command Line Workflow
+slug: my-current-github-command-line-workflow
 date: 2017-06-23 10:30:00
 tags:
 - GitHub
 categories:
 - development
 twitter_text: "My Current GitHub Command Line Workflow"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 [![Git](https://imgs.xkcd.com/comics/git.png)](https://xkcd.com/1597/)

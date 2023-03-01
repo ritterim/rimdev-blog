@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Targeting Devices For Hover Effects: A web developer's journey"
+slug: targeting-devices-for-hover-effects
 date: 2022-05-06 11:11:43
 tags:
 - CSS
@@ -11,7 +11,8 @@ tags:
 categories:
 - development
 twitter_text:
-authors: Ted Krueger
+authors: 
+- Ted Krueger
 image:
 image_url:
 image_credit:

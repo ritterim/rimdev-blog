@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "How child components can respond to store actions"
+slug: how-child-components-can-respond-to-store-actions
 date: 2017-10-06 12:47:23
 tags:
 - Web
 - Vue
 - JavaScript
 twitter_text: "How child #Vue components can respond to store actions"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 ---
 
 At RIMdev, I spend most of my time writing Vue components. And I love it. But sometimes there's unique problems that can be encountered when trying to trickle data down to child components.

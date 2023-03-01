@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Publishing to npm Using AppVeyor"
+slug: publishing-to-npm-using-appveyor
 date: 2017-02-28 11:30:00
 tags:
 - AppVeyor
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Publishing to npm Using AppVeyor"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 AppVeyor does not currently provide built-in support for publishing to npm (at least, currently). Instead, we can provide the npm token as an AppVeyor UI configured environment variable and run `npm pack` and `npm publish`.

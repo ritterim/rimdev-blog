@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Running Jekyll on Kestrel and ASP.NET Core"
+slug: running-jekyll-on-kestrel-and-asp-net-core
 date: 2016-08-12 08:13:34
 tags: 
 - jekyll
@@ -10,7 +10,8 @@ categories:
 - asp.net core
 - jekyll
 twitter_text: "Running #jekyll on #kestrel and #aspnetcore"
-authors : Khalid Abuhakmeh
+authors : 
+- Khalid Abuhakmeh
 image : https://farm8.staticflickr.com/7336/11050770496_2d57a23280_k_d.jpg
 image_url : https://www.flickr.com/photos/nh53/
 image_credit : NH53

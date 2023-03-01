@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Publishing npm Packages to MyGet Using AppVeyor"
+slug: publishing-npm-packages-to-myget-using-appveyor
 date: 2017-05-16 17:00:00
 tags:
 - AppVeyor
@@ -9,7 +9,8 @@ tags:
 categories:
 - development
 twitter_text: "Publishing npm Packages to MyGet Using AppVeyor"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Previously, I wrote about [Publishing to npm Using AppVeyor]({% post_url 2017-02-28-publishing-to-npm-using-appveyor %}). This is a similar post, but specifically geared toward publishing an npm package to [MyGet](https://myget.org/).

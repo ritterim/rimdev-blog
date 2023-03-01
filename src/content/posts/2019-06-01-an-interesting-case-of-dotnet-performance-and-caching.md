@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "An Interesting Case Of .NET Performance and Caching"
+slug: an-interesting-case-of-dotnet-performance-and-caching
 date: 2019-06-01 17:20:13
 tags:
 - .NET

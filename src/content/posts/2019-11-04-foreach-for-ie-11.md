@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Using forEach for IE 11"
+slug: foreach-for-ie-11
 date: 2019-11-04 9:10:30
 tags:
  - JavaScript
@@ -8,7 +8,8 @@ tags:
 categories:
  - JavaScript
 twitter_text: "Using forEach to loop through DOM elements in IE 11"
-authors: Andrew Rady
+authors: 
+- Andrew Rady
 image: https://images.unsplash.com/photo-1524993242431-9de0d2d86e85?w=1000
 image_url: https://unsplash.com/photos/xZMghzq01UQ
 image_credit: "@majidrangraz"

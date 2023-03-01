@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Adding Mermaid To RIMdev.io"
+slug: adding-mermaid-to-rimdev-io
 date: 2017-03-03 15:25:51
 tags:
 - Jekyll
 categories:
 twitter_text: "Adding #mermaid to https://rimdev.io"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2127/2067252947_fcaa9ca286_z_d.jpg?zz=1
 image_url: https://www.flickr.com/photos/21333256@N08/
 image_credit: Ryan McCullah

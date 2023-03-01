@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "Converting MP4 To Webm Using FFMPEG and Bash"
+slug: converting-mp4-to-webm-using-ffmpeg-and-bash
 date: 2016-11-11 08:58:15
 twitter_text: "Converting #MP4 to #Webm Using #ffmpeg and #bash #video"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 tags:
 - jekyll
 - video

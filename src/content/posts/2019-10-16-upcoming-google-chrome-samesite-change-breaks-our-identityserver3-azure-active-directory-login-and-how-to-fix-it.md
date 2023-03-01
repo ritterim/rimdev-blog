@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Upcoming Google Chrome SameSite Change Breaks Our IdentityServer3 Azure Active Directory Login (and, how to fix it!)"
+slug: upcoming-google-chrome-samesite-change-breaks-our-identityserver3-azure-active-directory-login-and-how-to-fix-it
 date: 2019-10-16 10:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Upcoming @googlechrome SameSite Change Breaks Our IdentityServer3 Azure Active Directory Login (and, how to fix it!) #dotnet"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1505804363897-fc0d2b6bbf51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/Y_J0phaFy2g
 image_credit: Jad Limcaco

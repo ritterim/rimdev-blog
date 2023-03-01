@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "What Is A Renaissance And What Does It Have To Do With .Net?"
+slug: what-is-a-renaissance-and-what-does-it-have-to-do-with-dot-net
 date: 2017-03-01 10:20:51
 tags: 
 - .NET
@@ -8,7 +8,8 @@ tags:
 - OSS
 categories: development
 twitter_text: "What Is a #Renaissance and What Does It Have To Do With @dotnet?"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://upload.wikimedia.org/wikipedia/commons/9/94/Sanzio_01.jpg
 image_credit: Wikipedia
 image_url: https://upload.wikimedia.org/wikipedia/commons/9/94/Sanzio_01.jpg

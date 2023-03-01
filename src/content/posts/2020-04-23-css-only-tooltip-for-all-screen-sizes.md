@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "CSS Only Tooltip for All Screen Sizes"
+slug: css-only-tooltip-for-all-screen-sizes
 date: 2020-04-23 08:02:51
 tags:
 - UI/UX
@@ -10,7 +10,8 @@ tags:
 categories:
 - development
 twitter_text: "CSS Only Tooltip for All Screen Sizes"
-authors: Ted Krueger
+authors: 
+- Ted Krueger
 image:
 image_url:
 image_credit:

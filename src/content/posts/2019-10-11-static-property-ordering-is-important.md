@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Ordering of static fields in C# matters"
+slug: static-property-ordering-is-important
 date: 2019-10-09
 tags:
 - C#
 categories:
 - C#
 twitter_text: "Ordering of static fields in #csharp matters"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://images.unsplash.com/photo-1534190239940-9ba8944ea261?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80
 image_url: https://unsplash.com/photos/NL_DF0Klepc
 image_credit: Cesar Carlevarino Aragon

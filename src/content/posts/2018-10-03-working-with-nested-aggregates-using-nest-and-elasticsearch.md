@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Working With Nested Aggregates Using NEST and Elasticsearch"
+slug: working-with-nested-aggregates-using-nest-and-elasticsearch
 date: 2018-10-03 11:51:38
 tags:
 - Elasticsearch
@@ -11,7 +12,8 @@ categories:
 - NEST
 - C#
 twitter_text: "Working With Nested Aggregates Using #NEST and @elastic"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm5.staticflickr.com/4103/5197253773_12cabba4b4_b_d.jpg
 image_url: https://www.flickr.com/photos/warrick/
 image_credit: Warrick Wynne

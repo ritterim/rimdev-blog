@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Design Dilemma: Windows Azure Management, Jekyll, and Deployments"
+slug: design-dilemma-windows-azure-management-jekyll-and-deployments
 date: 2017-01-11 14:34:37
 tags:
 - question
@@ -9,7 +9,8 @@ tags:
 categories:
 - Design Dilemma
 twitter_text: "Design Dilemma: @windowsazure, #jekyll, and #deployments #dotnet"
-authors: Khalid Abuhakmeh 
+authors: 
+- Khalid Abuhakmeh 
 image: https://farm7.staticflickr.com/6045/6322051654_84b730e08a_b_d.jpg
 image_url: https://www.flickr.com/photos/zeevveez/
 image_credit: zeevveez

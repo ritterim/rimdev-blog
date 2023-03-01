@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Non Pro/Premier SendGrid Accounts May Have Issues Sending to Popular Microsoft Domains (outlook.com, etc.)"
+slug: non-pro-premier-sendgrid-accounts-may-have-issues-sending-to-popular-microsoft-domains-outlook-com-etc
 date: 2019-10-21 14:00:00
 tags:
 - SendGrid
 categories:
 - development
 twitter_text: "Non Pro/Premier @SendGrid Accounts May Have Issues Sending to Popular @Microsoft Domains (outlook.com, etc.)"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1534567406103-997f6c5e7f93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/ZXB6B8FkqwE
 image_credit: Nikolay Tchaouchev

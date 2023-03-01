@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Strongly Typed Feature Flags With ASP.NET Core 2.2
+slug: strongly-typed-feature-flags-with-aspnetcore-2.2
 date: 2019-04-03 12:30:00
 tags:
 - .NET
@@ -9,7 +9,8 @@ categories:
 - asp.net core
 - development
 twitter_text: "Strongly Typed Feature Flags With ASP.NET Core 2.2"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1547398839-7a55748003e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2380&q=80
 image_url: https://unsplash.com/photos/WZQkwG-tXts
 image_credit: Vladimir Mokry

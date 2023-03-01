@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "ASP.NET Core 3.1: Default System.Text.Json Settings Don't Roundtrip (Serialize/Deserialize) Through Test Server"
+slug: default-system-text-json-settings-dont-roundtrip-serialize-deserialize-through-test-server
 date: 2020-06-04 10:00:00
 tags:
   - asp.net core
@@ -8,7 +8,8 @@ categories:
   - asp.net core
   - development
 twitter_text: "ASP.NET Core 3.1: Default System.Text.Json Settings Don't Roundtrip (Serialize/Deserialize) Through Test Server #dotnet #dotnetcore #aspnetcore"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1509130298739-651801c76e96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/dcL8ESbsGis
 image_credit: Dan Schiumarini

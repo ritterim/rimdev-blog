@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Running Gulp On TeamCity"
+slug: running-gulp-on-teamcity
 date: 2016-07-08 11:18:09
 tags:
 - gulp
 - TeamCity
 categories: development
 twitter_text: Running Gulp On TeamCity
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: /images/gulp_loves_teamcity.jpg
 image_url: https://www.rimdev.io
 image_credit: Khalid Abuhakmeh

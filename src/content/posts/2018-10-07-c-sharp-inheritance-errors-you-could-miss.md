@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "C# Inheritance Errors You Could Miss"
+slug: c-sharp-inheritance-errors-you-could-miss
 date: 2018-10-07 12:39:17
 tags:
 - csharp
@@ -9,7 +9,8 @@ categories:
 - csharp
 - bugs
 twitter_text: "#csharp inheritance errors you could miss. @dotnet #netcore"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm2.staticflickr.com/1515/25863130911_6f86f22866_k_d.jpg
 image_url: https://www.flickr.com/photos/kateed/
 image_credit: Kate Russell

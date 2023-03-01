@@ -1,6 +1,6 @@
 ---
-layout: post
 title: 'Vue 3 is official'
+slug: vue-3-is-official
 date: 2020-09-22 12:00:00
 tags:
   - vue3
@@ -9,7 +9,8 @@ tags:
 categories:
   - development
 twitter_text: Vue 3 is official
-authors: Seth Kline
+authors: 
+- Seth Kline
 image: https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&auto=format&fit=crop&w=2049&q=80
 image_url: https://unsplash.com/photos/gdTxVSAE5sk
 image_credit: Ray Hennessy

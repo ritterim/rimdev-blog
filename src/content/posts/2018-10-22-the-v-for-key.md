@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "The Key to the Vue v-for"
+slug: the-v-for-key
 date: 2018-10-22 11:36:00
 tags:
 - JavaScript
@@ -8,7 +8,8 @@ tags:
 categories:
 - JavaScript
 twitter_text: "The Key to the Vue v-for"
-authors: Jaime Jones
+authors:
+- Jaime Jones
 image: https://images.unsplash.com/photo-1522794338816-ee3a17a00ae8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=28707e35e45dd456c20daa5dee1b5396&auto=format&fit=crop&w=1267&q=80
 image_url: https://unsplash.com/photos/o9KNLaITFYw
 image_credit: Debby Hudson

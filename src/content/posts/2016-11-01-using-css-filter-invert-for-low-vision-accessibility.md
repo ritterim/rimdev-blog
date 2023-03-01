@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Using CSS filter: invert() for low-vision accessibility"
+slug: using-css-filter-invert-for-low-vision-accessibility
 date: 2016-11-01 09:25:46
 tags:
 - CSS
 - Sass
 - UX
 - accessibility
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://c1.staticflickr.com/9/8621/15643132423_3f27a976b7_b.jpg
 image_url : https://www.flickr.com/photos/dominicspics/15643132423
 image_credit: "Dominic Alves"

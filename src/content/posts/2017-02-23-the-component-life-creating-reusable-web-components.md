@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "The Component Life: Creating Reusable Web Components"
+slug: the-component-life-creating-reusable-web-components
 date: 2017-02-23
 tags: 
 - Web components
@@ -9,7 +9,8 @@ categories:
 - javascript
 - frontend
 twitter_text: "The Component Life: Creating Reusable Web Components #webcomponents #javascript"
-authors: Nathan White
+authors: 
+- Nathan White
 image: /images/modules.jpg
 image_credit: Nathan White
 external_links_target_blank: true

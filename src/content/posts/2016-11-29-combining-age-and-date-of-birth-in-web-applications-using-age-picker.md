@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Combining Age and Date of Birth in Web Applications Using Age Picker
+slug: combining-age-and-date-of-birth-in-web-applications-using-age-picker
 date: 2016-11-29 10:00:00
 tags:
   - Development
 categories:
   - OSS
 twitter_text: "Combining Age and Date of Birth in Web Applications Using Age Picker #javascript #ui #ux"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Imagine for a moment you're an insurance agent selling a product to a client. You're working with an web application that requires the client's age. You ask the client. They reply with their date of birth. But, the field specifically asks for numeric age.

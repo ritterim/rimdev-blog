@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Creating SQL Server Express LocalDb v11, v12, v13, and MSSQLLocalDb Instances"
+slug: creating-sql-server-express-localdb-v11-v12-and-v13-instances
 date: 2017-02-08 10:30:00
 tags:
 - LocalDb
 categories:
 - development
 twitter_text: "Creating SQL Server Express LocalDb v11, v12, v13, and MSSQLLocalDb Instances"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Here's some copy-pastable commands for creating SQL Server Express LocalDb instances:

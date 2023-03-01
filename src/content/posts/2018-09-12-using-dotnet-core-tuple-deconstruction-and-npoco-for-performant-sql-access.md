@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Using .NET Core, Tuple Deconstruction, and NPoco For Performant SQL Access"
+slug: using-dotnet-core-tuple-deconstruction-and-npoco-for-performant-sql-access
 date: 2018-09-12 11:05:12
 tags: 
 - .net core
@@ -9,7 +9,8 @@ categories:
 - .net core
 - sql
 twitter_text: "Using @dotnet Core, Tuple Deconstruction, and #NPoco For Performant #SQL Access"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm8.staticflickr.com/7434/11242864913_9ed52d3d0e_k_d.jpg
 image_url: https://www.flickr.com/photos/cost3l/
 image_credit: Costel Slincu

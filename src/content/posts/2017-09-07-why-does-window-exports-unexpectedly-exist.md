@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Why Does window.exports Unexpectedly Exist?
+slug: why-does-window-exports-unexpectedly-exist
 date: 2017-09-07 14:30:00
 tags:
 - JavaScript
@@ -9,7 +9,8 @@ categories:
 - javascript
 - frontend
 twitter_text: "Why Does window.exports Unexpectedly Exist?"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://farm8.staticflickr.com/7423/26692865962_367760e6c4_k_d.jpg
 image_url: https://www.flickr.com/photos/39997856@N03/26692865962
 image_credit: vitreolum

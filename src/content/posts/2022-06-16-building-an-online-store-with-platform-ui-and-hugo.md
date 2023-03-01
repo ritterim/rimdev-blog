@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Building an Online Store with Platform UI and Hugo"
+slug: building-an-online-store-with-platform-ui-and-hugo
 date: 2022-06-16 12:00:00
 tags: 
 - CSS
@@ -8,7 +8,8 @@ tags:
 - Static Sites
 categories: "Platform-UI"
 twitter_text: "Building an Online Store with Platform UI and Hugo"
-authors: Ryan Trimble
+authors: 
+- Ryan Trimble
 image: https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
 image_url: https://unsplash.com/photos/c9FQyqIECds
 image_credit: "@mikepetrucci"

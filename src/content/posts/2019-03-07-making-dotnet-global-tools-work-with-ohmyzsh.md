@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Making .NET Core Global Tools Work With OhMyZsh"
+slug: making-dotnet-global-tools-work-with-ohmyzsh
 date: 2019-03-07 14:32:09
 tags:
 - .NET
@@ -9,7 +9,8 @@ categories:
 - .NET
 - macOS
 twitter_text: "Making @dotnet #global #tools work with #ohmyzsh #xplat #macos"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://images.unsplash.com/photo-1531266752426-aad472b7bbf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 image_url: https://unsplash.com/photos/IoQioGLrz3Y
 image_credit: Juliana Kozoski

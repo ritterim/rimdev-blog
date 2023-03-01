@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Working At Work: This And Other Thoughts On High Availability"
+slug: our-devops-journey-release-branches-highly-available-azure-web-apps-and-terraform
 date: 2019-08-29 14:00:00
 tags:
 - Azure

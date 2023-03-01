@@ -1,13 +1,14 @@
 ---
-layout: post
 title: ".NET Full Framework: Build, Test, and Deploy Using Cake and AppVeyor"
+slug: dotnet-full-framework-build-test-and-deploy-using-cake-and-appveyor
 date: 2017-11-29 08:00:00
 tags:
 - .NET
 - Cake
 - AppVeyor
 twitter_text: ".NET Full Framework: Build, Test, and Deploy Using Cake and AppVeyor (@cakebuildnet @appveyor)"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://farm1.staticflickr.com/26/50375102_285473bb10_o_d.jpg
 image_url: https://www.flickr.com/photos/64738468@N00/
 image_credit: mario

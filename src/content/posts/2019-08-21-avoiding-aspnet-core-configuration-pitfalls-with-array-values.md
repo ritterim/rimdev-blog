@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Avoiding ASP.Net Core Configuration Pitfalls With Array Values"
+slug: avoiding-aspnet-core-configuration-pitfalls-with-array-values
 date: 2019-08-21 13:21:39
 tags:
   - .NET
@@ -11,7 +11,8 @@ categories:
   - ASP.NET Core
   - Core
 twitter_text: "Avoiding @aspnet #aspnetcore #Configuration #Pitfalls With Array Values"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://images.unsplash.com/photo-1553640627-57a6de3bf0ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=2391&q=80
 image_url: https://unsplash.com/photos/_aSOc5RT-8U
 image_credit: Matt & Chris Pua

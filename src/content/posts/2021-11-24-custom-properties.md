@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "CSS Custom Properties"
+slug: custom-properties
 date: 2021-11-24 12:33:53
 tags:
 - css
@@ -8,7 +8,8 @@ tags:
 categories:
 - css
 twitter_text: Custom Properties allow you to change the value of a variable in your css or Sass. Find out how.
-authors: "Ted Krueger"
+authors: 
+- Ted Krueger
 image:
 image_url:
 image_credit:

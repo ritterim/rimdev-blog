@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Back To Basics: HTML Forms"
+slug: back-to-basics-html-forms
 date: 2017-10-06 11:21:43
 tags:
 - HTML
 - Web
 twitter_text: "Back To Basics: #HTML Forms"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3194/5707515437_b747f8a064_b_d.jpg
 image_url: https://www.flickr.com/photos/emilianohorcada/
 image_credit: Emiliano Horcada

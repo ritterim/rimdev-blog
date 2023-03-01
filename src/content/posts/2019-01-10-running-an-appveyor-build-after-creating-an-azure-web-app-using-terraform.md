@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Running an AppVeyor Build After Creating an Azure Web App Using Terraform
+slug: running-an-appveyor-build-after-creating-an-azure-web-app-using-terraform
 date: 2019-01-10 15:00:00
 tags:
 - Terraform
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Running an AppVeyor Build After Creating an Azure Web App Using Terraform"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80
 image_url: https://unsplash.com/photos/QdAAasrZhdk
 image_credit: Lance Anderson

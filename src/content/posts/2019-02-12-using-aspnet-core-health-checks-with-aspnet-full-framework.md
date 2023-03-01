@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Using ASP.NET Core Health Checks With ASP.NET Full Framework
+slug: using-aspnet-core-health-checks-with-aspnet-full-framework
 date: 2019-02-12 13:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Using ASP.NET Core Health Checks With ASP.NET Full Framework"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1516382799247-87df95d790b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80
 image_url: https://unsplash.com/photos/d9ILr-dbEdg
 image_credit: Agence Olloweb

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "How to avoid NullReferenceException in C#"
+slug: how-to-avoid-null-reference-exception
 date: 2020-03-11 03:57:07
 tags:
 - .NET
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: How to avoid NullReferenceException in C#
-authors: Cheng Yang
+authors: 
+- Cheng Yang
 image: https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 image_url: https://unsplash.com/photos/9SoCnyQmkzI
 image_credit: Jefferson Santos

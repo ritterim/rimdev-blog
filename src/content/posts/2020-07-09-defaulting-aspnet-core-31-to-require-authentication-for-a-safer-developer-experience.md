@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Defaulting ASP.NET Core 3.1 To Require Authentication For A Safer Developer Experience"
+slug: defaulting-aspnet-core-31-to-require-authentication-for-a-safer-developer-experience
 date: 2020-07-09 9:00:00
 tags:
   - asp.net core
@@ -8,7 +8,8 @@ categories:
   - asp.net core
   - development
 twitter_text: "Defaulting ASP.NET Core 3.1 To Require Authentication For A Safer Developer Experience #aspnet #aspnetcore"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1519973759984-cf5a6c557cd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/_we0BQQewBo
 image_credit: Masaaki Komori

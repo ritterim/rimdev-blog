@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Making Media Query Mixins with SASS"
+slug: making-media-query-mixins-with-sass
 date: 2019-05-17 10:33:33
 tags:
 - SASS
 categories:
 - css
 twitter_text: "Making Media Query Mixins with SASS"
-authors: Ted Krueger
+authors: 
+- Ted Krueger
 image: https://images.unsplash.com/photo-1523901839036-a3030662f220?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80
 image_url: https://unsplash.com/photos/cixohzDpNIo
 image_credit: Siora Photography

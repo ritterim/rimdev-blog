@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Tab Colors in Azure Data Studio"
+slug: tab-colors-in-azure-data-studio
 date: 2020-10-26 13:20:19
 tags:
 - Documentation
@@ -8,7 +8,8 @@ tags:
 categories:
 - Documentation
 twitter_text: Using Tab Colors in Azure Data Studio
-authors: Steliana Vassileva
+authors: 
+- Steliana Vassileva
 image: /images/documentation/azure-data-studio-welcome.png
 ---
 

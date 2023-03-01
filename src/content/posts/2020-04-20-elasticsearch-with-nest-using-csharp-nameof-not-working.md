@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Elasticsearch With NEST Using C# nameof Not Working"
+slug: elasticsearch-with-nest-using-csharp-nameof-not-working
 date: 2020-04-20 13:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Elasticsearch With NEST Using C# nameof Not Working"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/afW1hht0NSs
 image_credit: Markus Winkler

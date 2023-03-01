@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Creating RSS Feeds Using Hugo"
+slug: creating-rss-feeds-using-hugo
 date: 2021-12-17 09:26:27
 tags:
 - Documentation
@@ -10,7 +10,8 @@ tags:
 categories:
 - Documentation
 twitter_text: Creating XML Feeds Using Hugo
-authors: Steliana Vassileva
+authors: 
+- Steliana Vassileva
 image: /images/documentation/rss-feed.png
 image_url: https://cdn.socialchamp.io/wp-content/uploads/2021/03/RSS-Feed-1.png
 ---

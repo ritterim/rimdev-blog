@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "ASP.NET Core Razor Pages and HTTP Status Control Flow"
+slug: aspnet-core-razor-pages-and-http-status-control-flow
 date: 2019-01-21 08:16:34
 tags:
 - asp.net
@@ -61,8 +61,8 @@ public class IndexModel : PageModel
 In the example there are three parts to take note of:
 
 1. `IActionResult` is now the return of `OnGet` and not `void`.
-1. We can now return `IActionResult` types like `NotFoundResult` and `ViewResult`.
-1. The action needs to return an `IActionResult`.
+2. We can now return `IActionResult` types like `NotFoundResult` and `ViewResult`.
+3. The action needs to return an `IActionResult`.
 
 Razor Pages will respect the `IActionResult` return types and allow you to control flow with HTTP status codes, giving you the simplicity of Razor Pages and the power of ASP.NET MVC.
 

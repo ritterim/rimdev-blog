@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "A new RIMdev on Semantic-ui"
+slug: a-new-rimdev-on-semantic-ui
 date: 2016-11-08 13:40:42
 tags:
 - Semantic-ui
 - UX
 twitter_text: "Switching to #Semantic-ui and loving it!"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://c6.staticflickr.com/4/3719/12485014293_2b8652cff0_b.jpg
 image_url: https://www.flickr.com/photos/stavos52093/
 image_credit: Stavos

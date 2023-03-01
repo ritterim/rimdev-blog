@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Filter Hangfire Requests from Microsoft Azure Application Insights
+slug: filter-hangfire-requests-from-microsoft-azure-application-insights
 date: 2019-07-31 13:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Filter Hangfire Requests from Microsoft Azure Application Insights"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1516409590654-e8d51fc2d25c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/V29UWcALNko
 image_credit: ron dyar

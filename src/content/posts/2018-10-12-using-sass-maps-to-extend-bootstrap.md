@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Using Sass Maps to Extend Bootstrap"
+slug: using-sass-maps-to-extend-bootstrap
 date: 2018-10-12 11:28:03
 tags:
 - sass
 categories:
 - css
 twitter_text: "Using Sass maps to extend @getbootstrap #sass"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://farm3.staticflickr.com/2238/2348956889_ae2a24afdc_b.jpg
 image_url: https://www.flickr.com/photos/neilspicys/
 image_credit: Neils Photography

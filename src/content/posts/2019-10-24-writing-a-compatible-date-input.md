@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Writing a Browser Compatible Date Input"
+slug: writing-a-compatible-date-input
 date: 2019-10-24 13:00:00
 tags:
 - JavaScript
@@ -9,7 +9,8 @@ tags:
 categories:
 - JavaScript
 twitter_text: "Writing a Browser Compatible Date Input"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80
 image_url: https://unsplash.com/photos/FoKO4DpXamQ
 image_credit: Eric Rothermel | @erothermel

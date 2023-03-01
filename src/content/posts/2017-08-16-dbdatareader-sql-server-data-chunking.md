@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "DbDataReader and SQL Server Data Chunking"
+slug: dbdatareader-sql-server-data-chunking
 date: 2017-08-16 08:00:00
 tags:
 - .NET
@@ -9,7 +9,8 @@ tags:
 - XML
 - SQL Server
 twitter_text: "DbDataReader and #SQLServer data chunking"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://farm9.staticflickr.com/8597/15833140891_1dc8d7f5aa_k.jpg
 image_url: https://www.flickr.com/photos/vitreolum/15833140891/
 image_credit: vitreolum

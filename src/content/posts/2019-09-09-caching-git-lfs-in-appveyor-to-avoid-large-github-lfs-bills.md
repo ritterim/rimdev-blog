@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Caching Git LFS in AppVeyor to Avoid Large GitHub LFS Bills"
+slug: caching-git-lfs-in-appveyor-to-avoid-large-github-lfs-bills
 date: 2019-09-09 16:00:00
 tags:
 - Git
 categories:
 - development
 twitter_text: "Caching Git LFS in AppVeyor to Avoid Large GitHub LFS Bills"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1514195797654-9846057b0b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/l06JLx9oaCk
 image_credit: Anton Darius | @theSollers

@@ -1,6 +1,6 @@
 ---
-layout: post
 title: 'Artifact Conference 2019'
+slug: artifact-conference-reflection
 date: 2019-10-07 12:00:00
 tags:
   - care
@@ -11,7 +11,8 @@ tags:
 categories:
   - development
 twitter_text: Artifact Conference 2019 Recap
-authors: Seth Kline
+authors: 
+- Seth Kline
 image: https://images.unsplash.com/photo-1539519760679-0648579aaae4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2049&q=80
 image_url: https://unsplash.com/photos/Us1YhqPT-iw
 image_credit: Dwayne Hills

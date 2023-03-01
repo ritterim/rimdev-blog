@@ -1,12 +1,13 @@
 ---
-layout: post
 title: EF's lazy-loading might break your reality when mixed with an improper DB setup
+slug: ef-reality-improper-db-setup
 date: 2018-04-13 10:00:00
 tags:
 - EF
 - SQL
 twitter_text: "EF's lazy-loading might break your reality when mixed with an improper DB setup"
-authors: Bill Boga
+authors: 
+- Bill Boga
 image: https://farm8.staticflickr.com/7601/16766482435_c3f1293551_b.jpg
 image_url: https://www.flickr.com/photos/robert_hocker/16766482435
 image_credit: Robert Hocker

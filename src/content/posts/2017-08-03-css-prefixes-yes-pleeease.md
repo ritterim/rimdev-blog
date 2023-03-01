@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "css prefixes, yes pleeease"
+slug: css-prefixes-yes-pleeease
 date: 2017-08-03 16:02:55
 tags:
 - css
 categories:
 twitter_text: "css prefixes, rem fallbacks, yes pleeease"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://farm4.staticflickr.com/3203/2872074787_7fc63c949d_b.jpg
 image_url: https://www.flickr.com/photos/mightymoss/2872074787
 image_credit: Evan Moss

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Pros and Cons of State Management"
+slug: the-pros-and-cons-of-state-management
 date: 2018-02-13 09:11:01
 tags:
 - Web
@@ -9,7 +10,8 @@ tags:
 - JavaScript
 - StateManagement
 twitter_text: "The Pros and Cons of #StateManagement"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?ixlib=rb-0.3.5&s=fb28f9d00f928b34c168c4ca7c47a9fd&auto=format&fit=crop&w=1348&q=80
 image_url: https://unsplash.com/photos/KigTvXqetXA
 image_credit: Tim Gouw

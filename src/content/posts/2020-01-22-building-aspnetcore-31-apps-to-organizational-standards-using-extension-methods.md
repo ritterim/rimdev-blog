@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Building ASP.NET Core 3.1 Apps To Organizational Standards Using Extension Methods"
+slug: building-aspnetcore-31-apps-to-organizational-standards-using-extension-methods
 date: 2020-01-22 14:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "Building ASP.NET Core 3.1 Apps To Organizational Standards Using Extension Methods"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1438758886433-4875b7ad923b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/CfF-P7YCOi8
 image_credit: Tommy Liu

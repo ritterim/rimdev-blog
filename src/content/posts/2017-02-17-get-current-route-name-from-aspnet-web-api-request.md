@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Get Current Route Name From ASP.NET Web API Request"
+slug: get-current-route-name-from-aspnet-web-api-request
 date: 2017-02-17 08:35:39
 tags: 
 - Web API
 - ASP.NET
 categories:
 twitter_text: "Get current route name from @aspnet #webapi request"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2815/9215457745_5c488b2e23_b_d.jpg
 image_credit: Victor Solanoy
 image_url: https://www.flickr.com/photos/vsolanoy/

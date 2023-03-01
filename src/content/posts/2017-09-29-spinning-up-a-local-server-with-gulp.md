@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Spinning up a local server with gulp"
+slug: spinning-up-a-local-server-with-gulp
 date: 2017-09-29 12:59:52
 tags:
 - gulp
 categories:
 twitter_text: "Spinning up a local server with gulp"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://farm2.staticflickr.com/1224/763756944_a5120e0667.jpg
 image_url: https://www.flickr.com/photos/swiv/
 image_credit: Hannah Swithinbank

@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "The Team's Thoughts On The Microsoft GitHub Acquisition"
+slug: the-teams-thoughts-on-the-microsoft-github-acquisition
 date: 2018-06-04 09:44:19
 tags:
 categories: development
 twitter_text: "The Team's Thoughts On The @Microsoft @GitHub Acquisition"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm9.staticflickr.com/8329/8148011490_b9fb5fcf46_k_d.jpg
 image_url: https://www.flickr.com/photos/dasprid/
 image_credit: Ben Scholzen

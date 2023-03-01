@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "No Compression Leads To Bad Impression"
+slug: no-compression-leads-to-bad-impression
 date: 2018-10-18 08:20:12
 tags:
 - Development
@@ -8,7 +8,8 @@ tags:
 - Debugging
 categories: development
 twitter_text: "No Compression Leads To Bad Impression"
-authors: Thomas Sobieck
+authors: 
+- Thomas Sobieck
 image: https://farm6.staticflickr.com/5004/5315466701_58b0862c87_b.jpg
 image_url: https://www.flickr.com/people/midorisyu/
 image_credit: midorisyu

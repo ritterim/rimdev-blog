@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "IE Still Breaking Promises... Literally"
+slug: ie-still-breaking-promises-literally
 date: 2018-06-08 08:17:33
 tags:
 - IE
@@ -8,7 +8,8 @@ tags:
 - JavaScript
 categories: development
 twitter_text: "IE Still Breaking Promises... Literally"
-authors: John Vicari
+authors: 
+- John Vicari
 image: https://images.unsplash.com/photo-1511792411104-ccfdd048bd9a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0cce28b17368ee9531f75b0ee198e2a&auto=format&fit=crop&w=2850&q=80
 image_url: https://unsplash.com/photos/-u7FVi3aBvU
 image_credit: Photo by Gianni Zanato on Unsplash

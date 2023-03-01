@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Animated Scroll Effects"
+slug: animated-scroll-effects
 date: 2022-05-18 12:00:00
 tags:
 - CSS
@@ -12,7 +12,8 @@ tags:
 categories:
 - development
 twitter_text:
-authors: Ryan Trimble
+authors: 
+- Ryan Trimble
 image: https://images.unsplash.com/photo-1627163439134-7a8c47e08208?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80
 image_url: https://unsplash.com/photos/R5A_YlcSJwA
 image_credit: Shubham Dhage

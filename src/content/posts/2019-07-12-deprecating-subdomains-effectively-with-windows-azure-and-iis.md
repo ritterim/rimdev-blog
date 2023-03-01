@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Deprecating Subdomains Effectively With Windows Azure and IIS"
+slug: deprecating-subdomains-effectively-with-windows-azure-and-iis
 date: 2019-07-12 09:30:05
 tags:
 - Windows Azure
 categories:
 - Windows Azure
 twitter_text: "Deprecating #Subdomains Effectively With #Windows @Azure and #IIS"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://images.unsplash.com/photo-1532274804934-6572ef1581e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2575&q=80
 image_url: https://unsplash.com/photos/fydgZecUkk0
 image_credit: Jezael Melgoza

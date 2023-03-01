@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Recreating the Spotify \"Like\" Button"
+slug: recreating-the-spotify-like-button
 date: 2022-08-11 12:00:00
 tags:
 - CSS
@@ -11,7 +11,8 @@ tags:
 categories:
 - CSS
 twitter_text: "Recreating the Spotify Like button in CSS"
-authors: Ryan Trimble
+authors: 
+- Ryan Trimble
 image: https://images.unsplash.com/photo-1569513586164-80529357ad6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
 image_url: https://unsplash.com/photos/56w-xo2ZZM4
 image_credit: Kelly Sikkema

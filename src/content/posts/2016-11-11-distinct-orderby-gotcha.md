@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "OrderBy Distinct Gotcha"
+slug: distinct-orderby-gotcha
 date: 2016-11-11 09:53:43
 tags: 
 - Linq
 - .NET
 categories: Development
 twitter_text: "OrderBy Distinct Gotcha"
-authors: Chad Peters
+authors: 
+- Chad Peters
 image: https://c2.staticflickr.com/9/8146/7127935057_2d9bf9c1b8_k.jpg
 image_url: https://www.flickr.com/photos/khawkins04/
 image_credit: Ken Hawkins

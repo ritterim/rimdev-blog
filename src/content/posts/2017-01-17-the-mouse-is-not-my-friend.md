@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "The Mouse Is Not My Friend"
+slug: the-mouse-is-not-my-friend
 date: 2017-01-17 07:00:00
 tags: 
 - Development
 categories: Development
 twitter_text: "The Mouse Is Not My Friend #Productivity #dotnet #VisualStudio"
-authors: Chad Peters
+authors: 
+- Chad Peters
 image: https://c1.staticflickr.com/2/1618/24978380044_5d4a779fcd_b.jpg
 image_url: https://www.flickr.com/photos/stavos52093/24978380044/
 image_credit: Stavos

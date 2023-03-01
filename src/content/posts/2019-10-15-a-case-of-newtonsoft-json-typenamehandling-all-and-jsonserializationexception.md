@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "A Case Of Newtonsoft.Json, TypeNameHandling.All, And JsonSerializationException"
+slug: a-case-of-newtonsoft-json-typenamehandling-all-and-jsonserializationexception
 date: 2019-10-15 10:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "A Case Of Newtonsoft.Json, TypeNameHandling.All, And JsonSerializationException #dotnet"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1533230408708-8f9f91d1235a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/4F4B8ohLMX0
 image_credit: Jingda Chen

@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Be Careful Of Sinking In Elasticsearch Deep Paging Quicksand"
+slug: elasticsearch-sinking-in-deep-paging-quicksand
 date: 2017-12-02 11:29:53
 tags:
 - elasticsearch
 categories:
 - elasticsearch
 twitter_text: "Be careful of sinking in @elastic deep paging quicksand"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3831/13944309974_47487b0742_h_d.jpg
 image_url: https://www.flickr.com/photos/pierce-martin/13944309974/in/photolist-nfdexu-9gsEyT-dRsadY-cMbd8N-6XuBxG-jVwE2-jB8GrQ-d6vfwC-9gM3Lj-85nHWx-aFHXf2-7f2k5f-2TKGKr-dU6FTL-7n5iuV-7Jbffe-8F7Esf-e4vKEA-dLaM4t-5wcpbS-buR5Ff-7JdQ4J-7J9T5t-bHSRSP-4Xbv3C-7JdPPs-dXbwyU-7J9Szz-oZNcp9-DYf7cJ-5BzGxw-7J9Tyx-7J9Tir-548zMB-gUe88U-7JdNY5-HZjWyA-boXw4e-7hp2kj-3BgS9z-y4PxA-gVpgDp-7J9UDz-4Rnp6-gUe8eA-7JdNM3-7JdQtS-7J9TBe-peVcUK-4RnqU
 image_credit: Pierce Martin
@@ -16,8 +17,8 @@ image_credit: Pierce Martin
 Software development is a funny thing. As I develop my skills, I begin to form an idea of what's *right* and *wrong*, what's *up* and *down*. This innate intuition works a majority of the time, and there are times where it **bites me in the butt**. Ten years ago, developing an application meant developing a basic [CRUD][crud] application.
 
 1. An index page with a table and rows.
-1. An edit page for records.
-1. A pager to help a user labor through pages 1 of a million.
+2. An edit page for records.
+3. A pager to help a user labor through pages 1 of a million.
 
 In 2018, let's admit it.
 

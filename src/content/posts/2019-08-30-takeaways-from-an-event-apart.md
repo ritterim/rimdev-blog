@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Takeaways from An Event Apart"
+slug:  takeaways-from-an-event-apart
 date: 2019-08-30 13:22:36
 tags: 
 - Accessibility
@@ -9,7 +9,8 @@ tags:
 categories: 
 - development
 twitter_text: Takeaways from An Event Apart
-authors: Ted Krueger
+authors: 
+- Ted Krueger
 image: https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80
 image_url: https://unsplash.com/photos/qmnpqDwla_E
 image_credit: Josh Calabrese

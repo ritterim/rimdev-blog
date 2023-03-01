@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "What Works and What Doesn't With ConfigurationManager.AppSettings Using ASP.NET Core 3.1"
+slug: what-works-and-what-doesnt-with-configurationmanager-appsettings-using-aspnetcore31
 date: 2020-01-03 10:00:00
 tags:
 - .NET
 categories:
 - development
 twitter_text: "What Works and What Doesn't With ConfigurationManager.AppSettings Using ASP.NET Core 3.1"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1494423500016-801283cf7eeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/7aGbdAhEbKg
 image_credit: Joe Roberts

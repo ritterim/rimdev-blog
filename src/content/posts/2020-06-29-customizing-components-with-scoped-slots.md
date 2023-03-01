@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Customizing VueJS components with scoped slots"
+slug: customizing-components-with-scoped-slots
 date: 2020-06-29 16:09:19
 tags: 
 - VueJS 
@@ -10,7 +10,8 @@ tags:
 categories:
 - development
 twitter_text: "Customizing VueJS components with scoped slots"
-authors: Chidozie Oragwu
+authors: 
+- Chidozie Oragwu
 image: https://images.unsplash.com/photo-1590336225155-d7e19a3a954f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2400&q=80
 image_url: https://unsplash.com/photos/BjIALEkr_Wg
 image_credit: Lee Thomas

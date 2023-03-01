@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How To Check For Nulls In C# a.k.a. How To Thwart A Super Villian"
+slug: how-to-check-for-nulls-in-c-sharp
 date: 2018-09-16 11:53:50
 tags:
 - c-sharp
@@ -8,7 +9,8 @@ tags:
 - .NET
 categories:
 twitter_text: "How To Check For #nulls In #csharp a.k.a. How To Thwart A Super Villian @dotnet #dotnetconf #dotnet #null"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm3.staticflickr.com/2794/4320973853_1061948856_b_d.jpg
 image_url: https://www.flickr.com/photos/jdhancock/
 image_credit: JD Hancock

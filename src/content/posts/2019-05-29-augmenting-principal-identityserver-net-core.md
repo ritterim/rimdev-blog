@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Augmenting IPrincipal when using IdentityServer authentication middleware in ASP.NET Core
+slug: augmenting-principal-identityserver-net-core
 tags:
 - ASP.NET Core
 - IdentitySever
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Augmenting IPrincipal when using IdentityServer authentication middleware in ASP.NET Core"
-authors: Bill Boga
+authors: 
+- Bill Boga
 ---
 
 This post covers augmenting an authenticated `User` for use in middleware or when using the `[Authorize]`-attribute in an MVC-controller. **There is an important pitfall to avoid which will produce unexpected results**, which I'll cover towards the end. Here's a baseline setup:

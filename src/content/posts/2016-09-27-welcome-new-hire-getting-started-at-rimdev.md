@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Welcome New Hire: Getting Started At RIMdev"
+slug: welcome-new-hire-getting-started-at-rimdev
 date: 2016-09-27 10:08:06
 tags: 
 - Team
 - RIMdev
 categories: Team
 twitter_text: "Welcome New Hire: Getting Started At RIMdev"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm4.staticflickr.com/3179/2962194797_06b1dc08ac_b_d.jpg
 image_url: https://www.flickr.com/photos/23912576@N05/
 image_credit: Ludovic Bertron

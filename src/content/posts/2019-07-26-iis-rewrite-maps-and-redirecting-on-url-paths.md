@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "IIS Rewrite Maps and Redirecting On Url Paths"
+slug: iis-rewrite-maps-and-redirecting-on-url-paths
 date: 2019-07-26 11:45:20
 tags:
   - IIS

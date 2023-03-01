@@ -1,12 +1,13 @@
 ---
-layout: post
 title: "Letting SASS build your utility classes"
+slug: letting-sass-build-your-utility-classes
 date: 2019-03-06 14:24:18
 tags:
 - SASS
 categories: css
 twitter_text: "Letting SASS build your utility classes"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://images.unsplash.com/photo-1504976462146-b05639c41c8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80
 image_url: https://unsplash.com/photos/_5-Y5ECcoLo
 image_credit: "@enriqueflores"

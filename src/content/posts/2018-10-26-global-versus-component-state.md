@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Global State versus Component State"
+slug: global-versus-component-state
 date: 2018-10-26 09:00:00
 tags:
 - JavaScript
@@ -8,7 +8,8 @@ tags:
 categories:
 - JavaScript
 twitter_text: "Global State versus Component State"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1533279443086-d1c19a186416?ixlib=rb-0.3.5&s=b6dae2d6ebc4219fad08914b598b318f&auto=format&fit=crop&w=1489&q=80
 image_url: https://unsplash.com/photos/t0SlmanfFcg
 image_credit: Fredy Jacob

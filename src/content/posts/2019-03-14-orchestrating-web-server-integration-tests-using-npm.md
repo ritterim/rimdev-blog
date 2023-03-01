@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Orchestrating Web Server Integration Tests Using npm
+slug: orchestrating-web-server-integration-tests-using-npm
 date: 2019-03-14 13:00:00
 tags:
 - JavaScript
@@ -8,7 +8,8 @@ tags:
 categories:
 - development
 twitter_text: "Orchestrating Web Server Integration Tests Using @npmjs"
-authors: Ken Dale
+authors: 
+- Ken Dale
 image: https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80
 image_url: https://unsplash.com/photos/j4uuKnN43_M
 image_credit: Alex Knight

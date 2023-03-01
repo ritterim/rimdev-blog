@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "RIMdev Sweeps The ASP.NET Monsters #SummerOfConfig Contest"
+slug: rimdev-sweeps-the-asp.net-monsters-summerofconfig-contest
 date: 2016-09-02 08:43:21
 tags:
 - ASP.NET Core
 - Contest
 categories: ASP.NET Core
 twitter_text: "RIMdev Sweeps @aspnetmonsters #SummerOfConfig Contest #aspnetcore"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: /images/predator-manliesthandshakeever.jpg
 ---
 

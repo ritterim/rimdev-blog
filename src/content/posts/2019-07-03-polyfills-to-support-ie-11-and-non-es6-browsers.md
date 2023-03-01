@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Polyfills to support IE 11 and non ES6 browsers"
+slug: polyfills-to-support-ie-11-and-non-es6-browsers
 date: 2019-07-03 12:43:23
 tags:
 - JavaScript
@@ -8,7 +8,8 @@ tags:
 - Polyfills
 categories: JavaScript
 twitter_text: A list of polyfills the help modern JavaScript applications
-authors: Andrew Rady
+authors: 
+- Andrew Rady
 image: https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80
 image_url: https://unsplash.com/photos/Q7wDdmgCBFg
 image_credit: Matthew Guay

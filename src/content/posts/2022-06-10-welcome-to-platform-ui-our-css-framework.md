@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Welcome to Platform UI - our CSS framework"
+slug: welcome-to-platform-ui-our-css-framework
 date: 2022-06-10 10:43:13
 tags: 
 - CSS
@@ -8,7 +8,8 @@ tags:
 - RIMdev
 categories: "Platform-UI"
 twitter_text: "Platform UI a new CSS framework"
-authors: Kevin Hougasian
+authors: 
+- Kevin Hougasian
 image: https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2113&q=80
 image_url: https://unsplash.com/photos/ln5drpv_ImI
 image_credit: "@vincentiu"

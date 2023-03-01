@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Fixing slow logins"
+slug: fixing-slow-logins
 date: 2016-08-09 18:00:00
 tags:
 - IdentityServer

@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "A Double-Click Experience for Running Jekyll on Windows"
+slug: a-double-click-experience-for-running-jekyll-on-windows
 date: 2017-04-10 2:30:00
 tags:
 - jekyll
 categories:
 - development
 twitter_text: "A Double-Click Experience for Running Jekyll on Windows"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 Typically, running a [Jekyll](https://jekyllrb.com/) site locally for the first time requires a basic knowledge of using the command line. It usually involves a few commands: `bundle exec jekyll serve` *(with the optional `--incremental` flag)* after installing the `bundler` gem and running the associated `bundle install` command.

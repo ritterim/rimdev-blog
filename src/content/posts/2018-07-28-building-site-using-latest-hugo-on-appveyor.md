@@ -1,13 +1,14 @@
 ---
-layout: post
 title: "Building A Site Using The Latest Hugo on AppVeyor"
+slug: building-site-using-latest-hugo-on-appveyor
 date: 2018-07-28 11:16:45
 tags:
 - dev
 - build
 categories:
 twitter_text: "Build A Site Using The Latest @GoHugoIO on @appveyor #JAMStack"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm1.staticflickr.com/938/29719750968_fa5c3ca79b_k_d.jpg
 image_url: https://www.flickr.com/photos/160462157@N08/
 image_credit: John Jones

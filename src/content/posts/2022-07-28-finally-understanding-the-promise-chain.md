@@ -1,6 +1,6 @@
 ---
-layout: post
 title: ".finally understanding the promise chain"
+slug: finally-understanding-the-promise-chain
 date: 2022-07-28 12:00:00
 tags:
 - JavaScript
@@ -9,7 +9,8 @@ tags:
 categories:
 - JavaScript
 twitter_text: ".finally understanding the promise chain"
-authors: Jaime Jones
+authors: 
+- Jaime Jones
 image: https://images.unsplash.com/photo-1570460147789-4e2e622bbb25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80
 image_url: https://unsplash.com/photos/2zGTh-S5moM
 image_credit: Miltiadis Fragkidis

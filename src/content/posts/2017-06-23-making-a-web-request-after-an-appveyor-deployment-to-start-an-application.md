@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Making a Web Request After an AppVeyor Deployment to Start an Application
+slug: making-a-web-request-after-an-appveyor-deployment-to-start-an-application
 date: 2017-06-23 12:00:00
 tags:
 - AppVeyor
 categories:
 - development
 twitter_text: "Making a Web Request After an AppVeyor Deployment to Start an Application"
-authors: Ken Dale
+authors: 
+- Ken Dale
 ---
 
 ## Update October 17, 2017

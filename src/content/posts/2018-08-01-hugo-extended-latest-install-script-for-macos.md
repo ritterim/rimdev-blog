@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "Install Hugo (Extended) Latest With Shell Script For macOS"
+slug: hugo-extended-latest-install-script-for-macos
 date: 2018-08-01 12:57:37
 tags: development
 categories:
 twitter_text: "Install @GoHugoIO #extended latest with shell script for #macOS"
-authors: Khalid Abuhakmeh
+authors: 
+- Khalid Abuhakmeh
 image: https://farm8.staticflickr.com/7147/6407182535_1ab673c605_b_d.jpg
 image_url: https://www.flickr.com/photos/gerr-bon/
 image_credit: Gerry & Bonni
