@@ -1,6 +1,6 @@
 ---
 title: "Does A Property Exist On My C# Object"
-slug: does-a-property-exist-on-my-c#-object
+slug: does-a-property-exist-on-my-c-sharp-object
 date: 2018-08-24 08:22:45
 tags:
 - C#
@@ -19,7 +19,7 @@ We are in the middle of writing a template engine to define dynamic forms. The u
 
 Given these string paths, we would like to know if they exist on our server representation. We use a JavaScript library named [Flat](https://www.npmjs.com/package/flat), which is the reasoning behind our string path construction around arrays.
 
-```console
+```
 "FirstName"
 "Interested.LastName"
 "Addresses.0.Street"
@@ -193,7 +193,7 @@ public class Address {
 
 With the expected output.
 
-```console
+```
 FirstName : True
 LastName : True
 MiddleName : False

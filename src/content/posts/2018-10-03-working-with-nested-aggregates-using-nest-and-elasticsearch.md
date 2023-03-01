@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Working With Nested Aggregates Using NEST and Elasticsearch"
 slug: working-with-nested-aggregates-using-nest-and-elasticsearch
 date: 2018-10-03 11:51:38

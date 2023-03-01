@@ -25,13 +25,13 @@ I actually started with [Scott Hanselman's](http://www.hanselman.com/blog/Runnin
 
 First, I updated line #1 of the command file. The previous first line of `ECHO ON` was spitting out each line as if it were a command into the Azure Console output, which didn't end well for the deployment. Switching to the following fixed this problem.
 
-```text
+```
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 ```
 
 Secondly, I updated the creation script of the `tools` folder to be more defensive. Previously it couldn't find the tools folder to move into and create the `r` folder where Ruby will be installed.
 
-```text
+```
 REM I am in the repository folder
 pushd D:\home\site\deployments
 if not exist tools md tools
@@ -52,7 +52,7 @@ if exist ruby-2.2.4-x64-mingw32 goto end
 
 The `.deployment` file will be seen by Kudu and run `deploy.cmd`.
 
-```text
+```
 [config]
 command = deploy.cmd
 ```
@@ -64,7 +64,7 @@ The `deploy.cmd` file does two things:
 - Call `getruby.cmd` and ensures Ruby is installed
 - Kudu sync the files from Jekyll under the `_site` directory
 
-```text
+```
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 
 :: ----------------------
@@ -169,7 +169,7 @@ echo Finished successfully.
 
 The `getruby.cmd` file will download the latest version of Ruby and install it on your App Service instance. In addition to that, it will install all the dependencies in your `Gemfile` which is below. Finally, it will execute the `jekyll build` command via `bundler`.
 
-```text
+```
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 
 REM Put Ruby in Path
@@ -245,7 +245,7 @@ REM KuduSync is after this!
 
 If you **don't** already have a `Gemfile`, create one that looks like the following.
 
-```text
+```
 source 'https://rubygems.org'
 
 gem 'github-pages'

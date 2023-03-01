@@ -32,7 +32,7 @@ var result = string.Concat(value.Where(Char.IsDigit));
 
 The resulting output is:
 
-```terminal
+```
 "12345"
 ```
 

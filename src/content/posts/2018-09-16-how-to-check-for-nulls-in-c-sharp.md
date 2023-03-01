@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How To Check For Nulls In C# a.k.a. How To Thwart A Super Villian"
 slug: how-to-check-for-nulls-in-c-sharp
 date: 2018-09-16 11:53:50
@@ -45,14 +44,14 @@ foreach(var hero in heroes) {
 
 I bet you would expect the outcome to be the following:
 
-```console
+```
 Can Superman Save The Day? Yes!
 Can Batman Save The Day? Yes!
 ```
 
 This is what any developer would expect, but what if I told you that our heroes are missing in action? And, what if I told you the outcome was the following?
 
-```console
+```
 Can Superman Save The Day? Oh No!
 Can Batman Save The Day? Oh No!
 ```
@@ -94,7 +93,7 @@ foreach(var hero in heroes) {
 
 This leads us to the outcome we expect from our heroes.
 
-```console
+```
 Can Superman Save The Day? Yes!
 Can Batman Save The Day? Yes!
 ```

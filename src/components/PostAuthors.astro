@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+
+const authorCollection = await getCollection('authors');
+const { authors } = Astro.props;
+
+const postAuthors = authors
+  .map((author) => authorCollection.filter((a) => a.data.name == author))
+  .flat();
+
+const authorNames = new Intl.ListFormat('en').format(
+  postAuthors.map(
+    (author) => `<a href="author/${author.slug}">${author.data.name}</a>`
+  )
+);
+---
+
+<Fragment set:html={authorNames} />

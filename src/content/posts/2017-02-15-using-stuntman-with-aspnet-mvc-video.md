@@ -80,13 +80,13 @@ So how does Stuntman work? Let's start with your basic ASP.NET MVC example. I'll
 The first reference is OWIN, since we're hosting in ASP.NET MVC application will
 need `Microsoft.Owin.Host.SystemWeb`.
 
-```console
+```
 > Install-Package Microsoft.Owin.Host.SystemWeb
 ```
  
 The second reference will need is Stuntman. So we'll search for Stuntman on NuGet.
 
-```console
+```
 > Install-Package RimDev.Stuntman
 ```
 

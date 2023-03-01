@@ -21,14 +21,14 @@ Hugo recently released an amazing [asset pipeline](https://gohugo.io/news/0.43-r
 
 Normally, we would use Chocolatey to install Hugo. This should be at the top of the `appveyor.yml` file in your repository.
 
-```yml
+```
 install:
   - ps: choco install hugo
 ```
 
 But the current version is *not* the extended version we need. We needed to switch the one line above, to the two below.
 
-```yml
+```
 install:
   - ps: Start-FileDownload 'https://github.com/gohugoio/hugo/releases/download/v0.45.1/hugo_extended_0.45.1_Windows-64bit.zip'
   - ps: 7z x hugo_extended_0.45.1_Windows-64bit.zip
@@ -36,7 +36,7 @@ install:
 
 This downloads the latest release, as of this post, and extracts it locally (which seems to also be in the PATH). As a bonus, I call `hugo version`.
 
-```yml
+```
 before_build:
   # Output useful info for debugging.
   - hugo version
@@ -44,7 +44,7 @@ before_build:
 
 When you run this, you'll see we are running the extended version.
 
-```console
+```
 hugo version
 Hugo Static Site Generator v0.45.1/extended windows/amd64 BuildDate: unknown
 ```
@@ -53,7 +53,7 @@ Hugo Static Site Generator v0.45.1/extended windows/amd64 BuildDate: unknown
 
 I also noticed that we need `PostCSS Cli` as a dev dependency. If you start seeing errors around not being able to process a css file then you'll need it as well.
 
-```console
+```
 npm i -D postcss-cli
 ```
 

@@ -33,7 +33,7 @@ type: basic
 
 After running the `hugo` command, you should see a generated document under the following structure.
 
-```terminal
+```
 > /public/404/index.html
 ```
 
@@ -43,7 +43,7 @@ Create as many error pages as you need for your site.
 
 IIS operates by using configuration files commonly named `Web.config`.  Place a `Web.config` file under the `static` directory of your Hugo site.
 
-```terminal
+```
 > /static/Web.config
 ```
 

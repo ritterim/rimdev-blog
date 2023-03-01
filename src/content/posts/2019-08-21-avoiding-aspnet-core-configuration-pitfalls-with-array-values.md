@@ -59,7 +59,7 @@ Look at the two following configurations for `appSettings.json` and its producti
 
 What would you expect the `Production` configuration and values for `AppSettings:Features` to be when run through the configuration builder? What if I told you it was the following?
 
-```text
+```
 Hosting Environment: Production
 Features Include: Normal Feature, Super Secret Feature
 ```
@@ -70,7 +70,7 @@ Well, it is! How did this happen?
 
 ASP.NET Core's configuration is based on keys, not file structure. In the example, each array item generates a unique key.
 
-```text
+```
 Hosting Environment: Production
 Features Include: Normal Feature, Super Secret Feature
 

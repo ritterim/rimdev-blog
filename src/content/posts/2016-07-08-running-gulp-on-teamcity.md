@@ -21,7 +21,7 @@ image_credit: Khalid Abuhakmeh
 
 If you have attempted to run Gulp on a TeamCity agent and failed, you may be seeing this error message.
 
-```text
+```
 [XX:XX:XX][Step 1/1] 'gulp' is not recognized as an internal or external command,
 [XX:XX:XX][Step 1/1] operable program or batch file.
 ```
@@ -48,13 +48,13 @@ The first step is to update your `package.json` to include `gulp` in your script
 
 Once your `package.json` is updated, you will update your build file with the following line.
 
-```console
+```
 npm run gulp build
 ```
 
 We use a `build.cmd` to build our projects.
 
-```console
+```
 @echo Off
 pushd %~dp0
 setlocal
@@ -109,7 +109,7 @@ exit /B %ERRORLEVEL%
 
 Once you have your updated script, the command should complete on TeamCity with no errors.
 
-```console
+```
 [11:03:29][Step 1/1] > gulp "build"
 [11:03:29][Step 1/1] 
 [11:03:30][Step 1/1] [11:03:30] Using gulpfile F:\BuildAgent\work\13cbe3cc4e8552eb\src\Website\gulpfile.js

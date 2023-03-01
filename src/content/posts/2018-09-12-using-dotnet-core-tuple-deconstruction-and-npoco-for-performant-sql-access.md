@@ -91,7 +91,7 @@ namespace NpocoExample
 
 After executing the code above, we see our result sets in the console output. Both queries were efficiently executed without the need to do expensive expression compilation, object tracking, or database joins. I'd call that a win!
 
-```console
+```
 +----+---------+
 | Id | Name    |
 +----+---------+

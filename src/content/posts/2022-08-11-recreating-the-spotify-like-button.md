@@ -20,7 +20,7 @@ image_credit: Kelly Sikkema
 
 Recently a fellow team member challenged me to recreate the new Spotify "Like" button using only CSS. Honestly I'm not sure if he *challenged* me necesarily, but posed the question "can you pull this off with css?" - that was enough for me.
 
-![Challenge Accepted meme from like 10 years ago](../images/spotify-like-button/challenge-accepted.jpg)
+![Challenge Accepted meme from like 10 years ago](/images/spotify-like-button/challenge-accepted.jpg)
 
 ## Breaking down the animation
 
@@ -31,13 +31,13 @@ The Spotify Like button has a few neat animations happening:
 - The heart icon itself fills in with the Spotify green color
 - Unliking a song also has a small animation of the heart icon shaking and reverting back to the white outline and transparent fill.
 
-![Spotify like button in action](../images/spotify-like-button/spotify-heart.gif)
+![Spotify like button in action](/images/spotify-like-button/spotify-heart.gif)
 
 ## Getting started
 
 I did a quick search for a simple heart shape SVG on Google and [found a perfect option](https://freesvg.org/black-heart-icon). Next I took that SVG and tossed it into [Figma](https://figma.com/) to make a few quick adjustments. Mostly just changing colors and including the extra "exploding" hearts in the SVG that we'll later animate.
 
-<img src="../images/spotify-like-button/figma-hearts.png" style="width:100%" alt="Figma app with the completed heart SVG inside" />
+<img src="/images/spotify-like-button/figma-hearts.png" style="width:100%" alt="Figma app with the completed heart SVG inside" />
 
 After grouping all relevant elements together, I used Figma's incredibly useful **copy to SVG** feature to grab the SVG code and paste it into a new [Codepen](https://www.codepen.io/).
 

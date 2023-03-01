@@ -1,31 +1,22 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import WordCount from '../components/WordCount.astro';
-import sluggify from '../mixins/sluggify';
-import PostBy from '../components/PostBy.astro';
-import RelatedArticles from '../components/RelatedArticles.astro';
-
 import { getCollection } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
 
 const posts = await getCollection('posts');
 
-console.log(posts);
-// const featured = posts
-//   .sort((a, b) => a.data.date.localeCompare(b.data.date))
-//   .reverse()
-//   .slice(0, 1)[0];
+const featured = posts
+  .reverse()
+  .slice(0)
+  .at(0)
 
-// console.log(featured);
+const { title, authors, image, image_credit, image_url, tags, date } =
+  featured.data;
 
-// const { title, authors, image, image_credit, image_url, tags, date } =
-//   featured.data;
-
-// const rawContent = featured.rawContent();
-
-// const content = await featured.render();
+const { Content } = await featured.render();
 ---
 
- <!-- <MainLayout
+<MainLayout
   title={title}
   image={image}
   imageCredit={image_credit}
@@ -39,14 +30,14 @@ console.log(posts);
         class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-light mb-4"
       >
         <p class="p-0 m-0">
-          Written by <a href={`/authors/${sluggify(authors)}`}>{authors}</a>
+          <!-- Written by <a href={`/authors/${sluggify(authors)}`}>{authors}</a> -->
         </p>
-        <WordCount content={rawContent} />
+        <!-- <WordCount content={rawContent} /> -->
       </div>
 
-      <Fragment set:html={content} />
+      <Content />
     </article>
-    <PostBy date={date} authors={authors} tags={tags} />
-    <RelatedArticles currentTitle={title} tags={tags} />
+    <!-- <PostBy date={date} authors={authors} tags={tags} />-->
+    <RelatedArticles currentTitle={title} tags={tags} /> 
   </div>
-</MainLayout> -->
+</MainLayout>

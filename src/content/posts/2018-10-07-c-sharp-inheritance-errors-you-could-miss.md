@@ -43,7 +43,7 @@ public class Program
 
 What would you expect the output to be? If you guess the following, then you are correct.
 
-```console
+```
 The shape is ¯\_(ツ)_/¯
 ```
 

@@ -1,13 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
 import { site } from '../data/config.json';
 const { currentTitle, tags } = Astro.props;
-let posts = await Astro.glob('../pages/*.md').then((posts) =>
+let posts = await getCollection('posts').then((posts) =>
   tags
     .map((tag) =>
       posts.filter(
         (post) =>
-          post.frontmatter.tags.includes(tag) &&
-          post.frontmatter.title !== currentTitle
+          post.data.tags.includes(tag) &&
+          post.data.title !== currentTitle
       )
     )
     .flat()
@@ -30,18 +31,18 @@ posts = [...new Set(posts)];
       <div class="block">
         <div class="card h-100 pos-rel border--color-light p-0 overflow-hidden">
           <figure class="image">
-            {post.frontmatter.image ? (
-              <img src={post.frontmatter.image} alt={post.frontmatter.title} />
+            {post.data.image ? (
+              <img src={post.data.image} alt={post.data.title} />
             ) : (
-              <img src={site.default_image} alt={post.frontmatter.title} />
+              <img src={site.default_image} alt={post.data.title} />
             )}
           </figure>
           <div class="flex flex--justify-between flex--column">
             <h3 class="text--size-base m-0 px-2 pt-3 pb-6">
-              <a href={post.url}>{post.frontmatter.title}</a>
+              <a href={post.url}>{post.data.title}</a>
             </h3>
             <div class="flex pos-abs pin-bottom flex--wrap p-2">
-              {post.frontmatter.tags.slice(0, 3).map((tag) => (
+              {post.data.tags.slice(0, 3).map((tag) => (
                 <a
                   href={`/tags/#${tag}`}
                   class="pill border border--color-orange text--orange mr-1 mb-1"

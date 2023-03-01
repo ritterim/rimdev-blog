@@ -66,7 +66,149 @@ declare module 'astro:content' {
 	};
 
 	const entryMap: {
-		"posts": {
+		"authors": {
+"andrew-rady.md": {
+  id: "andrew-rady.md",
+  slug: "andrew-rady",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"austin-asbury.md": {
+  id: "austin-asbury.md",
+  slug: "austin-asbury",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"bill-boga.md": {
+  id: "bill-boga.md",
+  slug: "bill-boga",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"chad-peters.md": {
+  id: "chad-peters.md",
+  slug: "chad-peters",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"cheng-yang.md": {
+  id: "cheng-yang.md",
+  slug: "cheng-yang",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"chidozie-oragwu.md": {
+  id: "chidozie-oragwu.md",
+  slug: "chidozie-oragwu",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"jaime-jones.md": {
+  id: "jaime-jones.md",
+  slug: "jaime-jones",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"john-vicari.md": {
+  id: "john-vicari.md",
+  slug: "john-vicari",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"ken-dale.md": {
+  id: "ken-dale.md",
+  slug: "ken-dale",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"ken-earl.md": {
+  id: "ken-earl.md",
+  slug: "ken-earl",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"kevin-hougasian.md": {
+  id: "kevin-hougasian.md",
+  slug: "kevin-hougasian",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"khalid-abuhakmeh.md": {
+  id: "khalid-abuhakmeh.md",
+  slug: "khalid-abuhakmeh",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"natasha-kurus.md": {
+  id: "natasha-kurus.md",
+  slug: "natasha-kurus",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"nathan-white.md": {
+  id: "nathan-white.md",
+  slug: "nathan-white",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"ryan-trimble.md": {
+  id: "ryan-trimble.md",
+  slug: "ryan-trimble",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"scott-schwalm.md": {
+  id: "scott-schwalm.md",
+  slug: "scott-schwalm",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"seth-kline.md": {
+  id: "seth-kline.md",
+  slug: "seth-kline",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"steliana-vassileva.md": {
+  id: "steliana-vassileva.md",
+  slug: "steliana-vassileva",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"ted-krueger.md": {
+  id: "ted-krueger.md",
+  slug: "ted-krueger",
+  body: string,
+  collection: "authors",
+  data: any
+},
+"thomas-sobieck.md": {
+  id: "thomas-sobieck.md",
+  slug: "thomas-sobieck",
+  body: string,
+  collection: "authors",
+  data: any
+},
+},
+"posts": {
 "2015-12-20-announcing-rimdev-releases.md": {
   id: "2015-12-20-announcing-rimdev-releases.md",
   slug: "announcing-rimdev-releases",
@@ -832,7 +974,7 @@ declare module 'astro:content' {
 },
 "2018-08-24-does-a-property-exist-on-my-c-sharp-object.md": {
   id: "2018-08-24-does-a-property-exist-on-my-c-sharp-object.md",
-  slug: "does-a-property-exist-on-my-c#-object",
+  slug: "does-a-property-exist-on-my-c-sharp-object",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">

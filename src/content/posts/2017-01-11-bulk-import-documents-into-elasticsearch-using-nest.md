@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bulk Import Documents Into Elasticsearch Using NEST"
 slug: bulk-import-documents-into-elasticsearch-using-nest
 date: 2017-01-11 08:53:45

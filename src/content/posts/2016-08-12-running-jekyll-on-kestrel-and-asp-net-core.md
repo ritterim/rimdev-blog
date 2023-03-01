@@ -40,7 +40,7 @@ These are just a few additions I've thought about adding to a statically generat
 
 This post assumes a familiarity with Jekyll and that it is installed locally. I first start by creating a new Jekyll site.
 
-```text
+```
 $ jekyll new jekyll-aspnet-core
 ```
 
@@ -48,7 +48,7 @@ $ jekyll new jekyll-aspnet-core
 
 The next step is to `cd` into the new Jekyll site directory and execute the following `dotnet` command.
 
-```text
+```
 $ cd jekyll-aspnet-core
 $ dotnet new -t web
 ```

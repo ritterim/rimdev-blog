@@ -1,7 +1,6 @@
 ---
-layout: ../../layouts/Author.astro
-author: Bill Boga
-permalink: /authors/bill-boga/
+name: Bill Boga
+slug: bill-boga
 image: /images/default/annex-billboga.jpg
 avatar: https://avatars2.githubusercontent.com/u/3382469?v=3
 title: Senior Software Developer

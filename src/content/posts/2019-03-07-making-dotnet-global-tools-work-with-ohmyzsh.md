@@ -18,14 +18,14 @@ image_credit: Juliana Kozoski
 
 I was trying to get a global .NET Core tool working on my development machine, which just so happens to be running macOS. I also work with [OhMyZsh](https://ohmyz.sh/) inside of [iTerm2](https://iterm2.com/). Every time I would invoke the global tool I would get the following error:
 
-```console
+```
 ➜ dotnet-project-licenses --help
 zsh: command not found: dotnet-project-licenses
 ```
 
 To fix this problem, I had to make sure that the `.dotnet/tools` directory was exported into my path. I can fix that by modifying my `~/.zshrc` file with the following lines.
 
-```console
+```
 # dotnet global tools
 export PATH="$PATH:$HOME/.dotnet/tools"
 ```
