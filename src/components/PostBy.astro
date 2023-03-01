@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import { DateTime } from 'luxon';
 const { date, authors, tags } = Astro.props;
 
@@ -6,17 +7,10 @@ const postDate = DateTime.fromMillis(Date.parse(date)).toFormat(
   'LLLL dd, yyyy'
 );
 
-const authorDetails = await Astro.glob('../pages/authors/*.md').then(
-  (allAuthors) => {
-    if (typeof authors === 'object') {
-      return Array.from(authors).map((author) =>
-        allAuthors.filter((a) => a.frontmatter.author === author)
-      );
-    } else {
-      return allAuthors.filter((a) => a.frontmatter.author === authors);
-    }
-  }
-);
+const authorCollection = await getCollection('authors');
+const postAuthors = authors
+  .map((author) => authorCollection.filter((a) => a.data.name == author))
+  .flat();
 ---
 
 <div class="block-container">
@@ -28,37 +22,37 @@ const authorDetails = await Astro.glob('../pages/authors/*.md').then(
 </div>
 <div class="flex flex--wrap flex--justify-center" style="gap: 1rem;">
   {
-    authorDetails.flat().map((author) => (
+    postAuthors.map((author) => (
       <div class="card no-border flex" style="gap: 0.5rem;">
-        {author.frontmatter.avatar ? (
+        {author.data.avatar ? (
           <div class="image--round-small" style="width: 50px;">
             <img
-              src={author.frontmatter.avatar}
-              alt={`${author.frontmatter.author} avatar`}
+              src={author.data.avatar}
+              alt={`${author.data.author} avatar`}
             />
           </div>
         ) : null}
         <div>
           <span class="flex flex--align-center">
-            <a class="text--nowrap" href={author.url}>
-              {author.frontmatter.author}
+            <a class="text--nowrap" href={author.slug}>
+              {author.data.name}
             </a>
             <span class="ml-2 pl-2 border-l border--color-light text--nowrap">
-              {author.frontmatter.github ? (
-                <a href={`https://www.github.com/${author.frontmatter.github}`}>
+              {author.data.github ? (
+                <a href={`https://www.github.com/${author.data.github}`}>
                   Github
                 </a>
               ) : null}
-              {author.frontmatter.twitter ? (
+              {author.data.twitter ? (
                 <a
-                  href={`https://www.twitter.com/${author.frontmatter.twitter}`}
+                  href={`https://www.twitter.com/${author.data.twitter}`}
                 >
                   Twitter
                 </a>
               ) : null}
             </span>
           </span>
-          <span>{author.frontmatter.title}</span>
+          <span>{author.data.title}</span>
         </div>
       </div>
     ))

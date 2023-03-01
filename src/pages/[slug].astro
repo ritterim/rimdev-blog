@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import PostBy from '../components/PostBy.astro';
+import PostAuthors from '../components/PostAuthors.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('posts');
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { title, date, image, image_credit, image_url, authors, tags } = entry.data
+const { Content } = await entry.render();
+---
+
+<MainLayout
+  title={title}
+  image={image}
+  imageCredit={image_credit}
+  imageUrl={image_url}
+  url={entry.slug}
+>
+  <div class="container" data-pagefind-body>
+    <article>
+      <h1 class="py-4 p-0 text--size-2xl">{title}</h1>
+
+      <div
+        class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-base mb-4"
+      >
+        <p class="p-0 m-0">
+          Written by
+          <PostAuthors authors={authors} />
+        </p>
+        <!-- <WordCount content={Content} /> -->
+      </div>
+
+      <Content />
+    </article>
+    <PostBy
+      date={date}
+      authors={authors}
+      tags={tags}
+    />
+    <RelatedArticles currentTitle={title} tags={tags} />
+  </div>
+</MainLayout>

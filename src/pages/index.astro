@@ -1,22 +1,21 @@
 ---
+import { getCollection } from 'astro:content';
 import MainLayout from '../layouts/MainLayout.astro';
-import WordCount from '../components/WordCount.astro';
-import sluggify from '../mixins/sluggify';
-import PostBy from '../components/PostBy.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
+import PostAuthors from '../components/PostAuthors.astro';
+import PostBy from '../components/PostBy.astro';
 
-const posts = await Astro.glob('../pages/*.md');
+const posts = await getCollection('posts');
+
 const featured = posts
-  .sort((a, b) => a.frontmatter.date.localeCompare(b.frontmatter.date))
   .reverse()
-  .slice(0, 1)[0];
+  .slice(0)
+  .at(0)
 
 const { title, authors, image, image_credit, image_url, tags, date } =
-  featured.frontmatter;
+  featured.data;
 
-const rawContent = featured.rawContent();
-
-const content = featured.compiledContent();
+const { Content } = await featured.render();
 ---
 
 <MainLayout
@@ -25,7 +24,7 @@ const content = featured.compiledContent();
   imageCredit={image_credit}
   imageUrl={image_url}
 >
-  <div class="container" data-pagefind-body>
+ <div class="container" data-pagefind-body>
     <article>
       <h1 class="py-4 p-0 text--size-2xl">{title}</h1>
 
@@ -33,14 +32,13 @@ const content = featured.compiledContent();
         class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-light mb-4"
       >
         <p class="p-0 m-0">
-          Written by <a href={`/authors/${sluggify(authors)}`}>{authors}</a>
+          Written by <PostAuthors authors={authors} />
         </p>
-        <WordCount content={rawContent} />
       </div>
 
-      <Fragment set:html={content} />
+      <Content />
     </article>
     <PostBy date={date} authors={authors} tags={tags} />
-    <RelatedArticles currentTitle={title} tags={tags} />
+    <RelatedArticles currentTitle={title} tags={tags} /> 
   </div>
 </MainLayout>

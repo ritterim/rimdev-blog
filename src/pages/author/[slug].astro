@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import { DateTime } from 'luxon';
+import MainLayout from '../../layouts/MainLayout.astro';
+import { site } from '../../data/config.json';
+import PostAuthors from '../../components/PostAuthors.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('authors');
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { name, image, avatar, former, desc, twitter, github } = entry.data;
+const { Content } = await entry.render();
+
+const posts = await getCollection('posts').then((posts) =>
+  posts
+    .map((post) => {
+      const postDate = DateTime.fromMillis(Date.parse(post.data.date)).toFormat(
+        'LLLL dd, yyyy'
+      );
+      return {
+        ...post,
+        postDate,
+      };
+    })
+    .filter((post) => post.data.authors.includes(name))
+    .reverse()
+);
+---
+
+<MainLayout
+  title={name}
+  image={image ? image : site.default_image}
+  author={name}
+  authorImage={avatar}
+>
+  <div class="container">
+    <h1 class="py-4 p-0 text--size-2xl border-b border--color-light">
+      {name}
+    </h1>
+    {desc ? <p>{desc}</p> : null}
+    {former ? <span>(Previous Team Member)</span> : null}
+    <div class="flex flex--justify-center my-4">
+      {
+        twitter ? (
+          <a
+            href={`https://twitter.com/${twitter}`}
+            data-tooltip={`@${twitter} on twitter`}
+            class="tooltip-bottom mr-2"
+          >
+            Twitter
+          </a>
+        ) : null
+      }
+      {
+        github ? (
+          <a
+            href={`https://github.com/${github}`}
+            data-tooltip={`${github} on github`}
+            class="tooltip-bottom"
+          >
+            Github
+          </a>
+        ) : null
+      }
+    </div>
+    {
+      posts.map((post) => (
+        <article class="mb-6">
+          <header>
+            <h2>
+              <a href={`/${post.slug}`}>{post.data.title}</a>
+            </h2>
+          </header>
+          <div class="author flex flex--justify-between py-2 border-b border-t border--color-light mb-4">
+            <p class="mb-0">
+              Written By <PostAuthors authors={post.data.authors} />
+            </p>
+            <p class="mb-0">Posted on {post.postDate}</p>
+          </div>
+
+          <div class="flex">
+            {post.data.tags.map((tag) => (
+              <a
+                class="pill border--color-orange text--orange mr-2"
+                href={`/tags/#${tag}`}
+                title={tag}
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </article>
+      ))
+    }
+    <Content />
+  </div>
+</MainLayout>

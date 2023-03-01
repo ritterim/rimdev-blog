@@ -1,14 +1,15 @@
 ---
+import { getCollection } from 'astro:content';
 import MainLayout from '../../layouts/MainLayout.astro';
 import TagList from '../../components/TagList.astro';
 
 const title = "tag, you're it!";
 const image = '/images/default/rimdev-surface.jpg';
 
-let tags = await Astro.glob('../*.md').then((posts) => {
+let tags = await getCollection('posts').then((posts) => {
   let tags = [];
   posts.forEach(
-    (post) => (tags = [...tags, ...Array.from(post.frontmatter.tags)])
+    (post) => (tags = [...tags, ...Array.from(post.data.tags)])
   );
   return tags;
 });
