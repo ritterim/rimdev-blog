@@ -1707,6 +1707,13 @@ declare module 'astro:content' {
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
+"2023-02-27-generating-your-own-fonts-with-fantasticon.md": {
+  id: "2023-02-27-generating-your-own-fonts-with-fantasticon.md",
+  slug: "generating-your-own-fonts-with-fantasticon",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
 },
 
 	};

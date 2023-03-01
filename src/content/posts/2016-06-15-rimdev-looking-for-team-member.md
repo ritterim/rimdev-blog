@@ -10,9 +10,6 @@ categories:
 twitter_text: RIMdev Looking For Team Member
 authors: 
 - Khalid Abuhakmeh
-image: https://farm9.staticflickr.com/8594/16833853225_9995fc125f_h_d.jpg
-image_url: https://www.flickr.com/photos/lightsamples/
-image_credit: Malcolm Carlaw
 ---
 
 Our team is currently looking to add another senior developer to help with our current and future workloads at [Ritter Insurance Marketing](https://ritterim.com). Before we do, I thought I would write a little bit about who our team is, our values, our technology stack, and some of the challenges we face. The post is an attempt to enlighten perspective teammates and start a conversation with anyone interested.

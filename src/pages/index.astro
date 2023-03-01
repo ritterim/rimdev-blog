@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import MainLayout from '../layouts/MainLayout.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
+import PostAuthors from '../components/PostAuthors.astro';
+import PostBy from '../components/PostBy.astro';
 
 const posts = await getCollection('posts');
 
@@ -30,14 +32,13 @@ const { Content } = await featured.render();
         class="author flex flex--align-center flex--justify-between py-2 border-b border-t border--color-light mb-4"
       >
         <p class="p-0 m-0">
-          <!-- Written by <a href={`/authors/${sluggify(authors)}`}>{authors}</a> -->
+          Written by <PostAuthors authors={authors} />
         </p>
-        <!-- <WordCount content={rawContent} /> -->
       </div>
 
       <Content />
     </article>
-    <!-- <PostBy date={date} authors={authors} tags={tags} />-->
+    <PostBy date={date} authors={authors} tags={tags} />
     <RelatedArticles currentTitle={title} tags={tags} /> 
   </div>
 </MainLayout>
