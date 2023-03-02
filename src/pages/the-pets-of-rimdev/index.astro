@@ -1,0 +1,49 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { pets } from '../../data/pets.json';
+---
+
+<MainLayout
+  title="The Pets of RIMdev"
+  image="/images/pets/pets-banner.jpg"
+  url="/the-pets-of-rimdev"
+>
+  <div class="pets-page" data-pagefind-body>
+    <div class="container" style="--container-width: 120ch;">
+      <div class="block-container flex--justify-center">
+        <h1 class="py-4 p-0 text--size-2xl text--center">The Pets of RIMdev</h1>
+      </div>
+      <div class="block-container blocks p-0 tablet-up-2 lg-tablet-up-3">
+        {
+          pets.map((pet) => (
+            <div class="block p-2">
+              <div class="card no-border rounded-2 p-0">
+                <div class="image">
+                  <img src={pet.image} alt={pet.name} />
+                </div>
+                <div class="px-2 py-1">
+                  <div class="flex flex--align-center flex--justify-between">
+                    <span class="text--size-md text--bold">{pet.name}</span>
+                    {pet.instagram_url ? (
+                      <a
+                        href="https://www.instagram.com/martin_cat_us/"
+                        class="pets-social tooltip-left"
+                        data-tooltip={`Follow ${pet.name} on Instagram!`}
+                        target="_blank"
+                      >
+                        <img
+                          src="../images/icons/instagram-brands.svg"
+                          alt={`Follow ${pet.name} on Instagram!`}
+                        />
+                      </a>
+                    ) : null}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</MainLayout>

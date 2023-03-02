@@ -7,3 +7,4 @@ GemFile.lock
 .jekyll-cache/
 .DS_Store
 .vscode/
+dist/

@@ -1,0 +1,21 @@
+---
+import MainLayout from './MainLayout.astro';
+const { frontmatter } = Astro.props;
+---
+
+<MainLayout
+  title={frontmatter.title}
+  image={frontmatter.image}
+  url={frontmatter.url}
+>
+  <div class="container" data-pagefind-body>
+    <div class="block-container">
+      <article>
+        <h1 class="py-4 p-0 text--size-2xl border-b border--color-light">
+          {frontmatter.title}
+        </h1>
+        <slot />
+      </article>
+    </div>
+  </div>
+</MainLayout>

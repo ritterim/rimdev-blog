@@ -1,0 +1,89 @@
+---
+import { getCollection } from 'astro:content';
+import { site } from '../data/config.json';
+
+const authorsCollection = await getCollection('authors');
+
+const posts = await getCollection('posts').then((posts) =>
+  posts
+    .map(post => {
+      const postAuthors = post.data.authors.map(author => {
+        return authorsCollection.filter(a => a.data.name == author)
+      }).flat()
+      return {
+        ...post,
+        postAuthors
+      }
+    })
+    .reverse()
+    .slice(0, 20)
+);
+
+const authorList = (authors) => {
+  return new Intl.ListFormat('en').format(
+  authors.map(
+    (author) => `<a href="author/${author.slug}">${author.data.name}</a>`
+  )
+);
+}
+---
+
+<div id="sidebar" class="drawer drawer-left">
+  <div class="drawer__inner">
+    <div class="drawer__header pb-0">
+      <div class="block-container">
+        <div class="block block-7">
+          <a href={site.url}>
+            <img src="/images/logos/RIMdev.svg" alt={site.user_description} />
+          </a>
+        </div>
+      </div>
+      <button class="button drawer__close" data-drawer="sidebar">
+        Close
+        <i class="pi-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="drawer__content">
+      <ul class="list">
+        {
+          posts.map((post) => (
+            <li class="border-b border--color-light pb-3">
+              <h3>
+                <a title={post.data.title} href={`/${post.slug}`}>
+                  {post.data.title}
+                </a>
+              </h3>
+              <div class="author mb-2">
+                <div class="block-container flex--align-center">
+                  {
+                    post.postAuthors.map(author => (
+                      <div class="block block-2 mr-2">
+                        <div class="image--round-small">
+                          <img src={author.data.avatar} />
+                        </div>
+                      </div>
+                      ))
+                    }
+                    <div class="block block-9">
+                      <Fragment set:html={authorList(post.postAuthors)} />
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="mb-2">
+                {Array.from(post.data.tags).map((tag) => (
+                  <a
+                    class="pill border--color-orange text--orange mr-1 mb-1"
+                    href={`/tags/#${tag}`}
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>

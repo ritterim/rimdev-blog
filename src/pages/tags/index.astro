@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import TagList from '../../components/TagList.astro';
+
+const title = "tag, you're it!";
+const image = '/images/default/rimdev-surface.jpg';
+
+let tags = await getCollection('posts').then((posts) => {
+  let tags = [];
+  posts.forEach(
+    (post) => (tags = [...tags, ...Array.from(post.data.tags)])
+  );
+  return tags;
+});
+
+tags = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
+---
+
+<MainLayout title={title} image={image}>
+  <div class="container">
+      <article>
+        <h1 class="py-4 p-0 text--size-2xl">{title}</h1>
+        <div class="flex flex--wrap mb-4">
+          {
+            tags.map((tag) => (
+              <a href={`/tags/#${tag}`} class="pill border--color-orange text--orange mr-2 mb-2">
+                {tag}
+              </a>
+            ))
+          }
+        </div>
+        <div>
+          {
+            tags.map(tag => (
+              <h2 id={tag}>{tag}</h2>
+              <TagList tag={tag} />
+            ))
+          }
+        </div>
+      </article>
+  </div>
+</MainLayout>

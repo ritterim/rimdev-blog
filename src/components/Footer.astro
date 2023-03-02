@@ -1,0 +1,60 @@
+---
+import { site } from '../data/config.json';
+---
+
+<footer class="container">
+  <div class="divider">
+    <a href={site.url}>
+      <img src="/images/logos/RIMdev.svg" alt={site.user_description} />
+    </a>
+  </div>
+  <div class="block-container flex--justify-between">
+    <p class="flex flex--align-center">
+      <span class="mt-1">&copy;</span>
+      <a class="mx-2 mt-1" href={site.rim_url}>{site.rim_copy}</a>
+      <a target="_blank" href={site.map_url}>
+        <span class="sr-only">Our Location</span>
+        <i class="pi-map-marker"></i>
+      </a>
+    </p>
+
+    <div class="flex">
+      <div class="item mr-2">
+        <a
+          target="_blank"
+          href={`https://twitter.com/${site.twitter_username}`}
+        >
+          Twitter
+        </a>
+      </div>
+      <div class="item mr-2">
+        <a target="_blank" href={`https://github.com/${site.github_username}`}>
+          GitHub
+        </a>
+      </div>
+      <div class="item">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script
+  is:inline
+  src="https://unpkg.com/@ritterim/platform-ui/dist/js/platform-ui.min.js"
+  defer
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.0/mermaid.min.js"
+  integrity="sha256-1uR+pqxH5fN/rOZcZTb9c5+bR3OIYEKzu2sI11Dnj9A="
+  crossorigin="anonymous"
+  is:inline
+></script>
+<script src="/_pagefind/pagefind-ui.js" type="text/javascript" is:inline
+></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: '#search' });
+  });
+</script>
