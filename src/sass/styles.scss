@@ -154,3 +154,15 @@ article {
 .text--orange {
   color: #b66000 !important;
 }
+
+p > code:not([class]){
+  background: #0d1117;
+  color: white;
+}
+
+.github-icon{
+  display: block;
+  fill: currentColor;
+  height:100%;
+  width:auto;
+}
