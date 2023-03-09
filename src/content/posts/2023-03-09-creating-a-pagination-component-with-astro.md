@@ -14,6 +14,9 @@ categories:
 twitter_text: "Creating A Pagination Component With Astro"
 authors: 
 - Ted Krueger
+image: https://images.unsplash.com/photo-1531177071211-ed1b7991958b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fHNwYWNlJTIwc2hpcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
+image_url: https://unsplash.com/photos/b3PuuRU8IPc
+image_credit: Zoltan Tasi
 ---
 
 Here at RIMdev, we're currently converting our static sites to use [Astro](https://astro.build/). As we switch from our current SSGs, [Hugo](https://gohugo.io/), and [Jekyll](https://jekyllrb.com/) we're creating reusable components that we'd like to document for the team. This series of posts will contain those components for not only our benefit but hopefully yours as well!
