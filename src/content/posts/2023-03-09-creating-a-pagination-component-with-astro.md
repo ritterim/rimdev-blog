@@ -18,7 +18,7 @@ image_url: https://unsplash.com/photos/b3PuuRU8IPc
 image_credit: Zoltan Tasi
 ---
 
-Here at RIMdev, we're currently converting our static sites to use [Astro](https://astro.build/). As we switch from our current SSGs, [Hugo](https://gohugo.io/), and [Jekyll](https://jekyllrb.com/) we're creating reusable components that we'd like to document for the team. This series of posts will contain those components for not only our benefit but hopefully yours as well!
+Here at RIMdev, we're currently converting our static sites to use [Astro](https://astro.build/). As we switch from our current SSGs, [Hugo](https://gohugo.io/) and [Jekyll](https://jekyllrb.com/), we're creating reusable components that we'd like to document for the team. This series of posts will contain those components for not only our benefit but hopefully yours as well!
 
 Something that Hugo did well was Pagination. It was very simple to implement but it came with some limitations. Astro does not have a specific Pagination component but it _does_ give you the tools to make your own. Here's what I came up with that I've used in a couple of our sites for blog sections...
 
