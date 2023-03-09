@@ -4,7 +4,6 @@ slug: creating-a-pagination-component-with-astro
 date: 2023-03-09 11:31:06
 tags: 
 - Astro
-- SSG
 - JavaScript
 - frontend
 categories:
