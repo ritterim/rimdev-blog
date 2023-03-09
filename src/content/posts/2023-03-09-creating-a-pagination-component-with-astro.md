@@ -1,6 +1,6 @@
 ---
 title: "Creating A Pagination Component With Astro"
-slug: creating-pagination-component-with-astro
+slug: creating-a-pagination-component-with-astro
 date: 2023-03-09 11:31:06
 tags: 
 - Astro
