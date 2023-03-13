@@ -66,7 +66,7 @@ const { page } = Astro.props;
 ---
 ```
 
-Include your components, PostSummary and Pagination. We use the `getStaticPaths` function to grab each blog post. In this case it's anything in our /blog folder and we're looking for any file that ends in either a `.md` or `.mdx` file type. We want to format them by the most recent post. That's what we're doing with the `formattedPosts` variable. Once we have our posts array we can set the total number of posts we want to show. In this case it's 5. 
+Include your components, PostSummary and Pagination. We use the `getStaticPaths` function to grab each blog post. In this case, it's anything in our /blog folder, and we're looking for any file that ends in either a `.md` or `.mdx` file type. We want to format them by the most recent post. That's what we're doing with the `formattedPosts` variable. Once we have our posts array, we can set the total number of posts we want to show. In this case, it's 5. 
 
 ```javascript
   return paginate(formattedPosts, {
