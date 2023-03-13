@@ -1714,6 +1714,13 @@ declare module 'astro:content' {
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
+"2023-03-09-creating-a-pagination-component-with-astro.md": {
+  id: "2023-03-09-creating-a-pagination-component-with-astro.md",
+  slug: "creating-pagination-component-with-astro",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
 },
 
 	};
