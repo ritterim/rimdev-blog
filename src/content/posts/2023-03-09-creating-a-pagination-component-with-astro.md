@@ -80,7 +80,7 @@ Finally we need to get page data so we use:
 const { page } = Astro.props;
 ```
 
-If you want to see what this looks like add `console.log(page)` in your front matter. This will show you an array of your posts and the data inside them you can utilize.
+If you want to see what this looks like, add `console.log(page)` in your front matter. This will show you an array of your posts and the data inside them that you can utilize.
 
 ## [Populate The Posts](#populate-the-posts)
 Using `page` we can map the array:
