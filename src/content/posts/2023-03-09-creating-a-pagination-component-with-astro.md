@@ -35,7 +35,7 @@ src
   - blog
 ```
 
-Inside here add your page for the blog landing. This is the page that will show all of your posts, or at least what we want. You'll need the use brackets in this page title. Call it `[...page].astro`. We need the `[]` wrapping the name as this is a dynamic route.
+Inside here add your page for the blog landing. This is the page that will show all of your posts, or at least what we want. You'll need to use brackets in this page title. Call it `[...page].astro`. We need the `[]` wrapping the name as this is a dynamic route.
 
 ```
 src
