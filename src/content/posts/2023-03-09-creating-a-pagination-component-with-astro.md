@@ -45,7 +45,7 @@ src
 ```
 
 ## [Blog Landing](#blog-landing)
-Now let's get to the guts of `[...page].astro`. You'll be leveraging `page.data` here. We also need 2 other components `PostSummary.astro`, which is a block of blog info like a title, image, and a teaser. You can add more to this if you need and I'll show you what this looks like in a bit. We also need a `Pagination.astro` component. This can also be customizzed to your needs but it will most likely always have the same data passed to it.
+Now let's get to the guts of `[...page].astro`. You'll be leveraging `page.data` here. We also need 2 other components:  `PostSummary.astro`, which is a block of blog info like a title, image, and a teaser. You can add more to this if you need, and I'll show you what this looks like in a bit. We also need a `Pagination.astro` component. This can also be customized to your needs, but it will most likely always have the same data passed to it.
 
 The frontmatter of `[...page].astro` should look like:
 
