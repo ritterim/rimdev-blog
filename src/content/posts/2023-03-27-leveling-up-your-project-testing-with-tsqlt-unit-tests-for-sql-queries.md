@@ -22,13 +22,13 @@ I am writing this blog post to share a cool unit testing tool that I learned abo
 ### Step 1: Install tSQLt
 Go to the official website [tSQLt](https://tsqlt.org/downloads/) to download and set up tSQLt. Once the installation zip file has been downloaded, unzip it to a spot on your hard drive, and then run the `PrepareServer.sql` file. 
 <figure>
-<img src="/images/tsqlt/query1.png" style="max-width: 100%">
+<img src="/images/tsqlt/query1.PNG" style="max-width: 100%">
 </figure>
 
 Next, Run the `tSQLt.class.sql` script to install the tSQLt framework in your SQL Server database.
 
 <figure>
-<img src="/images/tsqlt/query2.png" style="max-width: 100%">
+<img src="/images/tsqlt/query2.PNG" style="max-width: 100%">
 </figure>
 
 ### Step 2: Create a test database
@@ -59,7 +59,7 @@ EXEC tSQLt.NewTestClass 'TestDatabaseQueries';
 GO
 ```
 
-In this example database query, we will create a temporary table #Fruit and inserting two rows of data - one for apples and one for oranges. The test case FruitTests verifies if the number of apples and oranges in the table matches the expected values.
+In this example database query, we will create a temporary table #Fruit and inserting two rows of data - one for apples and one for oranges. The test case from below verifies if the number of apples and oranges in the table matches the expected values.
 
 ```csharp
 USE [tSQLtTestDB];
@@ -76,8 +76,9 @@ BEGIN
     SELECT @AppleCount = SUM(Quantity) FROM #Fruit WHERE FruitName = 'Apple'
     SELECT @OrangeCount = SUM(Quantity) FROM #Fruit WHERE FruitName = 'Orange'
 
-    -- line 80 will throw error
+    -- this case will return false
     EXEC tSQLt.AssertEquals @expected = 22, @actual = @AppleCount
+    -- this case will return true
     EXEC tSQLt.AssertEquals @expected = 5, @actual = @OrangeCount
 
     DROP TABLE #Fruit
@@ -104,9 +105,8 @@ EXEC tSQLt.Run 'TestDatabaseQueries.[test if fruit returns expected result]';
 Here is the result: 
 
 <figure>
-<img src="/images/tsqlt/query1.png" style="max-width: 100%">
+<img src="/images/tsqlt/query1.PNG" style="max-width: 100%">
 </figure>
-
 
 Finally, testing your database queries is crucial, just like testing your code. You can be sure that your SQL Server database queries are functioning as expected and delivering accurate results by creating and running tests for them using tSQLt.
 
