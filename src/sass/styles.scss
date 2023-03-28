@@ -1,3 +1,8 @@
+:root {
+  // background color of 'one-dark-pro' theme: astro.config.mjs
+  --code-background: #282c34;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -33,6 +38,7 @@ a:not([class]):hover {
 .astro-code {
   padding: 1rem !important;
   margin-bottom: 1rem !important;
+  border-radius: .5rem;
 }
 
 .container {
@@ -156,8 +162,10 @@ article {
 }
 
 p > code:not([class]){
-  background: #0d1117;
-  color: white;
+  background-color: var(--code-background);
+  border-radius: .2rem;
+  color: var(--white);
+  padding: .1rem .3rem;
 }
 
 .github-icon{
