@@ -20,7 +20,7 @@ image_credit: Ferenc Almasi
 I am writing this blog post to share a cool unit testing tool that I learned about at the VS Live conference in Vegas. While many developers build tests for their code to make sure it is functioning as intended, fewer developers test their database queries. Testing your code and your database queries are equally vital to make sure your queries are working as intended and producing the expected results. In this blog article, I'll demonstrate how to use tSQLt, a unit testing framework for SQL Server, to create tests for your SQL Server database queries.
 
 ### Step 1: Install tSQLt
-Go to the official website [tSQLt](https://tsqlt.org/downloads/) to download and set up tSQLt. Once the installation zipfile has been downloaded, unzip it to a spot on your hard drive, and then run the `PrepareServer.sql` file. 
+Go to the official website [tSQLt](https://tsqlt.org/downloads/) to download and set up tSQLt. Once the installation zip file has been downloaded, unzip it to a spot on your hard drive, and then run the `PrepareServer.sql` file. 
 <figure>
 <img src="/images/tsqlt/query1.png" style="max-width: 100%">
 </figure>
