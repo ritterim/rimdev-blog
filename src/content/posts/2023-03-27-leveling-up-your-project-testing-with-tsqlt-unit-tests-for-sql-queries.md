@@ -14,7 +14,7 @@ authors:
 - Cheng Yang
 image: https://images.unsplash.com/photo-1576444356170-66073046b1bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 image_url: https://unsplash.com/photos/EWLHA4T-mso
-image_credit: Ferenc Almas
+image_credit: Ferenc Almasi
 ---
 
 I am writing this blog post to share a cool unit testing tool that I learned about at the VS Live conference in Vegas. While many developers build tests for their code to make sure it is functioning as intended, fewer developers test their database queries. Testing your code and your database queries are equally vital to make sure your queries are working as intended and producing the expected results. In this blog article, I'll demonstrate how to use tSQLt, a unit testing framework for SQL Server, to create tests for your SQL Server database queries.
