@@ -34,7 +34,7 @@ Next, Run the `tSQLt.class.sql` script to install the tSQLt framework in your SQ
 ### Step 2: Create a test database
 For your unit tests, you will need to set up a test database. Only the objects and information required for testing will be in this database, which will be distinct from your production database. Run the following query in SQL Server Management Studio to create the test database.
 
-```csharp
+```sql
 CREATE DATABASE [tSQLtTestDB];
 GO
 ```
@@ -52,7 +52,7 @@ GO
 
 ### Step 4: Write your first test
 We will need to create a test class first, According to [tSQLt](https://tsqlt.org/user-guide/test-creation-and-execution/newtestclass/)
-"tSQLt.NewTestClass creates a new test class. A test class is simply a schema where the user can create test case procedure and any other related objects."
+"tSQLt.NewTestClass creates a new test class. A test class is simply a schema where the user can create a test case procedure and any other related objects."
 
 ```cSharp
 EXEC tSQLt.NewTestClass 'TestDatabaseQueries';
