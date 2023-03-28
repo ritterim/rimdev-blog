@@ -105,7 +105,7 @@ EXEC tSQLt.Run 'TestDatabaseQueries.[test if fruit returns expected result]';
 Here is the result: 
 
 <figure>
-<img src="/images/tsqlt/query1.PNG" style="max-width: 100%">
+<img src="/images/tsqlt/result.PNG" style="max-width: 100%">
 </figure>
 
 Finally, testing your database queries is crucial, just like testing your code. You can be sure that your SQL Server database queries are functioning as expected and delivering accurate results by creating and running tests for them using tSQLt.
