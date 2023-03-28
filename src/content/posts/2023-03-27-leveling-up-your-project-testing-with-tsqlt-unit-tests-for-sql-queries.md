@@ -52,7 +52,7 @@ GO
 
 ### Step 4: Write your first test
 We will need to create a test class first, According to [tSQLt](https://tsqlt.org/user-guide/test-creation-and-execution/newtestclass/)
-"tSQLt.NewTestClass creates a new test class. A test class is simply a schema where the user can create test case procedure and any other related objects."
+"tSQLt.NewTestClass creates a new test class. A test class is simply a schema where the user can create a test case procedure and any other related objects."
 
 ```cSharp
 EXEC tSQLt.NewTestClass 'TestDatabaseQueries';
