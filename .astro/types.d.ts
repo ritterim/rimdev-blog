@@ -1716,7 +1716,14 @@ declare module 'astro:content' {
 },
 "2023-03-09-creating-a-pagination-component-with-astro.md": {
   id: "2023-03-09-creating-a-pagination-component-with-astro.md",
-  slug: "creating-pagination-component-with-astro",
+  slug: "creating-a-pagination-component-with-astro",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+"2023-03-27-leveling-up-your-project-testing-with-tsqlt-unit-tests-for-sql-queries.md": {
+  id: "2023-03-27-leveling-up-your-project-testing-with-tsqlt-unit-tests-for-sql-queries.md",
+  slug: "leveling-up-your-project-testing-with-tSQLt-unit-tests-for-sql-queries",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">

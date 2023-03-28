@@ -10,6 +10,11 @@ import compress from 'astro-compress';
 // https://astro.build/config
 export default defineConfig({
   site: site.baseurl,
+  markdown: {
+    shikiConfig: {
+      theme: 'one-dark-pro',
+    },
+  },
   integrations: [
     sitemap(),
     compress({
