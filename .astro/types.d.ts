@@ -1728,6 +1728,13 @@ declare module 'astro:content' {
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
+"2023-04-11-never-get-bit-by-z-index-again.md": {
+  id: "2023-04-11-never-get-bit-by-z-index-again.md",
+  slug: "never-get-bit-by-z-index-again",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
 },
 
 	};
