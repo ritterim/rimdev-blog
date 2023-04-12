@@ -17,7 +17,7 @@ image_url: https://unsplash.com/photos/eMP4sYPJ9x0
 image_credit: Alexander Grey
 ---
 
-Sometimes I do things that make me very pleased with myself. I try to remain humble but this is something that I thought fell into the too-good-not-to-share category. It has to do with z-index. Something that can be a developers worst enemy when writing css. What I'm about to share with you will _hopefully_ ensure you never lose your z-index order again.
+Sometimes I do things that make me very pleased with myself. I try to remain humble, but this is something that I thought fell into the too-good-not-to-share category. It has to do with z-index. Something that can be a developers worst enemy when writing css. What I'm about to share with you will _hopefully_ ensure you never lose your z-index order again.
 
 I've been trying to use a lot more custom properties when writing css. So far, it has allowed us to write cleaner and more customizable css. Typically I think of values like color, font-size, and size (height, width) as values where you might set a custom property. I never thought to use one for setting z-index on a component. Until today.
 
