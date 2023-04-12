@@ -48,7 +48,7 @@ Here's what I did:
 
 I added that comment so that when we look at our code we know the value is important. Also, the comparison css is in a separate file and not actually directly underneath the filters css. So the comment makes a little more sense in that case. 
 
-As I was reading my own comment I realized there is a pretty solid way we could make sure the filters z-index potentially changing never effects the z-index of the comparison. Custom Properties and sass functions to the rescue! Here's what I came up with:
+As I was reading my own comment I realized there is a pretty solid way we could make sure the filters' z-index potentially changing never affects the z-index of the comparison. Custom Properties and sass functions to the rescue! Here's what I came up with:
 
 ```scss
 :root {
