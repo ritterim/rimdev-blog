@@ -26,7 +26,7 @@ In case you're not that familiar with how z-index really works, which is totally
 - z-index will only work on those elements that are assigned a `position` other than `static`
 - elements are essentially assigned a natural z-index based on their order in the stack
   - I like to think of elements like a deck of cards. Each sibling is stacked on top of the previous element
-- nested eleements with z-index won't really do anything unless their parent element has a specific z-index
+- nested elements with z-index won't really do anything unless their parent element has a specific z-index
 - For a more indepth read on z-index I encourage you to read [this post](/z-index-is-confusing/)
 
 We're currently redesigning one of our websites, which will remain nameless, and we have some fixed elements at the top of the page. These elements require some z-index. We have a drawer that sits just below the header which contains some filters for a specific page. On this same page we want to show a table comparing selections but we still want the filters to show. Not a problem, we just need to make sure one z-index is higher than the other.
