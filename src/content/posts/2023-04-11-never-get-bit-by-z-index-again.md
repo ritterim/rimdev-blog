@@ -29,7 +29,7 @@ In case you're not that familiar with how z-index really works, which is totally
 - nested elements with z-index won't really do anything unless their parent element has a specific z-index
 - For a more indepth read on z-index I encourage you to read [this post](/z-index-is-confusing/)
 
-We're currently redesigning one of our websites, which will remain nameless, and we have some fixed elements at the top of the page. These elements require some z-index. We have a drawer that sits just below the header which contains some filters for a specific page. On this same page we want to show a table comparing selections but we still want the filters to show. Not a problem, we just need to make sure one z-index is higher than the other.
+We're currently redesigning one of our websites, which will remain nameless, and we have some fixed elements at the top of the page. These elements require some z-index. We have a drawer that sits just below the header which contains some filters for a specific page. On this same page we want to show a table comparing selections, but we still want the filters to show. Not a problem, we just need to make sure one z-index is higher than the other.
 
 Here's what I did:
 
