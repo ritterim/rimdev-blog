@@ -67,4 +67,4 @@ As I was reading my own comment I realized there is a pretty solid way we could 
 }
 ```
 
-Voilá! We _shouldn't_ need the comment anymore but it doesn't hurt to have it. With this method, any change to the filters z-index will not effect how the 2 elements stack.
+Voilá! We _shouldn't_ need the comment anymore, but it doesn't hurt to have it. With this method, any change to the filters z-index will not affect how the 2 elements stack.
