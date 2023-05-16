@@ -23,8 +23,10 @@ Here at RIMdev, we're currently converting our static sites to use [Astro](https
 Something that Hugo did well was Pagination. It was very simple to implement, but it came with some limitations. Astro does not have a specific Pagination component, but it _does_ give you the tools to make your own. Here's what I came up with and used on a couple of our sites for blog sections...
 
 ## [TLDR;](#putting-it-together)
-<div class="mb-3 text--center">
-<img src="/images/get-to-the-point.gif" alt="Get to the point"/>
+<div class="mb-3 text--center px-4">
+
+![Get to the point!](https://media.tenor.com/fOHmEyEyVDgAAAAC/get-to-the-point-cut-to-the-chase.gif)
+
 </div>
 
 First, create your blog page within `/src/pages`. I like to add another folder here called `/blog` just to try to keep things a bit cleaner. So we have:
