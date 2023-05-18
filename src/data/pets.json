@@ -17,6 +17,10 @@
       "image": "/images/pets/dobby.jpg"
     },
     {
+      "name": "Eevee",
+      "image": "/images/pets/eevee--500x500.jpg"
+    },
+    {
       "name": "Echo",
       "image": "/images/pets/echo--500x500.jpg"
     },
