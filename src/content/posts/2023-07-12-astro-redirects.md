@@ -17,7 +17,7 @@ image_url: https://unsplash.com/photos/eMP4sYPJ9x0
 image_credit: Alexander Grey
 ---
 
-We needed to redirect a current url to a different page. In our case, we wanted `/agenda` to redirect to an event page. So, to explain it like you're a five year old, who knows a decent amount of developer knowledge, when someone would go to `website-name.com/agenda` they would _actually_ go to `website-name.com/desired-page`.
+We needed to redirect a current URL to a different page. In our case, we wanted `/agenda` to redirect to an event page. So, to explain it like you're a five-year-old, who knows a decent amount of developer knowledge, when someone would go to `website-name.com/agenda` they would _actually_ go to `website-name.com/desired-page`.
 
 Now it looks like you _used_ to be able to do this, and still might depending on your version of Astro. The [Astro.redirect](https://docs.astro.build/en/reference/errors/static-redirect-not-available/) method is depricated as of version 2.6. No worries though. I'll be showing you a different method that Astro reccomends using the `meta refresh attribute`.
 
