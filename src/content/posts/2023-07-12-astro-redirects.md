@@ -21,7 +21,7 @@ We needed to redirect a current URL to a different page. In our case, we wanted 
 
 Now it looks like you _used_ to be able to do this, and still might depending on your version of Astro. The [Astro.redirect](https://docs.astro.build/en/reference/errors/static-redirect-not-available/) method is depricated as of version 2.6. No worries though. I'll be showing you a different method that Astro reccomends using the `meta refresh attribute`.
 
-Before I get into the nuts and bolts of the post I must admit that my attention to detail in the Astro docs was pretty lacking because I missed them suggest the use of the meta refresh. I did, however, see this in [Lyod Atkinson's post](https://www.lloydatkinson.net/posts/2022/static-site-redirects-with-astro/) on his blog. In his post, Atkinson shows us how he uses the meta refresh attribute to redirect to his latest blog post. In our case we wanted our redirect to be specific so we didn't need to worry about some of the extra stuff Lloyd was doing.
+Before I get into the nuts and bolts of the post, I must admit that my attention to detail in the Astro docs was pretty lacking because I missed them suggesting the use of the meta refresh. I did, however, see this in [Lloyd Atkinson's post](https://www.lloydatkinson.net/posts/2022/static-site-redirects-with-astro/) on his blog. In his post, Atkinson shows us how he uses the meta refresh attribute to redirect to his latest blog post. In our case, we wanted our redirect to be specific so we didn't need to worry about some of the extra stuff Lloyd was doing.
 
 I decided to start in the file that I would be redirecting from. For this post, I'll create a redirect page.
 
