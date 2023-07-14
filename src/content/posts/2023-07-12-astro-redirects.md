@@ -153,4 +153,4 @@ We need to add `redirects to the entries array. Then we'll wrap our current Post
 }
 ```
 
-Wanna see how it works? So you see how it works I'll add a timing param of 5 seconds. Check this out [show-me-cute-animals](/show-me-cute-animals). 
+Wanna see how it works? So you can see how it works, I'll add a timing param of 5 seconds. Check this out [show-me-cute-animals](/show-me-cute-animals). 
