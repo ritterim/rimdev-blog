@@ -38,7 +38,7 @@ In here, I'll add a `redirect` variable. I want to drive some more traffic to ou
 const redirect = "/the-pets-of-rimdev"
 ```
 
-Now that we have our redirect defined we need to get that info to the `Head.astro` component. We pass the parameters to the layout component we are using. In this case, it's our `MainLayout.astro`.
+Now that we have our redirect defined, we need to get that info to the `Head.astro` component. We pass the parameters to the layout component we are using. In this case, it's our `MainLayout.astro`.
 
 ```html
 <MainLayout title={title} image={image} redirect={redirect}>
