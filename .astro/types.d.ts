@@ -1735,6 +1735,22 @@ declare module 'astro:content' {
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
+"2023-07-12-astro-redirects.md": {
+  id: "2023-07-12-astro-redirects.md",
+  slug: "creating-a-redirect-in-astro",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+},
+"redirects": {
+"gotopets.md": {
+  id: "gotopets.md",
+  slug: "show-me-cute-animals",
+  body: string,
+  collection: "redirects",
+  data: any
+},
 },
 
 	};
