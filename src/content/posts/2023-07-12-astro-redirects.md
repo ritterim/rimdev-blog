@@ -88,7 +88,7 @@ src
   [slug].astro
 ```
 
-Using Content Collections, we have a content folder inside our src directory. This is where we need to create a redirects folder. Inside the redirects folder we can add our files or pages for each redirect. Each file will represent an individual redirect. Because we're using the dynamic `[slug]` page, we can name these .md files anything we want. This will help other devs know what the file is _doing_. So we can name our redirect, `gotopets.md`. 
+Using Content Collections, we have a content folder inside our src directory. This is where we need to create a redirects folder. We can add our files or pages for each redirect in the redirects folder. Each file will represent an individual redirect. Because we're using the dynamic `[slug]` page, we can name these .md files anything we want. This will help other devs know what the file is _doing_. So we can name our redirect, `gotopets.md`. 
 
 ```
 <!-- gotopets.md -->
