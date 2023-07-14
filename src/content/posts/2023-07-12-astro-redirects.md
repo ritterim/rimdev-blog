@@ -72,7 +72,7 @@ Inside our `Head.astro` component we want to add the meta refresh tag.
 
 Here we check for `redirect` because not every page will have one so there's no point to render this. The redirect is used in the `content` which tells the browser what page to redirect to. Check it out [here](/redirect). Pretty cool. 
 
-This definitely works but I feel like we could make it a little better. We can by using [Content Collections](https://docs.astro.build/en/guides/content-collections/) and [Dynamic Pages](https://docs.astro.build/en/core-concepts/routing/#example-dynamic-pages-at-multiple-levels).
+This definitely works, but I feel like we could make it a little better. We can by using [Content Collections](https://docs.astro.build/en/guides/content-collections/) and [Dynamic Pages](https://docs.astro.build/en/core-concepts/routing/#example-dynamic-pages-at-multiple-levels).
 
 ## [Using Dynamic Pages](#using-dynamic-pages)
 
