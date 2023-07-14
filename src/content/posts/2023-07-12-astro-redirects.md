@@ -32,7 +32,7 @@ I decided to start in the file that I would be redirecting from. For this post, 
    index.astro
 ```
 
-In here I'll add a `redirect` variable. I want to drive some more traffic to our Pets of RIMdev page so I'll set that url to the value of the redirect. The frontmatter looks like this:
+In here, I'll add a `redirect` variable. I want to drive some more traffic to our Pets of RIMdev page so I'll set that URL to the value of the redirect. The frontmatter looks like this:
 
 ```
 const redirect = "/the-pets-of-rimdev"
