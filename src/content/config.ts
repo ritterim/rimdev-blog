@@ -12,7 +12,7 @@ const postsCollection = defineCollection({
     twitter_text: z.string(),
     image: z.string().default(site.default_image),
     image_url: z.string().default(site.baseurl),
-    image_credit: z.string().default(site.site_name),
+    image_credit: z.string().default(site.site_name)
   }),
 });
 

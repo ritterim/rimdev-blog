@@ -6,13 +6,13 @@ import SearchModal from '../components/SearchModal.astro';
 import Footer from '../components/Footer.astro';
 import { site } from '../data/config.json';
 
-const { title, image, authorImage, author, imageCredit, imageUrl, url } =
+const { title, image, authorImage, author, imageCredit, imageUrl, url, redirect } =
   Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <Head title={title} image={image} permalink={url} />
+  <Head title={title} image={image} permalink={url} redirect={redirect} />
   <body class="background--white">
     <Masthead
       authorImage={authorImage}

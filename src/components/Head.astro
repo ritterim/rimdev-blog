@@ -3,7 +3,7 @@ import Favicons from './Favicons.astro';
 import { site } from '../data/config.json';
 import '../sass/styles.scss';
 
-const { title, description, image, permalink } = Astro.props;
+const { title, description, image, permalink, redirect } = Astro.props;
 ---
 
 <head>
@@ -57,6 +57,14 @@ const { title, description, image, permalink } = Astro.props;
     content={description ? description : site.description}
   />
   <meta itemprop="image" content={image ? image : site.default_image} />
+
+  <!-- redirects -->
+  {redirect ? (
+    <meta 
+      http-equiv="refresh" 
+      content={ `${ redirect.timing ? redirect.timing : '0' }; url=${ redirect.url }` }
+    />
+  ) : null}
 
   <title>{title ? `${title} | RIMdev Blog` : site.title}</title>
   <meta name="description" content={site.description} />
