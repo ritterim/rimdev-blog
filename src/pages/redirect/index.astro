@@ -4,7 +4,11 @@ import MainLayout from '../../layouts/MainLayout.astro';
 const title = "You won't see this page.";
 const image = "/images/default/rimdev-configyml.jpg";
 
-const redirect = "/the-pets-of-rimdev"
+const redirect = {
+  url: "/the-pets-of-rimdev",
+  timing: null
+}
+console.log(redirect)
 ---
 
 <MainLayout title={title} image={image} redirect={redirect}>
