@@ -1742,6 +1742,13 @@ declare module 'astro:content' {
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
+"2023-07-21-negative-calc-values.md": {
+  id: "2023-07-21-negative-calc-values.md",
+  slug: "setting-a-negative-value-with-custom-properties",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
 },
 "redirects": {
 "gotopets.md": {
