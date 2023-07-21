@@ -31,5 +31,5 @@ header {
 }
 ```
 
-_Now_ I'll explain. If you were to try `-#{var(--header-height)}` you would get something like, `margin-top: -var(--header-height)`, which the browser will not know what to do with. You can instead use the `calc()` css function to take your variable and multiply it by `-1` and boom. 
+_Now_ I'll explain. If you were to try `-#{var(--header-height)}` you would get something like, `margin-top: -var(--header-height)`, which the browser will not know what to do with. You can instead use the `calc()` css function to take your variable and multiply it by `-1`, boom. 
 
