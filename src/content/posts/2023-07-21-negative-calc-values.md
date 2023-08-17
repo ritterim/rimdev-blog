@@ -27,7 +27,7 @@ header {
 }
 
 .other-class-that-needs-negative-something {
-  margin-top: calc(var--header-height * (-1));
+  margin-top: calc(var(--header-height) * (-1));
 }
 ```
 
