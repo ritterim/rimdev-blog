@@ -12,9 +12,9 @@ categories:
 twitter_text: "Here's how you can set a custom property to a negative value using the calc() css function."
 authors: 
 - Ted Krueger
-image: https://plus.unsplash.com/premium_photo-1661382019197-94d5edb38186?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80
-image_url: https://unsplash.com/photos/FmzQpb6db2s
-image_credit: Unsplash+
+image: https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80
+image_url: https://unsplash.com/photos/3-Tc_5LROrM
+image_credit: Kelly Sikkema
 ---
 
 I want to show a quick demo of how you can use custom properties and set them to a negative value. I don't want to bore you with any explaination. This ain't no Pintrest recipe about a great german potato salad. Let's check out the code.
@@ -27,7 +27,7 @@ header {
 }
 
 .other-class-that-needs-negative-something {
-  margin-top: calc(var--header-height * (-1));
+  margin-top: calc(var(--header-height) * (-1));
 }
 ```
 
