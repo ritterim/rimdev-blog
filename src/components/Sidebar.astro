@@ -22,7 +22,7 @@ const posts = await getCollection('posts').then((posts) =>
 const authorList = (authors) => {
   return new Intl.ListFormat('en').format(
   authors.map(
-    (author) => `<a href="author/${author.slug}">${author.data.name}</a>`
+    (author) => `<a href="/author/${author.slug}">${author.data.name}</a>`
   )
 );
 }
