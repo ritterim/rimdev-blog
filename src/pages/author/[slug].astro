@@ -29,7 +29,6 @@ const posts = await getCollection('posts').then((posts) =>
       };
     })
     .filter((post) => post.data.authors.includes(name))
-    .reverse()
 );
 ---
 
