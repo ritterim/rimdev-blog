@@ -15,7 +15,6 @@ const posts = await getCollection('posts').then((posts) =>
         postAuthors
       }
     })
-    .reverse()
     .slice(0, 20)
 );
 
