@@ -10,7 +10,7 @@ const postAuthors = authors
 
 const authorNames = new Intl.ListFormat('en').format(
   postAuthors.map(
-    (author) => `<a href="author/${author.slug}">${author.data.name}</a>`
+    (author) => `<a href="/author/${author.slug}">${author.data.name}</a>`
   )
 );
 ---
