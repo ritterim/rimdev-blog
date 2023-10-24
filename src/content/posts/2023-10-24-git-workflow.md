@@ -14,7 +14,7 @@ image_url: https://unsplash.com/photos/black-bare-tree-under-white-sky-during-da
 image_credit: Mila Tovar
 ---
 
-Whether you love it or hate it, it's undeniable that git (or your source control of choice, but this post is about git, so git on outta here if you use something else) is an integral part of our lives as developers. There are a lot of ways to manage respositories and codebases, but this is the workflow that has worked for me and for our team with only minimal nuclear level resets required. Who here has had to delete and refork a repository and then clone it down fresh again? If that's been you (don't worry, it's probably been all of us at some point), maybe this post can help.
+Whether you love it or hate it, it's undeniable that git (or your source control of choice, but this post is about git, so git on outta here if you use something else) is an integral part of our lives as developers. There are a lot of ways to manage respositories and codebases, but the [forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) is the workflow that has worked for me and for our team with only minimal nuclear level resets required. Who here has had to delete and refork a repository and then clone it down fresh again? If that's been you (don't worry, it's probably been all of us at some point), maybe this post can help.
 
 ### Managing repositories
 
