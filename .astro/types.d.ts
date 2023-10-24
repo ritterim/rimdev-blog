@@ -1870,6 +1870,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2023-10-24-git-workflow.md": {
+	id: "2023-10-24-git-workflow.md";
+  slug: "git-workflow";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 "redirects": {
 "gotopets.md": {
