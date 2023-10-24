@@ -40,7 +40,7 @@ You should always have your own fork of your organization's repository that you 
 - `git push origin :{branch}` - deletes the branch from your github
 
 ### The workflow
-- When creating a new feature branch, you'll want to create it off of your master (or feature) branch, like so:
+- When creating a new feature branch, you'll want to create it off of your master (or feature) branch after getting it up to date (see later sections), like so:
 ```
 git checkout master
 git checkout -b my-feature
@@ -129,4 +129,3 @@ git rebase upstream/feature-branch
 
 ## Conclusion
 Git is something that takes time to learn, and this post really just scratches the surface of the commands you'll generally use as you go through your day to day. Hopefully this can help provide a bit of structure, and as you use git more and more, you'll get more comfortable, and eventually you can be the team member who feels comfortable enough to manage those nasty rebases or hop on calls to fix branches that may have gone off the rails.
-
