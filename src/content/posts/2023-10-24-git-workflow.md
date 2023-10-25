@@ -59,9 +59,9 @@ Your work should never be done on your own master branch. Your work should be do
 ## Contributing to codebases
 
 ### The commands
-- `git add .`
-- `git commit -m "message"`
-- `git push -u origin {branch}`
+- `git add .` - stages all files that have been modified, deleted, or added for commit
+- `git commit -m "message"` - commits staged files with the provided message
+- `git push -u origin {branch}` - pushes changes to the specified branch
 
 ### The workflow
 - When you're ready to commit your changes, first run `git add .` to stage all files that have been modified, deleted, or added
@@ -77,9 +77,9 @@ You can also leave off the `-u origin {branch}` portion if you have run it befor
 ## Keeping your origin and local up to date
 
 ### The commands
-- `git fetch {remote name}`
-- `git merge {branch} --ff-only`
-- `git push`
+- `git fetch {remote name}` - pulls down the latest changes for the provided remote
+- `git merge {branch} --ff-only` - merges changes from the provided branch into your current branch, the `-ff-only` flag will not create commits for the merge
+- `git push` - pushes changes to the remote branch (note that you can provide the `-u origin {branch}` here if needed)
 
 ### The workflow (adjust remote and branch names as needed to match your own)
 - Checkout your origin `master` branch with `git checkout master`
