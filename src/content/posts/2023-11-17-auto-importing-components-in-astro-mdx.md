@@ -31,7 +31,7 @@ Now importing components may not sound like the end-of-the-world, but might caus
 
 ## The Solution
 
-Over on Mastodon, Roma Komarov had the answer with a recent post called [Astro MDX Components](https://blog.kizu.dev/astro-mdx-components/). 
+Over on Mastodon, [Roma Komarov](https://front-end.social/@kizu)  had the answer with a recent post called [Astro MDX Components](https://blog.kizu.dev/astro-mdx-components/). 
 
 In the post, Roma explains a very similar use-case for Astro components to our problem with shortcodes. Roma figured out that when rendering a dynamic `<Content />` component, you can actually provide it a `components` prop in order to pass in whichever components you want to be automatically included in the MDX files.
 
