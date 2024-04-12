@@ -5,9 +5,6 @@ import { site } from './src/data/config.json';
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
-import compress from 'astro-compress';
-
-// https://astro.build/config
 export default defineConfig({
   site: site.baseurl,
   markdown: {
@@ -17,8 +14,16 @@ export default defineConfig({
   },
   integrations: [
     sitemap(),
-    compress({
-      logger: 0,
-    }),
   ],
+  vite: {
+    build: {
+      format: 'file',
+      rollupOptions: {
+        external: ['sharp'],
+      },
+    },
+    resolve: {
+      extensions: ['.mjs', '.js', '.json', '.vue', '.scss'],
+    },
+  }
 });
