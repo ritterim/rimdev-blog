@@ -174,22 +174,22 @@ Let's set up a simple theme that we can use for our store.
 
 ### Adding Platform UI
 
-A super simple way to get started using Platform UI is by [linking to the CDN](https://platformui.com/docs/getting-started/cdn/) via unpkg. 
+A super simple way to get started using Platform UI is by [linking to the CDN](https://platformui.com/docs/getting-started/cdn/) via jsdelivr. 
 
 Browse to the `~/hugo-store/themes/store-theme/layouts/partials/head.html` file and include the CDN like so:
 
 ```html
 <!-- head.html -->
-<link rel="preconnect" href="https://unpkg.com" crossorigin>
-<link rel="stylesheet" href="https://unpkg.com/@ritterim/platform-ui/dist/platform-ui.min.css" crossorigin>
+<link rel="preconnect" href="cdn.jsdelivr.net/" crossorigin>
+<link rel="stylesheet" href="cdn.jsdelivr.net/npm/@ritterim/platform-ui/dist/platform-ui.min.css" crossorigin>
 ```
 
 This will include the main CSS stylings for the Platform UI framework. While we are in the `head.html` file, let's add a title for the site:
 
 ```html
 <!-- head.html -->
-<link rel="preconnect" href="https://unpkg.com" crossorigin>
-<link rel="stylesheet" href="https://unpkg.com/@ritterim/platform-ui/dist/platform-ui.min.css" crossorigin>
+<link rel="preconnect" href="cdn.jsdelivr.net/" crossorigin>
+<link rel="stylesheet" href="cdn.jsdelivr.net/npm/@ritterim/platform-ui/dist/platform-ui.min.css" crossorigin>
 
 <title>Hugo Store</title>
 ```
@@ -198,7 +198,7 @@ Platform UI also includes JavaScript functionality for things like accordions, d
 
 ```html
 <!-- footer.html -->
-<script src="https://unpkg.com/@ritterim/platform-ui/dist/js/platform-ui.min.js" crossorigin defer></script>
+<script src="cdn.jsdelivr.net/npm/@ritterim/platform-ui/dist/js/platform-ui.min.js" crossorigin defer></script>
 ```
 
 Now we can take advantage of everything Platform UI has to offer!
@@ -469,7 +469,7 @@ Open up `~/hugo-store/themes/store-theme/partials/footer.html` and add JavaScrip
 
 ```html
 <!-- footer.html -->
-<script src="https://unpkg.com/@ritterim/platform-ui/dist/js/platform-ui.min.js" crossorigin defer></script>
+<script src="cdn.jsdelivr.net/npm/@ritterim/platform-ui/dist/js/platform-ui.min.js" crossorigin defer></script>
 <script>
   window.SnipcartSettings = {
     publicApiKey: "[YOUR API KEY]",

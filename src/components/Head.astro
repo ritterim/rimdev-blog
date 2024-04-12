@@ -60,8 +60,8 @@ const { title, description, image, permalink, redirect } = Astro.props;
 
   <!-- redirects -->
   {redirect ? (
-    <meta 
-      http-equiv="refresh" 
+    <meta
+      http-equiv="refresh"
       content={ `${ redirect.timing ? redirect.timing : '0' }; url=${ redirect.url }` }
     />
   ) : null}
@@ -75,7 +75,7 @@ const { title, description, image, permalink, redirect } = Astro.props;
 
   <link
     rel="stylesheet"
-    href="https://unpkg.com/@ritterim/platform-ui/dist/platform-ui.min.css"
+    href="https://cdn.jsdelivr.net/npm/@ritterim/platform-ui/dist/platform-ui.min.css"
     crossorigin="anonymous"
   />
 
