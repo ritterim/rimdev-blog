@@ -1871,6 +1871,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-04-10-csharp-uri-concatenation.md": {
+	id: "2024-04-10-csharp-uri-concatenation.md";
+  slug: "csharp-uri-concatenation";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 "redirects": {
 "gotopets.md": {
