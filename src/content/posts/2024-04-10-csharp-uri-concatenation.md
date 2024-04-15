@@ -1,6 +1,6 @@
 ---
 title: "C# URI Concatenation"
-slug: static-property-ordering-is-important
+slug: csharp-uri-concatenation
 date: 2024-04-10
 tags:
 - C#

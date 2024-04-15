@@ -40,12 +40,12 @@ const postAuthors = authors
             <span class="ml-2 pl-2 border-l border--color-light flex">
               {author.data.github ? (
                 <a
-                  style="width:1rem"
-                  class="mr-1"
+                  style="width:2rem"
+                  class="mr-1 w-25"
                   href={`https://www.github.com/${author.data.github}`}
                 >
                   <svg
-                    class="github-icon"
+                    class="social-icon"
                     viewBox="0 0 98 96"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -56,7 +56,14 @@ const postAuthors = authors
               ) : null}
               {author.data.twitter ? (
                 <a class="no-underline" href={`https://www.twitter.com/${author.data.twitter}`}>
-                  <i class="pi-twitter" />
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128.9 131.7"
+                  >
+                    <path class="st0" d="M76.7,55.8l48-55.8h-11.4L71.7,48.4L38.4,0H0l50.3,73.2L0,131.7h11.4l44-51.1l35.1,51.1h38.4L76.7,55.8
+                    L76.7,55.8z M61.1,73.9L56,66.6l-40.6-58h17.5l32.7,46.8l5.1,7.3l42.6,60.9H95.9L61.1,73.9L61.1,73.9z"/>
+                  </svg>
                 </a>
               ) : null}
             </span>
