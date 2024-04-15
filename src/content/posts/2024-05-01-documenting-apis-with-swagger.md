@@ -98,7 +98,7 @@ One of the difficulties with even embarking on a documentation adventure is know
 </MedicareAdvantage>
 ```
 
-Then I can leverage the `<include>` tag to pull in the comments for that property any place I use it.
+Then I can leverage the `<include>` tag with an XPath query to pull in the comments for that property any place I use it.
 
 ```csharp
 /// <include file='../../../Documentation/MedicareAdvantage.xml' path='MedicareAdvantage/FilterMembers/Member[@name="Filter.EnrollmentCurrent"]/*' />`
@@ -107,7 +107,7 @@ public decimal EnrollmentCurrent { get; set; }
 
 I like this approach because it feels like you are now elevating your documentation to a first class citizen of your application. There is a separate file that contains your documentation, and only one place to go when you need to make additions or updates. 
 
-Visit [Recommended XML tags for C# documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags) for a list of tags that are available and recommendations for their use. Note that not all of these tags will work on every object. For instance, class properties only pick up the summary and example tags. However, I am able to use some html tags like `<p>` and `<i>` in my `<summary>` XML tag to mimic what some of the other XML tags were doing.
+Visit [Recommended XML tags for C# documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags) for a list of tags that are available and recommendations for their use. Note that not all of these tags will work on every object. For instance, class properties only pick up the summary and example tags. However, I am able to use some html tags like `<p>` and `<i>` in my `<summary>` XML tag to mimic what some of the other XML tags were doing. If you need more examples, visit the Microsoft Learn [Example XML documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/examples) page for more example with C#. 
 
 ### Attributes
 
