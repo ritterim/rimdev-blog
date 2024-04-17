@@ -19,7 +19,7 @@ Github's package ecosystem is a great place to store packages for individuals, o
 
 **Disclaimer**
 
-You'll need to get an Github api key from [your account]("https://google.com") and set it in your headers as a bearer token.
+You'll need to get an Github api access token. Checkout [github's documentation about creating one](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28#authenticating-with-a-personal-access-token). Once you have one you can set it in your headers as a bearer token.
 
 ## Downloading off their api?
 
@@ -29,11 +29,11 @@ Like I mentioned their api is great for managing the existing packages, but they
 https://nuget.pkg.github.com/{organization_name}/download/{package_name}/{version}/{package_name}.{version}.nupkg
 ```
 
-This endpoint isn't on their official documentation but there is threads of multiple people using it and I've tested it out myself.
+This endpoint isn't on their official documentation but there's multiple threads of people using it and I've tested it out myself.
 
 ## Bring it all together
 
-Knowing the endpoint exist is just half the battle, you'll need to know more about the package and it history if you want to be able to do a full archive. Luckily we can use their api to get the information we need. For these examples we're going to focus on the organization endpoints since most popular packages are associated to an organization, but you can easily change the endpoints based on the package. For a full list of endpoint you can checkout [Github's API documentation](https://docs.github.com/en/rest)
+Knowing the endpoint exist is just half the battle, you'll need to know more about the package and it history if you want to be able to do a full archive. Luckily we can use their api to get the information we need. For these examples we're going to focus on the organization endpoints since most popular packages are associated to an organization, but you can easily change the endpoints based on the package. For a full list of endpoint you can checkout [Github's API documentation](https://docs.github.com/en/rest).
 
 ### Getting all the package
 
