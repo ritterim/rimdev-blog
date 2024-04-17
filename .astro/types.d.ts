@@ -180,14 +180,14 @@ declare module 'astro:content' {
   slug: "andrew-rady";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "austin-asbury.md": {
 	id: "austin-asbury.md";
   slug: "austin-asbury";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "bill-boga.md": {
 	id: "bill-boga.md";
@@ -201,70 +201,70 @@ declare module 'astro:content' {
   slug: "chad-peters";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "cheng-yang.md": {
 	id: "cheng-yang.md";
   slug: "cheng-yang";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "chidozie-oragwu.md": {
 	id: "chidozie-oragwu.md";
   slug: "chidozie-oragwu";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "jaime-jones.md": {
 	id: "jaime-jones.md";
   slug: "jaime-jones";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "john-vicari.md": {
 	id: "john-vicari.md";
   slug: "john-vicari";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "ken-dale.md": {
 	id: "ken-dale.md";
   slug: "ken-dale";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "ken-earl.md": {
 	id: "ken-earl.md";
   slug: "ken-earl";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "kevin-hougasian.md": {
 	id: "kevin-hougasian.md";
   slug: "kevin-hougasian";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "khalid-abuhakmeh.md": {
 	id: "khalid-abuhakmeh.md";
   slug: "khalid-abuhakmeh";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "natasha-kurus.md": {
 	id: "natasha-kurus.md";
   slug: "natasha-kurus";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "nathan-white.md": {
 	id: "nathan-white.md";
@@ -292,21 +292,21 @@ declare module 'astro:content' {
   slug: "seth-kline";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "steliana-vassileva.md": {
 	id: "steliana-vassileva.md";
   slug: "steliana-vassileva";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "ted-krueger.md": {
 	id: "ted-krueger.md";
   slug: "ted-krueger";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "thomas-sobieck.md": {
 	id: "thomas-sobieck.md";
@@ -1892,7 +1892,7 @@ declare module 'astro:content' {
   slug: "show-me-cute-animals";
   body: string;
   collection: "redirects";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -1904,5 +1904,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
