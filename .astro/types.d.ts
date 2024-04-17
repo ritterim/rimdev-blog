@@ -194,7 +194,7 @@ declare module 'astro:content' {
   slug: "bill-boga";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "chad-peters.md": {
 	id: "chad-peters.md";
@@ -271,21 +271,21 @@ declare module 'astro:content' {
   slug: "nathan-white";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "ryan-trimble.md": {
 	id: "ryan-trimble.md";
   slug: "ryan-trimble";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "scott-schwalm.md": {
 	id: "scott-schwalm.md";
   slug: "scott-schwalm";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 "seth-kline.md": {
 	id: "seth-kline.md";
@@ -313,7 +313,7 @@ declare module 'astro:content' {
   slug: "thomas-sobieck";
   body: string;
   collection: "authors";
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] };
 };
 "posts": {
