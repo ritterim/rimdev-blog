@@ -1,43 +1,43 @@
 ---
-title: "Archive Nuget Packages From Github"
+title: "Archive NuGet Packages from GitHub"
 slug: archive-nuget-packages-from-github
 date: 2024-04-16
 tags:
-- Github
-- Devops
+- GitHub
+- DevOps
 categories:
-- Github
-- Devops
-twitter_text: "Archive Nuget Packages From Github"
+- GitHub
+- DevOps
+twitter_text: "Archive NuGet Packages from GitHub"
 authors: 
 - Andrew Rady
 ---
 
-# Downloading Nuget Packages Though Github's Api
+# Downloading NuGet Packages through GitHub's API
 
-Github's package ecosystem is a great place to store packages for individuals, open-source groups, and companies. Github also provides a great api for developers to use and manage their packages. It's important to understand that the api is intended to _manage_ your packages. Recently we wanted to archive all of our package releases for various reasons. We could have gone to Github's website and download each release but that can be time consuming and tediou process if you have a lot. Plus if we needed to do this again that means someone will have to do it all over.
+GitHub's package ecosystem is a great place to store packages for individuals, open-source groups, and companies. GitHub also provides a great API for developers to use and manage their packages. It's important to understand that the API is intended to _manage_ your packages. Recently we wanted to archive all of our package releases for various reasons. We could have gone to GitHub's website and downloaded each release, but that can be a time-consuming and tedious process if you have a lot. Plus, if we need to do this again, that means someone will have to do it all over.
 
 **Disclaimer**
 
-You'll need to get an Github api access token. Checkout [github's documentation about creating one](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28#authenticating-with-a-personal-access-token). Once you have one you can set it in your headers as a bearer token.
+You'll need to get a GitHub API access token. Check out [GitHub's documentation for creating one](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28#authenticating-with-a-personal-access-token). Once you have one, you can set it in your headers as a bearer token.
 
-## Downloading off their api?
+## Downloading off their API?
 
-Like I mentioned their api is great for managing the existing packages, but they don't have a documented endpoint to download them. After some research I was able to find an endpoint to download nuget packages. Thanks to Josh Johanning's [blog post](https://josh-ops.com/posts/github-download-from-github-packages/)
+Like I mentioned, their API is great for managing the existing packages, but they don't have a documented endpoint to download them. After some research, I was able to find an endpoint to download NuGet packages. (Thanks to Josh Johanning's [blog post](https://josh-ops.com/posts/github-download-from-github-packages/).)
 
 ```
 https://nuget.pkg.github.com/{organization_name}/download/{package_name}/{version}/{package_name}.{version}.nupkg
 ```
 
-This endpoint isn't on their official documentation but there's multiple threads of people using it and I've tested it out myself.
+This endpoint isn't in their official documentation, but there are multiple threads of people using it, and I've tested it out myself.
 
-## Bring it all together
+## Bringing it all together
 
-Knowing the endpoint exist is just half the battle, you'll need to know more about the package and it history if you want to be able to do a full archive. Luckily we can use their api to get the information we need. For these examples we're going to focus on the organization endpoints since most popular packages are associated to an organization, but you can easily change the endpoints based on the package. For a full list of endpoint you can checkout [Github's API documentation](https://docs.github.com/en/rest).
+Knowing the endpoint exists is just half the battle. You'll need to know more about the package and its history if you want to be able to do a full archive. Luckily, we can use their API to get the information we need. For these examples, we're going to focus on the organization endpoints, since most popular packages are associated with an organization, but you can easily change the endpoints based on the package. For a full list of endpoints, you can check out [GitHub's API documentation](https://docs.github.com/en/rest).
 
-### Getting all the package
+## Getting all the packages
 
-The endpoint `/orgs/{org}/packages` is where you can call to get a list of packages for an organization. The response isn't going to give much package version information. If all you're going to do is download the most current packages that's all you'll need, but we need one more endpoint to archive everything.
+The endpoint `/orgs/{org}/packages` is where you can call to get a list of packages for an organization. The response isn't going to give much package version information. If all you're going to do is download the most current packages, that's all you'll need, but we need one more endpoint to archive everything.
 
 Example response:
 ```json
@@ -76,7 +76,7 @@ Example response:
 ]
 ```
 
-The endpoint `/orgs/{org}/packages/{package_type}/{package_name}/versions` will list all the versions for a particular package. With this information we can build http calls with the first url and archive our entire package history.
+The endpoint `/orgs/{org}/packages/{package_type}/{package_name}/versions` will list all the versions for a particular package. With this information we can build HTTP calls with the first URL and archive our entire package history.
 
 Example response:
 ```json
@@ -108,7 +108,6 @@ Example response:
 ]
 ```
 
-
 ## Wrapping up
 
-This should give an blueprint of where and how to archive you're packages. You can take these basic steps and implement them into your own code and automate a job to download everything, or just use it as a one time process.
+This should give a blueprint of where and how to archive your packages. You can take these basic steps and implement them into your own code and automate a job to download everything, or just use it as a one-time process.
