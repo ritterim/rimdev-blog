@@ -1878,6 +1878,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-04-16-archive-nuget-packages-from-gitub.md": {
+	id: "2024-04-16-archive-nuget-packages-from-gitub.md";
+  slug: "archive-nuget-packages-from-github";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 "redirects": {
 "gotopets.md": {
