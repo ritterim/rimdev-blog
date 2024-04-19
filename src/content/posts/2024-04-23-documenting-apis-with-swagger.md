@@ -10,7 +10,6 @@ tags:
 - Swashbuckle
 categories:
 - backend
-twitter_text: How to automatically import components in Astro MDX files.
 authors: 
 - Chad Peters
 ---
