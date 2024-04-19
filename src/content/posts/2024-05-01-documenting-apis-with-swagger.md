@@ -38,71 +38,60 @@ To keep things simple, I'm just going to refer to all of this as "Swagger". If y
 
 ## Ways to document your API ✅
 
-In my research, I discovered there are multiple ways you can help Swagger more fully describe your ASP.NET Core API. Many of these methods can be used to accomplish the same outcome, and which of these you'll use will be up to your particular situation.
+In my research, I discovered there are multiple ways you can help Swagger more fully describe your ASP.NET Core API. Many of these methods can be used to accomplish the same outcome, and which of these you'll use will be up to your particular situation. All of the examples below are from a small github project I created - [enhancing-swagger-documentation](https://github.com/lightyeare/enhancing-swagger-documentation). 
 
 ### XML comments
 
-You may already be adding XML documentation comments to your C# code to provide other devs or your future self with helpful hints. It is also a great way to add additional context about your classes, methods, operators, indexers, constructors, and properties to your Swagger generated output for your ASP.NET Core APIs. It requires a little setup to enable using XML comments in ASP.NET Core so make sure to pop down to the [XML Comments section](https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle#xml-comments) of the above "Getting Started with Swashbuckle" article.
+You may already be adding XML documentation comments to your C# code to provide other devs or your future self with helpful hints. It is also a great way to add additional context about your classes, methods, operators, indexers, constructors, and properties to your Swagger generated output for your ASP.NET Core APIs. It requires a little setup to enable XML comments in ASP.NET Core to be picked up by Swagger so make sure to pop down to the [XML Comments section](https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle#xml-comments) of the above "Getting Started with Swashbuckle" article.
 <a name="controller-documented"></a>
 ```csharp
 /// <summary>
-/// Returns a Medicare Advantage quote
+/// Get customers
 /// </summary>
-/// <param name="request">The Medicare Advantage quote request object</param>
-/// <returns>A MedicareAdvantageQuoteRepresentation that includes the quote results and disclaimers.</returns>
+/// <param name="request">A CustomerRequest object</param>
+/// <returns>A CustomerSummaryRepresentation object</returns>
 /// <remarks>
-///    Example quote: <para>GET /products/medicare-advantage/quote?zipCode=17111&amp;countyName=Dauphin&amp;planYear=2024&amp;Sort=planName&amp;filter.Premium=[0,1000]&amp;filter.StarRating=4.0,4.5&amp;search.CarrierName=Aet</para>
+///    <i>Example GET:</i><br /> /customers?Status=Active
 /// </remarks>  
-/// <response code="200">Returns response with empty results when there are no quote results.</response>
-/// <response code="404">Area information provided did not find an Area result.</response>
-/// <response code="422">Request validation failed.</response>
+/// <response code="200">Returns a CustomerSummaryRepresentation object.</response>
+/// <response code="404">No customer records found.</response>
+/// <response code="400">Request validation failed.</response>
 ```
 
 ![Controller Documented](/images/swagger/swagger-controller.jpg)
 
 ```csharp
-/// <summary>
-/// USPS ZIP Code. ZIPCode will be trimmed to five digits.
-/// </summary>
-/// <example>17111</example>
+///<summary>
+/// Customer's Status. Valid Statuses are "Active" and "Inactive".
+/// </summary> 
+/// <example>Active</example>
+public string Status { get; set; }
 ```
-![Property Documented](/images/swagger/zipcode.jpg)
+![Property Documented](/images/swagger/status.jpg)
 
-Some XML comments, like `<example>` above do more than just provide additional text descriptions. In this case, Swagger will also populate the parameter value with your provided example. You can use this as a way to provide an end user with the happy path to using your API instead of them trying to guess which values will return a 200. Your example must be in the type of the property. For instance, if your property is an `array[string]` then your example must be `["MyString"]`. When used on a response object property, it will use that value as the property's value rather than using the property's type as it's value.
-
-```csharp
-/// <summary>
-/// Zip Code response property with example tag
-/// </summary>
-/// <example>17111</example>
-public string ZipCode { get; set; }
-
-/// <summary>
-/// State Code response property with no example tag
-/// </summary>
-public string StateCode { get; set; }
-```
+Some XML comments, like `<example>` above do more than just provide additional text descriptions. In this case, Swagger will also populate the parameter value with your provided example. You can use this as a way to provide an end user with the happy path to using your API instead of them trying to guess which values will return a 200. Your example must be in the type of the property. For instance, if your property is an `array[string]` then your example must be `["MyString"]`. When used on a response object property, it will use that value as the property's value rather than using the property's type as it's value. If you were motivated, you could provide every response property with an example tag to completely fill out Swagger's example response with valid data rather than have it display the property type as the value. However, I prefer to use the `<example>` tag on my response properties so they can easily exercise the API and get real data. 
 
 ![Response property with example tag](/images/swagger/example-response.jpg)<br />
-_ZipCode shows "17111" instead of "string". You could provide an example value for all your response properties and have the entire model of your 200 response be filled in with real data. Although, your user would get data too simply by exercising the endpoint._
+_customerId has an `<example>` tag and shows "1" instead of "int"._
 
 One of the difficulties with even embarking on a documentation adventure is knowing that you must keep the documentation up to date. While I was documenting my properties I found myself writing the same comments for the same properties that we used on different models. We try to keep things DRY in our code, so shouldn't we be able to do that in our documentation? You can by creating a structured XML file that works for your domain and re-use the comments when a property is re-used on different models.
 
 ```csharp
-<MedicareAdvantage>
-   <FilterMembers>
-     <Member name="Filter.EnrollmentCurrent">
-        <summary>CMS reported enrollment count for the plan in the county for the current year.</summary>
-     </Member>
-   </FilterMembers>
-</MedicareAdvantage>
+<Docs>
+  <RequestMembers>
+    <Member name="Status">
+      <summary>Customer Status. Valid Statuses are "Active" and "Inactive".</summary>
+    </Member>
+  </RequestMembers>
+</Docs>
 ```
 
 Then I can leverage the `<include>` tag with an XPath query to pull in the comments for that property any place I use it.
 
 ```csharp
-/// <include file='../../../Documentation/MedicareAdvantage.xml' path='MedicareAdvantage/FilterMembers/Member[@name="Filter.EnrollmentCurrent"]/*' />`
-public decimal EnrollmentCurrent { get; set; }
+/// <include file='../Documentation/EnhancingSwagger.xml' path='Docs/RequestMembers/Member[@name="Status"]/*' />
+/// <example>Active</example>
+public string Status { get; set; }
 ```
 
 I like this approach because it feels like you are now elevating your documentation to a first class citizen of your application. There is a separate file that contains your documentation, and only one place to go when you need to make additions or updates. 
@@ -118,10 +107,12 @@ There are a variety of attributes you can leverage to provide additional enhance
 There are some attributes that are used to produce more descriptive response details for web API help pages generated by tools like Swagger. 
 
 ```csharp
-[ProducesResponseType(typeof(MedicareAdvantageQuoteRepresentation),StatusCodes.Status200OK)]
-[ProducesResponseType(typeof(ApiError), StatusCodes.Status404NotFound)]
-[ProducesResponseType(typeof(ApiError),StatusCodes.Status422UnprocessableEntity)]
-public async Task<IActionResult> Get([FromQuery] MedicareAdvantageQuoteRequest request)
+[HttpGet]
+[Route("", Name="Customers.Get")]
+[ProducesResponseType(typeof(CustomerRepresentation),StatusCodes.Status200OK)]
+[ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
+[ProducesResponseType(StatusCodes.Status400BadRequest)]
+public IActionResult Get([FromQuery] CustomerRequest request)
 ```
 If we use the `ProducesResponseType` attribute our Swagger output will expand. Compare this to the [screenshot above](#controller-documented) that just used the `<response>` tag in the XML comments:
 
@@ -133,15 +124,15 @@ I am sure you are familiar with using these attributes to provide validation for
 
 ```csharp
 /// <summary>
-/// Federal Information Processing System (FIPS) County or County-equivalent name. Either the CountyName or FipsCode is required.
+/// Customer's Status. Valid Statuses are "Active" and "Inactive".
 /// </summary>
-[MaxLength(50)]
+[MaxLength(10)]
 [Required]
-[DefaultValue("Dauphin")]
-public string CountyName { get; set; }
+[DefaultValue("Active")]
+public string Status { get; set; }
 ```
 ![Component Model](/images/swagger/componentmodel-attributes.jpg)</br>
-_The endpoint UI shows us the required and default values. It also fills the default value into parameter input box._
+_The endpoint UI shows us the required and default values. It also fills the default value into the parameter input box._
 
 ![Component Model in Schema](/images/swagger/componentmodel-attributes-schema.jpg)</br>
 _The Schema shows us all three of our attributes._
@@ -161,6 +152,8 @@ On their Github page, Swagger highlights this [community open-source package](ht
 Swagger comes with a bunch of options to extend and configure it's functionality to provide better documentation of your endpoints. You can implement your own [IDocumentFilter](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/b64b8fd6fbc7959849445be676f5e3d4a8e947bf/src/Swashbuckle.AspNetCore.SwaggerGen/XmlComments/XmlCommentsDocumentFilter.cs), [ISchemaFilter](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/b64b8fd6fbc7959849445be676f5e3d4a8e947bf/src/Swashbuckle.AspNetCore.SwaggerGen/XmlComments/XmlCommentsSchemaFilter.cs), and [IOperationsFilter](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/b64b8fd6fbc7959849445be676f5e3d4a8e947bf/src/Swashbuckle.AspNetCore.SwaggerGen/XmlComments/XmlCommentsOperationFilter.cs) to manipulate and extend the generated Swagger. The links are to examples of how they've been implemented in the Swagger code base. We implemented an IDocumentFilter because we have a custom type defined for some of the filter properties of our request objects. Swagger did it's best generating the UI for each custom type, but we needed to step in and help it out.
 
 There are also lots of options when configuring Swagger during startup to do things like provide a version, title, description, contact information and more for your API itself. You can also do some custom type mapping during configuration.
+
+See also [Swashbuckle.AspNetCore configuration and customization](https://github.com/domaindrivendev/Swashbuckle.AspNetCore?tab=readme-ov-file#configuration--customization)
 
 ## Our next steps 🚀
 

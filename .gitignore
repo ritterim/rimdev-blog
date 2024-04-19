@@ -8,3 +8,6 @@ GemFile.lock
 .DS_Store
 .vscode/
 dist/
+
+# Rider
+.idea/
