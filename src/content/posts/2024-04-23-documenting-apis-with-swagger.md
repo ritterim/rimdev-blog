@@ -12,6 +12,7 @@ categories:
 - backend
 authors: 
 - Chad Peters
+twitter_text: "Documenting ASP.NET Core APIs with Swagger"
 ---
 
 Nearly all of the APIs we create at Ritter are for consumption by our own applications. We regularly use [Swagger](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) as a tool for development and as a way for our Front End team to learn about the APIs as they are crafting the UI. Since we are a small team and any member of the FE team can just turn around and ask the BE team "Hey, what's this?" we don't spend too much, or any, time adding additional documentation to our endpoints and models other than what Swagger spits out by default.
