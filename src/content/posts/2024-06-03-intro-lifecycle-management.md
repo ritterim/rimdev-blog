@@ -7,7 +7,7 @@ tags:
 - Azure
 - Azure Storage
 - Lifecycle Management
-- Swashbuckle
+- Blob storage
 categories:
 - Devops
 - Azure
