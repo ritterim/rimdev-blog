@@ -14,7 +14,7 @@ categories:
 - Azure
 authors: 
 - Chad Peters
-twitter_text: "Hide and seek with Az Blob Last Accessed Time"
+twitter_text: Hide and seek with Az Blob Last Accessed Time
 ---
 
 My granddaughter went through a period in her 2s where she liked to play hide and seek. Last week I found myself again playing hide and seek, but this time with an Azure storage blob's last accessed time. Don't tell my grandie, but it was a little harder to find the last accessed time than it was to find her 😆.
