@@ -1885,6 +1885,27 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-04-23-documenting-apis-with-swagger.md": {
+	id: "2024-04-23-documenting-apis-with-swagger.md";
+  slug: "documenting-aspnetcore-apis-with-swagger";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-06-03-intro-lifecycle-management.md": {
+	id: "2024-06-03-intro-lifecycle-management.md";
+  slug: "storage-lifecycle-management";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-06-24-last-accessed-time-lifecycle-management.md": {
+	id: "2024-06-24-last-accessed-time-lifecycle-management.md";
+  slug: "last-accessed-time-lifecycle-management";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 "redirects": {
 "gotopets.md": {
