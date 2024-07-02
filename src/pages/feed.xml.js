@@ -15,11 +15,11 @@ const feed = {
   items: posts.map((post) => ({
     link: post.frontmatter.slug,
     title: post.frontmatter.title,
+    author: new Intl.ListFormat('en').format(post.frontmatter.authors.map((author) => author)),
     description: post.frontmatter.twitter_text,
     pubDate: new Date(post.frontmatter.date),
   })),
-  customData: `<language>en-us</language>`,
   dest: '/feed.xml',
 };
 
-export const get = () => rss(feed);
+export const GET = () => rss(feed);
