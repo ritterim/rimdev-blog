@@ -17,7 +17,7 @@ twitter_text: "ASP.NET Core Logger messages matter"
 
 Recently I was reviewing some code and I noticed something that seemed a little strange 😕
 
-``` csharp
+```csharp
 catch (Exception ex)
 {
     _logger.LogError("Unable to retrieve Lead {0} : {1}", leadId, ex);
