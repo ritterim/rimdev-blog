@@ -65,7 +65,7 @@ Comparing the two, you can spot a few differences. The Properties.OriginalFormat
 
 Why is this important? 💡 It's important because now querying my logs becomes much easier. If we use the message template, I can now query Properties.OriginalFormat for the message template and get all instances of this error. If we use string interpolation the OriginalFormat is dynamic because it will have different ids. We can also narrow our queries further by using the `id` and `exception` properties in our queries.
 
-Let's look at the third example. `Microsoft.Extensions.Logging` has many overload for ILogger.LogError. One of those extensions takes the exception as the first parameter and the message template as the second. What do we get for this? 
+Let's look at the third example. `Microsoft.Extensions.Logging` has many overloads for ILogger.LogError. One of those overloads takes the exception as the first parameter and the message template as the second. What do we get for this? 
 
 My log message now appears in the LogManagement.AppExceptions table and I get more properties related to the exception that I can now query.
 
