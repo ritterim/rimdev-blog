@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core Logger messages matter
 slug: aspnetcore-logger-messages
-date: 2024-07-24 13:00
+date: 2024-07-24 13:00:00
 tags:
 - DevOps
 - Azure
@@ -25,7 +25,7 @@ catch (Exception ex)
 }
 ```
 
-Admittedly, I didn't know as much about logging as I should have. It's just something that was always there that someone else setup. It did seem strange that you would stuff the exception into the message. So as they say, there is no time like the present! 🔎
+Admittedly, I didn't know as much about logging as I should have 🤷🏻‍♂️. It's just something that was always there that someone else setup. It did seem strange that you would stuff the exception into the message. So as they say, there is no time like the present!
 
 ASP.NET Core makes it easy to connect to a variety of logging providers. You can find out more about setting up logging [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-8.0). I want to focus on the messages you pass to the logger. 
 
@@ -53,7 +53,7 @@ app.MapGet("/log/{id}", async (int id, ILogger<Program> logger, HttpResponse res
 
 ```
 
-Let's first compare the first two `logger.LogError`. The first one uses the message template as recommended. This looks like what you would see in the `string.Format` method. This might lead you to think, "why don't we use string interpolation instead?". I configured my logger to write to App Insights so I could see the difference. I found my two errors in the LogManagement.AppTraces table of my Log Analytics workspace Logs. I've eliminated some properties for brevity. 
+🔎 Let's first compare the first two `logger.LogError`. The first one uses the message template as recommended. This looks like what you would see in the `string.Format` method. This might lead you to think, "why don't we use string interpolation instead?". I configured my logger to write to App Insights so I could see the difference. I found my two errors in the LogManagement.AppTraces table of my Log Analytics workspace Logs. I've eliminated some properties for brevity. 
 
 ![Message Template](/images/logging/messagetemplate.jpg)
 
