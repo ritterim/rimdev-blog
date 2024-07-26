@@ -71,6 +71,6 @@ My log message now appears in the LogManagement.AppExceptions table and I get mo
 
 ![Exception and Message Template](/images/logging/exception.jpg)
 
-One other tip, since the message template does look like the `string.Format` method it might also be tempting to use numbers for your parameter placeholders. This was common practice for `string.Format` i.e. `{0}`. However, as you  realize now, having a bunch of different log message types with a property whose name is `0` isn't going to benefit you. Also keep in mind that templating works on the order of the parameters, not the names. 
+> Since the message template does look like the `string.Format` method it might also be tempting to use numbers for your parameter placeholders i.e. `The error is {0} at {1}`. It won't benefit you to have a bunch of different log message types with a property whose name is `0`. Also keep in mind that templating works on the **order of the parameters**, not the names. 
 
 It helped me to see this for myself in Log Analytics. If you've never seen this before either, hopefully it helped you too.
