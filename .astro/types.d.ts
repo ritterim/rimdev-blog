@@ -1857,6 +1857,20 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-07-24-logging-messages.md": {
+	id: "2024-07-24-logging-messages.md";
+  slug: "aspnetcore-logger-messages";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-08-27-adding-recaptcha-to-a-sign-up-form.md": {
+	id: "2024-08-27-adding-recaptcha-to-a-sign-up-form.md";
+  slug: "adding-googles-recaptcha-to-your-form";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 "redirects": {
 "gotopets.md": {
