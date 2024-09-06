@@ -22,7 +22,7 @@ You have some options when using reCAPTCHA. Versions 3 and 2. I opted for reCAPT
 
 ## Adding Your Domain
 
-One of the first steps is [adding you domain](https://developers.google.com/recaptcha/docs/domain_validation) to your Admin Console in Google. In the console you will need to specify the version you want to use. 
+One of the first steps is [adding your domain](https://developers.google.com/recaptcha/docs/domain_validation) to your Admin Console in Google. In the console you will need to specify the version you want to use. 
 
 This can all be tested locally too. All you need to do is add `localhost` to the list of domains. Google reccomends using a seperate key for your local environment. This isn't _necesarry_ but Google says it's a good idea.
 
