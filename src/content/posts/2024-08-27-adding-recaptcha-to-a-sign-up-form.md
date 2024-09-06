@@ -1,7 +1,7 @@
 ---
 title: "Adding Google's reCAPTCHA To Your Form"
 slug: adding-googles-recaptcha-to-your-form
-date: 2024-08-27 11:27:06
+date: 2024-09-06 11:27:06
 tags: 
 - frontend
 - forms
