@@ -20,12 +20,12 @@ const postAuthors = authors
     </h2>
   </div>
 </div>
-<div class="flex flex--wrap flex--justify-center" style="gap: 1rem;">
+<div class="block-container blocks p-2 flex--wrap flex--justify-center">
   {
     postAuthors.map((author) => (
-      <div class="card no-border flex" style="gap: 0.5rem;">
+      <div class="block block-10 tablet-up-8 laptop-up-6 flex flex--justify-center flex--align-center">
         {author.data.avatar ? (
-          <div class="image--round-small" style="width: 50px;">
+          <div class="image--round-small mr-2">
             <img
               src={author.data.avatar}
               alt={`${author.data.author} avatar`}
@@ -74,7 +74,7 @@ const postAuthors = authors
     ))
   }
 </div>
-<div class="flex flex--justify-center" style="gap:0.5rem">
+<div class="flex flex--justify-center mt-3" style="gap:0.5rem">
   {
     tags.map((tag) => (
       <a
@@ -86,3 +86,10 @@ const postAuthors = authors
     ))
   }
 </div>
+
+<style>
+  .image--round-small {
+    max-height: 50px;
+    max-width: 50px;
+  }
+</style>
