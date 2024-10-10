@@ -46,7 +46,7 @@ I looked at the `Path.GetFileNameWithoutExtension` and in short it:
 - gets just the filename from the path
 - uses `LastIndexOf(".")` to find the period before the extension
 - uses `Slice` to get the filename without the extension
-- converts the filename without the extention back to a string
+- converts the filename without the extension back to a string
 
 I found this paragraph in an [article exploring spans](https://learn.microsoft.com/en-us/archive/msdn-magazine/2018/january/csharp-all-about-span-exploring-a-new-net-mainstay) that gives an example of when you might want to use a span. It helps shed light on the benchmark results. 
 
