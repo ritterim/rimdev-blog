@@ -11,7 +11,7 @@ categories:
 - C#
 authors: 
 - Chad Peters
-twitter_text: "What's the 'best' way to remove a file extention from a file path string?"
+twitter_text: "What's the 'best' way to remove a file extension from a file path string?"
 ---
 
 This week I was working on a project that moves and archives file recordings and their accompanying XML meta data. I need to remove the file extension from a file path stored as a string. The first thing I thought of was:
