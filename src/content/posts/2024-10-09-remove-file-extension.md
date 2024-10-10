@@ -14,7 +14,7 @@ authors:
 twitter_text: "What's the 'best' way to remove a file extension from a file path string?"
 ---
 
-This week I was working on a project that moves and archives file recordings and their accompanying XML meta data. I need to remove the file extension from a file path stored as a string. The first thing I thought of was:
+This week I was working on a project that moves and archives file recordings and their accompanying XML meta data. I needed to remove the file extension from a file path stored as a string. The first thing I thought of was:
 
 ```csharp
 filename.Replace(".xml","")
