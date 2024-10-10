@@ -39,7 +39,7 @@ At this point curiosity got the better of me. Which of these is _actually_ more 
 ![Benchmark Results](/images/remove-file-extensions/removeextensionbenchmark.jpg)
 _Fwiw, the strings I am working with are the 2nd result set with a length pretty close to 71._
 
-The fact that `Replace` was the worst performing isn't a surprise, but there were a few suprises. I was surprised that the difference between `Replace` and `Substring` decreased as the size of the string got larger. `Path.GetFileNameWithoutExtension` had a couple of interesting finds. Once the string gets to a certain length the performance and allocated memory remains consistent no matter the length of the string. It also uses significantly less memory than the other two methods. 
+The fact that `Replace` was the worst performing isn't a surprise, but there were a few surprises. I was surprised that the difference between `Replace` and `Substring` decreased as the size of the string got larger. `Path.GetFileNameWithoutExtension` had a couple of interesting finds. Once the string gets to a certain length the performance and allocated memory remains consistent no matter the length of the string. It also uses significantly less memory than the other two methods. 
 
 I looked at the `Path.GetFileNameWithoutExtension` and in short it:
 - converts the path string to a `ReadOnlySpan<char>`
