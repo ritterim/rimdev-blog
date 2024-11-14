@@ -1,7 +1,7 @@
 ---
 title: There's more than one way to...remove a file extension
 slug: remove-file-extension-from-string
-date: 2024-07-24 13:00:00
+date: 2024-10-09 13:00:00
 tags:
 - ASP.NET Core
 - C#
