@@ -29,7 +29,7 @@ Admittedly, I didn't know as much about logging as I should have 🤷🏻‍♂�
 
 ASP.NET Core makes it easy to connect to a variety of logging providers. You can find out more about setting up logging [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-8.0). I want to focus on the messages you pass to the logger. 
 
-The messages get passed using a message template. This allows for [symantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). I read that was important because logging providers can store the parameters in the message template as fields. What does that look like and why is that important? Sometimes I need to see it in action to cement my understanding.
+The messages get passed using a message template. This allows for [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). I read that was important because logging providers can store the parameters in the message template as fields. What does that look like and why is that important? Sometimes I need to see it in action to cement my understanding.
 
 I ran `dotnet new webapp` to setup a new ASP.NET Core project. In the project's Program.cs file I added this contrived endpoint:
 
