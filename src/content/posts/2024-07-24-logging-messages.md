@@ -29,7 +29,7 @@ Admittedly, I didn't know as much about logging as I should have 🤷🏻‍♂�
 
 ASP.NET Core makes it easy to connect to a variety of logging providers. You can find out more about setting up logging [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-8.0). I want to focus on the messages you pass to the logger. 
 
-The messages get passed using a message template. This allows for structured logging. I read that was important because logging providers can store the parameters in the message template as fields. What does that look like and why is that important? Sometimes I need to see it in action to cement my understanding.
+The messages get passed using a message template. This allows for [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). I read that was important because logging providers can store the parameters in the message template as fields. What does that look like and why is that important? Sometimes I need to see it in action to cement my understanding.
 
 I ran `dotnet new webapp` to setup a new ASP.NET Core project. In the project's Program.cs file I added this contrived endpoint:
 
@@ -71,6 +71,6 @@ My log message now appears in the LogManagement.AppExceptions table and I get mo
 
 ![Exception and Message Template](/images/logging/exception.jpg)
 
-One other tip, since the message template does look like the `string.Format` method it might also be tempting to use numbers for your parameter placeholders. This was common practice for `string.Format` i.e. `{0}`. However, as you  realize now, having a bunch of different log message types with a property whose name is `0` isn't going to benefit you. 
+> Since the message template does look like the `string.Format` method it might also be tempting to use numbers for your parameter placeholders i.e. `The error is {0} at {1}`. It won't benefit you to have a bunch of different log message types with a property whose name is `0`. Also keep in mind that templating works on the **order of the parameters**, not the names. 
 
 It helped me to see this for myself in Log Analytics. If you've never seen this before either, hopefully it helped you too.
